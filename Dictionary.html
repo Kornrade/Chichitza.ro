@@ -1,0 +1,142 @@
+<html>
+<head>
+	
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<script type="text/javascript" src="Javascript/0.Common/Retranslate.js"></script>
+	<script type="text/javascript" src="Javascript/0.Common/RetranslateRO.js"></script>
+	<script type="text/javascript" src="Javascript/0.Common/RetranslateEN.js"></script>
+	<script type="text/javascript" src="Javascript/0.Common/RetranslateDE.js"></script>
+	<script type="text/javascript" src="Javascript/0.Common/Helpertools.js"></script>
+	<script type="text/javascript" src="Javascript/0.Common/highslide/highslide.js"></script>
+	<link rel="stylesheet" type="text/css" href="Javascript/0.Common/highslide/highslide.css" />
+	<script type="text/javascript" src="Javascript/5.Dictionary/1.Global_variables.js"></script>
+	<script type="text/javascript" src="Javascript/5.Dictionary/2.DatabaseRO.js"      ></script>
+	<script type="text/javascript" src="Javascript/5.Dictionary/2.DatabaseEN.js"      ></script>
+	<script type="text/javascript" src="Javascript/5.Dictionary/2.DatabaseDE.js"      ></script>
+	<script type="text/javascript" src="Javascript/5.Dictionary/3.Functions.js"       ></script>
+	<link rel="stylesheet" type="text/css" href="Styles/0.Common.css" />
+	<link rel="shortcut icon" href="Images\favicon.ico">
+	<title>Chichitza</title>
+
+<style>
+
+.box_round {
+		   -moz-border-radius: 12px; /* FF1+ */
+		-webkit-border-radius: 12px; /* Saf3-4 */
+				border-radius: 12px; /* Opera 10.5, IE 9, Saf5, Chrome */
+				cursor:pointer;
+			}
+
+</style>
+	
+</head>
+
+<!-------------------900-----------------------\ 
++---------+------------------------------------+
+|  BANNER |  Micro-/Macrochitze/...  | ro/en/de|  Cell (0), Cell (1), Cell (2)
+|         |        <divTitle>        | home/etc|  
++---200---+---------500--------------+---200---+   
+++--------------------------------------------++  orange line
+||                                            ||  
+||  +---------+---tableMainContents--------+  ||  Cell (3)
+||  |  image  |    <divMainContents>       |  ||
+||  +---300---+-------------600------------+  ||
+||                                            ||
+++--------------------------------------------++
++----------------------------------------------+  orange line
++--------------------900-----------------------+--->
+
+
+<body onload="detectLanguage(); initDict();"> <!---onload should be a function of identifying the language and call the retranslate-->
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+<!---------------------------------------------------->
+					<tr>
+<!-- Cell (0) -->		<td rowspan="1" colspan="1" width="200" height="100">
+							<a id="banner" href="index.html"><img src="Images/0.Common/banner.png" alt="Banner" width="200" height="100" border="0" style="float:top"/></a>
+						</td>
+<!-- Cell (1) -->		<td rowspan="1" colspan="1" width="500" height="100">
+							<div class="common" style="padding-left: 50px; padding-top: 20px">
+								<a id="buttonMicrochitze"  href="javascript:void(0);"><img id="imgMicrochitze" width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonMacrochitze" href="javascript:void(0);"><img id="imgMacrochitze"  width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonInteractive" href="javascript:void(0);"><img id="imgInteractive"  width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonChess"		  href="javascript:void(0);"><img id="imgChess" 		 width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonDictionary"  href="javascript:void(0);"><img id="imgDictionary" 	 width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+							</div>
+							<br/>
+							<div id="divTitle" align="center" class="style_orange"> </div>
+						</td>
+<!-- Cell (2) -->		<td rowspan="1" colspan="1" width="200" height="100">
+							<div class="common" align="right" style="padding-right: 20px; float:top">
+							<a	id="languageRO"	data="Romana"	href="javascript:void(0);" 	onclick="window.open('Dictionary.html?lang=ro&aux=*', '_self');">
+							<img src="Images/0.Common/Flags/ro.png" alt="RO" width="32" height="32" border="0" /></a>
+							<a	id="languageEN"	data="English"	href="javascript:void(0);" 	onclick="window.open('Dictionary.html?lang=en&aux=*', '_self');">
+							<img src="Images/0.Common/Flags/en.png" alt="EN" width="32" height="32" border="0" /></a>
+							<a	id="languageDE"	data="Deutsch"	href="javascript:void(0);" 	onclick="window.open('Dictionary.html?lang=de&aux=*', '_self');">
+							<img src="Images/0.Common/Flags/de.png" alt="DE" width="32" height="32" border="0" /></a>
+							</div>
+							<br/>
+							<div class="common" align="right" style="padding-right: 20px; float:bottom">
+							<a id="buttonAdmin"	><img id="imgAdmin"   src="Images/0.Common/Helpertools/Admin.png"   width="32" height="32" border="0" /></a>
+							<a id="buttonContact"><img id="imgContact" src="Images/0.Common/Helpertools/Contact.png" width="32" height="32" border="0" /></a>
+							<a id="buttonHome" 	><img id="imgHome"    src="Images/0.Common/Helpertools/Home.png"    width="32" height="32" border="0" /></a>
+							</div>
+						</td>
+					</tr>
+<!---------------------------------------------------->
+					<tr>
+<!-- Cell (*) -->		<td rowspan="1" colspan="3" width="900">
+							<img src="Images/0.Common/orangeline.png" alt="OrangeLine" width="900" border="0"  />
+						</td>
+					</tr>
+<!---------------------------------------------------->
+					<tr>
+<!-- Cell (3) -->		<td rowspan="1" colspan="3" width="900">
+							<table id="tableMainContents" border="0" style="text-align:center; cursor:default;">
+								<tr>
+									<td id="tdSearchLetters" rowspan="1" colspan="2" width="900" valign="top" style="padding-top:5px;">
+										<div id="SearchLettersField" align="center"></div>
+										<div id="SearchField" align="center">
+											<input id = 'dictionarySearchField' type='text' size='20' style='text-align:center; font-size:16px;' onKeyPress='{if(event.keyCode==13) doDictionarySearch("");}'></input>
+											<a id='dictionarySearchIcon' href='#'><img src='Images/5.Dictionary/Find.png' width='32' height='32' onclick='doDictionarySearch("");'/></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td id="tdSearchError" rowspan="1" colspan="2" width="900" valign="top">
+										<div id="SearchErrorField" align="center" style="color:#FF8000;" class="common"> </div>
+									<td>
+								</tr>
+								<tr>
+									<td id="tdSearchResults" rowspan="1" colspan="2" width="900" valign="top">
+										<div>
+											<span id="aprev"><img id="imgprev" valign="middle"></span>
+											&nbsp;&nbsp;&nbsp;
+											<span id="SearchResultsField" align="center" class="common"></span>
+											&nbsp;&nbsp;&nbsp;
+											<span id="anext"><img id="imgnext" valign="middle"></span>
+										</div>
+									<td>
+								</tr>
+								<tr>
+									<td id="tdMainContentsLeft" rowspan="1" colspan="1" width="190" valign="top" style="padding-top:10px;">
+										<div id="WordField"  class="style_orange" align="center" style="font-weight:bold"></div>
+									</td>
+									<td id="tdMainContentsRight"  rowspan="1" colspan="1" width="710" valign="top" style="padding-top:10px;">
+										<div id="DefinitionField" align="justify" style="cursor:default; height:100" class="common"></div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+<!---------------------------------------------------->
+<!-- Cell (*) -- >	<tr>
+						<td rowspan="1" colspan="3" width="900">
+							<img src="Images/0.Common/orangeline.png" alt="OrangeLine" width="900" border="0" />
+						</td>
+					</tr> -->
+</table>
+
+</body>
+</html>
