@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://www.webglearth.com/v2/api.js"></script>
+<script>
+var map;
+  function initialize() {
+    //var options = { zoom: 3.0, position: [45.7833, 24.1333] };
+    //var earth = new WebGLEarth('earth_div', options);
+	map = WE.map('earth_div', {
+          center: [45.7833, 24.1333],
+          zoom: 5.0,
+          dragging: true,
+          scrollWheelZoom: true//,
+        });
+		
+		var overlay = WE.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.jpg', {
+          subdomains: '1234',
+          attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">',
+          maxZoom: 18
+        }).addTo(map);
+		
+	
+	 map.on('mousemove', function(e) {
+          document.getElementById('coordsLat').value = e.latlng.lat;
+		  document.getElementById('coordsLon').value = e.latlng.lng;
+        });
+  }
+  
+  function setZoom(zoom) {
+		var currzoom = map.getZoom();
+		var newzoom  = zoom + currzoom;
+        map.setZoom(newzoom);
+      }
+</script>
+</head>
+<body onload="initialize()">
+  <h1>WebGL Earth</h1>
+  <div id="earth_div" style="width:600px;height:400px;border:1px solid gray; padding:2px;"></div>
+  <div> 					
+  Lat. <input id="coordsLat" style="width:230px;height: 32px;border:1px solid gray;" readonly >
+  Lon. <input id="coordsLon" style="width:230px;height: 32px;border:1px solid gray;" readonly >
+		<a id="zoomin"	data="Zoom +"	onclick="setZoom(+0.5);">
+		<img src="ZoomIn.png" alt="RO" width="32" height="32" border="0" /></a>
+		<a id="zoomout"	data="Zoom -"	onclick="setZoom(-0.5);">
+		<img src="ZoomOut.png" alt="RO" width="32" height="32" border="0" /></a>
+  </div>
+  
+</body>
+</html>

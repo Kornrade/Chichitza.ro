@@ -1,0 +1,524 @@
+<HTML>
+<HEAD>
+
+<TITLE>Periodic Table of the Elements (JavaScript)</TITLE>
+
+<META name="description" content="An info-packed interactive javascripted Periodic 
+Table. Designed by DreamWave: the premiere e-source for dream reverie and 
+revelation. (Mendeleyev first saw the table in a dream).">
+
+<META name="keywords" content="periodic table, elements, javascript, interactive,
+chemistry, electorn, Mendeleyev, dreams, dreaming">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function fillitin(elemEn,elemRo,elemDe,num,wgt,elec,orb,melt,boil,who,grav,iso)  {
+Box = document.pertab
+Box.elementEn.value = elemEn;
+Box.elementRo.value = elemRo;
+Box.elementDe.value = elemDe;
+Box.disc.value = who;
+Box.melt.value = melt + " °C";
+Box.boil.value = boil + " °C";
+}
+
+</SCRIPT>
+<script type="text/javascript"></script><link rel='stylesheet' type='text/css' href='mendeleev.css' /></HEAD>
+
+<BASEFONT SIZE="4">
+
+<BODY BGCOLOR="#FFFFFF" LINK="#003366" VLINK="#003366" ALINK="#003366" TEXT="#000000"><script type='text/javascript' language='javascript' src='mendeleev.js?0=0&amp;0=0&amp;0=0'></script>
+
+<DIV ALIGN=CENTER>
+<FORM NAME="pertab">
+
+<TABLE BORDER="0" CELLSPACING="1">
+        
+<TR>
+<TD COLSPAN="2" BGCOLOR="#CCCC99" ALIGN=CENTER VALIGN=MIDDLE>
+<I>solid</I></TD>
+
+<TD COLSPAN="2" BGCOLOR="#99FFFF" ALIGN=CENTER><I>liquid</I></TD>
+
+<TD ALIGN=CENTER COLSPAN="10" BGCOLOR="#CCCCCC" WIDTH=320 HEIGHT=24>
+<FONT FACE="Arial,Helvetica"><B><A NAME="top">
+T H E&nbsp;&nbsp;&nbsp;P E R I O D I C&nbsp;&nbsp;&nbsp;T A B L E</div>
+</B></TD>
+
+<TD COLSPAN="2" BGCOLOR="#FFFF66" ALIGN=CENTER><I>gas</I></TD>
+
+<TD COLSPAN="2" BGCOLOR="#C0C0C0" ALIGN=CENTER><I>synth</I></TD>
+</TR>
+
+<TR BGCOLOR="#CCCCCC">
+<TD COLSPAN="19" ALIGN=LEFT VALIGN=MIDDLE HEIGHT=24><TT>
+&nbsp;Discoverer/Descoperitor/Entdecker:&nbsp;<INPUT TYPE="text" SIZE="43" NAME="disc">
+</TT></TD>
+</TR>
+
+<TR>
+	<TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Hydrogen','Hidrogen','Wasserstoff','1','1.0079','1','1s1','-259.14','-252.87',
+'Cavendish 1766','0.070','3');"><FONT SIZE=1>1</FONT><BR>
+H</div></TD>
+
+<TD COLSPAN="16" ALIGN="LEFT" BGCOLOR="#CCCCCC"><TT>
+&nbsp;&nbsp;&nbsp;
+<img src="../Images/0.Common/Flags/en.png" alt="EN" width="20" height="20" border="0" /><INPUT TYPE="text" NAME="elementEn" SIZE="8" STYLE="text-align: center;">
+<img src="../Images/0.Common/Flags/ro.png" alt="RO" width="20" height="20" border="0" /><INPUT TYPE="text" NAME="elementRo" SIZE="8" STYLE="text-align: center;">
+<img src="../Images/0.Common/Flags/de.png" alt="DE" width="20" height="20" border="0" /><INPUT TYPE="text" NAME="elementDe" SIZE="8" STYLE="text-align: center;">
+</TT></TD>
+
+	<TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Helium','Heliu','Helium','2','4.0026','2','1s2','-272C@26ATM','-268.6',
+'Janssen 1868','0.1785','5');"><FONT SIZE=1>2</FONT><BR>
+He</div></TD>
+</TR>
+
+<TR>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Lithium','Litiu','Lithium','3','6.94','2,1','2s1','180.54','1347',
+'Arfvedson 1817','0.534','5');"><FONT SIZE=1>3</FONT><BR>
+Li</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Beryllium','Beriliu','Beryllium','4','9.01218','2,2','2s2','1278','2970',
+'Vauquelin 1798','1.848','6');"><FONT SIZE=1>4</FONT><BR>
+Be</div></TD>
+
+<TD COLSPAN="10" background='SolidLiquidGas.png' STYLE="background-repeat:no-repeat;background-size: 100% 100%;"><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" SIZE="5" NAME="melt" STYLE="text-align: center;" readonly>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" SIZE="5" NAME="boil" STYLE="text-align: center;" readonly>
+</TT></TD>
+    
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Boron','Bor','Bor','5','10.81','2,3','2p1','2300','2550',
+'Gay-Lussac & Thenard; Davy 1808','2.87','6');"><FONT SIZE=1>5</FONT><BR>
+B</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Carbon','Carbon','Kohlenstoff','6','12.011','2,4','2p2','3500','4827',
+'(Prehistoric)','1.8-3.5','7');"><FONT SIZE=1>6</FONT><BR>
+C</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Nitrogen','Azot','Stickstoff','7','14.0067','2,5','2p3','-209.9','-195.8',
+'Rutherford 1772','0.808','8');"><FONT SIZE=1>7</FONT><BR>
+N</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Oxygen','Oxigen','Sauerstoff','8','15.9994','2,6','2p4','-218.4','-183.0',
+'Preistley 1774','1.14','8');"><FONT SIZE=1>8</FONT><BR>
+O</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Flourine','Flour','Flour','9','18.998403','2,7','2p5','-219.62','-188.14',
+'Moissan 1886','1.108','6');"><FONT SIZE=1>9</FONT><BR>
+F</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Neon','Neon','Neon','10','20.17','2,8','2p6','-248.6','-246.1',
+'Ramsay & Travers 1898','0.89990','8');"><FONT SIZE=1>10</FONT><BR>
+Ne</div></TD>
+</TR>
+        
+<TR>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Sodium','Sodiu','Natrium','11','22.98977','2,8,1','3s1','97.8','882.9',
+'Davy 1807','0.971','7');"><FONT SIZE=1>11</FONT><BR>
+Na</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Magnesium','Magneziu','Magnesium','12','24.305','2,8,2','3s2','638.8','1090',
+'Black 1775','1.738','8');"><FONT SIZE=1>12</FONT><BR>
+Mg</div></TD>
+	
+<TD COLSPAN="10"><TT>
+</TT></TD>
+
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Aluminium','Aluminiu','Aluminium','13','26.98154','2,8,3','3p1','660.37','2467',
+'Wohler 1827','2.6989','8');"><FONT SIZE=1>13</FONT><BR>
+Al</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Silicon','Siliciu','Silicium','14','28.0855','2,8,4','3p2','1410','2355',
+'Berzelius 1824','2.33','8');"><FONT SIZE=1>14</FONT><BR>
+Si</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Phosphorous','Fosfor','Phosphor','15','30.97376','2,8,5','3p3','44.1','280',
+'Brand 1669','1.82','7');"><FONT SIZE=1>15</FONT><BR>
+P</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Sulfur','Sulf','Schwefel','16','32.06','2,8,6','3p4','112.8','444.6',
+'(Prehistoric)','2.07','10');"><FONT SIZE=1>16</FONT><BR>
+S</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Chlorine','Clor','Chlor','17','35.453','2,8,7','3p5','-100.98','-34.6',
+'Scheele 1774','1.56','11');"><FONT SIZE=1>17</FONT><BR>
+Cl</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Argon','Argon','Argon','18','39.948','2,8,8','3p6','-189.3','-186',
+'Rayleigh & Ramsay 1894','1.7837','8');"><FONT SIZE=1>18</FONT><BR>
+Ar</div></TD>
+</TR>
+
+<TR>     	
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Potassium','Potasiu','Kalium','19','39.0983','2,8,8,1','4s1','63.65','774',
+'Davy 1807','0.862','10');"><FONT SIZE=1>19</FONT><BR>
+K</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Calcium','Calciu','Calcium','20','40.08','2,8,8,2','4s2','839','1484.4',
+'Davy 1808','1.55','14');"><FONT SIZE=1>20</FONT><BR>
+Ca</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Scandium','Scandiu','Scandium','21','44.9559','2,8,9,2','3d1','1539','2832',
+'Nilson 1879','2.989','15');"><FONT SIZE=1>21</FONT><BR>
+Sc</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Titanium','Titan','Titan','22','47.90','2,8,10,2','3d2','1660','3287',
+'Gregor 1791','4.55','9');"><FONT SIZE=1>22</FONT><BR>
+Ti</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Vanadium','Vanadiu','Vanadium','23','50.9415','2,8,11,2','3d3','1890','3380',
+'del Rio 1901','6.11','9');"><FONT SIZE=1>23</FONT><BR>
+V</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Chromium','Crom','Chrom','24','51.996','2,8,13,1','3d5','1857','2672',
+'Vauquelin 1797','7.18-7.20','9');"><FONT SIZE=1>24</FONT><BR>
+Cr</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Manganese','Mangan','Mangan','25','54.9380','2,8,13,2','3d5','1245','1962',
+'Gahn, Scheele & Bergman 1774','7.21-7.44','11');"><FONT SIZE=1>25</FONT><BR>
+Mn</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Iron','Fier','Eisen','26','55.847','2,8,14,2','3d6','1535','2750',
+'(Prehistoric)','7.894','10');"><FONT SIZE=1>26</FONT><BR>
+Fe</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Cobalt','Cobalt','Cobalt','27','58.9332','2,8,15,2','3d7','1495','2870',
+'Brandt c.1735','8.9','14');"><FONT SIZE=1>27</FONT><BR>
+Co</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Nickel','Nichel','Nickel','28','58.71','2,8,16,2','3d8','1453','2732',
+'Cronstedt 1751','8.902','11');"><FONT SIZE=1>28</FONT><BR>
+Ni</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Copper','Cupru','Kupfer','29','63.546','2,8,18,1','3d10','1083','2567',
+'(Prehistoric)','8.96','11');"><FONT SIZE=1>29</FONT><BR>
+Cu</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Zinc','Zinc','Zink','30','65.38','2,8,18,2','3d10','419.58','907',
+'(Prehistoric)','7.113','15');"><FONT SIZE=1>30</FONT><BR>
+Zn</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Gallium','Galiu','Gallium','31','69.735','2,8,18,3','4p1','29.78','2403',
+'Boisbaudran 1875','5.904','14');"><FONT SIZE=1>31</FONT><BR>
+Ga</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Germanium','Germaniu','Germanium','32','72.59','2,8,18,4','4p2','937.4','2830',
+'Winkler 1886','5.323','17');"><FONT SIZE=1>32</FONT><BR>
+Ge</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Arsenic','Arsenic','Arsen','33','74.9216','2,8,18,5','4p3','817,'614',
+'Albertus Magnus 1250?','5.73','14');"><FONT SIZE=1>33</FONT><BR>
+As</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Selenium','Seleniu','Selen','34','78.96','2,8,18,6','4p4','217','684.9',
+'Berzelius 1817','4.79 gray','20');"><FONT SIZE=1>34</FONT><BR>
+Se</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#99FFFF">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Bromine','Brom','Brom','35','79.904','2,8,18,7','4p5','-7.2','58.78',
+'Balard 1826','3.12','19');"><FONT SIZE=1>35</FONT><BR>
+Br</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66">
+<IMG SRC="../../images/clear.gif" WIDTH=1 HEIGHT=1 HSPACE=15><BR>
+<div style="cursor: default" onMouseOver="fillitin('Krypton','Kripton','Krypton','36','83.80','2,8,18,8','4p6','-157.2','-153.4',
+'Ramsay & Travers 1898','3.733','23');"><FONT SIZE=1>36</FONT><BR>
+Kr</div></TD>
+</TR>
+        
+<TR>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Rubidium','Rubidiu','Rubidium','37','85.467','2,8,18,8,1','5s1','38.89','688',
+'Bunsen & Kirchoff 1861','1.532','20');"><FONT SIZE=1>37</FONT><BR>
+Rb</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Strontium','Strontiu','Strontium','38','87.62','2,8,18,8,2','5s2','769','1384',
+'Davy 1808','2.54','18');"><FONT SIZE=1>38</FONT><BR>
+Sr</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Yttrium','Ytriu','Yttrium','39','88.9059','2,8,18,9,2','4d1','1523','3337',
+'Gadolin 1794','4.457','21');"><FONT SIZE=1>39</FONT><BR>
+Y</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Zirconium','Zirconiu','Zirconium','40','91.22','2,8,18,10,2','4d2','1852','4377',
+'Klaproth 1789','6.506','20');"><FONT SIZE=1>40</FONT><BR>
+Zr</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Niobium','Niobiu','Niobium','41','92.9064','2,8,18,13,1','4d4','2468','4927',
+'Hatchett 1801','8.57','24');"><FONT SIZE=1>41</FONT><BR>
+Nb</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Molybdenum','Molibden','Molybdän','42','95.94','2,8,18,13,1','4d5','2617','4612',
+'Scheele 1778','10.22','20');"><FONT SIZE=1>42</FONT><BR>
+Mo</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Technetium','Technetiu','Technetium','43','98.9062','2,8,18,14,1','4d6','2200','4877',
+'Perrier & Segre 1937','11.50','23');"><FONT SIZE=1>43</FONT><BR>
+Tc</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Ruthenium','Ruteniu','Ruthenium','44','101.07','2,8,18,15,1','4d7','2250','3900',
+'Klaus 1844','12.44','16');"><FONT SIZE=1>44</FONT><BR>
+Ru</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Rhodium','Rhodiu','Rhodium','45','102.9055','2,8,18,16,1','4d8','196','3727',
+'Wollaston 1803','12.41','20');"><FONT SIZE=1>45</FONT><BR>
+Rh</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Palladium','Paladiu','Palladium','46','106.4','2,8,18,18','4d10','1552','2927',
+'Wollaston 1803','12.02','21');"><FONT SIZE=1>46</FONT><BR>
+Pd</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Silver','Argint','Silber','47','107.868','2,8,18,18,1','4d10','961.93','2212',
+'(Prehistoric)','10.5','27');"><FONT SIZE=1>47</FONT><BR>
+Ag</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Cadmium','Cadmiu','Cadmium','48','112.41','2,8,18,18,2','4d10','320.9','765',
+'Stromeyer 1817','8.65','22');"><FONT SIZE=1>48</FONT><BR>
+Cd</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Indium','Indiu','Indium','49','114.82','2,8,18,18,3','5p1','156.61','2000',
+'Riech & Richter 1863','7.31','34');"><FONT SIZE=1>49</FONT><BR>
+In</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Tin','Staniu','Zinn','50','118.69','2,8,18,18,4','5p2','231.9','2270',
+'(Prehistoric)','7.31 white','28');"><FONT SIZE=1>50</FONT><BR>
+Sn</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Antimony','Antimoniu','Antimon','51','121.75','2,8,18,18,5','5p3','630','1750',
+'(Early historic)','6.61','29');"><FONT SIZE=1>51</FONT><BR>
+Sb</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Tellurium','Telur','Tellur','52','127.60','2,8,18,18,6','5p4','449.5','989.8',
+'von Reichenstein 1782','6.24','29');"><FONT SIZE=1>52</FONT><BR>
+Te</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Iodine','Iod','Iod','53','126.9045','2,8,18,18,7','5p5','113.7','184.4',
+'Cortois 1811','4.93','24');"><FONT SIZE=1>53</FONT><BR>
+I</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Xenon','Xenon','Xenon','54','131.30','2,8,18,18,8','5p6','-111.9','-108.1',
+'Ramsay & Travers 1898','3.52','31');"><FONT SIZE=1>54</FONT><BR>
+Xe</div></TD>
+</TR>
+
+<TR>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Caesium','Cesiu','Caesium','55','132.9054','2,8,18,18,8,1','6s1','28.5','678.4',
+'Bunsen & Kirchoff 1863','1.873','22');"><FONT SIZE=1>55</FONT><BR>
+Cs</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Barium','Bariu','Barium','56','137.33','2,8,18,18,8,2','6s2','725','1140',
+'Davy 1808','3.5','25');"><FONT SIZE=1>56</FONT><BR>
+Ba</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Lanthanum','Lantan','Lanthan','57','138.9055','2,8,18,18,9,2','5d1','920','3469',
+'Mosander 1839','6.166','19');"><FONT SIZE=1>57</FONT><BR>
+La</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Hafnium','Hafniu','Hafnium','72','178.49','2,8,18,32,10,2','5d2','2150','5400',
+'Coster & von Hevesy 1923','13.31','17');"><FONT SIZE=1>72</FONT><BR>
+Hf</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Tantalum','Tantal','Tantal','73','180.947','2,8,18,32,11,2','5d3','2996','5425',
+'Ekeberg 1801','16.654','19');"><FONT SIZE=1>73</FONT><BR>
+Ta</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Tungsten','Wolfram','Wolfram','74','183.85','2,8,18,32,12,2','5d4','3410','5660',
+'J. & F. d\'Elhuyar 1783','19.3','22' );"><FONT SIZE=1>74</FONT><BR>
+W</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Rhenium','Reniu','Rhenium','75','186.207','2,8,18,32,13,2','5d5','3180','5627',
+'Noddack, Berg & Tacke 1925','21.02','21');"><FONT SIZE=1>75</FONT><BR>
+Re</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Osmium','Osmiu','Osmium','76','190.2','2,8,18,32,14,2','5d6','3045','5027',
+'Tennant 1803','22.57','19');"><FONT SIZE=1>76</FONT><BR>
+Os</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Iridium','Iridiu','Iridium','77','192.22','2,8,18,32,15,2','5d7','2410','4527',
+'Tennant 1803','22.42','25');"><FONT SIZE=1>77</FONT><BR>
+Ir</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Platinum','Platina','Platin','78','195.09','2,8,18,32,17,1','5d9','1772','3827',
+'Ulloa 1735','21.45','32');"><FONT SIZE=1>78</FONT><BR>
+Pt</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Gold','Aur','Gold','79','196.9665','2,8,18,32,18,1','5d10','1064.43','2807',
+'(Prehistoric)','19.32','21');"><FONT SIZE=1>79</FONT><BR>
+Au</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#99FFFF"><div style="cursor: default" onMouseOver="fillitin('Mercury','Mercur','Quecksilber','80','200.59','2,8,18,32,18,2','5d10','-38.87','356.58',
+'(Prehistoric)','13.546','26');"><FONT SIZE=1>80</FONT><BR>
+Hg</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Thallium','Taliu','Thallium','81','204.37','2,8,18,32,18,3','6p1','303.5','1460',
+'Crookes 1861','11.85','28');"><FONT SIZE=1>81</FONT><BR>
+Tl</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Lead','Plumb','Blei','82','207.2','2,8,18,32,18,4','6p2','327.5','1740',
+'(Prehistoric)','11.35','29');"><FONT SIZE=1>82</FONT><BR>
+Pb</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Bismuth','Bismut','Bismut','83','208.9804','2,8,18,32,18,5','6p3','271.3','1560',
+'Geoffroy 1753','9.747','19');"><FONT SIZE=1>83</FONT><BR>
+Bi</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Polonium','Poloniu','Polonium','84','(209)','2,8,18,32,18,6','6p4','254','962',
+'Curie 1898','9.32','34');"><FONT SIZE=1>84</FONT><BR>
+Po</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Astatine','Astatin','Astat','85','(210)','2,8,18,32,18,7','6p5','302','337',
+'Corson et al. 1940','---','21');"><FONT SIZE=1>85</FONT><BR>
+At</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#FFFF66"><div style="cursor: default" onMouseOver="fillitin('Radon','Radon','Radon','86','(222)','2,8,18,32,18,8','6p6','-71','-61.8',
+'Dorn 1900','4.4','20');"><FONT SIZE=1>86</FONT><BR>
+Rn</div></TD>        
+</TR>
+        
+<TR>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Francium','Franciu','Francium','87','(223)','2,8,18,32,18,8,1','7s1','27','677',
+'Perey 1938','---','21');"><FONT SIZE=1>87</FONT><BR>
+Fr</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Radium','Radiu','Radium','88','226.0254','2,8,18,32,18,8,2','7s2','700','1737',
+'P. & M. Curie 1898','5.0?','15');"><FONT SIZE=1>88</FONT><BR>
+Ra</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Actinium','Actiniu','Actinium','89','(227)','2,8,18,32,18,9,2','6d1','1050','3200',
+'Debierne 1899','10.07','11');"><FONT SIZE=1>89</FONT><BR>
+Ac</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Rutherfordium','Rutherfordiu','Rutherfordium','104','(261)','2,8,18,32,32,10,2','6d2','N/A','N/A',
+'Lawrence Berkeley Lab-USA / Dubna Lab-Russia 1964','---','---');">
+<FONT SIZE=1>104</FONT><BR>
+Rh</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Dubnium','Dubniu','Dubnium','105','(262)','2,8,18,32,32,11,2','6d3','N/A','N/A',
+'Lawrence Berkeley Lab-USA / Dubna Lab-Russia 1967','---','---');">
+<FONT SIZE=1>105</FONT><BR>
+Db</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Seaborgium','Seaborgiu','Seaborgium','106','(263)','2,8,18,32,32,12,2','6d4','N/A','N/A',
+'Lawrence Berkeley Lab-USA / Dubna Lab-Russia 1974','---','---');">
+<FONT SIZE=1>106</FONT><BR>
+Sg</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Bohrium','Bohriu','Bohrium','107','(262)','2,8,18,32,32,13,2','6d5','N/A','N/A',
+'Armbruster, Münzenber et al. 1981','---','---');">
+<FONT SIZE=1>107</FONT><BR>
+Bh</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Hassium','Hassiu','Hassium','108','(265)','---','---','N/A','N/A',
+'Armbruster, Munzenber et al. 1984','---','---');">
+<FONT SIZE=1>108</FONT><BR>
+Hs</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Meitnerium','Meitneriu','Meitnerium','109','(266)','---','---','N/A','N/A',
+'Armbruster, Munzenber et al. 1982','---','---');">
+<FONT SIZE=1>109</FONT><BR>
+Mt</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Darmstadtium','Darmstadtiu','Darmstadtium','110','(269)','---','---','N/A','N/A',
+'Hofmann, Ninov et al. GSI-Germany 1994','---','---');">
+<FONT SIZE=1>110</FONT><BR>
+Ds</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Roentgenium','Roentgeniu','Roentgenium','111','(272)','---','---','N/A','N/A',
+'Hofmann, Ninov et al. GSI-Germany 1994','---','---');">
+<FONT SIZE=1>111</FONT><BR>
+Rg</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Copernicium','Coperniciu','Copernicium','112','(277)','---','---','N/A','N/A',
+'Hofmann, Ninov et al. GSI-Germany 1996','---','---');">
+<FONT SIZE=1>112</FONT><BR>
+Cn</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Ununtrium','Ununtrium','Ununtrium','113','---','---','---','N/A','N/A',
+'(not discovered yet)','---','---');"><FONT SIZE=1>113</FONT><BR>
+Uut</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Flerovium','Fleroviu','Flerovium','114','(289)','---','---','N/A','N/A',
+'Institute for Nuclear Research & Lawrence Livermore National Laboratory 1999','---','---');"><FONT SIZE=1>114</FONT><BR>
+Fl</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Ununpentium','Ununpentium','Ununpentium','115','---','---','---','N/A','N/A',
+'(not discovered yet)','---','---');"><FONT SIZE=1>115</FONT><BR>
+Uup</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Livermorium','Livermoriu','Livermorium','116','(293)','---','---','N/A','N/A',
+'Institute for Nuclear Research & Lawrence Livermore National Laboratory 2000','---','---');"><FONT SIZE=1>116</FONT><BR>
+Lv</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Ununseptium','Ununseptium','Ununseptium','117','---','---','---','N/A','N/A',
+'(not discovered yet)','---','---');"><FONT SIZE=1>117</FONT><BR>
+Uus</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Ununoctium','Ununoctium','Ununoctium','118','---','---','---','N/A','N/A',
+'(not discovered yet)','---','---');"><FONT SIZE=1>118</FONT><BR>
+Uuo</div></TD>
+    <TD COLSPAN="4"></TD>
+</TR>
+
+<TR><TD></TD></TR>
+
+<TR>
+<TD COLSPAN="3" ALIGN=RIGHT VALIGN=TOP><FONT SIZE="1">
+lanthanons</FONT></TD>
+
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Cerium','Ceriu','Cer','58','140.12','2,8,18,20,8,2','4f2','795','3257',
+'Berzelius & Hisinger; Klaproth 1803','6.771','19');">
+<FONT SIZE=1>58</FONT><BR>
+Ce</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Praseodymium','Praseodim','Praseodym','59','140.9077','2,8,18,21,8,2','4f3','935','3127',
+'von Weisbach 1885','6.772','18');"><FONT SIZE=1>59</FONT><BR>
+Pr</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Neodymium','Neodim','Neodym','60','144.24','2,8,18,22,8,2','4f4','1010','3127',
+'von Weisbach 1885','6.80&7.004','16');"><FONT SIZE=1>60</FONT><BR>
+Nd</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Promethium','Promethiu','Promethium','61','(145)','2,8,18,23,8,2','4f5','N/A','N/A',
+'Marinsky et al. 1945','---','14');"><FONT SIZE=1>61</FONT><BR>
+Pm</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Samarium','Samariu','Samarium','62','150.4','2,8,18,24,8,2','4f6','1072','1900',
+'Boisbaudran 1879','7.536','17');"><FONT SIZE=1>62</FONT><BR>
+Sm</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Europium','Europiu','Europium','63','151.96','2,8,18,25,8,2','4f7','822','1597',
+'Demarcay 1896','5.282','21');"><FONT SIZE=1>53</FONT><BR>
+Eu</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Gadolinium','Gadoliniu','Gadolinium','64','157.25','2,8,18,25,9,2','4f7','1311','3233',
+'Marignac 1880','7.898','17');"><FONT SIZE=1>64</FONT><BR>
+Gd</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Terbium','Terbiu','Terbium','65','158.9254','2,8,18,27,8,2','4f9','1360','3041',
+'Mosander 1843','8.234','24');"><FONT SIZE=1>65</FONT><BR>
+Tb</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Dysprosium','Disprosiu','Dysprosium','66','162.50','2,8,18,28,8,2','4f10','1412','2562',
+'Boisbaudran 1886','8.540','21');"><FONT SIZE=1>66</FONT><BR>
+Dy</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Holmium','Holmiu','Holmium','67','164.9304','2,8,18,29,8,2','4f11','1470','2720',
+'Delafontaine 1878','8.781','29');"><FONT SIZE=1>67</FONT><BR>
+Ho</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Erbium','Erbiu','Erbium','68','167.26','2,8,18,30,8,2','4f12','1522','2510',
+'Mosander 1843','9.045','16');"><FONT SIZE=1>68</FONT><BR>
+Er</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Thulium','Tuliu','Thulium','69','168.9342','2,8,18,31,8,2','4f13','1545','1727',
+'Cleve 1879','9.314','18');"><FONT SIZE=1>69</FONT><BR>
+Tm</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Ytterbium','Yterbiu','Ytterbium','70','173.04','2,8,18,32,8,2','4f14','824','1466',
+'Marignac 1878','6.972','16');"><FONT SIZE=1>70</FONT><BR>
+Yb</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Lutetium','Lutetiu','Lutetium','71','174.96','2,8,18,32,9,2','4f14','1656','3315',
+'Urbain 1907','9.835','22');"><FONT SIZE=1>71</FONT><BR>
+Lu</div></TD>	
+	<TD WIDTH=31 HEIGHT=24 ALIGN=CENTER >&nbsp;</TD>        
+</TR>
+        
+<TR>
+<TD COLSPAN="3" ALIGN=RIGHT VALIGN=TOP><FONT SIZE="1">
+actinons</FONT></TD><BR>
+
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Thorium','Thoriu','Thorium','90','232.0381','2,8,18,32,18,10,2','6d2','1750','4790',
+'Berzelius 1828','11.72','12');"><FONT SIZE=1>90</FONT><BR>
+Th</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Proactinium','Proactiniu','Proactinium','91','231.0359','2,8,18,32,20,9,2','5f2','1600','N/A',
+'Hahn & Meitner 1917','15.37','14');"><FONT SIZE=1>91</FONT><BR>
+Pa</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#CCCC99"><div style="cursor: default" onMouseOver="fillitin('Uranium','Uraniu','Uran','92','238.029','2,8,18,32,21,9,2','5f3','1132','3818',
+'Peligot 1841','-18.95','15');"><FONT SIZE=1>92</FONT><BR>
+U</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Neptunium','Neptuniu','Neptunium','93','237.0482','2,8,18,32,23,8,2','5f4','640','3902',
+'McMillan & Abelson 1940','20.25','15');"><FONT SIZE=1>93</FONT><BR>
+Np</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Plutonium','Plutoniu','Plutonium','94','(244)','2,8,18,32,24,8,2','5f6','639.5±2','3235±19',
+'Seaborg et al. 1940','19.84','16');"><FONT SIZE=1>94</FONT><BR>
+Pu</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Americium','Americiu','Americium','95','(243)','2,8,18,32,25,8,2','5f7','994','2607',
+'Seaborg et al. 1944','13.67','13');"><FONT SIZE=1>95</FONT><BR>
+Am</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Curium','Curiu','Curium','96','(247)','2,8,18,32,25,9,2','5f7','1340','N/A',
+'Seaborg et al. 1944','13.51','13');"><FONT SIZE=1>96</FONT><BR>
+Cm</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Berkelium','Berkeliu','Berkelium','97','(247)','2,8,18,32,26,9,2','5f8','N/A','N/A',
+'Seaborg et al. 1949','14.00','8');"><FONT SIZE=1>97</FONT><BR>
+Bk</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Californium','Californiu','Californium','98','(251)','2,8,18,32,28,8,2','5f9','N/A','N/A',
+'Seaborg et al. 1950','---','12');"><FONT SIZE=1>98</FONT><BR>
+Cf</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Einsteinium','Einsteiniu','Einsteinium','99','(254)','2,8,18,32,29,8,2','5f11','N/A','N/A',
+'Ghiorso et al. 1952','---','12');"><FONT SIZE=1>99</FONT><BR>
+Es</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Fermium','Fermiu','Fermium','100','(257)','2,8,18,32,30,8,2','5f12','N/A','N/A',
+'Ghiorso et al. 1953','---','10');"><FONT SIZE=1>100</FONT><BR>
+Fm</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Mendelevium','Mendeleviu','Mendelevium','101','(258)','2,8,18,32,31,8,2','5f13','N/A','N/A',
+'Ghiorso et al. 1955','---','3');"><FONT SIZE=1>101</FONT><BR>
+Md</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Nobelium','Nobeliu','Nobelium','102','(259)','2,8,18,32,32,8,2','5f14','N/A','N/A',
+'Ghiorso et al. 1957','---','7');"><FONT SIZE=1>102</FONT><BR>
+No</div></TD>
+    <TD WIDTH=31 HEIGHT=24 ALIGN=CENTER BGCOLOR="#C0C0C0"><div style="cursor: default" onMouseOver="fillitin('Lawrencium','Lawrenciu','Lawrencium','103','(260)','2,8,18,32,32,9,2','5f14','N/A','N/A',
+'Ghiorso et al. 1961','---','20');"><FONT SIZE=1>103</FONT><BR>
+Lr</div></TD>
+	<TD WIDTH=31 HEIGHT=24 ALIGN=CENTER >&nbsp;</TD>        
+</TR>
+
+</TABLE>
+
+
+</DIV>
+
+<div> <i>Based on a design by DreamWave</i> </div>
+
+</FORM>
+</BODY>
+</HTML>

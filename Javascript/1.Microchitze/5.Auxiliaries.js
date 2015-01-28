@@ -1,0 +1,147 @@
+/*----------------------------------------------------------------------------------*\
+| This file contains the operational functions called from the page.                 |
+| The following functions are available:                                             |
+|       removeUnusedLinks()...... removes unused question link buttons               |
+|       setInnerHTML(field,c).... adds contents c in html element fld                |
+|		colourQLink(id, colour).. changes the colour of question link id             |
+|       colourAnswerFieldBg(id).. colours the answer background in the results phase |
+|		cleanSpaces()............ removes starting and ending spaces from answers    |
+\*----------------------------------------------------------------------------------*/
+
+function removeUnusedLinks()
+{
+	var questionid;
+	var spaceid;
+	
+	for(var i=IndexList.length; i<10; i++)
+	{
+		questionid = "Question0" + i;
+		container = document.getElementById(questionid);
+		container.hidden = true;
+		
+		spaceid = "Space0" + i;
+		container = document.getElementById(spaceid);
+		container.hidden = true;
+	}
+	
+}
+
+//=================================================================
+//=================================================================
+function processKeyEvent(evt)
+{
+	evt = (evt) ? evt : window.event;
+	var cCode = (evt.which) ? evt.which : evt.keyCode;
+	if(cCode==13) // enter key pressed
+	{
+		proceedToNextUnanswered();
+		checkAndDisplayResultsButton();
+	}
+	else
+	{
+		if(0==AType[currqid])
+		{
+			return false;
+		}
+		if(1==AType[currqid])
+		{
+			return true;
+		}
+		if(2==AType[currqid])
+		{	//isNumber, - or . or :
+			if (cCode > 31 && (cCode != 45) && (cCode != 46) && (cCode != 58) && (cCode < 48 || cCode > 57)) 
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		}
+	}
+}
+
+//=================================================================
+//=================================================================
+function colourQLink(id, backgroundColour, borderProperties)
+{
+	var questionid;
+	if(10>id)
+	{ questionid = "Question0" + id; }
+	else
+	{ questionid = "Question"  + id; }
+	// change colour of the question link
+	container = document.getElementById(questionid);
+	container.setAttribute("style","display:inline-block; width:20; text-align:center;background-color:" + backgroundColour + ";border:" + borderProperties + ";");	
+}
+
+//=================================================================
+//=================================================================
+function colourAnswerFieldBg(id)
+{
+	var colour;
+	if(truthValues[id]==1)
+		colour = rightAnswerBgColour;
+	else
+		colour = wrongAnswerBgColour;
+		
+	container = document.getElementById("AnswerField");
+	container.setAttribute("style","text-align:center; font-size:16px; background:"+colour+";");
+}
+
+
+//=================================================================
+//=================================================================
+function gotoPrevQuestion()
+{
+	var qid = currqid-1;
+	if(currqid == 0)	showQuestion(QList.length-1);
+	else				showQuestion(qid);
+	
+	checkAndDisplayResultsButton();
+}
+
+//=================================================================
+//=================================================================
+function gotoNextQuestion()
+{
+	var qid = currqid+1;
+	if(currqid == QList.length-1)	showQuestion(0);
+	else							showQuestion(qid);	
+	
+	checkAndDisplayResultsButton();
+}
+
+//=================================================================
+//=================================================================
+function checkAndDisplayResultsButton()
+{
+	var boolShowResultsButton = true;
+	
+	if(htmlResultsPhase)
+	{
+		boolShowResultsButton = false;
+	}
+	else
+	{
+		for(var i=0; i<IndexList.length; i++)
+		{ 
+			if(""===AList[i])
+			{	boolShowResultsButton = false;
+				break;
+			}
+		}
+	}
+	
+	// if all questions have answers, show results button
+	if(true==boolShowResultsButton)
+	{
+		container = document.getElementById("divResults");
+		container.style.visibility = "visible";	
+	}
+	else
+	{
+		container = document.getElementById("divResults");
+		container.style.visibility = "hidden";		
+	}
+}
