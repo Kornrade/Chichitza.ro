@@ -1,41 +1,43 @@
 /*---------------------------------------------------------------------------------------------------*\
 | This file contains the general javascript functions related to translations.                        |     
 | The following functions are available:                                                              |
-| 		retranslateDECommon()............. retranslates the common texts in the selected language     |
-| 		retranslateDEIndexIntro()......... retranslates Index texts in the selected language          |
-| 		retranslateDEMicrochitzeIntro().... retranslates Microchitze intro in the selected language   |
-| 		retranslateDEMacrochitzeIntro()... retranslates Macrochitze intro in the selected language    |
-| 		retranslateDEInteractiveIntro()... retranslates Interactive intro in the selected language    |
-| 		retranslateDEChessIntro()......... retranslates Chess intro in the selected language          |
-| 		retranslateDEDictionaryIntro().... retranslates Dictionary intro in the selected language     |
-| 		retranslateDEMicrochitze()......... retranslates Microchitze texts in the selected language   |
-| 		retranslateDEMacrochitze()........ retranslates Macrochitze texts in the selected language    |
-| 		retranslateDEInteractive()........ retranslates Interactive texts in the selected language    |
-| 		retranslateDEChess().............. retranslates Chess texts in the selected language          |
-| 		retranslateDEDictionary()......... retranslates Dictionary texts in the selected language     |
+|       retranslateDECommon()............. retranslates the common texts in the selected language     |
+|       retranslateDEIndexIntro()......... retranslates Index texts in the selected language          |
+|       retranslateDEMicrochitzeIntro().... retranslates Microchitze intro in the selected language   |
+|       retranslateDEMacrochitzeIntro()... retranslates Macrochitze intro in the selected language    |
+|       retranslateDEInteractiveIntro()... retranslates Interactive intro in the selected language    |
+|       retranslateDEChessIntro()......... retranslates Chess intro in the selected language          |
+|       retranslateDEDictionaryIntro().... retranslates Dictionary intro in the selected language     |
+|       retranslateDEMicrochitze()......... retranslates Microchitze texts in the selected language   |
+|       retranslateDEMacrochitze()........ retranslates Macrochitze texts in the selected language    |
+|       retranslateDEInteractive()........ retranslates Interactive texts in the selected language    |
+|       retranslateDEChess().............. retranslates Chess texts in the selected language          |
+|       retranslateDEDictionary()......... retranslates Dictionary texts in the selected language     |
 \*---------------------------------------------------------------------------------------------------*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
 	HTML CODES FOR GERMAN: 
 				Display	Friendly	Numerical	Description
-				Ä 		&Auml;		&#196;		Capital A-umlaut
-				ä 		&auml;		&#228;		Lowercase a-umlaut
-				É		&Eacute;	&#201;		Capital E-acute
-				é		&eacute;	&#233;		Lowercase E-acute
-				Ö 		&Ouml;		&#214;		Capital O-umlaut
-				ö 		&ouml;		&#246;		Lowercase o-umlaut
-				Ü 		&Uuml;		&#220;		Capital U-umlaut
-				ü 		&uuml;		&#252;		Lowercase u-umlaut
-				ß		&szlig;		&#223;		SZ ligature
-				«		&laquo;		&#171;		Left angle quotes
-				»		&raquo;		&#187;		Right angle quotes
-				„		 			&#132;		Left lower quotes
-				“		 			&#147;		Left quotes
-				”		 			&#148;		Right quotes
-				°		 			&#176;		Degree sign (Grad)
-				€		&euro;		&#128;		Euro
-				£		&pound;		&#163;		Pound Sterling
+				        &Auml;	    &#196;      Capital A-umlaut
+				        &auml;	    &#228;      Lowercase a-umlaut
+				        &Eacute;    &#201;      Capital E-acute
+				        &eacute;    &#233;      Lowercase E-acute
+				        &Ouml;	    &#214;      Capital O-umlaut
+				        &ouml;	    &#246;      Lowercase o-umlaut
+				        &Uuml;	    &#220;      Capital U-umlaut
+				        &uuml;	    &#252;      Lowercase u-umlaut
+				        &szlig;	    &#223;      SZ ligature
+				        &laquo;	    &#171;      Left angle quotes
+				        &raquo;	    &#187;      Right angle quotes
+				                    &#132;      Left lower quotes
+				                    &#147;      Left quotes
+				                    &#148;      Right quotes
+				                    &#176;      Degree sign (Grad)
+				        &euro;	    &#128;      Euro
+				        &pound;	    &#163;      Pound Sterling
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*jslint es5: true */
 
 function retranslateDECommon()
 {
@@ -56,33 +58,33 @@ function retranslateDECommon()
 +--------------------900----------------------*/
 
 // translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 	// Cell (0)
 	document.getElementById("banner").href = "index.html?lang=de";
 
 	// Cell (1)
 	document.getElementById("buttonMicrochitze").setAttribute("data", "Mikroknobeleien" );
-	document.getElementById("buttonMacrochitze").setAttribute("data", "Makroknobeleien"	);
-	document.getElementById("buttonInteractive").setAttribute("data", "Interaktive"		);
-	document.getElementById("buttonDictionary" ).setAttribute("data", "Wörterbuch" 		);
-	document.getElementById("buttonChess"      ).setAttribute("data", "Schachstudien" 	);
+	document.getElementById("buttonMacrochitze").setAttribute("data", "Makroknobeleien" );
+	document.getElementById("buttonInteractive").setAttribute("data", "Interaktive"     );
+	document.getElementById("buttonDictionary" ).setAttribute("data", "WÃ¶rterbuch"      );
+	document.getElementById("buttonChess"      ).setAttribute("data", "Schachstudien"   );
 	document.getElementById("imgMicrochitze"   ).alt = "Mikroknobeleien";
 	document.getElementById("imgMacrochitze"   ).alt = "Makroknobeleien";
 	document.getElementById("imgInteractive"   ).alt = "Interaktive";
-	document.getElementById("imgDictionary"    ).alt = "Wörterbuch";
+	document.getElementById("imgDictionary"    ).alt = "WÃ¶rterbuch";
 	document.getElementById("imgChess"         ).alt = "Schachstudien";
 	
 	// Cell (2)
-	document.getElementById("buttonAdmin"  ).href 	= "#";
-	document.getElementById("buttonContact").href 	= "JavaScript:newPopup(200,350,10,10,'Helpertools/contactDE.html');";
-	document.getElementById("buttonHome"   ).href 	= "index.html?lang=de";
+	document.getElementById("buttonAdmin"  ).href   = "#";
+	document.getElementById("buttonContact").href   = "JavaScript:newPopup(200,350,10,10,'Helpertools/contactDE.html');";
+	document.getElementById("buttonHome"   ).href   = "index.html?lang=de";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin");
 	document.getElementById("buttonContact").setAttribute("data","Kontakt");
 	document.getElementById("buttonHome"   ).setAttribute("data","Heimseite");
-	document.getElementById("imgAdmin"     ).alt 	= "Admin";
-	document.getElementById("imgContact"   ).alt 	= "Kontakt";
-	document.getElementById("imgHome"      ).alt 	= "Heimseite";
+	document.getElementById("imgAdmin"     ).alt    = "Admin";
+	document.getElementById("imgContact"   ).alt    = "Kontakt";
+	document.getElementById("imgHome"      ).alt    = "Heimseite";
 	
 	// Cells (3) is page-specific
 	
@@ -93,7 +95,7 @@ function retranslateDECommon()
 function retranslateDEIndexIntro()
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "...";
@@ -133,7 +135,7 @@ function retranslateDEIndexIntro()
 function retranslateDEMicrochitzeIntro() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MIKROKNOBELEIEN";
@@ -193,7 +195,7 @@ function retranslateDEMicrochitzeIntro()
 function retranslateDEMacrochitzeIntro() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "MAKROKNOBELEIEN";
@@ -207,7 +209,7 @@ function retranslateDEMacrochitzeIntro()
 function retranslateDEInteractiveIntro() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "INTERAKTIVE DENKAUFGABEN";
@@ -236,7 +238,7 @@ function retranslateDEInteractiveIntro()
 function retranslateDEChessIntro() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "SCHACH STUDIEN";
@@ -262,7 +264,7 @@ function retranslateDEChessIntro()
 function retranslateDEDictionaryIntro() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "W&#214;RTERBUCH";
@@ -277,7 +279,7 @@ function retranslateDEDictionaryIntro()
 function retranslateDEMicrochitze() 
 {	
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MIKROKNOBELEIEN";
@@ -304,7 +306,7 @@ function retranslateDEMicrochitze()
 function retranslateDEMacrochitze() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MAKROKNOBELEIEN";
@@ -316,7 +318,7 @@ function retranslateDEMacrochitze()
 function retranslateDEInteractive() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "INTERAKTIVE DENKAUFGABEN";
@@ -328,7 +330,7 @@ function retranslateDEInteractive()
 function retranslateDEChess() 
 {
 	// translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "SCHACH STUDIEN";
@@ -357,7 +359,7 @@ function retranslateDEChess()
 function retranslateDEDictionary() 
 {
 // translations to DE =========================	
-	if(lang=="de")
+	if(lang==="de")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "W&#214;RTERBUCH";
@@ -372,7 +374,7 @@ function retranslateDEDictionary()
 function retranslateDEUnderConstruction() 
 {
 	// translations to DE =========================
-	if(lang=="de")
+	if(lang==="de")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "SEITE  IM  AUFBAU";

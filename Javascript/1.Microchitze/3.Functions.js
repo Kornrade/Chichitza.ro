@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------*\
 | This file contains the operational functions called from the page.                       |     
 | The following functions are available:                                                   |
-| 	initQuiz()................... initializes the static and dynamic variables of the page |
+|   initQuiz()................... initializes the static and dynamic variables of the page |
 |   retranslateQuestions(qid).... retranslates questions, explanations and images          |
 |	showQuestion(qid)............ displays the question with specified id on page          |
 |	proceedToNextUnanswered().... finds the next unanswered question                       |
@@ -15,7 +15,7 @@ function initQuiz()
 	// the database indices of the selected questions
 	initIndexList(auxparam);
 	
-	if(0==IndexList.length)
+	if(0===IndexList.length)
 	{
 		window.open('UnderConstruction.html', '_self');
 		return;
@@ -49,7 +49,7 @@ function retranslateQuestions()
 {
 	
 	// add selected questions to QList
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 		for(var i=0; i<IndexList.length; i++)
 		{
@@ -72,7 +72,7 @@ function retranslateQuestions()
 		setInnerHTML("QuizTitle",QuizTitle[0]);
 	}
 	
-	if(lang=="en")
+	if(lang==="en")
 	{
 		for(var i=0; i<IndexList.length; i++)
 		{
@@ -95,7 +95,7 @@ function retranslateQuestions()
 		setInnerHTML("QuizTitle",QuizTitle[1]);
 	}
 
-	if(lang=="de")
+	if(lang==="de")
 	{
 		for(var i=0; i<IndexList.length; i++)
 		{
@@ -212,9 +212,9 @@ function showQuestion(qid)
 		var numericAns = "";
 		if(2==AType[qid])
 		{
-			if(lang=="ro")	{ numericAns = "Raspuns numeric"; }
-			if(lang=="en")	{ numericAns = "Numeric Answer"; }
-			if(lang=="de")	{ numericAns = "Numerische Antwort"; }
+			if(lang==="ro")	{ numericAns = "Raspuns numeric"; }
+			if(lang==="en")	{ numericAns = "Numeric Answer"; }
+			if(lang==="de")	{ numericAns = "Numerische Antwort"; }
 		}
 			// add correct answer in plaintext
 			setInnerHTML("CorrectAnswerField",numericAns);

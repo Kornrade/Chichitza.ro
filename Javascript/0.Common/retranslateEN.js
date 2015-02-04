@@ -1,19 +1,21 @@
 /*---------------------------------------------------------------------------------------------------*\
 | This file contains the general javascript functions related to translations.                        |     
 | The following functions are available:                                                              |
-| 		retranslateENCommon()............. retranslates the common texts in the selected language     |
-| 		retranslateENIndexIntro()......... retranslates Index texts in the selected language          |
-| 		retranslateENMicrochitzeIntro().... retranslates Microchitze intro in the selected language   |
-| 		retranslateENMacrochitzeIntro()... retranslates Macrochitze intro in the selected language    |
-| 		retranslateENInteractiveIntro()... retranslates Interactive intro in the selected language    |
-| 		retranslateENChessIntro()......... retranslates Chess intro in the selected language          |
-| 		retranslateENDictionaryIntro().... retranslates Dictionary intro in the selected language     |
-| 		retranslateENMicrochitze()......... retranslates Microchitze texts in the selected language   |
-| 		retranslateENMacrochitze()........ retranslates Macrochitze texts in the selected language    |
-| 		retranslateENInteractive()........ retranslates Interactive texts in the selected language    |
-| 		retranslateENChess().............. retranslates Chess texts in the selected language          |
-| 		retranslateENDictionary()......... retranslates Dictionary texts in the selected language     |
+|       retranslateENCommon()............. retranslates the common texts in the selected language     |
+|       retranslateENIndexIntro()......... retranslates Index texts in the selected language          |
+|       retranslateENMicrochitzeIntro().... retranslates Microchitze intro in the selected language   |
+|       retranslateENMacrochitzeIntro()... retranslates Macrochitze intro in the selected language    |
+|       retranslateENInteractiveIntro()... retranslates Interactive intro in the selected language    |
+|       retranslateENChessIntro()......... retranslates Chess intro in the selected language          |
+|       retranslateENDictionaryIntro().... retranslates Dictionary intro in the selected language     |
+|       retranslateENMicrochitze()......... retranslates Microchitze texts in the selected language   |
+|       retranslateENMacrochitze()........ retranslates Macrochitze texts in the selected language    |
+|       retranslateENInteractive()........ retranslates Interactive texts in the selected language    |
+|       retranslateENChess().............. retranslates Chess texts in the selected language          |
+|       retranslateENDictionary()......... retranslates Dictionary texts in the selected language     |
 \*---------------------------------------------------------------------------------------------------*/
+
+/*jslint es5: true */
 
 function retranslateENCommon()
 {
@@ -34,7 +36,7 @@ function retranslateENCommon()
 +--------------------900----------------------*/
 
 // translations to EN =========================
-	if(lang=="en")
+	if(lang==="en")
 	{
 	// Cell (0)
 	document.getElementById("banner").href = "index.html?lang=en";
@@ -52,15 +54,15 @@ function retranslateENCommon()
 	document.getElementById("imgChess"         ).alt = "Chess studies";
 
 	// Cell (2)
-	document.getElementById("buttonAdmin"  ).href 	= "#";
-	document.getElementById("buttonContact").href 	= "JavaScript:newPopup(200,350,10,10,'Helpertools/contactEN.html');";
-	document.getElementById("buttonHome"   ).href 	= "index.html?lang=en";
+	document.getElementById("buttonAdmin"  ).href = "#";
+	document.getElementById("buttonContact").href = "JavaScript:newPopup(200,350,10,10,'Helpertools/contactEN.html');";
+	document.getElementById("buttonHome"   ).href = "index.html?lang=en";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin"  );
 	document.getElementById("buttonContact").setAttribute("data","Contact");
 	document.getElementById("buttonHome"   ).setAttribute("data","Home"   );
-	document.getElementById("imgAdmin"     ).alt 	= "Admin";
-	document.getElementById("imgContact"   ).alt 	= "Contact";
-	document.getElementById("imgHome"      ).alt 	= "Home";
+	document.getElementById("imgAdmin"     ).alt = "Admin";
+	document.getElementById("imgContact"   ).alt = "Contact";
+	document.getElementById("imgHome"      ).alt = "Home";
 	
 	// Cells (3) is page-specific
 	
@@ -70,7 +72,7 @@ function retranslateENCommon()
 function retranslateENIndexIntro()
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "...";
@@ -110,7 +112,7 @@ function retranslateENIndexIntro()
 function retranslateENMicrochitzeIntro() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MICROTEASERS";
@@ -170,7 +172,7 @@ function retranslateENMicrochitzeIntro()
 function retranslateENMacrochitzeIntro() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "MACROTEASERS";
@@ -184,7 +186,7 @@ function retranslateENMacrochitzeIntro()
 function retranslateENInteractiveIntro() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "INTERACTIVE BRAINTEASERS";
@@ -212,7 +214,7 @@ function retranslateENInteractiveIntro()
 function retranslateENChessIntro() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "CHESS STUDIES";
@@ -238,7 +240,7 @@ function retranslateENChessIntro()
 function retranslateENDictionaryIntro() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "DICTIONARY";
@@ -253,7 +255,7 @@ function retranslateENDictionaryIntro()
 function retranslateENMicrochitze() 
 {		
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MICROTEASERS";
@@ -280,7 +282,7 @@ function retranslateENMicrochitze()
 function retranslateENMacrochitze() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MACROTEASERS";
@@ -292,7 +294,7 @@ function retranslateENMacrochitze()
 function retranslateENInteractive() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "INTERACTIVE BRAINTEASERS";
@@ -304,7 +306,7 @@ function retranslateENInteractive()
 function retranslateENChess() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "CHESS STUDIES";
@@ -333,7 +335,7 @@ function retranslateENChess()
 function retranslateENDictionary() 
 {
 	// translations to EN =========================	
-	if(lang=="en")
+	if(lang==="en")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "DICTIONARY";
@@ -348,7 +350,7 @@ function retranslateENDictionary()
 function retranslateENUnderConstruction() 
 {
 	// translations to EN =========================
-	if(lang=="en")
+	if(lang==="en")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "PAGE  UNDER  CONSTRUCTION";

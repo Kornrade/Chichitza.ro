@@ -1,37 +1,39 @@
 /*---------------------------------------------------------------------------------------------------*\
 | This file contains the general javascript functions related to translations.                        |     
 | The following functions are available:                                                              |
-| 		retranslateROCommon()............. retranslates the common texts in the selected language     |
-| 		retranslateROIndexIntro()......... retranslates Index texts in the selected language          |
-| 		retranslateROMicrochitzeIntro().... retranslates Microchitze intro in the selected language     |
-| 		retranslateROMacrochitzeIntro()... retranslates Macrochitze intro in the selected language    |
-| 		retranslateROInteractiveIntro()... retranslates Interactive intro in the selected language    |
-| 		retranslateROChessIntro()......... retranslates Chess intro in the selected language          |
-| 		retranslateRODictionaryIntro().... retranslates Dictionary intro in the selected language     |
-| 		retranslateROMicrochitze()......... retranslates Microchitze texts in the selected language     |
-| 		retranslateROMacrochitze()........ retranslates Macrochitze texts in the selected language    |
-| 		retranslateROInteractive()........ retranslates Interactive texts in the selected language    |
-| 		retranslateROChess().............. retranslates Chess texts in the selected language          |
-| 		retranslateRODictionary()......... retranslates Dictionary texts in the selected language     |
+|       retranslateROCommon()............. retranslates the common texts in the selected language     |
+|       retranslateROIndexIntro()......... retranslates Index texts in the selected language          |
+|       retranslateROMicrochitzeIntro().... retranslates Microchitze intro in the selected language   |
+|       retranslateROMacrochitzeIntro()... retranslates Macrochitze intro in the selected language    |
+|       retranslateROInteractiveIntro()... retranslates Interactive intro in the selected language    |
+|       retranslateROChessIntro()......... retranslates Chess intro in the selected language          |
+|       retranslateRODictionaryIntro().... retranslates Dictionary intro in the selected language     |
+|       retranslateROMicrochitze()......... retranslates Microchitze texts in the selected language   |
+|       retranslateROMacrochitze()........ retranslates Macrochitze texts in the selected language    |
+|       retranslateROInteractive()........ retranslates Interactive texts in the selected language    |
+|       retranslateROChess().............. retranslates Chess texts in the selected language          |
+|       retranslateRODictionary()......... retranslates Dictionary texts in the selected language     |
 \*---------------------------------------------------------------------------------------------------*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
 	HTML CODES FOR ROMANIAN: 
 				Display		Numerical	Hex		Description
-				A~ (MAR) 	&#258;		&#x102;	Capital A-breve
-				a~ (mar)	&#259;		&#x103;	Lowercase a-breve
-				A^ (GAT) 	&#194;		&#xC2;	Capital A-circumflex
-				a^ (gat)	&#226;		&#xE2;	Lowercase a-circumflex
-				I^ (URI)	&#206;		&#xCE;	Capital I-circumflex
-				i^ (uri)	&#238;		&#xEE;	Lowercase i-circumflex
-				Sh (STI) 	&#350;		&#x15E;	Capital S-cedilla
-				sh (sti) 	&#351;		&#x15F;	Lowercase s-cedilla
-				Tz (TIE) 				&#x21A;	Capital T-comma
-				tz (tie) 				&#x21B;	Lowercase t-comma
-				Tz (TIE)	&#354;		&#x162;	Capital T-cedilla
-				tz (tie) 	&#355;		&#x163;	Lowercase t-cedilla
+				A~ (MAR)    &#258;      &#x102; Capital A-breve
+				a~ (mar)    &#259;      &#x103; Lowercase a-breve
+				A^ (GAT)    &#194;      &#xC2;  Capital A-circumflex
+				a^ (gat)    &#226;      &#xE2;  Lowercase a-circumflex
+				I^ (URI)    &#206;      &#xCE;  Capital I-circumflex
+				i^ (uri)    &#238;      &#xEE;  Lowercase i-circumflex
+				Sh (STI)    &#350;      &#x15E; Capital S-cedilla
+				sh (sti)    &#351;      &#x15F; Lowercase s-cedilla
+				Tz (TIE)                &#x21A; Capital T-comma
+				tz (tie)                &#x21B; Lowercase t-comma
+				Tz (TIE)    &#354;      &#x162; Capital T-cedilla
+				tz (tie)    &#355;      &#x163; Lowercase t-cedilla
 
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*jslint es5: true */
 
 function retranslateROCommon()
 {
@@ -52,7 +54,7 @@ function retranslateROCommon()
 +--------------------900----------------------*/
 
 // translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 	// Cell (0)
 	document.getElementById("banner").href = "index.html?lang=ro";
@@ -71,15 +73,15 @@ function retranslateROCommon()
 	
 	
 	// Cell (2)
-	document.getElementById("buttonAdmin"  ).href 	= "#";
-	document.getElementById("buttonContact").href 	= "JavaScript:newPopup(200,350,10,10,'Helpertools/contactRO.html');";
-	document.getElementById("buttonHome"   ).href 	= "index.html?lang=ro";
+	document.getElementById("buttonAdmin"  ).href = "#";
+	document.getElementById("buttonContact").href = "JavaScript:newPopup(200,350,10,10,'Helpertools/contactRO.html');";
+	document.getElementById("buttonHome"   ).href = "index.html?lang=ro";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin"  );
 	document.getElementById("buttonContact").setAttribute("data","Contact");
 	document.getElementById("buttonHome"   ).setAttribute("data","Acasa"  );
-	document.getElementById("imgAdmin"     ).alt 	= "Admin";
-	document.getElementById("imgContact"   ).alt 	= "Contact";
-	document.getElementById("imgHome"      ).alt 	= "Acasa";
+	document.getElementById("imgAdmin"     ).alt = "Admin";
+	document.getElementById("imgContact"   ).alt = "Contact";
+	document.getElementById("imgHome"      ).alt = "Acasa";
 	
 	// Cell (3) is page-specific
 	
@@ -90,7 +92,7 @@ function retranslateROCommon()
 function retranslateROIndexIntro()
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "...";
@@ -129,7 +131,7 @@ function retranslateROIndexIntro()
 function retranslateROMicrochitzeIntro() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MICROCHITZE";
@@ -189,7 +191,7 @@ function retranslateROMicrochitzeIntro()
 function retranslateROMacrochitzeIntro() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "MACROCHITZE";
@@ -203,7 +205,7 @@ function retranslateROMacrochitzeIntro()
 function retranslateROInteractiveIntro() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "CHICHITZE INTERACTIVE";
@@ -231,7 +233,7 @@ function retranslateROInteractiveIntro()
 function retranslateROChessIntro() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "STUDII DE &#350;AH";
@@ -257,7 +259,7 @@ function retranslateROChessIntro()
 function retranslateRODictionaryIntro() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "DIC&#x21A;IONAR";
@@ -272,7 +274,7 @@ function retranslateRODictionaryIntro()
 function retranslateROMicrochitze() 
 {		
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "MICROCHITZE";
@@ -300,7 +302,7 @@ function retranslateROMicrochitze()
 function retranslateROMacrochitze() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 	// Cell (1)
 	document.getElementById("divTitle").innerHTML = "MACROCHITZE";
@@ -312,7 +314,7 @@ function retranslateROMacrochitze()
 function retranslateROInteractive() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "CHICHITZE INTERACTIVE";
@@ -325,7 +327,7 @@ function retranslateROInteractive()
 function retranslateROChess() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "STUDII DE &#350;AH";
@@ -354,7 +356,7 @@ function retranslateROChess()
 function retranslateRODictionary() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "DIC&#x21A;IONAR";
@@ -369,7 +371,7 @@ function retranslateRODictionary()
 function retranslateROUnderConstruction() 
 {
 	// translations to RO =========================
-	if(lang=="ro")
+	if(lang==="ro")
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "PAGIN&#x102;  &#xCE;N  LUCRU";

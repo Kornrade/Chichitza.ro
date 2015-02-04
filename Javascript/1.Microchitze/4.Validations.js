@@ -9,7 +9,7 @@ function computeScore()
 {
 	//var goods = 0;
 	//var bads  = 0;
-	var values = new Array();
+	var values = [];
 	var currvalue = 0; // 0 = invalid; 1 = valid
 	
 	for(var i=0; i<IndexList.length; i++)

@@ -53,9 +53,9 @@ function retranslate(selectedLanguage)
 function retranslateCommon()
 {
 	//retranslate common text	
-	if(lang=="ro") {retranslateROCommon();}
-	if(lang=="en") {retranslateENCommon();}
-	if(lang=="de") {retranslateDECommon();}
+	if(lang==="ro") {retranslateROCommon();}
+	if(lang==="en") {retranslateENCommon();}
+	if(lang==="de") {retranslateDECommon();}
 }
 
 function resetDivsToDefault()
@@ -153,9 +153,9 @@ function retranslateIndexIntro()
 	document.getElementById("divMainContentsRight52").innerHTML = "<a id='imgMainContentsRight52' href='#'><img src='Images/0.Common/Index/Dictionary.png' height='70' border='0' style='float: center;' onclick='setIntroAndRetranslate(5)'></img></a>";
 			
 	//retranslate specific text	of Index
-	if(lang=="ro") {retranslateROIndexIntro();}
-	if(lang=="en") {retranslateENIndexIntro();}
-	if(lang=="de") {retranslateDEIndexIntro();}
+	if(lang==="ro") {retranslateROIndexIntro();}
+	if(lang==="en") {retranslateENIndexIntro();}
+	if(lang==="de") {retranslateDEIndexIntro();}
 }
 
 function retranslateMicrochitzeIntro() 
@@ -295,9 +295,9 @@ function retranslateMicrochitzeIntro()
 	document.getElementById("aminimix5").href = "Microchitze.html?lang="+lang+"&aux=05";
 	
 	//retranslate specific intro text of Microchitze
-	if(lang=="ro") {retranslateROMicrochitzeIntro();}
-	if(lang=="en") {retranslateENMicrochitzeIntro();}
-	if(lang=="de") {retranslateDEMicrochitzeIntro();}
+	if(lang==="ro") {retranslateROMicrochitzeIntro();}
+	if(lang==="en") {retranslateENMicrochitzeIntro();}
+	if(lang==="de") {retranslateDEMicrochitzeIntro();}
 }
 
 function retranslateMacrochitzeIntro() 
@@ -306,9 +306,9 @@ function retranslateMacrochitzeIntro()
 	showImageOnHover("","");
 	
 	//retranslate specific intro text of Macrochitze
-	if(lang=="ro") {retranslateROMacrochitzeIntro();}
-	if(lang=="en") {retranslateENMacrochitzeIntro();}
-	if(lang=="de") {retranslateDEMacrochitzeIntro();}
+	if(lang==="ro") {retranslateROMacrochitzeIntro();}
+	if(lang==="en") {retranslateENMacrochitzeIntro();}
+	if(lang==="de") {retranslateDEMacrochitzeIntro();}
 	
 	window.open("UnderConstruction.html?lang="+lang,"_self");
 }
@@ -378,9 +378,9 @@ function retranslateInteractiveIntro()
 	document.getElementById("mensa"		).href = "Interactive.html?lang="+lang+"&aux=07";
 	
 	//retranslate specific intro text of Interactive
-	if(lang=="ro") {retranslateROInteractiveIntro();}
-	if(lang=="en") {retranslateENInteractiveIntro();}
-	if(lang=="de") {retranslateDEInteractiveIntro();}
+	if(lang==="ro") {retranslateROInteractiveIntro();}
+	if(lang==="en") {retranslateENInteractiveIntro();}
+	if(lang==="de") {retranslateDEInteractiveIntro();}
 }
 
 function retranslateChessIntro() 
@@ -492,9 +492,9 @@ function retranslateChessIntro()
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";
 	
 	//retranslate specific intro text of Chess
-	if(lang=="ro") {retranslateROChessIntro();}
-	if(lang=="en") {retranslateENChessIntro();}
-	if(lang=="de") {retranslateDEChessIntro();}
+	if(lang==="ro") {retranslateROChessIntro();}
+	if(lang==="en") {retranslateENChessIntro();}
+	if(lang==="de") {retranslateDEChessIntro();}
 	
 	document.getElementById("Homemade01").href = "Chess.html?lang="+lang+"&aux=01";
 	document.getElementById("Homemade02").href = "Chess.html?lang="+lang+"&aux=02";
@@ -557,9 +557,9 @@ function retranslateDictionaryIntro()
 				";
 	
 	//retranslate specific intro text of Interactive
-	if(lang=="ro") {retranslateRODictionaryIntro();}
-	if(lang=="en") {retranslateENDictionaryIntro();}
-	if(lang=="de") {retranslateDEDictionaryIntro();}
+	if(lang==="ro") {retranslateRODictionaryIntro();}
+	if(lang==="en") {retranslateENDictionaryIntro();}
+	if(lang==="de") {retranslateDEDictionaryIntro();}
 	
 }
 
@@ -589,9 +589,9 @@ function retranslateMicrochitze()
 	document.getElementById("imgnext" ).setAttribute("onClick" , "gotoNextQuestion();");
 	
 	//retranslate specific static text
-	if(lang=="ro") {retranslateROMicrochitze();}
-	if(lang=="en") {retranslateENMicrochitze();}
-	if(lang=="de") {retranslateDEMicrochitze();}
+	if(lang==="ro") {retranslateROMicrochitze();}
+	if(lang==="en") {retranslateENMicrochitze();}
+	if(lang==="de") {retranslateDEMicrochitze();}
 }
 
 function retranslateMacrochitze() 
@@ -608,9 +608,9 @@ function retranslateMacrochitze()
 	document.getElementById("divTitle").setAttribute("onclick","gotoindex('2')");
 	
 	//retranslate specific static text
-	if(lang=="ro") {retranslateROMacrochitze();}
-	if(lang=="en") {retranslateENMacrochitze();}
-	if(lang=="de") {retranslateDEMacrochitze();}
+	if(lang==="ro") {retranslateROMacrochitze();}
+	if(lang==="en") {retranslateENMacrochitze();}
+	if(lang==="de") {retranslateDEMacrochitze();}
 }
 
 function retranslateInteractive() 
@@ -630,9 +630,9 @@ function retranslateInteractive()
 	showInteractive(auxparam);
 	
 	//retranslate specific static text
-	if(lang=="ro") {retranslateROInteractive();}
-	if(lang=="en") {retranslateENInteractive();}
-	if(lang=="de") {retranslateDEInteractive();}
+	if(lang==="ro") {retranslateROInteractive();}
+	if(lang==="en") {retranslateENInteractive();}
+	if(lang==="de") {retranslateDEInteractive();}
 }
 
 function retranslateChess() 
@@ -655,9 +655,9 @@ function retranslateChess()
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";
 	
 	//retranslate specific static text
-	if(lang=="ro") {retranslateROChess();}
-	if(lang=="en") {retranslateENChess();}
-	if(lang=="de") {retranslateDEChess();}
+	if(lang==="ro") {retranslateROChess();}
+	if(lang==="en") {retranslateENChess();}
+	if(lang==="de") {retranslateDEChess();}
 	
 	document.getElementById("buttonShowPGN").innerHTML = "*.pgn";
 }
@@ -718,9 +718,9 @@ function retranslateDictionary()
 	document.getElementById("imgnext" ).setAttribute("onClick" , "gotoNextWord();");
 	
 	//retranslate specific text
-	if(lang=="ro") {retranslateRODictionary();}
-	if(lang=="en") {retranslateENDictionary();}
-	if(lang=="de") {retranslateDEDictionary();}
+	if(lang==="ro") {retranslateRODictionary();}
+	if(lang==="en") {retranslateENDictionary();}
+	if(lang==="de") {retranslateDEDictionary();}
 }
 
 function retranslateUnderConstruction()
@@ -739,7 +739,7 @@ function retranslateUnderConstruction()
 	document.getElementById("imgDictionary" ).setAttribute("src", "Images/0.Common/5.Dictionary.png");
 	
 	//retranslate specific text
-	if(lang=="ro") {retranslateROUnderConstruction();}
-	if(lang=="en") {retranslateENUnderConstruction();}
-	if(lang=="de") {retranslateDEUnderConstruction();}
+	if(lang==="ro") {retranslateROUnderConstruction();}
+	if(lang==="en") {retranslateENUnderConstruction();}
+	if(lang==="de") {retranslateDEUnderConstruction();}
 }

@@ -16,9 +16,9 @@ function initDict()
 	
 	// get raw database
 	var rawDatabase;
-	if(lang=="ro") {rawDatabase = rawDatabaseRO;}
-	if(lang=="en") {rawDatabase = rawDatabaseEN;}
-	if(lang=="de") {rawDatabase = rawDatabaseDE;}
+	if(lang==="ro") {rawDatabase = rawDatabaseRO;}
+	if(lang==="en") {rawDatabase = rawDatabaseEN;}
+	if(lang==="de") {rawDatabase = rawDatabaseDE;}
 	
 	// read database, process lines and store words and definitions
 	var splarray = rawDatabase.split("ENDLINE");
@@ -89,7 +89,7 @@ function showSearchErrorMessage()
 
 function showRelatedWords()
 {
-	var indexList = new Array();
+	var indexList = [];
 	
 	if( -1 == currwid )
 	{	//offer 9 random words
@@ -169,7 +169,7 @@ function showSearchResults(indexList)
 function doDictionarySearch(pattern)
 {
 	var k   = 0;
-	var indexList = new Array();
+	var indexList = [];
 	
 	pattern = cleanSpaces(pattern);
 	
@@ -199,7 +199,7 @@ function doDictionarySearch(pattern)
 		for(var i=0; i<dictSize; i++)
 		{
 			var tempCurrWord = dbReadable[i].toLowerCase();
-			var patternPartsIndices = new Array();
+			var patternPartsIndices = [];
 			patternPartsIndices[0] = tempCurrWord.indexOf(patternParts[0]);
 
 			// patternFoundIndex = the product of all incremented indices from patternPartsIndices
