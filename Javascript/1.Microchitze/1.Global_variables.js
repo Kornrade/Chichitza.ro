@@ -48,6 +48,9 @@ var dbQImageSrc = [];// database internet source associated with each question i
 var dbAImage    = [];// database answer   images associated with each answer
 var dbAImageSrc = [];// database internet source associated with each answer   image
 
+/* GLOBAL VARS USED IN THIS FILE:*/
+var auxparam;
+
 // TEST DEFINITIONS:
 
 function initIndexList()

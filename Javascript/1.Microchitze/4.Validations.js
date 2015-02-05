@@ -5,44 +5,50 @@
 |		validateAnswer(i)............. checks user's answer to question i against criteria  |
 \*-----------------------------------------------------------------------------------------*/
 
+/* GLOBAL VARS USED IN THIS FILE:*/
+var IndexList;
+var AList, dbAList, AType, dbACrit; 
+
+
+/*global validateAnswer */
+/*global cleanSpaces */
+/*global checkCriterion */
+/*global checkCriterion23 */
+/*global alert */
+
 function computeScore()
 {
-	//var goods = 0;
-	//var bads  = 0;
-	var values = [];
-	var currvalue = 0; // 0 = invalid; 1 = valid
+    var currvalue, values, i;
 	
-	for(var i=0; i<IndexList.length; i++)
+    values = [];
+	currvalue = 0; // 0 = invalid; 1 = valid
+	
+	for(i=0; i<IndexList.length; i++)
 	{
 		currvalue = validateAnswer(i);
 		values[i] = currvalue;
-		//if(0==currvalue)
-		//	bads++;
-		//else
-		//	goods++;
 	}
-	
-	//var score = 100 * goods/(goods + bads);
-	//setInnerHTML("ScoreField","Scor: " + score.toFixed(2) + "%...");
 	
 	return values;
 }
 
 function validateAnswer(i)
 {
-	var value = 0;
-	var userAnswer = cleanSpaces(AList[i]);
-	var dbi = IndexList[i];
+    var value, userAnswer, dbi, j;
+    
+	value = 0;
+	userAnswer = cleanSpaces(AList[i]);
+	dbi = IndexList[i];
 	
-	if(23 == dbACrit[dbi][0])
+	if(23 === dbACrit[dbi][0])
 	{	// special criterion, answer is a number between...
 		value = checkCriterion23(userAnswer,dbAList[dbi][0],dbAList[dbi][1]);
 	}
 	else
 	{
-		for (var j=0; j<dbACrit[dbi].length; j++)
+		for (j=0; j<dbACrit[dbi].length; j++)
 		{
-			value += checkCriterion(userAnswer,dbACrit[dbi][j],dbAList[dbi][j])
+			value += checkCriterion(userAnswer,dbACrit[dbi][j],dbAList[dbi][j]);
 		}
 	}
 	
@@ -51,7 +57,8 @@ function validateAnswer(i)
 
 function checkCriterion(userAnswer,crit,goodAnswer)
 {
-	var retVal = 0;
+    var len, retVal;
+	retVal = 0;
 
 	// Because criteria 10..14 are the same as 0..4 (except ignoring cases),
 	// both the userAnswer and the goodAnswer are transformed in lower case 
@@ -66,58 +73,58 @@ function checkCriterion(userAnswer,crit,goodAnswer)
 	switch(crit)
 	{
 		case 0: // must match       (..text..)
-			if(userAnswer==goodAnswer)
+			if(userAnswer===goodAnswer)
 			{
 				retVal = 1;
 			}
 			break;
 		case 1: // must start with  (..text..)
-			var len = goodAnswer.length;
-			if(userAnswer.substring(0,len)==goodAnswer)
+			len = goodAnswer.length;
+			if(userAnswer.substring(0,len)===goodAnswer)
 			{
 				retVal = 1;
 			}
 			break;
 		case 2: // must end   with  (..text..)
-			var len = goodAnswer.length;
-			if(userAnswer.substring(userAnswer.length-len,userAnswer.length)==goodAnswer)
+			len = goodAnswer.length;
+			if(userAnswer.substring(userAnswer.length-len,userAnswer.length)===goodAnswer)
 			{
 				retVal = 1;
 			}
 			break;
 		case 3: // must contain     (..text..)
-			if(-1!=userAnswer.indexOf(goodAnswer))
+			if(-1!==userAnswer.indexOf(goodAnswer))
 			{
 				retVal = 1;
 			}
 			break;
 		case 4: // must not contain (..text..)
-			if(-1==userAnswer.indexOf(goodAnswer))
+			if(-1===userAnswer.indexOf(goodAnswer))
 			{
 				retVal = 1;
 			}
 			break;
 		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		case 20: // must be equal to       (..number..)
-			if(userAnswer==goodAnswer)
+			if(parseFloat(userAnswer)===goodAnswer)
 			{
 				retVal = 1;
 			}
 			break;
 		case 21: // must be greater than   (..number..) 
-			if(userAnswer>=goodAnswer)
+			if(parseFloat(userAnswer)>=goodAnswer)
 			{
 				retVal = 1;
 			}
 			break;
 		case 22: // must be lower than     (..number..)  
-			if(userAnswer<=goodAnswer)
+			if(parseFloat(userAnswer)<=goodAnswer)
 			{
 				retVal = 1;
 			}
 			break;
 		case 24: // must be different from	(..number..) 
-			if(userAnswer!=goodAnswer)
+			if(parseFloat(userAnswer)!==goodAnswer)
 			{
 				retVal = 1;
 			}
@@ -134,7 +141,7 @@ function checkCriterion23(userAnswer,low,high)
 {
 	var retVal = 0;
 	
-	if( (low <= userAnswer) && (userAnswer <= high) )
+	if( (low <= parseFloat(userAnswer)) && (parseFloat(userAnswer) <= high) )
 	{
 		retVal = 1;
 	}

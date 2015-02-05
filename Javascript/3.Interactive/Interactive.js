@@ -1,8 +1,10 @@
 /*-----------------------------------------------------------------------------------------------------------*\
 | This file contains the chess-related javascript functions.                                                  |     
 | The following functions are available:                                                                      |
-| 		showInteractive(n)........... sets interactive puzzle                                                 |
+|       showInteractive(n)........... sets interactive puzzle                                                 |
 \*-----------------------------------------------------------------------------------------------------------*/
+/* GLOBAL VARS USED IN THIS FILE:*/
+var lang;
 
 var AppTitleArray = [];
 
@@ -68,30 +70,30 @@ AppExplArray[ 7][2] = 'Dieses R&#228;tsel ist vorerst nur auf Rum&#228;nisch ver
 
 function showInteractive(n)
 {
-	if( 'ro' == lang )
+	if( 'ro' === lang )
 	{
 		document.getElementById("AppTitle").innerHTML      = AppTitleArray[n][0];
 		document.getElementById("AppExplField").innerHTML  =  AppExplArray[n][0];
 	}
-	if( 'en' == lang )
+	if( 'en' === lang )
 	{
 		document.getElementById("AppTitle").innerHTML      = AppTitleArray[n][1];
 		document.getElementById("AppExplField").innerHTML  =  AppExplArray[n][1];
 	}
-	if( 'de' == lang )
+	if( 'de' === lang )
 	{
 		document.getElementById("AppTitle").innerHTML      = AppTitleArray[n][2];
 		document.getElementById("AppExplField").innerHTML  =  AppExplArray[n][2];
 	}
 	
 	switch(n)
-	{	case  1: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/01.arrows.swf"   	 width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/01.arrows.swf"  		><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
-		case  2: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/02.3queens.swf"  	 width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/02.3queens.swf" 		><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
-		case  3: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/03.plopul.swf"     width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/03.plopul.swf"  		><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
-		case  4: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/04.skyscraper.swf" width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/04.skyscraper.swf"    ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
-		case  5: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/05.farmer.swf"   	 width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/05.farmer.swf"  		><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
-		case  6: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/06.segments.swf" 	 width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/06.segments.swf"		><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
-		case  7: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/07.mensa.swf"    	 width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/07.mensa.swf"   		><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
+	{	case  1: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/01.arrows.swf"     width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/01.arrows.swf"     ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
+		case  2: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/02.3queens.swf"    width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/02.3queens.swf"    ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
+		case  3: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/03.plopul.swf"     width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/03.plopul.swf"     ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
+		case  4: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/04.skyscraper.swf" width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/04.skyscraper.swf" ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
+		case  5: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/05.farmer.swf"     width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/05.farmer.swf"     ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
+		case  6: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/06.segments.swf"   width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/06.segments.swf"	 ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
+		case  7: document.getElementById("AppField").innerHTML = '<object type="application/x-shockwave-flash" data="Javascript/3.Interactive/07.mensa.swf"      width="680" height="450" align="top"><param name="movie" value="Javascript/3.Interactive/07.mensa.swf"      ><param name="quality" value="high"><param name=FlashVars value="lang='+lang+'"></object>'; break;
 		default: window.open('UnderConstruction.html', '_self');
 	}
 

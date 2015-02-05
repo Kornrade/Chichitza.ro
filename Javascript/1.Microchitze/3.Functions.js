@@ -8,9 +8,30 @@
 |	computeResults() ............ computes the score and recolours the question tabs       |
 \*----------------------------------------------------------------------------------------*/
 
+/* GLOBAL VARS USED IN THIS FILE:*/
+var lang, auxparam, QuizTitle, IndexList, aQcolour, bQcolour, cQcolour, currqid;
+var htmlResultsPhase, truthValues, rightAnswerBgColour, rightAnswerColour, wrongAnswerBgColour, wrongAnswerColour;
+var QList, AList, CList, EList, RList, HList, IList, JList, IListSrc, JListSrc, AType, dbACrit; 
+var dbQList, dbAnswer, dbExpln, dbRefer, dbQHint, dbQImage, dbAImage, dbQImageSrc, dbAImageSrc, dbAType;
+
+/*global initIndexList */
+/*global removeUnusedLinks */
+/*global retranslateQuestions */
+/*global colourQLink */
+/*global setInnerHTML */
+/*global showQuestion */
+/*global cleanSpaces */
+/*global saveCurrentQidAnswer */
+/*global checkAndDisplayResultsButton */
+/*global colourAnswerFieldBg */
+/*global computeResults */
+/*global computeScore */
+/*global hs */
 
 function initQuiz()
 {	
+    var i; // for loop index
+    
 	// initialize index list for the current quiz with
 	// the database indices of the selected questions
 	initIndexList(auxparam);
@@ -25,7 +46,7 @@ function initQuiz()
 	removeUnusedLinks();
 		
 	// delete all answers in the AList
-	for(var i=0; i<IndexList.length; i++)
+	for(i=0; i<IndexList.length; i++)
 	{
 		AList[i] = "";
 		colourQLink(i,bQcolour,"3px " + bQcolour + " solid");
@@ -47,11 +68,12 @@ function initQuiz()
 //=================================================================
 function retranslateQuestions()
 {
+    var i; // for loop index
 	
 	// add selected questions to QList
 	if(lang==="ro")
 	{
-		for(var i=0; i<IndexList.length; i++)
+		for(i=0; i<IndexList.length; i++)
 		{
 			QList[i] = dbQList[ IndexList[i]][0];
 			CList[i] = dbAnswer[IndexList[i]][0];
@@ -74,7 +96,7 @@ function retranslateQuestions()
 	
 	if(lang==="en")
 	{
-		for(var i=0; i<IndexList.length; i++)
+		for(i=0; i<IndexList.length; i++)
 		{
 			QList[i] = dbQList[ IndexList[i]][1];
 			CList[i] = dbAnswer[IndexList[i]][1];
@@ -97,7 +119,7 @@ function retranslateQuestions()
 
 	if(lang==="de")
 	{
-		for(var i=0; i<IndexList.length; i++)
+		for(i=0; i<IndexList.length; i++)
 		{
 			QList[i] = dbQList[ IndexList[i]][2];
 			CList[i] = dbAnswer[IndexList[i]][2];
@@ -119,7 +141,7 @@ function retranslateQuestions()
 	}
 	
 	
-	for(var i=0; i<IndexList.length; i++)
+	for(i=0; i<IndexList.length; i++)
 	{	// set answer type for each question (free text, Y/N, numeric)
 		AType[i] = dbAType[IndexList[i]];
 	}
@@ -132,7 +154,9 @@ function retranslateQuestions()
 //=================================================================
 function showQuestion(qid)
 {	
-	saveCurrentQidAnswer();
+	var container, ele, numericAns, i;
+    
+    saveCurrentQidAnswer();
 
 	// Set the question
 	container = document.getElementById("QuestionField");
@@ -145,13 +169,13 @@ function showQuestion(qid)
 	if(htmlResultsPhase)
 	{
 		// colour the current link back to the normal state
-		if(truthValues[currqid]==1)
+		if(truthValues[currqid]===1)
 		{ colourQLink(currqid,rightAnswerColour,"3px " + rightAnswerColour + " solid"); }
 		else
 		{ colourQLink(currqid,wrongAnswerColour,"3px " + wrongAnswerColour + " solid");	}	
 	
 		// colour the selected link to the active state
-		if(truthValues[qid]==1)
+		if(truthValues[qid]===1)
 		{ colourQLink(qid,rightAnswerColour,"3px " + cQcolour + " solid"); }
 		else
 		{ colourQLink(qid,wrongAnswerColour,"3px " + cQcolour + " solid");	}
@@ -175,8 +199,8 @@ function showQuestion(qid)
 		//setInnerHTML("ImgSourceField",JListSrc[qid]);
 		
 		// clear radiobuttons and set visibility
-		var ele = document.getElementsByName("radioyesno");
-		for(var i=0;i<ele.length;i++)
+		ele = document.getElementsByName("radioyesno");
+		for(i=0;i<ele.length;i++)
 		{
 			ele[i].checked = false;
 			ele[i].style.visibility = "hidden";
@@ -209,8 +233,8 @@ function showQuestion(qid)
 		// add nothing as references
 		setInnerHTML("ReferencesField","");
 		
-		var numericAns = "";
-		if(2==AType[qid])
+		numericAns = "";
+		if(2===AType[qid])
 		{
 			if(lang==="ro")	{ numericAns = "Raspuns numeric"; }
 			if(lang==="en")	{ numericAns = "Numeric Answer"; }
@@ -219,12 +243,12 @@ function showQuestion(qid)
 			// add correct answer in plaintext
 			setInnerHTML("CorrectAnswerField",numericAns);
 	  
-		if(0==AType[qid])
+		if(0===AType[qid])
 		{
 			document.getElementById("AnswerField").style.visibility = "hidden";
 			// clear radiobuttons and set visibility
-			var ele = document.getElementsByName("radioyesno");
-			for(var i=0;i<ele.length;i++)
+			ele = document.getElementsByName("radioyesno");
+			for(i=0;i<ele.length;i++)
 			{
 				ele[i].checked = false;
 				ele[i].style.visibility = "visible";
@@ -237,7 +261,7 @@ function showQuestion(qid)
 			}
 			else //re-select radio button as the user did previously
 			{
-				if(-1!=AList[qid].indexOf("f"))  //false was selected
+				if(-1!==AList[qid].indexOf("f"))  //false was selected
 				{
 					document.getElementById("radiono").checked = true;
 					document.getElementById("radiono").focus();
@@ -254,8 +278,8 @@ function showQuestion(qid)
 		{
 			document.getElementById("AnswerField").style.visibility = "visible";
 			// clear radiobuttons and set visibility
-			var ele = document.getElementsByName("radioyesno");
-			for(var i=0;i<ele.length;i++)
+			ele = document.getElementsByName("radioyesno");
+			for(i=0;i<ele.length;i++)
 			{
 				ele[i].checked = false;
 				ele[i].style.visibility = "hidden";
@@ -265,6 +289,9 @@ function showQuestion(qid)
 			document.getElementById("AnswerField").focus();
 			
 		}
+        
+    
+        checkAndDisplayResultsButton();
 	
 	}
 
@@ -277,9 +304,11 @@ function showQuestion(qid)
 //=================================================================
 function saveCurrentQidAnswer()
 {
+    var container, tempAnswer;
+    
 	// get answer
 	container = document.getElementById("AnswerField");
-	var tempAnswer = container.value;
+	tempAnswer = container.value;
 	tempAnswer = cleanSpaces(tempAnswer);
 	
 	// save answer
@@ -290,11 +319,13 @@ function saveCurrentQidAnswer()
 //=================================================================
 function proceedToNextUnanswered()
 {
+    var i, foundNextQ;
+    
 	saveCurrentQidAnswer();
 		
 	// search for the next unanswered question
-	var foundNextQ = 0;
-	for(var i=currqid; i<QList.length; i++)
+	foundNextQ = 0;
+	for(i=currqid; i<QList.length; i++)
 	{ if(""===AList[i])
 		{	foundNextQ = 1;
 			showQuestion(i);
@@ -302,8 +333,8 @@ function proceedToNextUnanswered()
 		}
 	}
 	// loop from the beginning
-	if(0==foundNextQ)
-	{	for(var i=0; i<currqid; i++)
+	if(0===foundNextQ)
+	{	for(i=0; i<currqid; i++)
 		{ if(""===AList[i])
 			{	foundNextQ = 1;	
 				showQuestion(i);
@@ -312,7 +343,7 @@ function proceedToNextUnanswered()
 		}
 	}
 
-	if(0==foundNextQ)
+	if(0===foundNextQ)
 	{
 		computeResults();//show answers
 	}
@@ -323,6 +354,8 @@ function proceedToNextUnanswered()
 //=================================================================
 function setAnswerFromRadiobutton(radiotext)
 {
+    var container;
+    
 	container = document.getElementById("AnswerField");
 	container.value = document.getElementById(radiotext).innerHTML;
 }
@@ -331,6 +364,8 @@ function setAnswerFromRadiobutton(radiotext)
 //=================================================================
 function computeResults()
 {
+    var container, i;
+    
 	htmlResultsPhase = true;
 	
 	container = document.getElementById("divResults");
@@ -339,10 +374,10 @@ function computeResults()
 	container.setAttribute("readonly", true);	
 
 	truthValues = computeScore();
-	for(var i=0; i<IndexList.length; i++)
+	for(i=0; i<IndexList.length; i++)
 	{
 		// colour the current link back to the normal state
-		if(truthValues[i]==1)
+		if(truthValues[i]===1)
 		{ colourQLink(i,rightAnswerColour,"3px " + rightAnswerColour + " solid"); }
 		else
 		{ colourQLink(i,wrongAnswerColour,"3px " + wrongAnswerColour + " solid");	}	

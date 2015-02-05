@@ -1,8 +1,15 @@
 /*-----------------------------------------------------------------------------------------------------------*\
 | This file contains the chess-related javascript functions.                                                  |     
 | The following functions are available:                                                                      |
-| 		showChessPositionOnHover(n)........... shows position on the board, with title (name) and stipulation |
+|       showChessPositionOnHover(n)........... shows position on the board, with title (name) and stipulation |
 \*-----------------------------------------------------------------------------------------------------------*/
+
+/*jslint es5: true */
+
+/* GLOBAL VARS USED IN THIS FILE:*/
+var lang, auxparam;
+
+/*global PgnViewer */
 
 var currchessfen;
 var currcleanfen;
@@ -415,7 +422,7 @@ function openChessObject(n)
         case  63: window.open('http://www.arves.org/EG.htm');	break;
         case  81: window.open('Images/4.Chess/pdf/Homemade08.pdf');	break;
         case  82: window.open('http://www.frsah.ro/index.php?action=listingview&listingID=608');	break;
-        case 101: window.open('http://www.euroschach.de/Zeitschrift-Schach-Heft-2012-9.html');	break
+        case 101: window.open('http://www.euroschach.de/Zeitschrift-Schach-Heft-2012-9.html');	break;
         case 131: window.open('Images/4.Chess/pdf/Homemade13.pdf');	break;
         case 132: window.open('http://www.wfcc.ch/competitions/composing/9_wcct/');	break;
         default: window.open('');
@@ -424,15 +431,15 @@ function openChessObject(n)
 
 function showSolution() 
 {	
-    var currlangpgn;
-    if( 'ro' == lang ) { currlangpgn = currpgn[0]; }
-    if( 'en' == lang ) { currlangpgn = currpgn[1]; }
-    if( 'de' == lang ) { currlangpgn = currpgn[2]; }
+    var currlangpgn, container, v;
+    if( 'ro' === lang ) { currlangpgn = currpgn[0]; }
+    if( 'en' === lang ) { currlangpgn = currpgn[1]; }
+    if( 'de' === lang ) { currlangpgn = currpgn[2]; }
     
     container = document.getElementById("solution-container");
     container.innerHTML = "";
     
-    new   PgnViewer({ 	boardName: "solution", 
+    v= new PgnViewer({  boardName: "solution", 
                         pgnString: currlangpgn, 
                         pieceSet: 'merida', pieceSize: 35 }); 
                         
@@ -472,16 +479,17 @@ function hideSolution()
 
 function showPGN() 
 {	
-    var currlangpgn = currpgn[1];
-    if( 'ro' == lang ) { currlangpgn = currpgn[0]; }
-    if( 'en' == lang ) { currlangpgn = currpgn[1]; }
-    if( 'de' == lang ) { currlangpgn = currpgn[2]; }
+    var currlangpgn, editedcurrlangpgn, popUpWindowProperties, OpenWindow;
+    currlangpgn = currpgn[1];
+    if( 'ro' === lang ) { currlangpgn = currpgn[0]; }
+    if( 'en' === lang ) { currlangpgn = currpgn[1]; }
+    if( 'de' === lang ) { currlangpgn = currpgn[2]; }
     
-    var editedcurrlangpgn = currlangpgn.replace(/]/g,"]<br/>");
+    editedcurrlangpgn = currlangpgn.replace(/\]/g,"]<br/>");
     
     editedcurrlangpgn = "<div align='justify'>" + editedcurrlangpgn + "</div>";
     
-    var popUpWindowProperties = 'height=500\
+        popUpWindowProperties = 'height=500\
                                 ,width=700\
                                 ,left=100\
                                 ,top=100\
@@ -502,22 +510,21 @@ function showPGN()
 
 function showChessPositionOnHover(n)
 {	
-    var name;
-    var stip;
+    var name, stip, container, v;
     
     setcurrchessvars(n);
     
-    if( 'ro' == lang )
+    if( 'ro' === lang )
     {
         name = allstudynames[n][0];
         stip = allstudystips[n][0];
     }
-    if( 'en' == lang )
+    if( 'en' === lang )
     {
         name = allstudynames[n][1];
         stip = allstudystips[n][1];
     }
-    if( 'de' == lang )
+    if( 'de' === lang )
     {
         name = allstudynames[n][2];
         stip = allstudystips[n][2];
@@ -534,7 +541,7 @@ function showChessPositionOnHover(n)
         container = document.getElementById("position-container");
         container.innerHTML = '';
         
-        new   PgnViewer({ 	boardName: "position", 
+        v = new PgnViewer({ boardName: "position", 
                             pgnString: currchessfen,
                             pieceSet: 'merida', pieceSize: 35 });
         container = document.getElementById("position-navButtons");

@@ -1,17 +1,17 @@
 /*---------------------------------------------------------------------------------------------------*\
 | This file contains the general javascript functions related to translations.                        |     
 | The following functions are available:                                                              |
-|		retranslate(selLang)............ triggers retranslates according to the page and language     |
-| 		retranslateCommon()............. retranslates the common texts in the selected language       |
-| 		retranslateIndexIntro()......... retranslates Index texts in the selected language            |
-| 		retranslateMicrochitzeIntro().... retranslates Microchitze intro in the selected language     |
-| 		retranslateMacrochitzeIntro()... retranslates Macrochitze intro in the selected language      |
-| 		retranslateInteractiveIntro()... retranslates Interactive intro in the selected language      |
-| 		retranslateDictionaryIntro().... retranslates Dictionary intro in the selected language       |
-| 		retranslateMicrochitze()......... retranslates Microchitze texts in the selected language     |
-| 		retranslateMacrochitze()........ retranslates Macrochitze texts in the selected language      |
-| 		retranslateInteractive()........ retranslates Interactive texts in the selected language      |
-| 		retranslateDictionary()......... retranslates Dictionary texts in the selected language       |
+|       retranslate(selLang)............ triggers retranslates according to the page and language     |
+|       retranslateCommon()............. retranslates the common texts in the selected language       |
+|       retranslateIndexIntro()......... retranslates Index texts in the selected language            |
+|       retranslateMicrochitzeIntro().... retranslates Microchitze intro in the selected language     |
+|       retranslateMacrochitzeIntro()... retranslates Macrochitze intro in the selected language      |
+|       retranslateInteractiveIntro()... retranslates Interactive intro in the selected language      |
+|       retranslateDictionaryIntro().... retranslates Dictionary intro in the selected language       |
+|       retranslateMicrochitze()......... retranslates Microchitze texts in the selected language     |
+|       retranslateMacrochitze()........ retranslates Macrochitze texts in the selected language      |
+|       retranslateInteractive()........ retranslates Interactive texts in the selected language      |
+|       retranslateDictionary()......... retranslates Dictionary texts in the selected language       |
 \*---------------------------------------------------------------------------------------------------*/
 
 var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary

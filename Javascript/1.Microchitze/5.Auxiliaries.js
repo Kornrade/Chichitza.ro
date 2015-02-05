@@ -8,12 +8,18 @@
 |		cleanSpaces()............ removes starting and ending spaces from answers    |
 \*----------------------------------------------------------------------------------*/
 
+/* GLOBAL VARS USED IN THIS FILE:*/
+var IndexList, truthValues, QList, AList, AType, currqid, htmlResultsPhase, rightAnswerBgColour, wrongAnswerBgColour;
+
+/*global showQuestion */
+/*global proceedToNextUnanswered */
+
+
 function removeUnusedLinks()
 {
-	var questionid;
-	var spaceid;
+	var questionid, spaceid, container, i;
 	
-	for(var i=IndexList.length; i<10; i++)
+	for(i=IndexList.length; i<10; i++)
 	{
 		questionid = "Question0" + i;
 		container = document.getElementById(questionid);
@@ -30,26 +36,29 @@ function removeUnusedLinks()
 //=================================================================
 function processKeyEvent(evt)
 {
-	evt = (evt) ? evt : window.event;
-	var cCode = (evt.which) ? evt.which : evt.keyCode;
-	if(cCode==13) // enter key pressed
+    var cCode;
+    
+    if(!evt)      { evt = window.event;  }
+    if(evt.which) { cCode = evt.which;   }
+    else          { cCode = evt.keyCode; }
+    
+	if(cCode===13) // enter key pressed
 	{
 		proceedToNextUnanswered();
-		checkAndDisplayResultsButton();
 	}
 	else
 	{
-		if(0==AType[currqid])
+		if(0===AType[currqid])
 		{
 			return false;
 		}
-		if(1==AType[currqid])
+		if(1===AType[currqid])
 		{
 			return true;
 		}
-		if(2==AType[currqid])
+		if(2===AType[currqid])
 		{	//isNumber, - or . or :
-			if (cCode > 31 && (cCode != 45) && (cCode != 46) && (cCode != 58) && (cCode < 48 || cCode > 57)) 
+			if (cCode > 31 && (cCode !== 45) && (cCode !== 46) && (cCode !== 58) && (cCode < 48 || cCode > 57)) 
 			{
 				return false;
 			}
@@ -65,7 +74,7 @@ function processKeyEvent(evt)
 //=================================================================
 function colourQLink(id, backgroundColour, borderProperties)
 {
-	var questionid;
+	var questionid, container;
 	if(10>id)
 	{ questionid = "Question0" + id; }
 	else
@@ -79,11 +88,15 @@ function colourQLink(id, backgroundColour, borderProperties)
 //=================================================================
 function colourAnswerFieldBg(id)
 {
-	var colour;
-	if(truthValues[id]==1)
+	var colour, container;
+	if(truthValues[id]===1)
+    {
 		colour = rightAnswerBgColour;
+    }
 	else
+    {
 		colour = wrongAnswerBgColour;
+    }
 		
 	container = document.getElementById("AnswerField");
 	container.setAttribute("style","text-align:center; font-size:16px; background:"+colour+";");
@@ -95,10 +108,8 @@ function colourAnswerFieldBg(id)
 function gotoPrevQuestion()
 {
 	var qid = currqid-1;
-	if(currqid == 0)	showQuestion(QList.length-1);
-	else				showQuestion(qid);
-	
-	checkAndDisplayResultsButton();
+	if(currqid === 0)	{showQuestion(QList.length-1);}
+	else				{showQuestion(qid);           }
 }
 
 //=================================================================
@@ -106,17 +117,16 @@ function gotoPrevQuestion()
 function gotoNextQuestion()
 {
 	var qid = currqid+1;
-	if(currqid == QList.length-1)	showQuestion(0);
-	else							showQuestion(qid);	
-	
-	checkAndDisplayResultsButton();
+	if(currqid === QList.length-1)	{showQuestion(0);   }
+	else							{showQuestion(qid);	}
 }
 
 //=================================================================
 //=================================================================
 function checkAndDisplayResultsButton()
 {
-	var boolShowResultsButton = true;
+    var boolShowResultsButton, container, i;
+	boolShowResultsButton = true;
 	
 	if(htmlResultsPhase)
 	{
@@ -124,7 +134,7 @@ function checkAndDisplayResultsButton()
 	}
 	else
 	{
-		for(var i=0; i<IndexList.length; i++)
+		for(i=0; i<IndexList.length; i++)
 		{ 
 			if(""===AList[i])
 			{	boolShowResultsButton = false;
@@ -134,7 +144,7 @@ function checkAndDisplayResultsButton()
 	}
 	
 	// if all questions have answers, show results button
-	if(true==boolShowResultsButton)
+	if(true===boolShowResultsButton)
 	{
 		container = document.getElementById("divResults");
 		container.style.visibility = "visible";	
