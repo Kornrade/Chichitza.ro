@@ -39,6 +39,16 @@
 
 /*jslint es5: true */
 
+/* GLOBAL VARS USED IN THIS FILE:*/
+var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
+var lang; // the current language: "ro" "en" "de"
+var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
+var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
+var currcleanfen, allstudynames, currchessinfo, coauthor;
+
+/*global showSolution*/
+
+
 function retranslateDECommon()
 {
 // HTML page layout
@@ -77,7 +87,7 @@ function retranslateDECommon()
 	
 	// Cell (2)
 	document.getElementById("buttonAdmin"  ).href   = "#";
-	document.getElementById("buttonContact").href   = "JavaScript:newPopup(200,350,10,10,'Helpertools/contactDE.html');";
+	document.getElementById("buttonContact").href   = "newPopup(200,350,10,10,'Helpertools/contactDE.html');";
 	document.getElementById("buttonHome"   ).href   = "index.html?lang=de";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin");
 	document.getElementById("buttonContact").setAttribute("data","Kontakt");
@@ -105,8 +115,8 @@ function retranslateDEIndexIntro()
 	document.getElementById("imgMainContentsLeft1" ).setAttribute("data", "Mikroknobeleien" );
 	document.getElementById("imgMainContentsLeft2" ).setAttribute("data", "Makroknobeleien"	);
 	document.getElementById("imgMainContentsLeft3" ).setAttribute("data", "Interaktive"		);
-	document.getElementById("imgMainContentsLeft4" ).setAttribute("data", "Schachstudien" 	);
-	document.getElementById("imgMainContentsLeft5" ).setAttribute("data", "Woerterbuch" 	);
+	document.getElementById("imgMainContentsLeft4" ).setAttribute("data", "Schachstudien"   );
+	document.getElementById("imgMainContentsLeft5" ).setAttribute("data", "Woerterbuch"     );
 	
 	document.getElementById("imgMainContentsRight12" ).setAttribute("data", "Mikroknobeleien" );
 	document.getElementById("imgMainContentsRight22" ).setAttribute("data", "Makroknobeleien" );
@@ -215,21 +225,21 @@ function retranslateDEInteractiveIntro()
 	document.getElementById("divTitle").innerHTML = "INTERAKTIVE DENKAUFGABEN";
 	
 	// Cell (3)	
-	document.getElementById("divsageti"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'	, 'Pfeile'					);");
-	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/3Dame.png'		, 'Drei Damen'			);");
+	document.getElementById("divsageti"     ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'    , 'Pfeile' );");
+	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/3Dame.png'     , 'Drei Damen'			);");
 	document.getElementById("divplopulmere" ).setAttribute("onMouseOver", "showImageOnHover('Interactive/PlopulMere.png', 'Wenn es schwarz schneit...'	);");
-	document.getElementById("divssudoku"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Wolkenkratzer Sudoku'	);");
-	document.getElementById("divfermier"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'	, 'Das Bauer-R&auml;tsel'		);");
-	document.getElementById("divsegmente"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Segmente.png'	, 'Strecken'				);");
-	document.getElementById("divmensa"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/Mensa.png'		, 'Mensa Test'				);");
+	document.getElementById("divssudoku"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Wolkenkratzer Sudoku'	);");
+	document.getElementById("divfermier"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'   , 'Das Bauer-R&auml;tsel'		);");
+	document.getElementById("divsegmente"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Segmente.png'  , 'Strecken'				);");
+	document.getElementById("divmensa"      ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Mensa.png'	    , 'Mensa Test'				);");
 
-	document.getElementById("sageti"   	).innerHTML="Pfeile";	
+	document.getElementById("sageti"    ).innerHTML="Pfeile";	
 	document.getElementById("treidame"  ).innerHTML="Drei Damen";
 	document.getElementById("plopulmere").innerHTML="Wenn es schwarz schneit...";
 	document.getElementById("ssudoku"   ).innerHTML="Wolkenkratzer Sudoku";
 	document.getElementById("fermier"   ).innerHTML="Das Bauer-R&auml;tsel";
 	document.getElementById("segmente"  ).innerHTML="Strecken";
-	document.getElementById("mensa"   	).innerHTML="Mensa Test";
+	document.getElementById("mensa"     ).innerHTML="Mensa Test";
 	
 		
 	}
@@ -286,18 +296,18 @@ function retranslateDEMicrochitze()
 		
 		// Cell (3)	
 		document.getElementById("expandcompressHelpertools").innerHTML="Spickzettel";
-		document.getElementById("buttonConstants"  	).setAttribute("data","Konstanten"  );
+		document.getElementById("buttonConstants"   ).setAttribute("data","Konstanten"  );
 		document.getElementById("buttonCalendar"	).setAttribute("data","Kalender"  );
-		document.getElementById("buttonConvertor"  	).setAttribute("data","Konverter"  );
-		document.getElementById("buttonCalculator" 	).setAttribute("data","Rechner"  );
-		document.getElementById("buttonTerra"  		).setAttribute("data","Terra"  );
-		document.getElementById("buttonMendeleev" 	).setAttribute("data","Mendeleev"  );
-		document.getElementById("buttonSolar"  		).setAttribute("data","Sonnensystem"  );
-		document.getElementById("buttonStars"  		).setAttribute("data","Sterne"  );
-		document.getElementById("buttonMorse"  		).setAttribute("data","Morseschrift"  );
-		//document.getElementById("buttonBraille" 	).setAttribute("data","Blindenschrift"  );
-		//document.getElementById("buttonAlphabet1"  	).setAttribute("data","Alphabet"  );
-		//document.getElementById("buttonAlphabet2"  	).setAttribute("data","Alphabet"  );
+		document.getElementById("buttonConvertor"   ).setAttribute("data","Konverter"  );
+		document.getElementById("buttonCalculator"  ).setAttribute("data","Rechner"  );
+		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
+		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
+		document.getElementById("buttonSolar"       ).setAttribute("data","Sonnensystem"  );
+		document.getElementById("buttonStars"       ).setAttribute("data","Sterne"  );
+		document.getElementById("buttonMorse"       ).setAttribute("data","Morseschrift"  );
+		//document.getElementById("buttonBraille"   ).setAttribute("data","Blindenschrift"  );
+		//document.getElementById("buttonAlphabet1" ).setAttribute("data","Alphabet"  );
+		//document.getElementById("buttonAlphabet2" ).setAttribute("data","Alphabet"  );
 		
 		document.getElementById("buttonResults").setAttribute("data","Ergebnisse"  );
 	}

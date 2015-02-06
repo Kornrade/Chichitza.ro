@@ -8,14 +8,14 @@
 
 /*jslint es5: true */
 /* GLOBAL VARS USED IN THIS FILE:*/
-var lang, auxparam, intro;
+var lang, auxparam, page, intro;
 
 /*global retranslate */
 /*global setIntroAndRetranslate */
 
 function detectLanguage()
 {
-    var n, path, page, teststr, introstr;
+    var n, path, teststr, introstr;
 	path=window.location.href;
 	
 	page = 0;

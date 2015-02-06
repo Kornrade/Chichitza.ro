@@ -35,6 +35,15 @@
 
 /*jslint es5: true */
 
+/* GLOBAL VARS USED IN THIS FILE:*/
+var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
+var lang; // the current language: "ro" "en" "de"
+var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
+var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
+var currcleanfen, allstudynames, currchessinfo, coauthor;
+
+/*global showSolution*/
+
 function retranslateROCommon()
 {
 // HTML page layout
@@ -74,7 +83,7 @@ function retranslateROCommon()
 	
 	// Cell (2)
 	document.getElementById("buttonAdmin"  ).href = "#";
-	document.getElementById("buttonContact").href = "JavaScript:newPopup(200,350,10,10,'Helpertools/contactRO.html');";
+	document.getElementById("buttonContact").href = "newPopup(200,350,10,10,'Helpertools/contactRO.html');";
 	document.getElementById("buttonHome"   ).href = "index.html?lang=ro";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin"  );
 	document.getElementById("buttonContact").setAttribute("data","Contact");
@@ -211,21 +220,21 @@ function retranslateROInteractiveIntro()
 	document.getElementById("divTitle").innerHTML = "CHICHITZE INTERACTIVE";
 	
 	// Cell (3)	
-	document.getElementById("divsageti"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'	, 'S&#x103;ge&#x21B;i'		);");
+	document.getElementById("divsageti"     ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'	, 'S&#x103;ge&#x21B;i'		);");
 	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/3Dame.png'		, 'Trei Dame'				);");
 	document.getElementById("divplopulmere" ).setAttribute("onMouseOver", "showImageOnHover('Interactive/PlopulMere.png', 'Cand o face plopul mere'	);");
-	document.getElementById("divssudoku"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Sudoku zg&#xE2;rie-nori'	);");
-	document.getElementById("divfermier"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'	,'Problema fermierului'		);");
+	document.getElementById("divssudoku"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Sudoku zg&#xE2;rie-nori'	);");
+	document.getElementById("divfermier"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'	,'Problema fermierului'		);");
 	document.getElementById("divsegmente"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Segmente.png'	,'Segmente'					);");
-	document.getElementById("divmensa"   	).setAttribute("onMouseOver", "showImageOnHover('Interactive/Mensa.png'		,'Testul Mensa'				);");
+	document.getElementById("divmensa"      ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Mensa.png'		,'Testul Mensa'				);");
 
-	document.getElementById("sageti"   	).innerHTML="S&#x103;ge&#x21B;i";
+	document.getElementById("sageti"    ).innerHTML="S&#x103;ge&#x21B;i";
 	document.getElementById("treidame"  ).innerHTML="Trei Dame";
 	document.getElementById("plopulmere").innerHTML="Cand o face plopul mere";
 	document.getElementById("ssudoku"   ).innerHTML="Sudoku zg&#xE2;rie-nori";
 	document.getElementById("fermier"   ).innerHTML="Problema fermierului";
 	document.getElementById("segmente"  ).innerHTML="Segmente";
-	document.getElementById("mensa"   	).innerHTML="Testul Mensa";
+	document.getElementById("mensa"     ).innerHTML="Testul Mensa";
 
 	}
 }
@@ -281,18 +290,18 @@ function retranslateROMicrochitze()
 		
 		// Cell (3)
 		document.getElementById("expandcompressHelpertools").innerHTML="Fi&#x21B;uici";
-		document.getElementById("buttonConstants"  	).setAttribute("data","Constante"  );
-		document.getElementById("buttonCalendar"	).setAttribute("data","Calendar"  );
-		document.getElementById("buttonConvertor"  	).setAttribute("data","Convertor"  );
-		document.getElementById("buttonCalculator" 	).setAttribute("data","Calculator"  );
-		document.getElementById("buttonTerra"  		).setAttribute("data","Terra"  );
-		document.getElementById("buttonMendeleev" 	).setAttribute("data","Mendeleev"  );
-		document.getElementById("buttonSolar"  		).setAttribute("data","Sistem Solar"  );
-		document.getElementById("buttonStars"  		).setAttribute("data","Stele"  );
-		document.getElementById("buttonMorse"  		).setAttribute("data","Codul Morse"  );
-		//document.getElementById("buttonBraille" 	).setAttribute("data","Codul Braille"  );
-		//document.getElementById("buttonAlphabet1"  	).setAttribute("data","Alfabet"  );
-		//document.getElementById("buttonAlphabet2"  	).setAttribute("data","Alfabet"  );
+		document.getElementById("buttonConstants"   ).setAttribute("data","Constante"  );
+		document.getElementById("buttonCalendar"    ).setAttribute("data","Calendar"  );
+		document.getElementById("buttonConvertor"   ).setAttribute("data","Convertor"  );
+		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
+		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
+		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
+		document.getElementById("buttonSolar"       ).setAttribute("data","Sistem Solar"  );
+		document.getElementById("buttonStars"       ).setAttribute("data","Stele"  );
+		document.getElementById("buttonMorse"       ).setAttribute("data","Codul Morse"  );
+		//document.getElementById("buttonBraille"   ).setAttribute("data","Codul Braille"  );
+		//document.getElementById("buttonAlphabet1" ).setAttribute("data","Alfabet"  );
+		//document.getElementById("buttonAlphabet2" ).setAttribute("data","Alfabet"  );
 		
 		document.getElementById("buttonResults").setAttribute("data","Vezi raspunsurile");
 	}

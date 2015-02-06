@@ -14,10 +14,71 @@
 |       retranslateDictionary()......... retranslates Dictionary texts in the selected language       |
 \*---------------------------------------------------------------------------------------------------*/
 
+/*jslint es5: true */
+
 var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var lang; // the current language: "ro" "en" "de"
 var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
+
+var currcleanfen;
+
+/*global resetDivsToDefault */
+/*global retranslateCommon */
+/*global retranslateIndexIntro */
+/*global retranslateROIndexIntro */
+/*global retranslateENIndexIntro */
+/*global retranslateDEIndexIntro */
+/*global retranslateMicrochitzeIntro */
+/*global retranslateROMicrochitzeIntro */
+/*global retranslateENMicrochitzeIntro */
+/*global retranslateDEMicrochitzeIntro */
+/*global retranslateMacrochitzeIntro */
+/*global retranslateROMacrochitzeIntro */
+/*global retranslateENMacrochitzeIntro */
+/*global retranslateDEMacrochitzeIntro */
+/*global retranslateInteractiveIntro */
+/*global retranslateROInteractiveIntro */
+/*global retranslateENInteractiveIntro */
+/*global retranslateDEInteractiveIntro */
+/*global retranslateChessIntro */
+/*global retranslateROChessIntro */
+/*global retranslateENChessIntro */
+/*global retranslateDEChessIntro */
+/*global retranslateDictionaryIntro */
+/*global retranslateRODictionaryIntro */
+/*global retranslateENDictionaryIntro */
+/*global retranslateDEDictionaryIntro */
+/*global retranslateMicrochitze */
+/*global retranslateROMicrochitze */
+/*global retranslateENMicrochitze */
+/*global retranslateDEMicrochitze */
+/*global retranslateMacrochitze */
+/*global retranslateROMacrochitze */
+/*global retranslateENMacrochitze */
+/*global retranslateDEMacrochitze */
+/*global retranslateInteractive */
+/*global retranslateROInteractive */
+/*global retranslateENInteractive */
+/*global retranslateDEInteractive */
+/*global retranslateChess */
+/*global retranslateROChess */
+/*global retranslateENChess */
+/*global retranslateDEChess */
+/*global retranslateDictionary */
+/*global retranslateRODictionary */
+/*global retranslateENDictionary */
+/*global retranslateDEDictionary */
+/*global retranslateUnderConstruction */
+/*global retranslateROUnderConstruction */
+/*global retranslateENUnderConstruction */
+/*global retranslateDEUnderConstruction */
+/*global retranslateROCommon */
+/*global retranslateENCommon */
+/*global retranslateDECommon */
+/*global showImageOnHover */
+/*global showChessPositionOnHover */
+/*global showInteractive */
 
 function retranslate(selectedLanguage)
 {
@@ -33,8 +94,8 @@ function retranslate(selectedLanguage)
 		case 0: switch(intro)
 				{
 					case 0: retranslateIndexIntro(); break;
-					case 1: retranslateMicrochitzeIntro(); 	document.getElementById("imgMicrochitze" ).setAttribute("src", "Images/0.Common/1.Microchitze.png"); break;
-					case 2: retranslateMacrochitzeIntro(); 	document.getElementById("imgMacrochitze").setAttribute("src", "Images/0.Common/2.Macrochitze.png"); break;
+					case 1: retranslateMicrochitzeIntro();  document.getElementById("imgMicrochitze").setAttribute("src", "Images/0.Common/1.Microchitze.png"); break;
+					case 2: retranslateMacrochitzeIntro();  document.getElementById("imgMacrochitze").setAttribute("src", "Images/0.Common/2.Macrochitze.png"); break;
 					case 3: retranslateInteractiveIntro();	document.getElementById("imgInteractive").setAttribute("src", "Images/0.Common/3.Interactive.png"); break;
 					case 4: retranslateChessIntro();		document.getElementById("imgChess"      ).setAttribute("src", "Images/0.Common/4.Chess.png"); break;
 					case 5: retranslateDictionaryIntro();	document.getElementById("imgDictionary" ).setAttribute("src", "Images/0.Common/5.Dictionary.png"); break;
@@ -61,7 +122,7 @@ function retranslateCommon()
 function resetDivsToDefault()
 {
 	// Cell (1), no language dependency
-	if( (0==page) && (0==intro) )
+	if( (0===page) && (0===intro) )
 	{
 		document.getElementById("imgMicrochitze").setAttribute("src", "Images/0.Common/1.Microchitze.png");
 		document.getElementById("imgMacrochitze").setAttribute("src", "Images/0.Common/2.Macrochitze.png");
@@ -85,7 +146,7 @@ function resetDivsToDefault()
 	document.getElementById("buttonDictionary" ).setAttribute("onclick", "setIntroAndRetranslate(5)");
 
 	// reset divTitle attribute onMouseOver
-	document.getElementById("divTitle").setAttribute("onMouseOver","javascript:void(0);");
+	document.getElementById("divTitle").setAttribute("onMouseOver","return false;");
 		
 	// Cell (3) clear main contents divs for intro pages
 	switch(page)
@@ -99,7 +160,7 @@ function resetDivsToDefault()
 			document.getElementById("position-container").innerHTML = "";
 			document.getElementById("position-moves"    ).innerHTML = "";
 			document.getElementById("stipulation"       ).innerHTML = "";
-			document.getElementById("credentials" 		).innerHTML = "";
+			document.getElementById("credentials"       ).innerHTML = "";
 			break;
 		case 1:	break;
 		case 2:	break;
@@ -116,19 +177,19 @@ function retranslateIndexIntro()
 	document.getElementById("divMainContentsLeftIcon").innerHTML = "\
 			<table border='0' style='cursor:default'>\
 				<tr><td height='80'>\
-					<a id='imgMainContentsLeft1' href='#'><img src='Images/0.Common/1.Microchitze.png' 	width='64' height='64' border='0' onclick='setIntroAndRetranslate(1)'></img></a>\
+					<a id='imgMainContentsLeft1' href='#'><img src='Images/0.Common/1.Microchitze.png' width='64' height='64' border='0' onclick='setIntroAndRetranslate(1)'></img></a>\
 				</td></tr>\
 				<tr><td height='80'>\
-					<a id='imgMainContentsLeft2' href='#'><img src='Images/0.Common/2.Macrochitze.png' 	width='64' height='64' border='0' onclick='setIntroAndRetranslate(2)'></img></a>\
+					<a id='imgMainContentsLeft2' href='#'><img src='Images/0.Common/2.Macrochitze.png' width='64' height='64' border='0' onclick='setIntroAndRetranslate(2)'></img></a>\
 				</td></tr>\
 				<tr><td height='80'>\
-					<a id='imgMainContentsLeft3' href='#'><img src='Images/0.Common/3.Interactive.png' 	width='64' height='64' border='0' onclick='setIntroAndRetranslate(3)'></img></a>\
+					<a id='imgMainContentsLeft3' href='#'><img src='Images/0.Common/3.Interactive.png' width='64' height='64' border='0' onclick='setIntroAndRetranslate(3)'></img></a>\
 				</td></tr>\
 				<tr><td height='80'>\
-					<a id='imgMainContentsLeft4' href='#'><img src='Images/0.Common/4.Chess.png' 		width='64' height='64' border='0' onclick='setIntroAndRetranslate(4)'></img></a>\
+					<a id='imgMainContentsLeft4' href='#'><img src='Images/0.Common/4.Chess.png'       width='64' height='64' border='0' onclick='setIntroAndRetranslate(4)'></img></a>\
 					</td></tr>\
 				<tr><td height='80'>\
-					<a id='imgMainContentsLeft5' href='#'><img src='Images/0.Common/5.Dictionary.png' 	width='64' height='64' border='0' onclick='setIntroAndRetranslate(5)'></img></a>\
+					<a id='imgMainContentsLeft5' href='#'><img src='Images/0.Common/5.Dictionary.png'  width='64' height='64' border='0' onclick='setIntroAndRetranslate(5)'></img></a>\
 				</td></tr>\
 			</table>";
 			
@@ -163,7 +224,7 @@ function retranslateMicrochitzeIntro()
 	document.getElementById("divTitle").setAttribute("onMouseOver","showImageOnHover('','');");
 	
 	// Cell (3)
-	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/0.Common/1.Microchitze.png' width='128'></img>"
+	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/0.Common/1.Microchitze.png' width='128'></img>";
 	showImageOnHover("","");
 	
 	document.getElementById("divMainContents").innerHTML = "\
@@ -387,7 +448,7 @@ function retranslateChessIntro()
 {
 	document.getElementById("divTitle").setAttribute("onMouseOver","showChessPositionOnHover(00)");
 	
-	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/0.Common/4.Chess.png' width='128'></img>"
+	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/0.Common/4.Chess.png' width='128'></img>";
 	showImageOnHover("","");
 	
 		document.getElementById("divMainContents").innerHTML = "\
@@ -508,12 +569,12 @@ function retranslateChessIntro()
 	document.getElementById("Homemade11").href = "Chess.html?lang="+lang+"&aux=11";
 	document.getElementById("Homemade13").href = "Chess.html?lang="+lang+"&aux=13";
 	
-	showChessPositionOnHover(00);
+	showChessPositionOnHover(0);
 }
 
 function retranslateDictionaryIntro() 
 {
-	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/0.Common/5.Dictionary.png' width='128'></img>"
+	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/0.Common/5.Dictionary.png' width='128'></img>";
 	showImageOnHover("","");
 	
 	document.getElementById("divMainContents").innerHTML = "\
