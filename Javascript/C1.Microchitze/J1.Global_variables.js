@@ -38,7 +38,7 @@ var wrongAnswerBgColour = "#EEAAAA"; // background colour for the readonly field
 var dbQList  = [];   // database questions
 var dbAType  = [];   // database answer types (0 = no input accepted; 1 = free text; 2 = numeric)
 var dbAList  = [];   // database answer part to be checked
-var dbACrit  = [];   // database check criterion for answers (see 2.Database.js head comment)
+var dbACrit  = [];   // database check criterion for answers (see J2.Database.js head comment)
 var dbAnswer = [];   // database correct answers in plaintext
 var dbExpln  = [];   // database explanations    associated with each answer
 var dbRefer  = [];   // database references      associated with each answer/explanation

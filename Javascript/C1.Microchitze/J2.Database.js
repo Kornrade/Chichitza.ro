@@ -7,7 +7,7 @@
 |                                                                                          |
 |		Note: All are in fact arrays (=> dbQList and the others are two-dimensional)       |
 |				dbQList[j][k] stores question j in language k                              |
-|				So far 0 = ro; 1 = en; 2 = de; (used in 3.Functions::retranslateQuestions) |
+|				So far 0 = ro; 1 = en; 2 = de; (used in J3.Functions::retranslateQuestions) |
 |																						   |
 | dbAList contains the correct answers or parts of the answers that need to be checked     |
 | dbACrit contains the criterion for checking answers                                      |
@@ -113,13 +113,13 @@ dbQList[  0][2] = "Wie alt bist du?";
                         dbQHint[0][1] = "Welcome to the world of microteasers! <br/> As this is probably your introductory test, here are some hints: <br/><br/> Some questions (like this one) only allow numeric inputs formed from the digits 0 through 9, an optional point \".\" (for decimal part) and an optional minus \"-\" (for negative numbers). <br/> The answer here should be your age in years."; //hint en
                         dbQHint[0][2] = "Wilkommen in der Welt der Mikroknobeleien! <br/> Da es wahrscheinlich dein Einf&#252;rungstest ist, hier sind einige Hinweise: <br/><br/> Manche Fragen (wie diese hier) erlauben nur numerische Eingaben, die von Zahlen 0 bis 9, Punkt \".\" (f&#252;r Dezimalzahlen) und Minus \"-\" (f&#252;r negative Zahlen) zusammengesetzt sind. <br/> Die Antwort dieser Frage sollte dein Alter in Jahren sein."; //hint de
                         dbQImage[0] = []; dbQImageSrc[0] = []; 
-                        dbQImage[0][0] = "Images/1.Microchitze/000HowOld.png";	dbQImageSrc[0][0] = "www.afuntab.com";
-                        dbQImage[0][1] = "Images/1.Microchitze/000HowOld.png";	dbQImageSrc[0][1] = "www.afuntab.com";
-                        dbQImage[0][2] = "Images/1.Microchitze/000HowOld.png";	dbQImageSrc[0][2] = "www.afuntab.com";
+                        dbQImage[0][0] = "Images/C1.Microchitze/Img000HowOld.png";	dbQImageSrc[0][0] = "www.afuntab.com";
+                        dbQImage[0][1] = "Images/C1.Microchitze/Img000HowOld.png";	dbQImageSrc[0][1] = "www.afuntab.com";
+                        dbQImage[0][2] = "Images/C1.Microchitze/Img000HowOld.png";	dbQImageSrc[0][2] = "www.afuntab.com";
                         dbAImage[0] = []; dbAImageSrc[0] = [];
-                        dbAImage[0][0] = "Images/1.Microchitze/000HowOld.png";  dbAImageSrc[0][0] = "www.afuntab.com";
-                        dbAImage[0][1] = "Images/1.Microchitze/000HowOld.png";  dbAImageSrc[0][1] = "www.afuntab.com";
-                        dbAImage[0][2] = "Images/1.Microchitze/000HowOld.png";  dbAImageSrc[0][2] = "www.afuntab.com";
+                        dbAImage[0][0] = "Images/C1.Microchitze/Img000HowOld.png";  dbAImageSrc[0][0] = "www.afuntab.com";
+                        dbAImage[0][1] = "Images/C1.Microchitze/Img000HowOld.png";  dbAImageSrc[0][1] = "www.afuntab.com";
+                        dbAImage[0][2] = "Images/C1.Microchitze/Img000HowOld.png";  dbAImageSrc[0][2] = "www.afuntab.com";
 dbQList[1] = [];
 dbQList[  1][0] = "Ce greutate ai?"; 
 dbQList[  1][1] = "What is your weight?"; 
@@ -144,13 +144,13 @@ dbQList[  1][2] = "Was ist dein Gewicht?";
                         dbQHint[1][1] = "Hint: unless specified otherwise, the answers should consider the International System of Units(SI)..."; //hint en
                         dbQHint[1][2] = "Hinweis: wenn nicht anders angewiesen, die Antworten sollten das Internationalen Einheitensystem (SI) ber&#252;cksichtigen..."; //hint de
                         dbQImage[1] = []; dbQImageSrc[1] = []; 
-                        dbQImage[1][0] = "Images/1.Microchitze/001Weight.png";	dbQImageSrc[1][0] = "www.phoebeleslie.com";
-                        dbQImage[1][1] = "Images/1.Microchitze/001Weight.png";	dbQImageSrc[1][1] = "www.phoebeleslie.com";
-                        dbQImage[1][2] = "Images/1.Microchitze/001Weight.png";	dbQImageSrc[1][2] = "www.phoebeleslie.com";
+                        dbQImage[1][0] = "Images/C1.Microchitze/Img001Weight.png";	dbQImageSrc[1][0] = "www.phoebeleslie.com";
+                        dbQImage[1][1] = "Images/C1.Microchitze/Img001Weight.png";	dbQImageSrc[1][1] = "www.phoebeleslie.com";
+                        dbQImage[1][2] = "Images/C1.Microchitze/Img001Weight.png";	dbQImageSrc[1][2] = "www.phoebeleslie.com";
                         dbAImage[1] = []; dbAImageSrc[1] = [];
-                        dbAImage[1][0] = "Images/1.Microchitze/001MassWeight.png";  dbAImageSrc[1][0] = "www.thecalculatorsite.com";
-                        dbAImage[1][1] = "Images/1.Microchitze/001MassWeight.png";  dbAImageSrc[1][1] = "www.thecalculatorsite.com";
-                        dbAImage[1][2] = "Images/1.Microchitze/001MassWeight.png";  dbAImageSrc[1][2] = "www.thecalculatorsite.com";
+                        dbAImage[1][0] = "Images/C1.Microchitze/Img001MassWeight.png";  dbAImageSrc[1][0] = "www.thecalculatorsite.com";
+                        dbAImage[1][1] = "Images/C1.Microchitze/Img001MassWeight.png";  dbAImageSrc[1][1] = "www.thecalculatorsite.com";
+                        dbAImage[1][2] = "Images/C1.Microchitze/Img001MassWeight.png";  dbAImageSrc[1][2] = "www.thecalculatorsite.com";
 dbQList[2] = [];
 dbQList[  2][0] = "In mod normal, bei."; 
 dbQList[  2][1] = "You drink habitually."; 
@@ -175,13 +175,13 @@ dbQList[  2][2] = "Du trinks gew&#246;hnlich.";
                         dbQHint[2][1] = "Hint: The Left and Right arrows may be used to select the answer."; //hint en
                         dbQHint[2][2] = "Hinweis: Man kann die Antwort mit hilfe der Links- und Rechtspfeile w&#228;hlen."; //hint de
                         dbQImage[2] = []; dbQImageSrc[2] = []; 
-                        dbQImage[2][0] = "Images/1.Microchitze/002Drink.png";	dbQImageSrc[2][0] = "openclipart.org";
-                        dbQImage[2][1] = "Images/1.Microchitze/002Drink.png";	dbQImageSrc[2][1] = "openclipart.org";
-                        dbQImage[2][2] = "Images/1.Microchitze/002Drink.png";	dbQImageSrc[2][2] = "openclipart.org";
+                        dbQImage[2][0] = "Images/C1.Microchitze/Img002Drink.png";	dbQImageSrc[2][0] = "openclipart.org";
+                        dbQImage[2][1] = "Images/C1.Microchitze/Img002Drink.png";	dbQImageSrc[2][1] = "openclipart.org";
+                        dbQImage[2][2] = "Images/C1.Microchitze/Img002Drink.png";	dbQImageSrc[2][2] = "openclipart.org";
                         dbAImage[2] = []; dbAImageSrc[2] = [];
-                        dbAImage[2][0] = "Images/1.Microchitze/002DrinkAnswer.png";  dbAImageSrc[2][0] = "7428.net";
-                        dbAImage[2][1] = "Images/1.Microchitze/002DrinkAnswer.png";  dbAImageSrc[2][1] = "7428.net";
-                        dbAImage[2][2] = "Images/1.Microchitze/002DrinkAnswer.png";  dbAImageSrc[2][2] = "7428.net";
+                        dbAImage[2][0] = "Images/C1.Microchitze/Img002DrinkAnswer.png";  dbAImageSrc[2][0] = "7428.net";
+                        dbAImage[2][1] = "Images/C1.Microchitze/Img002DrinkAnswer.png";  dbAImageSrc[2][1] = "7428.net";
+                        dbAImage[2][2] = "Images/C1.Microchitze/Img002DrinkAnswer.png";  dbAImageSrc[2][2] = "7428.net";
 dbQList[3] = [];
 dbQList[  3][0] = "In mod normal, fumezi."; 
 dbQList[  3][1] = "You smoke habitually."; 
@@ -206,13 +206,13 @@ dbQList[  3][2] = "Du rauchst gew&#246;hnlich.";
                         dbQHint[3][1] = "Hint: The next unanswered question can be displayed by pressing \"Enter\"."; //hint en
                         dbQHint[3][2] = "Hinweis: Die n&#228;chste unbeantwortete Frage kann durch \"Enter\" dr&#252;cken gezeigt werden."; //hint de
                         dbQImage[3] = []; dbQImageSrc[3] = []; 
-                        dbQImage[3][0] = "Images/1.Microchitze/003Cigarette.png";	dbQImageSrc[3][0] = "www.zedge.net/";
-                        dbQImage[3][1] = "Images/1.Microchitze/003Cigarette.png";	dbQImageSrc[3][1] = "www.zedge.net/";
-                        dbQImage[3][2] = "Images/1.Microchitze/003Cigarette.png";	dbQImageSrc[3][2] = "www.zedge.net/";
+                        dbQImage[3][0] = "Images/C1.Microchitze/Img003Cigarette.png";	dbQImageSrc[3][0] = "www.zedge.net/";
+                        dbQImage[3][1] = "Images/C1.Microchitze/Img003Cigarette.png";	dbQImageSrc[3][1] = "www.zedge.net/";
+                        dbQImage[3][2] = "Images/C1.Microchitze/Img003Cigarette.png";	dbQImageSrc[3][2] = "www.zedge.net/";
                         dbAImage[3] = []; dbAImageSrc[3] = [];
-                        dbAImage[3][0] = "Images/1.Microchitze/003Ashtray.png";  dbAImageSrc[3][0] = "www.aliexpress.com";
-                        dbAImage[3][1] = "Images/1.Microchitze/003Ashtray.png";  dbAImageSrc[3][1] = "www.aliexpress.com";
-                        dbAImage[3][2] = "Images/1.Microchitze/003Ashtray.png";  dbAImageSrc[3][2] = "www.aliexpress.com";
+                        dbAImage[3][0] = "Images/C1.Microchitze/Img003Ashtray.png";  dbAImageSrc[3][0] = "www.aliexpress.com";
+                        dbAImage[3][1] = "Images/C1.Microchitze/Img003Ashtray.png";  dbAImageSrc[3][1] = "www.aliexpress.com";
+                        dbAImage[3][2] = "Images/C1.Microchitze/Img003Ashtray.png";  dbAImageSrc[3][2] = "www.aliexpress.com";
 dbQList[4] = [];
 dbQList[  4][0] = "In mod normal, auzi voci."; 
 dbQList[  4][1] = "You hear voices habitually."; 
@@ -237,13 +237,13 @@ dbQList[  4][2] = "Du h&#246;rst Stimmen gew&#246;hnlich.";
                         dbQHint[4][1] = ""; //hint en
                         dbQHint[4][2] = ""; //hint de
                         dbQImage[4] = []; dbQImageSrc[4] = []; 
-                        dbQImage[4][0] = "Images/1.Microchitze/004Voices.png";	dbQImageSrc[4][0] = "oldereyes.wordpress.com";
-                        dbQImage[4][1] = "Images/1.Microchitze/004Voices.png";	dbQImageSrc[4][1] = "oldereyes.wordpress.com";
-                        dbQImage[4][2] = "Images/1.Microchitze/004Voices.png";	dbQImageSrc[4][2] = "oldereyes.wordpress.com";
+                        dbQImage[4][0] = "Images/C1.Microchitze/Img004Voices.png";	dbQImageSrc[4][0] = "oldereyes.wordpress.com";
+                        dbQImage[4][1] = "Images/C1.Microchitze/Img004Voices.png";	dbQImageSrc[4][1] = "oldereyes.wordpress.com";
+                        dbQImage[4][2] = "Images/C1.Microchitze/Img004Voices.png";	dbQImageSrc[4][2] = "oldereyes.wordpress.com";
                         dbAImage[4] = []; dbAImageSrc[4] = [];
-                        dbAImage[4][0] = "Images/1.Microchitze/004VoicesHuman.png";  dbAImageSrc[4][0] = "www.lara-bx2.com";
-                        dbAImage[4][1] = "Images/1.Microchitze/004VoicesHuman.png";  dbAImageSrc[4][1] = "www.lara-bx2.com";
-                        dbAImage[4][2] = "Images/1.Microchitze/004VoicesHuman.png";  dbAImageSrc[4][2] = "www.lara-bx2.com";
+                        dbAImage[4][0] = "Images/C1.Microchitze/Img004VoicesHuman.png";  dbAImageSrc[4][0] = "www.lara-bx2.com";
+                        dbAImage[4][1] = "Images/C1.Microchitze/Img004VoicesHuman.png";  dbAImageSrc[4][1] = "www.lara-bx2.com";
+                        dbAImage[4][2] = "Images/C1.Microchitze/Img004VoicesHuman.png";  dbAImageSrc[4][2] = "www.lara-bx2.com";
 dbQList[5] = [];
 dbQList[  5][0] = "In mod normal, vezi puncte negre."; 
 dbQList[  5][1] = "You see black dots habitually."; 
@@ -268,13 +268,13 @@ dbQList[  5][2] = "Du siehst schwarze Punkte gew&#246;hnlich.";
                         dbQHint[5][1] = ""; //hint en
                         dbQHint[5][2] = ""; //hint de
                         dbQImage[5] = []; dbQImageSrc[5] = []; 
-                        dbQImage[5][0] = "Images/1.Microchitze/005DotsIllusion.png";	dbQImageSrc[5][0] = "psychology.wikia.com";
-                        dbQImage[5][1] = "Images/1.Microchitze/005DotsIllusion.png";	dbQImageSrc[5][1] = "psychology.wikia.com";
-                        dbQImage[5][2] = "Images/1.Microchitze/005DotsIllusion.png";	dbQImageSrc[5][2] = "psychology.wikia.com";
+                        dbQImage[5][0] = "Images/C1.Microchitze/Img005DotsIllusion.png";	dbQImageSrc[5][0] = "psychology.wikia.com";
+                        dbQImage[5][1] = "Images/C1.Microchitze/Img005DotsIllusion.png";	dbQImageSrc[5][1] = "psychology.wikia.com";
+                        dbQImage[5][2] = "Images/C1.Microchitze/Img005DotsIllusion.png";	dbQImageSrc[5][2] = "psychology.wikia.com";
                         dbAImage[5] = []; dbAImageSrc[5] = [];
-                        dbAImage[5][0] = "Images/1.Microchitze/005DotsBraille.png";  dbAImageSrc[5][0] = "commons.wikimedia.org";
-                        dbAImage[5][1] = "Images/1.Microchitze/005DotsBraille.png";  dbAImageSrc[5][1] = "commons.wikimedia.org";
-                        dbAImage[5][2] = "Images/1.Microchitze/005DotsBraille.png";  dbAImageSrc[5][2] = "commons.wikimedia.org";
+                        dbAImage[5][0] = "Images/C1.Microchitze/Img005DotsBraille.png";  dbAImageSrc[5][0] = "commons.wikimedia.org";
+                        dbAImage[5][1] = "Images/C1.Microchitze/Img005DotsBraille.png";  dbAImageSrc[5][1] = "commons.wikimedia.org";
+                        dbAImage[5][2] = "Images/C1.Microchitze/Img005DotsBraille.png";  dbAImageSrc[5][2] = "commons.wikimedia.org";
 dbQList[6] = [];
 dbQList[  6][0] = "C&#xE2;te degete vezi &#xEE;n imagine?"; 
 dbQList[  6][1] = "How many fingers do you see in the picture?"; 
@@ -299,13 +299,13 @@ dbQList[  6][2] = "Wie viele Finger siehst du in diesen Bild?";
                         dbQHint[6][1] = ""; //hint en
                         dbQHint[6][2] = ""; //hint de
                         dbQImage[6] = []; dbQImageSrc[6] = []; 
-                        dbQImage[6][0] = "Images/1.Microchitze/006FingersRaised.png";	dbQImageSrc[6][0] = "aarondavis.net";
-                        dbQImage[6][1] = "Images/1.Microchitze/006FingersRaised.png";	dbQImageSrc[6][1] = "aarondavis.net";
-                        dbQImage[6][2] = "Images/1.Microchitze/006FingersRaised.png";	dbQImageSrc[6][2] = "aarondavis.net";
+                        dbQImage[6][0] = "Images/C1.Microchitze/Img006FingersRaised.png";	dbQImageSrc[6][0] = "aarondavis.net";
+                        dbQImage[6][1] = "Images/C1.Microchitze/Img006FingersRaised.png";	dbQImageSrc[6][1] = "aarondavis.net";
+                        dbQImage[6][2] = "Images/C1.Microchitze/Img006FingersRaised.png";	dbQImageSrc[6][2] = "aarondavis.net";
                         dbAImage[6] = []; dbAImageSrc[6] = [];
-                        dbAImage[6][0] = "Images/1.Microchitze/006FingersRaised.png";  dbAImageSrc[6][0] = "aarondavis.net";
-                        dbAImage[6][1] = "Images/1.Microchitze/006FingersRaised.png";  dbAImageSrc[6][1] = "aarondavis.net";
-                        dbAImage[6][2] = "Images/1.Microchitze/006FingersRaised.png";  dbAImageSrc[6][2] = "aarondavis.net";
+                        dbAImage[6][0] = "Images/C1.Microchitze/Img006FingersRaised.png";  dbAImageSrc[6][0] = "aarondavis.net";
+                        dbAImage[6][1] = "Images/C1.Microchitze/Img006FingersRaised.png";  dbAImageSrc[6][1] = "aarondavis.net";
+                        dbAImage[6][2] = "Images/C1.Microchitze/Img006FingersRaised.png";  dbAImageSrc[6][2] = "aarondavis.net";
 dbQList[7] = [];
 dbQList[  7][0] = "Cum gole&#x15F;ti o cad&#x103; plin&#x103; cu ap&#x103; dac&#x103; ai la dispozi&#x163;ie o lingur&#x103;, o can&#x103; &#x15F;i o g&#x103;leat&#x103;?"; 
 dbQList[  7][1] = "How do you empty a bathtub full of water if you have a spoon, a mug and a bucket?"; 
@@ -330,13 +330,13 @@ dbQList[  7][2] = "Wie leerst du eine mit Wasser volle Badewanne, wenn du ein L&
                         dbQHint[7][1] = "Hint: Most questions allow you to enter free text. For validation purposes, please do not use diacritics or special characters. <br/><br/> e.g. use <i>naive</i> instead of <i>na&#239;ve</i>"; //hint en
                         dbQHint[7][2] = "Hinweis: Die meisten Fragen k&#246;nnen mit Freitext geantwortet werden. F&#252;r eine optimale Bewertung, bitte benutze keine diakritische Zeichen. <br/><br/> z.B. benutze <i>Fuesse</i> statt <i>F&#252;&#223;e</i>"; //hint de
                         dbQImage[7] = []; dbQImageSrc[7] = []; 
-                        dbQImage[7][0] = "Images/1.Microchitze/007Bathtub.png";	dbQImageSrc[7][0] = "www.dreamstime.com/";
-                        dbQImage[7][1] = "Images/1.Microchitze/007Bathtub.png";	dbQImageSrc[7][1] = "www.dreamstime.com/";
-                        dbQImage[7][2] = "Images/1.Microchitze/007Bathtub.png";	dbQImageSrc[7][2] = "www.dreamstime.com/";
+                        dbQImage[7][0] = "Images/C1.Microchitze/Img007Bathtub.png";	dbQImageSrc[7][0] = "www.dreamstime.com/";
+                        dbQImage[7][1] = "Images/C1.Microchitze/Img007Bathtub.png";	dbQImageSrc[7][1] = "www.dreamstime.com/";
+                        dbQImage[7][2] = "Images/C1.Microchitze/Img007Bathtub.png";	dbQImageSrc[7][2] = "www.dreamstime.com/";
                         dbAImage[7] = [];							dbAImageSrc[7] = [];
-                        dbAImage[7][0] = "Images/1.Microchitze/007BathtubAnswer.png";  dbAImageSrc[7][0] = "www.physics.umd.edu";
-                        dbAImage[7][1] = "Images/1.Microchitze/007BathtubAnswer.png";  dbAImageSrc[7][1] = "www.physics.umd.edu";
-                        dbAImage[7][2] = "Images/1.Microchitze/007BathtubAnswer.png";  dbAImageSrc[7][2] = "www.physics.umd.edu";
+                        dbAImage[7][0] = "Images/C1.Microchitze/Img007BathtubAnswer.png";  dbAImageSrc[7][0] = "www.physics.umd.edu";
+                        dbAImage[7][1] = "Images/C1.Microchitze/Img007BathtubAnswer.png";  dbAImageSrc[7][1] = "www.physics.umd.edu";
+                        dbAImage[7][2] = "Images/C1.Microchitze/Img007BathtubAnswer.png";  dbAImageSrc[7][2] = "www.physics.umd.edu";
 dbQList[8] = [];
 dbQList[  8][0] = "Ce faci dac&#x103; g&#x103;se&#x15F;ti clorur&#x103; de sodiu &#xEE;n m&#xE2;ncare?"; 
 dbQList[  8][1] = "What do you do when you find sodium chloride in your food?"; 
@@ -361,13 +361,13 @@ dbQList[  8][2] = "Was machst du, wenn du Natriumchlorid in Essen findest?";
                         dbQHint[8][1] = ""; //hint en
                         dbQHint[8][2] = ""; //hint de
                         dbQImage[8] = []; dbQImageSrc[8] = []; 
-                        dbQImage[8][0] = "Images/1.Microchitze/008NaCl.png";	dbQImageSrc[8][0] = "www.chemistry.wustl.edu";
-                        dbQImage[8][1] = "Images/1.Microchitze/008NaCl.png";	dbQImageSrc[8][1] = "www.chemistry.wustl.edu";
-                        dbQImage[8][2] = "Images/1.Microchitze/008NaCl.png";	dbQImageSrc[8][2] = "www.chemistry.wustl.edu";
+                        dbQImage[8][0] = "Images/C1.Microchitze/Img008NaCl.png";	dbQImageSrc[8][0] = "www.chemistry.wustl.edu";
+                        dbQImage[8][1] = "Images/C1.Microchitze/Img008NaCl.png";	dbQImageSrc[8][1] = "www.chemistry.wustl.edu";
+                        dbQImage[8][2] = "Images/C1.Microchitze/Img008NaCl.png";	dbQImageSrc[8][2] = "www.chemistry.wustl.edu";
                         dbAImage[8] = [];							dbAImageSrc[8] = [];
-                        dbAImage[8][0] = "Images/1.Microchitze/008Salt.png";  dbAImageSrc[8][0] = "coolclips.com";
-                        dbAImage[8][1] = "Images/1.Microchitze/008Salt.png";  dbAImageSrc[8][1] = "coolclips.com";
-                        dbAImage[8][2] = "Images/1.Microchitze/008Salt.png";  dbAImageSrc[8][2] = "coolclips.com";
+                        dbAImage[8][0] = "Images/C1.Microchitze/Img008Salt.png";  dbAImageSrc[8][0] = "coolclips.com";
+                        dbAImage[8][1] = "Images/C1.Microchitze/Img008Salt.png";  dbAImageSrc[8][1] = "coolclips.com";
+                        dbAImage[8][2] = "Images/C1.Microchitze/Img008Salt.png";  dbAImageSrc[8][2] = "coolclips.com";
 dbQList[9] = [];
 dbQList[  9][0] = "Dac&#x103; atunci c&#xE2;nd conduci ma&#x15F;ina &#xEE;&#x163;i sar &#xEE;n fa&#x163;&#x103; iepure &#x15F;i un porc, ce calci mai &#xEE;nt&#xE2;i?"; 
 dbQList[  9][1] = "If a rabbit and a snail jump in front of the car while you are driving, what would you hit first?"; 
@@ -392,13 +392,13 @@ dbQList[  9][2] = "Wenn du mit dem Auto f&#228;hrst und ein Hase und ein Schwein
                         dbQHint[9][1] = "Hint: When all questions have been answered, the results button appears below the question numbers."; //hint en
                         dbQHint[9][2] = "Hinweis: Wenn alle Fragen beantwortet sind, die Bewertung-drucktaste wird unter den Fragennummer sichtbar gemacht."; //hint de
                         dbQImage[9] = []; dbQImageSrc[9] = []; 
-                        dbQImage[9][0] = "Images/1.Microchitze/009RacingPig.png";	dbQImageSrc[9][0] = "www.clipartof.com";
-                        dbQImage[9][1] = "Images/1.Microchitze/009RacingPig.png";	dbQImageSrc[9][1] = "www.clipartof.com";
-                        dbQImage[9][2] = "Images/1.Microchitze/009RacingPig.png";	dbQImageSrc[9][2] = "www.clipartof.com";
+                        dbQImage[9][0] = "Images/C1.Microchitze/Img009RacingPig.png";	dbQImageSrc[9][0] = "www.clipartof.com";
+                        dbQImage[9][1] = "Images/C1.Microchitze/Img009RacingPig.png";	dbQImageSrc[9][1] = "www.clipartof.com";
+                        dbQImage[9][2] = "Images/C1.Microchitze/Img009RacingPig.png";	dbQImageSrc[9][2] = "www.clipartof.com";
                         dbAImage[9] = [];							dbAImageSrc[9] = [];
-                        dbAImage[9][0] = "Images/1.Microchitze/009Brake.png";  dbAImageSrc[9][0] = "campusreporter.wordpress.com";
-                        dbAImage[9][1] = "Images/1.Microchitze/009Brake.png";  dbAImageSrc[9][1] = "campusreporter.wordpress.com";
-                        dbAImage[9][2] = "Images/1.Microchitze/009Brake.png";  dbAImageSrc[9][2] = "campusreporter.wordpress.com";
+                        dbAImage[9][0] = "Images/C1.Microchitze/Img009Brake.png";  dbAImageSrc[9][0] = "campusreporter.wordpress.com";
+                        dbAImage[9][1] = "Images/C1.Microchitze/Img009Brake.png";  dbAImageSrc[9][1] = "campusreporter.wordpress.com";
+                        dbAImage[9][2] = "Images/C1.Microchitze/Img009Brake.png";  dbAImageSrc[9][2] = "campusreporter.wordpress.com";
                         
 // SOCIOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // SOCIOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -434,13 +434,13 @@ dbQList[ 10][2] = "Was geh&#246;rt dir, aber die anderen gebrauchen es h&#228;uf
                         dbQHint[10][1] = ""; //hint en
                         dbQHint[10][2] = ""; //hint de
                         dbQImage[10] = []; dbQImageSrc[10] = []; 
-                        dbQImage[10][0] = "Images/1.Microchitze/010Robber.png";	dbQImageSrc[10][0] = "library.queensu.ca";
-                        dbQImage[10][1] = "Images/1.Microchitze/010Robber.png";	dbQImageSrc[10][1] = "library.queensu.ca";
-                        dbQImage[10][2] = "Images/1.Microchitze/010Robber.png";	dbQImageSrc[10][2] = "library.queensu.ca";
+                        dbQImage[10][0] = "Images/C1.Microchitze/Img010Robber.png";	dbQImageSrc[10][0] = "library.queensu.ca";
+                        dbQImage[10][1] = "Images/C1.Microchitze/Img010Robber.png";	dbQImageSrc[10][1] = "library.queensu.ca";
+                        dbQImage[10][2] = "Images/C1.Microchitze/Img010Robber.png";	dbQImageSrc[10][2] = "library.queensu.ca";
                         dbAImage[10] = [];							dbAImageSrc[10] = [];
-                        dbAImage[10][0] = "Images/1.Microchitze/010Nume.png";  dbAImageSrc[10][0] = "www.zazzle.com/";
-                        dbAImage[10][1] = "Images/1.Microchitze/010Name.png";  dbAImageSrc[10][1] = "www.zazzle.com/";
-                        dbAImage[10][2] = "Images/1.Microchitze/010Name.png";  dbAImageSrc[10][2] = "www.zazzle.com/";
+                        dbAImage[10][0] = "Images/C1.Microchitze/Img010Nume.png";  dbAImageSrc[10][0] = "www.zazzle.com/";
+                        dbAImage[10][1] = "Images/C1.Microchitze/Img010Name.png";  dbAImageSrc[10][1] = "www.zazzle.com/";
+                        dbAImage[10][2] = "Images/C1.Microchitze/Img010Name.png";  dbAImageSrc[10][2] = "www.zazzle.com/";
 dbQList[11] = [];
 dbQList[ 11][0] = "Ce ai putut face oric&#xE2;nd cu m&#xE2;na stang&#x103; dar niciodat&#x103; cu m&#xE2;na dreapt&#x103;?"; 
 dbQList[ 11][1] = "What could you always do with your left hand but never with your right hand?"; 
@@ -465,13 +465,13 @@ dbQList[ 11][2] = "Was konntest du schon immer mit der linken Hand tun, aber nie
                         dbQHint[11][1] = ""; //hint en
                         dbQHint[11][2] = ""; //hint de
                         dbQImage[11] = []; dbQImageSrc[11] = []; 
-                        dbQImage[11][0] = "Images/1.Microchitze/011Hands.png";	dbQImageSrc[11][0] = "www.123rf.com";
-                        dbQImage[11][1] = "Images/1.Microchitze/011Hands.png";	dbQImageSrc[11][1] = "www.123rf.com";
-                        dbQImage[11][2] = "Images/1.Microchitze/011Hands.png";	dbQImageSrc[11][2] = "www.123rf.com";
+                        dbQImage[11][0] = "Images/C1.Microchitze/Img011Hands.png";	dbQImageSrc[11][0] = "www.123rf.com";
+                        dbQImage[11][1] = "Images/C1.Microchitze/Img011Hands.png";	dbQImageSrc[11][1] = "www.123rf.com";
+                        dbQImage[11][2] = "Images/C1.Microchitze/Img011Hands.png";	dbQImageSrc[11][2] = "www.123rf.com";
                         dbAImage[11] = [];							dbAImageSrc[11] = [];
-                        dbAImage[11][0] = "Images/1.Microchitze/011Elbow.png";  dbAImageSrc[11][0] = "kippywinston.wordpress.com";
-                        dbAImage[11][1] = "Images/1.Microchitze/011Elbow.png";  dbAImageSrc[11][1] = "kippywinston.wordpress.com";
-                        dbAImage[11][2] = "Images/1.Microchitze/011Elbow.png";  dbAImageSrc[11][2] = "kippywinston.wordpress.com";
+                        dbAImage[11][0] = "Images/C1.Microchitze/Img011Elbow.png";  dbAImageSrc[11][0] = "kippywinston.wordpress.com";
+                        dbAImage[11][1] = "Images/C1.Microchitze/Img011Elbow.png";  dbAImageSrc[11][1] = "kippywinston.wordpress.com";
+                        dbAImage[11][2] = "Images/C1.Microchitze/Img011Elbow.png";  dbAImageSrc[11][2] = "kippywinston.wordpress.com";
 dbQList[12] = [];
 dbQList[ 12][0] = "Ce po&#x163;i vedea de&#x15F;i nu are con&#x163;inut?"; 
 dbQList[ 12][1] = "What has no content yet you are still able to see it?"; 
@@ -496,13 +496,13 @@ dbQList[ 12][2] = "Was hat kein Inhalt, kann dennoch gesehen werden?";
                         dbQHint[12][1] = ""; //hint en
                         dbQHint[12][2] = ""; //hint de
                         dbQImage[12] = []; dbQImageSrc[12] = []; 
-                        dbQImage[12][0] = "Images/1.Microchitze/012Blind.png";	dbQImageSrc[12][0] = "nobrowcartoons.wordpress.com";
-                        dbQImage[12][1] = "Images/1.Microchitze/012Blind.png";	dbQImageSrc[12][1] = "nobrowcartoons.wordpress.com";
-                        dbQImage[12][2] = "Images/1.Microchitze/012Blind.png";	dbQImageSrc[12][2] = "nobrowcartoons.wordpress.com";
+                        dbQImage[12][0] = "Images/C1.Microchitze/Img012Blind.png";	dbQImageSrc[12][0] = "nobrowcartoons.wordpress.com";
+                        dbQImage[12][1] = "Images/C1.Microchitze/Img012Blind.png";	dbQImageSrc[12][1] = "nobrowcartoons.wordpress.com";
+                        dbQImage[12][2] = "Images/C1.Microchitze/Img012Blind.png";	dbQImageSrc[12][2] = "nobrowcartoons.wordpress.com";
                         dbAImage[12] = [];							dbAImageSrc[12] = [];
-                        dbAImage[12][0] = "Images/1.Microchitze/012Hole.png";  dbAImageSrc[12][0] = "www.hongkiat.com";
-                        dbAImage[12][1] = "Images/1.Microchitze/012Hole.png";  dbAImageSrc[12][1] = "www.hongkiat.com";
-                        dbAImage[12][2] = "Images/1.Microchitze/012Hole.png";  dbAImageSrc[12][2] = "www.hongkiat.com";
+                        dbAImage[12][0] = "Images/C1.Microchitze/Img012Hole.png";  dbAImageSrc[12][0] = "www.hongkiat.com";
+                        dbAImage[12][1] = "Images/C1.Microchitze/Img012Hole.png";  dbAImageSrc[12][1] = "www.hongkiat.com";
+                        dbAImage[12][2] = "Images/C1.Microchitze/Img012Hole.png";  dbAImageSrc[12][2] = "www.hongkiat.com";
 dbQList[13] = [];
 dbQList[ 13][0] = "Ce po&#x163;i p&#x103;stra dar nu &#xEE;mp&#x103;r&#x163;i, deoarece odat&#x103; &#xEE;mp&#x103;r&#x163;it nu-l mai po&#x163;i p&#x103;stra?"; 
 dbQList[ 13][1] = "What can you keep but cannot share because once you share it, you cannot keep it anymore?"; 
@@ -527,13 +527,13 @@ dbQList[ 13][2] = "Was kannst du bewahren, aber nicht mit die anderen teilen, de
                         dbQHint[13][1] = ""; //hint en
                         dbQHint[13][2] = ""; //hint de
                         dbQImage[13] = []; dbQImageSrc[13] = []; 
-                        dbQImage[13][0] = "Images/1.Microchitze/013Chest.png";	dbQImageSrc[13][0] = "www.istockphoto.com";
-                        dbQImage[13][1] = "Images/1.Microchitze/013Chest.png";	dbQImageSrc[13][1] = "www.istockphoto.com";
-                        dbQImage[13][2] = "Images/1.Microchitze/013Chest.png";	dbQImageSrc[13][2] = "www.istockphoto.com";
+                        dbQImage[13][0] = "Images/C1.Microchitze/Img013Chest.png";	dbQImageSrc[13][0] = "www.istockphoto.com";
+                        dbQImage[13][1] = "Images/C1.Microchitze/Img013Chest.png";	dbQImageSrc[13][1] = "www.istockphoto.com";
+                        dbQImage[13][2] = "Images/C1.Microchitze/Img013Chest.png";	dbQImageSrc[13][2] = "www.istockphoto.com";
                         dbAImage[13] = [];							dbAImageSrc[13] = [];
-                        dbAImage[13][0] = "Images/1.Microchitze/013Shh.png";  dbAImageSrc[13][0] = "crayzys.blogspot.com";
-                        dbAImage[13][1] = "Images/1.Microchitze/013Shh.png";  dbAImageSrc[13][1] = "crayzys.blogspot.com";
-                        dbAImage[13][2] = "Images/1.Microchitze/013Shh.png";  dbAImageSrc[13][2] = "crayzys.blogspot.com";
+                        dbAImage[13][0] = "Images/C1.Microchitze/Img013Shh.png";  dbAImageSrc[13][0] = "crayzys.blogspot.com";
+                        dbAImage[13][1] = "Images/C1.Microchitze/Img013Shh.png";  dbAImageSrc[13][1] = "crayzys.blogspot.com";
+                        dbAImage[13][2] = "Images/C1.Microchitze/Img013Shh.png";  dbAImageSrc[13][2] = "crayzys.blogspot.com";
 dbQList[14] = [];
 dbQList[ 14][0] = "Ce arunci c&#xE2;nd vrei s&#x103; folose&#x15F;ti &#x15F;i iei &#xEE;napoi c&#xE2;nd nu vrei s&#x103; folose&#x15F;ti?"; 
 dbQList[ 14][1] = "What do you throw when you want to use and take back when you don't?"; 
@@ -561,13 +561,13 @@ dbQList[ 14][2] = "Was wirfst du wenn du es benutzen willst, und nimmst zur&#252
                         dbQHint[14][1] = ""; //hint en
                         dbQHint[14][2] = ""; //hint de
                         dbQImage[14] = []; dbQImageSrc[14] = []; 
-                        dbQImage[14][0] = "Images/1.Microchitze/014Trash.png";	dbQImageSrc[14][0] = "www.dreamstime.com";
-                        dbQImage[14][1] = "Images/1.Microchitze/014Trash.png";	dbQImageSrc[14][1] = "www.dreamstime.com";
-                        dbQImage[14][2] = "Images/1.Microchitze/014Trash.png";	dbQImageSrc[14][2] = "www.dreamstime.com";
+                        dbQImage[14][0] = "Images/C1.Microchitze/Img014Trash.png";	dbQImageSrc[14][0] = "www.dreamstime.com";
+                        dbQImage[14][1] = "Images/C1.Microchitze/Img014Trash.png";	dbQImageSrc[14][1] = "www.dreamstime.com";
+                        dbQImage[14][2] = "Images/C1.Microchitze/Img014Trash.png";	dbQImageSrc[14][2] = "www.dreamstime.com";
                         dbAImage[14] = [];							dbAImageSrc[14] = [];
-                        dbAImage[14][0] = "Images/1.Microchitze/014Anchor.png";  dbAImageSrc[14][0] = "www.etsy.com";
-                        dbAImage[14][1] = "Images/1.Microchitze/014Anchor.png";  dbAImageSrc[14][1] = "www.etsy.com";
-                        dbAImage[14][2] = "Images/1.Microchitze/014Anchor.png";  dbAImageSrc[14][2] = "www.etsy.com";
+                        dbAImage[14][0] = "Images/C1.Microchitze/Img014Anchor.png";  dbAImageSrc[14][0] = "www.etsy.com";
+                        dbAImage[14][1] = "Images/C1.Microchitze/Img014Anchor.png";  dbAImageSrc[14][1] = "www.etsy.com";
+                        dbAImage[14][2] = "Images/C1.Microchitze/Img014Anchor.png";  dbAImageSrc[14][2] = "www.etsy.com";
 dbQList[15] = [];
 dbQList[ 15][0] = "Ce se rupe c&#xE2;nd &#xEE;i zici pe nume?"; 
 dbQList[ 15][1] = "What is broken when you name it?"; 
@@ -592,13 +592,13 @@ dbQList[ 15][2] = "Was wird gebrochen wenn du es nennst?";
                         dbQHint[15][1] = ""; //hint en
                         dbQHint[15][2] = ""; //hint de
                         dbQImage[15] = []; dbQImageSrc[15] = []; 
-                        dbQImage[15][0] = "Images/1.Microchitze/015Chain.png";	dbQImageSrc[15][0] = "www.gograph.com";
-                        dbQImage[15][1] = "Images/1.Microchitze/015Chain.png";	dbQImageSrc[15][1] = "www.gograph.com";
-                        dbQImage[15][2] = "Images/1.Microchitze/015Chain.png";	dbQImageSrc[15][2] = "www.gograph.com";
+                        dbQImage[15][0] = "Images/C1.Microchitze/Img015Chain.png";	dbQImageSrc[15][0] = "www.gograph.com";
+                        dbQImage[15][1] = "Images/C1.Microchitze/Img015Chain.png";	dbQImageSrc[15][1] = "www.gograph.com";
+                        dbQImage[15][2] = "Images/C1.Microchitze/Img015Chain.png";	dbQImageSrc[15][2] = "www.gograph.com";
                         dbAImage[15] = [];							dbAImageSrc[15] = [];
-                        dbAImage[15][0] = "Images/1.Microchitze/015Shh.png";  dbAImageSrc[15][0] = "www.zazzle.com";
-                        dbAImage[15][1] = "Images/1.Microchitze/015Shh.png";  dbAImageSrc[15][1] = "www.zazzle.com";
-                        dbAImage[15][2] = "Images/1.Microchitze/015Shh.png";  dbAImageSrc[15][2] = "www.zazzle.com";
+                        dbAImage[15][0] = "Images/C1.Microchitze/Img015Shh.png";  dbAImageSrc[15][0] = "www.zazzle.com";
+                        dbAImage[15][1] = "Images/C1.Microchitze/Img015Shh.png";  dbAImageSrc[15][1] = "www.zazzle.com";
+                        dbAImage[15][2] = "Images/C1.Microchitze/Img015Shh.png";  dbAImageSrc[15][2] = "www.zazzle.com";
 dbQList[16] = [];
 dbQList[ 16][0] = "Ce trebuie s&#x103; fi f&#x103;cut neap&#x103;rat &#xEE;nainte s&#x103; po&#x21B;i cobor&#xEE; din tren?"; 
 dbQList[ 16][1] = "What must you necessarily have done before being able to get off a train?"; 
@@ -623,13 +623,13 @@ dbQList[ 16][2] = "Was musst du unbedingt getan haben, bevor du aus einem Zug au
                         dbQHint[16][1] = ""; //hint en
                         dbQHint[16][2] = ""; //hint de
                         dbQImage[16] = []; dbQImageSrc[16] = []; 
-                        dbQImage[16][0] = "Images/1.Microchitze/016Railway.png";	dbQImageSrc[16][0] = "www.canstockphoto.com";
-                        dbQImage[16][1] = "Images/1.Microchitze/016Railway.png";	dbQImageSrc[16][1] = "www.canstockphoto.com";
-                        dbQImage[16][2] = "Images/1.Microchitze/016Railway.png";	dbQImageSrc[16][2] = "www.canstockphoto.com";
+                        dbQImage[16][0] = "Images/C1.Microchitze/Img016Railway.png";	dbQImageSrc[16][0] = "www.canstockphoto.com";
+                        dbQImage[16][1] = "Images/C1.Microchitze/Img016Railway.png";	dbQImageSrc[16][1] = "www.canstockphoto.com";
+                        dbQImage[16][2] = "Images/C1.Microchitze/Img016Railway.png";	dbQImageSrc[16][2] = "www.canstockphoto.com";
                         dbAImage[16] = [];							dbAImageSrc[16] = [];
-                        dbAImage[16][0] = "Images/1.Microchitze/016Railway.png";  dbAImageSrc[16][0] = "www.canstockphoto.com";
-                        dbAImage[16][1] = "Images/1.Microchitze/016Railway.png";  dbAImageSrc[16][1] = "www.canstockphoto.com";
-                        dbAImage[16][2] = "Images/1.Microchitze/016Railway.png";  dbAImageSrc[16][2] = "www.canstockphoto.com";
+                        dbAImage[16][0] = "Images/C1.Microchitze/Img016Railway.png";  dbAImageSrc[16][0] = "www.canstockphoto.com";
+                        dbAImage[16][1] = "Images/C1.Microchitze/Img016Railway.png";  dbAImageSrc[16][1] = "www.canstockphoto.com";
+                        dbAImage[16][2] = "Images/C1.Microchitze/Img016Railway.png";  dbAImageSrc[16][2] = "www.canstockphoto.com";
 dbQList[17] = [];
 dbQList[ 17][0] = "Dac&#x103; &#xEE;ntr-o curs&#x103; dep&#x103;&#x15F;e&#x15F;ti ocupantul locului 2, pe ce loc treci?"; 
 dbQList[ 17][1] = "If you overtake the second-placed person in a race, which place would you be in?"; 
@@ -654,13 +654,13 @@ dbQList[ 17][2] = "Auf welchem Platz liegt man, wenn man den Zweitplatzierten &#
                         dbQHint[17][1] = ""; //hint en
                         dbQHint[17][2] = ""; //hint de
                         dbQImage[17] = []; dbQImageSrc[17] = []; 
-                        dbQImage[17][0] = "Images/1.Microchitze/017Race.png";	dbQImageSrc[17][0] = "www.toonpool.com";
-                        dbQImage[17][1] = "Images/1.Microchitze/017Race.png";	dbQImageSrc[17][1] = "www.toonpool.com";
-                        dbQImage[17][2] = "Images/1.Microchitze/017Race.png";	dbQImageSrc[17][2] = "www.toonpool.com";
+                        dbQImage[17][0] = "Images/C1.Microchitze/Img017Race.png";	dbQImageSrc[17][0] = "www.toonpool.com";
+                        dbQImage[17][1] = "Images/C1.Microchitze/Img017Race.png";	dbQImageSrc[17][1] = "www.toonpool.com";
+                        dbQImage[17][2] = "Images/C1.Microchitze/Img017Race.png";	dbQImageSrc[17][2] = "www.toonpool.com";
                         dbAImage[17] = [];							dbAImageSrc[17] = [];
-                        dbAImage[17][0] = "Images/1.Microchitze/017Racers.png";  dbAImageSrc[17][0] = "www.chrismadden.co.uk";
-                        dbAImage[17][1] = "Images/1.Microchitze/017Racers.png";  dbAImageSrc[17][1] = "www.chrismadden.co.uk";
-                        dbAImage[17][2] = "Images/1.Microchitze/017Racers.png";  dbAImageSrc[17][2] = "www.chrismadden.co.uk";
+                        dbAImage[17][0] = "Images/C1.Microchitze/Img017Racers.png";  dbAImageSrc[17][0] = "www.chrismadden.co.uk";
+                        dbAImage[17][1] = "Images/C1.Microchitze/Img017Racers.png";  dbAImageSrc[17][1] = "www.chrismadden.co.uk";
+                        dbAImage[17][2] = "Images/C1.Microchitze/Img017Racers.png";  dbAImageSrc[17][2] = "www.chrismadden.co.uk";
 dbQList[18] = [];
 dbQList[ 18][0] = "Te po&#x21B;i c&#x103;s&#x103;tori legal cu sora v&#x103;duvei tale."; 
 dbQList[ 18][1] = "You can legally marry your widow's sister."; 
@@ -685,13 +685,13 @@ dbQList[ 18][2] = "Du kannst gesetzlich die Schwester deiner Witwe heiraten.";
                         dbQHint[18][1] = ""; //hint en
                         dbQHint[18][2] = ""; //hint de
                         dbQImage[18] = []; dbQImageSrc[18] = []; 
-                        dbQImage[18][0] = "Images/1.Microchitze/018GameOver.png";	dbQImageSrc[18][0] = "www.dein-blechschild.de";
-                        dbQImage[18][1] = "Images/1.Microchitze/018GameOver.png";	dbQImageSrc[18][1] = "www.dein-blechschild.de";
-                        dbQImage[18][2] = "Images/1.Microchitze/018GameOver.png";	dbQImageSrc[18][2] = "www.dein-blechschild.de";
+                        dbQImage[18][0] = "Images/C1.Microchitze/Img018GameOver.png";	dbQImageSrc[18][0] = "www.dein-blechschild.de";
+                        dbQImage[18][1] = "Images/C1.Microchitze/Img018GameOver.png";	dbQImageSrc[18][1] = "www.dein-blechschild.de";
+                        dbQImage[18][2] = "Images/C1.Microchitze/Img018GameOver.png";	dbQImageSrc[18][2] = "www.dein-blechschild.de";
                         dbAImage[18] = [];							dbAImageSrc[18] = [];
-                        dbAImage[18][0] = "Images/1.Microchitze/018Coffin.png";  dbAImageSrc[18][0] = "www.trendhunter.com";
-                        dbAImage[18][1] = "Images/1.Microchitze/018Coffin.png";  dbAImageSrc[18][1] = "www.trendhunter.com";
-                        dbAImage[18][2] = "Images/1.Microchitze/018Coffin.png";  dbAImageSrc[18][2] = "www.trendhunter.com";
+                        dbAImage[18][0] = "Images/C1.Microchitze/Img018Coffin.png";  dbAImageSrc[18][0] = "www.trendhunter.com";
+                        dbAImage[18][1] = "Images/C1.Microchitze/Img018Coffin.png";  dbAImageSrc[18][1] = "www.trendhunter.com";
+                        dbAImage[18][2] = "Images/C1.Microchitze/Img018Coffin.png";  dbAImageSrc[18][2] = "www.trendhunter.com";
 dbQList[19] = [];
 dbQList[ 19][0] = "Este plauzibil s&#x103; afirmi c&#x103; bunicul t&#x103;u este cu 6 ani mai &#xEE;n v&#xE2;rst&#x103; dec&#xE2;t tat&#x103;l t&#x103;u."; 
 dbQList[ 19][1] = "It is plausible to claim that your grandfather is 6 years older than your father."; 
@@ -716,13 +716,13 @@ dbQList[ 19][2] = "Es ist glaubhaft zu behaupten, dass dein Gro&#223;vater 6 Jah
                         dbQHint[19][1] = ""; //hint en
                         dbQHint[19][2] = ""; //hint de
                         dbQImage[19] = []; dbQImageSrc[19] = []; 
-                        dbQImage[19][0] = "Images/1.Microchitze/019Granpa.png";	dbQImageSrc[19][0] = "www.campacademia.com";
-                        dbQImage[19][1] = "Images/1.Microchitze/019Granpa.png";	dbQImageSrc[19][1] = "www.campacademia.com";
-                        dbQImage[19][2] = "Images/1.Microchitze/019Granpa.png";	dbQImageSrc[19][2] = "www.campacademia.com";
+                        dbQImage[19][0] = "Images/C1.Microchitze/Img019Granpa.png";	dbQImageSrc[19][0] = "www.campacademia.com";
+                        dbQImage[19][1] = "Images/C1.Microchitze/Img019Granpa.png";	dbQImageSrc[19][1] = "www.campacademia.com";
+                        dbQImage[19][2] = "Images/C1.Microchitze/Img019Granpa.png";	dbQImageSrc[19][2] = "www.campacademia.com";
                         dbAImage[19] = [];							dbAImageSrc[19] = [];
-                        dbAImage[19][0] = "Images/1.Microchitze/019Tree.png";  dbAImageSrc[19][0] = "docs.google.com";
-                        dbAImage[19][1] = "Images/1.Microchitze/019Tree.png";  dbAImageSrc[19][1] = "docs.google.com";
-                        dbAImage[19][2] = "Images/1.Microchitze/019Tree.png";  dbAImageSrc[19][2] = "docs.google.com";
+                        dbAImage[19][0] = "Images/C1.Microchitze/Img019Tree.png";  dbAImageSrc[19][0] = "docs.google.com";
+                        dbAImage[19][1] = "Images/C1.Microchitze/Img019Tree.png";  dbAImageSrc[19][1] = "docs.google.com";
+                        dbAImage[19][2] = "Images/C1.Microchitze/Img019Tree.png";  dbAImageSrc[19][2] = "docs.google.com";
 
 // HISTOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // HISTOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -758,13 +758,13 @@ dbQList[ 20][2] = "Wie lange dauerte der drei&#223;igj&#228;hrige Krieg?";
                         dbQHint[20][1] = ""; //hint en
                         dbQHint[20][2] = ""; //hint de
                         dbQImage[20] = []; dbQImageSrc[20] = []; 
-                        dbQImage[20][0] = "Images/1.Microchitze/020ThirtyYears.png";	dbQImageSrc[20][0] = "regiowiki.hna.de";
-                        dbQImage[20][1] = "Images/1.Microchitze/020ThirtyYears.png";	dbQImageSrc[20][1] = "regiowiki.hna.de";
-                        dbQImage[20][2] = "Images/1.Microchitze/020ThirtyYears.png";	dbQImageSrc[20][2] = "regiowiki.hna.de";
+                        dbQImage[20][0] = "Images/C1.Microchitze/Img020ThirtyYears.png";	dbQImageSrc[20][0] = "regiowiki.hna.de";
+                        dbQImage[20][1] = "Images/C1.Microchitze/Img020ThirtyYears.png";	dbQImageSrc[20][1] = "regiowiki.hna.de";
+                        dbQImage[20][2] = "Images/C1.Microchitze/Img020ThirtyYears.png";	dbQImageSrc[20][2] = "regiowiki.hna.de";
                         dbAImage[20] = [];							dbAImageSrc[20] = [];
-                        dbAImage[20][0] = "Images/1.Microchitze/020ThirtyYearsAnswer.png";  dbAImageSrc[20][0] = "modelsforsale.com";
-                        dbAImage[20][1] = "Images/1.Microchitze/020ThirtyYearsAnswer.png";  dbAImageSrc[20][1] = "modelsforsale.com";
-                        dbAImage[20][2] = "Images/1.Microchitze/020ThirtyYearsAnswer.png";  dbAImageSrc[20][2] = "modelsforsale.com";
+                        dbAImage[20][0] = "Images/C1.Microchitze/Img020ThirtyYearsAnswer.png";  dbAImageSrc[20][0] = "modelsforsale.com";
+                        dbAImage[20][1] = "Images/C1.Microchitze/Img020ThirtyYearsAnswer.png";  dbAImageSrc[20][1] = "modelsforsale.com";
+                        dbAImage[20][2] = "Images/C1.Microchitze/Img020ThirtyYearsAnswer.png";  dbAImageSrc[20][2] = "modelsforsale.com";
 dbQList[21] = [];
 dbQList[ 21][0] = "C&#xE2;te cuvinte avea numele ora&#x15F;ului american L.A. &#xEE;n 1781?"; 
 dbQList[ 21][1] = "How many words did the name of the American city L.A. have in 1781?"; 
@@ -789,13 +789,13 @@ dbQList[ 21][2] = "Wie viele Worter hatte in 1781 der Name der amerikanischen St
                         dbQHint[21][1] = ""; //hint en
                         dbQHint[21][2] = ""; //hint de
                         dbQImage[21] = []; dbQImageSrc[21] = []; 
-                        dbQImage[21][0] = "Images/1.Microchitze/021Hollywood.png";	dbQImageSrc[21][0] = "www.cagle.com";
-                        dbQImage[21][1] = "Images/1.Microchitze/021Hollywood.png";	dbQImageSrc[21][1] = "www.cagle.com";
-                        dbQImage[21][2] = "Images/1.Microchitze/021Hollywood.png";	dbQImageSrc[21][2] = "www.cagle.com";
+                        dbQImage[21][0] = "Images/C1.Microchitze/Img021Hollywood.png";	dbQImageSrc[21][0] = "www.cagle.com";
+                        dbQImage[21][1] = "Images/C1.Microchitze/Img021Hollywood.png";	dbQImageSrc[21][1] = "www.cagle.com";
+                        dbQImage[21][2] = "Images/C1.Microchitze/Img021Hollywood.png";	dbQImageSrc[21][2] = "www.cagle.com";
                         dbAImage[21] = [];							dbAImageSrc[21] = [];
-                        dbAImage[21][0] = "Images/1.Microchitze/021LA.png";  dbAImageSrc[21][0] = "cheezburger.com";
-                        dbAImage[21][1] = "Images/1.Microchitze/021LA.png";  dbAImageSrc[21][1] = "cheezburger.com";
-                        dbAImage[21][2] = "Images/1.Microchitze/021LA.png";  dbAImageSrc[21][2] = "cheezburger.com";
+                        dbAImage[21][0] = "Images/C1.Microchitze/Img021LA.png";  dbAImageSrc[21][0] = "cheezburger.com";
+                        dbAImage[21][1] = "Images/C1.Microchitze/Img021LA.png";  dbAImageSrc[21][1] = "cheezburger.com";
+                        dbAImage[21][2] = "Images/C1.Microchitze/Img021LA.png";  dbAImageSrc[21][2] = "cheezburger.com";
 dbQList[22] = [];
 dbQList[ 22][0] = "Ignor&#xE2;nd domnia de 20 de minute a lui Louis-Antoine (Ludovic XIX, ultimul rege Ludovic al Fran&#x21B;ei), c&#xE2;&#x21B;i regi numi&#x21B;i 'Ludovic' a avut Fran&#x21B;a?"; 
 dbQList[ 22][1] = "Ignoring the 20-minute reign of Louis-Antoine (Louis XIX, the last king Louis of France), how many French kings were named 'Louis'?"; 
@@ -820,13 +820,13 @@ dbQList[ 22][2] = "Abgesehen von der 20-minutigen Herrschaft von Louis-Antoine (
                         dbQHint[22][1] = ""; //hint en
                         dbQHint[22][2] = ""; //hint de
                         dbQImage[22] = []; dbQImageSrc[22] = []; 
-                        dbQImage[22][0] = "Images/1.Microchitze/022LouisRo.png";	dbQImageSrc[22][0] = "www.toonpool.com";
-                        dbQImage[22][1] = "Images/1.Microchitze/022LouisEn.png";	dbQImageSrc[22][1] = "www.toonpool.com";
-                        dbQImage[22][2] = "Images/1.Microchitze/022LouisDe.png";	dbQImageSrc[22][2] = "www.toonpool.com";
+                        dbQImage[22][0] = "Images/C1.Microchitze/Img022LouisRo.png";	dbQImageSrc[22][0] = "www.toonpool.com";
+                        dbQImage[22][1] = "Images/C1.Microchitze/Img022LouisEn.png";	dbQImageSrc[22][1] = "www.toonpool.com";
+                        dbQImage[22][2] = "Images/C1.Microchitze/Img022LouisDe.png";	dbQImageSrc[22][2] = "www.toonpool.com";
                         dbAImage[22] = [];							dbAImageSrc[22] = [];
-                        dbAImage[22][0] = "Images/1.Microchitze/022LouisRo.png";  dbAImageSrc[22][0] = "www.toonpool.com";
-                        dbAImage[22][1] = "Images/1.Microchitze/022LouisEn.png";  dbAImageSrc[22][1] = "www.toonpool.com";
-                        dbAImage[22][2] = "Images/1.Microchitze/022LouisDe.png";  dbAImageSrc[22][2] = "www.toonpool.com";
+                        dbAImage[22][0] = "Images/C1.Microchitze/Img022LouisRo.png";  dbAImageSrc[22][0] = "www.toonpool.com";
+                        dbAImage[22][1] = "Images/C1.Microchitze/Img022LouisEn.png";  dbAImageSrc[22][1] = "www.toonpool.com";
+                        dbAImage[22][2] = "Images/C1.Microchitze/Img022LouisDe.png";  dbAImageSrc[22][2] = "www.toonpool.com";
 dbQList[23] = [];
 dbQList[ 23][0] = "&#xCE;n ce an a devenit Mihail Gorbaciov pre&#x15F;edinte al URSS?"; 
 dbQList[ 23][1] = "When did Mikhail Gorbachev become the president of the USSR?"; 
@@ -851,13 +851,13 @@ dbQList[ 23][2] = "Wann ist Michail Gorbatschow Staatspr&#228;sident der Sowjetu
                         dbQHint[23][1] = ""; //hint en
                         dbQHint[23][2] = ""; //hint de
                         dbQImage[23] = []; dbQImageSrc[23] = []; 
-                        dbQImage[23][0] = "Images/1.Microchitze/023BaldHairy.png";	dbQImageSrc[23][0] = "stephenwildish.tumblr.com";
-                        dbQImage[23][1] = "Images/1.Microchitze/023BaldHairy.png";	dbQImageSrc[23][1] = "stephenwildish.tumblr.com";
-                        dbQImage[23][2] = "Images/1.Microchitze/023BaldHairy.png";	dbQImageSrc[23][2] = "stephenwildish.tumblr.com";
+                        dbQImage[23][0] = "Images/C1.Microchitze/Img023BaldHairy.png";	dbQImageSrc[23][0] = "stephenwildish.tumblr.com";
+                        dbQImage[23][1] = "Images/C1.Microchitze/Img023BaldHairy.png";	dbQImageSrc[23][1] = "stephenwildish.tumblr.com";
+                        dbQImage[23][2] = "Images/C1.Microchitze/Img023BaldHairy.png";	dbQImageSrc[23][2] = "stephenwildish.tumblr.com";
                         dbAImage[23] = [];							dbAImageSrc[23] = [];
-                        dbAImage[23][0] = "Images/1.Microchitze/023Gorbachev.png";  dbAImageSrc[23][0] = "www.loc.gov";
-                        dbAImage[23][1] = "Images/1.Microchitze/023Gorbachev.png";  dbAImageSrc[23][1] = "www.loc.gov";
-                        dbAImage[23][2] = "Images/1.Microchitze/023Gorbachev.png";  dbAImageSrc[23][2] = "www.loc.gov";
+                        dbAImage[23][0] = "Images/C1.Microchitze/Img023Gorbachev.png";  dbAImageSrc[23][0] = "www.loc.gov";
+                        dbAImage[23][1] = "Images/C1.Microchitze/Img023Gorbachev.png";  dbAImageSrc[23][1] = "www.loc.gov";
+                        dbAImage[23][2] = "Images/C1.Microchitze/Img023Gorbachev.png";  dbAImageSrc[23][2] = "www.loc.gov";
 dbQList[24] = [];
 dbQList[ 24][0] = "&#xCE;n ce tara s-a nascut Cristofor Columb?"; 
 dbQList[ 24][1] = "In which country was Christopher Columbus born?"; 
@@ -882,13 +882,13 @@ dbQList[ 24][2] = "In welchem Land wurde Christoph Kolumbus geboren?";
                         dbQHint[24][1] = ""; //hint en
                         dbQHint[24][2] = ""; //hint de
                         dbQImage[24] = []; dbQImageSrc[24] = []; 
-                        dbQImage[24][0] = "Images/1.Microchitze/024Columbus.png";	dbQImageSrc[24][0] = "cocos-seo.blogspot.com";
-                        dbQImage[24][1] = "Images/1.Microchitze/024Columbus.png";	dbQImageSrc[24][1] = "cocos-seo.blogspot.com";
-                        dbQImage[24][2] = "Images/1.Microchitze/024Columbus.png";	dbQImageSrc[24][2] = "cocos-seo.blogspot.com";
+                        dbQImage[24][0] = "Images/C1.Microchitze/Img024Columbus.png";	dbQImageSrc[24][0] = "cocos-seo.blogspot.com";
+                        dbQImage[24][1] = "Images/C1.Microchitze/Img024Columbus.png";	dbQImageSrc[24][1] = "cocos-seo.blogspot.com";
+                        dbQImage[24][2] = "Images/C1.Microchitze/Img024Columbus.png";	dbQImageSrc[24][2] = "cocos-seo.blogspot.com";
                         dbAImage[24] = [];							dbAImageSrc[24] = [];
-                        dbAImage[24][0] = "Images/1.Microchitze/024Genoa.png";  dbAImageSrc[24][0] = "en.wikipedia.org";
-                        dbAImage[24][1] = "Images/1.Microchitze/024Genoa.png";  dbAImageSrc[24][1] = "en.wikipedia.org";
-                        dbAImage[24][2] = "Images/1.Microchitze/024Genoa.png";  dbAImageSrc[24][2] = "en.wikipedia.org";
+                        dbAImage[24][0] = "Images/C1.Microchitze/Img024Genoa.png";  dbAImageSrc[24][0] = "en.wikipedia.org";
+                        dbAImage[24][1] = "Images/C1.Microchitze/Img024Genoa.png";  dbAImageSrc[24][1] = "en.wikipedia.org";
+                        dbAImage[24][2] = "Images/C1.Microchitze/Img024Genoa.png";  dbAImageSrc[24][2] = "en.wikipedia.org";
 dbQList[25] = [];
 dbQList[ 25][0] = "Care dou&#x103; state au semnat Tratatul de la Frankfurt (10 mai 1871) la sf&#xE2;r&#x15F;itul r&#x103;zboiului franco-prusac?"; 
 dbQList[ 25][1] = "Which two states signed the Treaty of Frankfurt (10<sup>th</sup> of May 1871) at the end of the Franco-Prussian War?"; 
@@ -913,13 +913,13 @@ dbQList[ 25][2] = "Welche zwei Staaten haben den Frieden von Frankfurt (10. Mai 
                         dbQHint[25][1] = ""; //hint en
                         dbQHint[25][2] = ""; //hint de
                         dbQImage[25] = []; dbQImageSrc[25] = []; 
-                        dbQImage[25][0] = "Images/1.Microchitze/025War1870.png";	dbQImageSrc[25][0] = "www.welt.de";
-                        dbQImage[25][1] = "Images/1.Microchitze/025War1870.png";	dbQImageSrc[25][1] = "www.welt.de";
-                        dbQImage[25][2] = "Images/1.Microchitze/025War1870.png";	dbQImageSrc[25][2] = "www.welt.de";
+                        dbQImage[25][0] = "Images/C1.Microchitze/Img025War1870.png";	dbQImageSrc[25][0] = "www.welt.de";
+                        dbQImage[25][1] = "Images/C1.Microchitze/Img025War1870.png";	dbQImageSrc[25][1] = "www.welt.de";
+                        dbQImage[25][2] = "Images/C1.Microchitze/Img025War1870.png";	dbQImageSrc[25][2] = "www.welt.de";
                         dbAImage[25] = [];							dbAImageSrc[25] = [];
-                        dbAImage[25][0] = "Images/1.Microchitze/025Unification.png";  dbAImageSrc[25][0] = "ukrmap.su";
-                        dbAImage[25][1] = "Images/1.Microchitze/025Unification.png";  dbAImageSrc[25][1] = "ukrmap.su";
-                        dbAImage[25][2] = "Images/1.Microchitze/025Unification.png";  dbAImageSrc[25][2] = "ukrmap.su";
+                        dbAImage[25][0] = "Images/C1.Microchitze/Img025Unification.png";  dbAImageSrc[25][0] = "ukrmap.su";
+                        dbAImage[25][1] = "Images/C1.Microchitze/Img025Unification.png";  dbAImageSrc[25][1] = "ukrmap.su";
+                        dbAImage[25][2] = "Images/C1.Microchitze/Img025Unification.png";  dbAImageSrc[25][2] = "ukrmap.su";
 dbQList[26] = [];
 dbQList[ 26][0] = "&#xCE;n ce lun&#x103; se serbeaz&#x103; Revolu&#x21B;ia din Octombrie?"; 
 dbQList[ 26][1] = "In which month is the October Revolution celebrated?"; 
@@ -944,13 +944,13 @@ dbQList[ 26][2] = "In welchen Monat ist die Oktoberrevolution gefeiert?";
                         dbQHint[26][1] = ""; //hint en
                         dbQHint[26][2] = ""; //hint de
                         dbQImage[26] = []; dbQImageSrc[26] = []; 
-                        dbQImage[26][0] = "Images/1.Microchitze/026_1917.png";	dbQImageSrc[26][0] = "ciml.250x.com";
-                        dbQImage[26][1] = "Images/1.Microchitze/026_1917.png";	dbQImageSrc[26][1] = "ciml.250x.com";
-                        dbQImage[26][2] = "Images/1.Microchitze/026_1917.png";	dbQImageSrc[26][2] = "ciml.250x.com";
+                        dbQImage[26][0] = "Images/C1.Microchitze/Img026_1917.png";	dbQImageSrc[26][0] = "ciml.250x.com";
+                        dbQImage[26][1] = "Images/C1.Microchitze/Img026_1917.png";	dbQImageSrc[26][1] = "ciml.250x.com";
+                        dbQImage[26][2] = "Images/C1.Microchitze/Img026_1917.png";	dbQImageSrc[26][2] = "ciml.250x.com";
                         dbAImage[26] = [];							dbAImageSrc[26] = [];
-                        dbAImage[26][0] = "Images/1.Microchitze/026_1917.png";  dbAImageSrc[26][0] = "ciml.250x.com";
-                        dbAImage[26][1] = "Images/1.Microchitze/026_1917.png";  dbAImageSrc[26][1] = "ciml.250x.com";
-                        dbAImage[26][2] = "Images/1.Microchitze/026_1917.png";  dbAImageSrc[26][2] = "ciml.250x.com";
+                        dbAImage[26][0] = "Images/C1.Microchitze/Img026_1917.png";  dbAImageSrc[26][0] = "ciml.250x.com";
+                        dbAImage[26][1] = "Images/C1.Microchitze/Img026_1917.png";  dbAImageSrc[26][1] = "ciml.250x.com";
+                        dbAImage[26][2] = "Images/C1.Microchitze/Img026_1917.png";  dbAImageSrc[26][2] = "ciml.250x.com";
 dbQList[27] = [];
 dbQList[ 27][0] = "&#xCE;n ce an a avut loc ultima declara&#x21B;ie oficial&#x103; de r&#x103;zboi din partea Statelor Unite?"; 
 dbQList[ 27][1] = "In which year have the United States issued the last formal declaration of war?"; 
@@ -975,13 +975,13 @@ dbQList[ 27][2] = "In welchem Jahr haben die Vereinigte Staaten zum letzten Mal 
                         dbQHint[27][1] = ""; //hint en
                         dbQHint[27][2] = ""; //hint de
                         dbQImage[27] = []; dbQImageSrc[27] = []; 
-                        dbQImage[27][0] = "Images/1.Microchitze/027WWIChainRo.png";	dbQImageSrc[27][0] = "www.docstoc.com";
-                        dbQImage[27][1] = "Images/1.Microchitze/027WWIChainEn.png";	dbQImageSrc[27][1] = "www.docstoc.com";
-                        dbQImage[27][2] = "Images/1.Microchitze/027WWIChainDe.png";	dbQImageSrc[27][2] = "www.docstoc.com";
+                        dbQImage[27][0] = "Images/C1.Microchitze/Img027WWIChainRo.png";	dbQImageSrc[27][0] = "www.docstoc.com";
+                        dbQImage[27][1] = "Images/C1.Microchitze/Img027WWIChainEn.png";	dbQImageSrc[27][1] = "www.docstoc.com";
+                        dbQImage[27][2] = "Images/C1.Microchitze/Img027WWIChainDe.png";	dbQImageSrc[27][2] = "www.docstoc.com";
                         dbAImage[27] = [];							dbAImageSrc[27] = [];
-                        dbAImage[27][0] = "Images/1.Microchitze/027DeclWar.png";  dbAImageSrc[27][0] = "www.truthdig.com";
-                        dbAImage[27][1] = "Images/1.Microchitze/027DeclWar.png";  dbAImageSrc[27][1] = "www.truthdig.com";
-                        dbAImage[27][2] = "Images/1.Microchitze/027DeclWar.png";  dbAImageSrc[27][2] = "www.truthdig.com";
+                        dbAImage[27][0] = "Images/C1.Microchitze/Img027DeclWar.png";  dbAImageSrc[27][0] = "www.truthdig.com";
+                        dbAImage[27][1] = "Images/C1.Microchitze/Img027DeclWar.png";  dbAImageSrc[27][1] = "www.truthdig.com";
+                        dbAImage[27][2] = "Images/C1.Microchitze/Img027DeclWar.png";  dbAImageSrc[27][2] = "www.truthdig.com";
 dbQList[28] = [];
 dbQList[ 28][0] = "Ce s-a intamplat pe 31 aprilie 1945?"; 
 dbQList[ 28][1] = "What happened on the 31<sup>st</sup> of April 1945?"; 
@@ -1006,13 +1006,13 @@ dbQList[ 28][2] = "Was ist am 31. April 1945 passiert?";
                         dbQHint[28][1] = ""; //hint en
                         dbQHint[28][2] = ""; //hint de
                         dbQImage[28] = []; dbQImageSrc[28] = []; 
-                        dbQImage[28][0] = "Images/1.Microchitze/028April1945.png";	dbQImageSrc[28][0] = "www.lonesentry.com";
-                        dbQImage[28][1] = "Images/1.Microchitze/028April1945.png";	dbQImageSrc[28][1] = "www.lonesentry.com";
-                        dbQImage[28][2] = "Images/1.Microchitze/028April1945.png";	dbQImageSrc[28][2] = "www.lonesentry.com";
+                        dbQImage[28][0] = "Images/C1.Microchitze/Img028April1945.png";	dbQImageSrc[28][0] = "www.lonesentry.com";
+                        dbQImage[28][1] = "Images/C1.Microchitze/Img028April1945.png";	dbQImageSrc[28][1] = "www.lonesentry.com";
+                        dbQImage[28][2] = "Images/C1.Microchitze/Img028April1945.png";	dbQImageSrc[28][2] = "www.lonesentry.com";
                         dbAImage[28] = [];							dbAImageSrc[28] = [];
-                        dbAImage[28][0] = "Images/1.Microchitze/028AprilFools.png";  dbAImageSrc[28][0] = "www.cute-calendar.com";
-                        dbAImage[28][1] = "Images/1.Microchitze/028AprilFools.png";  dbAImageSrc[28][1] = "www.cute-calendar.com";
-                        dbAImage[28][2] = "Images/1.Microchitze/028AprilFools.png";  dbAImageSrc[28][2] = "www.cute-calendar.com";
+                        dbAImage[28][0] = "Images/C1.Microchitze/Img028AprilFools.png";  dbAImageSrc[28][0] = "www.cute-calendar.com";
+                        dbAImage[28][1] = "Images/C1.Microchitze/Img028AprilFools.png";  dbAImageSrc[28][1] = "www.cute-calendar.com";
+                        dbAImage[28][2] = "Images/C1.Microchitze/Img028AprilFools.png";  dbAImageSrc[28][2] = "www.cute-calendar.com";
 dbQList[29] = [];
 dbQList[ 29][0] = "Care era numele pre&#x15F;edintelui Rom&#xE2;niei &#xEE;n 1999?"; 
 dbQList[ 29][1] = "Which was the name of the Romanian President in 1999?"; 
@@ -1037,13 +1037,13 @@ dbQList[ 29][2] = "Wie war der Name des rum&#228;nischen Presidenten in 1999?";
                         dbQHint[29][1] = ""; //hint en
                         dbQHint[29][2] = ""; //hint de
                         dbQImage[29] = []; dbQImageSrc[29] = []; 
-                        dbQImage[29][0] = "Images/1.Microchitze/029HeadQM.png";	dbQImageSrc[29][0] = "fellowshipoftheminds.com";
-                        dbQImage[29][1] = "Images/1.Microchitze/029HeadQM.png";	dbQImageSrc[29][1] = "fellowshipoftheminds.com";
-                        dbQImage[29][2] = "Images/1.Microchitze/029HeadQM.png";	dbQImageSrc[29][2] = "fellowshipoftheminds.com";
+                        dbQImage[29][0] = "Images/C1.Microchitze/Img029HeadQM.png";	dbQImageSrc[29][0] = "fellowshipoftheminds.com";
+                        dbQImage[29][1] = "Images/C1.Microchitze/Img029HeadQM.png";	dbQImageSrc[29][1] = "fellowshipoftheminds.com";
+                        dbQImage[29][2] = "Images/C1.Microchitze/Img029HeadQM.png";	dbQImageSrc[29][2] = "fellowshipoftheminds.com";
                         dbAImage[29] = [];							dbAImageSrc[29] = [];
-                        dbAImage[29][0] = "Images/1.Microchitze/029Iohannis.png";  dbAImageSrc[29][0] = "www.iohannispresedinte.ro";
-                        dbAImage[29][1] = "Images/1.Microchitze/029Iohannis.png";  dbAImageSrc[29][1] = "www.iohannispresedinte.ro";
-                        dbAImage[29][2] = "Images/1.Microchitze/029Iohannis.png";  dbAImageSrc[29][2] = "www.iohannispresedinte.ro";
+                        dbAImage[29][0] = "Images/C1.Microchitze/Img029Iohannis.png";  dbAImageSrc[29][0] = "www.iohannispresedinte.ro";
+                        dbAImage[29][1] = "Images/C1.Microchitze/Img029Iohannis.png";  dbAImageSrc[29][1] = "www.iohannispresedinte.ro";
+                        dbAImage[29][2] = "Images/C1.Microchitze/Img029Iohannis.png";  dbAImageSrc[29][2] = "www.iohannispresedinte.ro";
                         
 // GEOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GEOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1079,13 +1079,13 @@ dbQList[ 30][2] = "Welcher Berggipfel auf der Erde ist am weitesten vom Mittelpu
                         dbQHint[30][1] = ""; //hint en
                         dbQHint[30][2] = ""; //hint de
                         dbQImage[30] = []; dbQImageSrc[30] = []; 
-                        dbQImage[30][0] = "Images/1.Microchitze/030Mountain.png";	dbQImageSrc[30][0] = "www.toonpool.com";
-                        dbQImage[30][1] = "Images/1.Microchitze/030Mountain.png";	dbQImageSrc[30][1] = "www.toonpool.com";
-                        dbQImage[30][2] = "Images/1.Microchitze/030Mountain.png";	dbQImageSrc[30][2] = "www.toonpool.com";
+                        dbQImage[30][0] = "Images/C1.Microchitze/Img030Mountain.png";	dbQImageSrc[30][0] = "www.toonpool.com";
+                        dbQImage[30][1] = "Images/C1.Microchitze/Img030Mountain.png";	dbQImageSrc[30][1] = "www.toonpool.com";
+                        dbQImage[30][2] = "Images/C1.Microchitze/Img030Mountain.png";	dbQImageSrc[30][2] = "www.toonpool.com";
                         dbAImage[30] = [];							dbAImageSrc[30] = [];
-                        dbAImage[30][0] = "Images/1.Microchitze/030Chimborazo.png";  dbAImageSrc[30][0] = "www.featurepics.com";
-                        dbAImage[30][1] = "Images/1.Microchitze/030Chimborazo.png";  dbAImageSrc[30][1] = "www.featurepics.com";
-                        dbAImage[30][2] = "Images/1.Microchitze/030Chimborazo.png";  dbAImageSrc[30][2] = "www.featurepics.com";
+                        dbAImage[30][0] = "Images/C1.Microchitze/Img030Chimborazo.png";  dbAImageSrc[30][0] = "www.featurepics.com";
+                        dbAImage[30][1] = "Images/C1.Microchitze/Img030Chimborazo.png";  dbAImageSrc[30][1] = "www.featurepics.com";
+                        dbAImage[30][2] = "Images/C1.Microchitze/Img030Chimborazo.png";  dbAImageSrc[30][2] = "www.featurepics.com";
 dbQList[31] = [];
 dbQList[ 31][0] = "Se poate organiza o b&#x103;taie cu z&#x103;pad&#x103; natural&#x103; &#xEE;n Africa."; 
 dbQList[ 31][1] = "You could organize a snow fight with natural snow in Africa."; 
@@ -1110,13 +1110,13 @@ dbQList[ 31][2] = "Man kann in Afrika eine Schneeballschlacht mit nat&#252;rlich
                         dbQHint[31][1] = ""; //hint en
                         dbQHint[31][2] = ""; //hint de
                         dbQImage[31] = []; dbQImageSrc[31] = []; 
-                        dbQImage[31][0] = "Images/1.Microchitze/031Snowman.png";	dbQImageSrc[31][0] = "www.flaticon.com";
-                        dbQImage[31][1] = "Images/1.Microchitze/031Snowman.png";	dbQImageSrc[31][1] = "www.flaticon.com";
-                        dbQImage[31][2] = "Images/1.Microchitze/031Snowman.png";	dbQImageSrc[31][2] = "www.flaticon.com";
+                        dbQImage[31][0] = "Images/C1.Microchitze/Img031Snowman.png";	dbQImageSrc[31][0] = "www.flaticon.com";
+                        dbQImage[31][1] = "Images/C1.Microchitze/Img031Snowman.png";	dbQImageSrc[31][1] = "www.flaticon.com";
+                        dbQImage[31][2] = "Images/C1.Microchitze/Img031Snowman.png";	dbQImageSrc[31][2] = "www.flaticon.com";
                         dbAImage[31] = [];							dbAImageSrc[31] = [];
-                        dbAImage[31][0] = "Images/1.Microchitze/031Kilimanjaro.png";  dbAImageSrc[31][0] = "www.zagranitsa.info";
-                        dbAImage[31][1] = "Images/1.Microchitze/031Kilimanjaro.png";  dbAImageSrc[31][1] = "www.zagranitsa.info";
-                        dbAImage[31][2] = "Images/1.Microchitze/031Kilimanjaro.png";  dbAImageSrc[31][2] = "www.zagranitsa.info";
+                        dbAImage[31][0] = "Images/C1.Microchitze/Img031Kilimanjaro.png";  dbAImageSrc[31][0] = "www.zagranitsa.info";
+                        dbAImage[31][1] = "Images/C1.Microchitze/Img031Kilimanjaro.png";  dbAImageSrc[31][1] = "www.zagranitsa.info";
+                        dbAImage[31][2] = "Images/C1.Microchitze/Img031Kilimanjaro.png";  dbAImageSrc[31][2] = "www.zagranitsa.info";
 dbQList[32] = [];
 dbQList[ 32][0] = "De la ce animal provine denumirea insulelor Canare din Oceanul Atlantic?"; 
 dbQList[ 32][1] = "What animal are the Canary Islands named after?"; 
@@ -1141,13 +1141,13 @@ dbQList[ 32][2] = "Nach welchem Tier sind die Kanarischen Inseln benannt?";
                         dbQHint[32][1] = ""; //hint en
                         dbQHint[32][2] = ""; //hint de
                         dbQImage[32] = []; dbQImageSrc[32] = []; 
-                        dbQImage[32][0] = "Images/1.Microchitze/032Canary.png";	dbQImageSrc[32][0] = "www.californiaair.net";
-                        dbQImage[32][1] = "Images/1.Microchitze/032Canary.png";	dbQImageSrc[32][1] = "www.californiaair.net";
-                        dbQImage[32][2] = "Images/1.Microchitze/032Canary.png";	dbQImageSrc[32][2] = "www.californiaair.net";
+                        dbQImage[32][0] = "Images/C1.Microchitze/Img032Canary.png";	dbQImageSrc[32][0] = "www.californiaair.net";
+                        dbQImage[32][1] = "Images/C1.Microchitze/Img032Canary.png";	dbQImageSrc[32][1] = "www.californiaair.net";
+                        dbQImage[32][2] = "Images/C1.Microchitze/Img032Canary.png";	dbQImageSrc[32][2] = "www.californiaair.net";
                         dbAImage[32] = [];							dbAImageSrc[32] = [];
-                        dbAImage[32][0] = "Images/1.Microchitze/032Crest.png";  dbAImageSrc[32][0] = "johnansell.wordpress.com";
-                        dbAImage[32][1] = "Images/1.Microchitze/032Crest.png";  dbAImageSrc[32][1] = "johnansell.wordpress.com";
-                        dbAImage[32][2] = "Images/1.Microchitze/032Crest.png";  dbAImageSrc[32][2] = "johnansell.wordpress.com";
+                        dbAImage[32][0] = "Images/C1.Microchitze/Img032Crest.png";  dbAImageSrc[32][0] = "johnansell.wordpress.com";
+                        dbAImage[32][1] = "Images/C1.Microchitze/Img032Crest.png";  dbAImageSrc[32][1] = "johnansell.wordpress.com";
+                        dbAImage[32][2] = "Images/C1.Microchitze/Img032Crest.png";  dbAImageSrc[32][2] = "johnansell.wordpress.com";
 dbQList[33] = [];
 dbQList[ 33][0] = "Care stat al Statelor Unite are teritoriul cel mai sudic?"; 
 dbQList[ 33][1] = "Which is the southernmost US state?"; 
@@ -1172,13 +1172,13 @@ dbQList[ 33][2] = "Welcher ist der s&#252;dlichste Staat der USA?";
                         dbQHint[33][1] = ""; //hint en
                         dbQHint[33][2] = ""; //hint de
                         dbQImage[33] = []; dbQImageSrc[33] = []; 
-                        dbQImage[33][0] = "Images/1.Microchitze/033US.png";	dbQImageSrc[33][0] = "www.bestwallpaperdesign.com";
-                        dbQImage[33][1] = "Images/1.Microchitze/033US.png";	dbQImageSrc[33][1] = "www.bestwallpaperdesign.com";
-                        dbQImage[33][2] = "Images/1.Microchitze/033US.png";	dbQImageSrc[33][2] = "www.bestwallpaperdesign.com";
+                        dbQImage[33][0] = "Images/C1.Microchitze/Img033US.png";	dbQImageSrc[33][0] = "www.bestwallpaperdesign.com";
+                        dbQImage[33][1] = "Images/C1.Microchitze/Img033US.png";	dbQImageSrc[33][1] = "www.bestwallpaperdesign.com";
+                        dbQImage[33][2] = "Images/C1.Microchitze/Img033US.png";	dbQImageSrc[33][2] = "www.bestwallpaperdesign.com";
                         dbAImage[33] = [];							dbAImageSrc[33] = [];
-                        dbAImage[33][0] = "Images/1.Microchitze/033Hawaii.png";  dbAImageSrc[33][0] = "www.sheppardsoftware.com";
-                        dbAImage[33][1] = "Images/1.Microchitze/033Hawaii.png";  dbAImageSrc[33][1] = "www.sheppardsoftware.com";
-                        dbAImage[33][2] = "Images/1.Microchitze/033Hawaii.png";  dbAImageSrc[33][2] = "www.sheppardsoftware.com";
+                        dbAImage[33][0] = "Images/C1.Microchitze/Img033Hawaii.png";  dbAImageSrc[33][0] = "www.sheppardsoftware.com";
+                        dbAImage[33][1] = "Images/C1.Microchitze/Img033Hawaii.png";  dbAImageSrc[33][1] = "www.sheppardsoftware.com";
+                        dbAImage[33][2] = "Images/C1.Microchitze/Img033Hawaii.png";  dbAImageSrc[33][2] = "www.sheppardsoftware.com";
 dbQList[34] = [];
 dbQList[ 34][0] = "Dac&#x103; ai zbura din Hannover (Germania) 1000km nord, apoi 1200km vest, apoi 1000km sud, apoi 1200km est, &#xEE;n ce ora&#x15F; ai ateriza?"; 
 dbQList[ 34][1] = "If you fly from Hannover (Germany) 1000km north, then 1200km West, then 1000km South then 1200km East, in which town would you land?"; 
@@ -1203,13 +1203,13 @@ dbQList[ 34][2] = "Wenn man von Hannover (Deutschland) 1000km Nord, dann 1200km 
                         dbQHint[34][1] = ""; //hint en
                         dbQHint[34][2] = ""; //hint de
                         dbQImage[34] = []; dbQImageSrc[34] = []; 
-                        dbQImage[34][0] = "Images/1.Microchitze/034Hannover.png";	dbQImageSrc[34][0] = "portlandhannovergapp2013.blogspot.com";
-                        dbQImage[34][1] = "Images/1.Microchitze/034Hannover.png";	dbQImageSrc[34][1] = "portlandhannovergapp2013.blogspot.com";
-                        dbQImage[34][2] = "Images/1.Microchitze/034Hannover.png";	dbQImageSrc[34][2] = "portlandhannovergapp2013.blogspot.com";
+                        dbQImage[34][0] = "Images/C1.Microchitze/Img034Hannover.png";	dbQImageSrc[34][0] = "portlandhannovergapp2013.blogspot.com";
+                        dbQImage[34][1] = "Images/C1.Microchitze/Img034Hannover.png";	dbQImageSrc[34][1] = "portlandhannovergapp2013.blogspot.com";
+                        dbQImage[34][2] = "Images/C1.Microchitze/Img034Hannover.png";	dbQImageSrc[34][2] = "portlandhannovergapp2013.blogspot.com";
                         dbAImage[34] = [];							dbAImageSrc[34] = [];
-                        dbAImage[34][0] = "Images/1.Microchitze/034Amsterdam.png";  dbAImageSrc[34][0] = "www.distance.to/";
-                        dbAImage[34][1] = "Images/1.Microchitze/034Amsterdam.png";  dbAImageSrc[34][1] = "www.distance.to/";
-                        dbAImage[34][2] = "Images/1.Microchitze/034Amsterdam.png";  dbAImageSrc[34][2] = "www.distance.to/";
+                        dbAImage[34][0] = "Images/C1.Microchitze/Img034Amsterdam.png";  dbAImageSrc[34][0] = "www.distance.to/";
+                        dbAImage[34][1] = "Images/C1.Microchitze/Img034Amsterdam.png";  dbAImageSrc[34][1] = "www.distance.to/";
+                        dbAImage[34][2] = "Images/C1.Microchitze/Img034Amsterdam.png";  dbAImageSrc[34][2] = "www.distance.to/";
 dbQList[35] = [];
 dbQList[ 35][0] = "Nume&#x15F;te o &#x163;ar&#x103; care nu este &#xEE;n Uniunea European&#x103;, dar are dreptul s&#x103; bat&#x103; &#x15F;i s&#x103; foloseasc&#x103; euro."; 
 dbQList[ 35][1] = "Name a country that is not in the European Union, but has the right to mint and use euros."; 
@@ -1234,13 +1234,13 @@ dbQList[ 35][2] = "Nenne ein Staat, der nicht in die Europ&#228;ische Union ist,
                         dbQHint[35][1] = ""; //hint en
                         dbQHint[35][2] = ""; //hint de
                         dbQImage[35] = []; dbQImageSrc[35] = []; 
-                        dbQImage[35][0] = "Images/1.Microchitze/035Euro.png";	dbQImageSrc[35][0] = "www.fleur-de-coin.com";
-                        dbQImage[35][1] = "Images/1.Microchitze/035Euro.png";	dbQImageSrc[35][1] = "www.fleur-de-coin.com";
-                        dbQImage[35][2] = "Images/1.Microchitze/035Euro.png";	dbQImageSrc[35][2] = "www.fleur-de-coin.com";
+                        dbQImage[35][0] = "Images/C1.Microchitze/Img035Euro.png";	dbQImageSrc[35][0] = "www.fleur-de-coin.com";
+                        dbQImage[35][1] = "Images/C1.Microchitze/Img035Euro.png";	dbQImageSrc[35][1] = "www.fleur-de-coin.com";
+                        dbQImage[35][2] = "Images/C1.Microchitze/Img035Euro.png";	dbQImageSrc[35][2] = "www.fleur-de-coin.com";
                         dbAImage[35] = [];							dbAImageSrc[35] = [];
-                        dbAImage[35][0] = "Images/1.Microchitze/035Coins.png";  dbAImageSrc[35][0] = "www.forexticket.com";
-                        dbAImage[35][1] = "Images/1.Microchitze/035Coins.png";  dbAImageSrc[35][1] = "www.forexticket.com";
-                        dbAImage[35][2] = "Images/1.Microchitze/035Coins.png";  dbAImageSrc[35][2] = "www.forexticket.com";
+                        dbAImage[35][0] = "Images/C1.Microchitze/Img035Coins.png";  dbAImageSrc[35][0] = "www.forexticket.com";
+                        dbAImage[35][1] = "Images/C1.Microchitze/Img035Coins.png";  dbAImageSrc[35][1] = "www.forexticket.com";
+                        dbAImage[35][2] = "Images/C1.Microchitze/Img035Coins.png";  dbAImageSrc[35][2] = "www.forexticket.com";
 dbQList[36] = [];
 dbQList[ 36][0] = "Nume&#x15F;te o &#x163;ar&#x103; care incepe cu O."; 
 dbQList[ 36][1] = "Name a country that starts with HO."; 
@@ -1265,13 +1265,13 @@ dbQList[ 36][2] = "Nenne ein Land, der mit HO beginnt.";
                         dbQHint[36][1] = ""; //hint en
                         dbQHint[36][2] = ""; //hint de
                         dbQImage[36] = []; dbQImageSrc[36] = []; 
-                        dbQImage[36][0] = "Images/1.Microchitze/036CountryNames.png";	dbQImageSrc[36][0] = "www.pozorblog.com";
-                        dbQImage[36][1] = "Images/1.Microchitze/036CountryNames.png";	dbQImageSrc[36][1] = "www.pozorblog.com";
-                        dbQImage[36][2] = "Images/1.Microchitze/036CountryNames.png";	dbQImageSrc[36][2] = "www.pozorblog.com";
+                        dbQImage[36][0] = "Images/C1.Microchitze/Img036CountryNames.png";	dbQImageSrc[36][0] = "www.pozorblog.com";
+                        dbQImage[36][1] = "Images/C1.Microchitze/Img036CountryNames.png";	dbQImageSrc[36][1] = "www.pozorblog.com";
+                        dbQImage[36][2] = "Images/C1.Microchitze/Img036CountryNames.png";	dbQImageSrc[36][2] = "www.pozorblog.com";
                         dbAImage[36] = [];							dbAImageSrc[36] = [];
-                        dbAImage[36][0] = "Images/1.Microchitze/036Oman.png";      dbAImageSrc[36][0] = "www.operationworld.org";
-                        dbAImage[36][1] = "Images/1.Microchitze/036Honduras.png";  dbAImageSrc[36][1] = "www.operationworld.org";
-                        dbAImage[36][2] = "Images/1.Microchitze/036Honduras.png";  dbAImageSrc[36][2] = "www.operationworld.org";
+                        dbAImage[36][0] = "Images/C1.Microchitze/Img036Oman.png";      dbAImageSrc[36][0] = "www.operationworld.org";
+                        dbAImage[36][1] = "Images/C1.Microchitze/Img036Honduras.png";  dbAImageSrc[36][1] = "www.operationworld.org";
+                        dbAImage[36][2] = "Images/C1.Microchitze/Img036Honduras.png";  dbAImageSrc[36][2] = "www.operationworld.org";
 dbQList[37] = [];
 dbQList[ 37][0] = "Pronun&#x163;ia numelui c&#x103;rei &#x163;&#x103;ri europene &#xEE;ncepe (&#xEE;n limba oficial&#x103; a acelei &#x163;&#x103;ri) cu G?"; 
 dbQList[ 37][1] = "For which European country does the pronounciation of the country name start with G (in the official language of that country)?"; 
@@ -1296,13 +1296,13 @@ dbQList[ 37][2] = "F&#252;r welchen Europ&#228;ischen Land beginnt (in die offiz
                         dbQHint[37][1] = ""; //hint en
                         dbQHint[37][2] = ""; //hint de
                         dbQImage[37] = []; dbQImageSrc[37] = []; 
-                        dbQImage[37][0] = "Images/1.Microchitze/037Europe.png";	dbQImageSrc[37][0] = "funny-pictures.picphotos.net";
-                        dbQImage[37][1] = "Images/1.Microchitze/037Europe.png";	dbQImageSrc[37][1] = "funny-pictures.picphotos.net";
-                        dbQImage[37][2] = "Images/1.Microchitze/037Europe.png";	dbQImageSrc[37][2] = "funny-pictures.picphotos.net";
+                        dbQImage[37][0] = "Images/C1.Microchitze/Img037Europe.png";	dbQImageSrc[37][0] = "funny-pictures.picphotos.net";
+                        dbQImage[37][1] = "Images/C1.Microchitze/Img037Europe.png";	dbQImageSrc[37][1] = "funny-pictures.picphotos.net";
+                        dbQImage[37][2] = "Images/C1.Microchitze/Img037Europe.png";	dbQImageSrc[37][2] = "funny-pictures.picphotos.net";
                         dbAImage[37] = [];							dbAImageSrc[37] = [];
-                        dbAImage[37][0] = "Images/1.Microchitze/037Lux.png";  dbAImageSrc[37][0] = "www.dezwerver.nl";
-                        dbAImage[37][1] = "Images/1.Microchitze/037Lux.png";  dbAImageSrc[37][1] = "www.dezwerver.nl";
-                        dbAImage[37][2] = "Images/1.Microchitze/037Lux.png";  dbAImageSrc[37][2] = "www.dezwerver.nl";
+                        dbAImage[37][0] = "Images/C1.Microchitze/Img037Lux.png";  dbAImageSrc[37][0] = "www.dezwerver.nl";
+                        dbAImage[37][1] = "Images/C1.Microchitze/Img037Lux.png";  dbAImageSrc[37][1] = "www.dezwerver.nl";
+                        dbAImage[37][2] = "Images/C1.Microchitze/Img037Lux.png";  dbAImageSrc[37][2] = "www.dezwerver.nl";
 dbQList[38] = [];
 dbQList[ 38][0] = "Care dou&#x103; &#x163;&#x103;ri &#xEE;nvecinate au capitalele cele mai &#xEE;ndep&#x103;rtate una de alta?"; 
 dbQList[ 38][1] = "Which two neighbouring countries have the capitals farthest apart from each other?"; 
@@ -1327,13 +1327,13 @@ dbQList[ 38][2] = "Welche zwei Nachbarl&#228;nder haben die Hauptst&#228;dte am 
                         dbQHint[38][1] = ""; //hint en
                         dbQHint[38][2] = ""; //hint de
                         dbQImage[38] = []; dbQImageSrc[38] = []; 
-                        dbQImage[38][0] = "Images/1.Microchitze/038Nowhere.png";	dbQImageSrc[38][0] = "www.dreamstime.com";
-                        dbQImage[38][1] = "Images/1.Microchitze/038Nowhere.png";	dbQImageSrc[38][1] = "www.dreamstime.com";
-                        dbQImage[38][2] = "Images/1.Microchitze/038Nowhere.png";	dbQImageSrc[38][2] = "www.dreamstime.com";
+                        dbQImage[38][0] = "Images/C1.Microchitze/Img038Nowhere.png";	dbQImageSrc[38][0] = "www.dreamstime.com";
+                        dbQImage[38][1] = "Images/C1.Microchitze/Img038Nowhere.png";	dbQImageSrc[38][1] = "www.dreamstime.com";
+                        dbQImage[38][2] = "Images/C1.Microchitze/Img038Nowhere.png";	dbQImageSrc[38][2] = "www.dreamstime.com";
                         dbAImage[38] = [];							dbAImageSrc[38] = [];
-                        dbAImage[38][0] = "Images/1.Microchitze/038Globe.png";  dbAImageSrc[38][0] = "www.actualitte.com";
-                        dbAImage[38][1] = "Images/1.Microchitze/038Globe.png";  dbAImageSrc[38][1] = "www.actualitte.com";
-                        dbAImage[38][2] = "Images/1.Microchitze/038Globe.png";  dbAImageSrc[38][2] = "www.actualitte.com";
+                        dbAImage[38][0] = "Images/C1.Microchitze/Img038Globe.png";  dbAImageSrc[38][0] = "www.actualitte.com";
+                        dbAImage[38][1] = "Images/C1.Microchitze/Img038Globe.png";  dbAImageSrc[38][1] = "www.actualitte.com";
+                        dbAImage[38][2] = "Images/C1.Microchitze/Img038Globe.png";  dbAImageSrc[38][2] = "www.actualitte.com";
 dbQList[39] = [];
 dbQList[ 39][0] = "&#xCE;n steagul c&#x103;rei &#x163;&#x103;ri difer&#x103; imaginile de pe fa&#x163;&#x103; &#x15F;i verso?"; 
 dbQList[ 39][1] = "In the flag of which country do the images on obverse and reverse sides differ?"; 
@@ -1358,13 +1358,13 @@ dbQList[ 39][2] = "In der Flagge von welchem Land sind die Bilder auf der Vorder
                         dbQHint[39][1] = ""; //hint en
                         dbQHint[39][2] = ""; //hint de
                         dbQImage[39] = []; dbQImageSrc[39] = []; 
-                        dbQImage[39][0] = "Images/1.Microchitze/039NCaucasian.png";	dbQImageSrc[39][0] = "humorsharing.com";
-                        dbQImage[39][1] = "Images/1.Microchitze/039NCaucasian.png";	dbQImageSrc[39][1] = "humorsharing.com";
-                        dbQImage[39][2] = "Images/1.Microchitze/039NCaucasian.png";	dbQImageSrc[39][2] = "humorsharing.com";
+                        dbQImage[39][0] = "Images/C1.Microchitze/Img039NCaucasian.png";	dbQImageSrc[39][0] = "humorsharing.com";
+                        dbQImage[39][1] = "Images/C1.Microchitze/Img039NCaucasian.png";	dbQImageSrc[39][1] = "humorsharing.com";
+                        dbQImage[39][2] = "Images/C1.Microchitze/Img039NCaucasian.png";	dbQImageSrc[39][2] = "humorsharing.com";
                         dbAImage[39] = [];							dbAImageSrc[39] = [];
-                        dbAImage[39][0] = "Images/1.Microchitze/039Paraguay.png";  dbAImageSrc[39][0] = "www.globenotes.com";
-                        dbAImage[39][1] = "Images/1.Microchitze/039Paraguay.png";  dbAImageSrc[39][1] = "www.globenotes.com";
-                        dbAImage[39][2] = "Images/1.Microchitze/039Paraguay.png";  dbAImageSrc[39][2] = "www.globenotes.com";
+                        dbAImage[39][0] = "Images/C1.Microchitze/Img039Paraguay.png";  dbAImageSrc[39][0] = "www.globenotes.com";
+                        dbAImage[39][1] = "Images/C1.Microchitze/Img039Paraguay.png";  dbAImageSrc[39][1] = "www.globenotes.com";
+                        dbAImage[39][2] = "Images/C1.Microchitze/Img039Paraguay.png";  dbAImageSrc[39][2] = "www.globenotes.com";
                         
 // ZOOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ZOOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1400,13 +1400,13 @@ dbQList[ 40][2] = "Wie viele lebende Regenw&#252;rmer &#252;berleben nach dem Ze
                         dbQHint[ 40][1] = ""; //hint en
                         dbQHint[ 40][2] = ""; //hint de
                         dbQImage[40] = []; dbQImageSrc[40] = []; 
-                        dbQImage[40][0] = "Images/1.Microchitze/040Earthworm.png";	dbQImageSrc[40][0] = "www.istockphoto.com";
-                        dbQImage[40][1] = "Images/1.Microchitze/040Earthworm.png";	dbQImageSrc[40][1] = "www.istockphoto.com";
-                        dbQImage[40][2] = "Images/1.Microchitze/040Earthworm.png";	dbQImageSrc[40][2] = "www.istockphoto.com";
+                        dbQImage[40][0] = "Images/C1.Microchitze/Img040Earthworm.png";	dbQImageSrc[40][0] = "www.istockphoto.com";
+                        dbQImage[40][1] = "Images/C1.Microchitze/Img040Earthworm.png";	dbQImageSrc[40][1] = "www.istockphoto.com";
+                        dbQImage[40][2] = "Images/C1.Microchitze/Img040Earthworm.png";	dbQImageSrc[40][2] = "www.istockphoto.com";
                         dbAImage[40] = [];							dbAImageSrc[40] = [];
-                        dbAImage[40][0] = "Images/1.Microchitze/040EarthwormX.png";  dbAImageSrc[40][0] = "museumofbadideas.blogspot.com";
-                        dbAImage[40][1] = "Images/1.Microchitze/040EarthwormX.png";  dbAImageSrc[40][1] = "museumofbadideas.blogspot.com";
-                        dbAImage[40][2] = "Images/1.Microchitze/040EarthwormX.png";  dbAImageSrc[40][2] = "museumofbadideas.blogspot.com";
+                        dbAImage[40][0] = "Images/C1.Microchitze/Img040EarthwormX.png";  dbAImageSrc[40][0] = "museumofbadideas.blogspot.com";
+                        dbAImage[40][1] = "Images/C1.Microchitze/Img040EarthwormX.png";  dbAImageSrc[40][1] = "museumofbadideas.blogspot.com";
+                        dbAImage[40][2] = "Images/C1.Microchitze/Img040EarthwormX.png";  dbAImageSrc[40][2] = "museumofbadideas.blogspot.com";
 dbQList[ 41] = [];
 dbQList[ 41][0] = "C&#xE2;&#x163;i ochi are o albin&#x103;?"; 
 dbQList[ 41][1] = "How many eyes does a bee have?"; 
@@ -1431,13 +1431,13 @@ dbQList[ 41][2] = "Wie viele Augen hat eine Biene?";
                         dbQHint[ 41][1] = ""; //hint en
                         dbQHint[ 41][2] = ""; //hint de
                         dbQImage[41] = []; dbQImageSrc[41] = []; 
-                        dbQImage[41][0] = "Images/1.Microchitze/041Bee.png";	dbQImageSrc[41][0] = "theperksofbeinggustine.blogspot.com";
-                        dbQImage[41][1] = "Images/1.Microchitze/041Bee.png";	dbQImageSrc[41][1] = "theperksofbeinggustine.blogspot.com";
-                        dbQImage[41][2] = "Images/1.Microchitze/041Bee.png";	dbQImageSrc[41][2] = "theperksofbeinggustine.blogspot.com";
+                        dbQImage[41][0] = "Images/C1.Microchitze/Img041Bee.png";	dbQImageSrc[41][0] = "theperksofbeinggustine.blogspot.com";
+                        dbQImage[41][1] = "Images/C1.Microchitze/Img041Bee.png";	dbQImageSrc[41][1] = "theperksofbeinggustine.blogspot.com";
+                        dbQImage[41][2] = "Images/C1.Microchitze/Img041Bee.png";	dbQImageSrc[41][2] = "theperksofbeinggustine.blogspot.com";
                         dbAImage[41] = [];							dbAImageSrc[41] = [];
-                        dbAImage[41][0] = "Images/1.Microchitze/041Ocelli.png";  dbAImageSrc[41][0] = "www.flickr.com";
-                        dbAImage[41][1] = "Images/1.Microchitze/041Ocelli.png";  dbAImageSrc[41][1] = "www.flickr.com";
-                        dbAImage[41][2] = "Images/1.Microchitze/041Ocelli.png";  dbAImageSrc[41][2] = "www.flickr.com";
+                        dbAImage[41][0] = "Images/C1.Microchitze/Img041Ocelli.png";  dbAImageSrc[41][0] = "www.flickr.com";
+                        dbAImage[41][1] = "Images/C1.Microchitze/Img041Ocelli.png";  dbAImageSrc[41][1] = "www.flickr.com";
+                        dbAImage[41][2] = "Images/C1.Microchitze/Img041Ocelli.png";  dbAImageSrc[41][2] = "www.flickr.com";
 dbQList[ 42] = [];
 dbQList[ 42][0] = "C&#xE2;te degete are un picior de stru&#x163;?"; 
 dbQList[ 42][1] = "How many toes does on ostrich foot have?"; 
@@ -1462,13 +1462,13 @@ dbQList[ 42][2] = "Wie viele Zehen hat ein Strau&#223;en Fu&#223;?";
                         dbQHint[ 42][1] = ""; //hint en
                         dbQHint[ 42][2] = ""; //hint de
                         dbQImage[42] = []; dbQImageSrc[42] = []; 
-                        dbQImage[42][0] = "Images/1.Microchitze/042Ostrich.png";	dbQImageSrc[42][0] = "barelyawakeinfrogpajamas.wordpress.com";
-                        dbQImage[42][1] = "Images/1.Microchitze/042Ostrich.png";	dbQImageSrc[42][1] = "barelyawakeinfrogpajamas.wordpress.com";
-                        dbQImage[42][2] = "Images/1.Microchitze/042Ostrich.png";	dbQImageSrc[42][2] = "barelyawakeinfrogpajamas.wordpress.com";
+                        dbQImage[42][0] = "Images/C1.Microchitze/Img042Ostrich.png";	dbQImageSrc[42][0] = "barelyawakeinfrogpajamas.wordpress.com";
+                        dbQImage[42][1] = "Images/C1.Microchitze/Img042Ostrich.png";	dbQImageSrc[42][1] = "barelyawakeinfrogpajamas.wordpress.com";
+                        dbQImage[42][2] = "Images/C1.Microchitze/Img042Ostrich.png";	dbQImageSrc[42][2] = "barelyawakeinfrogpajamas.wordpress.com";
                         dbAImage[42] = [];							dbAImageSrc[42] = [];
-                        dbAImage[42][0] = "Images/1.Microchitze/042OstrichToes.png";  dbAImageSrc[42][0] = "www.scienceinschool.org";
-                        dbAImage[42][1] = "Images/1.Microchitze/042OstrichToes.png";  dbAImageSrc[42][1] = "www.scienceinschool.org";
-                        dbAImage[42][2] = "Images/1.Microchitze/042OstrichToes.png";  dbAImageSrc[42][2] = "www.scienceinschool.org";
+                        dbAImage[42][0] = "Images/C1.Microchitze/Img042OstrichToes.png";  dbAImageSrc[42][0] = "www.scienceinschool.org";
+                        dbAImage[42][1] = "Images/C1.Microchitze/Img042OstrichToes.png";  dbAImageSrc[42][1] = "www.scienceinschool.org";
+                        dbAImage[42][2] = "Images/C1.Microchitze/Img042OstrichToes.png";  dbAImageSrc[42][2] = "www.scienceinschool.org";
 dbQList[ 43] = [];
 dbQList[ 43][0] = "Care animal vede cel mai bine &#xEE;n total&#x103; obscuritate?"; 
 dbQList[ 43][1] = "Which animal has the best sight in total obscurity?"; 
@@ -1493,13 +1493,13 @@ dbQList[ 43][2] = "Welches Tier hat die beste Sicht in v&#246;llige Dunkelheit?"
                         dbQHint[ 43][1] = ""; //hint en
                         dbQHint[ 43][2] = ""; //hint de
                         dbQImage[43] = []; dbQImageSrc[43] = []; 
-                        dbQImage[43][0] = "Images/1.Microchitze/043Darkness.png";	dbQImageSrc[43][0] = "www.colourbox.de";
-                        dbQImage[43][1] = "Images/1.Microchitze/043Darkness.png";	dbQImageSrc[43][1] = "www.colourbox.de";
-                        dbQImage[43][2] = "Images/1.Microchitze/043Darkness.png";	dbQImageSrc[43][2] = "www.colourbox.de";
+                        dbQImage[43][0] = "Images/C1.Microchitze/Img043Darkness.png";	dbQImageSrc[43][0] = "www.colourbox.de";
+                        dbQImage[43][1] = "Images/C1.Microchitze/Img043Darkness.png";	dbQImageSrc[43][1] = "www.colourbox.de";
+                        dbQImage[43][2] = "Images/C1.Microchitze/Img043Darkness.png";	dbQImageSrc[43][2] = "www.colourbox.de";
                         dbAImage[43] = [];							dbAImageSrc[43] = [];
-                        dbAImage[43][0] = "Images/1.Microchitze/043Glowworm.png";  dbAImageSrc[43][0] = "www.davekilbeyphotography.co.uk";
-                        dbAImage[43][1] = "Images/1.Microchitze/043Glowworm.png";  dbAImageSrc[43][1] = "www.davekilbeyphotography.co.uk";
-                        dbAImage[43][2] = "Images/1.Microchitze/043Glowworm.png";  dbAImageSrc[43][2] = "www.davekilbeyphotography.co.uk";
+                        dbAImage[43][0] = "Images/C1.Microchitze/Img043Glowworm.png";  dbAImageSrc[43][0] = "www.davekilbeyphotography.co.uk";
+                        dbAImage[43][1] = "Images/C1.Microchitze/Img043Glowworm.png";  dbAImageSrc[43][1] = "www.davekilbeyphotography.co.uk";
+                        dbAImage[43][2] = "Images/C1.Microchitze/Img043Glowworm.png";  dbAImageSrc[43][2] = "www.davekilbeyphotography.co.uk";
 dbQList[ 44] = [];
 dbQList[ 44][0] = "Care este cea mai frecvent&#x103; utilizare a pieii de crocodil?"; 
 dbQList[ 44][1] = "Which is the most frequent use of crocodile skin?"; 
@@ -1524,13 +1524,13 @@ dbQList[ 44][2] = "Welche ist die h&#228;ufigste Verwendung von Krokodilhaut?";
                         dbQHint[ 44][1] = ""; //hint en
                         dbQHint[ 44][2] = ""; //hint de
                         dbQImage[44] = []; dbQImageSrc[44] = []; 
-                        dbQImage[44][0] = "Images/1.Microchitze/044CrocAlbum.png";	dbQImageSrc[44][0] = "www.funny-and-hilarious.com";
-                        dbQImage[44][1] = "Images/1.Microchitze/044CrocAlbum.png";	dbQImageSrc[44][1] = "www.funny-and-hilarious.com";
-                        dbQImage[44][2] = "Images/1.Microchitze/044CrocAlbum.png";	dbQImageSrc[44][2] = "www.funny-and-hilarious.com";
+                        dbQImage[44][0] = "Images/C1.Microchitze/Img044CrocAlbum.png";	dbQImageSrc[44][0] = "www.funny-and-hilarious.com";
+                        dbQImage[44][1] = "Images/C1.Microchitze/Img044CrocAlbum.png";	dbQImageSrc[44][1] = "www.funny-and-hilarious.com";
+                        dbQImage[44][2] = "Images/C1.Microchitze/Img044CrocAlbum.png";	dbQImageSrc[44][2] = "www.funny-and-hilarious.com";
                         dbAImage[44] = [];							dbAImageSrc[44] = [];
-                        dbAImage[44][0] = "Images/1.Microchitze/044babyCroc.png";  dbAImageSrc[44][0] = "www.123rf.com";
-                        dbAImage[44][1] = "Images/1.Microchitze/044babyCroc.png";  dbAImageSrc[44][1] = "www.123rf.com";
-                        dbAImage[44][2] = "Images/1.Microchitze/044babyCroc.png";  dbAImageSrc[44][2] = "www.123rf.com";
+                        dbAImage[44][0] = "Images/C1.Microchitze/Img044babyCroc.png";  dbAImageSrc[44][0] = "www.123rf.com";
+                        dbAImage[44][1] = "Images/C1.Microchitze/Img044babyCroc.png";  dbAImageSrc[44][1] = "www.123rf.com";
+                        dbAImage[44][2] = "Images/C1.Microchitze/Img044babyCroc.png";  dbAImageSrc[44][2] = "www.123rf.com";
 dbQList[ 45] = [];
 dbQList[ 45][0] = "Care continent este nativ viperei mor&#x163;ii (<i>Acanthophis antarcticus</i>)?"; 
 dbQList[ 45][1] = "To which continent is the common death adder (<i>Acanthophis antarcticus</i>) native?"; 
@@ -1555,13 +1555,13 @@ dbQList[ 45][2] = "In welchem Kontinent ist die Todesotter (<i>Acanthophis antar
                         dbQHint[ 45][1] = ""; //hint en
                         dbQHint[ 45][2] = ""; //hint de
                         dbQImage[45] = []; dbQImageSrc[45] = []; 
-                        dbQImage[45][0] = "Images/1.Microchitze/045DeathAdder.png";	dbQImageSrc[45][0] = "en.wikipedia.org";
-                        dbQImage[45][1] = "Images/1.Microchitze/045DeathAdder.png";	dbQImageSrc[45][1] = "en.wikipedia.org";
-                        dbQImage[45][2] = "Images/1.Microchitze/045DeathAdder.png";	dbQImageSrc[45][2] = "en.wikipedia.org";
+                        dbQImage[45][0] = "Images/C1.Microchitze/Img045DeathAdder.png";	dbQImageSrc[45][0] = "en.wikipedia.org";
+                        dbQImage[45][1] = "Images/C1.Microchitze/Img045DeathAdder.png";	dbQImageSrc[45][1] = "en.wikipedia.org";
+                        dbQImage[45][2] = "Images/C1.Microchitze/Img045DeathAdder.png";	dbQImageSrc[45][2] = "en.wikipedia.org";
                         dbAImage[45] = [];							dbAImageSrc[45] = [];
-                        dbAImage[45][0] = "Images/1.Microchitze/045Distribution.png";  dbAImageSrc[45][0] = "en.wikipedia.org";
-                        dbAImage[45][1] = "Images/1.Microchitze/045Distribution.png";  dbAImageSrc[45][1] = "en.wikipedia.org";
-                        dbAImage[45][2] = "Images/1.Microchitze/045Distribution.png";  dbAImageSrc[45][2] = "en.wikipedia.org";
+                        dbAImage[45][0] = "Images/C1.Microchitze/Img045Distribution.png";  dbAImageSrc[45][0] = "en.wikipedia.org";
+                        dbAImage[45][1] = "Images/C1.Microchitze/Img045Distribution.png";  dbAImageSrc[45][1] = "en.wikipedia.org";
+                        dbAImage[45][2] = "Images/C1.Microchitze/Img045Distribution.png";  dbAImageSrc[45][2] = "en.wikipedia.org";
 dbQList[ 46] = [];
 dbQList[ 46][0] = "Ce (&#xEE;n leg&#x103;tur&#x103; cu flautul) face &#x15F;erpii s&#x103; danseze?"; 
 dbQList[ 46][1] = "What (regarding the flute) makes snakes dance?"; 
@@ -1586,13 +1586,13 @@ dbQList[ 46][2] = "Was (mit Bezug auf der Fl&#246;te) bringt Schlangen zum Tanze
                         dbQHint[ 46][1] = ""; //hint en
                         dbQHint[ 46][2] = ""; //hint de
                         dbQImage[46] = []; dbQImageSrc[46] = []; 
-                        dbQImage[46][0] = "Images/1.Microchitze/046Charmer.png";	dbQImageSrc[46][0] = "www.fotolibra.com";
-                        dbQImage[46][1] = "Images/1.Microchitze/046Charmer.png";	dbQImageSrc[46][1] = "www.fotolibra.com";
-                        dbQImage[46][2] = "Images/1.Microchitze/046Charmer.png";	dbQImageSrc[46][2] = "www.fotolibra.com";
+                        dbQImage[46][0] = "Images/C1.Microchitze/Img046Charmer.png";	dbQImageSrc[46][0] = "www.fotolibra.com";
+                        dbQImage[46][1] = "Images/C1.Microchitze/Img046Charmer.png";	dbQImageSrc[46][1] = "www.fotolibra.com";
+                        dbQImage[46][2] = "Images/C1.Microchitze/Img046Charmer.png";	dbQImageSrc[46][2] = "www.fotolibra.com";
                         dbAImage[46] = [];							dbAImageSrc[46] = [];
-                        dbAImage[46][0] = "Images/1.Microchitze/046SnakesRO.png";  dbAImageSrc[46][0] = "www.stefan-wirkus.de";
-                        dbAImage[46][1] = "Images/1.Microchitze/046SnakesEN.png";  dbAImageSrc[46][1] = "www.stefan-wirkus.de";
-                        dbAImage[46][2] = "Images/1.Microchitze/046SnakesDE.png";  dbAImageSrc[46][2] = "www.stefan-wirkus.de";
+                        dbAImage[46][0] = "Images/C1.Microchitze/Img046SnakesRO.png";  dbAImageSrc[46][0] = "www.stefan-wirkus.de";
+                        dbAImage[46][1] = "Images/C1.Microchitze/Img046SnakesEN.png";  dbAImageSrc[46][1] = "www.stefan-wirkus.de";
+                        dbAImage[46][2] = "Images/C1.Microchitze/Img046SnakesDE.png";  dbAImageSrc[46][2] = "www.stefan-wirkus.de";
 dbQList[ 47] = [];
 dbQList[ 47][0] = "C&#xE2;te mamifere sunt &#xEE;n aceast&#x103; imagine de prezentare a zoo?"; 
 dbQList[ 47][1] = "How many mammals are there in the this zoo presentation image?"; 
@@ -1617,13 +1617,13 @@ dbQList[ 47][2] = "Wie viele S&#228;ugetiere gibt es in diesen Pr&#228;sentation
                         dbQHint[ 47][1] = ""; //hint en
                         dbQHint[ 47][2] = ""; //hint de
                         dbQImage[47] = []; dbQImageSrc[47] = []; 
-                        dbQImage[47][0] = "Images/1.Microchitze/047Zoo.png";	dbQImageSrc[47][0] = "itunes.apple.com";
-                        dbQImage[47][1] = "Images/1.Microchitze/047Zoo.png";	dbQImageSrc[47][1] = "itunes.apple.com";
-                        dbQImage[47][2] = "Images/1.Microchitze/047Zoo.png";	dbQImageSrc[47][2] = "itunes.apple.com";
+                        dbQImage[47][0] = "Images/C1.Microchitze/Img047Zoo.png";	dbQImageSrc[47][0] = "itunes.apple.com";
+                        dbQImage[47][1] = "Images/C1.Microchitze/Img047Zoo.png";	dbQImageSrc[47][1] = "itunes.apple.com";
+                        dbQImage[47][2] = "Images/C1.Microchitze/Img047Zoo.png";	dbQImageSrc[47][2] = "itunes.apple.com";
                         dbAImage[47] = [];							dbAImageSrc[47] = [];
-                        dbAImage[47][0] = "Images/1.Microchitze/047Zoo.png";  dbAImageSrc[47][0] = "itunes.apple.com";
-                        dbAImage[47][1] = "Images/1.Microchitze/047Zoo.png";  dbAImageSrc[47][1] = "itunes.apple.com";
-                        dbAImage[47][2] = "Images/1.Microchitze/047Zoo.png";  dbAImageSrc[47][2] = "itunes.apple.com";
+                        dbAImage[47][0] = "Images/C1.Microchitze/Img047Zoo.png";  dbAImageSrc[47][0] = "itunes.apple.com";
+                        dbAImage[47][1] = "Images/C1.Microchitze/Img047Zoo.png";  dbAImageSrc[47][1] = "itunes.apple.com";
+                        dbAImage[47][2] = "Images/C1.Microchitze/Img047Zoo.png";  dbAImageSrc[47][2] = "itunes.apple.com";
 dbQList[ 48] = [];
 dbQList[ 48][0] = "Care este cel mai voluminos mamifer?"; 
 dbQList[ 48][1] = "Which is the largest mammal?"; 
@@ -1648,13 +1648,13 @@ dbQList[ 48][2] = "Welches ist das gr&#246;&#xDF;te S&#228;ugetier?";
                         dbQHint[ 48][1] = ""; //hint en
                         dbQHint[ 48][2] = ""; //hint de
                         dbQImage[48] = []; dbQImageSrc[48] = []; 
-                        dbQImage[48][0] = "Images/1.Microchitze/048Safari.png";	dbQImageSrc[48][0] = "extraordinaryintelligence.com";
-                        dbQImage[48][1] = "Images/1.Microchitze/048Safari.png";	dbQImageSrc[48][1] = "extraordinaryintelligence.com";
-                        dbQImage[48][2] = "Images/1.Microchitze/048Safari.png";	dbQImageSrc[48][2] = "extraordinaryintelligence.com";
+                        dbQImage[48][0] = "Images/C1.Microchitze/Img048Safari.png";	dbQImageSrc[48][0] = "extraordinaryintelligence.com";
+                        dbQImage[48][1] = "Images/C1.Microchitze/Img048Safari.png";	dbQImageSrc[48][1] = "extraordinaryintelligence.com";
+                        dbQImage[48][2] = "Images/C1.Microchitze/Img048Safari.png";	dbQImageSrc[48][2] = "extraordinaryintelligence.com";
                         dbAImage[48] = [];							dbAImageSrc[48] = [];
-                        dbAImage[48][0] = "Images/1.Microchitze/048SizeComp.png";  dbAImageSrc[48][0] = "www.dinosaurhome.com";
-                        dbAImage[48][1] = "Images/1.Microchitze/048SizeComp.png";  dbAImageSrc[48][1] = "www.dinosaurhome.com";
-                        dbAImage[48][2] = "Images/1.Microchitze/048SizeComp.png";  dbAImageSrc[48][2] = "www.dinosaurhome.com";
+                        dbAImage[48][0] = "Images/C1.Microchitze/Img048SizeComp.png";  dbAImageSrc[48][0] = "www.dinosaurhome.com";
+                        dbAImage[48][1] = "Images/C1.Microchitze/Img048SizeComp.png";  dbAImageSrc[48][1] = "www.dinosaurhome.com";
+                        dbAImage[48][2] = "Images/C1.Microchitze/Img048SizeComp.png";  dbAImageSrc[48][2] = "www.dinosaurhome.com";
 dbQList[ 49] = [];
 dbQList[ 49][0] = "Ce trebuie s&#x103; &#xEE;i faci unui hipopotam cu diaree?"; 
 dbQList[ 49][1] = "What do you need to make a hippo with diarrhoea?"; 
@@ -1679,13 +1679,13 @@ dbQList[ 49][2] = "Was muss man einem Nilpferd mit Durchfall machen?";
                         dbQHint[ 49][1] = ""; //hint en
                         dbQHint[ 49][2] = ""; //hint de
                         dbQImage[49] = []; dbQImageSrc[49] = []; 
-                        dbQImage[49][0] = "Images/1.Microchitze/049Hippo.png";	dbQImageSrc[49][0] = "www.how-to-draw-funny-cartoons.com";
-                        dbQImage[49][1] = "Images/1.Microchitze/049Hippo.png";	dbQImageSrc[49][1] = "www.how-to-draw-funny-cartoons.com";
-                        dbQImage[49][2] = "Images/1.Microchitze/049Hippo.png";	dbQImageSrc[49][2] = "www.how-to-draw-funny-cartoons.com";
+                        dbQImage[49][0] = "Images/C1.Microchitze/Img049Hippo.png";	dbQImageSrc[49][0] = "www.how-to-draw-funny-cartoons.com";
+                        dbQImage[49][1] = "Images/C1.Microchitze/Img049Hippo.png";	dbQImageSrc[49][1] = "www.how-to-draw-funny-cartoons.com";
+                        dbQImage[49][2] = "Images/C1.Microchitze/Img049Hippo.png";	dbQImageSrc[49][2] = "www.how-to-draw-funny-cartoons.com";
                         dbAImage[49] = [];							dbAImageSrc[49] = [];
-                        dbAImage[49][0] = "Images/1.Microchitze/049SplatterZone.png";  dbAImageSrc[49][0] = "cheaperthantherapy.me";
-                        dbAImage[49][1] = "Images/1.Microchitze/049SplatterZone.png";  dbAImageSrc[49][1] = "cheaperthantherapy.me";
-                        dbAImage[49][2] = "Images/1.Microchitze/049SplatterZone.png";  dbAImageSrc[49][2] = "cheaperthantherapy.me";
+                        dbAImage[49][0] = "Images/C1.Microchitze/Img049SplatterZone.png";  dbAImageSrc[49][0] = "cheaperthantherapy.me";
+                        dbAImage[49][1] = "Images/C1.Microchitze/Img049SplatterZone.png";  dbAImageSrc[49][1] = "cheaperthantherapy.me";
+                        dbAImage[49][2] = "Images/C1.Microchitze/Img049SplatterZone.png";  dbAImageSrc[49][2] = "cheaperthantherapy.me";
                                                 
 // SECVENCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // SECVENCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1721,13 +1721,13 @@ dbQList[ 50][2] = "Was kommt als n&#228;chstes:<br/><br/> 1 4 9 1 6 2 5 3 6 4 ?"
                         dbQHint[ 50][1] = ""; //hint en
                         dbQHint[ 50][2] = ""; //hint de
                         dbQImage[50] = []; dbQImageSrc[50] = []; 
-                        dbQImage[50][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[50][0] = "";
-                        dbQImage[50][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[50][1] = "";
-                        dbQImage[50][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[50][2] = "";
+                        dbQImage[50][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[50][0] = "";
+                        dbQImage[50][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[50][1] = "";
+                        dbQImage[50][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[50][2] = "";
                         dbAImage[50] = [];							dbAImageSrc[50] = [];
-                        dbAImage[50][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[50][0] = "";
-                        dbAImage[50][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[50][1] = "";
-                        dbAImage[50][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[50][2] = "";
+                        dbAImage[50][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[50][0] = "";
+                        dbAImage[50][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[50][1] = "";
+                        dbAImage[50][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[50][2] = "";
 dbQList[ 51] = [];
 dbQList[ 51][0] = "Ce urmeaz&#x103;:<br/><br/> 1 11 21 1211 111221 312211 ?";  
 dbQList[ 51][1] = "What comes next:<br/><br/> 1 11 21 1211 111221 312211 ?"; 
@@ -1752,13 +1752,13 @@ dbQList[ 51][2] = "Was kommt als n&#228;chstes:<br/><br/> 1 11 21 1211 111221 31
                         dbQHint[ 51][1] = ""; //hint en
                         dbQHint[ 51][2] = ""; //hint de
                         dbQImage[51] = []; dbQImageSrc[51] = []; 
-                        dbQImage[51][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[51][0] = "";
-                        dbQImage[51][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[51][1] = "";
-                        dbQImage[51][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[51][2] = "";
+                        dbQImage[51][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[51][0] = "";
+                        dbQImage[51][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[51][1] = "";
+                        dbQImage[51][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[51][2] = "";
                         dbAImage[51] = [];							dbAImageSrc[51] = [];
-                        dbAImage[51][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[51][0] = "";
-                        dbAImage[51][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[51][1] = "";
-                        dbAImage[51][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[51][2] = "";
+                        dbAImage[51][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[51][0] = "";
+                        dbAImage[51][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[51][1] = "";
+                        dbAImage[51][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[51][2] = "";
 dbQList[ 52] = [];
 dbQList[ 52][0] = "Ce urmeaz&#x103;:<br/><br/> 6 15 35 77 143 221 323 ?";  
 dbQList[ 52][1] = "What comes next:<br/><br/> 6 15 35 77 143 221 323 ?"; 
@@ -1783,13 +1783,13 @@ dbQList[ 52][2] = "Was kommt als n&#228;chstes:<br/><br/> 6 15 35 77 143 221 323
                         dbQHint[ 52][1] = ""; //hint en
                         dbQHint[ 52][2] = ""; //hint de
                         dbQImage[52] = []; dbQImageSrc[52] = []; 
-                        dbQImage[52][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[52][0] = "";
-                        dbQImage[52][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[52][1] = "";
-                        dbQImage[52][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[52][2] = "";
+                        dbQImage[52][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[52][0] = "";
+                        dbQImage[52][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[52][1] = "";
+                        dbQImage[52][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[52][2] = "";
                         dbAImage[52] = [];							dbAImageSrc[52] = [];
-                        dbAImage[52][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[52][0] = "";
-                        dbAImage[52][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[52][1] = "";
-                        dbAImage[52][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[52][2] = "";
+                        dbAImage[52][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[52][0] = "";
+                        dbAImage[52][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[52][1] = "";
+                        dbAImage[52][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[52][2] = "";
 dbQList[ 53] = [];
 dbQList[ 53][0] = "Ce urmeaz&#x103;:<br/><br/> 0 1 1 3 6 9 27 31 ?";   
 dbQList[ 53][1] = "What comes next:<br/><br/> 0 1 1 3 6 9 27 31 ?"; 
@@ -1814,13 +1814,13 @@ dbQList[ 53][2] = "Was kommt als n&#228;chstes:<br/><br/> 0 1 1 3 6 9 27 31 ?";
                         dbQHint[ 53][1] = ""; //hint en
                         dbQHint[ 53][2] = ""; //hint de
                         dbQImage[53] = []; dbQImageSrc[53] = []; 
-                        dbQImage[53][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[53][0] = "";
-                        dbQImage[53][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[53][1] = "";
-                        dbQImage[53][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[53][2] = "";
+                        dbQImage[53][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[53][0] = "";
+                        dbQImage[53][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[53][1] = "";
+                        dbQImage[53][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[53][2] = "";
                         dbAImage[53] = [];							dbAImageSrc[53] = [];
-                        dbAImage[53][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[53][0] = "";
-                        dbAImage[53][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[53][1] = "";
-                        dbAImage[53][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[53][2] = "";
+                        dbAImage[53][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[53][0] = "";
+                        dbAImage[53][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[53][1] = "";
+                        dbAImage[53][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[53][2] = "";
 dbQList[ 54] = [];
 dbQList[ 54][0] = "Ce urmeaz&#x103;:<br/><br/> 11 12 23 35 57 80 14 ?";  
 dbQList[ 54][1] = "What comes next:<br/><br/> 11 12 23 35 57 80 14 ?"; 
@@ -1845,13 +1845,13 @@ dbQList[ 54][2] = "Was kommt als n&#228;chstes:<br/><br/> 11 12 23 35 57 80 14 ?
                         dbQHint[ 54][1] = ""; //hint en
                         dbQHint[ 54][2] = ""; //hint de
                         dbQImage[54] = []; dbQImageSrc[54] = []; 
-                        dbQImage[54][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[54][0] = "";
-                        dbQImage[54][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[54][1] = "";
-                        dbQImage[54][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[54][2] = "";
+                        dbQImage[54][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[54][0] = "";
+                        dbQImage[54][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[54][1] = "";
+                        dbQImage[54][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[54][2] = "";
                         dbAImage[54] = [];							dbAImageSrc[54] = [];
-                        dbAImage[54][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[54][0] = "";
-                        dbAImage[54][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[54][1] = "";
-                        dbAImage[54][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[54][2] = "";
+                        dbAImage[54][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[54][0] = "";
+                        dbAImage[54][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[54][1] = "";
+                        dbAImage[54][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[54][2] = "";
 dbQList[ 55] = [];
 dbQList[ 55][0] = "Ce urmeaz&#x103;:<br/><br/> 1 8 11 18 80 ?";  
 dbQList[ 55][1] = "What comes next:<br/><br/> 1 8 11 18 80 ?";  
@@ -1876,13 +1876,13 @@ dbQList[ 55][2] = "Was kommt als n&#228;chstes:<br/><br/> 1 8 11 18 80 ?";
                         dbQHint[ 55][1] = ""; //hint en
                         dbQHint[ 55][2] = ""; //hint de
                         dbQImage[55] = []; dbQImageSrc[55] = []; 
-                        dbQImage[55][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[55][0] = "";
-                        dbQImage[55][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[55][1] = "";
-                        dbQImage[55][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[55][2] = "";
+                        dbQImage[55][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[55][0] = "";
+                        dbQImage[55][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[55][1] = "";
+                        dbQImage[55][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[55][2] = "";
                         dbAImage[55] = [];							dbAImageSrc[55] = [];
-                        dbAImage[55][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[55][0] = "";
-                        dbAImage[55][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[55][1] = "";
-                        dbAImage[55][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[55][2] = "";
+                        dbAImage[55][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[55][0] = "";
+                        dbAImage[55][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[55][1] = "";
+                        dbAImage[55][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[55][2] = "";
 dbQList[ 56] = [];
 dbQList[ 56][0] = "Ce urmeaz&#x103;:<br/><br/> 2 71 82 81 82 84 59 ?";   
 dbQList[ 56][1] = "What comes next:<br/><br/> 2 71 82 81 82 84 59 ?";  
@@ -1907,13 +1907,13 @@ dbQList[ 56][2] = "Was kommt als n&#228;chstes:<br/><br/> 2 71 82 81 82 84 59 ?"
                         dbQHint[ 56][1] = ""; //hint en
                         dbQHint[ 56][2] = ""; //hint de
                         dbQImage[56] = []; dbQImageSrc[56] = []; 
-                        dbQImage[56][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[56][0] = "";
-                        dbQImage[56][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[56][1] = "";
-                        dbQImage[56][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[56][2] = "";
+                        dbQImage[56][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[56][0] = "";
+                        dbQImage[56][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[56][1] = "";
+                        dbQImage[56][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[56][2] = "";
                         dbAImage[56] = [];							dbAImageSrc[56] = [];
-                        dbAImage[56][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[56][0] = "";
-                        dbAImage[56][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[56][1] = "";
-                        dbAImage[56][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[56][2] = "";
+                        dbAImage[56][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[56][0] = "";
+                        dbAImage[56][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[56][1] = "";
+                        dbAImage[56][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[56][2] = "";
 dbQList[ 57] = [];
 dbQList[ 57][0] = "Ce urmeaz&#x103;:<br/><br/> <span style=\"display:inline-block;width:100;\"> 0 6 </span><span style=\"display:inline-block;width:100;\"> 3 5 </span><span style=\"display:inline-block;width:100;\"> 6 6 </span><br/><span style=\"display:inline-block;width:100;\"> 1 2 </span><span style=\"display:inline-block;width:100;\"> 4 4 </span><span style=\"display:inline-block;width:100;\"> 7 3 </span><br/><span style=\"display:inline-block;width:100;\"> 2 5 </span><span style=\"display:inline-block;width:100;\"> 5 5 </span><span style=\"display:inline-block;width:100;\"> 8 ? </span>";   
 dbQList[ 57][1] = "What comes next:<br/><br/> <span style=\"display:inline-block;width:100;\"> 0 6 </span><span style=\"display:inline-block;width:100;\"> 3 5 </span><span style=\"display:inline-block;width:100;\"> 6 6 </span><br/><span style=\"display:inline-block;width:100;\"> 1 2 </span><span style=\"display:inline-block;width:100;\"> 4 4 </span><span style=\"display:inline-block;width:100;\"> 7 3 </span><br/><span style=\"display:inline-block;width:100;\"> 2 5 </span><span style=\"display:inline-block;width:100;\"> 5 5 </span><span style=\"display:inline-block;width:100;\"> 8 ? </span>?";  
@@ -1938,13 +1938,13 @@ dbQList[ 57][2] = "Was kommt als n&#228;chstes:<br/><br/> <span style=\"display:
                         dbQHint[ 57][1] = ""; //hint en
                         dbQHint[ 57][2] = ""; //hint de
                         dbQImage[57] = []; dbQImageSrc[57] = []; 
-                        dbQImage[57][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[57][0] = "";
-                        dbQImage[57][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[57][1] = "";
-                        dbQImage[57][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[57][2] = "";
+                        dbQImage[57][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[57][0] = "";
+                        dbQImage[57][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[57][1] = "";
+                        dbQImage[57][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[57][2] = "";
                         dbAImage[57] = [];							dbAImageSrc[57] = [];
-                        dbAImage[57][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[57][0] = "";
-                        dbAImage[57][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[57][1] = "";
-                        dbAImage[57][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[57][2] = "";
+                        dbAImage[57][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[57][0] = "";
+                        dbAImage[57][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[57][1] = "";
+                        dbAImage[57][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[57][2] = "";
 dbQList[ 58] = [];
 dbQList[ 58][0] = "Ce urmeaz&#x103;:<br/><br/> <span style=\"display:inline-block;width:100;\"> 1 1 </span><span style=\"display:inline-block;width:100;\"> 4 3 </span><span style=\"display:inline-block;width:100;\"> 7 4 </span><br/><span style=\"display:inline-block;width:100;\"> 2 2 </span><span style=\"display:inline-block;width:100;\"> 5 2 </span><span style=\"display:inline-block;width:100;\"> 8 5 </span><br/><span style=\"display:inline-block;width:100;\"> 3 3 </span><span style=\"display:inline-block;width:100;\"> 6 3 </span><span style=\"display:inline-block;width:100;\"> 9 ? </span>";   
 dbQList[ 58][1] = "What comes next:<br/><br/> <span style=\"display:inline-block;width:100;\"> 1 1 </span><span style=\"display:inline-block;width:100;\"> 4 3 </span><span style=\"display:inline-block;width:100;\"> 7 4 </span><br/><span style=\"display:inline-block;width:100;\"> 2 2 </span><span style=\"display:inline-block;width:100;\"> 5 2 </span><span style=\"display:inline-block;width:100;\"> 8 5 </span><br/><span style=\"display:inline-block;width:100;\"> 3 3 </span><span style=\"display:inline-block;width:100;\"> 6 3 </span><span style=\"display:inline-block;width:100;\"> 9 ? </span>";  
@@ -1969,13 +1969,13 @@ dbQList[ 58][2] = "Was kommt als n&#228;chstes:<br/><br/> <span style=\"display:
                         dbQHint[ 58][1] = ""; //hint en
                         dbQHint[ 58][2] = ""; //hint de
                         dbQImage[58] = []; dbQImageSrc[58] = []; 
-                        dbQImage[58][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[58][0] = "";
-                        dbQImage[58][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[58][1] = "";
-                        dbQImage[58][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[58][2] = "";
+                        dbQImage[58][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[58][0] = "";
+                        dbQImage[58][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[58][1] = "";
+                        dbQImage[58][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[58][2] = "";
                         dbAImage[58] = [];							dbAImageSrc[58] = [];
-                        dbAImage[58][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[58][0] = "";
-                        dbAImage[58][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[58][1] = "";
-                        dbAImage[58][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[58][2] = "";
+                        dbAImage[58][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[58][0] = "";
+                        dbAImage[58][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[58][1] = "";
+                        dbAImage[58][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[58][2] = "";
 dbQList[ 59] = [];
 dbQList[ 59][0] = "Ce urmeaz&#x103;:<br/><br/><span style=\"display:inline-block;width:100;\"> 1 </span><span style=\"display:inline-block;width:100;\"> 5 2 4 3 1 </span><br/><span style=\"display:inline-block;width:100;\"> 2 1 </span><span style=\"display:inline-block;width:100;\"> 5 2 4 6 3 1 </span><br/><span style=\"display:inline-block;width:100;\"> 2 3 1 </span><span style=\"display:inline-block;width:100;\"> 5 2 4 7 6 3 1 </span><br/><span style=\"display:inline-block;width:100;\"> 2 4 3 1 </span><span style=\"display:inline-block;width:100;\"> ? ? ? ? ? ? ? ? </span>";    
 dbQList[ 59][1] = "What comes next:<br/><br/><span style=\"display:inline-block;width:100;\"> 1 </span><span style=\"display:inline-block;width:100;\"> 5 4 1 3 2 </span><br/><span style=\"display:inline-block;width:100;\"> 1 2 </span><span style=\"display:inline-block;width:100;\"> 5 4 1 6 3 2 </span><br/><span style=\"display:inline-block;width:100;\"> 1 3 2 </span><span style=\"display:inline-block;width:100;\"> 5 4 1 7 6 3 2 </span><br/><span style=\"display:inline-block;width:100;\"> 4 1 3 2 </span><span style=\"display:inline-block;width:100;\"> ? ? ? ? ? ? ? ? </span>";  
@@ -2000,13 +2000,13 @@ dbQList[ 59][2] = "Was kommt als n&#228;chstes:<br/><br/><span style=\"display:i
                         dbQHint[ 59][1] = ""; //hint en
                         dbQHint[ 59][2] = ""; //hint de
                         dbQImage[59] = []; dbQImageSrc[59] = []; 
-                        dbQImage[59][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[59][0] = "";
-                        dbQImage[59][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[59][1] = "";
-                        dbQImage[59][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[59][2] = "";
+                        dbQImage[59][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[59][0] = "";
+                        dbQImage[59][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[59][1] = "";
+                        dbQImage[59][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[59][2] = "";
                         dbAImage[59] = [];							dbAImageSrc[59] = [];
-                        dbAImage[59][0] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[59][0] = "";
-                        dbAImage[59][1] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[59][1] = "";
-                        dbAImage[59][2] = "Images/1.Microchitze/_Blank.png";  dbAImageSrc[59][2] = "";
+                        dbAImage[59][0] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[59][0] = "";
+                        dbAImage[59][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[59][1] = "";
+                        dbAImage[59][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[59][2] = "";
                         
                                                 
 // MATECHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2043,13 +2043,13 @@ dbQList[ 60][2] = "Wie viele r&#246;mische Zahlen beginnen mit I?";
                         dbQHint[ 60][1] = ""; //hint en
                         dbQHint[ 60][2] = ""; //hint de
                         dbQImage[60] = []; dbQImageSrc[60] = []; 
-                        dbQImage[60][0] = "Images/1.Microchitze/060Colosseum.png";	dbQImageSrc[60][0] = "www.world-mysteries.com";
-                        dbQImage[60][1] = "Images/1.Microchitze/060Colosseum.png";	dbQImageSrc[60][1] = "www.world-mysteries.com";
-                        dbQImage[60][2] = "Images/1.Microchitze/060Colosseum.png";	dbQImageSrc[60][2] = "www.world-mysteries.com";
+                        dbQImage[60][0] = "Images/C1.Microchitze/Img060Colosseum.png";	dbQImageSrc[60][0] = "www.world-mysteries.com";
+                        dbQImage[60][1] = "Images/C1.Microchitze/Img060Colosseum.png";	dbQImageSrc[60][1] = "www.world-mysteries.com";
+                        dbQImage[60][2] = "Images/C1.Microchitze/Img060Colosseum.png";	dbQImageSrc[60][2] = "www.world-mysteries.com";
                         dbAImage[60] = [];							  dbAImageSrc[60] = [];
-                        dbAImage[60][0] = "Images/1.Microchitze/060Roman.png";  dbAImageSrc[60][0] = "www.greatmathsgames.com";
-                        dbAImage[60][1] = "Images/1.Microchitze/060Roman.png";  dbAImageSrc[60][1] = "www.greatmathsgames.com";
-                        dbAImage[60][2] = "Images/1.Microchitze/060Roman.png";  dbAImageSrc[60][2] = "www.greatmathsgames.com";
+                        dbAImage[60][0] = "Images/C1.Microchitze/Img060Roman.png";  dbAImageSrc[60][0] = "www.greatmathsgames.com";
+                        dbAImage[60][1] = "Images/C1.Microchitze/Img060Roman.png";  dbAImageSrc[60][1] = "www.greatmathsgames.com";
+                        dbAImage[60][2] = "Images/C1.Microchitze/Img060Roman.png";  dbAImageSrc[60][2] = "www.greatmathsgames.com";
 dbQList[ 61] = [];
 dbQList[ 61][0] = "Care este cel mai mic num&#x103;r arab care privit cu susu-n jos reprezint&#x103; jum&#x103;tatea sa?";  
 dbQList[ 61][1] = "Which is the lowest arab number that, viewed upside down, represents its half?"; 
@@ -2074,13 +2074,13 @@ dbQList[ 61][2] = "Welche ist die niedrigste arabische Zahl die, auf den Kopf ge
                         dbQHint[ 61][1] = ""; //hint en
                         dbQHint[ 61][2] = ""; //hint de
                         dbQImage[61] = []; dbQImageSrc[61] = []; 
-                        dbQImage[61][0] = "Images/1.Microchitze/061Question.png";	dbQImageSrc[61][0] = "kellogthoughts.com";
-                        dbQImage[61][1] = "Images/1.Microchitze/061Question.png";	dbQImageSrc[61][1] = "kellogthoughts.com";
-                        dbQImage[61][2] = "Images/1.Microchitze/061Question.png";	dbQImageSrc[61][2] = "kellogthoughts.com";
+                        dbQImage[61][0] = "Images/C1.Microchitze/Img061Question.png";	dbQImageSrc[61][0] = "kellogthoughts.com";
+                        dbQImage[61][1] = "Images/C1.Microchitze/Img061Question.png";	dbQImageSrc[61][1] = "kellogthoughts.com";
+                        dbQImage[61][2] = "Images/C1.Microchitze/Img061Question.png";	dbQImageSrc[61][2] = "kellogthoughts.com";
                         dbAImage[61] = [];							dbAImageSrc[61] = [];
-                        dbAImage[61][0] = "Images/1.Microchitze/061Zero.png";  dbAImageSrc[61][0] = "www.shutterstock.com";
-                        dbAImage[61][1] = "Images/1.Microchitze/061Zero.png";  dbAImageSrc[61][1] = "www.shutterstock.com";
-                        dbAImage[61][2] = "Images/1.Microchitze/061Zero.png";  dbAImageSrc[61][2] = "www.shutterstock.com";
+                        dbAImage[61][0] = "Images/C1.Microchitze/Img061Zero.png";  dbAImageSrc[61][0] = "www.shutterstock.com";
+                        dbAImage[61][1] = "Images/C1.Microchitze/Img061Zero.png";  dbAImageSrc[61][1] = "www.shutterstock.com";
+                        dbAImage[61][2] = "Images/C1.Microchitze/Img061Zero.png";  dbAImageSrc[61][2] = "www.shutterstock.com";
 dbQList[ 62] = [];
 dbQList[ 62][0] = "Care este num&#x103;rul minim de divizori naturali pe care &#xEE;i poate avea un num&#x103;r natural?";  
 dbQList[ 62][1] = "Which is the lowest number of natural divisors that a natural number can have?"; 
@@ -2105,13 +2105,13 @@ dbQList[ 62][2] = "Welche ist die geringste Anzahl von nat&#252;rlichen Teiler, 
                         dbQHint[ 62][1] = ""; //hint en
                         dbQHint[ 62][2] = ""; //hint de
                         dbQImage[62] = []; dbQImageSrc[62] = []; 
-                        dbQImage[62][0] = "Images/1.Microchitze/062GCD.png";	dbQImageSrc[62][0] = "www.mathx.net";
-                        dbQImage[62][1] = "Images/1.Microchitze/062GCD.png";	dbQImageSrc[62][1] = "www.mathx.net";
-                        dbQImage[62][2] = "Images/1.Microchitze/062GCD.png";	dbQImageSrc[62][2] = "www.mathx.net";
+                        dbQImage[62][0] = "Images/C1.Microchitze/Img062GCD.png";	dbQImageSrc[62][0] = "www.mathx.net";
+                        dbQImage[62][1] = "Images/C1.Microchitze/Img062GCD.png";	dbQImageSrc[62][1] = "www.mathx.net";
+                        dbQImage[62][2] = "Images/C1.Microchitze/Img062GCD.png";	dbQImageSrc[62][2] = "www.mathx.net";
                         dbAImage[62] = [];							dbAImageSrc[62] = [];
-                        dbAImage[62][0] = "Images/1.Microchitze/062Factors.png";  dbAImageSrc[62][0] = "www.fishershypnosis.com";
-                        dbAImage[62][1] = "Images/1.Microchitze/062Factors.png";  dbAImageSrc[62][1] = "www.fishershypnosis.com";
-                        dbAImage[62][2] = "Images/1.Microchitze/062Factors.png";  dbAImageSrc[62][2] = "www.fishershypnosis.com";
+                        dbAImage[62][0] = "Images/C1.Microchitze/Img062Factors.png";  dbAImageSrc[62][0] = "www.fishershypnosis.com";
+                        dbAImage[62][1] = "Images/C1.Microchitze/Img062Factors.png";  dbAImageSrc[62][1] = "www.fishershypnosis.com";
+                        dbAImage[62][2] = "Images/C1.Microchitze/Img062Factors.png";  dbAImageSrc[62][2] = "www.fishershypnosis.com";
 dbQList[ 63] = [];
 dbQList[ 63][0] = "C&#xE2;te v&#xE2;rfuri are steaua din imagine?";   
 dbQList[ 63][1] = "How many vertices does the pictured star have?"; 
@@ -2136,13 +2136,13 @@ dbQList[ 63][2] = "Wie viele Ecken hat der abgebildete Stern?";
                         dbQHint[ 63][1] = ""; //hint en
                         dbQHint[ 63][2] = ""; //hint de
                         dbQImage[63] = []; dbQImageSrc[63] = []; 
-                        dbQImage[63][0] = "Images/1.Microchitze/063Star.png";	dbQImageSrc[63][0] = "gojko.net";
-                        dbQImage[63][1] = "Images/1.Microchitze/063Star.png";	dbQImageSrc[63][1] = "gojko.net";
-                        dbQImage[63][2] = "Images/1.Microchitze/063Star.png";	dbQImageSrc[63][2] = "gojko.net";
+                        dbQImage[63][0] = "Images/C1.Microchitze/Img063Star.png";	dbQImageSrc[63][0] = "gojko.net";
+                        dbQImage[63][1] = "Images/C1.Microchitze/Img063Star.png";	dbQImageSrc[63][1] = "gojko.net";
+                        dbQImage[63][2] = "Images/C1.Microchitze/Img063Star.png";	dbQImageSrc[63][2] = "gojko.net";
                         dbAImage[63] = [];							dbAImageSrc[63] = [];
-                        dbAImage[63][0] = "Images/1.Microchitze/063Vertices.png";  dbAImageSrc[63][0] = "gojko.net";
-                        dbAImage[63][1] = "Images/1.Microchitze/063Vertices.png";  dbAImageSrc[63][1] = "gojko.net";
-                        dbAImage[63][2] = "Images/1.Microchitze/063Vertices.png";  dbAImageSrc[63][2] = "gojko.net";
+                        dbAImage[63][0] = "Images/C1.Microchitze/Img063Vertices.png";  dbAImageSrc[63][0] = "gojko.net";
+                        dbAImage[63][1] = "Images/C1.Microchitze/Img063Vertices.png";  dbAImageSrc[63][1] = "gojko.net";
+                        dbAImage[63][2] = "Images/C1.Microchitze/Img063Vertices.png";  dbAImageSrc[63][2] = "gojko.net";
 dbQList[ 64] = [];
 dbQList[ 64][0] = "C&#xE2;te capete au dou&#x103; be&#x163;e &#x15F;i jum&#x103;tate?";  
 dbQList[ 64][1] = "How many ends do two and a half sticks have?"; 
@@ -2167,13 +2167,13 @@ dbQList[ 64][2] = "Wie viele Endpunkte haben zweieinhalb St&#246;cke?";
                         dbQHint[ 64][1] = ""; //hint en
                         dbQHint[ 64][2] = ""; //hint de
                         dbQImage[64] = []; dbQImageSrc[64] = []; 
-                        dbQImage[64][0] = "Images/1.Microchitze/064Bamboo.png";	dbQImageSrc[64][0] = "upww.us";
-                        dbQImage[64][1] = "Images/1.Microchitze/064Bamboo.png";	dbQImageSrc[64][1] = "upww.us";
-                        dbQImage[64][2] = "Images/1.Microchitze/064Bamboo.png";	dbQImageSrc[64][2] = "upww.us";
+                        dbQImage[64][0] = "Images/C1.Microchitze/Img064Bamboo.png";	dbQImageSrc[64][0] = "upww.us";
+                        dbQImage[64][1] = "Images/C1.Microchitze/Img064Bamboo.png";	dbQImageSrc[64][1] = "upww.us";
+                        dbQImage[64][2] = "Images/C1.Microchitze/Img064Bamboo.png";	dbQImageSrc[64][2] = "upww.us";
                         dbAImage[64] = [];							dbAImageSrc[64] = [];
-                        dbAImage[64][0] = "Images/1.Microchitze/064Sticks.png";  dbAImageSrc[64][0] = "plus.google.com";
-                        dbAImage[64][1] = "Images/1.Microchitze/064Sticks.png";  dbAImageSrc[64][1] = "plus.google.com";
-                        dbAImage[64][2] = "Images/1.Microchitze/064Sticks.png";  dbAImageSrc[64][2] = "plus.google.com";
+                        dbAImage[64][0] = "Images/C1.Microchitze/Img064Sticks.png";  dbAImageSrc[64][0] = "plus.google.com";
+                        dbAImage[64][1] = "Images/C1.Microchitze/Img064Sticks.png";  dbAImageSrc[64][1] = "plus.google.com";
+                        dbAImage[64][2] = "Images/C1.Microchitze/Img064Sticks.png";  dbAImageSrc[64][2] = "plus.google.com";
 dbQList[ 65] = [];
 dbQList[ 65][0] = "Doi plus doi &#xEE;mp&#x103;r&#x163;it la doi este egal cu ...";  
 dbQList[ 65][1] = "Two plus two divided by two is equal to ...";  
@@ -2198,13 +2198,13 @@ dbQList[ 65][2] = "Zwei plus Zwei durch Zwei gleicht ...";
                         dbQHint[ 65][1] = ""; //hint en
                         dbQHint[ 65][2] = ""; //hint de
                         dbQImage[65] = []; dbQImageSrc[65] = []; 
-                        dbQImage[65][0] = "Images/1.Microchitze/065Mix.png";	dbQImageSrc[65][0] = "imet.csus.edu";
-                        dbQImage[65][1] = "Images/1.Microchitze/065Mix.png";	dbQImageSrc[65][1] = "imet.csus.edu";
-                        dbQImage[65][2] = "Images/1.Microchitze/065Mix.png";	dbQImageSrc[65][2] = "imet.csus.edu";
+                        dbQImage[65][0] = "Images/C1.Microchitze/Img065Mix.png";	dbQImageSrc[65][0] = "imet.csus.edu";
+                        dbQImage[65][1] = "Images/C1.Microchitze/Img065Mix.png";	dbQImageSrc[65][1] = "imet.csus.edu";
+                        dbQImage[65][2] = "Images/C1.Microchitze/Img065Mix.png";	dbQImageSrc[65][2] = "imet.csus.edu";
                         dbAImage[65] = [];							dbAImageSrc[65] = [];
-                        dbAImage[65][0] = "Images/1.Microchitze/065Order.png";  dbAImageSrc[65][0] = "calculator.mathcaptain.com";
-                        dbAImage[65][1] = "Images/1.Microchitze/065Order.png";  dbAImageSrc[65][1] = "calculator.mathcaptain.com";
-                        dbAImage[65][2] = "Images/1.Microchitze/065Order.png";  dbAImageSrc[65][2] = "calculator.mathcaptain.com";
+                        dbAImage[65][0] = "Images/C1.Microchitze/Img065Order.png";  dbAImageSrc[65][0] = "calculator.mathcaptain.com";
+                        dbAImage[65][1] = "Images/C1.Microchitze/Img065Order.png";  dbAImageSrc[65][1] = "calculator.mathcaptain.com";
+                        dbAImage[65][2] = "Images/C1.Microchitze/Img065Order.png";  dbAImageSrc[65][2] = "calculator.mathcaptain.com";
 dbQList[ 66] = [];
 dbQList[ 66][0] = "C&#xE2;&#x163;i metri cubi de p&#x103;m&#xE2;nt exist&#x103; &#xEE;ntr-o groap&#x103; de 4m lungime, 3m l&#x103;&#x163;ime &#x15F;i 1m ad&#xE2;ncime?";   
 dbQList[ 66][1] = "How many cubic meters of soil are there in a hole 4m long, 3m wide and 1m deep?";  
@@ -2229,13 +2229,13 @@ dbQList[ 66][2] = "Wie viele Kubikmeter Erde gibt es in einem Loch 4 m lang, 3 m
                         dbQHint[ 66][1] = ""; //hint en
                         dbQHint[ 66][2] = ""; //hint de
                         dbQImage[66] = []; dbQImageSrc[66] = []; 
-                        dbQImage[66][0] = "Images/1.Microchitze/066Parallelipiped.png";	dbQImageSrc[66][0] = "fodosiq.cwahi.net";
-                        dbQImage[66][1] = "Images/1.Microchitze/066Parallelipiped.png";	dbQImageSrc[66][1] = "fodosiq.cwahi.net";
-                        dbQImage[66][2] = "Images/1.Microchitze/066Parallelipiped.png";	dbQImageSrc[66][2] = "fodosiq.cwahi.net";
+                        dbQImage[66][0] = "Images/C1.Microchitze/Img066Parallelipiped.png";	dbQImageSrc[66][0] = "fodosiq.cwahi.net";
+                        dbQImage[66][1] = "Images/C1.Microchitze/Img066Parallelipiped.png";	dbQImageSrc[66][1] = "fodosiq.cwahi.net";
+                        dbQImage[66][2] = "Images/C1.Microchitze/Img066Parallelipiped.png";	dbQImageSrc[66][2] = "fodosiq.cwahi.net";
                         dbAImage[66] = [];							dbAImageSrc[66] = [];
-                        dbAImage[66][0] = "Images/1.Microchitze/066ArcheologyRO.png";  dbAImageSrc[66][0] = "www.network54.com";
-                        dbAImage[66][1] = "Images/1.Microchitze/066ArcheologyEN.png";  dbAImageSrc[66][1] = "www.network54.com";
-                        dbAImage[66][2] = "Images/1.Microchitze/066ArcheologyDE.png";  dbAImageSrc[66][2] = "www.network54.com";
+                        dbAImage[66][0] = "Images/C1.Microchitze/Img066ArcheologyRO.png";  dbAImageSrc[66][0] = "www.network5C4.Com";
+                        dbAImage[66][1] = "Images/C1.Microchitze/Img066ArcheologyEN.png";  dbAImageSrc[66][1] = "www.network5C4.Com";
+                        dbAImage[66][2] = "Images/C1.Microchitze/Img066ArcheologyDE.png";  dbAImageSrc[66][2] = "www.network5C4.Com";
 dbQList[ 67] = [];
 dbQList[ 67][0] = "Dac&#x103; din 5 chi&#x15F;toace se poate face o &#x163;igaret&#x103;, c&#xE2;te &#x163;igarete se pot fuma av&#xE2;nd 25 de chi&#x15F;toace?";   
 dbQList[ 67][1] = "If you can make a cigarette from 5 butts, how many cigarettes can you smoke having 25 butts?";  
@@ -2260,13 +2260,13 @@ dbQList[ 67][2] = "Wenn man eine Zigarette aus 5 Stummel machen kann, wie viele 
                         dbQHint[ 67][1] = ""; //hint en
                         dbQHint[ 67][2] = ""; //hint de
                         dbQImage[67] = []; dbQImageSrc[67] = []; 
-                        dbQImage[67][0] = "Images/1.Microchitze/067Butts.png";	dbQImageSrc[67][0] = "www.thestar.com";
-                        dbQImage[67][1] = "Images/1.Microchitze/067Butts.png";	dbQImageSrc[67][1] = "www.thestar.com";
-                        dbQImage[67][2] = "Images/1.Microchitze/067Butts.png";	dbQImageSrc[67][2] = "www.thestar.com";
+                        dbQImage[67][0] = "Images/C1.Microchitze/Img067Butts.png";	dbQImageSrc[67][0] = "www.thestar.com";
+                        dbQImage[67][1] = "Images/C1.Microchitze/Img067Butts.png";	dbQImageSrc[67][1] = "www.thestar.com";
+                        dbQImage[67][2] = "Images/C1.Microchitze/Img067Butts.png";	dbQImageSrc[67][2] = "www.thestar.com";
                         dbAImage[67] = [];							dbAImageSrc[67] = [];
-                        dbAImage[67][0] = "Images/1.Microchitze/067Cigarettes.png";  dbAImageSrc[67][0] = "www.zaubershop-frenchdrop.de";
-                        dbAImage[67][1] = "Images/1.Microchitze/067Cigarettes.png";  dbAImageSrc[67][1] = "www.zaubershop-frenchdrop.de";
-                        dbAImage[67][2] = "Images/1.Microchitze/067Cigarettes.png";  dbAImageSrc[67][2] = "www.zaubershop-frenchdrop.de";
+                        dbAImage[67][0] = "Images/C1.Microchitze/Img067Cigarettes.png";  dbAImageSrc[67][0] = "www.zaubershop-frenchdrop.de";
+                        dbAImage[67][1] = "Images/C1.Microchitze/Img067Cigarettes.png";  dbAImageSrc[67][1] = "www.zaubershop-frenchdrop.de";
+                        dbAImage[67][2] = "Images/C1.Microchitze/Img067Cigarettes.png";  dbAImageSrc[67][2] = "www.zaubershop-frenchdrop.de";
 dbQList[ 68] = [];
 dbQList[ 68][0] = "&#x15E;apte fra&#x163;i au c&#xE2;te o sor&#x103;, c&#xE2;&#x163;i sunt &#xEE;n total?";   
 dbQList[ 68][1] = "Seven brothers have a sister each, how many are they?";  
@@ -2291,13 +2291,13 @@ dbQList[ 68][2] = "Sieben Brueder haben je eine Schwester, wie viele sind sie zu
                         dbQHint[ 68][1] = ""; //hint en
                         dbQHint[ 68][2] = ""; //hint de
                         dbQImage[68] = []; dbQImageSrc[68] = []; 
-                        dbQImage[68][0] = "Images/1.Microchitze/068Seven.png";	dbQImageSrc[68][0] = "www.aliexpress.com";
-                        dbQImage[68][1] = "Images/1.Microchitze/068Seven.png";	dbQImageSrc[68][1] = "www.aliexpress.com";
-                        dbQImage[68][2] = "Images/1.Microchitze/068Seven.png";	dbQImageSrc[68][2] = "www.aliexpress.com";
+                        dbQImage[68][0] = "Images/C1.Microchitze/Img068Seven.png";	dbQImageSrc[68][0] = "www.aliexpress.com";
+                        dbQImage[68][1] = "Images/C1.Microchitze/Img068Seven.png";	dbQImageSrc[68][1] = "www.aliexpress.com";
+                        dbQImage[68][2] = "Images/C1.Microchitze/Img068Seven.png";	dbQImageSrc[68][2] = "www.aliexpress.com";
                         dbAImage[68] = [];							dbAImageSrc[68] = [];
-                        dbAImage[68][0] = "Images/1.Microchitze/068Sister.png";  dbAImageSrc[68][0] = "www.aliexpress.com";
-                        dbAImage[68][1] = "Images/1.Microchitze/068Sister.png";  dbAImageSrc[68][1] = "www.aliexpress.com";
-                        dbAImage[68][2] = "Images/1.Microchitze/068Sister.png";  dbAImageSrc[68][2] = "www.aliexpress.com";
+                        dbAImage[68][0] = "Images/C1.Microchitze/Img068Sister.png";  dbAImageSrc[68][0] = "www.aliexpress.com";
+                        dbAImage[68][1] = "Images/C1.Microchitze/Img068Sister.png";  dbAImageSrc[68][1] = "www.aliexpress.com";
+                        dbAImage[68][2] = "Images/C1.Microchitze/Img068Sister.png";  dbAImageSrc[68][2] = "www.aliexpress.com";
 dbQList[ 69] = [];
 dbQList[ 69][0] = "Dac&#x103; 8 muncitori au avut nevoie de 10 ore pentru a construi un zid, de c&#xE2;te ore au nevoie 4 muncitori pentru a construi acela&#x15F;i zid?";    
 dbQList[ 69][1] = "If 8 workers needed 10 hours to build a wall, how many hours do 4 workers need to build the same wall?";  
@@ -2322,13 +2322,13 @@ dbQList[ 69][2] = "Wenn 8 Arbeiter 10 Stunden ben&#246;tit haben, um eine Wand z
                         dbQHint[ 69][1] = ""; //hint en
                         dbQHint[ 69][2] = ""; //hint de
                         dbQImage[69] = []; dbQImageSrc[69] = []; 
-                        dbQImage[69][0] = "Images/1.Microchitze/069Wall.png";	dbQImageSrc[69][0] = "albanyanalytical.com";
-                        dbQImage[69][1] = "Images/1.Microchitze/069Wall.png";	dbQImageSrc[69][1] = "albanyanalytical.com";
-                        dbQImage[69][2] = "Images/1.Microchitze/069Wall.png";	dbQImageSrc[69][2] = "albanyanalytical.com";
+                        dbQImage[69][0] = "Images/C1.Microchitze/Img069Wall.png";	dbQImageSrc[69][0] = "albanyanalytical.com";
+                        dbQImage[69][1] = "Images/C1.Microchitze/Img069Wall.png";	dbQImageSrc[69][1] = "albanyanalytical.com";
+                        dbQImage[69][2] = "Images/C1.Microchitze/Img069Wall.png";	dbQImageSrc[69][2] = "albanyanalytical.com";
                         dbAImage[69] = [];							dbAImageSrc[69] = [];
-                        dbAImage[69][0] = "Images/1.Microchitze/069Completed.png";  dbAImageSrc[69][0] = "www.pptbackgrounds.net";
-                        dbAImage[69][1] = "Images/1.Microchitze/069Completed.png";  dbAImageSrc[69][1] = "www.pptbackgrounds.net";
-                        dbAImage[69][2] = "Images/1.Microchitze/069Completed.png";  dbAImageSrc[69][2] = "www.pptbackgrounds.net";
+                        dbAImage[69][0] = "Images/C1.Microchitze/Img069Completed.png";  dbAImageSrc[69][0] = "www.pptbackgrounds.net";
+                        dbAImage[69][1] = "Images/C1.Microchitze/Img069Completed.png";  dbAImageSrc[69][1] = "www.pptbackgrounds.net";
+                        dbAImage[69][2] = "Images/C1.Microchitze/Img069Completed.png";  dbAImageSrc[69][2] = "www.pptbackgrounds.net";
                         
 // CHEMOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // CHEMOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2364,13 +2364,13 @@ dbQList[ 70][2] = "Welcher Element wurde durch das Studium von Urin entdeckt?";
                         dbQHint[ 70][1] = ""; //hint en
                         dbQHint[ 70][2] = ""; //hint de
                         dbQImage[70] = []; dbQImageSrc[70] = []; 
-                        dbQImage[70][0] = "Images/1.Microchitze/070DogPee.png";	dbQImageSrc[70][0] = "ehsbioblog.blogspot.com";
-                        dbQImage[70][1] = "Images/1.Microchitze/070DogPee.png";	dbQImageSrc[70][1] = "ehsbioblog.blogspot.com";
-                        dbQImage[70][2] = "Images/1.Microchitze/070DogPee.png";	dbQImageSrc[70][2] = "ehsbioblog.blogspot.com";
+                        dbQImage[70][0] = "Images/C1.Microchitze/Img070DogPee.png";	dbQImageSrc[70][0] = "ehsbioblog.blogspot.com";
+                        dbQImage[70][1] = "Images/C1.Microchitze/Img070DogPee.png";	dbQImageSrc[70][1] = "ehsbioblog.blogspot.com";
+                        dbQImage[70][2] = "Images/C1.Microchitze/Img070DogPee.png";	dbQImageSrc[70][2] = "ehsbioblog.blogspot.com";
                         dbAImage[70] = [];							  dbAImageSrc[70] = [];
-                        dbAImage[70][0] = "Images/1.Microchitze/070Painting.png";  dbAImageSrc[70][0] = "The Alchymist. Joseph Wright 1717";
-                        dbAImage[70][1] = "Images/1.Microchitze/070Painting.png";  dbAImageSrc[70][1] = "The Alchymist. Joseph Wright 1717";
-                        dbAImage[70][2] = "Images/1.Microchitze/070Painting.png";  dbAImageSrc[70][2] = "The Alchymist. Joseph Wright 1717";
+                        dbAImage[70][0] = "Images/C1.Microchitze/Img070Painting.png";  dbAImageSrc[70][0] = "The Alchymist. Joseph Wright 1717";
+                        dbAImage[70][1] = "Images/C1.Microchitze/Img070Painting.png";  dbAImageSrc[70][1] = "The Alchymist. Joseph Wright 1717";
+                        dbAImage[70][2] = "Images/C1.Microchitze/Img070Painting.png";  dbAImageSrc[70][2] = "The Alchymist. Joseph Wright 1717";
 dbQList[ 71] = [];
 dbQList[ 71][0] = "Care este simbolul chimic pentru cositor?";  
 dbQList[ 71][1] = "What is the chemical symbol for tin?"; 
@@ -2395,13 +2395,13 @@ dbQList[ 71][2] = "Was ist das Elementsymbol f&#252;r Zinn?";
                         dbQHint[ 71][1] = ""; //hint en
                         dbQHint[ 71][2] = ""; //hint de
                         dbQImage[71] = []; dbQImageSrc[71] = []; 
-                        dbQImage[71][0] = "Images/1.Microchitze/071Warrior.png";	dbQImageSrc[1][0] = "www.etsy.com";
-                        dbQImage[71][1] = "Images/1.Microchitze/071Warrior.png";	dbQImageSrc[1][1] = "www.etsy.com";
-                        dbQImage[71][2] = "Images/1.Microchitze/071Warrior.png";	dbQImageSrc[1][2] = "www.etsy.com";
+                        dbQImage[71][0] = "Images/C1.Microchitze/Img071Warrior.png";	dbQImageSrc[1][0] = "www.etsy.com";
+                        dbQImage[71][1] = "Images/C1.Microchitze/Img071Warrior.png";	dbQImageSrc[1][1] = "www.etsy.com";
+                        dbQImage[71][2] = "Images/C1.Microchitze/Img071Warrior.png";	dbQImageSrc[1][2] = "www.etsy.com";
                         dbAImage[71] = [];							dbAImageSrc[71] = [];
-                        dbAImage[71][0] = "Images/1.Microchitze/071Tin.png";  dbAImageSrc[71][0] = "periodictable.com";
-                        dbAImage[71][1] = "Images/1.Microchitze/071Tin.png";  dbAImageSrc[71][1] = "periodictable.com";
-                        dbAImage[71][2] = "Images/1.Microchitze/071Tin.png";  dbAImageSrc[71][2] = "periodictable.com";
+                        dbAImage[71][0] = "Images/C1.Microchitze/Img071Tin.png";  dbAImageSrc[71][0] = "periodictable.com";
+                        dbAImage[71][1] = "Images/C1.Microchitze/Img071Tin.png";  dbAImageSrc[71][1] = "periodictable.com";
+                        dbAImage[71][2] = "Images/C1.Microchitze/Img071Tin.png";  dbAImageSrc[71][2] = "periodictable.com";
 dbQList[ 72] = [];
 dbQList[ 72][0] = "Dupa ce a fost numit elementul <i>indiu</i>?";  
 dbQList[ 72][1] = "What was element <i>indium</i> named after?"; 
@@ -2426,13 +2426,13 @@ dbQList[ 72][2] = "Wonach war das Element <i>indium</i> benannt?";
                         dbQHint[ 72][1] = ""; //hint en
                         dbQHint[ 72][2] = ""; //hint de
                         dbQImage[72] = []; dbQImageSrc[72] = []; 
-                        dbQImage[72][0] = "Images/1.Microchitze/072Indium.png";	dbQImageSrc[72][0] = "periodictable.com";
-                        dbQImage[72][1] = "Images/1.Microchitze/072Indium.png";	dbQImageSrc[72][1] = "periodictable.com";
-                        dbQImage[72][2] = "Images/1.Microchitze/072Indium.png";	dbQImageSrc[72][2] = "periodictable.com";
+                        dbQImage[72][0] = "Images/C1.Microchitze/Img072Indium.png";	dbQImageSrc[72][0] = "periodictable.com";
+                        dbQImage[72][1] = "Images/C1.Microchitze/Img072Indium.png";	dbQImageSrc[72][1] = "periodictable.com";
+                        dbQImage[72][2] = "Images/C1.Microchitze/Img072Indium.png";	dbQImageSrc[72][2] = "periodictable.com";
                         dbAImage[72] = [];							dbAImageSrc[72] = [];
-                        dbAImage[72][0] = "Images/1.Microchitze/072Spectrum.png";  dbAImageSrc[72][0] = "www.alexpetty.com";
-                        dbAImage[72][1] = "Images/1.Microchitze/072Spectrum.png";  dbAImageSrc[72][1] = "www.alexpetty.com";
-                        dbAImage[72][2] = "Images/1.Microchitze/072Spectrum.png";  dbAImageSrc[72][2] = "www.alexpetty.com";
+                        dbAImage[72][0] = "Images/C1.Microchitze/Img072Spectrum.png";  dbAImageSrc[72][0] = "www.alexpetty.com";
+                        dbAImage[72][1] = "Images/C1.Microchitze/Img072Spectrum.png";  dbAImageSrc[72][1] = "www.alexpetty.com";
+                        dbAImage[72][2] = "Images/C1.Microchitze/Img072Spectrum.png";  dbAImageSrc[72][2] = "www.alexpetty.com";
 dbQList[ 73] = [];
 dbQList[ 73][0] = "Protiu, deuteriu si tritiu sunt izotopi ai carui element?";   
 dbQList[ 73][1] = "Protium, deuterium and tritium are isotopes of which element?"; 
@@ -2457,13 +2457,13 @@ dbQList[ 73][2] = "Protium, Deuterium und Tritium sind Isotopen von welchem Elem
                         dbQHint[ 73][1] = ""; //hint en
                         dbQHint[ 73][2] = ""; //hint de
                         dbQImage[73] = []; dbQImageSrc[73] = []; 
-                        dbQImage[73][0] = "Images/1.Microchitze/073Isotopes.png";	dbQImageSrc[73][0] = "pbsg.npolar.no";
-                        dbQImage[73][1] = "Images/1.Microchitze/073Isotopes.png";	dbQImageSrc[73][1] = "pbsg.npolar.no";
-                        dbQImage[73][2] = "Images/1.Microchitze/073Isotopes.png";	dbQImageSrc[73][2] = "pbsg.npolar.no";
+                        dbQImage[73][0] = "Images/C1.Microchitze/Img073Isotopes.png";	dbQImageSrc[73][0] = "pbsg.npolar.no";
+                        dbQImage[73][1] = "Images/C1.Microchitze/Img073Isotopes.png";	dbQImageSrc[73][1] = "pbsg.npolar.no";
+                        dbQImage[73][2] = "Images/C1.Microchitze/Img073Isotopes.png";	dbQImageSrc[73][2] = "pbsg.npolar.no";
                         dbAImage[73] = [];							dbAImageSrc[73] = [];
-                        dbAImage[73][0] = "Images/1.Microchitze/073HydrogenIsotopes.png";  dbAImageSrc[73][0] = "en.wikipedia.org";
-                        dbAImage[73][1] = "Images/1.Microchitze/073HydrogenIsotopes.png";  dbAImageSrc[73][1] = "en.wikipedia.org";
-                        dbAImage[73][2] = "Images/1.Microchitze/073HydrogenIsotopes.png";  dbAImageSrc[73][2] = "en.wikipedia.org";
+                        dbAImage[73][0] = "Images/C1.Microchitze/Img073HydrogenIsotopes.png";  dbAImageSrc[73][0] = "en.wikipedia.org";
+                        dbAImage[73][1] = "Images/C1.Microchitze/Img073HydrogenIsotopes.png";  dbAImageSrc[73][1] = "en.wikipedia.org";
+                        dbAImage[73][2] = "Images/C1.Microchitze/Img073HydrogenIsotopes.png";  dbAImageSrc[73][2] = "en.wikipedia.org";
 dbQList[ 74] = [];
 dbQList[ 74][0] = "Care este cel mai abundent gaz &#xEE;n atmosfera P&#x103;m&#xE2;ntului?";  
 dbQList[ 74][1] = "What is the most abundant gas in Earth's atmosphere?"; 
@@ -2488,13 +2488,13 @@ dbQList[ 74][2] = "Was ist das h&#xE4;ufigste Gas der Erdatmosph&#xE4;re?";
                         dbQHint[ 74][1] = ""; //hint en
                         dbQHint[ 74][2] = ""; //hint de
                         dbQImage[74] = []; dbQImageSrc[74] = []; 
-                        dbQImage[74][0] = "Images/1.Microchitze/074Air.png";	dbQImageSrc[74][0] = "offbeatchina.com";
-                        dbQImage[74][1] = "Images/1.Microchitze/074Air.png";	dbQImageSrc[74][1] = "offbeatchina.com";
-                        dbQImage[74][2] = "Images/1.Microchitze/074Air.png";	dbQImageSrc[74][2] = "offbeatchina.com";
+                        dbQImage[74][0] = "Images/C1.Microchitze/Img074Air.png";	dbQImageSrc[74][0] = "offbeatchina.com";
+                        dbQImage[74][1] = "Images/C1.Microchitze/Img074Air.png";	dbQImageSrc[74][1] = "offbeatchina.com";
+                        dbQImage[74][2] = "Images/C1.Microchitze/Img074Air.png";	dbQImageSrc[74][2] = "offbeatchina.com";
                         dbAImage[74] = [];							dbAImageSrc[74] = [];
-                        dbAImage[74][0] = "Images/1.Microchitze/074Atmosphere.png";  dbAImageSrc[74][0] = "www.cmmap.org";
-                        dbAImage[74][1] = "Images/1.Microchitze/074Atmosphere.png";  dbAImageSrc[74][1] = "www.cmmap.org";
-                        dbAImage[74][2] = "Images/1.Microchitze/074Atmosphere.png";  dbAImageSrc[74][2] = "www.cmmap.org";
+                        dbAImage[74][0] = "Images/C1.Microchitze/Img074Atmosphere.png";  dbAImageSrc[74][0] = "www.cmmap.org";
+                        dbAImage[74][1] = "Images/C1.Microchitze/Img074Atmosphere.png";  dbAImageSrc[74][1] = "www.cmmap.org";
+                        dbAImage[74][2] = "Images/C1.Microchitze/Img074Atmosphere.png";  dbAImageSrc[74][2] = "www.cmmap.org";
 dbQList[ 75] = [];
 dbQList[ 75][0] = "Care este formula acidului periodic?";  
 dbQList[ 75][1] = "What is the formula of the periodic acid?";  
@@ -2519,13 +2519,13 @@ dbQList[ 75][2] = "Was ist die Formel der Periods&#228;ure?";
                         dbQHint[ 75][1] = ""; //hint en
                         dbQHint[ 75][2] = ""; //hint de
                         dbQImage[75] = []; dbQImageSrc[75] = []; 
-                        dbQImage[75][0] = "Images/1.Microchitze/075FemChem.png";	dbQImageSrc[75][0] = "2daisyblogger.blogspot.comx";
-                        dbQImage[75][1] = "Images/1.Microchitze/075FemChem.png";	dbQImageSrc[75][1] = "2daisyblogger.blogspot.comx";
-                        dbQImage[75][2] = "Images/1.Microchitze/075FemChem.png";	dbQImageSrc[75][2] = "2daisyblogger.blogspot.comx";
+                        dbQImage[75][0] = "Images/C1.Microchitze/Img075FemChem.png";	dbQImageSrc[75][0] = "2daisyblogger.blogspot.comx";
+                        dbQImage[75][1] = "Images/C1.Microchitze/Img075FemChem.png";	dbQImageSrc[75][1] = "2daisyblogger.blogspot.comx";
+                        dbQImage[75][2] = "Images/C1.Microchitze/Img075FemChem.png";	dbQImageSrc[75][2] = "2daisyblogger.blogspot.comx";
                         dbAImage[75] = [];							dbAImageSrc[75] = [];
-                        dbAImage[75][0] = "Images/1.Microchitze/075Orthoperiodic.png";  dbAImageSrc[75][0] = "www.hmdb.ca";
-                        dbAImage[75][1] = "Images/1.Microchitze/075Orthoperiodic.png";  dbAImageSrc[75][1] = "www.hmdb.ca";
-                        dbAImage[75][2] = "Images/1.Microchitze/075Orthoperiodic.png";  dbAImageSrc[75][2] = "www.hmdb.ca";
+                        dbAImage[75][0] = "Images/C1.Microchitze/Img075Orthoperiodic.png";  dbAImageSrc[75][0] = "www.hmdb.ca";
+                        dbAImage[75][1] = "Images/C1.Microchitze/Img075Orthoperiodic.png";  dbAImageSrc[75][1] = "www.hmdb.ca";
+                        dbAImage[75][2] = "Images/C1.Microchitze/Img075Orthoperiodic.png";  dbAImageSrc[75][2] = "www.hmdb.ca";
 dbQList[ 76] = [];
 dbQList[ 76][0] = "Cati atomi de hidrogen sunt intr-o molecula de TNT?";   
 dbQList[ 76][1] = "How many hidrogen atoms are there in a molecule of TNT?";  
@@ -2550,13 +2550,13 @@ dbQList[ 76][2] = "Wie viele Wasserstoff Atome gibt es in ein Molek&#xFC;l TNT?"
                         dbQHint[ 76][1] = ""; //hint en
                         dbQHint[ 76][2] = ""; //hint de
                         dbQImage[76] = []; dbQImageSrc[76] = []; 
-                        dbQImage[76][0] = "Images/1.Microchitze/076TNT.png";	dbQImageSrc[76][0] = "commons.wikimedia.org";
-                        dbQImage[76][1] = "Images/1.Microchitze/076TNT.png";	dbQImageSrc[76][1] = "commons.wikimedia.org";
-                        dbQImage[76][2] = "Images/1.Microchitze/076TNT.png";	dbQImageSrc[76][2] = "commons.wikimedia.org";
+                        dbQImage[76][0] = "Images/C1.Microchitze/Img076TNT.png";	dbQImageSrc[76][0] = "commons.wikimedia.org";
+                        dbQImage[76][1] = "Images/C1.Microchitze/Img076TNT.png";	dbQImageSrc[76][1] = "commons.wikimedia.org";
+                        dbQImage[76][2] = "Images/C1.Microchitze/Img076TNT.png";	dbQImageSrc[76][2] = "commons.wikimedia.org";
                         dbAImage[76] = [];							dbAImageSrc[76] = [];
-                        dbAImage[76][0] = "Images/1.Microchitze/076TNT2.png";  dbAImageSrc[76][0] = "ryukiworlds.blogspot.com";
-                        dbAImage[76][1] = "Images/1.Microchitze/076TNT2.png";  dbAImageSrc[76][1] = "ryukiworlds.blogspot.com";
-                        dbAImage[76][2] = "Images/1.Microchitze/076TNT2.png";  dbAImageSrc[76][2] = "ryukiworlds.blogspot.com";
+                        dbAImage[76][0] = "Images/C1.Microchitze/Img076TNT2.png";  dbAImageSrc[76][0] = "ryukiworlds.blogspot.com";
+                        dbAImage[76][1] = "Images/C1.Microchitze/Img076TNT2.png";  dbAImageSrc[76][1] = "ryukiworlds.blogspot.com";
+                        dbAImage[76][2] = "Images/C1.Microchitze/Img076TNT2.png";  dbAImageSrc[76][2] = "ryukiworlds.blogspot.com";
 dbQList[ 77] = [];
 dbQList[ 77][0] = "Ce se ob&#x163;ine la arderea hidrogenului, &#xEE;n afar&#x103; de ap&#x103;?";   
 dbQList[ 77][1] = "What is produced when burning hydrogen, except water?";  
@@ -2581,13 +2581,13 @@ dbQList[ 77][2] = "Was ist erzeugt bei der Verbrennung von Wasserstoff, au&#223;
                         dbQHint[ 77][1] = ""; //hint en
                         dbQHint[ 77][2] = ""; //hint de
                         dbQImage[77] = []; dbQImageSrc[77] = []; 
-                        dbQImage[77][0] = "Images/1.Microchitze/077Reaction.png";	dbQImageSrc[77][0] = "www.ck12.org";
-                        dbQImage[77][1] = "Images/1.Microchitze/077Reaction.png";	dbQImageSrc[77][1] = "www.ck12.org";
-                        dbQImage[77][2] = "Images/1.Microchitze/077Reaction.png";	dbQImageSrc[77][2] = "www.ck12.org";
+                        dbQImage[77][0] = "Images/C1.Microchitze/Img077Reaction.png";	dbQImageSrc[77][0] = "www.ck12.org";
+                        dbQImage[77][1] = "Images/C1.Microchitze/Img077Reaction.png";	dbQImageSrc[77][1] = "www.ck12.org";
+                        dbQImage[77][2] = "Images/C1.Microchitze/Img077Reaction.png";	dbQImageSrc[77][2] = "www.ck12.org";
                         dbAImage[77] = [];							dbAImageSrc[77] = [];
-                        dbAImage[77][0] = "Images/1.Microchitze/077Combustion.png";  dbAImageSrc[77][0] = "www.cleanboiler.org";
-                        dbAImage[77][1] = "Images/1.Microchitze/077Combustion.png";  dbAImageSrc[77][1] = "www.cleanboiler.org";
-                        dbAImage[77][2] = "Images/1.Microchitze/077Combustion.png";  dbAImageSrc[77][2] = "www.cleanboiler.org";
+                        dbAImage[77][0] = "Images/C1.Microchitze/Img077Combustion.png";  dbAImageSrc[77][0] = "www.cleanboiler.org";
+                        dbAImage[77][1] = "Images/C1.Microchitze/Img077Combustion.png";  dbAImageSrc[77][1] = "www.cleanboiler.org";
+                        dbAImage[77][2] = "Images/C1.Microchitze/Img077Combustion.png";  dbAImageSrc[77][2] = "www.cleanboiler.org";
 dbQList[ 78] = [];
 dbQList[ 78][0] = "Care este cea mai abundent&#x103; molecul&#x103; &#xEE;n o&#x163;et?";   
 dbQList[ 78][1] = "What is the most abundant molecule in vinegar?";  
@@ -2612,13 +2612,13 @@ dbQList[ 78][2] = "Was ist das h&#228;ufigste Molek&#252;l in Essig?";
                         dbQHint[ 78][1] = ""; //hint en
                         dbQHint[ 78][2] = ""; //hint de
                         dbQImage[78] = []; dbQImageSrc[78] = []; 
-                        dbQImage[78][0] = "Images/1.Microchitze/078Vinegar.png";	dbQImageSrc[78][0] = "theawkwardyeti.com";
-                        dbQImage[78][1] = "Images/1.Microchitze/078Vinegar.png";	dbQImageSrc[78][1] = "theawkwardyeti.com";
-                        dbQImage[78][2] = "Images/1.Microchitze/078Vinegar.png";	dbQImageSrc[78][2] = "theawkwardyeti.com";
+                        dbQImage[78][0] = "Images/C1.Microchitze/Img078Vinegar.png";	dbQImageSrc[78][0] = "theawkwardyeti.com";
+                        dbQImage[78][1] = "Images/C1.Microchitze/Img078Vinegar.png";	dbQImageSrc[78][1] = "theawkwardyeti.com";
+                        dbQImage[78][2] = "Images/C1.Microchitze/Img078Vinegar.png";	dbQImageSrc[78][2] = "theawkwardyeti.com";
                         dbAImage[78] = [];							dbAImageSrc[78] = [];
-                        dbAImage[78][0] = "Images/1.Microchitze/078Vinegar.png";  dbAImageSrc[78][0] = "www.thisnext.com";
-                        dbAImage[78][1] = "Images/1.Microchitze/078Vinegar.png";  dbAImageSrc[78][1] = "www.thisnext.com";
-                        dbAImage[78][2] = "Images/1.Microchitze/078Vinegar.png";  dbAImageSrc[78][2] = "www.thisnext.com";
+                        dbAImage[78][0] = "Images/C1.Microchitze/Img078Vinegar.png";  dbAImageSrc[78][0] = "www.thisnext.com";
+                        dbAImage[78][1] = "Images/C1.Microchitze/Img078Vinegar.png";  dbAImageSrc[78][1] = "www.thisnext.com";
+                        dbAImage[78][2] = "Images/C1.Microchitze/Img078Vinegar.png";  dbAImageSrc[78][2] = "www.thisnext.com";
 dbQList[ 79] = [];
 dbQList[ 79][0] = "Ce con&#x163;inea apa vie (latin&#x103;: <i>aqua vitae</i>), &#xEE;n afar&#x103; de ap&#x103;?";    
 dbQList[ 79][1] = "What did the water of life (latin: <i>aqua vitae</i>) contain, except water?";  
@@ -2643,13 +2643,13 @@ dbQList[ 79][2] = "Was enthielt das Wasser des Lebens (Latein: <i>aqua vitae</i>
                         dbQHint[ 79][1] = ""; //hint en
                         dbQHint[ 79][2] = ""; //hint de
                         dbQImage[79] = []; dbQImageSrc[79] = []; 
-                        dbQImage[79][0] = "Images/1.Microchitze/079Grimm.png";	dbQImageSrc[79][0] = "lamnhospot.blogspot.com";
-                        dbQImage[79][1] = "Images/1.Microchitze/079Grimm.png";	dbQImageSrc[79][1] = "lamnhospot.blogspot.com";
-                        dbQImage[79][2] = "Images/1.Microchitze/079Grimm.png";	dbQImageSrc[79][2] = "lamnhospot.blogspot.com";
+                        dbQImage[79][0] = "Images/C1.Microchitze/Img079Grimm.png";	dbQImageSrc[79][0] = "lamnhospot.blogspot.com";
+                        dbQImage[79][1] = "Images/C1.Microchitze/Img079Grimm.png";	dbQImageSrc[79][1] = "lamnhospot.blogspot.com";
+                        dbQImage[79][2] = "Images/C1.Microchitze/Img079Grimm.png";	dbQImageSrc[79][2] = "lamnhospot.blogspot.com";
                         dbAImage[79] = [];							dbAImageSrc[79] = [];
-                        dbAImage[79][0] = "Images/1.Microchitze/079AquaVitae.png";  dbAImageSrc[79][0] = "www.foodandwine.hu";
-                        dbAImage[79][1] = "Images/1.Microchitze/079AquaVitae.png";  dbAImageSrc[79][1] = "www.foodandwine.hu";
-                        dbAImage[79][2] = "Images/1.Microchitze/079AquaVitae.png";  dbAImageSrc[79][2] = "www.foodandwine.hu";						
+                        dbAImage[79][0] = "Images/C1.Microchitze/Img079AquaVitae.png";  dbAImageSrc[79][0] = "www.foodandwine.hu";
+                        dbAImage[79][1] = "Images/C1.Microchitze/Img079AquaVitae.png";  dbAImageSrc[79][1] = "www.foodandwine.hu";
+                        dbAImage[79][2] = "Images/C1.Microchitze/Img079AquaVitae.png";  dbAImageSrc[79][2] = "www.foodandwine.hu";						
                         
 // CRONOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // CRONOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2685,13 +2685,13 @@ dbQList[ 80][2] = "Welches war das erste Jahr des vorigen Jahrtausends?";
                         dbQHint[ 80][1] = ""; //hint en
                         dbQHint[ 80][2] = ""; //hint de
                         dbQImage[80] = []; dbQImageSrc[80] = []; 
-                        dbQImage[80][0] = "Images/1.Microchitze/080Y2K.png";	dbQImageSrc[80][0] = "onthisdatedotdot.blogspot.com";
-                        dbQImage[80][1] = "Images/1.Microchitze/080Y2K.png";	dbQImageSrc[80][1] = "onthisdatedotdot.blogspot.com";
-                        dbQImage[80][2] = "Images/1.Microchitze/080Y2K.png";	dbQImageSrc[80][2] = "onthisdatedotdot.blogspot.com";
+                        dbQImage[80][0] = "Images/C1.Microchitze/Img080Y2K.png";	dbQImageSrc[80][0] = "onthisdatedotdot.blogspot.com";
+                        dbQImage[80][1] = "Images/C1.Microchitze/Img080Y2K.png";	dbQImageSrc[80][1] = "onthisdatedotdot.blogspot.com";
+                        dbQImage[80][2] = "Images/C1.Microchitze/Img080Y2K.png";	dbQImageSrc[80][2] = "onthisdatedotdot.blogspot.com";
                         dbAImage[80] = [];							  dbAImageSrc[80] = [];
-                        dbAImage[80][0] = "Images/1.Microchitze/080Millennium.png";  dbAImageSrc[80][0] = "www.astronomy.net";
-                        dbAImage[80][1] = "Images/1.Microchitze/080Millennium.png";  dbAImageSrc[80][1] = "www.astronomy.net";
-                        dbAImage[80][2] = "Images/1.Microchitze/080Millennium.png";  dbAImageSrc[80][2] = "www.astronomy.net";
+                        dbAImage[80][0] = "Images/C1.Microchitze/Img080Millennium.png";  dbAImageSrc[80][0] = "www.astronomy.net";
+                        dbAImage[80][1] = "Images/C1.Microchitze/Img080Millennium.png";  dbAImageSrc[80][1] = "www.astronomy.net";
+                        dbAImage[80][2] = "Images/C1.Microchitze/Img080Millennium.png";  dbAImageSrc[80][2] = "www.astronomy.net";
 dbQList[ 81] = [];
 dbQList[ 81][0] = "In ce an s-au n&#x103;scut ultimii oameni care &#x15F;i-au putut s&#x103;rb&#x103;tori ziua pentru prima dat&#x103; abia dup&#x103; 8 ani?";  
 dbQList[ 81][1] = "In which year have the last persons been born, who were able celebrate their birthday for the first time only 8 years later?"; 
@@ -2716,13 +2716,13 @@ dbQList[ 81][2] = "In welchem Jahr wurden die letzten Menschen geboren, die ihr 
                         dbQHint[ 81][1] = ""; //hint en
                         dbQHint[ 81][2] = ""; //hint de
                         dbQImage[81] = []; dbQImageSrc[81] = []; 
-                        dbQImage[81][0] = "Images/1.Microchitze/081Feb29.png";	dbQImageSrc[81][0] = "qtpi1969.net";
-                        dbQImage[81][1] = "Images/1.Microchitze/081Feb29.png";	dbQImageSrc[81][1] = "qtpi1969.net";
-                        dbQImage[81][2] = "Images/1.Microchitze/081Feb29.png";	dbQImageSrc[81][2] = "qtpi1969.net";
+                        dbQImage[81][0] = "Images/C1.Microchitze/Img081Feb29.png";	dbQImageSrc[81][0] = "qtpi1969.net";
+                        dbQImage[81][1] = "Images/C1.Microchitze/Img081Feb29.png";	dbQImageSrc[81][1] = "qtpi1969.net";
+                        dbQImage[81][2] = "Images/C1.Microchitze/Img081Feb29.png";	dbQImageSrc[81][2] = "qtpi1969.net";
                         dbAImage[81] = [];							dbAImageSrc[81] = [];
-                        dbAImage[81][0] = "Images/1.Microchitze/081LeapYears.png";  dbAImageSrc[81][0] = "dailyvsvidz.blogspot.com";
-                        dbAImage[81][1] = "Images/1.Microchitze/081LeapYears.png";  dbAImageSrc[81][1] = "dailyvsvidz.blogspot.com";
-                        dbAImage[81][2] = "Images/1.Microchitze/081LeapYears.png";  dbAImageSrc[81][2] = "dailyvsvidz.blogspot.com";
+                        dbAImage[81][0] = "Images/C1.Microchitze/Img081LeapYears.png";  dbAImageSrc[81][0] = "dailyvsvidz.blogspot.com";
+                        dbAImage[81][1] = "Images/C1.Microchitze/Img081LeapYears.png";  dbAImageSrc[81][1] = "dailyvsvidz.blogspot.com";
+                        dbAImage[81][2] = "Images/C1.Microchitze/Img081LeapYears.png";  dbAImageSrc[81][2] = "dailyvsvidz.blogspot.com";
 dbQList[ 82] = [];
 dbQList[ 82][0] = "Care a fost data scris&#x103; doar cu cifre pare &#xEE;nainte de 02.02.2000? (ZZ.LL.AAAA)";  
 dbQList[ 82][1] = "Which was the last date before 02.02.2000 that was written only with even digits? (DD.MM.YYYY)"; 
@@ -2747,13 +2747,13 @@ dbQList[ 82][2] = "Welches war das letzte Datum vor 02.02.2000, das nur mit gera
                         dbQHint[ 82][1] = ""; //hint en
                         dbQHint[ 82][2] = ""; //hint de
                         dbQImage[82] = []; dbQImageSrc[82] = []; 
-                        dbQImage[82][0] = "Images/1.Microchitze/082Odd.png";	dbQImageSrc[82][0] = "every-day-is-special.blogspot.com";
-                        dbQImage[82][1] = "Images/1.Microchitze/082Odd.png";	dbQImageSrc[82][1] = "every-day-is-special.blogspot.com";
-                        dbQImage[82][2] = "Images/1.Microchitze/082Odd.png";	dbQImageSrc[82][2] = "every-day-is-special.blogspot.com";
+                        dbQImage[82][0] = "Images/C1.Microchitze/Img082Odd.png";	dbQImageSrc[82][0] = "every-day-is-special.blogspot.com";
+                        dbQImage[82][1] = "Images/C1.Microchitze/Img082Odd.png";	dbQImageSrc[82][1] = "every-day-is-special.blogspot.com";
+                        dbQImage[82][2] = "Images/C1.Microchitze/Img082Odd.png";	dbQImageSrc[82][2] = "every-day-is-special.blogspot.com";
                         dbAImage[82] = [];							dbAImageSrc[82] = [];
-                        dbAImage[82][0] = "Images/1.Microchitze/082Odd.png";  dbAImageSrc[82][0] = "every-day-is-special.blogspot.com";
-                        dbAImage[82][1] = "Images/1.Microchitze/082Odd.png";  dbAImageSrc[82][1] = "every-day-is-special.blogspot.com";
-                        dbAImage[82][2] = "Images/1.Microchitze/082Odd.png";  dbAImageSrc[82][2] = "every-day-is-special.blogspot.com";
+                        dbAImage[82][0] = "Images/C1.Microchitze/Img082Odd.png";  dbAImageSrc[82][0] = "every-day-is-special.blogspot.com";
+                        dbAImage[82][1] = "Images/C1.Microchitze/Img082Odd.png";  dbAImageSrc[82][1] = "every-day-is-special.blogspot.com";
+                        dbAImage[82][2] = "Images/C1.Microchitze/Img082Odd.png";  dbAImageSrc[82][2] = "every-day-is-special.blogspot.com";
 dbQList[ 83] = [];
 dbQList[ 83][0] = "Pentru calendarul din imagine, c&#xE2;te foi trebuie rupte pentru ca el s&#x103; arate data de 31?";   
 dbQList[ 83][1] = "For the shown calendar, how many files need to torn off for it to display the date of 31<sup>st</sup>?"; 
@@ -2778,13 +2778,13 @@ dbQList[ 83][2] = "F&#252;r den abgebildeten Kalendar, wie viele Bl&#228;tter mu
                         dbQHint[ 83][1] = ""; //hint en
                         dbQHint[ 83][2] = ""; //hint de
                         dbQImage[83] = []; dbQImageSrc[83] = []; 
-                        dbQImage[83][0] = "Images/1.Microchitze/083Nov1.png";	dbQImageSrc[83][0] = "iftodayisyourbirthday.com";
-                        dbQImage[83][1] = "Images/1.Microchitze/083Nov1.png";	dbQImageSrc[83][1] = "iftodayisyourbirthday.com";
-                        dbQImage[83][2] = "Images/1.Microchitze/083Nov1.png";	dbQImageSrc[83][2] = "iftodayisyourbirthday.com";
+                        dbQImage[83][0] = "Images/C1.Microchitze/Img083Nov1.png";	dbQImageSrc[83][0] = "iftodayisyourbirthday.com";
+                        dbQImage[83][1] = "Images/C1.Microchitze/Img083Nov1.png";	dbQImageSrc[83][1] = "iftodayisyourbirthday.com";
+                        dbQImage[83][2] = "Images/C1.Microchitze/Img083Nov1.png";	dbQImageSrc[83][2] = "iftodayisyourbirthday.com";
                         dbAImage[83] = [];							dbAImageSrc[83] = [];
-                        dbAImage[83][0] = "Images/1.Microchitze/083Dec31.png";  dbAImageSrc[83][0] = "www.southeastfamilydental.com";
-                        dbAImage[83][1] = "Images/1.Microchitze/083Dec31.png";  dbAImageSrc[83][1] = "www.southeastfamilydental.com";
-                        dbAImage[83][2] = "Images/1.Microchitze/083Dec31.png";  dbAImageSrc[83][2] = "www.southeastfamilydental.com";
+                        dbAImage[83][0] = "Images/C1.Microchitze/Img083Dec31.png";  dbAImageSrc[83][0] = "www.southeastfamilydental.com";
+                        dbAImage[83][1] = "Images/C1.Microchitze/Img083Dec31.png";  dbAImageSrc[83][1] = "www.southeastfamilydental.com";
+                        dbAImage[83][2] = "Images/C1.Microchitze/Img083Dec31.png";  dbAImageSrc[83][2] = "www.southeastfamilydental.com";
 dbQList[ 84] = [];
 dbQList[ 84][0] = "Care este cea mai lung&#x103; lun&#x103; &#xEE;n Europa central&#x103;?";  
 dbQList[ 84][1] = "Which is the longest month in central Europe?"; 
@@ -2809,13 +2809,13 @@ dbQList[ 84][2] = "Welcher ist der l&#228;ngste Monat in Mitteleuropa?";
                         dbQHint[ 84][1] = ""; //hint en
                         dbQHint[ 84][2] = ""; //hint de
                         dbQImage[84] = []; dbQImageSrc[84] = []; 
-                        dbQImage[84][0] = "Images/1.Microchitze/084Month.png";	dbQImageSrc[84][0] = "www.astro.virginia.edu";
-                        dbQImage[84][1] = "Images/1.Microchitze/084Month.png";	dbQImageSrc[84][1] = "www.astro.virginia.edu";
-                        dbQImage[84][2] = "Images/1.Microchitze/084Month.png";	dbQImageSrc[84][2] = "www.astro.virginia.edu";
+                        dbQImage[84][0] = "Images/C1.Microchitze/Img084Month.png";	dbQImageSrc[84][0] = "www.astro.virginia.edu";
+                        dbQImage[84][1] = "Images/C1.Microchitze/Img084Month.png";	dbQImageSrc[84][1] = "www.astro.virginia.edu";
+                        dbQImage[84][2] = "Images/C1.Microchitze/Img084Month.png";	dbQImageSrc[84][2] = "www.astro.virginia.edu";
                         dbAImage[84] = [];							dbAImageSrc[84] = [];
-                        dbAImage[84][0] = "Images/1.Microchitze/084SummertimeEnd.png";  dbAImageSrc[84][0] = "www.blogoncherry.com";
-                        dbAImage[84][1] = "Images/1.Microchitze/084SummertimeEnd.png";  dbAImageSrc[84][1] = "www.blogoncherry.com";
-                        dbAImage[84][2] = "Images/1.Microchitze/084SummertimeEnd.png";  dbAImageSrc[84][2] = "www.blogoncherry.com";
+                        dbAImage[84][0] = "Images/C1.Microchitze/Img084SummertimeEnd.png";  dbAImageSrc[84][0] = "www.blogoncherry.com";
+                        dbAImage[84][1] = "Images/C1.Microchitze/Img084SummertimeEnd.png";  dbAImageSrc[84][1] = "www.blogoncherry.com";
+                        dbAImage[84][2] = "Images/C1.Microchitze/Img084SummertimeEnd.png";  dbAImageSrc[84][2] = "www.blogoncherry.com";
 dbQList[ 85] = [];
 dbQList[ 85][0] = "Cu c&#xE2;te minute trebuie dat ceasul &#xEE;nainte la trecerea grani&#x21B;ei dinspre China spre Afganistan?";  
 dbQList[ 85][1] = "How many minutes must the clock be set forward when crossing the border from China to Afghanistan?";  
@@ -2840,13 +2840,13 @@ dbQList[ 85][2] = "Wie viele minuten muss die Uhr umgestellt werden, wenn man di
                         dbQHint[ 85][1] = ""; //hint en
                         dbQHint[ 85][2] = ""; //hint de
                         dbQImage[85] = []; dbQImageSrc[85] = []; 
-                        dbQImage[85][0] = "Images/1.Microchitze/085Wakhan.png";	dbQImageSrc[85][0] = "www.afghanwarnews.info";
-                        dbQImage[85][1] = "Images/1.Microchitze/085Wakhan.png";	dbQImageSrc[85][1] = "www.afghanwarnews.info";
-                        dbQImage[85][2] = "Images/1.Microchitze/085Wakhan.png";	dbQImageSrc[85][2] = "www.afghanwarnews.info";
+                        dbQImage[85][0] = "Images/C1.Microchitze/Img085Wakhan.png";	dbQImageSrc[85][0] = "www.afghanwarnews.info";
+                        dbQImage[85][1] = "Images/C1.Microchitze/Img085Wakhan.png";	dbQImageSrc[85][1] = "www.afghanwarnews.info";
+                        dbQImage[85][2] = "Images/C1.Microchitze/Img085Wakhan.png";	dbQImageSrc[85][2] = "www.afghanwarnews.info";
                         dbAImage[85] = [];							dbAImageSrc[85] = [];
-                        dbAImage[85][0] = "Images/1.Microchitze/085H3M30.png";  dbAImageSrc[85][0] = "guitarbreakthrough.wordpress.com";
-                        dbAImage[85][1] = "Images/1.Microchitze/085H3M30.png";  dbAImageSrc[85][1] = "guitarbreakthrough.wordpress.com";
-                        dbAImage[85][2] = "Images/1.Microchitze/085H3M30.png";  dbAImageSrc[85][2] = "guitarbreakthrough.wordpress.com";
+                        dbAImage[85][0] = "Images/C1.Microchitze/Img085H3M30.png";  dbAImageSrc[85][0] = "guitarbreakthrough.wordpress.com";
+                        dbAImage[85][1] = "Images/C1.Microchitze/Img085H3M30.png";  dbAImageSrc[85][1] = "guitarbreakthrough.wordpress.com";
+                        dbAImage[85][2] = "Images/C1.Microchitze/Img085H3M30.png";  dbAImageSrc[85][2] = "guitarbreakthrough.wordpress.com";
 dbQList[ 86] = [];
 dbQList[ 86][0] = "Cum se mi&#x15F;c&#x103; umbra unui cadran solar &#xEE;n China? <br/> (&#xEE;n sens orar, trigonometric sau ambele?)";   
 dbQList[ 86][1] = "How does the shadow of a sundial turn in China? <br/> (clockwise, trigonometric or both?)";  
@@ -2871,13 +2871,13 @@ dbQList[ 86][2] = "Wie dreht sich der Schatten einer Sonnenuhr in China? <br/> (
                         dbQHint[ 86][1] = ""; //hint en
                         dbQHint[ 86][2] = ""; //hint de
                         dbQImage[86] = []; dbQImageSrc[86] = []; 
-                        dbQImage[86][0] = "Images/1.Microchitze/086Sundial.png";	dbQImageSrc[86][0] = "cn.dreamstime.com";
-                        dbQImage[86][1] = "Images/1.Microchitze/086Sundial.png";	dbQImageSrc[86][1] = "cn.dreamstime.com";
-                        dbQImage[86][2] = "Images/1.Microchitze/086Sundial.png";	dbQImageSrc[86][2] = "cn.dreamstime.com";
+                        dbQImage[86][0] = "Images/C1.Microchitze/Img086Sundial.png";	dbQImageSrc[86][0] = "cn.dreamstime.com";
+                        dbQImage[86][1] = "Images/C1.Microchitze/Img086Sundial.png";	dbQImageSrc[86][1] = "cn.dreamstime.com";
+                        dbQImage[86][2] = "Images/C1.Microchitze/Img086Sundial.png";	dbQImageSrc[86][2] = "cn.dreamstime.com";
                         dbAImage[86] = [];							dbAImageSrc[86] = [];
-                        dbAImage[86][0] = "Images/1.Microchitze/086SundialAustralia.png";  dbAImageSrc[86][0] = "whitey.net";
-                        dbAImage[86][1] = "Images/1.Microchitze/086SundialAustralia.png";  dbAImageSrc[86][1] = "whitey.net";
-                        dbAImage[86][2] = "Images/1.Microchitze/086SundialAustralia.png";  dbAImageSrc[86][2] = "whitey.net";
+                        dbAImage[86][0] = "Images/C1.Microchitze/Img086SundialAustralia.png";  dbAImageSrc[86][0] = "whitey.net";
+                        dbAImage[86][1] = "Images/C1.Microchitze/Img086SundialAustralia.png";  dbAImageSrc[86][1] = "whitey.net";
+                        dbAImage[86][2] = "Images/C1.Microchitze/Img086SundialAustralia.png";  dbAImageSrc[86][2] = "whitey.net";
 dbQList[ 87] = [];
 dbQList[ 87][0] = "Care este aparatul de masurare a timpului cu cele mai multe p&#x103;r&#x21B;i mobile?";   
 dbQList[ 87][1] = "Which time-measuring device has the most mobile parts?";  
@@ -2902,13 +2902,13 @@ dbQList[ 87][2] = "Welches Ger&#228;t f&#252;r Zeitmessung hat die meisten beweg
                         dbQHint[ 87][1] = ""; //hint en
                         dbQHint[ 87][2] = ""; //hint de
                         dbQImage[87] = []; dbQImageSrc[87] = []; 
-                        dbQImage[87][0] = "Images/1.Microchitze/087Timepieces.png";	dbQImageSrc[87][0] = "www.popularmechanics.com";
-                        dbQImage[87][1] = "Images/1.Microchitze/087Timepieces.png";	dbQImageSrc[87][1] = "www.popularmechanics.com";
-                        dbQImage[87][2] = "Images/1.Microchitze/087Timepieces.png";	dbQImageSrc[87][2] = "www.popularmechanics.com";
+                        dbQImage[87][0] = "Images/C1.Microchitze/Img087Timepieces.png";	dbQImageSrc[87][0] = "www.popularmechanics.com";
+                        dbQImage[87][1] = "Images/C1.Microchitze/Img087Timepieces.png";	dbQImageSrc[87][1] = "www.popularmechanics.com";
+                        dbQImage[87][2] = "Images/C1.Microchitze/Img087Timepieces.png";	dbQImageSrc[87][2] = "www.popularmechanics.com";
                         dbAImage[87] = [];							dbAImageSrc[87] = [];
-                        dbAImage[87][0] = "Images/1.Microchitze/087Hourglass.png";  dbAImageSrc[87][0] = "hplusmagazine.com";
-                        dbAImage[87][1] = "Images/1.Microchitze/087Hourglass.png";  dbAImageSrc[87][1] = "hplusmagazine.com";
-                        dbAImage[87][2] = "Images/1.Microchitze/087Hourglass.png";  dbAImageSrc[87][2] = "hplusmagazine.com";
+                        dbAImage[87][0] = "Images/C1.Microchitze/Img087Hourglass.png";  dbAImageSrc[87][0] = "hplusmagazine.com";
+                        dbAImage[87][1] = "Images/C1.Microchitze/Img087Hourglass.png";  dbAImageSrc[87][1] = "hplusmagazine.com";
+                        dbAImage[87][2] = "Images/C1.Microchitze/Img087Hourglass.png";  dbAImageSrc[87][2] = "hplusmagazine.com";
 dbQList[ 88] = [];
 dbQList[ 88][0] = "De c&#xE2;te ori se suprapun cele dou&#x103; limbi ale ceasului &#xEE;ntre miezul zilei &#x15F;i miezul nop&#x163;ii?";   
 dbQList[ 88][1] = "How many times do the two clock hands overlap between midday and midnight?";  
@@ -2933,13 +2933,13 @@ dbQList[ 88][2] = "Wie viele Male stehen die zwei Zeiger einer Uhr &#252;bereina
                         dbQHint[ 88][1] = ""; //hint en
                         dbQHint[ 88][2] = ""; //hint de
                         dbQImage[88] = []; dbQImageSrc[88] = []; 
-                        dbQImage[88][0] = "Images/1.Microchitze/088Hands.png";	dbQImageSrc[88][0] = "www.experto.de";
-                        dbQImage[88][1] = "Images/1.Microchitze/088Hands.png";	dbQImageSrc[88][1] = "www.experto.de";
-                        dbQImage[88][2] = "Images/1.Microchitze/088Hands.png";	dbQImageSrc[88][2] = "www.experto.de";
+                        dbQImage[88][0] = "Images/C1.Microchitze/Img088Hands.png";	dbQImageSrc[88][0] = "www.experto.de";
+                        dbQImage[88][1] = "Images/C1.Microchitze/Img088Hands.png";	dbQImageSrc[88][1] = "www.experto.de";
+                        dbQImage[88][2] = "Images/C1.Microchitze/Img088Hands.png";	dbQImageSrc[88][2] = "www.experto.de";
                         dbAImage[88] = [];							dbAImageSrc[88] = [];
-                        dbAImage[88][0] = "Images/1.Microchitze/088Overlaps.png";  dbAImageSrc[88][0] = "www.techques.com";
-                        dbAImage[88][1] = "Images/1.Microchitze/088Overlaps.png";  dbAImageSrc[88][1] = "www.techques.com";
-                        dbAImage[88][2] = "Images/1.Microchitze/088Overlaps.png";  dbAImageSrc[88][2] = "www.techques.com";
+                        dbAImage[88][0] = "Images/C1.Microchitze/Img088Overlaps.png";  dbAImageSrc[88][0] = "www.techques.com";
+                        dbAImage[88][1] = "Images/C1.Microchitze/Img088Overlaps.png";  dbAImageSrc[88][1] = "www.techques.com";
+                        dbAImage[88][2] = "Images/C1.Microchitze/Img088Overlaps.png";  dbAImageSrc[88][2] = "www.techques.com";
 dbQList[ 89] = [];
 dbQList[ 89][0] = "Dac&#x103; un ceas are nevoie de 6 secunde s&#x103; bat&#x103; ora 6, de c&#xE2;te secunde va avea nevoie s&#x103; bat&#x103; ora 11?";    
 dbQList[ 89][1] = "If a clock needs 6 seconds to strike the hour at 6 o'clock, how many seconds does it need to strike the hour at 11 o'clock?";  
@@ -2964,13 +2964,13 @@ dbQList[ 89][2] = "Wenn eine Uhr 6 Sekunden braucht, um die Stunde 6 zu schlagen
                         dbQHint[ 89][1] = ""; //hint en
                         dbQHint[ 89][2] = ""; //hint de
                         dbQImage[89] = []; dbQImageSrc[89] = []; 
-                        dbQImage[89][0] = "Images/1.Microchitze/089Cuckoo.png";	dbQImageSrc[89][0] = "coolclips.com";
-                        dbQImage[89][1] = "Images/1.Microchitze/089Cuckoo.png";	dbQImageSrc[89][1] = "coolclips.com";
-                        dbQImage[89][2] = "Images/1.Microchitze/089Cuckoo.png";	dbQImageSrc[89][2] = "coolclips.com";
+                        dbQImage[89][0] = "Images/C1.Microchitze/Img089Cuckoo.png";	dbQImageSrc[89][0] = "coolclips.com";
+                        dbQImage[89][1] = "Images/C1.Microchitze/Img089Cuckoo.png";	dbQImageSrc[89][1] = "coolclips.com";
+                        dbQImage[89][2] = "Images/C1.Microchitze/Img089Cuckoo.png";	dbQImageSrc[89][2] = "coolclips.com";
                         dbAImage[89] = [];							dbAImageSrc[89] = [];
-                        dbAImage[89][0] = "Images/1.Microchitze/089Cuckoo.png";  dbAImageSrc[89][0] = "coolclips.com";
-                        dbAImage[89][1] = "Images/1.Microchitze/089Cuckoo.png";  dbAImageSrc[89][1] = "coolclips.com";
-                        dbAImage[89][2] = "Images/1.Microchitze/089Cuckoo.png";  dbAImageSrc[89][2] = "coolclips.com";
+                        dbAImage[89][0] = "Images/C1.Microchitze/Img089Cuckoo.png";  dbAImageSrc[89][0] = "coolclips.com";
+                        dbAImage[89][1] = "Images/C1.Microchitze/Img089Cuckoo.png";  dbAImageSrc[89][1] = "coolclips.com";
+                        dbAImage[89][2] = "Images/C1.Microchitze/Img089Cuckoo.png";  dbAImageSrc[89][2] = "coolclips.com";
                     
 // ASTROCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ASTROCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3006,13 +3006,13 @@ dbQList[ 90][2] = "Wie viele Planeten gibt es im Sonnensystem?";
                         dbQHint[ 90][1] = ""; //hint en
                         dbQHint[ 90][2] = ""; //hint de
                         dbQImage[90] = []; dbQImageSrc[90] = []; 
-                        dbQImage[90][0] = "Images/1.Microchitze/090PlanetsDrawing.png";	dbQImageSrc[90][0] = "solarsystem.nasa.gov";
-                        dbQImage[90][1] = "Images/1.Microchitze/090PlanetsDrawing.png";	dbQImageSrc[90][1] = "solarsystem.nasa.gov";
-                        dbQImage[90][2] = "Images/1.Microchitze/090PlanetsDrawing.png";	dbQImageSrc[90][2] = "solarsystem.nasa.gov";
+                        dbQImage[90][0] = "Images/C1.Microchitze/Img090PlanetsDrawing.png";	dbQImageSrc[90][0] = "solarsystem.nasa.gov";
+                        dbQImage[90][1] = "Images/C1.Microchitze/Img090PlanetsDrawing.png";	dbQImageSrc[90][1] = "solarsystem.nasa.gov";
+                        dbQImage[90][2] = "Images/C1.Microchitze/Img090PlanetsDrawing.png";	dbQImageSrc[90][2] = "solarsystem.nasa.gov";
                         dbAImage[90] = []; dbAImageSrc[90] = [];
-                        dbAImage[90][0] = "Images/1.Microchitze/090Planets.png"; dbAImageSrc[90][0] = "www.sciencehelpdesk.com";
-                        dbAImage[90][1] = "Images/1.Microchitze/090Planets.png"; dbAImageSrc[90][1] = "www.sciencehelpdesk.com";
-                        dbAImage[90][2] = "Images/1.Microchitze/090Planets.png"; dbAImageSrc[90][2] = "www.sciencehelpdesk.com";
+                        dbAImage[90][0] = "Images/C1.Microchitze/Img090Planets.png"; dbAImageSrc[90][0] = "www.sciencehelpdesk.com";
+                        dbAImage[90][1] = "Images/C1.Microchitze/Img090Planets.png"; dbAImageSrc[90][1] = "www.sciencehelpdesk.com";
+                        dbAImage[90][2] = "Images/C1.Microchitze/Img090Planets.png"; dbAImageSrc[90][2] = "www.sciencehelpdesk.com";
 dbQList[ 91] = [];
 dbQList[ 91][0] = "Care planet&#x103; din Sistemul Solar nu este numit&#x103; dup&#x103; un zeu?";  
 dbQList[ 91][1] = "Which planet in the Solar System is not named after a god?"; 
@@ -3037,13 +3037,13 @@ dbQList[ 91][2] = "Welcher Planet des Sonnensystem ist nicht nach einem Got bena
                         dbQHint[ 91][1] = ""; //hint en
                         dbQHint[ 91][2] = ""; //hint de
                         dbQImage[91] = []; dbQImageSrc[91] = []; 
-                        dbQImage[91][0] = "Images/1.Microchitze/091Purple.png";	dbQImageSrc[91][0] = "starwars.wikia.com";
-                        dbQImage[91][1] = "Images/1.Microchitze/091Purple.png";	dbQImageSrc[91][1] = "starwars.wikia.com";
-                        dbQImage[91][2] = "Images/1.Microchitze/091Purple.png";	dbQImageSrc[91][2] = "starwars.wikia.com";
+                        dbQImage[91][0] = "Images/C1.Microchitze/Img091Purple.png";	dbQImageSrc[91][0] = "starwars.wikia.com";
+                        dbQImage[91][1] = "Images/C1.Microchitze/Img091Purple.png";	dbQImageSrc[91][1] = "starwars.wikia.com";
+                        dbQImage[91][2] = "Images/C1.Microchitze/Img091Purple.png";	dbQImageSrc[91][2] = "starwars.wikia.com";
                         dbAImage[91] = [];							dbAImageSrc[91] = [];
-                        dbAImage[91][0] = "Images/1.Microchitze/091Earth.png";  dbAImageSrc[91][0] = "www.solarviews.com";
-                        dbAImage[91][1] = "Images/1.Microchitze/091Earth.png";  dbAImageSrc[91][1] = "www.solarviews.com";
-                        dbAImage[91][2] = "Images/1.Microchitze/091Earth.png";  dbAImageSrc[91][2] = "www.solarviews.com";
+                        dbAImage[91][0] = "Images/C1.Microchitze/Img091Earth.png";  dbAImageSrc[91][0] = "www.solarviews.com";
+                        dbAImage[91][1] = "Images/C1.Microchitze/Img091Earth.png";  dbAImageSrc[91][1] = "www.solarviews.com";
+                        dbAImage[91][2] = "Images/C1.Microchitze/Img091Earth.png";  dbAImageSrc[91][2] = "www.solarviews.com";
 dbQList[ 92] = [];
 dbQList[ 92][0] = "Care planet&#x103; are sateli&#x163;i naturali numi&#x163;i Ariel, Bianca, Ferdinand, Francisco, Margaret, Miranda, Stephano, etc.?";  
 dbQList[ 92][1] = "Which planet has moons named Ariel, Bianca, Ferdinand, Francisco, Margaret, Miranda, Stephano, etc.?"; 
@@ -3068,13 +3068,13 @@ dbQList[ 92][2] = "Welcher Planet hat Monde benannt Ariel, Bianca, Ferdinand, Fr
                         dbQHint[ 92][1] = ""; //hint en
                         dbQHint[ 92][2] = ""; //hint de
                         dbQImage[92] = []; dbQImageSrc[92] = []; 
-                        dbQImage[92][0] = "Images/1.Microchitze/092Moons.png";	dbQImageSrc[92][0] = "en.wikipedia.org";
-                        dbQImage[92][1] = "Images/1.Microchitze/092Moons.png";	dbQImageSrc[92][1] = "en.wikipedia.org";
-                        dbQImage[92][2] = "Images/1.Microchitze/092Moons.png";	dbQImageSrc[92][2] = "en.wikipedia.org";
+                        dbQImage[92][0] = "Images/C1.Microchitze/Img092Moons.png";	dbQImageSrc[92][0] = "en.wikipedia.org";
+                        dbQImage[92][1] = "Images/C1.Microchitze/Img092Moons.png";	dbQImageSrc[92][1] = "en.wikipedia.org";
+                        dbQImage[92][2] = "Images/C1.Microchitze/Img092Moons.png";	dbQImageSrc[92][2] = "en.wikipedia.org";
                         dbAImage[92] = [];							dbAImageSrc[92] = [];
-                        dbAImage[92][0] = "Images/1.Microchitze/092UranusMoons.png";  dbAImageSrc[92][0] = "www.practicalspace.com";
-                        dbAImage[92][1] = "Images/1.Microchitze/092UranusMoons.png";  dbAImageSrc[92][1] = "www.practicalspace.com";
-                        dbAImage[92][2] = "Images/1.Microchitze/092UranusMoons.png";  dbAImageSrc[92][2] = "www.practicalspace.com";
+                        dbAImage[92][0] = "Images/C1.Microchitze/Img092UranusMoons.png";  dbAImageSrc[92][0] = "www.practicalspace.com";
+                        dbAImage[92][1] = "Images/C1.Microchitze/Img092UranusMoons.png";  dbAImageSrc[92][1] = "www.practicalspace.com";
+                        dbAImage[92][2] = "Images/C1.Microchitze/Img092UranusMoons.png";  dbAImageSrc[92][2] = "www.practicalspace.com";
 dbQList[ 93] = [];
 dbQList[ 93][0] = "Care este cel mai mare obiect din Centura Kuiper (regiunea de dincolo de Neptun)?";   
 dbQList[ 93][1] = "Which is the largest object in the Kuiper belt (the region beyond Neptune)?"; 
@@ -3099,13 +3099,13 @@ dbQList[ 93][2] = "Welcher ist der gr&#246;&#223;te Objekt im Kuiperg&#252;rtel 
                         dbQHint[ 93][1] = ""; //hint en
                         dbQHint[ 93][2] = ""; //hint de
                         dbQImage[93] = []; dbQImageSrc[93] = []; 
-                        dbQImage[93][0] = "Images/1.Microchitze/093Kuiper.png";	dbQImageSrc[93][0] = "uncleeddiestheorycorner.blogspot.com";
-                        dbQImage[93][1] = "Images/1.Microchitze/093Kuiper.png";	dbQImageSrc[93][1] = "uncleeddiestheorycorner.blogspot.com";
-                        dbQImage[93][2] = "Images/1.Microchitze/093Kuiper.png";	dbQImageSrc[93][2] = "uncleeddiestheorycorner.blogspot.com";
+                        dbQImage[93][0] = "Images/C1.Microchitze/Img093Kuiper.png";	dbQImageSrc[93][0] = "uncleeddiestheorycorner.blogspot.com";
+                        dbQImage[93][1] = "Images/C1.Microchitze/Img093Kuiper.png";	dbQImageSrc[93][1] = "uncleeddiestheorycorner.blogspot.com";
+                        dbQImage[93][2] = "Images/C1.Microchitze/Img093Kuiper.png";	dbQImageSrc[93][2] = "uncleeddiestheorycorner.blogspot.com";
                         dbAImage[93] = [];							dbAImageSrc[93] = [];
-                        dbAImage[93][0] = "Images/1.Microchitze/093Eris.png";  dbAImageSrc[93][0] = "www.universetoday.com";
-                        dbAImage[93][1] = "Images/1.Microchitze/093Eris.png";  dbAImageSrc[93][1] = "www.universetoday.com";
-                        dbAImage[93][2] = "Images/1.Microchitze/093Eris.png";  dbAImageSrc[93][2] = "www.universetoday.com";
+                        dbAImage[93][0] = "Images/C1.Microchitze/Img093Eris.png";  dbAImageSrc[93][0] = "www.universetoday.com";
+                        dbAImage[93][1] = "Images/C1.Microchitze/Img093Eris.png";  dbAImageSrc[93][1] = "www.universetoday.com";
+                        dbAImage[93][2] = "Images/C1.Microchitze/Img093Eris.png";  dbAImageSrc[93][2] = "www.universetoday.com";
 dbQList[ 94] = [];
 dbQList[ 94][0] = "Care este cea mai apropiat&#x103; stea fa&#x163;&#x103; de P&#x103;m&#xE2;nt?";  
 dbQList[ 94][1] = "Which is the nearest star to Earth?"; 
@@ -3130,13 +3130,13 @@ dbQList[ 94][2] = "Welcher ist der n&#228;chste Stern zur Erde?";
                         dbQHint[ 94][1] = ""; //hint en
                         dbQHint[ 94][2] = ""; //hint de
                         dbQImage[94] = []; dbQImageSrc[94] = []; 
-                        dbQImage[94][0] = "Images/1.Microchitze/094Stars.png";	dbQImageSrc[94][0] = "livasperiklis.com";
-                        dbQImage[94][1] = "Images/1.Microchitze/094Stars.png";	dbQImageSrc[94][1] = "livasperiklis.com";
-                        dbQImage[94][2] = "Images/1.Microchitze/094Stars.png";	dbQImageSrc[94][2] = "livasperiklis.com";
+                        dbQImage[94][0] = "Images/C1.Microchitze/Img094Stars.png";	dbQImageSrc[94][0] = "livasperiklis.com";
+                        dbQImage[94][1] = "Images/C1.Microchitze/Img094Stars.png";	dbQImageSrc[94][1] = "livasperiklis.com";
+                        dbQImage[94][2] = "Images/C1.Microchitze/Img094Stars.png";	dbQImageSrc[94][2] = "livasperiklis.com";
                         dbAImage[94] = [];							dbAImageSrc[94] = [];
-                        dbAImage[94][0] = "Images/1.Microchitze/094Sun.png";  dbAImageSrc[94][0] = "www.presentationzen.com";
-                        dbAImage[94][1] = "Images/1.Microchitze/094Sun.png";  dbAImageSrc[94][1] = "www.presentationzen.com";
-                        dbAImage[94][2] = "Images/1.Microchitze/094Sun.png";  dbAImageSrc[94][2] = "www.presentationzen.com";
+                        dbAImage[94][0] = "Images/C1.Microchitze/Img094Sun.png";  dbAImageSrc[94][0] = "www.presentationzen.com";
+                        dbAImage[94][1] = "Images/C1.Microchitze/Img094Sun.png";  dbAImageSrc[94][1] = "www.presentationzen.com";
+                        dbAImage[94][2] = "Images/C1.Microchitze/Img094Sun.png";  dbAImageSrc[94][2] = "www.presentationzen.com";
 dbQList[ 95] = [];
 dbQList[ 95][0] = "Din ce limb&#x103; provine numele stelei Betelgeuse?";  
 dbQList[ 95][1] = "From which language does the name of the star Betelgeuse come?";  
@@ -3161,13 +3161,13 @@ dbQList[ 95][2] = "Aus welcher Sprache kommt der Name des Sterns Betelgeuse (Bet
                         dbQHint[ 95][1] = ""; //hint en
                         dbQHint[ 95][2] = ""; //hint de
                         dbQImage[95] = []; dbQImageSrc[95] = []; 
-                        dbQImage[95][0] = "Images/1.Microchitze/095Betelgeuse.png";	dbQImageSrc[95][0] = "northtexasdrifter.blogspot.com";
-                        dbQImage[95][1] = "Images/1.Microchitze/095Betelgeuse.png";	dbQImageSrc[95][1] = "northtexasdrifter.blogspot.com";
-                        dbQImage[95][2] = "Images/1.Microchitze/095Betelgeuse.png";	dbQImageSrc[95][2] = "northtexasdrifter.blogspot.com";
+                        dbQImage[95][0] = "Images/C1.Microchitze/Img095Betelgeuse.png";	dbQImageSrc[95][0] = "northtexasdrifter.blogspot.com";
+                        dbQImage[95][1] = "Images/C1.Microchitze/Img095Betelgeuse.png";	dbQImageSrc[95][1] = "northtexasdrifter.blogspot.com";
+                        dbQImage[95][2] = "Images/C1.Microchitze/Img095Betelgeuse.png";	dbQImageSrc[95][2] = "northtexasdrifter.blogspot.com";
                         dbAImage[95] = [];							dbAImageSrc[95] = [];
-                        dbAImage[95][0] = "Images/1.Microchitze/095Arabic.png";  dbAImageSrc[95][0] = "www.examiner.com";
-                        dbAImage[95][1] = "Images/1.Microchitze/095Arabic.png";  dbAImageSrc[95][1] = "www.examiner.com";
-                        dbAImage[95][2] = "Images/1.Microchitze/095Arabic.png";  dbAImageSrc[95][2] = "www.examiner.com";
+                        dbAImage[95][0] = "Images/C1.Microchitze/Img095Arabic.png";  dbAImageSrc[95][0] = "www.examiner.com";
+                        dbAImage[95][1] = "Images/C1.Microchitze/Img095Arabic.png";  dbAImageSrc[95][1] = "www.examiner.com";
+                        dbAImage[95][2] = "Images/C1.Microchitze/Img095Arabic.png";  dbAImageSrc[95][2] = "www.examiner.com";
 dbQList[ 96] = [];
 dbQList[ 96][0] = "Care este numele corect al Luceaf&#x103;rului de sear&#x103;?";   
 dbQList[ 96][1] = "Which is the proper name of the Evening Star?";  
@@ -3192,13 +3192,13 @@ dbQList[ 96][2] = "Welches ist der richtige Name des Abendsterns?";
                         dbQHint[ 96][1] = ""; //hint en
                         dbQHint[ 96][2] = ""; //hint de
                         dbQImage[96] = []; dbQImageSrc[96] = []; 
-                        dbQImage[96][0] = "Images/1.Microchitze/096EveningStar.png";	dbQImageSrc[96][0] = "indianapublicmedia.org";
-                        dbQImage[96][1] = "Images/1.Microchitze/096EveningStar.png";	dbQImageSrc[96][1] = "indianapublicmedia.org";
-                        dbQImage[96][2] = "Images/1.Microchitze/096EveningStar.png";	dbQImageSrc[96][2] = "indianapublicmedia.org";
+                        dbQImage[96][0] = "Images/C1.Microchitze/Img096EveningStar.png";	dbQImageSrc[96][0] = "indianapublicmedia.org";
+                        dbQImage[96][1] = "Images/C1.Microchitze/Img096EveningStar.png";	dbQImageSrc[96][1] = "indianapublicmedia.org";
+                        dbQImage[96][2] = "Images/C1.Microchitze/Img096EveningStar.png";	dbQImageSrc[96][2] = "indianapublicmedia.org";
                         dbAImage[96] = [];							dbAImageSrc[96] = [];
-                        dbAImage[96][0] = "Images/1.Microchitze/096Venus.png";  dbAImageSrc[96][0] = "www.astronomy.com";
-                        dbAImage[96][1] = "Images/1.Microchitze/096Venus.png";  dbAImageSrc[96][1] = "www.astronomy.com";
-                        dbAImage[96][2] = "Images/1.Microchitze/096Venus.png";  dbAImageSrc[96][2] = "www.astronomy.com";
+                        dbAImage[96][0] = "Images/C1.Microchitze/Img096Venus.png";  dbAImageSrc[96][0] = "www.astronomy.com";
+                        dbAImage[96][1] = "Images/C1.Microchitze/Img096Venus.png";  dbAImageSrc[96][1] = "www.astronomy.com";
+                        dbAImage[96][2] = "Images/C1.Microchitze/Img096Venus.png";  dbAImageSrc[96][2] = "www.astronomy.com";
 dbQList[ 97] = [];
 dbQList[ 97][0] = "Ce este o stea c&#x103;z&#x103;toare?";   
 dbQList[ 97][1] = "What is a falling (or shooting) star?";  
@@ -3223,13 +3223,13 @@ dbQList[ 97][2] = "Was ist eine Sternschnuppe?";
                         dbQHint[ 97][1] = ""; //hint en
                         dbQHint[ 97][2] = ""; //hint de
                         dbQImage[97] = []; dbQImageSrc[97] = []; 
-                        dbQImage[97][0] = "Images/1.Microchitze/097Falling.png";	dbQImageSrc[97][0] = "worldofpopculture.com";
-                        dbQImage[97][1] = "Images/1.Microchitze/097Falling.png";	dbQImageSrc[97][1] = "worldofpopculture.com";
-                        dbQImage[97][2] = "Images/1.Microchitze/097Falling.png";	dbQImageSrc[97][2] = "worldofpopculture.com";
+                        dbQImage[97][0] = "Images/C1.Microchitze/Img097Falling.png";	dbQImageSrc[97][0] = "worldofpopculture.com";
+                        dbQImage[97][1] = "Images/C1.Microchitze/Img097Falling.png";	dbQImageSrc[97][1] = "worldofpopculture.com";
+                        dbQImage[97][2] = "Images/C1.Microchitze/Img097Falling.png";	dbQImageSrc[97][2] = "worldofpopculture.com";
                         dbAImage[97] = [];							dbAImageSrc[97] = [];
-                        dbAImage[97][0] = "Images/1.Microchitze/097Meteor.png";  dbAImageSrc[97][0] = "shark-tank.com";
-                        dbAImage[97][1] = "Images/1.Microchitze/097Meteor.png";  dbAImageSrc[97][1] = "shark-tank.com";
-                        dbAImage[97][2] = "Images/1.Microchitze/097Meteor.png";  dbAImageSrc[97][2] = "shark-tank.com";
+                        dbAImage[97][0] = "Images/C1.Microchitze/Img097Meteor.png";  dbAImageSrc[97][0] = "shark-tank.com";
+                        dbAImage[97][1] = "Images/C1.Microchitze/Img097Meteor.png";  dbAImageSrc[97][1] = "shark-tank.com";
+                        dbAImage[97][2] = "Images/C1.Microchitze/Img097Meteor.png";  dbAImageSrc[97][2] = "shark-tank.com";
 dbQList[ 98] = [];
 dbQList[ 98][0] = "Care este unghiul de zenit (solar) la r&#x103;s&#x103;ritul soarelui? (&#xEE;n grade)";   
 dbQList[ 98][1] = "What is the (solar) zenith angle at sunrise? (in degrees)";  
@@ -3254,13 +3254,13 @@ dbQList[ 98][2] = "Was ist der (Sonnen-)Zenitwinkel bei Sonnenaufgang? (in Grade
                         dbQHint[ 98][1] = ""; //hint en
                         dbQHint[ 98][2] = ""; //hint de
                         dbQImage[98] = []; dbQImageSrc[98] = []; 
-                        dbQImage[98][0] = "Images/1.Microchitze/098Zenith.png";	dbQImageSrc[98][0] = "www.contemporarypsychotherapy.org";
-                        dbQImage[98][1] = "Images/1.Microchitze/098Zenith.png";	dbQImageSrc[98][1] = "www.contemporarypsychotherapy.org";
-                        dbQImage[98][2] = "Images/1.Microchitze/098Zenith.png";	dbQImageSrc[98][2] = "www.contemporarypsychotherapy.org";
+                        dbQImage[98][0] = "Images/C1.Microchitze/Img098Zenith.png";	dbQImageSrc[98][0] = "www.contemporarypsychotherapy.org";
+                        dbQImage[98][1] = "Images/C1.Microchitze/Img098Zenith.png";	dbQImageSrc[98][1] = "www.contemporarypsychotherapy.org";
+                        dbQImage[98][2] = "Images/C1.Microchitze/Img098Zenith.png";	dbQImageSrc[98][2] = "www.contemporarypsychotherapy.org";
                         dbAImage[98] = [];							dbAImageSrc[98] = [];
-                        dbAImage[98][0] = "Images/1.Microchitze/098Expl.png";  dbAImageSrc[98][0] = "solarwiki.ucdavis.edu";
-                        dbAImage[98][1] = "Images/1.Microchitze/098Expl.png";  dbAImageSrc[98][1] = "solarwiki.ucdavis.edu";
-                        dbAImage[98][2] = "Images/1.Microchitze/098Expl.png";  dbAImageSrc[98][2] = "solarwiki.ucdavis.edu";
+                        dbAImage[98][0] = "Images/C1.Microchitze/Img098Expl.png";  dbAImageSrc[98][0] = "solarwiki.ucdavis.edu";
+                        dbAImage[98][1] = "Images/C1.Microchitze/Img098Expl.png";  dbAImageSrc[98][1] = "solarwiki.ucdavis.edu";
+                        dbAImage[98][2] = "Images/C1.Microchitze/Img098Expl.png";  dbAImageSrc[98][2] = "solarwiki.ucdavis.edu";
 dbQList[ 99] = [];
 dbQList[ 99][0] = "Cum se numea primul satelit artificial al P&#x103;m&#xE2;ntului?";    
 dbQList[ 99][1] = "What name did the first artificial Earth satellite have?";  
@@ -3285,13 +3285,13 @@ dbQList[ 99][2] = "Wie hie&#223; der erste k&#252;nstliche Erdsatellit?";
                         dbQHint[ 99][1] = ""; //hint en
                         dbQHint[ 99][2] = ""; //hint de
                         dbQImage[99] = []; dbQImageSrc[99] = []; 
-                        dbQImage[99][0] = "Images/1.Microchitze/099Satellite.png";	dbQImageSrc[99][0] = "www.bbc.co.uk";
-                        dbQImage[99][1] = "Images/1.Microchitze/099Satellite.png";	dbQImageSrc[99][1] = "www.bbc.co.uk";
-                        dbQImage[99][2] = "Images/1.Microchitze/099Satellite.png";	dbQImageSrc[99][2] = "www.bbc.co.uk";
+                        dbQImage[99][0] = "Images/C1.Microchitze/Img099Satellite.png";	dbQImageSrc[99][0] = "www.bbc.co.uk";
+                        dbQImage[99][1] = "Images/C1.Microchitze/Img099Satellite.png";	dbQImageSrc[99][1] = "www.bbc.co.uk";
+                        dbQImage[99][2] = "Images/C1.Microchitze/Img099Satellite.png";	dbQImageSrc[99][2] = "www.bbc.co.uk";
                         dbAImage[99] = [];							dbAImageSrc[99] = [];
-                        dbAImage[99][0] = "Images/1.Microchitze/099Sputnik.png";  dbAImageSrc[99][0] = "space-club.deviantart.com";
-                        dbAImage[99][1] = "Images/1.Microchitze/099Sputnik.png";  dbAImageSrc[99][1] = "space-club.deviantart.com";
-                        dbAImage[99][2] = "Images/1.Microchitze/099Sputnik.png";  dbAImageSrc[99][2] = "space-club.deviantart.com";
+                        dbAImage[99][0] = "Images/C1.Microchitze/Img099Sputnik.png";  dbAImageSrc[99][0] = "space-club.deviantart.com";
+                        dbAImage[99][1] = "Images/C1.Microchitze/Img099Sputnik.png";  dbAImageSrc[99][1] = "space-club.deviantart.com";
+                        dbAImage[99][2] = "Images/C1.Microchitze/Img099Sputnik.png";  dbAImageSrc[99][2] = "space-club.deviantart.com";
                     
 // MINIMIX T/F ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // MINIMIX T/F ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3327,13 +3327,13 @@ dbQList[ 100][2] = "&pi; = 3.14";
                         dbQHint[ 100][1] = ""; //hint en
                         dbQHint[ 100][2] = ""; //hint de
                         dbQImage[100] = []; dbQImageSrc[100] = []; 
-                        dbQImage[100][0] = "Images/1.Microchitze/100Pi.png";	dbQImageSrc[100][0] = "engage.stanford.edu";
-                        dbQImage[100][1] = "Images/1.Microchitze/100Pi.png";	dbQImageSrc[100][1] = "engage.stanford.edu";
-                        dbQImage[100][2] = "Images/1.Microchitze/100Pi.png";	dbQImageSrc[100][2] = "engage.stanford.edu";
+                        dbQImage[100][0] = "Images/C1.Microchitze/Img100Pi.png";	dbQImageSrc[100][0] = "engage.stanford.edu";
+                        dbQImage[100][1] = "Images/C1.Microchitze/Img100Pi.png";	dbQImageSrc[100][1] = "engage.stanford.edu";
+                        dbQImage[100][2] = "Images/C1.Microchitze/Img100Pi.png";	dbQImageSrc[100][2] = "engage.stanford.edu";
                         dbAImage[100] = [];							  dbAImageSrc[100] = [];
-                        dbAImage[100][0] = "Images/1.Microchitze/100PiDigits.png";  dbAImageSrc[100][0] = "fwsu-blog.org";
-                        dbAImage[100][1] = "Images/1.Microchitze/100PiDigits.png";  dbAImageSrc[100][1] = "fwsu-blog.org";
-                        dbAImage[100][2] = "Images/1.Microchitze/100PiDigits.png";  dbAImageSrc[100][2] = "fwsu-blog.org";
+                        dbAImage[100][0] = "Images/C1.Microchitze/Img100PiDigits.png";  dbAImageSrc[100][0] = "fwsu-blog.org";
+                        dbAImage[100][1] = "Images/C1.Microchitze/Img100PiDigits.png";  dbAImageSrc[100][1] = "fwsu-blog.org";
+                        dbAImage[100][2] = "Images/C1.Microchitze/Img100PiDigits.png";  dbAImageSrc[100][2] = "fwsu-blog.org";
 dbQList[ 101] = [];
 dbQList[ 101][0] = "Prin fotosintez&#x103; se produce lumin&#x103;.";  
 dbQList[ 101][1] = "Through photosynthesis, light is produced."; 
@@ -3358,13 +3358,13 @@ dbQList[ 101][2] = "Durch Photosynthese wird Licht erzeugt.";
                         dbQHint[ 101][1] = ""; //hint en
                         dbQHint[ 101][2] = ""; //hint de
                         dbQImage[101] = []; dbQImageSrc[101] = []; 
-                        dbQImage[101][0] = "Images/1.Microchitze/101Candle.png";	dbQImageSrc[101][0] = "blog.pauldorset.com";
-                        dbQImage[101][1] = "Images/1.Microchitze/101Candle.png";	dbQImageSrc[101][1] = "blog.pauldorset.com";
-                        dbQImage[101][2] = "Images/1.Microchitze/101Candle.png";	dbQImageSrc[101][2] = "blog.pauldorset.com";
+                        dbQImage[101][0] = "Images/C1.Microchitze/Img101Candle.png";	dbQImageSrc[101][0] = "blog.pauldorset.com";
+                        dbQImage[101][1] = "Images/C1.Microchitze/Img101Candle.png";	dbQImageSrc[101][1] = "blog.pauldorset.com";
+                        dbQImage[101][2] = "Images/C1.Microchitze/Img101Candle.png";	dbQImageSrc[101][2] = "blog.pauldorset.com";
                         dbAImage[101] = [];							dbAImageSrc[101] = [];
-                        dbAImage[101][0] = "Images/1.Microchitze/101Photosynthesis.png";  dbAImageSrc[101][0] = "bioweb.uwlax.edu";
-                        dbAImage[101][1] = "Images/1.Microchitze/101Photosynthesis.png";  dbAImageSrc[101][1] = "bioweb.uwlax.edu";
-                        dbAImage[101][2] = "Images/1.Microchitze/101Photosynthesis.png";  dbAImageSrc[101][2] = "bioweb.uwlax.edu";
+                        dbAImage[101][0] = "Images/C1.Microchitze/Img101Photosynthesis.png";  dbAImageSrc[101][0] = "bioweb.uwlax.edu";
+                        dbAImage[101][1] = "Images/C1.Microchitze/Img101Photosynthesis.png";  dbAImageSrc[101][1] = "bioweb.uwlax.edu";
+                        dbAImage[101][2] = "Images/C1.Microchitze/Img101Photosynthesis.png";  dbAImageSrc[101][2] = "bioweb.uwlax.edu";
 dbQList[ 102] = [];
 dbQList[ 102][0] = "C&#x103;rbunele este un mineral.";
 dbQList[ 102][1] = "Coal is a mineral."; 
@@ -3389,13 +3389,13 @@ dbQList[ 102][2] = "Kohle ist ein Mineral.";
                         dbQHint[ 102][1] = ""; //hint en
                         dbQHint[ 102][2] = ""; //hint de
                         dbQImage[102] = []; dbQImageSrc[102] = []; 
-                        dbQImage[102][0] = "Images/1.Microchitze/102Coal.png";	dbQImageSrc[102][0] = "www.csrwire.com";
-                        dbQImage[102][1] = "Images/1.Microchitze/102Coal.png";	dbQImageSrc[102][1] = "www.csrwire.com";
-                        dbQImage[102][2] = "Images/1.Microchitze/102Coal.png";	dbQImageSrc[102][2] = "www.csrwire.com";
+                        dbQImage[102][0] = "Images/C1.Microchitze/Img102Coal.png";	dbQImageSrc[102][0] = "www.csrwire.com";
+                        dbQImage[102][1] = "Images/C1.Microchitze/Img102Coal.png";	dbQImageSrc[102][1] = "www.csrwire.com";
+                        dbQImage[102][2] = "Images/C1.Microchitze/Img102Coal.png";	dbQImageSrc[102][2] = "www.csrwire.com";
                         dbAImage[102] = [];							dbAImageSrc[102] = [];
-                        dbAImage[102][0] = "Images/1.Microchitze/102Formation.png";  dbAImageSrc[102][0] = "www.energy.alberta.ca";
-                        dbAImage[102][1] = "Images/1.Microchitze/102Formation.png";  dbAImageSrc[102][1] = "www.energy.alberta.ca";
-                        dbAImage[102][2] = "Images/1.Microchitze/102Formation.png";  dbAImageSrc[102][2] = "www.energy.alberta.ca";
+                        dbAImage[102][0] = "Images/C1.Microchitze/Img102Formation.png";  dbAImageSrc[102][0] = "www.energy.alberta.ca";
+                        dbAImage[102][1] = "Images/C1.Microchitze/Img102Formation.png";  dbAImageSrc[102][1] = "www.energy.alberta.ca";
+                        dbAImage[102][2] = "Images/C1.Microchitze/Img102Formation.png";  dbAImageSrc[102][2] = "www.energy.alberta.ca";
 dbQList[ 103] = [];
 dbQList[ 103][0] = "Polul Nord Geografic poate fi atins zbur&#xE2;nd mereu c&#x103;tre Nord-Est.";   
 dbQList[ 103][1] = "The Geographic North Pole can be reached by always flying due North-East."; 
@@ -3420,13 +3420,13 @@ dbQList[ 103][2] = "Der geographische Nordpol kann erreicht werden, wenn man imm
                         dbQHint[ 103][1] = ""; //hint en
                         dbQHint[ 103][2] = ""; //hint de
                         dbQImage[103] = []; dbQImageSrc[103] = []; 
-                        dbQImage[103][0] = "Images/1.Microchitze/103Plane.png";	dbQImageSrc[103][0] = "www.freevectors.com";
-                        dbQImage[103][1] = "Images/1.Microchitze/103Plane.png";	dbQImageSrc[103][1] = "www.freevectors.com";
-                        dbQImage[103][2] = "Images/1.Microchitze/103Plane.png";	dbQImageSrc[103][2] = "www.freevectors.com";
+                        dbQImage[103][0] = "Images/C1.Microchitze/Img103Plane.png";	dbQImageSrc[103][0] = "www.freevectors.com";
+                        dbQImage[103][1] = "Images/C1.Microchitze/Img103Plane.png";	dbQImageSrc[103][1] = "www.freevectors.com";
+                        dbQImage[103][2] = "Images/C1.Microchitze/Img103Plane.png";	dbQImageSrc[103][2] = "www.freevectors.com";
                         dbAImage[103] = [];							dbAImageSrc[103] = [];
-                        dbAImage[103][0] = "Images/1.Microchitze/103Spiral.png";  dbAImageSrc[103][0] = "www.progonos.com";
-                        dbAImage[103][1] = "Images/1.Microchitze/103Spiral.png";  dbAImageSrc[103][1] = "www.progonos.com";
-                        dbAImage[103][2] = "Images/1.Microchitze/103Spiral.png";  dbAImageSrc[103][2] = "www.progonos.com";
+                        dbAImage[103][0] = "Images/C1.Microchitze/Img103Spiral.png";  dbAImageSrc[103][0] = "www.progonos.com";
+                        dbAImage[103][1] = "Images/C1.Microchitze/Img103Spiral.png";  dbAImageSrc[103][1] = "www.progonos.com";
+                        dbAImage[103][2] = "Images/C1.Microchitze/Img103Spiral.png";  dbAImageSrc[103][2] = "www.progonos.com";
 dbQList[ 104] = [];
 dbQList[ 104][0] = "C&#x103;p&#x15F;unile au semin&#x163;e.";  
 dbQList[ 104][1] = "Strawberries have seeds."; 
@@ -3451,13 +3451,13 @@ dbQList[ 104][2] = "Erdbeeren haben Samen.";
                         dbQHint[ 104][1] = ""; //hint en
                         dbQHint[ 104][2] = ""; //hint de
                         dbQImage[104] = []; dbQImageSrc[104] = []; 
-                        dbQImage[104][0] = "Images/1.Microchitze/104Strawberry.png";	dbQImageSrc[104][0] = "blog.ingredientmag.com";
-                        dbQImage[104][1] = "Images/1.Microchitze/104Strawberry.png";	dbQImageSrc[104][1] = "blog.ingredientmag.com";
-                        dbQImage[104][2] = "Images/1.Microchitze/104Strawberry.png";	dbQImageSrc[104][2] = "blog.ingredientmag.com";
+                        dbQImage[104][0] = "Images/C1.Microchitze/Img104Strawberry.png";	dbQImageSrc[104][0] = "blog.ingredientmag.com";
+                        dbQImage[104][1] = "Images/C1.Microchitze/Img104Strawberry.png";	dbQImageSrc[104][1] = "blog.ingredientmag.com";
+                        dbQImage[104][2] = "Images/C1.Microchitze/Img104Strawberry.png";	dbQImageSrc[104][2] = "blog.ingredientmag.com";
                         dbAImage[104] = [];							dbAImageSrc[104] = [];
-                        dbAImage[104][0] = "Images/1.Microchitze/104StrawberrySeed.png";  dbAImageSrc[104][0] = "factmonster.com";
-                        dbAImage[104][1] = "Images/1.Microchitze/104StrawberrySeed.png";  dbAImageSrc[104][1] = "factmonster.com";
-                        dbAImage[104][2] = "Images/1.Microchitze/104StrawberrySeed.png";  dbAImageSrc[104][2] = "factmonster.com";
+                        dbAImage[104][0] = "Images/C1.Microchitze/Img104StrawberrySeed.png";  dbAImageSrc[104][0] = "factmonster.com";
+                        dbAImage[104][1] = "Images/C1.Microchitze/Img104StrawberrySeed.png";  dbAImageSrc[104][1] = "factmonster.com";
+                        dbAImage[104][2] = "Images/C1.Microchitze/Img104StrawberrySeed.png";  dbAImageSrc[104][2] = "factmonster.com";
 dbQList[ 105] = [];
 dbQList[ 105][0] = "Zebrele sunt negre cu dungi albe (nu invers).";  
 dbQList[ 105][1] = "Zebras are black with white stripes (not the other way around).";  
@@ -3482,13 +3482,13 @@ dbQList[ 105][2] = "Zebras sind schwarz mit wei&#223;en Streifen (nicht umgekehr
                         dbQHint[ 105][1] = ""; //hint en
                         dbQHint[ 105][2] = ""; //hint de
                         dbQImage[105] = []; dbQImageSrc[105] = []; 
-                        dbQImage[105][0] = "Images/1.Microchitze/105Zebra.png";	dbQImageSrc[105][0] = "xkaseix.deviantart.com";
-                        dbQImage[105][1] = "Images/1.Microchitze/105Zebra.png";	dbQImageSrc[105][1] = "xkaseix.deviantart.com";
-                        dbQImage[105][2] = "Images/1.Microchitze/105Zebra.png";	dbQImageSrc[105][2] = "xkaseix.deviantart.com";
+                        dbQImage[105][0] = "Images/C1.Microchitze/Img105Zebra.png";	dbQImageSrc[105][0] = "xkaseix.deviantart.com";
+                        dbQImage[105][1] = "Images/C1.Microchitze/Img105Zebra.png";	dbQImageSrc[105][1] = "xkaseix.deviantart.com";
+                        dbQImage[105][2] = "Images/C1.Microchitze/Img105Zebra.png";	dbQImageSrc[105][2] = "xkaseix.deviantart.com";
                         dbAImage[105] = [];							dbAImageSrc[105] = [];
-                        dbAImage[105][0] = "Images/1.Microchitze/105Quagga.png";  dbAImageSrc[105][0] = "en.wikipedia.org";
-                        dbAImage[105][1] = "Images/1.Microchitze/105Quagga.png";  dbAImageSrc[105][1] = "en.wikipedia.org";
-                        dbAImage[105][2] = "Images/1.Microchitze/105Quagga.png";  dbAImageSrc[105][2] = "en.wikipedia.org";
+                        dbAImage[105][0] = "Images/C1.Microchitze/Img105Quagga.png";  dbAImageSrc[105][0] = "en.wikipedia.org";
+                        dbAImage[105][1] = "Images/C1.Microchitze/Img105Quagga.png";  dbAImageSrc[105][1] = "en.wikipedia.org";
+                        dbAImage[105][2] = "Images/C1.Microchitze/Img105Quagga.png";  dbAImageSrc[105][2] = "en.wikipedia.org";
 dbQList[ 106] = [];
 dbQList[ 106][0] = "Paianjenii au 6 picioare.";   
 dbQList[ 106][1] = "Spiders have 6 legs.";  
@@ -3513,13 +3513,13 @@ dbQList[ 106][2] = "Spinnen haben 6 Beine.";
                         dbQHint[ 106][1] = ""; //hint en
                         dbQHint[ 106][2] = ""; //hint de
                         dbQImage[106] = []; dbQImageSrc[106] = []; 
-                        dbQImage[106][0] = "Images/1.Microchitze/106CuteSpider.png";	dbQImageSrc[106][0] = "likes.com";
-                        dbQImage[106][1] = "Images/1.Microchitze/106CuteSpider.png";	dbQImageSrc[106][1] = "likes.com";
-                        dbQImage[106][2] = "Images/1.Microchitze/106CuteSpider.png";	dbQImageSrc[106][2] = "likes.com";
+                        dbQImage[106][0] = "Images/C1.Microchitze/Img106CuteSpider.png";	dbQImageSrc[106][0] = "likes.com";
+                        dbQImage[106][1] = "Images/C1.Microchitze/Img106CuteSpider.png";	dbQImageSrc[106][1] = "likes.com";
+                        dbQImage[106][2] = "Images/C1.Microchitze/Img106CuteSpider.png";	dbQImageSrc[106][2] = "likes.com";
                         dbAImage[106] = [];							dbAImageSrc[106] = [];
-                        dbAImage[106][0] = "Images/1.Microchitze/106Spiders.png";  dbAImageSrc[106][0] = "ebay.com";
-                        dbAImage[106][1] = "Images/1.Microchitze/106Spiders.png";  dbAImageSrc[106][1] = "ebay.com";
-                        dbAImage[106][2] = "Images/1.Microchitze/106Spiders.png";  dbAImageSrc[106][2] = "ebay.com";
+                        dbAImage[106][0] = "Images/C1.Microchitze/Img106Spiders.png";  dbAImageSrc[106][0] = "ebay.com";
+                        dbAImage[106][1] = "Images/C1.Microchitze/Img106Spiders.png";  dbAImageSrc[106][1] = "ebay.com";
+                        dbAImage[106][2] = "Images/C1.Microchitze/Img106Spiders.png";  dbAImageSrc[106][2] = "ebay.com";
 dbQList[ 107] = [];
 dbQList[ 107][0] = "Pinguinii nu au genunchi.";   
 dbQList[ 107][1] = "Penguins don\'t have knees.";  
@@ -3544,13 +3544,13 @@ dbQList[ 107][2] = "Pinguine haben keine Knie.";
                         dbQHint[ 107][1] = ""; //hint en
                         dbQHint[ 107][2] = ""; //hint de
                         dbQImage[107] = []; dbQImageSrc[107] = []; 
-                        dbQImage[107][0] = "Images/1.Microchitze/107Penguins.png";	dbQImageSrc[107][0] = "worldofpopculture.com";
-                        dbQImage[107][1] = "Images/1.Microchitze/107Penguins.png";	dbQImageSrc[107][1] = "worldofpopculture.com";
-                        dbQImage[107][2] = "Images/1.Microchitze/107Penguins.png";	dbQImageSrc[107][2] = "worldofpopculture.com";
+                        dbQImage[107][0] = "Images/C1.Microchitze/Img107Penguins.png";	dbQImageSrc[107][0] = "worldofpopculture.com";
+                        dbQImage[107][1] = "Images/C1.Microchitze/Img107Penguins.png";	dbQImageSrc[107][1] = "worldofpopculture.com";
+                        dbQImage[107][2] = "Images/C1.Microchitze/Img107Penguins.png";	dbQImageSrc[107][2] = "worldofpopculture.com";
                         dbAImage[107] = [];							dbAImageSrc[107] = [];
-                        dbAImage[107][0] = "Images/1.Microchitze/107Knees.png";  dbAImageSrc[107][0] = "penguins.neaq.org";
-                        dbAImage[107][1] = "Images/1.Microchitze/107Knees.png";  dbAImageSrc[107][1] = "penguins.neaq.org";
-                        dbAImage[107][2] = "Images/1.Microchitze/107Knees.png";  dbAImageSrc[107][2] = "penguins.neaq.org";
+                        dbAImage[107][0] = "Images/C1.Microchitze/Img107Knees.png";  dbAImageSrc[107][0] = "penguins.neaq.org";
+                        dbAImage[107][1] = "Images/C1.Microchitze/Img107Knees.png";  dbAImageSrc[107][1] = "penguins.neaq.org";
+                        dbAImage[107][2] = "Images/C1.Microchitze/Img107Knees.png";  dbAImageSrc[107][2] = "penguins.neaq.org";
 dbQList[ 108] = [];
 dbQList[ 108][0] = "Infertilitatea e transmisibil&#x103;.";   
 dbQList[ 108][1] = "Infertility is transmissible.";  
@@ -3575,13 +3575,13 @@ dbQList[ 108][2] = "Unfruchtbarkeit ist &#252;bertragbar.";
                         dbQHint[ 108][1] = ""; //hint en
                         dbQHint[ 108][2] = ""; //hint de
                         dbQImage[108] = []; dbQImageSrc[108] = []; 
-                        dbQImage[108][0] = "Images/1.Microchitze/108SneezeBlue.png";	dbQImageSrc[108][0] = "openclipart.org";
-                        dbQImage[108][1] = "Images/1.Microchitze/108SneezeBlue.png";	dbQImageSrc[108][1] = "openclipart.org";
-                        dbQImage[108][2] = "Images/1.Microchitze/108SneezeBlue.png";	dbQImageSrc[108][2] = "openclipart.org";
+                        dbQImage[108][0] = "Images/C1.Microchitze/Img108SneezeBlue.png";	dbQImageSrc[108][0] = "openclipart.org";
+                        dbQImage[108][1] = "Images/C1.Microchitze/Img108SneezeBlue.png";	dbQImageSrc[108][1] = "openclipart.org";
+                        dbQImage[108][2] = "Images/C1.Microchitze/Img108SneezeBlue.png";	dbQImageSrc[108][2] = "openclipart.org";
                         dbAImage[108] = [];							dbAImageSrc[108] = [];
-                        dbAImage[108][0] = "Images/1.Microchitze/108SneezeYellow.png";  dbAImageSrc[108][0] = "openclipart.org";
-                        dbAImage[108][1] = "Images/1.Microchitze/108SneezeYellow.png";  dbAImageSrc[108][1] = "openclipart.org";
-                        dbAImage[108][2] = "Images/1.Microchitze/108SneezeYellow.png";  dbAImageSrc[108][2] = "openclipart.org";
+                        dbAImage[108][0] = "Images/C1.Microchitze/Img108SneezeYellow.png";  dbAImageSrc[108][0] = "openclipart.org";
+                        dbAImage[108][1] = "Images/C1.Microchitze/Img108SneezeYellow.png";  dbAImageSrc[108][1] = "openclipart.org";
+                        dbAImage[108][2] = "Images/C1.Microchitze/Img108SneezeYellow.png";  dbAImageSrc[108][2] = "openclipart.org";
 dbQList[ 109] = [];
 dbQList[ 109][0] = "&#xCE;n data de 23 aprilie 1616, William Shakespeare a murit &#xEE;n casa sa din Stratford-upon-Avon. Tot pe 23 aprilie 1616, Miguel de Cervantes a murit &#xEE;n Madrid. Totu&#x15F;i este plauzibil s&#x103; afirmi c&#x103; unul dintre ei ar fi putut afla de moartea celuilalt."; 
 dbQList[ 109][1] = "On the 23<sup>rd</sup> of April 1616 William Shakespeare died in his home at Stratford-upon-Avon. Also on the 23<sup>rd</sup> of April 1616, Miguel de Cervantes died in Madrid. Nevertheless, it is plausible to claim that one of them could have heard about the other's death."; 
@@ -3606,13 +3606,13 @@ dbQList[ 109][2] = "Am 23. April 1616, starb William Shakespeare in sein Haus in
                         dbQHint[109][1] = ""; //hint en
                         dbQHint[109][2] = ""; //hint de
                         dbQImage[109] = []; dbQImageSrc[109] = []; 
-                        dbQImage[109][0] = "Images/1.Microchitze/109ShakespeareCervantes.png";	dbQImageSrc[109][0] = "letras-adamar.blogspot.com";
-                        dbQImage[109][1] = "Images/1.Microchitze/109ShakespeareCervantes.png";	dbQImageSrc[109][1] = "letras-adamar.blogspot.com";
-                        dbQImage[109][2] = "Images/1.Microchitze/109ShakespeareCervantes.png";	dbQImageSrc[109][2] = "letras-adamar.blogspot.com";
+                        dbQImage[109][0] = "Images/C1.Microchitze/Img109ShakespeareCervantes.png";	dbQImageSrc[109][0] = "letras-adamar.blogspot.com";
+                        dbQImage[109][1] = "Images/C1.Microchitze/Img109ShakespeareCervantes.png";	dbQImageSrc[109][1] = "letras-adamar.blogspot.com";
+                        dbQImage[109][2] = "Images/C1.Microchitze/Img109ShakespeareCervantes.png";	dbQImageSrc[109][2] = "letras-adamar.blogspot.com";
                         dbAImage[109] = [];							dbAImageSrc[109] = [];
-                        dbAImage[109][0] = "Images/1.Microchitze/109Gregorian.png";  dbAImageSrc[109][0] = "macquirelatory.com";
-                        dbAImage[109][1] = "Images/1.Microchitze/109Gregorian.png";  dbAImageSrc[109][1] = "macquirelatory.com";
-                        dbAImage[109][2] = "Images/1.Microchitze/109Gregorian.png";  dbAImageSrc[109][2] = "macquirelatory.com";
+                        dbAImage[109][0] = "Images/C1.Microchitze/Img109Gregorian.png";  dbAImageSrc[109][0] = "macquirelatory.com";
+                        dbAImage[109][1] = "Images/C1.Microchitze/Img109Gregorian.png";  dbAImageSrc[109][1] = "macquirelatory.com";
+                        dbAImage[109][2] = "Images/C1.Microchitze/Img109Gregorian.png";  dbAImageSrc[109][2] = "macquirelatory.com";
                 
 // MINIMIX SEQ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // MINIMIX SEQ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3648,13 +3648,13 @@ dbQList[ 110][2] = "Was kommt als n&#228;chstes: <br/> ... Affe, Hahn, Hund, Sch
                         dbQHint[ 110][1] = ""; //hint en
                         dbQHint[ 110][2] = ""; //hint de
                         dbQImage[110] = []; dbQImageSrc[110] = []; 
-                        dbQImage[110][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[110][0] = "";
-                        dbQImage[110][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[110][1] = "";
-                        dbQImage[110][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[110][2] = "";
+                        dbQImage[110][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[110][0] = "";
+                        dbQImage[110][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[110][1] = "";
+                        dbQImage[110][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[110][2] = "";
                         dbAImage[110] = [];							  dbAImageSrc[110] = [];
-                        dbAImage[110][0] = "Images/1.Microchitze/110ChineseCalendar.png";  dbAImageSrc[110][0] = "moonlightenedshelves.wordpress.com";
-                        dbAImage[110][1] = "Images/1.Microchitze/110ChineseCalendar.png";  dbAImageSrc[110][1] = "moonlightenedshelves.wordpress.com";
-                        dbAImage[110][2] = "Images/1.Microchitze/110ChineseCalendar.png";  dbAImageSrc[110][2] = "moonlightenedshelves.wordpress.com";
+                        dbAImage[110][0] = "Images/C1.Microchitze/Img110ChineseCalendar.png";  dbAImageSrc[110][0] = "moonlightenedshelves.wordpress.com";
+                        dbAImage[110][1] = "Images/C1.Microchitze/Img110ChineseCalendar.png";  dbAImageSrc[110][1] = "moonlightenedshelves.wordpress.com";
+                        dbAImage[110][2] = "Images/C1.Microchitze/Img110ChineseCalendar.png";  dbAImageSrc[110][2] = "moonlightenedshelves.wordpress.com";
 dbQList[ 111] = [];
 dbQList[ 111][0] = "Ce urmeaz&#x103; dup&#x103;: <br/> luni, joi, joi, duminica, marti, vineri, duminica, miercuri, sambata, ?";  
 dbQList[ 111][1] = "What comes next: <br/> Monday, Thursday, Thursday, Sunday, Tuesday, Friday, Sunday, Wednesday, Saturday, ?"; 
@@ -3667,9 +3667,9 @@ dbQList[ 111][2] = "Was kommt als n&#228;chstes: <br/> Montag, Donnerstag, Donne
                         dbAnswer[111][1] = "Right answer: Monday"; //plaintext en answer
                         dbAnswer[111][2] = "Richtige Antwort: Montag"; //plaintext de answer
                         dbExpln[ 111] = [];
-                        dbExpln[ 111][0] = "Daca 1.Ianuarie cade luni si anul nu este bisect, atunci 1.Februarie cade joi, 1.Martie cade joi, etc... <br/>Exemplu: anul 2007."; //explanation ro
+                        dbExpln[ 111][0] = "Daca 1.Ianuarie cade luni si anul nu este bisect, atunci 1.Februarie cade joi, C1.Martie cade joi, etc... <br/>Exemplu: anul 2007."; //explanation ro
                         dbExpln[ 111][1] = "If the 1<sup>st</sup> of January falls on Monday in a non-leap year, then the 1<sup>st</sup> of February falls on Thursday, the 1<sup>st</sup> of March falls on Thirday, and so on... <br/>E.g.: year 2007."; //explanation en
-                        dbExpln[ 111][2] = "Wen der 1.Januar Montag f&#228;llt und es ist kein Schaltjahr, dann f&#228;llt der 1.Februar Donnerstag, der 1.M&#228;rz Donnerstag, usw. <br/> z.B. Jahr 2007"; //explanation de
+                        dbExpln[ 111][2] = "Wen der 1.Januar Montag f&#228;llt und es ist kein Schaltjahr, dann f&#228;llt der 1.Februar Donnerstag, der C1.M&#228;rz Donnerstag, usw. <br/> z.B. Jahr 2007"; //explanation de
                         dbRefer[ 111] = [];
                         dbRefer[ 111][0] = ""; //references for ro explanation
                         dbRefer[ 111][1] = ""; //references for en explanation
@@ -3679,13 +3679,13 @@ dbQList[ 111][2] = "Was kommt als n&#228;chstes: <br/> Montag, Donnerstag, Donne
                         dbQHint[ 111][1] = ""; //hint en
                         dbQHint[ 111][2] = ""; //hint de
                         dbQImage[111] = []; dbQImageSrc[111] = []; 
-                        dbQImage[111][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[111][0] = "";
-                        dbQImage[111][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[111][1] = "";
-                        dbQImage[111][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[111][2] = "";
+                        dbQImage[111][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[111][0] = "";
+                        dbQImage[111][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[111][1] = "";
+                        dbQImage[111][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[111][2] = "";
                         dbAImage[111] = [];							dbAImageSrc[111] = [];
-                        dbAImage[111][0] = "Images/1.Microchitze/111CalendarRO.png";  dbAImageSrc[111][0] = "www.notar-ionascu.ro";
-                        dbAImage[111][1] = "Images/1.Microchitze/111CalendarEN.png";  dbAImageSrc[111][1] = "annystudio.com";
-                        dbAImage[111][2] = "Images/1.Microchitze/111CalendarDE.png";  dbAImageSrc[111][2] = "news.manegenwelt.de";
+                        dbAImage[111][0] = "Images/C1.Microchitze/Img111CalendarRO.png";  dbAImageSrc[111][0] = "www.notar-ionascu.ro";
+                        dbAImage[111][1] = "Images/C1.Microchitze/Img111CalendarEN.png";  dbAImageSrc[111][1] = "annystudio.com";
+                        dbAImage[111][2] = "Images/C1.Microchitze/Img111CalendarDE.png";  dbAImageSrc[111][2] = "news.manegenwelt.de";
 dbQList[ 112] = [];
 dbQList[ 112][0] = "Ce urmeaz&#x103; dup&#x103;: <br/> mono, di, tri, tetra, penta, hexa, hepta, octa, ?";  
 dbQList[ 112][1] = "What comes next: <br/> mono, di, tri, tetra, penta, hexa, hepta, octa, ?"; 
@@ -3710,13 +3710,13 @@ dbQList[ 112][2] = "Was kommt als n&#228;chstes: <br/> mono, di, tri, tetra, pen
                         dbQHint[ 112][1] = ""; //hint en
                         dbQHint[ 112][2] = ""; //hint de
                         dbQImage[112] = []; dbQImageSrc[112] = []; 
-                        dbQImage[112][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[112][0] = "";
-                        dbQImage[112][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[112][1] = "";
-                        dbQImage[112][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[112][2] = "";
+                        dbQImage[112][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[112][0] = "";
+                        dbQImage[112][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[112][1] = "";
+                        dbQImage[112][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[112][2] = "";
                         dbAImage[112] = [];							dbAImageSrc[112] = [];
-                        dbAImage[112][0] = "Images/1.Microchitze/112Prefixes.png";  dbAImageSrc[112][0] = "images.frompo.com";
-                        dbAImage[112][1] = "Images/1.Microchitze/112Prefixes.png";  dbAImageSrc[112][1] = "images.frompo.com";
-                        dbAImage[112][2] = "Images/1.Microchitze/112Prefixes.png";  dbAImageSrc[112][2] = "images.frompo.com";
+                        dbAImage[112][0] = "Images/C1.Microchitze/Img112Prefixes.png";  dbAImageSrc[112][0] = "images.frompo.com";
+                        dbAImage[112][1] = "Images/C1.Microchitze/Img112Prefixes.png";  dbAImageSrc[112][1] = "images.frompo.com";
+                        dbAImage[112][2] = "Images/C1.Microchitze/Img112Prefixes.png";  dbAImageSrc[112][2] = "images.frompo.com";
 dbQList[ 113] = [];
 dbQList[ 113][0] = "Ce urmeaz&#x103; dup&#x103;: <br/>... 10, 11, 12, 13, 14, 15, 16, 17, 21, 23, 30, 33, 120, ? ";   
 dbQList[ 113][1] = "What comes next: <br/> ... 10, 11, 12, 13, 14, 15, 16, 17, 21, 23, 30, 33, 120, ?"; 
@@ -3741,13 +3741,13 @@ dbQList[ 113][2] = "Was kommt als n&#228;chstes: <br/>... 10, 11, 12, 13, 14, 15
                         dbQHint[ 113][1] = ""; //hint en
                         dbQHint[ 113][2] = ""; //hint de
                         dbQImage[113] = []; dbQImageSrc[113] = []; 
-                        dbQImage[113][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[113][0] = "";
-                        dbQImage[113][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[113][1] = "";
-                        dbQImage[113][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[113][2] = "";
+                        dbQImage[113][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[113][0] = "";
+                        dbQImage[113][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[113][1] = "";
+                        dbQImage[113][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[113][2] = "";
                         dbAImage[113] = [];							dbAImageSrc[113] = [];
-                        dbAImage[113][0] = "Images/1.Microchitze/113Base2.png";  dbAImageSrc[113][0] = "images.1233.tw";
-                        dbAImage[113][1] = "Images/1.Microchitze/113Base2.png";  dbAImageSrc[113][1] = "images.1233.tw";
-                        dbAImage[113][2] = "Images/1.Microchitze/113Base2.png";  dbAImageSrc[113][2] = "images.1233.tw";
+                        dbAImage[113][0] = "Images/C1.Microchitze/Img113Base2.png";  dbAImageSrc[113][0] = "images.1233.tw";
+                        dbAImage[113][1] = "Images/C1.Microchitze/Img113Base2.png";  dbAImageSrc[113][1] = "images.1233.tw";
+                        dbAImage[113][2] = "Images/C1.Microchitze/Img113Base2.png";  dbAImageSrc[113][2] = "images.1233.tw";
 dbQList[ 114] = [];
 dbQList[ 114][0] = "Ce urmeaz&#x103; dup&#x103;: <br/>... F9, O8, N7, C6, B5, ?";  
 dbQList[ 114][1] = "What comes next: <br/>... F9, O8, N7, C6, B5, ?"; 
@@ -3772,13 +3772,13 @@ dbQList[ 114][2] = "Was kommt als n&#228;chstes: <br/>... F9, O8, N7, C6, B5, ?"
                         dbQHint[ 114][1] = ""; //hint en
                         dbQHint[ 114][2] = ""; //hint de
                         dbQImage[114] = []; dbQImageSrc[114] = []; 
-                        dbQImage[114][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[114][0] = "";
-                        dbQImage[114][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[114][1] = "";
-                        dbQImage[114][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[114][2] = "";
+                        dbQImage[114][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[114][0] = "";
+                        dbQImage[114][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[114][1] = "";
+                        dbQImage[114][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[114][2] = "";
                         dbAImage[114] = [];							dbAImageSrc[114] = [];
-                        dbAImage[114][0] = "Images/1.Microchitze/114Z.png";  dbAImageSrc[114][0] = "www.grand-theory.com";
-                        dbAImage[114][1] = "Images/1.Microchitze/114Z.png";  dbAImageSrc[114][1] = "www.grand-theory.com";
-                        dbAImage[114][2] = "Images/1.Microchitze/114Z.png";  dbAImageSrc[114][2] = "www.grand-theory.com";
+                        dbAImage[114][0] = "Images/C1.Microchitze/Img114Z.png";  dbAImageSrc[114][0] = "www.grand-theory.com";
+                        dbAImage[114][1] = "Images/C1.Microchitze/Img114Z.png";  dbAImageSrc[114][1] = "www.grand-theory.com";
+                        dbAImage[114][2] = "Images/C1.Microchitze/Img114Z.png";  dbAImageSrc[114][2] = "www.grand-theory.com";
 dbQList[ 115] = [];
 dbQList[ 115][0] = "Ce urmeaz&#x103; dup&#x103;: <br/> A, E, F, H, I, K, L, M, N, ?";  
 dbQList[ 115][1] = "What comes next: <br/> A, E, F, H, I, K, L, M, N, ?";  
@@ -3803,13 +3803,13 @@ dbQList[ 115][2] = "Was kommt als n&#228;chstes: <br/> A, E, F, H, I, K, L, M, N
                         dbQHint[ 115][1] = ""; //hint en
                         dbQHint[ 115][2] = ""; //hint de
                         dbQImage[115] = []; dbQImageSrc[115] = []; 
-                        dbQImage[115][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[115][0] = "";
-                        dbQImage[115][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[115][1] = "";
-                        dbQImage[115][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[115][2] = "";
+                        dbQImage[115][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[115][0] = "";
+                        dbQImage[115][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[115][1] = "";
+                        dbQImage[115][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[115][2] = "";
                         dbAImage[115] = [];							dbAImageSrc[115] = [];
-                        dbAImage[115][0] = "Images/1.Microchitze/115T.png";  dbAImageSrc[115][0] = "en.wikipedia.org";
-                        dbAImage[115][1] = "Images/1.Microchitze/115T.png";  dbAImageSrc[115][1] = "en.wikipedia.org";
-                        dbAImage[115][2] = "Images/1.Microchitze/115T.png";  dbAImageSrc[115][2] = "en.wikipedia.org";
+                        dbAImage[115][0] = "Images/C1.Microchitze/Img115T.png";  dbAImageSrc[115][0] = "en.wikipedia.org";
+                        dbAImage[115][1] = "Images/C1.Microchitze/Img115T.png";  dbAImageSrc[115][1] = "en.wikipedia.org";
+                        dbAImage[115][2] = "Images/C1.Microchitze/Img115T.png";  dbAImageSrc[115][2] = "en.wikipedia.org";
 dbQList[ 116] = [];
 dbQList[ 116][0] = "Ce urmeaz&#x103; dup&#x103;: <br/> U, D, T, P, C, S, S, O, ?"; 
 dbQList[ 116][1] = "What comes next: <br/> O, T, T, F, F, S, S, E, ?";  
@@ -3834,13 +3834,13 @@ dbQList[ 116][2] = "Was kommt als n&#228;chstes: <br/> E, Z, D, V, F, S, S, A, ?
                         dbQHint[ 116][1] = ""; //hint en
                         dbQHint[ 116][2] = ""; //hint de
                         dbQImage[116] = []; dbQImageSrc[116] = []; 
-                        dbQImage[116][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[116][0] = "";
-                        dbQImage[116][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[116][1] = "";
-                        dbQImage[116][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[116][2] = "";
+                        dbQImage[116][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[116][0] = "";
+                        dbQImage[116][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[116][1] = "";
+                        dbQImage[116][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[116][2] = "";
                         dbAImage[116] = [];							dbAImageSrc[116] = [];
-                        dbAImage[116][0] = "Images/1.Microchitze/116Numbers.png";  dbAImageSrc[116][0] = "www.wikiart.org";
-                        dbAImage[116][1] = "Images/1.Microchitze/116Numbers.png";  dbAImageSrc[116][1] = "www.wikiart.org";
-                        dbAImage[116][2] = "Images/1.Microchitze/116Numbers.png";  dbAImageSrc[116][2] = "www.wikiart.org";
+                        dbAImage[116][0] = "Images/C1.Microchitze/Img116Numbers.png";  dbAImageSrc[116][0] = "www.wikiart.org";
+                        dbAImage[116][1] = "Images/C1.Microchitze/Img116Numbers.png";  dbAImageSrc[116][1] = "www.wikiart.org";
+                        dbAImage[116][2] = "Images/C1.Microchitze/Img116Numbers.png";  dbAImageSrc[116][2] = "www.wikiart.org";
 dbQList[ 117] = [];
 dbQList[ 117][0] = "Ce lipse&#x15F;te?<br/> d c m _ n p f a z y ";   
 dbQList[ 117][1] = "What is missing?<br/> d c m _ n p f a z y ";  
@@ -3865,13 +3865,13 @@ dbQList[ 117][2] = "Was fehlt?<br/> d c m _ n p f a z y ";
                         dbQHint[ 117][1] = ""; //hint en
                         dbQHint[ 117][2] = ""; //hint de
                         dbQImage[117] = []; dbQImageSrc[117] = []; 
-                        dbQImage[117][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[117][0] = "";
-                        dbQImage[117][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[117][1] = "";
-                        dbQImage[117][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[117][2] = "";
+                        dbQImage[117][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[117][0] = "";
+                        dbQImage[117][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[117][1] = "";
+                        dbQImage[117][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[117][2] = "";
                         dbAImage[117] = [];							dbAImageSrc[117] = [];
-                        dbAImage[117][0] = "Images/1.Microchitze/117Prefixes.png";  dbAImageSrc[117][0] = "slideplayer.us";
-                        dbAImage[117][1] = "Images/1.Microchitze/117Prefixes.png";  dbAImageSrc[117][1] = "slideplayer.us";
-                        dbAImage[117][2] = "Images/1.Microchitze/117Prefixes.png";  dbAImageSrc[117][2] = "slideplayer.us";
+                        dbAImage[117][0] = "Images/C1.Microchitze/Img117Prefixes.png";  dbAImageSrc[117][0] = "slideplayer.us";
+                        dbAImage[117][1] = "Images/C1.Microchitze/Img117Prefixes.png";  dbAImageSrc[117][1] = "slideplayer.us";
+                        dbAImage[117][2] = "Images/C1.Microchitze/Img117Prefixes.png";  dbAImageSrc[117][2] = "slideplayer.us";
 dbQList[ 118] = [];
 dbQList[ 118][0] = "Ce lipse&#x15F;te?<br/> V I I I I X X _ I X I I X I I I X I V";   
 dbQList[ 118][1] = "What is missing?<br/> V I I I I X X _ I X I I X I I I X I V";  
@@ -3896,13 +3896,13 @@ dbQList[ 118][2] = "Was fehlt?<br/> V I I I I X X _ I X I I X I I I X I V";
                         dbQHint[ 118][1] = ""; //hint en
                         dbQHint[ 118][2] = ""; //hint de
                         dbQImage[118] = []; dbQImageSrc[118] = []; 
-                        dbQImage[118][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[118][0] = "";
-                        dbQImage[118][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[118][1] = "";
-                        dbQImage[118][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[118][2] = "";
+                        dbQImage[118][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[118][0] = "";
+                        dbQImage[118][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[118][1] = "";
+                        dbQImage[118][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[118][2] = "";
                         dbAImage[118] = [];							dbAImageSrc[118] = [];
-                        dbAImage[118][0] = "Images/1.Microchitze/118Roman.png";  dbAImageSrc[118][0] = "risingcaren.hubpages.com";
-                        dbAImage[118][1] = "Images/1.Microchitze/118Roman.png";  dbAImageSrc[118][1] = "risingcaren.hubpages.com";
-                        dbAImage[118][2] = "Images/1.Microchitze/118Roman.png";  dbAImageSrc[118][2] = "risingcaren.hubpages.com";
+                        dbAImage[118][0] = "Images/C1.Microchitze/Img118Roman.png";  dbAImageSrc[118][0] = "risingcaren.hubpages.com";
+                        dbAImage[118][1] = "Images/C1.Microchitze/Img118Roman.png";  dbAImageSrc[118][1] = "risingcaren.hubpages.com";
+                        dbAImage[118][2] = "Images/C1.Microchitze/Img118Roman.png";  dbAImageSrc[118][2] = "risingcaren.hubpages.com";
 dbQList[ 119] = [];
 dbQList[ 119][0] = "Ce lipse&#x15F;te?<br/> A A A A _ A A A A A A U U";    
 dbQList[ 119][1] = "What is missing?<br/> A A A A _ A A A A A A U U";  
@@ -3927,13 +3927,13 @@ dbQList[ 119][2] = "Was fehlt?<br/> A A A A _ A A A A A A U U";
                         dbQHint[ 119][1] = "Hint: It is not A..."; //hint en
                         dbQHint[ 119][2] = "Hinweis: Es ist nicht A..."; //hint de
                         dbQImage[119] = []; dbQImageSrc[119] = []; 
-                        dbQImage[119][0] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[119][0] = "";
-                        dbQImage[119][1] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[119][1] = "";
-                        dbQImage[119][2] = "Images/1.Microchitze/_Blank.png";	dbQImageSrc[119][2] = "";
+                        dbQImage[119][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[119][0] = "";
+                        dbQImage[119][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[119][1] = "";
+                        dbQImage[119][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[119][2] = "";
                         dbAImage[119] = [];							dbAImageSrc[119] = [];
-                        dbAImage[119][0] = "Images/1.Microchitze/119Greek.png";  dbAImageSrc[119][0] = "www.1728.org";
-                        dbAImage[119][1] = "Images/1.Microchitze/119Greek.png";  dbAImageSrc[119][1] = "www.1728.org";
-                        dbAImage[119][2] = "Images/1.Microchitze/119Greek.png";  dbAImageSrc[119][2] = "www.1728.org";
+                        dbAImage[119][0] = "Images/C1.Microchitze/Img119Greek.png";  dbAImageSrc[119][0] = "www.1728.org";
+                        dbAImage[119][1] = "Images/C1.Microchitze/Img119Greek.png";  dbAImageSrc[119][1] = "www.1728.org";
+                        dbAImage[119][2] = "Images/C1.Microchitze/Img119Greek.png";  dbAImageSrc[119][2] = "www.1728.org";
                     
 // MINIMIX A ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // MINIMIX A ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3969,13 +3969,13 @@ dbQList[ 120][2] = "Wie viele Viertel hat ein halbes Keks?";
                         dbQHint[ 120][1] = ""; //hint en
                         dbQHint[ 120][2] = ""; //hint de
                         dbQImage[120] = []; dbQImageSrc[120] = []; 
-                        dbQImage[120][0] = "Images/1.Microchitze/120BiscuitArt.png";	dbQImageSrc[120][0] = "www.traxsource.com";
-                        dbQImage[120][1] = "Images/1.Microchitze/120BiscuitArt.png";	dbQImageSrc[120][1] = "www.traxsource.com";
-                        dbQImage[120][2] = "Images/1.Microchitze/120BiscuitArt.png";	dbQImageSrc[120][2] = "www.traxsource.com";
+                        dbQImage[120][0] = "Images/C1.Microchitze/Img120BiscuitArt.png";	dbQImageSrc[120][0] = "www.traxsource.com";
+                        dbQImage[120][1] = "Images/C1.Microchitze/Img120BiscuitArt.png";	dbQImageSrc[120][1] = "www.traxsource.com";
+                        dbQImage[120][2] = "Images/C1.Microchitze/Img120BiscuitArt.png";	dbQImageSrc[120][2] = "www.traxsource.com";
                         dbAImage[120] = [];							  dbAImageSrc[120] = [];
-                        dbAImage[120][0] = "Images/1.Microchitze/120Biscuit.png";  dbAImageSrc[120][0] = "johnlew123.blogspot.com";
-                        dbAImage[120][1] = "Images/1.Microchitze/120Biscuit.png";  dbAImageSrc[120][1] = "johnlew123.blogspot.com";
-                        dbAImage[120][2] = "Images/1.Microchitze/120Biscuit.png";  dbAImageSrc[120][2] = "johnlew123.blogspot.com";
+                        dbAImage[120][0] = "Images/C1.Microchitze/Img120Biscuit.png";  dbAImageSrc[120][0] = "johnlew123.blogspot.com";
+                        dbAImage[120][1] = "Images/C1.Microchitze/Img120Biscuit.png";  dbAImageSrc[120][1] = "johnlew123.blogspot.com";
+                        dbAImage[120][2] = "Images/C1.Microchitze/Img120Biscuit.png";  dbAImageSrc[120][2] = "johnlew123.blogspot.com";
 dbQList[ 121] = [];
 dbQList[ 121][0] = "Cat a durat razboiul de 100 de ani?";  
 dbQList[ 121][1] = "How long did the hundred years war last?"; 
@@ -4000,13 +4000,13 @@ dbQList[ 121][2] = "Wie lange dauerte der Hundertj&#xE4;hrige Krieg?";
                         dbQHint[ 121][1] = ""; //hint en
                         dbQHint[ 121][2] = ""; //hint de
                         dbQImage[121] = []; dbQImageSrc[121] = []; 
-                        dbQImage[121][0] = "Images/1.Microchitze/121HundredYearsWar.png";	dbQImageSrc[121][0] = "wordinfo.info";
-                        dbQImage[121][1] = "Images/1.Microchitze/121HundredYearsWar.png";	dbQImageSrc[121][1] = "wordinfo.info";
-                        dbQImage[121][2] = "Images/1.Microchitze/121HundredYearsWar.png";	dbQImageSrc[121][2] = "wordinfo.info";
+                        dbQImage[121][0] = "Images/C1.Microchitze/Img121HundredYearsWar.png";	dbQImageSrc[121][0] = "wordinfo.info";
+                        dbQImage[121][1] = "Images/C1.Microchitze/Img121HundredYearsWar.png";	dbQImageSrc[121][1] = "wordinfo.info";
+                        dbQImage[121][2] = "Images/C1.Microchitze/Img121HundredYearsWar.png";	dbQImageSrc[121][2] = "wordinfo.info";
                         dbAImage[121] = [];							dbAImageSrc[121] = [];
-                        dbAImage[121][0] = "Images/1.Microchitze/121HundredYearsWar.png";  dbAImageSrc[121][0] = "wordinfo.info";
-                        dbAImage[121][1] = "Images/1.Microchitze/121HundredYearsWar.png";  dbAImageSrc[121][1] = "wordinfo.info";
-                        dbAImage[121][2] = "Images/1.Microchitze/121HundredYearsWar.png";  dbAImageSrc[121][2] = "wordinfo.info";
+                        dbAImage[121][0] = "Images/C1.Microchitze/Img121HundredYearsWar.png";  dbAImageSrc[121][0] = "wordinfo.info";
+                        dbAImage[121][1] = "Images/C1.Microchitze/Img121HundredYearsWar.png";  dbAImageSrc[121][1] = "wordinfo.info";
+                        dbAImage[121][2] = "Images/C1.Microchitze/Img121HundredYearsWar.png";  dbAImageSrc[121][2] = "wordinfo.info";
 dbQList[ 122] = [];
 dbQList[ 122][0] = "Care era numele mijlociu al lui Harry S. Truman?";  
 dbQList[ 122][1] = "What was Harry S. Truman's middle name?"; 
@@ -4031,13 +4031,13 @@ dbQList[ 122][2] = "Was war Harry S. Trumans zweiter Vorname?";
                         dbQHint[ 122][1] = ""; //hint en
                         dbQHint[ 122][2] = ""; //hint de
                         dbQImage[122] = []; dbQImageSrc[122] = []; 
-                        dbQImage[122][0] = "Images/1.Microchitze/122TrumanStamp.png";	dbQImageSrc[122][0] = "en.wikipedia.org";
-                        dbQImage[122][1] = "Images/1.Microchitze/122TrumanStamp.png";	dbQImageSrc[122][1] = "en.wikipedia.org";
-                        dbQImage[122][2] = "Images/1.Microchitze/122TrumanStamp.png";	dbQImageSrc[122][2] = "en.wikipedia.org";
+                        dbQImage[122][0] = "Images/C1.Microchitze/Img122TrumanStamp.png";	dbQImageSrc[122][0] = "en.wikipedia.org";
+                        dbQImage[122][1] = "Images/C1.Microchitze/Img122TrumanStamp.png";	dbQImageSrc[122][1] = "en.wikipedia.org";
+                        dbQImage[122][2] = "Images/C1.Microchitze/Img122TrumanStamp.png";	dbQImageSrc[122][2] = "en.wikipedia.org";
                         dbAImage[122] = [];							dbAImageSrc[122] = [];
-                        dbAImage[122][0] = "Images/1.Microchitze/122TrumanSign.png";  dbAImageSrc[122][0] = "commons.wikimedia.org";
-                        dbAImage[122][1] = "Images/1.Microchitze/122TrumanSign.png";  dbAImageSrc[122][1] = "commons.wikimedia.org";
-                        dbAImage[122][2] = "Images/1.Microchitze/122TrumanSign.png";  dbAImageSrc[122][2] = "commons.wikimedia.org";
+                        dbAImage[122][0] = "Images/C1.Microchitze/Img122TrumanSign.png";  dbAImageSrc[122][0] = "commons.wikimedia.org";
+                        dbAImage[122][1] = "Images/C1.Microchitze/Img122TrumanSign.png";  dbAImageSrc[122][1] = "commons.wikimedia.org";
+                        dbAImage[122][2] = "Images/C1.Microchitze/Img122TrumanSign.png";  dbAImageSrc[122][2] = "commons.wikimedia.org";
 dbQList[ 123] = [];
 dbQList[ 123][0] = "Ce planet&#x103; a fost numit&#x103; George (Georgium Sidus) de c&#x103;tre cel care a descoperit-o? ";   
 dbQList[ 123][1] = "Which planet was named George (Georgium Sidus) by its discoverer?"; 
@@ -4062,13 +4062,13 @@ dbQList[ 123][2] = "Welcher Planet wurde von seinem Entdecker George (Georgium S
                         dbQHint[ 123][1] = ""; //hint en
                         dbQHint[ 123][2] = ""; //hint de
                         dbQImage[123] = []; dbQImageSrc[123] = []; 
-                        dbQImage[123][0] = "Images/1.Microchitze/123George.png";	dbQImageSrc[123][0] = "faktoider.blogspot.com";
-                        dbQImage[123][1] = "Images/1.Microchitze/123George.png";	dbQImageSrc[123][1] = "faktoider.blogspot.com";
-                        dbQImage[123][2] = "Images/1.Microchitze/123George.png";	dbQImageSrc[123][2] = "faktoider.blogspot.com";
+                        dbQImage[123][0] = "Images/C1.Microchitze/Img123George.png";	dbQImageSrc[123][0] = "faktoider.blogspot.com";
+                        dbQImage[123][1] = "Images/C1.Microchitze/Img123George.png";	dbQImageSrc[123][1] = "faktoider.blogspot.com";
+                        dbQImage[123][2] = "Images/C1.Microchitze/Img123George.png";	dbQImageSrc[123][2] = "faktoider.blogspot.com";
                         dbAImage[123] = [];							dbAImageSrc[123] = [];
-                        dbAImage[123][0] = "Images/1.Microchitze/123Uranus.png";  dbAImageSrc[123][0] = "becuo.com";
-                        dbAImage[123][1] = "Images/1.Microchitze/123Uranus.png";  dbAImageSrc[123][1] = "becuo.com";
-                        dbAImage[123][2] = "Images/1.Microchitze/123Uranus.png";  dbAImageSrc[123][2] = "becuo.com";
+                        dbAImage[123][0] = "Images/C1.Microchitze/Img123Uranus.png";  dbAImageSrc[123][0] = "becuo.com";
+                        dbAImage[123][1] = "Images/C1.Microchitze/Img123Uranus.png";  dbAImageSrc[123][1] = "becuo.com";
+                        dbAImage[123][2] = "Images/C1.Microchitze/Img123Uranus.png";  dbAImageSrc[123][2] = "becuo.com";
 dbQList[ 124] = [];
 dbQList[ 124][0] = "Care era prenumele naturalistului francez Georges Cuvier (1769-1832)?";  
 dbQList[ 124][1] = "What was the given name of French naturalist George Cuvier (1769-1832)?"; 
@@ -4093,13 +4093,13 @@ dbQList[ 124][2] = "Was war der Vorname des franz&#246;sischen Naturforscher Geo
                         dbQHint[ 124][1] = ""; //hint en
                         dbQHint[ 124][2] = ""; //hint de
                         dbQImage[124] = []; dbQImageSrc[124] = []; 
-                        dbQImage[124][0] = "Images/1.Microchitze/124Cuvier.png";	dbQImageSrc[124][0] = "yooniqimages.com";
-                        dbQImage[124][1] = "Images/1.Microchitze/124Cuvier.png";	dbQImageSrc[124][1] = "yooniqimages.com";
-                        dbQImage[124][2] = "Images/1.Microchitze/124Cuvier.png";	dbQImageSrc[124][2] = "yooniqimages.com";
+                        dbQImage[124][0] = "Images/C1.Microchitze/Img124Cuvier.png";	dbQImageSrc[124][0] = "yooniqimages.com";
+                        dbQImage[124][1] = "Images/C1.Microchitze/Img124Cuvier.png";	dbQImageSrc[124][1] = "yooniqimages.com";
+                        dbQImage[124][2] = "Images/C1.Microchitze/Img124Cuvier.png";	dbQImageSrc[124][2] = "yooniqimages.com";
                         dbAImage[124] = [];							dbAImageSrc[124] = [];
-                        dbAImage[124][0] = "Images/1.Microchitze/124Cuvier.png";  dbAImageSrc[124][0] = "yooniqimages.com";
-                        dbAImage[124][1] = "Images/1.Microchitze/124Cuvier.png";  dbAImageSrc[124][1] = "yooniqimages.com";
-                        dbAImage[124][2] = "Images/1.Microchitze/124Cuvier.png";  dbAImageSrc[124][2] = "yooniqimages.com";
+                        dbAImage[124][0] = "Images/C1.Microchitze/Img124Cuvier.png";  dbAImageSrc[124][0] = "yooniqimages.com";
+                        dbAImage[124][1] = "Images/C1.Microchitze/Img124Cuvier.png";  dbAImageSrc[124][1] = "yooniqimages.com";
+                        dbAImage[124][2] = "Images/C1.Microchitze/Img124Cuvier.png";  dbAImageSrc[124][2] = "yooniqimages.com";
 dbQList[ 125] = [];
 dbQList[ 125][0] = "De unde vine numele elementului chimic Cobalt?";  
 dbQList[ 125][1] = "Where does the name of element Cobalt come from?";  
@@ -4124,13 +4124,13 @@ dbQList[ 125][2] = "Woher kommt der Name des Elements Cobalt (Kobalt)?";
                         dbQHint[ 125][1] = ""; //hint en
                         dbQHint[ 125][2] = ""; //hint de
                         dbQImage[125] = []; dbQImageSrc[125] = []; 
-                        dbQImage[125][0] = "Images/1.Microchitze/125Cobalt.png";	dbQImageSrc[125][0] = "www.easycalculation.com";
-                        dbQImage[125][1] = "Images/1.Microchitze/125Cobalt.png";	dbQImageSrc[125][1] = "www.easycalculation.com";
-                        dbQImage[125][2] = "Images/1.Microchitze/125Cobalt.png";	dbQImageSrc[125][2] = "www.easycalculation.com";
+                        dbQImage[125][0] = "Images/C1.Microchitze/Img125Cobalt.png";	dbQImageSrc[125][0] = "www.easycalculation.com";
+                        dbQImage[125][1] = "Images/C1.Microchitze/Img125Cobalt.png";	dbQImageSrc[125][1] = "www.easycalculation.com";
+                        dbQImage[125][2] = "Images/C1.Microchitze/Img125Cobalt.png";	dbQImageSrc[125][2] = "www.easycalculation.com";
                         dbAImage[125] = [];							dbAImageSrc[125] = [];
-                        dbAImage[125][0] = "Images/1.Microchitze/125Kobold.png";  dbAImageSrc[125][0] = "finanznews-blog.de";
-                        dbAImage[125][1] = "Images/1.Microchitze/125Kobold.png";  dbAImageSrc[125][1] = "finanznews-blog.de";
-                        dbAImage[125][2] = "Images/1.Microchitze/125Kobold.png";  dbAImageSrc[125][2] = "finanznews-blog.de";
+                        dbAImage[125][0] = "Images/C1.Microchitze/Img125Kobold.png";  dbAImageSrc[125][0] = "finanznews-blog.de";
+                        dbAImage[125][1] = "Images/C1.Microchitze/Img125Kobold.png";  dbAImageSrc[125][1] = "finanznews-blog.de";
+                        dbAImage[125][2] = "Images/C1.Microchitze/Img125Kobold.png";  dbAImageSrc[125][2] = "finanznews-blog.de";
 dbQList[ 126] = [];
 dbQList[ 126][0] = "Ce culoare are cutia neagr&#x103; a avioanelor?"; 
 dbQList[ 126][1] = "What colour is a plane's black box?";  
@@ -4155,13 +4155,13 @@ dbQList[ 126][2] = "Welche Farbe hat die Blackbox in Flugzeuge?";
                         dbQHint[ 126][1] = ""; //hint en
                         dbQHint[ 126][2] = ""; //hint de
                         dbQImage[126] = []; dbQImageSrc[126] = []; 
-                        dbQImage[126][0] = "Images/1.Microchitze/126Burnt.png";	dbQImageSrc[126][0] = "www.pinterest.com";
-                        dbQImage[126][1] = "Images/1.Microchitze/126Burnt.png";	dbQImageSrc[126][1] = "www.pinterest.com";
-                        dbQImage[126][2] = "Images/1.Microchitze/126Burnt.png";	dbQImageSrc[126][2] = "www.pinterest.com";
+                        dbQImage[126][0] = "Images/C1.Microchitze/Img126Burnt.png";	dbQImageSrc[126][0] = "www.pinterest.com";
+                        dbQImage[126][1] = "Images/C1.Microchitze/Img126Burnt.png";	dbQImageSrc[126][1] = "www.pinterest.com";
+                        dbQImage[126][2] = "Images/C1.Microchitze/Img126Burnt.png";	dbQImageSrc[126][2] = "www.pinterest.com";
                         dbAImage[126] = [];							dbAImageSrc[126] = [];
-                        dbAImage[126][0] = "Images/1.Microchitze/126FlightRecorder.png";  dbAImageSrc[126][0] = "mentalfloss.com";
-                        dbAImage[126][1] = "Images/1.Microchitze/126FlightRecorder.png";  dbAImageSrc[126][1] = "mentalfloss.com";
-                        dbAImage[126][2] = "Images/1.Microchitze/126FlightRecorder.png";  dbAImageSrc[126][2] = "mentalfloss.com";
+                        dbAImage[126][0] = "Images/C1.Microchitze/Img126FlightRecorder.png";  dbAImageSrc[126][0] = "mentalfloss.com";
+                        dbAImage[126][1] = "Images/C1.Microchitze/Img126FlightRecorder.png";  dbAImageSrc[126][1] = "mentalfloss.com";
+                        dbAImage[126][2] = "Images/C1.Microchitze/Img126FlightRecorder.png";  dbAImageSrc[126][2] = "mentalfloss.com";
 dbQList[ 127] = [];
 dbQList[ 127][0] = "&#xCE;n ce &#x163;ara sunt produse p&#x103;l&#x103;riile de Panama autentice?";   
 dbQList[ 127][1] = "In which country are the authentic Panama hats made?";  
@@ -4186,13 +4186,13 @@ dbQList[ 127][2] = "In welchem Land sind die echten Panamah&#252;te gemacht?";
                         dbQHint[ 127][1] = ""; //hint en
                         dbQHint[ 127][2] = ""; //hint de
                         dbQImage[127] = []; dbQImageSrc[127] = []; 
-                        dbQImage[127][0] = "Images/1.Microchitze/127PanamaHat.png";	dbQImageSrc[127][0] = "www.cnjtc.com";
-                        dbQImage[127][1] = "Images/1.Microchitze/127PanamaHat.png";	dbQImageSrc[127][1] = "www.cnjtc.com";
-                        dbQImage[127][2] = "Images/1.Microchitze/127PanamaHat.png";	dbQImageSrc[127][2] = "www.cnjtc.com";
+                        dbQImage[127][0] = "Images/C1.Microchitze/Img127PanamaHat.png";	dbQImageSrc[127][0] = "www.cnjtc.com";
+                        dbQImage[127][1] = "Images/C1.Microchitze/Img127PanamaHat.png";	dbQImageSrc[127][1] = "www.cnjtc.com";
+                        dbQImage[127][2] = "Images/C1.Microchitze/Img127PanamaHat.png";	dbQImageSrc[127][2] = "www.cnjtc.com";
                         dbAImage[127] = [];							dbAImageSrc[127] = [];
-                        dbAImage[127][0] = "Images/1.Microchitze/127PanamaHat.png";  dbAImageSrc[127][0] = "www.cnjtc.com";
-                        dbAImage[127][1] = "Images/1.Microchitze/127PanamaHat.png";  dbAImageSrc[127][1] = "www.cnjtc.com";
-                        dbAImage[127][2] = "Images/1.Microchitze/127PanamaHat.png";  dbAImageSrc[127][2] = "www.cnjtc.com";
+                        dbAImage[127][0] = "Images/C1.Microchitze/Img127PanamaHat.png";  dbAImageSrc[127][0] = "www.cnjtc.com";
+                        dbAImage[127][1] = "Images/C1.Microchitze/Img127PanamaHat.png";  dbAImageSrc[127][1] = "www.cnjtc.com";
+                        dbAImage[127][2] = "Images/C1.Microchitze/Img127PanamaHat.png";  dbAImageSrc[127][2] = "www.cnjtc.com";
 dbQList[ 128] = [];
 dbQList[ 128][0] = "Ce limb&#x103; are cel mai mare num&#x103;r de vorbitori?";   
 dbQList[ 128][1] = "Which language has the greatest number of speakers?";  
@@ -4217,13 +4217,13 @@ dbQList[ 128][2] = "Welche Sprache hat die gr&#246;&#223;te Anzahl von Sprechern
                         dbQHint[ 128][1] = ""; //hint en
                         dbQHint[ 128][2] = ""; //hint de
                         dbQImage[128] = []; dbQImageSrc[128] = []; 
-                        dbQImage[128][0] = "Images/1.Microchitze/128Languages.png";	dbQImageSrc[128][0] = "blog.internationalstudent.com";
-                        dbQImage[128][1] = "Images/1.Microchitze/128Languages.png";	dbQImageSrc[128][1] = "blog.internationalstudent.com";
-                        dbQImage[128][2] = "Images/1.Microchitze/128Languages.png";	dbQImageSrc[128][2] = "blog.internationalstudent.com";
+                        dbQImage[128][0] = "Images/C1.Microchitze/Img128Languages.png";	dbQImageSrc[128][0] = "blog.internationalstudent.com";
+                        dbQImage[128][1] = "Images/C1.Microchitze/Img128Languages.png";	dbQImageSrc[128][1] = "blog.internationalstudent.com";
+                        dbQImage[128][2] = "Images/C1.Microchitze/Img128Languages.png";	dbQImageSrc[128][2] = "blog.internationalstudent.com";
                         dbAImage[128] = [];							dbAImageSrc[128] = [];
-                        dbAImage[128][0] = "Images/1.Microchitze/128Bars.png";  dbAImageSrc[128][0] = "www.statschat.org.nz";
-                        dbAImage[128][1] = "Images/1.Microchitze/128Bars.png";  dbAImageSrc[128][1] = "www.statschat.org.nz";
-                        dbAImage[128][2] = "Images/1.Microchitze/128Bars.png";  dbAImageSrc[128][2] = "www.statschat.org.nz";
+                        dbAImage[128][0] = "Images/C1.Microchitze/Img128Bars.png";  dbAImageSrc[128][0] = "www.statschat.org.nz";
+                        dbAImage[128][1] = "Images/C1.Microchitze/Img128Bars.png";  dbAImageSrc[128][1] = "www.statschat.org.nz";
+                        dbAImage[128][2] = "Images/C1.Microchitze/Img128Bars.png";  dbAImageSrc[128][2] = "www.statschat.org.nz";
 dbQList[ 129] = [];
 dbQList[ 129][0] = "C&#xE2;te p&#x103;trate sunt pe o tabl&#x103; de &#x15F;ah?";    
 dbQList[ 129][1] = "How many squares are there on a chess board?";  
@@ -4248,13 +4248,13 @@ dbQList[ 129][2] = "Wie viele Quadrate gibt es auf einem Schachbrett?";
                         dbQHint[ 129][1] = ""; //hint en
                         dbQHint[ 129][2] = ""; //hint de
                         dbQImage[129] = []; dbQImageSrc[129] = []; 
-                        dbQImage[129][0] = "Images/1.Microchitze/129Chessboard.png";	dbQImageSrc[129][0] = "extremelifechanger.com";
-                        dbQImage[129][1] = "Images/1.Microchitze/129Chessboard.png";	dbQImageSrc[129][1] = "extremelifechanger.com";
-                        dbQImage[129][2] = "Images/1.Microchitze/129Chessboard.png";	dbQImageSrc[129][2] = "extremelifechanger.com";
+                        dbQImage[129][0] = "Images/C1.Microchitze/Img129Chessboard.png";	dbQImageSrc[129][0] = "extremelifechanger.com";
+                        dbQImage[129][1] = "Images/C1.Microchitze/Img129Chessboard.png";	dbQImageSrc[129][1] = "extremelifechanger.com";
+                        dbQImage[129][2] = "Images/C1.Microchitze/Img129Chessboard.png";	dbQImageSrc[129][2] = "extremelifechanger.com";
                         dbAImage[129] = [];							dbAImageSrc[129] = [];
-                        dbAImage[129][0] = "Images/1.Microchitze/129Squares.png";  dbAImageSrc[129][0] = "mathandmultimedia.com";
-                        dbAImage[129][1] = "Images/1.Microchitze/129Squares.png";  dbAImageSrc[129][1] = "mathandmultimedia.com";
-                        dbAImage[129][2] = "Images/1.Microchitze/129Squares.png";  dbAImageSrc[129][2] = "mathandmultimedia.com";
+                        dbAImage[129][0] = "Images/C1.Microchitze/Img129Squares.png";  dbAImageSrc[129][0] = "mathandmultimedia.com";
+                        dbAImage[129][1] = "Images/C1.Microchitze/Img129Squares.png";  dbAImageSrc[129][1] = "mathandmultimedia.com";
+                        dbAImage[129][2] = "Images/C1.Microchitze/Img129Squares.png";  dbAImageSrc[129][2] = "mathandmultimedia.com";
                     
 // MINIMIX B ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // MINIMIX B ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4290,13 +4290,13 @@ dbQList[ 130][2] = "Im Durchschnitt, w&#228;hrend wie viele N&#xE4;chte im Jahr 
                         dbQHint[ 130][1] = ""; //hint en
                         dbQHint[ 130][2] = ""; //hint de
                         dbQImage[130] = []; dbQImageSrc[130] = []; 
-                        dbQImage[130][0] = "Images/1.Microchitze/130EveningStar.png";	dbQImageSrc[130][0] = "indianapublicmedia.org";
-                        dbQImage[130][1] = "Images/1.Microchitze/130EveningStar.png";	dbQImageSrc[130][1] = "indianapublicmedia.org";
-                        dbQImage[130][2] = "Images/1.Microchitze/130EveningStar.png";	dbQImageSrc[130][2] = "indianapublicmedia.org";
+                        dbQImage[130][0] = "Images/C1.Microchitze/Img130EveningStar.png";	dbQImageSrc[130][0] = "indianapublicmedia.org";
+                        dbQImage[130][1] = "Images/C1.Microchitze/Img130EveningStar.png";	dbQImageSrc[130][1] = "indianapublicmedia.org";
+                        dbQImage[130][2] = "Images/C1.Microchitze/Img130EveningStar.png";	dbQImageSrc[130][2] = "indianapublicmedia.org";
                         dbAImage[130] = [];							  dbAImageSrc[130] = [];
-                        dbAImage[130][0] = "Images/1.Microchitze/130Venus.png";  dbAImageSrc[130][0] = "sensuouscurmudgeon.wordpress.com";
-                        dbAImage[130][1] = "Images/1.Microchitze/130Venus.png";  dbAImageSrc[130][1] = "sensuouscurmudgeon.wordpress.com";
-                        dbAImage[130][2] = "Images/1.Microchitze/130Venus.png";  dbAImageSrc[130][2] = "sensuouscurmudgeon.wordpress.com";
+                        dbAImage[130][0] = "Images/C1.Microchitze/Img130Venus.png";  dbAImageSrc[130][0] = "sensuouscurmudgeon.wordpress.com";
+                        dbAImage[130][1] = "Images/C1.Microchitze/Img130Venus.png";  dbAImageSrc[130][1] = "sensuouscurmudgeon.wordpress.com";
+                        dbAImage[130][2] = "Images/C1.Microchitze/Img130Venus.png";  dbAImageSrc[130][2] = "sensuouscurmudgeon.wordpress.com";
 dbQList[ 131] = [];
 dbQList[ 131][0] = "&#xCE;n ce direc&#x163;ie ( N, NV, V, SV, S, SE, E sau NE ) trebuie traversat canalul Panama pentru a ajunge &#xEE;n Oceanul Pacific?";  
 dbQList[ 131][1] = "In which direction ( N, NW, W, SW, S, SE, E or NE ) must the Panama Canal be navigated in order to reach the Pacific Ocean?"; 
@@ -4321,13 +4321,13 @@ dbQList[ 131][2] = "In welcher Richtung (N, NW, W, SW, S, SO, O oder NO) muss de
                         dbQHint[ 131][1] = ""; //hint en
                         dbQHint[ 131][2] = ""; //hint de
                         dbQImage[131] = []; dbQImageSrc[131] = []; 
-                        dbQImage[131][0] = "Images/1.Microchitze/131PanamaCanal.png";	dbQImageSrc[131][0] = "beyondthepunchline.blogspot.com";
-                        dbQImage[131][1] = "Images/1.Microchitze/131PanamaCanal.png";	dbQImageSrc[131][1] = "beyondthepunchline.blogspot.com";
-                        dbQImage[131][2] = "Images/1.Microchitze/131PanamaCanal.png";	dbQImageSrc[131][2] = "beyondthepunchline.blogspot.com";
+                        dbQImage[131][0] = "Images/C1.Microchitze/Img131PanamaCanal.png";	dbQImageSrc[131][0] = "beyondthepunchline.blogspot.com";
+                        dbQImage[131][1] = "Images/C1.Microchitze/Img131PanamaCanal.png";	dbQImageSrc[131][1] = "beyondthepunchline.blogspot.com";
+                        dbQImage[131][2] = "Images/C1.Microchitze/Img131PanamaCanal.png";	dbQImageSrc[131][2] = "beyondthepunchline.blogspot.com";
                         dbAImage[131] = [];							dbAImageSrc[131] = [];
-                        dbAImage[131][0] = "Images/1.Microchitze/131PanamaMap.png";  dbAImageSrc[131][0] = "dayanaratorresbuzz.blogspot.com";
-                        dbAImage[131][1] = "Images/1.Microchitze/131PanamaMap.png";  dbAImageSrc[131][1] = "dayanaratorresbuzz.blogspot.com";
-                        dbAImage[131][2] = "Images/1.Microchitze/131PanamaMap.png";  dbAImageSrc[131][2] = "dayanaratorresbuzz.blogspot.com";
+                        dbAImage[131][0] = "Images/C1.Microchitze/Img131PanamaMap.png";  dbAImageSrc[131][0] = "dayanaratorresbuzz.blogspot.com";
+                        dbAImage[131][1] = "Images/C1.Microchitze/Img131PanamaMap.png";  dbAImageSrc[131][1] = "dayanaratorresbuzz.blogspot.com";
+                        dbAImage[131][2] = "Images/C1.Microchitze/Img131PanamaMap.png";  dbAImageSrc[131][2] = "dayanaratorresbuzz.blogspot.com";
 dbQList[ 132] = [];
 dbQList[ 132][0] = "Ce nume avea Primul R&#x103;zboi Mondial pe medaliile &#xEE;nving&#x103;torilor?";  
 dbQList[ 132][1] = "What name did World War I have on the victors' medals?"; 
@@ -4352,13 +4352,13 @@ dbQList[ 132][2] = "Wie hie&#223; der Erste Weltkrieg auf die Medaillen der Sieg
                         dbQHint[ 132][1] = ""; //hint en
                         dbQHint[ 132][2] = ""; //hint de
                         dbQImage[132] = []; dbQImageSrc[132] = []; 
-                        dbQImage[132][0] = "Images/1.Microchitze/132Juggler.png";	dbQImageSrc[132][0] = "www.dailymail.co.uk";
-                        dbQImage[132][1] = "Images/1.Microchitze/132Juggler.png";	dbQImageSrc[132][1] = "www.dailymail.co.uk";
-                        dbQImage[132][2] = "Images/1.Microchitze/132Juggler.png";	dbQImageSrc[132][2] = "www.dailymail.co.uk";
+                        dbQImage[132][0] = "Images/C1.Microchitze/Img132Juggler.png";	dbQImageSrc[132][0] = "www.dailymail.co.uk";
+                        dbQImage[132][1] = "Images/C1.Microchitze/Img132Juggler.png";	dbQImageSrc[132][1] = "www.dailymail.co.uk";
+                        dbQImage[132][2] = "Images/C1.Microchitze/Img132Juggler.png";	dbQImageSrc[132][2] = "www.dailymail.co.uk";
                         dbAImage[132] = [];							dbAImageSrc[132] = [];
-                        dbAImage[132][0] = "Images/1.Microchitze/132Medal.png";  dbAImageSrc[132][0] = "www.borlin-family.com";
-                        dbAImage[132][1] = "Images/1.Microchitze/132Medal.png";  dbAImageSrc[132][1] = "www.borlin-family.com";
-                        dbAImage[132][2] = "Images/1.Microchitze/132Medal.png";  dbAImageSrc[132][2] = "www.borlin-family.com";
+                        dbAImage[132][0] = "Images/C1.Microchitze/Img132Medal.png";  dbAImageSrc[132][0] = "www.borlin-family.com";
+                        dbAImage[132][1] = "Images/C1.Microchitze/Img132Medal.png";  dbAImageSrc[132][1] = "www.borlin-family.com";
+                        dbAImage[132][2] = "Images/C1.Microchitze/Img132Medal.png";  dbAImageSrc[132][2] = "www.borlin-family.com";
 dbQList[ 133] = [];
 dbQList[ 133][0] = "Ce na&#x163;ionalitate are Aladdin &#xEE;n \"O mie &#x15F;i una de nop&#x163;i\"? ";   
 dbQList[ 133][1] = "What nationality does Aladdin have in \"The Book of One Thousand and One Nights\" (\"The Arabian Nights\")?"; 
@@ -4383,13 +4383,13 @@ dbQList[ 133][2] = "Welche Nationalit&#228;t hat Aladdin in \"Tausendundeine Nac
                         dbQHint[ 133][1] = ""; //hint en
                         dbQHint[ 133][2] = ""; //hint de
                         dbQImage[133] = []; dbQImageSrc[133] = []; 
-                        dbQImage[133][0] = "Images/1.Microchitze/133Aladdin.png";	dbQImageSrc[133][0] = "www.sodahead.com";
-                        dbQImage[133][1] = "Images/1.Microchitze/133Aladdin.png";	dbQImageSrc[133][1] = "www.sodahead.com";
-                        dbQImage[133][2] = "Images/1.Microchitze/133Aladdin.png";	dbQImageSrc[133][2] = "www.sodahead.com";
+                        dbQImage[133][0] = "Images/C1.Microchitze/Img133Aladdin.png";	dbQImageSrc[133][0] = "www.sodahead.com";
+                        dbQImage[133][1] = "Images/C1.Microchitze/Img133Aladdin.png";	dbQImageSrc[133][1] = "www.sodahead.com";
+                        dbQImage[133][2] = "Images/C1.Microchitze/Img133Aladdin.png";	dbQImageSrc[133][2] = "www.sodahead.com";
                         dbAImage[133] = [];							dbAImageSrc[133] = [];
-                        dbAImage[133][0] = "Images/1.Microchitze/133Chinese.png";  dbAImageSrc[133][0] = "storyseer.blogspot.com";
-                        dbAImage[133][1] = "Images/1.Microchitze/133Chinese.png";  dbAImageSrc[133][1] = "storyseer.blogspot.com";
-                        dbAImage[133][2] = "Images/1.Microchitze/133Chinese.png";  dbAImageSrc[133][2] = "storyseer.blogspot.com";					
+                        dbAImage[133][0] = "Images/C1.Microchitze/Img133Chinese.png";  dbAImageSrc[133][0] = "storyseer.blogspot.com";
+                        dbAImage[133][1] = "Images/C1.Microchitze/Img133Chinese.png";  dbAImageSrc[133][1] = "storyseer.blogspot.com";
+                        dbAImage[133][2] = "Images/C1.Microchitze/Img133Chinese.png";  dbAImageSrc[133][2] = "storyseer.blogspot.com";					
 dbQList[ 134] = [];
 dbQList[ 134][0] = "Care era prenumele lui Frankenstein &#xEE;n nuvela de Mary Shelley?";  
 dbQList[ 134][1] = "What was the Frankenstein's first name in Mary Shelley's novel?"; 
@@ -4414,13 +4414,13 @@ dbQList[ 134][2] = "Was war Frankensteins Vorname in Mary Shelleys Roman?";
                         dbQHint[ 134][1] = ""; //hint en
                         dbQHint[ 134][2] = ""; //hint de
                         dbQImage[134] = []; dbQImageSrc[134] = []; 
-                        dbQImage[134][0] = "Images/1.Microchitze/134Frankestein.png";	dbQImageSrc[134][0] = "shenanitims.wordpress.com";
-                        dbQImage[134][1] = "Images/1.Microchitze/134Frankestein.png";	dbQImageSrc[134][1] = "shenanitims.wordpress.com";
-                        dbQImage[134][2] = "Images/1.Microchitze/134Frankestein.png";	dbQImageSrc[134][2] = "shenanitims.wordpress.com";
+                        dbQImage[134][0] = "Images/C1.Microchitze/Img134Frankestein.png";	dbQImageSrc[134][0] = "shenanitims.wordpress.com";
+                        dbQImage[134][1] = "Images/C1.Microchitze/Img134Frankestein.png";	dbQImageSrc[134][1] = "shenanitims.wordpress.com";
+                        dbQImage[134][2] = "Images/C1.Microchitze/Img134Frankestein.png";	dbQImageSrc[134][2] = "shenanitims.wordpress.com";
                         dbAImage[134] = [];							dbAImageSrc[134] = [];
-                        dbAImage[134][0] = "Images/1.Microchitze/134Victor.png";  dbAImageSrc[134][0] = "nerdfighters.ning.com";
-                        dbAImage[134][1] = "Images/1.Microchitze/134Victor.png";  dbAImageSrc[134][1] = "nerdfighters.ning.com";
-                        dbAImage[134][2] = "Images/1.Microchitze/134Victor.png";  dbAImageSrc[134][2] = "nerdfighters.ning.com";
+                        dbAImage[134][0] = "Images/C1.Microchitze/Img134Victor.png";  dbAImageSrc[134][0] = "nerdfighters.ning.com";
+                        dbAImage[134][1] = "Images/C1.Microchitze/Img134Victor.png";  dbAImageSrc[134][1] = "nerdfighters.ning.com";
+                        dbAImage[134][2] = "Images/C1.Microchitze/Img134Victor.png";  dbAImageSrc[134][2] = "nerdfighters.ning.com";
 dbQList[ 135] = [];
 dbQList[ 135][0] = "Care mamifere au coarne &#xEE;nca de la na&#x15F;tere?";  
 dbQList[ 135][1] = "Which mammals have horns already from birth?"; 
@@ -4445,13 +4445,13 @@ dbQList[ 135][2] = "Welche S&#228;ugetiere haben H&#246;rner bereits von Geburt 
                         dbQHint[ 135][1] = ""; //hint en
                         dbQHint[ 135][2] = ""; //hint de
                         dbQImage[135] = []; dbQImageSrc[135] = []; 
-                        dbQImage[135][0] = "Images/1.Microchitze/135Dragon.png";	dbQImageSrc[135][0] = "www.zazzle.co.uk";
-                        dbQImage[135][1] = "Images/1.Microchitze/135Dragon.png";	dbQImageSrc[135][1] = "www.zazzle.co.uk";
-                        dbQImage[135][2] = "Images/1.Microchitze/135Dragon.png";	dbQImageSrc[135][2] = "www.zazzle.co.uk";
+                        dbQImage[135][0] = "Images/C1.Microchitze/Img135Dragon.png";	dbQImageSrc[135][0] = "www.zazzle.co.uk";
+                        dbQImage[135][1] = "Images/C1.Microchitze/Img135Dragon.png";	dbQImageSrc[135][1] = "www.zazzle.co.uk";
+                        dbQImage[135][2] = "Images/C1.Microchitze/Img135Dragon.png";	dbQImageSrc[135][2] = "www.zazzle.co.uk";
                         dbAImage[135] = [];							dbAImageSrc[135] = [];
-                        dbAImage[135][0] = "Images/1.Microchitze/135Giraffe.png";  dbAImageSrc[135][0] = "www.giraffeconservation.org";
-                        dbAImage[135][1] = "Images/1.Microchitze/135Giraffe.png";  dbAImageSrc[135][1] = "www.giraffeconservation.org";
-                        dbAImage[135][2] = "Images/1.Microchitze/135Giraffe.png";  dbAImageSrc[135][2] = "www.giraffeconservation.org";
+                        dbAImage[135][0] = "Images/C1.Microchitze/Img135Giraffe.png";  dbAImageSrc[135][0] = "www.giraffeconservation.org";
+                        dbAImage[135][1] = "Images/C1.Microchitze/Img135Giraffe.png";  dbAImageSrc[135][1] = "www.giraffeconservation.org";
+                        dbAImage[135][2] = "Images/C1.Microchitze/Img135Giraffe.png";  dbAImageSrc[135][2] = "www.giraffeconservation.org";
 dbQList[ 136] = [];
 dbQList[ 136][0] = "De ce m&#x103;n&#xE2;nc&#x103; oile albe mai mult&#x103; iarb&#x103; dec&#xE2;t oile negre?";  
 dbQList[ 136][1] = "Why do white sheep eat more grass than black sheep?"; 
@@ -4476,13 +4476,13 @@ dbQList[ 136][2] = "Warum essen wei&#223;e Schafe mehr Gras als schwarze Schafe?
                         dbQHint[ 136][1] = ""; //hint en
                         dbQHint[ 136][2] = ""; //hint de
                         dbQImage[136] = []; dbQImageSrc[136] = []; 
-                        dbQImage[136][0] = "Images/1.Microchitze/136Sheep.png";	dbQImageSrc[136][0] = "www.wallpaperfo.com";
-                        dbQImage[136][1] = "Images/1.Microchitze/136Sheep.png";	dbQImageSrc[136][1] = "www.wallpaperfo.com";
-                        dbQImage[136][2] = "Images/1.Microchitze/136Sheep.png";	dbQImageSrc[136][2] = "www.wallpaperfo.com";
+                        dbQImage[136][0] = "Images/C1.Microchitze/Img136Sheep.png";	dbQImageSrc[136][0] = "www.wallpaperfo.com";
+                        dbQImage[136][1] = "Images/C1.Microchitze/Img136Sheep.png";	dbQImageSrc[136][1] = "www.wallpaperfo.com";
+                        dbQImage[136][2] = "Images/C1.Microchitze/Img136Sheep.png";	dbQImageSrc[136][2] = "www.wallpaperfo.com";
                         dbAImage[136] = [];							dbAImageSrc[136] = [];
-                        dbAImage[136][0] = "Images/1.Microchitze/136Sheep2.png";  dbAImageSrc[136][0] = "www.wallpaperfo.com";
-                        dbAImage[136][1] = "Images/1.Microchitze/136Sheep2.png";  dbAImageSrc[136][1] = "www.wallpaperfo.com";
-                        dbAImage[136][2] = "Images/1.Microchitze/136Sheep2.png";  dbAImageSrc[136][2] = "www.wallpaperfo.com";
+                        dbAImage[136][0] = "Images/C1.Microchitze/Img136Sheep2.png";  dbAImageSrc[136][0] = "www.wallpaperfo.com";
+                        dbAImage[136][1] = "Images/C1.Microchitze/Img136Sheep2.png";  dbAImageSrc[136][1] = "www.wallpaperfo.com";
+                        dbAImage[136][2] = "Images/C1.Microchitze/Img136Sheep2.png";  dbAImageSrc[136][2] = "www.wallpaperfo.com";
 dbQList[ 137] = [];
 dbQList[ 137][0] = "Care este numele &#x15F;tiin&#x163;ific al brontozaurului?";  
 dbQList[ 137][1] = "Which is the scientific name of the brontosaur (the Thunder Lizard)?"; 
@@ -4507,13 +4507,13 @@ dbQList[ 137][2] = "Was ist der wissenschaftliche Name des Brontosaurus (die Don
                         dbQHint[ 137][1] = ""; //hint en
                         dbQHint[ 137][2] = ""; //hint de
                         dbQImage[137] = []; dbQImageSrc[137] = []; 
-                        dbQImage[137][0] = "Images/1.Microchitze/137Brontosaurus.png";	dbQImageSrc[137][0] = "thrivingatschool.com";
-                        dbQImage[137][1] = "Images/1.Microchitze/137Brontosaurus.png";	dbQImageSrc[137][1] = "thrivingatschool.com";
-                        dbQImage[137][2] = "Images/1.Microchitze/137Brontosaurus.png";	dbQImageSrc[137][2] = "thrivingatschool.com";
+                        dbQImage[137][0] = "Images/C1.Microchitze/Img137Brontosaurus.png";	dbQImageSrc[137][0] = "thrivingatschool.com";
+                        dbQImage[137][1] = "Images/C1.Microchitze/Img137Brontosaurus.png";	dbQImageSrc[137][1] = "thrivingatschool.com";
+                        dbQImage[137][2] = "Images/C1.Microchitze/Img137Brontosaurus.png";	dbQImageSrc[137][2] = "thrivingatschool.com";
                         dbAImage[137] = [];							dbAImageSrc[137] = [];
-                        dbAImage[137][0] = "Images/1.Microchitze/137Apatosaurus.png";  dbAImageSrc[137][0] = "imgur.com";
-                        dbAImage[137][1] = "Images/1.Microchitze/137Apatosaurus.png";  dbAImageSrc[137][1] = "imgur.com";
-                        dbAImage[137][2] = "Images/1.Microchitze/137Apatosaurus.png";  dbAImageSrc[137][2] = "imgur.com";
+                        dbAImage[137][0] = "Images/C1.Microchitze/Img137Apatosaurus.png";  dbAImageSrc[137][0] = "imgur.com";
+                        dbAImage[137][1] = "Images/C1.Microchitze/Img137Apatosaurus.png";  dbAImageSrc[137][1] = "imgur.com";
+                        dbAImage[137][2] = "Images/C1.Microchitze/Img137Apatosaurus.png";  dbAImageSrc[137][2] = "imgur.com";
 dbQList[ 138] = [];
 dbQList[ 138][0] = "Care este codul auto international pentru Elvetia?";  
 dbQList[ 138][1] = "What is the international licence plate country code for Switzerland?"; 
@@ -4538,13 +4538,13 @@ dbQList[ 138][2] = "Was ist das internationale Landeskennzeichen f&#xFC;r Kraftf
                         dbQHint[ 138][1] = ""; //hint en
                         dbQHint[ 138][2] = ""; //hint de
                         dbQImage[138] = []; dbQImageSrc[138] = []; 
-                        dbQImage[138][0] = "Images/1.Microchitze/138Tank.png";	dbQImageSrc[138][0] = "www.macgyveronline.com";
-                        dbQImage[138][1] = "Images/1.Microchitze/138Tank.png";	dbQImageSrc[138][1] = "www.macgyveronline.com";
-                        dbQImage[138][2] = "Images/1.Microchitze/138Tank.png";	dbQImageSrc[138][2] = "www.macgyveronline.com";
+                        dbQImage[138][0] = "Images/C1.Microchitze/Img138Tank.png";	dbQImageSrc[138][0] = "www.macgyveronline.com";
+                        dbQImage[138][1] = "Images/C1.Microchitze/Img138Tank.png";	dbQImageSrc[138][1] = "www.macgyveronline.com";
+                        dbQImage[138][2] = "Images/C1.Microchitze/Img138Tank.png";	dbQImageSrc[138][2] = "www.macgyveronline.com";
                         dbAImage[138] = [];							dbAImageSrc[138] = [];
-                        dbAImage[138][0] = "Images/1.Microchitze/138CH.png";  dbAImageSrc[138][0] = "en.comparis.ch";
-                        dbAImage[138][1] = "Images/1.Microchitze/138CH.png";  dbAImageSrc[138][1] = "en.comparis.ch";
-                        dbAImage[138][2] = "Images/1.Microchitze/138CH.png";  dbAImageSrc[138][2] = "en.comparis.ch";
+                        dbAImage[138][0] = "Images/C1.Microchitze/Img138CH.png";  dbAImageSrc[138][0] = "en.comparis.ch";
+                        dbAImage[138][1] = "Images/C1.Microchitze/Img138CH.png";  dbAImageSrc[138][1] = "en.comparis.ch";
+                        dbAImage[138][2] = "Images/C1.Microchitze/Img138CH.png";  dbAImageSrc[138][2] = "en.comparis.ch";
 dbQList[ 139] = [];
 dbQList[ 139][0] = "C&#xE2;nd o ma&#x15F;in&#x103; ia o curb&#x103; str&#xE2;ns&#x103; la st&#xE2;nga, care roat&#x103; se &#xEE;nv&#xE2;rte mai pu&#x163;in?";  
 dbQList[ 139][1] = "When a car takes a sharp turn to the left, which wheel spins the least?"; 
@@ -4569,13 +4569,13 @@ dbQList[ 139][2] = "Wenn ein Auto eine scharfe Kurve nach Links nimmt, welches R
                         dbQHint[ 139][1] = ""; //hint en
                         dbQHint[ 139][2] = ""; //hint de
                         dbQImage[139] = []; dbQImageSrc[139] = []; 
-                        dbQImage[139][0] = "Images/1.Microchitze/139Left.png";	dbQImageSrc[139][0] = "www.cartoonstock.com";
-                        dbQImage[139][1] = "Images/1.Microchitze/139Left.png";	dbQImageSrc[139][1] = "www.cartoonstock.com";
-                        dbQImage[139][2] = "Images/1.Microchitze/139Left.png";	dbQImageSrc[139][2] = "www.cartoonstock.com";
+                        dbQImage[139][0] = "Images/C1.Microchitze/Img139Left.png";	dbQImageSrc[139][0] = "www.cartoonstock.com";
+                        dbQImage[139][1] = "Images/C1.Microchitze/Img139Left.png";	dbQImageSrc[139][1] = "www.cartoonstock.com";
+                        dbQImage[139][2] = "Images/C1.Microchitze/Img139Left.png";	dbQImageSrc[139][2] = "www.cartoonstock.com";
                         dbAImage[139] = [];							dbAImageSrc[139] = [];
-                        dbAImage[139][0] = "Images/1.Microchitze/139Spare.png";  dbAImageSrc[139][0] = "www.team-bhp.com";
-                        dbAImage[139][1] = "Images/1.Microchitze/139Spare.png";  dbAImageSrc[139][1] = "www.team-bhp.com";
-                        dbAImage[139][2] = "Images/1.Microchitze/139Spare.png";  dbAImageSrc[139][2] = "www.team-bhp.com";
+                        dbAImage[139][0] = "Images/C1.Microchitze/Img139Spare.png";  dbAImageSrc[139][0] = "www.team-bhp.com";
+                        dbAImage[139][1] = "Images/C1.Microchitze/Img139Spare.png";  dbAImageSrc[139][1] = "www.team-bhp.com";
+                        dbAImage[139][2] = "Images/C1.Microchitze/Img139Spare.png";  dbAImageSrc[139][2] = "www.team-bhp.com";
 
                         
 // MINIMIX INGINER ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4611,13 +4611,13 @@ dbQList[ 140][2] = "Wie viele Buchstaben hat die Antwort zu dieser Frage?";
                         dbQHint[ 140][1] = ""; //hint en
                         dbQHint[ 140][2] = ""; //hint de
                         dbQImage[140] = []; dbQImageSrc[140] = []; 
-                        dbQImage[140][0] = "Images/1.Microchitze/140QMarks.png";	dbQImageSrc[140][0] = "righttruth.typepad.com";
-                        dbQImage[140][1] = "Images/1.Microchitze/140QMarks.png";	dbQImageSrc[140][1] = "righttruth.typepad.com";
-                        dbQImage[140][2] = "Images/1.Microchitze/140QMarks.png";	dbQImageSrc[140][2] = "righttruth.typepad.com";
+                        dbQImage[140][0] = "Images/C1.Microchitze/Img140QMarks.png";	dbQImageSrc[140][0] = "righttruth.typepad.com";
+                        dbQImage[140][1] = "Images/C1.Microchitze/Img140QMarks.png";	dbQImageSrc[140][1] = "righttruth.typepad.com";
+                        dbQImage[140][2] = "Images/C1.Microchitze/Img140QMarks.png";	dbQImageSrc[140][2] = "righttruth.typepad.com";
                         dbAImage[140] = [];							dbAImageSrc[140] = [];
-                        dbAImage[140][0] = "Images/1.Microchitze/140Cinci.png"; dbAImageSrc[140][0] = "www.taverntrove.com";
-                        dbAImage[140][1] = "Images/1.Microchitze/140Four.png";  dbAImageSrc[140][1] = "driverlayer.com";
-                        dbAImage[140][2] = "Images/1.Microchitze/140Vier.png";  dbAImageSrc[140][2] = "brandingsource.blogspot.com";
+                        dbAImage[140][0] = "Images/C1.Microchitze/Img140Cinci.png"; dbAImageSrc[140][0] = "www.taverntrove.com";
+                        dbAImage[140][1] = "Images/C1.Microchitze/Img140Four.png";  dbAImageSrc[140][1] = "driverlayer.com";
+                        dbAImage[140][2] = "Images/C1.Microchitze/Img140Vier.png";  dbAImageSrc[140][2] = "brandingsource.blogspot.com";
 dbQList[ 141] = [];
 dbQList[ 141][0] = "Ce zi a s&#x103;pt&#x103;m&#xE2;nii a fost 30 Februarie 1712 &#xEE;n Suedia?";    
 dbQList[ 141][1] = "What day of the week was 30<sup>th</sup> February 1712 in Sweden?";  
@@ -4642,13 +4642,13 @@ dbQList[ 141][2] = "Welcher Tag der Woche war der 30. Februar 1712 in Schweden?"
                         dbQHint[ 141][1] = ""; //hint en
                         dbQHint[ 141][2] = ""; //hint de
                         dbQImage[141] = []; dbQImageSrc[141] = []; 
-                        dbQImage[141][0] = "Images/1.Microchitze/141Feb30.png";	dbQImageSrc[141][0] = "www.imbecile.me";
-                        dbQImage[141][1] = "Images/1.Microchitze/141Feb30.png";	dbQImageSrc[141][1] = "www.imbecile.me";
-                        dbQImage[141][2] = "Images/1.Microchitze/141Feb30.png";	dbQImageSrc[141][2] = "www.imbecile.me";
+                        dbQImage[141][0] = "Images/C1.Microchitze/Img141Feb30.png";	dbQImageSrc[141][0] = "www.imbecile.me";
+                        dbQImage[141][1] = "Images/C1.Microchitze/Img141Feb30.png";	dbQImageSrc[141][1] = "www.imbecile.me";
+                        dbQImage[141][2] = "Images/C1.Microchitze/Img141Feb30.png";	dbQImageSrc[141][2] = "www.imbecile.me";
                         dbAImage[141] = [];							dbAImageSrc[141] = [];
-                        dbAImage[141][0] = "Images/1.Microchitze/141Feb1712.png";  dbAImageSrc[141][0] = "en.wikipedia.org";
-                        dbAImage[141][1] = "Images/1.Microchitze/141Feb1712.png";  dbAImageSrc[141][1] = "en.wikipedia.org";
-                        dbAImage[141][2] = "Images/1.Microchitze/141Feb1712.png";  dbAImageSrc[141][2] = "en.wikipedia.org";
+                        dbAImage[141][0] = "Images/C1.Microchitze/Img141Feb1712.png";  dbAImageSrc[141][0] = "en.wikipedia.org";
+                        dbAImage[141][1] = "Images/C1.Microchitze/Img141Feb1712.png";  dbAImageSrc[141][1] = "en.wikipedia.org";
+                        dbAImage[141][2] = "Images/C1.Microchitze/Img141Feb1712.png";  dbAImageSrc[141][2] = "en.wikipedia.org";
 dbQList[ 142] = [];
 dbQList[ 142][0] = "C&#xE2;te secunde a avut anul 2012?";    
 dbQList[ 142][1] = "How many seconds did the year 2012 have?";  
@@ -4673,13 +4673,13 @@ dbQList[ 142][2] = "Wie viele Sekunden hat das Jahr 2012 gehabt?";
                         dbQHint[ 142][1] = ""; //hint en
                         dbQHint[ 142][2] = ""; //hint de
                         dbQImage[142] = []; dbQImageSrc[142] = []; 
-                        dbQImage[142][0] = "Images/1.Microchitze/142Message.png";	dbQImageSrc[142][0] = "boardofwisdom.com";
-                        dbQImage[142][1] = "Images/1.Microchitze/142Message.png";	dbQImageSrc[142][1] = "boardofwisdom.com";
-                        dbQImage[142][2] = "Images/1.Microchitze/142Message.png";	dbQImageSrc[142][2] = "boardofwisdom.com";
+                        dbQImage[142][0] = "Images/C1.Microchitze/Img142Message.png";	dbQImageSrc[142][0] = "boardofwisdom.com";
+                        dbQImage[142][1] = "Images/C1.Microchitze/Img142Message.png";	dbQImageSrc[142][1] = "boardofwisdom.com";
+                        dbQImage[142][2] = "Images/C1.Microchitze/Img142Message.png";	dbQImageSrc[142][2] = "boardofwisdom.com";
                         dbAImage[142] = [];							dbAImageSrc[142] = [];
-                        dbAImage[142][0] = "Images/1.Microchitze/142Leap.png";  dbAImageSrc[142][0] = "en.wikipedia.org";
-                        dbAImage[142][1] = "Images/1.Microchitze/142Leap.png";  dbAImageSrc[142][1] = "en.wikipedia.org";
-                        dbAImage[142][2] = "Images/1.Microchitze/142Leap.png";  dbAImageSrc[142][2] = "en.wikipedia.org";
+                        dbAImage[142][0] = "Images/C1.Microchitze/Img142Leap.png";  dbAImageSrc[142][0] = "en.wikipedia.org";
+                        dbAImage[142][1] = "Images/C1.Microchitze/Img142Leap.png";  dbAImageSrc[142][1] = "en.wikipedia.org";
+                        dbAImage[142][2] = "Images/C1.Microchitze/Img142Leap.png";  dbAImageSrc[142][2] = "en.wikipedia.org";
 dbQList[ 143] = [];
 dbQList[ 143][0] = "Care stat con&#x163;ine teritoriul cel mai estic al Statelor Unite?";    
 dbQList[ 143][1] = "Which state contains the easternmost territory of the US?";  
@@ -4704,13 +4704,13 @@ dbQList[ 143][2] = "Welcher Staat enth&#228;lt den &#246;stlichsten Gebiet der U
                         dbQHint[ 143][1] = ""; //hint en
                         dbQHint[ 143][2] = ""; //hint de
                         dbQImage[143] = []; dbQImageSrc[143] = []; 
-                        dbQImage[143][0] = "Images/1.Microchitze/143US.png";	dbQImageSrc[143][0] = "center.serve.org";
-                        dbQImage[143][1] = "Images/1.Microchitze/143US.png";	dbQImageSrc[143][1] = "center.serve.org";
-                        dbQImage[143][2] = "Images/1.Microchitze/143US.png";	dbQImageSrc[143][2] = "center.serve.org";
+                        dbQImage[143][0] = "Images/C1.Microchitze/Img143US.png";	dbQImageSrc[143][0] = "center.serve.org";
+                        dbQImage[143][1] = "Images/C1.Microchitze/Img143US.png";	dbQImageSrc[143][1] = "center.serve.org";
+                        dbQImage[143][2] = "Images/C1.Microchitze/Img143US.png";	dbQImageSrc[143][2] = "center.serve.org";
                         dbAImage[143] = [];							dbAImageSrc[143] = [];
-                        dbAImage[143][0] = "Images/1.Microchitze/143Aleutian.png";  dbAImageSrc[143][0] = "en.wikipedia.org";
-                        dbAImage[143][1] = "Images/1.Microchitze/143Aleutian.png";  dbAImageSrc[143][1] = "en.wikipedia.org";
-                        dbAImage[143][2] = "Images/1.Microchitze/143Aleutian.png";  dbAImageSrc[143][2] = "en.wikipedia.org";
+                        dbAImage[143][0] = "Images/C1.Microchitze/Img143Aleutian.png";  dbAImageSrc[143][0] = "en.wikipedia.org";
+                        dbAImage[143][1] = "Images/C1.Microchitze/Img143Aleutian.png";  dbAImageSrc[143][1] = "en.wikipedia.org";
+                        dbAImage[143][2] = "Images/C1.Microchitze/Img143Aleutian.png";  dbAImageSrc[143][2] = "en.wikipedia.org";
 dbQList[ 144] = [];
 dbQList[ 144][0] = "Dac&#x103; la Londra este miezul nop&#x163;ii de Craciun, c&#xE2;t este ceasul la Polul Sud? <br/>(Sta&#x163;ia Amundsen-Scott) <br/> (HH:MM)";    
 dbQList[ 144][1] = "If it is Christmas midnight in London, what time is it at the South Pole? <br/>(Amundsen-Scott Station) <br/> (HH:MM)";  
@@ -4735,13 +4735,13 @@ dbQList[ 144][2] = "Wenn es in London Weihnachten Mitternacht ist, wie sp&#228;t
                         dbQHint[ 144][1] = ""; //hint en
                         dbQHint[ 144][2] = ""; //hint de
                         dbQImage[144] = []; dbQImageSrc[144] = []; 
-                        dbQImage[144][0] = "Images/1.Microchitze/144SouthPole.png";	dbQImageSrc[144][0] = "www.nsf.gov";
-                        dbQImage[144][1] = "Images/1.Microchitze/144SouthPole.png";	dbQImageSrc[144][1] = "www.nsf.gov";
-                        dbQImage[144][2] = "Images/1.Microchitze/144SouthPole.png";	dbQImageSrc[144][2] = "www.nsf.gov";
+                        dbQImage[144][0] = "Images/C1.Microchitze/Img144SouthPole.png";	dbQImageSrc[144][0] = "www.nsf.gov";
+                        dbQImage[144][1] = "Images/C1.Microchitze/Img144SouthPole.png";	dbQImageSrc[144][1] = "www.nsf.gov";
+                        dbQImage[144][2] = "Images/C1.Microchitze/Img144SouthPole.png";	dbQImageSrc[144][2] = "www.nsf.gov";
                         dbAImage[144] = [];							dbAImageSrc[144] = [];
-                        dbAImage[144][0] = "Images/1.Microchitze/144Antarctica.png";  dbAImageSrc[144][0] = "en.wikipedia.org";
-                        dbAImage[144][1] = "Images/1.Microchitze/144Antarctica.png";  dbAImageSrc[144][1] = "en.wikipedia.org";
-                        dbAImage[144][2] = "Images/1.Microchitze/144Antarctica.png";  dbAImageSrc[144][2] = "en.wikipedia.org";
+                        dbAImage[144][0] = "Images/C1.Microchitze/Img144Antarctica.png";  dbAImageSrc[144][0] = "en.wikipedia.org";
+                        dbAImage[144][1] = "Images/C1.Microchitze/Img144Antarctica.png";  dbAImageSrc[144][1] = "en.wikipedia.org";
+                        dbAImage[144][2] = "Images/C1.Microchitze/Img144Antarctica.png";  dbAImageSrc[144][2] = "en.wikipedia.org";
 dbQList[ 145] = [];
 dbQList[ 145][0] = "Ce a fost primul obiect (f&#x103;cut de om) care a dep&#x103;&#x15F;it viteza sunetului?";    
 dbQList[ 145][1] = "What was the first man-made object that crossed the sound speed?";  
@@ -4766,13 +4766,13 @@ dbQList[ 145][2] = "Was war das erste k&#252;nstliche Objekt, das die Schallgesc
                         dbQHint[ 145][1] = ""; //hint en
                         dbQHint[ 145][2] = ""; //hint de
                         dbQImage[145] = []; dbQImageSrc[145] = []; 
-                        dbQImage[145][0] = "Images/1.Microchitze/145Mach.png";	dbQImageSrc[145][0] = "www.faqalert.com";
-                        dbQImage[145][1] = "Images/1.Microchitze/145Mach.png";	dbQImageSrc[145][1] = "www.faqalert.com";
-                        dbQImage[145][2] = "Images/1.Microchitze/145Mach.png";	dbQImageSrc[145][2] = "www.faqalert.com";
+                        dbQImage[145][0] = "Images/C1.Microchitze/Img145Mach.png";	dbQImageSrc[145][0] = "www.faqalert.com";
+                        dbQImage[145][1] = "Images/C1.Microchitze/Img145Mach.png";	dbQImageSrc[145][1] = "www.faqalert.com";
+                        dbQImage[145][2] = "Images/C1.Microchitze/Img145Mach.png";	dbQImageSrc[145][2] = "www.faqalert.com";
                         dbAImage[145] = [];							dbAImageSrc[145] = [];
-                        dbAImage[145][0] = "Images/1.Microchitze/145Whip.png";  dbAImageSrc[145][0] = "www.golfbrekers.be";
-                        dbAImage[145][1] = "Images/1.Microchitze/145Whip.png";  dbAImageSrc[145][1] = "www.golfbrekers.be";
-                        dbAImage[145][2] = "Images/1.Microchitze/145Whip.png";  dbAImageSrc[145][2] = "www.golfbrekers.be";
+                        dbAImage[145][0] = "Images/C1.Microchitze/Img145Whip.png";  dbAImageSrc[145][0] = "www.golfbrekers.be";
+                        dbAImage[145][1] = "Images/C1.Microchitze/Img145Whip.png";  dbAImageSrc[145][1] = "www.golfbrekers.be";
+                        dbAImage[145][2] = "Images/C1.Microchitze/Img145Whip.png";  dbAImageSrc[145][2] = "www.golfbrekers.be";
 dbQList[ 146] = [];
 dbQList[ 146][0] = "Ce nu avea nevoie un tren cu aburi pentru a merge, dar totu&#x15F;i nu a mers niciodat&#x103; f&#x103;r&#x103;?";    
 dbQList[ 146][1] = "What did a steam train not need in order to work, yet has never worked without?";  
@@ -4797,13 +4797,13 @@ dbQList[ 146][2] = "Was brauchte ein Dampfzug nicht, um zu funktionieren, jedoch
                         dbQHint[ 146][1] = ""; //hint en
                         dbQHint[ 146][2] = ""; //hint de
                         dbQImage[146] = []; dbQImageSrc[146] = []; 
-                        dbQImage[146][0] = "Images/1.Microchitze/146Steam.png";	dbQImageSrc[146][0] = "pictures.4ever.eu";
-                        dbQImage[146][1] = "Images/1.Microchitze/146Steam.png";	dbQImageSrc[146][1] = "pictures.4ever.eu";
-                        dbQImage[146][2] = "Images/1.Microchitze/146Steam.png";	dbQImageSrc[146][2] = "pictures.4ever.eu";
+                        dbQImage[146][0] = "Images/C1.Microchitze/Img146Steam.png";	dbQImageSrc[146][0] = "pictures.4ever.eu";
+                        dbQImage[146][1] = "Images/C1.Microchitze/Img146Steam.png";	dbQImageSrc[146][1] = "pictures.4ever.eu";
+                        dbQImage[146][2] = "Images/C1.Microchitze/Img146Steam.png";	dbQImageSrc[146][2] = "pictures.4ever.eu";
                         dbAImage[146] = [];							dbAImageSrc[146] = [];
-                        dbAImage[146][0] = "Images/1.Microchitze/146Train.png";  dbAImageSrc[146][0] = "www.condenaststore.com";
-                        dbAImage[146][1] = "Images/1.Microchitze/146Train.png";  dbAImageSrc[146][1] = "www.condenaststore.com";
-                        dbAImage[146][2] = "Images/1.Microchitze/146Train.png";  dbAImageSrc[146][2] = "www.condenaststore.com";
+                        dbAImage[146][0] = "Images/C1.Microchitze/Img146Train.png";  dbAImageSrc[146][0] = "www.condenaststore.com";
+                        dbAImage[146][1] = "Images/C1.Microchitze/Img146Train.png";  dbAImageSrc[146][1] = "www.condenaststore.com";
+                        dbAImage[146][2] = "Images/C1.Microchitze/Img146Train.png";  dbAImageSrc[146][2] = "www.condenaststore.com";
 dbQList[ 147] = [];
 dbQList[ 147][0] = "Ce face iepurele inevitabil la lumina soarelui?";    
 dbQList[ 147][1] = "What does every rabbit unavoidably make when exposed to sunlight?";  
@@ -4828,13 +4828,13 @@ dbQList[ 147][2] = "Was macht jeder Kaninchen unvermeidlich, wenn\'s dem Sonnenl
                         dbQHint[ 147][1] = ""; //hint en
                         dbQHint[ 147][2] = ""; //hint de
                         dbQImage[147] = []; dbQImageSrc[147] = []; 
-                        dbQImage[147][0] = "Images/1.Microchitze/147Rabbit.png";	dbQImageSrc[147][0] = "www.desicomments.com";
-                        dbQImage[147][1] = "Images/1.Microchitze/147Rabbit.png";	dbQImageSrc[147][1] = "www.desicomments.com";
-                        dbQImage[147][2] = "Images/1.Microchitze/147Rabbit.png";	dbQImageSrc[147][2] = "www.desicomments.com";
+                        dbQImage[147][0] = "Images/C1.Microchitze/Img147Rabbit.png";	dbQImageSrc[147][0] = "www.desicomments.com";
+                        dbQImage[147][1] = "Images/C1.Microchitze/Img147Rabbit.png";	dbQImageSrc[147][1] = "www.desicomments.com";
+                        dbQImage[147][2] = "Images/C1.Microchitze/Img147Rabbit.png";	dbQImageSrc[147][2] = "www.desicomments.com";
                         dbAImage[147] = [];							dbAImageSrc[147] = [];
-                        dbAImage[147][0] = "Images/1.Microchitze/147Shadow.png";  dbAImageSrc[147][0] = "footage.framepool.com";
-                        dbAImage[147][1] = "Images/1.Microchitze/147Shadow.png";  dbAImageSrc[147][1] = "footage.framepool.com";
-                        dbAImage[147][2] = "Images/1.Microchitze/147Shadow.png";  dbAImageSrc[147][2] = "footage.framepool.com";
+                        dbAImage[147][0] = "Images/C1.Microchitze/Img147Shadow.png";  dbAImageSrc[147][0] = "footage.framepool.com";
+                        dbAImage[147][1] = "Images/C1.Microchitze/Img147Shadow.png";  dbAImageSrc[147][1] = "footage.framepool.com";
+                        dbAImage[147][2] = "Images/C1.Microchitze/Img147Shadow.png";  dbAImageSrc[147][2] = "footage.framepool.com";
 dbQList[ 148] = [];
 dbQList[ 148][0] = "Care este partea alb&#x103; a majorit&#x103;&#x163;ii ou&#x103;lor crude?";    
 dbQList[ 148][1] = "Which part is white in most raw eggs?";  
@@ -4859,13 +4859,13 @@ dbQList[ 148][2] = "Welcher Teil ist wei&#223; in den meisten rohen Eiern?";
                         dbQHint[ 148][1] = ""; //hint en
                         dbQHint[ 148][2] = ""; //hint de
                         dbQImage[148] = []; dbQImageSrc[148] = []; 
-                        dbQImage[148][0] = "Images/1.Microchitze/148Egg.png";	dbQImageSrc[148][0] = "www.jokideo.com";
-                        dbQImage[148][1] = "Images/1.Microchitze/148Egg.png";	dbQImageSrc[148][1] = "www.jokideo.com";
-                        dbQImage[148][2] = "Images/1.Microchitze/148Egg.png";	dbQImageSrc[148][2] = "www.jokideo.com";
+                        dbQImage[148][0] = "Images/C1.Microchitze/Img148Egg.png";	dbQImageSrc[148][0] = "www.jokideo.com";
+                        dbQImage[148][1] = "Images/C1.Microchitze/Img148Egg.png";	dbQImageSrc[148][1] = "www.jokideo.com";
+                        dbQImage[148][2] = "Images/C1.Microchitze/Img148Egg.png";	dbQImageSrc[148][2] = "www.jokideo.com";
                         dbAImage[148] = [];							dbAImageSrc[148] = [];
-                        dbAImage[148][0] = "Images/1.Microchitze/148Raw.png";  dbAImageSrc[148][0] = "www.foodsthatcure.com";
-                        dbAImage[148][1] = "Images/1.Microchitze/148Raw.png";  dbAImageSrc[148][1] = "www.foodsthatcure.com";
-                        dbAImage[148][2] = "Images/1.Microchitze/148Raw.png";  dbAImageSrc[148][2] = "www.foodsthatcure.com";
+                        dbAImage[148][0] = "Images/C1.Microchitze/Img148Raw.png";  dbAImageSrc[148][0] = "www.foodsthatcure.com";
+                        dbAImage[148][1] = "Images/C1.Microchitze/Img148Raw.png";  dbAImageSrc[148][1] = "www.foodsthatcure.com";
+                        dbAImage[148][2] = "Images/C1.Microchitze/Img148Raw.png";  dbAImageSrc[148][2] = "www.foodsthatcure.com";
 dbQList[ 149] = [];
 dbQList[ 149][0] = "Ce au vacile 4 &#x15F;i femeile 2?";    
 dbQList[ 149][1] = "What do cows have 4 and women 2?";  
@@ -4890,10 +4890,10 @@ dbQList[ 149][2] = "Was haben K&#252;he 4 und Frauen 2?";
                         dbQHint[ 149][1] = ""; //hint en
                         dbQHint[ 149][2] = ""; //hint de
                         dbQImage[149] = []; dbQImageSrc[149] = []; 
-                        dbQImage[149][0] = "Images/1.Microchitze/149Cow.png";	dbQImageSrc[149][0] = "www.wpclipart.com";
-                        dbQImage[149][1] = "Images/1.Microchitze/149Cow.png";	dbQImageSrc[149][1] = "www.wpclipart.com";
-                        dbQImage[149][2] = "Images/1.Microchitze/149Cow.png";	dbQImageSrc[149][2] = "www.wpclipart.com";
+                        dbQImage[149][0] = "Images/C1.Microchitze/Img149Cow.png";	dbQImageSrc[149][0] = "www.wpclipart.com";
+                        dbQImage[149][1] = "Images/C1.Microchitze/Img149Cow.png";	dbQImageSrc[149][1] = "www.wpclipart.com";
+                        dbQImage[149][2] = "Images/C1.Microchitze/Img149Cow.png";	dbQImageSrc[149][2] = "www.wpclipart.com";
                         dbAImage[149] = [];							dbAImageSrc[149] = [];
-                        dbAImage[149][0] = "Images/1.Microchitze/149Cow.png";  dbAImageSrc[149][0] = "www.wpclipart.com";
-                        dbAImage[149][1] = "Images/1.Microchitze/149Cow.png";  dbAImageSrc[149][1] = "www.wpclipart.com";
-                        dbAImage[149][2] = "Images/1.Microchitze/149Cow.png";  dbAImageSrc[149][2] = "www.wpclipart.com";
+                        dbAImage[149][0] = "Images/C1.Microchitze/Img149Cow.png";  dbAImageSrc[149][0] = "www.wpclipart.com";
+                        dbAImage[149][1] = "Images/C1.Microchitze/Img149Cow.png";  dbAImageSrc[149][1] = "www.wpclipart.com";
+                        dbAImage[149][2] = "Images/C1.Microchitze/Img149Cow.png";  dbAImageSrc[149][2] = "www.wpclipart.com";

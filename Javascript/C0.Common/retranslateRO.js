@@ -221,7 +221,7 @@ function retranslateROInteractiveIntro()
 	
 	// Cell (3)	
 	document.getElementById("divsageti"     ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'	, 'S&#x103;ge&#x21B;i'		);");
-	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/3Dame.png'		, 'Trei Dame'				);");
+	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Dame.png'		, 'Trei Dame'				);");
 	document.getElementById("divplopulmere" ).setAttribute("onMouseOver", "showImageOnHover('Interactive/PlopulMere.png', 'Cand o face plopul mere'	);");
 	document.getElementById("divssudoku"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Sudoku zg&#xE2;rie-nori'	);");
 	document.getElementById("divfermier"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'	,'Problema fermierului'		);");
@@ -369,8 +369,8 @@ function retranslateRODictionary()
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "DIC&#x21A;IONAR";
-		//changeSrcImage('Images/0.Common/Flags/en_gray.png','imgEN');
-		//changeSrcImage('Images/0.Common/Flags/de_gray.png','imgDE');
+		//changeSrcImage('Images/C0.Common/Flags/en_gray.png','imgEN');
+		//changeSrcImage('Images/C0.Common/Flags/de_gray.png','imgDE');
 		
 		// Cell (3)
 		document.getElementById("SearchErrorField").innerHTML = "Astfel de cuvinte nu sunt &#xEE;n dic&#x21B;ionar... Cauta&#x21B;i altceva sau alege&#x21B;i unul dintre cuvintele de mai jos:";

@@ -98,7 +98,7 @@ function showImageOnHover(imageName, imageTitle)
 	}
 	else
 	{
-		imagePath = "Images/0.Common/" + imageName;
+		imagePath = "Images/C0.Common/" + imageName;
 
 		container = document.getElementById("divMainContentsPeekImageName");
 		container.innerHTML = '<br/><strong>' + imageTitle + '</strong><br/>';

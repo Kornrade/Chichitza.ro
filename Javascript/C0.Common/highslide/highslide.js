@@ -19,7 +19,7 @@ lang : {
 	restoreTitle : ''
 },
 // See http://highslide.com/ref for examples of settings  
-graphicsDir : 'Javascript/0.Common/highslide/graphics/',
+graphicsDir : 'Javascript/C0.Common/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
 expandDuration : 250, // milliseconds

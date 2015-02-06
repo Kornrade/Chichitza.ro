@@ -62,7 +62,7 @@ body {
 	</tr>
 	<tr>
 		<td rowspan="2">
-			<img src="../generale/images/chichitza_new_03-11.gif" width="28" height="459" alt=""></td>
+			<img src="../generale/images/chichitza_new_03-1J1.Gif" width="28" height="459" alt=""></td>
 		<td colspan="3" width="661" height="442" alt="" bgcolor="#FFFFFF" valign="top">
 				<table width="609" height="416" border="0" bordercolor="#FFFFFF" bgcolor="#FFFFFF" align="center">
   <tr>

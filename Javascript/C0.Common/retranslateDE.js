@@ -226,7 +226,7 @@ function retranslateDEInteractiveIntro()
 	
 	// Cell (3)	
 	document.getElementById("divsageti"     ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'    , 'Pfeile' );");
-	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/3Dame.png'     , 'Drei Damen'			);");
+	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Dame.png'     , 'Drei Damen'			);");
 	document.getElementById("divplopulmere" ).setAttribute("onMouseOver", "showImageOnHover('Interactive/PlopulMere.png', 'Wenn es schwarz schneit...'	);");
 	document.getElementById("divssudoku"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Wolkenkratzer Sudoku'	);");
 	document.getElementById("divfermier"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'   , 'Das Bauer-R&auml;tsel'		);");
@@ -373,8 +373,8 @@ function retranslateDEDictionary()
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "W&#214;RTERBUCH";
-		//changeSrcImage('Images/0.Common/Flags/ro_gray.png','imgRO');
-		//changeSrcImage('Images/0.Common/Flags/en_gray.png','imgEN');
+		//changeSrcImage('Images/C0.Common/Flags/ro_gray.png','imgRO');
+		//changeSrcImage('Images/C0.Common/Flags/en_gray.png','imgEN');
 		
 		// Cell (3)
 		document.getElementById("SearchErrorField").innerHTML = "Solche W&#246;rter sind nicht im W&#246;rterbuch... Suchen Sie etwas anderes oder w&#228;hlen Sie einer dieser W&#246;rter:";

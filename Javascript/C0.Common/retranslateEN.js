@@ -202,7 +202,7 @@ function retranslateENInteractiveIntro()
 	
 	// Cell (3)	
 	document.getElementById("divsageti"     ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'	, 'Arrows'					);");
-	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/3Dame.png'		, 'Three queens'			);");
+	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Dame.png'		, 'Three queens'			);");
 	document.getElementById("divplopulmere" ).setAttribute("onMouseOver", "showImageOnHover('Interactive/PlopulMere.png', 'When hell freezes...'	);");
 	document.getElementById("divssudoku"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Skyscraper Sudoku'	);");
 	document.getElementById("divfermier"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'	, 'Farmers puzzle'		);");
@@ -348,8 +348,8 @@ function retranslateENDictionary()
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "DICTIONARY";
-		//changeSrcImage('Images/0.Common/Flags/ro_gray.png','imgRO');
-		//changeSrcImage('Images/0.Common/Flags/de_gray.png','imgDE');
+		//changeSrcImage('Images/C0.Common/Flags/ro_gray.png','imgRO');
+		//changeSrcImage('Images/C0.Common/Flags/de_gray.png','imgDE');
 		
 		// Cell (3)	
 		document.getElementById("SearchErrorField").innerHTML = "Such words are not in the dictionary... Search something else or choose one of these words:";
