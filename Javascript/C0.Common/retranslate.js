@@ -710,7 +710,7 @@ function retranslateChess()
 	document.getElementById("divTitle").setAttribute("onclick","gotoindex('4')");
 	
 	//create chess content
-	showChessPositionOnHover(auxparam);
+	initChessSolution(auxparam);
 	
 	document.getElementById("divFen").innerHTML = "<br/>"+currcleanfen;
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";

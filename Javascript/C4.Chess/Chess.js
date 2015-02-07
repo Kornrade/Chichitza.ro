@@ -429,40 +429,66 @@ function openChessObject(n)
     }
 }
 
+function initChessSolution(n)
+{
+    var name, stip, container, v;
+    
+    setcurrchessvars(n);
+    
+    if( 'ro' === lang )
+    {
+        name = allstudynames[n][0];
+        stip = allstudystips[n][0];
+        currlangpgn = currpgn[0];
+    }
+    if( 'en' === lang )
+    {
+        name = allstudynames[n][1];
+        stip = allstudystips[n][1];
+        currlangpgn = currpgn[1];
+    }
+    if( 'de' === lang )
+    {
+        name = allstudynames[n][2];
+        stip = allstudystips[n][2];
+        currlangpgn = currpgn[2];
+    }
+    
+    container = document.getElementById("study-name");
+    container.innerHTML = '<br/><strong>' + name + '</strong><br/>';
+    
+    container = document.getElementById("stipulation");
+    container.innerHTML = '<strong>' + stip + '</strong>';		
+            
+    if (document.getElementById("solution-container"))
+    {
+        container = document.getElementById("solution-container");
+        container.innerHTML = '';
+        
+        v = new PgnViewer({ boardName: "solution", 
+                            pgnString: currlangpgn,
+                            pieceSet: 'merida', pieceSize: 35 });
+        
+        container = document.getElementById("solution-navButtons");
+        container.setAttribute('style','text-align:center');
+       
+    }
+    
+    hideSolution();
+
+}
+
 function showSolution() 
 {	
-    var currlangpgn, container, v;
-    if( 'ro' === lang ) { currlangpgn = currpgn[0]; }
-    if( 'en' === lang ) { currlangpgn = currpgn[1]; }
-    if( 'de' === lang ) { currlangpgn = currpgn[2]; }
-    
-    container = document.getElementById("solution-container");
-    container.innerHTML = "";
-    
-    v= new PgnViewer({  boardName: "solution", 
-                        pgnString: currlangpgn, 
-                        pieceSet: 'merida', pieceSize: 35 }); 
-                        
-    if(document.getElementById("position-container"))
-    {
-        container = document.getElementById("position-container");
-        container.parentNode.removeChild(container);
-    }
-    
-    if(document.getElementById("position-moves"))
-    {
-        container = document.getElementById("position-moves");
-        container.parentNode.removeChild(container);
-    }
-    
-    if(document.getElementById("divShowSolution"))
-    {
-        container = document.getElementById("divShowSolution");
-        container.parentNode.removeChild(container);
-    }
         
     container = document.getElementById("solution-navButtons");
-    container.setAttribute('style','text-align:center');
+    container.style.visibility='visible';
+    
+    container = document.getElementById("solution-moves");
+    container.style.visibility='visible';
+    
+    container = document.getElementById("divShowSolution");
+    container.style.visibility='hidden';
     
     container = document.getElementById("divHideSolution");
     container.style.visibility='visible';
@@ -474,7 +500,21 @@ function showSolution()
 
 function hideSolution() 
 {	
-    window.open("Chess.html?lang="+lang+"&aux="+auxparam,"_self");
+    container = document.getElementById("solution-navButtons");
+    container.style.visibility='hidden';
+    
+    container = document.getElementById("solution-moves");
+    container.style.visibility='hidden';
+    
+    container = document.getElementById("divShowSolution");
+    container.style.visibility='visible';
+    
+    container = document.getElementById("divHideSolution");
+    container.style.visibility='hidden';
+    
+    container = document.getElementById("divShowPGN");
+    container.style.visibility='hidden';
+
 }
 
 function showPGN() 
