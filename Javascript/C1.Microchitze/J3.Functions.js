@@ -367,6 +367,8 @@ function computeResults()
     var container, i;
     
 	htmlResultsPhase = true;
+    container = document.getElementById("disqus_thread");
+	container.style.visibility = "visible";
 	
 	container = document.getElementById("divResults");
 	container.style.visibility = "hidden";

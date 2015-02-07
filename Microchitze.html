@@ -48,7 +48,7 @@
 +--------------------900-----------------------+--->
 
 
-<body onload="detectLanguage(); initQuiz()"> <!---onload should be a function of identifying the language and call the retranslate-->
+<body onload="detectLanguage(); initQuiz();"> <!---onload should be a function of identifying the language and call the retranslate-->
 
 <table border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
 <!---------------------------------------------------->
@@ -134,7 +134,7 @@
 										<div align="center">
 											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
 										</div>
-										<div id="helpertoolsField" style="visibility: hidden">
+										<div id="helpertoolsField" style="visibility: visible">
 											<p align="center" hidden>
 												<a id="buttonConstants"  href="JavaScript:newPopup(650,650,10,10,'http://www.ebyte.it/library/educards/constants/ConstantsOfPhysicsAndMath.html');"><img src="Images/C0.Common/Helpertools/Constants.png" alt="Constants" width="24" height="24" border="0" /></a> &nbsp;
 												<a id="buttonCalendar"   href="JavaScript:newPopup(650,650,10,10,'Helpertools/calendar.html');">  <img src="Images/C0.Common/Helpertools/Calendar.png"        alt="Calendar" width="24" height="24" border="0" /></a> &nbsp;
@@ -163,6 +163,23 @@
 						</td>
 					</tr> -->
 </table>
+
+<div id="disqus_thread" style="visibility: hidden"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	
+    var disqus_shortname = 'chichitza'; // Required - Replace example with your forum shortname
+    var disqus_title = 'Microchitze';//'a unique title for each page where Disqus is present';
+    var disqus_url = window.location.href;
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </body>
 </html>
