@@ -20,8 +20,7 @@ var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=inter
 var lang; // the current language: "ro" "en" "de"
 var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
-
-var currcleanfen;
+var currchessfen;
 
 /*global resetDivsToDefault */
 /*global retranslateCommon */
@@ -713,7 +712,7 @@ function retranslateChess()
 	//create chess content
 	initChessSolution(auxparam);
 	
-	document.getElementById("divFen").innerHTML = "<br/>"+currcleanfen;
+	document.getElementById("divFen").innerHTML = "<br/>"+currchessfen;
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";
 	
 	//retranslate specific static text

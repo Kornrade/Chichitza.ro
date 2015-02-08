@@ -40,7 +40,7 @@ var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=inter
 var lang; // the current language: "ro" "en" "de"
 var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
-var currcleanfen, allstudynames, currchessinfo, coauthor;
+var allstudynames, currchessinfo, coauthor;
 
 /*global showSolution*/
 

@@ -12,7 +12,6 @@ var lang, auxparam;
 /*global PgnViewer */
 
 var currchessfen;
-var currcleanfen;
 var coauthor;
 var currpgn = [];
 var currchessinfo = [];
@@ -138,7 +137,6 @@ function setcurrchessvars(n)
     switch(n)
     {	case  1: 
             currchessfen = '[FEN "3k4/2pq3p/pp5R/4P3/P6P/2PN4/1PN3K1/8 w - - 0 1"]';
-            currcleanfen = 'FEN: 3k4/2pq3p/pp5R/4P3/P6P/2PN4/1PN3K1/8';
             coauthor = 'Peter Martan';
             currpgn[0] = '[Event "'+allstudystips[1][0]+'"][Site "Glarean"][Date "10.2009"][Round "'+allstudynames[1][0]+'"][White "Mihai Neghina"][Black "Peter Martan"][Result "1-0"][FEN "3k4/2pq3p/pp5R/4P3/P6P/2PN4/1PN3K1/8 w - - 0 1"] 1. Nd4! Qg7+ 2. Kh3! Qxh6 3. Nf4 Kc8 ( 3... Kd7 4. Nde6 Kc6 ( 4... Qxe6+ 5. Nxe6 Kxe6 6. Kg4 Kxe5 7. Kg5 ) ( 4... b5 5. a5 Kc6 6. h5 b4 7. c4 Kb7 8. Kg4 Kb8 9. Kf5 Kb7 10. Ke4 Kc6 11. b3 Kd7 12. Kd5 ) ( 4... c5 5. Kg3 Kc6 6. h5 a5 7. c4 Kd7 8. Kf3 Kc6 9. Ke4 Kb7 10. Kd5 Ka7 11. Kc6 Ka6 12. Kd6 Kb7 13. Kd7 Ka7 14. Kc7 Ka6 15. Kb8 ) ( 4... a5 5. h5 c6 6. Kg3 Kc8 7. Kf3 Kd7 8. Ke4 Kc8 9. c4 Kb8 10. Kd4 Ka7 11. c5 Ka6 12. Kc4 Ka7 13. cxb6+ Kxb6 14. Kd4 c5+ 15. Kd5 c4 16. Kxc4 Kc6 17. b4 axb4 18. Kxb4 ) 5. h5 b5 6. a5 Kd7 7. Kg3 c6 8. Kf3 Kc8 9. Ke4 ) 4. Nde6 Kb7 5. h5 c5 ( 5... c6 6. Kg3 Kc8 7. Kf3 Kb8 8. Ke4 a5 ( 8... Kb7 9. c4 Kb8 10. b4 Kc8 11. Kd4 Kb8 12. b5 Kb7 13. Ke4 a5 14. Kd4 cxb5 15. cxb5 Kc8 16. Ke4 Kb8 17. Kd5 Kb7 18. Kd6 ) 9. c4 Kc8 ( 9... Ka7 10. c5 bxc5 11. Kd3 Kb8 12. Kc4 Kc8 13. Kxc5 ) 10. Kd4 Kb7 11. c5 Ka7 12. Kc4 Ka6 13. cxb6 Kxb6 14. Kd4 c5+ 15. Kd5 ) ( 5... Kc6 6. Kg3 b5 7. a5 b4 8. c4 b3 9. Kf3 Kb7 10. Ke4 Kc8 11. Kd4 ) ( 5... a5 6. Kg4 Kc6 7. c4 Kb7 8. Kf5 c6 9. Ke4 b5 10. axb5 cxb5 11. c5 Kc6 12. Kd4 a4 13. Kc3 ) 6. Kg4 c4 ( 6... Kc6 7. Kf3 b5 ( 7... a5 8. c4 ) ( 7... Kd7 8. Ke3 Kc6 9. Ke4 ) 8. a5 c4 9. Ke4 b4 10. Kd4 Kb5 11. Kd5 bxc3 12. bxc3 Kxa5 13. Kxc4 ) ( 6... Kc6 7. Kf3 ) 7. Kf5 Kc6 8. Ke4 b5 9. axb5+ axb5 ( 9... Kxb5 10. Kd4 a5 11. Kd5 a4 12. Kd4 Kc6 13. Kxc4 ) 10. Kd4 Kb6 11. Kd5 Ka5 12. Kc5 Ka6 13. Kc6 Ka5 14. Kb7 b4 15. Kc6 bxc3 16. bxc3 Ka4 17. Kc5 Kb3 18. Kd4 Kc2 19. Kxc4 ';
             currpgn[1] = '[Event "'+allstudystips[1][1]+'"][Site "Glarean"][Date "10.2009"][Round "'+allstudynames[1][1]+'"][White "Mihai Neghina"][Black "Peter Martan"][Result "1-0"][FEN "3k4/2pq3p/pp5R/4P3/P6P/2PN4/1PN3K1/8 w - - 0 1"] 1. Nd4! Qg7+ 2. Kh3! Qxh6 3. Nf4 Kc8 ( 3... Kd7 4. Nde6 Kc6 ( 4... Qxe6+ 5. Nxe6 Kxe6 6. Kg4 Kxe5 7. Kg5 ) ( 4... b5 5. a5 Kc6 6. h5 b4 7. c4 Kb7 8. Kg4 Kb8 9. Kf5 Kb7 10. Ke4 Kc6 11. b3 Kd7 12. Kd5 ) ( 4... c5 5. Kg3 Kc6 6. h5 a5 7. c4 Kd7 8. Kf3 Kc6 9. Ke4 Kb7 10. Kd5 Ka7 11. Kc6 Ka6 12. Kd6 Kb7 13. Kd7 Ka7 14. Kc7 Ka6 15. Kb8 ) ( 4... a5 5. h5 c6 6. Kg3 Kc8 7. Kf3 Kd7 8. Ke4 Kc8 9. c4 Kb8 10. Kd4 Ka7 11. c5 Ka6 12. Kc4 Ka7 13. cxb6+ Kxb6 14. Kd4 c5+ 15. Kd5 c4 16. Kxc4 Kc6 17. b4 axb4 18. Kxb4 ) 5. h5 b5 6. a5 Kd7 7. Kg3 c6 8. Kf3 Kc8 9. Ke4 ) 4. Nde6 Kb7 5. h5 c5 ( 5... c6 6. Kg3 Kc8 7. Kf3 Kb8 8. Ke4 a5 ( 8... Kb7 9. c4 Kb8 10. b4 Kc8 11. Kd4 Kb8 12. b5 Kb7 13. Ke4 a5 14. Kd4 cxb5 15. cxb5 Kc8 16. Ke4 Kb8 17. Kd5 Kb7 18. Kd6 ) 9. c4 Kc8 ( 9... Ka7 10. c5 bxc5 11. Kd3 Kb8 12. Kc4 Kc8 13. Kxc5 ) 10. Kd4 Kb7 11. c5 Ka7 12. Kc4 Ka6 13. cxb6 Kxb6 14. Kd4 c5+ 15. Kd5 ) ( 5... Kc6 6. Kg3 b5 7. a5 b4 8. c4 b3 9. Kf3 Kb7 10. Ke4 Kc8 11. Kd4 ) ( 5... a5 6. Kg4 Kc6 7. c4 Kb7 8. Kf5 c6 9. Ke4 b5 10. axb5 cxb5 11. c5 Kc6 12. Kd4 a4 13. Kc3 ) 6. Kg4 c4 ( 6... Kc6 7. Kf3 b5 ( 7... a5 8. c4 ) ( 7... Kd7 8. Ke3 Kc6 9. Ke4 ) 8. a5 c4 9. Ke4 b4 10. Kd4 Kb5 11. Kd5 bxc3 12. bxc3 Kxa5 13. Kxc4 ) ( 6... Kc6 7. Kf3 ) 7. Kf5 Kc6 8. Ke4 b5 9. axb5+ axb5 ( 9... Kxb5 10. Kd4 a5 11. Kd5 a4 12. Kd4 Kc6 13. Kxc4 ) 10. Kd4 Kb6 11. Kd5 Ka5 12. Kc5 Ka6 13. Kc6 Ka5 14. Kb7 b4 15. Kc6 bxc3 16. bxc3 Ka4 17. Kc5 Kb3 18. Kd4 Kc2 19. Kxc4 ';
@@ -186,7 +184,6 @@ function setcurrchessvars(n)
             
         case  2: 
             currchessfen = '[FEN "6Nk/pp2Np1p/2p2Pp1/2R2bP1/7K/P7/1q1n1Q2/5n2 w - - 0 1"]';
-            currcleanfen = 'FEN: 6Nk/pp2Np1p/2p2Pp1/2R2bP1/7K/P7/1q1n1Q2/5n2';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[2][0]+'"][Site "Glarean"][Date "12.2009"][Round "'+allstudynames[2][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "6Nk/pp2Np1p/2p2Pp1/2R2bP1/7K/P7/1q1n1Q2/5n2 w - - 0 1"] 1. Rxf5 {Amenintarea: 1.-- Nf3+ 2.Qxf3 Qh2+ 3.Qh3 Qxh3#} (1. Nxf5? Nf3+ 2. Qxf3 (2. Kg4?? Qxf2{Negrul castiga}) 2... Qh2+ 3. Qh3 Qf4+ 4. Qg4 Qh2+{remiza}) 1... gxf5 2. Nh6 {amenintand Nxf7#} (2. Nxf5?? Qc1 3. Qf4 (3. Ngh6 Ne4 4. Qf3 Qxg5+ 5. Kh3 Nfd2 {Negrul castiga}) 3... Qe1+ 4. Kh3 Qe4 5. Qxe4 Nxe4 6. Ngh6 Nxg5+ {Negrul castiga}) 2... Nf3+ {Zwichenzug} 3. Kh5! (3. Qxf3? Qh2+ 4. Qh3 Qf2+ 5. Kh5 Qe2+ 6. Kh4{remiza}) 3... Qa2 {Damele se ataca reciproc, insa niciuna nu poate captura ceva fara sa permita matul advers. Negrul are doar mutari de pion, in timp ce Albul poate muta Qf7<->Qg7} 4. a4{Apararea pasiva 4.Qg2 ar putea functiona...} (4. Qg2 b5 5. Qf2 a5 6. Qg2 b4 7. axb4 a4 8. b5 cxb5 {transpunere la varianta principala}) 4... a5 (4... b6 5. Qg2 a6 6. Qf2 b5 7. a5! {Pionul a este vital pentru varianta aceasta} b4 8. Qg2 Qc4 9. Qxf3 Ng3+ 10. Qxg3 Qe2+ 11. Kh4 Qe4+ 12. Kh3 Qh1+ 13. Qh2 Qf3+ 14. Kh4 Qe4+ 15. Kh5 Qf3+ 16. Ng4 Qxg4+ 17. Kh6 f4 18. Qh1 b3 19. Nxc6 f3 20. Ne5 Qf5 21. Qxf3 Qxf3 22. Nxf3 b2 23. Nd2 Kg8 24. Nb1 {tempo} Kh8 25. Kh5 Kg8 26. Kg4 Kf8 27. Kf5 Ke8 28. Ke5 Kd7 29. Kd5 Kc7 30. Kc5{Albul castiga}) 5. Qg2 b6 6. Qf2 b5 7. axb5 (7. Qg2{Comparativ cu varianta principala, diagonala a8-h1 inca este blocata} bxa4 8. Qf2 a3 9. Qg2 Qc4 10. Qxf3 Ng3+ 11. Qxg3 Qe2+ 12. Kh4 Qe4+ 13. Kh3 Qh1+ 14. Qh2 Qf3+ 15. Kh4 Qe4+ 16. Kh5 Qf3+ 17. Kh4{remiza} (17. Ng4?? Qxg4+ 18. Kh6 f4 19. Nxc6 a2{Negrul castiga})) 7... cxb5 8. Qg2 a4 9. Qf2 a3 10. Qg2 b4 11. Qf2 {zugzwang adevarat} Qb3 (11... Qc4 12. Qxf3 {Albul castiga}) 12. Qxf1 Nd2 13. Qg2 {ameninta Qa8#} Ne4 14. Nhxf5 a2 15. Qxe4 a1=Q {apara campul a8} 16. Kh6! {evita Qd1+} (16. Nh4?? Qe6 17. Qb7 Qd1+ 18. Kh6 Qd8 {winning for Black}) 16... Qh3+ (16... Qe6 17. Qb7 Qc3 18. Qb8+ Qec8 19. Qxc8+ Qxc8 20. Nxc8{Albul castiga}) 17. Nh4 {ameninta Ng6 - Qe8#} Qxh4+ 18. Qxh4 {Albul castiga}';
             currpgn[1] = '[Event "'+allstudystips[2][1]+'"][Site "Glarean"][Date "12.2009"][Round "'+allstudynames[2][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "6Nk/pp2Np1p/2p2Pp1/2R2bP1/7K/P7/1q1n1Q2/5n2 w - - 0 1"] 1. Rxf5 {The threat was 1.-- Nf3+ 2.Qxf3 Qh2+ 3.Qh3 Qxh3#} (1. Nxf5? Nf3+ 2. Qxf3 (2. Kg4?? Qxf2{winning for Black}) 2... Qh2+ 3. Qh3 Qf4+ 4. Qg4 Qh2+{draw}) 1... gxf5 2. Nh6 {Threatening Nxf7#} (2. Nxf5?? Qc1 3. Qf4 (3. Ngh6 Ne4 4. Qf3 Qxg5+ 5. Kh3 Nfd2 {winning for Black}) 3... Qe1+ 4. Kh3 Qe4 5. Qxe4 Nxe4 6. Ngh6 Nxg5+ {winning for Black}) 2... Nf3+ {Zwichenzug} 3. Kh5! (3. Qxf3? Qh2+ 4. Qh3 Qf2+ 5. Kh5 Qe2+ 6. Kh4{draw}) 3... Qa2 {Queens attack each other, but neither can capture anything without allowing mate. Black only has pawn moves, while White can shuffle Qf7<>Qg7 indefinitely} 4. a4{Passive defense 4.Qg2 may also work} (4. Qg2 b5 5. Qf2 a5 6. Qg2 b4 7. axb4 a4 8. b5 cxb5 {transposing to mainline}) 4... a5 (4... b6 5. Qg2 a6 6. Qf2 b5 7. a5! {The a-pawn must stay alive in this variation, it is vital for winning the game} b4 8. Qg2 Qc4 9. Qxf3 Ng3+ 10. Qxg3 Qe2+ 11. Kh4 Qe4+ 12. Kh3 Qh1+ 13. Qh2 Qf3+ 14. Kh4 Qe4+ 15. Kh5 Qf3+ 16. Ng4 Qxg4+ 17. Kh6 f4 18. Qh1 b3 19. Nxc6 f3 20. Ne5 Qf5 21. Qxf3 Qxf3 22. Nxf3 b2 23. Nd2 Kg8 24. Nb1 {temporizing} Kh8 25. Kh5 Kg8 26. Kg4 Kf8 27. Kf5 Ke8 28. Ke5 Kd7 29. Kd5 Kc7 30. Kc5{winning for White}) 5. Qg2 b6 6. Qf2 b5 7. axb5 (7. Qg2{Compared to the mainline, the long diagonal a8-h1 is still blocked, which is extremely important} bxa4 8. Qf2 a3 9. Qg2 Qc4 10. Qxf3 Ng3+ 11. Qxg3 Qe2+ 12. Kh4 Qe4+ 13. Kh3 Qh1+ 14. Qh2 Qf3+ 15. Kh4 Qe4+ 16. Kh5 Qf3+ 17. Kh4{draw} (17. Ng4?? Qxg4+ 18. Kh6 f4 19. Nxc6 a2{winning for Black})) 7... cxb5 8. Qg2 a4 9. Qf2 a3 10. Qg2 b4 11. Qf2 {Finally, true zugzwang for Black} Qb3 (11... Qc4 12. Qxf3 {winning for White}) 12. Qxf1 Nd2 13. Qg2 {threatens Qa8#} Ne4 14. Nhxf5 a2 15. Qxe4 a1=Q {defends a8} 16. Kh6! {thwarts the Qd1+ resource} (16. Nh4?? Qe6 17. Qb7 Qd1+ 18. Kh6 Qd8 {winning for Black}) 16... Qh3+ (16... Qe6 17. Qb7 Qc3 18. Qb8+ Qec8 19. Qxc8+ Qxc8 20. Nxc8{winning for White}) 17. Nh4 {threatens Ng6 - Qe8#} Qxh4+ 18. Qxh4 {winning for White}';
@@ -207,7 +204,6 @@ function setcurrchessvars(n)
             
         case  3: 
             currchessfen = '[FEN "5B1q/3N3p/p3p2p/7k/B7/5PP1/K6P/8 w - - 0 1"]';
-            currcleanfen = 'FEN: 5B1q/3N3p/p3p2p/7k/B7/5PP1/K6P/8';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[3][0]+'"][Site "Glarean"][Date "07.2010"][Round "'+allstudynames[3][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "5B1q/3N3p/p3p2p/7k/B7/5PP1/K6P/8 w - - 0 1"] 1. Ne5 Qxf8 (1... Qxe5 2. Be8+ Kg5 3. f4+ {Albul castiga}) 2. f4 (2. Bc6? Kg5 3. h4+ Kf5 4. Nd7 Qb4 5. Be4+ Qxe4 6. fxe4+ Kxe4 {remiza}) 2... Qd8 {aparand atat e8 cat si d1} 3. Bc6 (3. Bd7? {nebunul nu acopera campul d5} Qa5+ 4. Kb3 Qd5+ {remiza, deoarece regele nu poate avansa}) (3. Bc2? Qa5+ 4. Kb2 Qb5+ 5. Kc1 Qc5 6. Kd2 Qa5+ 7. Ke3 Qc5+ {remiza deoarece regele nici nu poate abandona nebunul, nici nu-l poate ajuta sa ajunga la d1}) (3. Kb2? {sau 6.Ka3 sau 6.Kb3} Qb6+ 4. Kc3 Qa5+ 5. Kb3 Qd5+ 6. Ka3 Qc5+ 7. Ka2 Qd5+ {remiza deoarece regele nici nu poate abandona nebunul, nici nu-l poate ajuta sa ajunga la d1}) 3... Qd2+ 4. Kb3 Qe3+ 5. Kc4 Qc1+ 6. Kb4 Qb2+ 7. Kc5 Qa3+ 8. Kb6 Qd6 9. Kb7 ({Pionul negru din a nu trebuie luat in nici o varianta.} 9. Kxa6? Qa3+ 10. Kb7 Qa7+ 11. Kc8 Qc7+ 12. Kxc7 {Stalemate}) 9... Qe7+ 10. Kc8 Qf8+ 11. Kd7 Qg7+ 12. Kd8 {Albul castiga}';
             currpgn[1] = '[Event "'+allstudystips[3][1]+'"][Site "Glarean"][Date "07.2010"][Round "'+allstudynames[3][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "5B1q/3N3p/p3p2p/7k/B7/5PP1/K6P/8 w - - 0 1"] 1. Ne5 Qxf8 (1... Qxe5 2. Be8+ Kg5 3. f4+ {winning for White}) 2. f4 (2. Bc6? Kg5 3. h4+ Kf5 4. Nd7 Qb4 5. Be4+ Qxe4 6. fxe4+ Kxe4 {draw}) 2... Qd8 {covering both e8 and d1} 3. Bc6 (3. Bd7? {the bishop does not cover the important d5 square} Qa5+ 4. Kb3 Qd5+ {draw because the king cannot advance to the 5th row and beyond}) (3. Bc2? Qa5+ 4. Kb2 Qb5+ 5. Kc1 Qc5 6. Kd2 Qa5+ 7. Ke3 Qc5+ {draw by perpetual,because the king can neither abandon the bishop, nor drive it to d1}) (3. Kb2? {Also similar for 6.Ka3 and 6.Kb3} Qb6+ 4. Kc3 Qa5+ 5. Kb3 Qd5+ 6. Ka3 Qc5+ 7. Ka2 Qd5+ {draw by perpetual check, because the king can neither abandon the bishop, nor drive it to d1}) 3... Qd2+ 4. Kb3 Qe3+ 5. Kc4 Qc1+ 6. Kb4 Qb2+ 7. Kc5 Qa3+ 8. Kb6 Qd6 9. Kb7 ({The black a-pawn is the crucial piece that prevents a rambling queen, and therefore should not be taken in any variation.} 9. Kxa6? Qa3+ 10. Kb7 Qa7+ 11. Kc8 Qc7+ 12. Kxc7 {Stalemate}) 9... Qe7+ 10. Kc8 Qf8+ 11. Kd7 Qg7+ 12. Kd8 {winning for White}';
@@ -228,7 +224,6 @@ function setcurrchessvars(n)
             
         case  4: 
             currchessfen = '[FEN "7q/b1p5/1p1Npkb1/pPP2ppP/P1P5/3B2P1/5P1R/K3R3 w - - 0 1"]';
-            currcleanfen = 'FEN: 7q/b1p5/1p1Npkb1/pPP2ppP/P1P5/3B2P1/5P1R/K3R3';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[4][0]+'"][Site "Euxinus Pontus"][Date "09.2010"][Round "'+allstudynames[4][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "7q/b1p5/1p1Npkb1/pPP2ppP/P1P5/3B2P1/5P1R/K3R3 w - - 0 1"] 1. hxg6! (1. Nb7? Ke7+ 2. Ka2 Qc3 {remiza}) 1... Qxh2 2. Rxe6+! {dublu-sacrificiu de tura} Kxe6 3. g7 Qh1+ (3... Qh7 4. Bxf5+ {Albul castiga}) 4. Kb2 Qa8 5. Bxf5+ Kf6 6. Nc8 Kxg7 (6... Qxc8 7. Bxc8 Kxg7 8. c6 {Albul castiga}) 7. c6 Kf6 8. Bd7 Ke5 9. f3 Qb8 10. Kc3 Qa8 11. Kd3 Qb8 12. Ke3 Qa8 13. f4+ (13. Kf2 Qb8 14. Kg2 Qa8 15. Kh3 Qb8 16. Kg4 Kf6 17. f4 gxf4 18. Kxf4? {18.gxf4 transpozitie la varianta principala} Qa8 19. g4 Qb8 20. g5+ Kg6 21. Bf5+ Kg7 {si regele alb nu poate ajunge la d7 fara a trece prin e6, astfel ca ramane calul fara aparare}) 13... gxf4+ 14. gxf4+ Kf6 15. Kf3 Qb8 16. Kg4 Kg6 17. f5+ Kf6 (17... Kh6 18. Kf4 Kg7 19. Ke5 {Albul castiga}) 18. Kh5 Qa8 19. Kh6 Qb8 20. Kh7 Kf7 21. Be6+ Kf6 ( 21... Kf8 22. Kg6 {Albul castiga}) 22. Kg8 Qa8 23. Kf8 Qb8 24. Ke8 Qa8 25. Kd8 Qb8 26. Kd7';
             currpgn[1] = '[Event "'+allstudystips[4][1]+'"][Site "Euxinus Pontus"][Date "09.2010"][Round "'+allstudynames[4][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "7q/b1p5/1p1Npkb1/pPP2ppP/P1P5/3B2P1/5P1R/K3R3 w - - 0 1"] 1. hxg6! (1. Nb7? Ke7+ 2. Ka2 Qc3 {draw}) 1... Qxh2 2. Rxe6+! {double rook sacrifice} Kxe6 3. g7 Qh1+ (3... Qh7 4. Bxf5+ {winning for White}) 4. Kb2 Qa8 5. Bxf5+ Kf6 6. Nc8 Kxg7 (6... Qxc8 7. Bxc8 Kxg7 8. c6 {winning for White}) 7. c6 Kf6 8. Bd7 Ke5 9. f3 Qb8 10. Kc3 Qa8 11. Kd3 Qb8 12. Ke3 Qa8 13. f4+ (13. Kf2 Qb8 14. Kg2 Qa8 15. Kh3 Qb8 16. Kg4 Kf6 17. f4 gxf4 18. Kxf4? {18.gxf4 transposes to the mainline} Qa8 19. g4 Qb8 20. g5+ Kg6 21. Bf5+ Kg7 {and the white king cannot reach d7 without passing through e6, thus leaving the knight undefended}) 13... gxf4+ 14. gxf4+ Kf6 15. Kf3 Qb8 16. Kg4 Kg6 17. f5+ Kf6 (17... Kh6 18. Kf4 Kg7 19. Ke5 {winning for White}) 18. Kh5 Qa8 19. Kh6 Qb8 20. Kh7 Kf7 21. Be6+ Kf6 ( 21... Kf8 22. Kg6 {winning for White}) 22. Kg8 Qa8 23. Kf8 Qb8 24. Ke8 Qa8 25. Kd8 Qb8 26. Kd7';
@@ -240,7 +235,6 @@ function setcurrchessvars(n)
             
         case  5: 
             currchessfen = '[FEN "8/b4kp1/2p1p3/5pB1/p1PP4/1p6/3K1P2/3N4 w - - 0 1"]';
-            currcleanfen = 'FEN: 8/b4kp1/2p1p3/5pB1/p1PP4/1p6/3K1P2/3N4';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[5][0]+'"][Site "Glarean"][Date "03.2011"][Round "'+allstudynames[5][0]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/b4kp1/2p1p3/5pB1/p1PP4/1p6/3K1P2/3N4 w - - 0 1"] 1. Kc3! (1. c5 a3 2. Kc3 a2 3. Kb2 e5 4. dxe5 Bxc5 5. Bd2 Bd4+ 6. Bc3 c5 {Negrul castiga})(1. Kd3 e5 {Negrul castiga})(1. Be3 f4 {Negrul castiga}) 1... Bxd4+ {momeala pentru rege} 2. Kxd4 (2. Kb4 b2 3. Nxb2 Bxb2 {Negrul castiga}) 2... b2 {sacrifica un pion pentru a-l promova pe celalalt} 3. Nxb2 {regele inca este in patratul pionului, insa acum calul ii sta in drum...} a3 4. Nd3 {Albul nu poate face nimic sa impiedice promovarea, asa ca aranjeaza o aparare tenace} a2 5. Ne5+ Ke8 6. f4 {Toate piesele sunt aparate, iar regele negru este inchis in jurul h8... regina nu poate da mat singura.}';
             currpgn[1] = '[Event "'+allstudystips[5][1]+'"][Site "Glarean"][Date "03.2011"][Round "'+allstudynames[5][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/b4kp1/2p1p3/5pB1/p1PP4/1p6/3K1P2/3N4 w - - 0 1"] 1. Kc3! (1. c5 a3 2. Kc3 a2 3. Kb2 e5 4. dxe5 Bxc5 5. Bd2 Bd4+ 6. Bc3 c5 {winning for Black})(1. Kd3 e5 {winning for Black})(1. Be3 f4 {winning for Black}) 1... Bxd4+ {decoy for the king} 2. Kxd4 (2. Kb4 b2 3. Nxb2 Bxb2 {winning for Black}) 2... b2 {sacrificing one pawn in order to promote the other} 3. Nxb2 {the king is still in the square of the a-pawn, but the knight is now blocking the path...} a3 4. Nd3 {White can do nothing about the promotion, but can arrange for a stubborn defense} a2 5. Ne5+ Ke8 6. f4 {All pieces are protected and the black king is confined to squares around h8... well, the queen cannot mate all by herself.}';
@@ -261,7 +255,6 @@ function setcurrchessvars(n)
             
         case  6: 
             currchessfen = '[FEN "2k4N/Q1np4/2p2Bpp/1p1P4/pPP1p2P/P7/7q/1K6 w - - 0 1"]';
-            currcleanfen = 'FEN: 2k4N/Q1np4/2p2Bpp/1p1P4/pPP1p2P/P7/7q/1K6';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[6][0]+'"][Site "H.v.d.Heijden 50 JT"][Date "03.2011"][Round "'+allstudynames[6][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "2k4N/Q1np4/2p2Bpp/1p1P4/pPP1p2P/P7/7q/1K6 w - - 0 1"] 1. Nf7 Qg3 2. Qxc7+! Qxc7 (2... Kxc7 3. Be5+ {Albul castiga}) 3. d6 Qb8 4. c5 Kb7 5. Nd8+ {Prima configuratie a garzilor: Cal+Nebun} (5. Bd8? g5 {Negrul castiga}) 5... Ka8 6. Kc2 g5 {eliminand pionul alb} 7. hxg5 hxg5 8. Bxg5 Qc8 9. Kd2 e3+ 10. Kxe3 Ka7 11. Kf4 Ka8 12. Kf5 Ka7 13. Kg6 Ka8 14. Kf7 Ka7 15. Ke7 {a doua configuratie: Cal+Rege} Ka8 16. Bh6 Ka7 17. Bf8 {a treia configuratie: Nebun+Rege} Ka8 (17... Kb8 18. Nf7 Qb7 19. Ne5 Kc8 20. Ke8 Qa7 21. Be7 Qb7 22. Bd8 Qa7 23. Bc7 {Albul castiga}) 18. Nf7 Ka7 19. Ne5 Ka6 20. Nxd7';
             currpgn[1] = '[Event "'+allstudystips[6][1]+'"][Site "H.v.d.Heijden 50 JT"][Date "03.2011"][Round "'+allstudynames[6][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "2k4N/Q1np4/2p2Bpp/1p1P4/pPP1p2P/P7/7q/1K6 w - - 0 1"] 1. Nf7 Qg3 2. Qxc7+! Qxc7 (2... Kxc7 3. Be5+ {winning for White}) 3. d6 Qb8 4. c5 Kb7 5. Nd8+ {First configuration of the guards: N+B} (5. Bd8? g5 {winning for Black}) 5... Ka8 6. Kc2 g5 {removing the white pawn} 7. hxg5 hxg5 8. Bxg5 Qc8 9. Kd2 e3+ 10. Kxe3 Ka7 11. Kf4 Ka8 12. Kf5 Ka7 13. Kg6 Ka8 14. Kf7 Ka7 15. Ke7 {Second configuration: N+K} Ka8 16. Bh6 Ka7 17. Bf8 {Third configuration: B+K} Ka8 (17... Kb8 18. Nf7 Qb7 19. Ne5 Kc8 20. Ke8 Qa7 21. Be7 Qb7 22. Bd8 Qa7 23. Bc7 {winning for White}) 18. Nf7 {This is the way of the knight extraction} Ka7 19. Ne5 Ka6 20. Nxd7';
@@ -288,7 +281,6 @@ function setcurrchessvars(n)
             
         case  8: 
             currchessfen = '[FEN "q7/b1p5/kp1p4/p2PN3/PPP5/1K6/8/5B2 w - - 0 1"]';
-            currcleanfen = 'FEN: q7/b1p5/kp1p4/p2PN3/PPP5/1K6/8/5B2';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[8][0]+'"][Site "Componist"][Date "01.2012"][Round "'+allstudynames[8][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "q7/b1p5/kp1p4/p2PN3/PPP5/1K6/8/5B2 w - - 0 1"] 1. c5+ Kb7 (1... b5 2. Bxb5+ Kb7 3. Bc6+ Kc8 4. Bxa8 dxe5 5. Bc6 {Albul castiga}) 2. Ba6+! Kxa6 3. b5+ Kb7 4. c6+ Kc8 5. Nf7 Qb8 6. Kc4 Qa8 7. Kd4 Qb8 8. Ke4 Qa8 9. Kf5 Qb8 (9... Bb8 10. Ke6 Qa7 11. Ng5 Qa6 12. bxa6 b5 13. axb5 Ba7 14. Ne4 a4 15. Nc3 {Albul castiga, deoarece regele se poate intoarce.}) 10. Ke6 Qa8 11. Ng5 Kd8 12. Kf7 Qb8 13. Ne6+ Kc8 14. Ke8 Qa8 15. Ng7 Qb8 16. Nf5 Qa8 17. Ne7+ Kb8 18. Kd8 {zugzwang, Albul castiga}';
             currpgn[1] = '[Event "'+allstudystips[8][1]+'"][Site "Componist"][Date "01.2012"][Round "'+allstudynames[8][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "q7/b1p5/kp1p4/p2PN3/PPP5/1K6/8/5B2 w - - 0 1"] 1. c5+ Kb7 (1... b5 2. Bxb5+ Kb7 3. Bc6+ Kc8 4. Bxa8 dxe5 5. Bc6 {winning for White}) 2. Ba6+! Kxa6 3. b5+ Kb7 4. c6+ Kc8 5. Nf7 Qb8 6. Kc4 Qa8 7. Kd4 Qb8 8. Ke4 Qa8 9. Kf5 Qb8 (9... Bb8 10. Ke6 Qa7 11. Ng5 Qa6 12. bxa6 b5 13. axb5 Ba7 14. Ne4 a4 15. Nc3 {winning for White, since the king can come back to hold in place the black a-pawn and the bishop, while the knight and white pawns can force a breakthrough.}) 10. Ke6 Qa8 11. Ng5 Kd8 12. Kf7 Qb8 13. Ne6+ Kc8 14. Ke8 Qa8 15. Ng7 Qb8 16. Nf5 Qa8 17. Ne7+ Kb8 18. Kd8 {zugzwang, winning for White}';
@@ -309,7 +301,6 @@ function setcurrchessvars(n)
             
         case  9: 
             currchessfen = '[FEN "1N4K1/1pp1p3/7k/2r3pP/p2pp1P1/P6N/8/2B5 w - - 0 1"]';
-            currcleanfen = 'FEN: 1N4K1/1pp1p3/7k/2r3pP/p2pp1P1/P6N/8/2B5';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[9][0]+'"][Site "chichitza.ro"][Date "09.2012"][Round "'+allstudynames[9][0]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "1N4K1/1pp1p3/7k/2r3pP/p2pp1P1/P6N/8/2B5 w - - 0 1"] 1. Nc6 {Sacrificand calul doar pentru a muta un pion de pe coloana b pe coloana c} (1. Na6 {nu este suficient de agresiv, permitand Rxc1}) (1. Nd7 Rxc1 {Negrul castiga}) (1. Bd2 Rd5 {!} 2. Nc6 {acum este prea tarziu pentru a reveni la ideea de remiza} bxc6 3. Nxg5 Rd8+ 4. Kf7 e3 {Negrul castiga}) 1... bxc6 (1... Rxc1 2. Nxe7 Rf1 3. Kh8 Rf8+ 4. Ng8+ Rxg8+ 5. Kxg8 e3 6. Ng1 d3 7. Nf3 d2 8. Ne5 d1=Q 9. Nf7#) (1... Rxc6 2. Bxg5#) 2. Nxg5 Rxg5+ (2... Rxc1 3. Nf7#) 3. Kh8 {Negrul are ciudatul privilegiu de a decide daca Negrul face pat pe Alb prin capturarea nebunului, sau invers -- Albul face pat pe Negru --, prin cedarea tuturor pionilor pe diagonala c1-h6... remiza}';
             currpgn[1] = '[Event "'+allstudystips[9][1]+'"][Site "chichitza.ro"][Date "09.2012"][Round "'+allstudynames[9][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "1N4K1/1pp1p3/7k/2r3pP/p2pp1P1/P6N/8/2B5 w - - 0 1"] 1. Nc6 {Sacrificing the knight only to displace the b-pawn on the c-column} (1. Na6 {is not aggressive enough, Black has time for Rxc1, winning}) (1. Nd7 Rxc1 {winning for Black}) (1. Bd2 Rd5 {the only way to win for Black} 2. Nc6 {now it is too late to get back to the mainline drawing idea} bxc6 3. Nxg5 Rd8+ 4. Kf7 e3 {winning for Black}) 1... bxc6 {forced, otherwise mate at move 9:} (1... Rxc1 2. Nxe7 Rf1 3. Kh8 Rf8+ 4. Ng8+ Rxg8+ 5. Kxg8 e3 6. Ng1 d3 7. Nf3 d2 8. Ne5 d1=Q 9. Nf7#) (1... Rxc6 2. Bxg5# {is the threat that keeps the rook from taking the knight}) 2. Nxg5 Rxg5+ (2... Rxc1 3. Nf7#) 3. Kh8 {Black now has the awkward privilege of choosing whether he prefers to stalemate White by capturing the bishop or to be stalemated by White after having pushed all pawns in the diagonal of death c1-h6... draw}';
@@ -327,7 +318,6 @@ function setcurrchessvars(n)
             
         case 10: 
             currchessfen = '[FEN "4B3/k1K1pp2/p3bq2/2p1p3/1p2P1P1/4P2Q/nR6/8 w - - 0 1"]';
-            currcleanfen = 'FEN: 4B3/k1K1pp2/p3bq2/2p1p3/1p2P1P1/4P2Q/nR6/8';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[10][0]+'"][Site "Schach"][Date "09.2012"][Round "'+allstudynames[10][0]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "4B3/k1K1pp2/p3bq2/2p1p3/1p2P1P1/4P2Q/nR6/8 w - - 0 1"] 1. g5 (1. Rd2 Nc3 {Negrul castiga}) 1... Qxg5 2. Qxe6 (2. Qh8 Qf6 3. Rh2 (3. Qxf6 exf6 4. Rd2 b3 5. Rd8 Nc3 6. Bc6 Nb5+ 7. Bxb5 axb5 {Negrul castiga}) 3... Qxh8 4. Rxh8 Nc3 5. Bc6 Nb5+ 6. Bxb5 axb5 7. Rb8 b3 8. Rxb5 Ka6 9. Rxc5 Bg4 {Negrul castiga}) 2... fxe6 3. Rxa2 Qg8 (3... Qxe3 4. Bb5 Qa3 5. Rxa3 bxa3 6. Bc4 {Albul castiga}) 4. Ra4 {sau Ra5, pastrand campul a1 liber} (4. Ra1 Qf8 5. Ra5 Qf1 6. Bb5 Qxb5 7. Rxb5 axb5 {Negrul castiga}) 4... Qf8 5. Ra1 (5. Ra2 {sau Ra5} Qf1 {Negrul castiga}) 5... b3 (5... c4 6. Ra4 c3 7. Rxb4 Qxe8 8. Rb7+ Ka8 9. Ra7+ Kxa7 {pat}) 6. Ra3 b2 7. Rb3 b1=Q 8. Rxb1 Qxe8 9. Rb7+ Ka8 10. Ra7+ Kxa7{pat}';
             currpgn[1] = '[Event "'+allstudystips[10][1]+'"][Site "Schach"][Date "09.2012"][Round "'+allstudynames[10][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "4B3/k1K1pp2/p3bq2/2p1p3/1p2P1P1/4P2Q/nR6/8 w - - 0 1"] 1. g5 (1. Rd2 Nc3 {winning for Black}) 1... Qxg5 2. Qxe6 (2. Qh8 Qf6 3. Rh2 (3. Qxf6 exf6 4. Rd2 b3 5. Rd8 Nc3 6. Bc6 Nb5+ 7. Bxb5 axb5 {winning for Black}) 3... Qxh8 4. Rxh8 Nc3 5. Bc6 Nb5+ 6. Bxb5 axb5 7. Rb8 b3 8. Rxb5 Ka6 9. Rxc5 Bg4 {winning for Black}) 2... fxe6 3. Rxa2 Qg8 (3... Qxe3 4. Bb5 Qa3 5. Rxa3 bxa3 6. Bc4 {winning for White}) 4. Ra4 {or Ra5, but keeping the a1 square cleared} (4. Ra1 Qf8 5. Ra5 Qf1 6. Bb5 Qxb5 7. Rxb5 axb5 {winning for Black}) 4... Qf8 5. Ra1 (5. Ra2 {or Ra5} Qf1 {winning for Black}) 5... b3 (5... c4 6. Ra4 c3 7. Rxb4 Qxe8 8. Rb7+ Ka8 9. Ra7+ Kxa7 {stalemate}) 6. Ra3 b2 7. Rb3 b1=Q 8. Rxb1 Qxe8 9. Rb7+ Ka8 10. Ra7+ Kxa7{stalemate}';
@@ -345,7 +335,6 @@ function setcurrchessvars(n)
             
         case 11: 
             currchessfen = '[FEN "4N2k/4PB1p/7P/B1p5/2P5/3q2Pp/1P3P1K/2r5 w - - 0 1"]';
-            currcleanfen = 'FEN: 4N2k/4PB1p/7P/B1p5/2P5/3q2Pp/1P3P1K/2r5';
             coauthor = '';
             currpgn[0] = '[Event "'+allstudystips[11][0]+'"][Site "chichitza.ro"][Date "11.2012"][Round "'+allstudynames[11][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "4N2k/4PB1p/7P/B1p5/2P5/3q2Pp/1P3P1K/2r5 w - - 0 1"] 1. Bc3+ (1. Nc7? {sau orice alt&#x103; mutare} Rh1+ 2. Kxh1 Qf3+ 3. Kh2 Qg2#) 1... Rxc3 (1... Qxc3 2. bxc3 {c&#xE2;&#x15F;tig&#x103;tor pentru Alb}) 2. Nc7! (2. Nd6? {sau 2. Nf6? sau 2.Ng7?} Qxg3+ 3. fxg3 Rc2+ 4. Kxh3 (4. Kg1 h2+ 5. Kh1 Rc1+ 6. Kxh2 Rh1+) 4... Rh2+ 5. Kg4 Rh4+ {remiz&#x103; prin &#x15F;ah etern}) (2. bxc3? Qf1 {c&#xE2;&#x15F;tig&#x103;tor pentru Alb}) 2... Qxg3+ (2... Qd7 {or Qe2 or Qe4} 3. e8=Q+ Qxe8 4. Bxe8 {c&#xE2;&#x15F;tig&#x103;tor pentru Alb}) 3. fxg3 Rc2+ 4. Kxh3 Rh2+ 5. Kg4 Rh4+ 6. Kf5 Rf4+ (6... Rh5+ 7. Bxh5 Kg8 8. e8=R#) 7. Ke5 Re4+ 8. Kd5 (8. Kd6? Re6+ 9. Kd5 Rd6+ 10. Ke4 (10. Kxc5 Rc6+ {remiz&#x103;}) 10... Re6+ 11. Kf3 Rxe7 {remiz&#x103;}) 8... Re5+ 9. Kc6 Re6+ 10. Kb7 (10. Kxc5? Rc6+ {remiz&#x103;}) 10... Rb6+ 11. Kc8 Rb8+ 12. Kd7 {captur&#xE2;nd tura cu mat sau dezamors&#xE2;nd amenin&#x21B;area de pat cu avantaj decisiv}';
             currpgn[1] = '[Event "'+allstudystips[11][1]+'"][Site "chichitza.ro"][Date "11.2012"][Round "'+allstudynames[11][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "4N2k/4PB1p/7P/B1p5/2P5/3q2Pp/1P3P1K/2r5 w - - 0 1"] 1. Bc3+ (1. Nc7? {or any other move} Rh1+ 2. Kxh1 Qf3+ 3. Kh2 Qg2#) 1... Rxc3 (1... Qxc3 2. bxc3 {winning for White}) 2. Nc7! (2. Nd6? {or 2. Nf6? or 2.Ng7?} Qxg3+ 3. fxg3 Rc2+ 4. Kxh3 (4. Kg1 h2+ 5. Kh1 Rc1+ 6. Kxh2 Rh1+) 4... Rh2+ 5. Kg4 Rh4+ {draw by perpetual check}) (2. bxc3? Qf1 {winning for Black}) 2... Qxg3+ (2... Qd7 {or Qe2 or Qe4} 3. e8=Q+ Qxe8 4. Bxe8 {winning for White}) 3. fxg3 Rc2+ 4. Kxh3 Rh2+ 5. Kg4 Rh4+ 6. Kf5 Rf4+ (6... Rh5+ 7. Bxh5 Kg8 8. e8=R#) 7. Ke5 Re4+ 8. Kd5 (8. Kd6? Re6+ 9. Kd5 Rd6+ 10. Ke4 (10. Kxc5 Rc6+ {draw}) 10... Re6+ 11. Kf3 Rxe7 {draw}) 8... Re5+ 9. Kc6 Re6+ 10. Kb7 (10. Kxc5? Rc6+ {draw}) 10... Rb6+ 11. Kc8 Rb8+ 12. Kd7 {capturing the rook with checkmate or releasing the stalemate threat with a decisive advantage}';
@@ -363,7 +352,6 @@ function setcurrchessvars(n)
             
         case 13: 
             currchessfen = '[FEN "8/4Pr1N/8/6PN/8/3K1ppp/4prkb/4Bbnn w - - 0 1"]';
-            currcleanfen = 'FEN: 8/4Pr1N/8/6PN/8/3K1ppp/4prkb/4Bbnn';
             coauthor = 'Arpad Rusz';
             currpgn[0] = '[Event "'+allstudystips[13][0]+'"][Site "9th WCCT (D39)"][Date "09.2013"][Round "'+allstudynames[13][0]+'"][White "Mihai Neghina"][Black "Arpad Rusz"][Result "1-0"][FEN "8/4Pr1N/8/6PN/8/3K1ppp/4prkb/4Bbnn w - - 0 1"] 1. Nf8 {forteaza tura la f8} (1. e8=Q Rd7+ {remiza}) (1. N7f6 Rxf6 2. e8=Q Rd6+ {remiza}) (1. g6 Rf5 2. Ng5 Rd5+ {remiza}) (1. Kc2 Rf6 {remiza}) 1... Rxf8 (1... Rf5 2. Kc3 {Albul castiga}) (1... Rf6 2. Ne6 Rf5 3. Nef4+ Rxf4 4. Nxf4#) 2. e8=Q {protectie pentru rege} (2. exf8=Q {pat}) (2. e8=N Rf6 3. Kc3 Rc6+ 4. Kb3 Rb6+ 5. Ka4 Ra6+ {remiza}) 2... Rf7 3. Qe7 {protectie pentru rege} (3. Qc6 Rd7+ 4. Kc4 Rd4+ {remiza}) 3... Rf6 4.Qe6 {protectie pentru rege} (4. Kc2 Rc6+ 5. Kb3 Rc4 {remiza} (5... Rb6+ 6. Bb4 {Albul castiga}) (5... Rc3+ 6. Bxc3 {Albul castiga}) (5... Rf6 6. g6 {Albul castiga ca in varianta principala})) 4... Rf5 5. Qe5 {protectie pentru rege} Rf8 6. Qd4 {protectie pentru rege} Rf5 7. Kc3 {minor duals Kc2, Kc4} Rc5+ 8. Kb3 (8. Kb4 Rc4+ {remiza}) 8... Rb5+ (8... Rc3+ 9.Bxc3 {Albul castiga}) 9. Ka4 Rf5 (9... Ra5+ 10. Bxa5 {Albul castiga}) 10. Qd8 {cea mai scurta cale catre mat} Rf7 11. g6 Rf5 (11... Ra7+ 12. Ba5 {Albul castiga}) 12. Qg5 {protectie pentru cal} Rf8 13. g7 Rf5 14. g8=N {Albul castiga}';
             currpgn[1] = '[Event "'+allstudystips[13][1]+'"][Site "9th WCCT (D39)"][Date "09.2013"][Round "'+allstudynames[13][1]+'"][White "Mihai Neghina"][Black "Arpad Rusz"][Result "1-0"][FEN "8/4Pr1N/8/6PN/8/3K1ppp/4prkb/4Bbnn w - - 0 1"] 1. Nf8 {forcing the rook to the f8 square} (1. e8=Q Rd7+ {draw}) (1. N7f6 Rxf6 2. e8=Q Rd6+ {draw}) (1. g6 Rf5 2. Ng5 Rd5+ {draw}) (1. Kc2 Rf6 {draw}) 1... Rxf8 (1... Rf5 2. Kc3 {winning for White}) (1... Rf6 2. Ne6 Rf5 3. Nef4+ Rxf4 4. Nxf4#) 2. e8=Q {shielding the king from checks} (2. exf8=Q {stalemate}) (2. e8=N Rf6 3. Kc3 Rc6+ 4. Kb3 Rb6+ 5. Ka4 Ra6+ {draw}) 2... Rf7 3. Qe7 {shielding the king from checks} (3. Qc6 Rd7+ 4. Kc4 Rd4+ {draw}) 3... Rf6 4.Qe6 {shielding the king from checks} (4. Kc2 Rc6+ 5. Kb3 Rc4 {draw} (5... Rb6+ 6. Bb4 {winning for White}) (5... Rc3+ 6. Bxc3 {winning for White}) (5... Rf6 6. g6 {winning for White as in the mainline})) 4... Rf5 5. Qe5 {shielding the king from checks} Rf8 6. Qd4 {shielding the king from checks} Rf5 7. Kc3 {minor duals Kc2, Kc4} Rc5+ 8. Kb3 (8. Kb4 Rc4+ {draw}) 8... Rb5+ (8... Rc3+ 9.Bxc3 {winning for White}) 9. Ka4 Rf5 (9... Ra5+ 10. Bxa5 {winning for White}) 10. Qd8 {shortest path to mate} Rf7 11. g6 Rf5 (11... Ra7+ 12. Ba5 {winning for White}) 12. Qg5 {Shielding the knight} Rf8 13. g7 Rf5 14. g8=N {winning for White}';
@@ -390,7 +378,6 @@ function setcurrchessvars(n)
             
         default: 
             currchessfen = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
-            currcleanfen = 'FEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"]';
             coauthor = '';
             currpgn[0] = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
             currpgn[1] = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
@@ -429,9 +416,51 @@ function openChessObject(n)
     }
 }
 
+function showSolution() 
+{	
+    var container;    
+    
+    container = document.getElementById("solution-navButtons");
+    container.style.visibility='visible';
+    
+    container = document.getElementById("solution-moves");
+    container.style.visibility='visible';
+    
+    container = document.getElementById("divShowSolution");
+    container.style.visibility='hidden';
+    
+    container = document.getElementById("divHideSolution");
+    container.style.visibility='visible';
+    
+    container = document.getElementById("divShowPGN");
+    container.style.visibility='visible';
+
+}
+
+function hideSolution() 
+{	
+    var container;
+    
+    container = document.getElementById("solution-navButtons");
+    container.style.visibility='hidden';
+    
+    container = document.getElementById("solution-moves");
+    container.style.visibility='hidden';
+    
+    container = document.getElementById("divShowSolution");
+    container.style.visibility='visible';
+    
+    container = document.getElementById("divHideSolution");
+    container.style.visibility='hidden';
+    
+    container = document.getElementById("divShowPGN");
+    container.style.visibility='hidden';
+
+}
+
 function initChessSolution(n)
 {
-    var name, stip, container, v;
+    var name, stip, currlangpgn, container, v;
     
     setcurrchessvars(n);
     
@@ -475,45 +504,6 @@ function initChessSolution(n)
     }
     
     hideSolution();
-
-}
-
-function showSolution() 
-{	
-        
-    container = document.getElementById("solution-navButtons");
-    container.style.visibility='visible';
-    
-    container = document.getElementById("solution-moves");
-    container.style.visibility='visible';
-    
-    container = document.getElementById("divShowSolution");
-    container.style.visibility='hidden';
-    
-    container = document.getElementById("divHideSolution");
-    container.style.visibility='visible';
-    
-    container = document.getElementById("divShowPGN");
-    container.style.visibility='visible';
-
-}
-
-function hideSolution() 
-{	
-    container = document.getElementById("solution-navButtons");
-    container.style.visibility='hidden';
-    
-    container = document.getElementById("solution-moves");
-    container.style.visibility='hidden';
-    
-    container = document.getElementById("divShowSolution");
-    container.style.visibility='visible';
-    
-    container = document.getElementById("divHideSolution");
-    container.style.visibility='hidden';
-    
-    container = document.getElementById("divShowPGN");
-    container.style.visibility='hidden';
 
 }
 
