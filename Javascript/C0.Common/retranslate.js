@@ -78,6 +78,7 @@ var currcleanfen;
 /*global retranslateDECommon */
 /*global showImageOnHover */
 /*global showChessPositionOnHover */
+/*global initChessSolution */
 /*global showInteractive */
 
 function retranslate(selectedLanguage)
