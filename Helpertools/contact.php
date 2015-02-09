@@ -8,9 +8,8 @@ $mesaj = $_POST['mesaj'];
 	      {
 		   $header = "From:<" . $email . ">";
 		   $destinatar = "chichitza@chichitza.ro";
-		   $titlu = 'mesaj chichitza';
+		   $titlu = 'Mesaj chichitza';
            mail($destinatar, $titlu, $mesaj, $header);
-		   echo "<script type='text/javascript'>alert('Multumim pentru feedback!')</script>";
 		   ?>
 		   <script language=JavaScript>
            window.close();
