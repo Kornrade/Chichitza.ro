@@ -10,6 +10,11 @@
 	<script type="text/javascript" src="Javascript/C0.Common/helpertools.js"></script>
 	<script type="text/javascript" src="Javascript/C0.Common/highslide/highslide.js"></script>
 	<link rel="stylesheet" type="text/css" href="Javascript/C0.Common/highslide/highslide.css" />
+    
+    <!-- Tinybox for displaying popups -->
+    <script type="text/javascript" src="Javascript/C0.Common/tinybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles/tinybox.css" />
+    
 	<script type="text/javascript" src="Javascript/C1.Microchitze/J1.Global_variables.js"></script>
 	<script type="text/javascript" src="Javascript/C1.Microchitze/J2.Database.js"        ></script>
 	<script type="text/javascript" src="Javascript/C1.Microchitze/J3.Functions.js"       ></script>
@@ -135,20 +140,10 @@
 											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
 										</div>
 										<div id="helpertoolsField" style="visibility: visible">
-											<p align="center" hidden>
-												<a id="buttonConstants"  href="JavaScript:newPopup(650,650,10,10,'http://www.ebyte.it/library/educards/constants/ConstantsOfPhysicsAndMath.html');"><img src="Images/C0.Common/Helpertools/Constants.png" alt="Constants" width="24" height="24" border="0" /></a> &nbsp;
-												<a id="buttonCalendar"   href="JavaScript:newPopup(650,650,10,10,'Helpertools/calendar.html');">  <img src="Images/C0.Common/Helpertools/Calendar.png"        alt="Calendar" width="24" height="24" border="0" /></a> &nbsp;
-												<a id="buttonConvertor"  href="JavaScript:newPopup(420,570,10,10,'Helpertools/convertor.html');">  <img src="Images/C0.Common/Helpertools/Convertor.png"   alt="Convertor" width="24" height="24" border="0" /></a> 
-											</p>
 											<p align="center">	
-												<a id="buttonCalculator" href="JavaScript:newPopup(440,570,10,10,'Helpertools/calculator.html');"> <img src="Images/C0.Common/Helpertools/Calculator.png"  alt="Calculator" width="24" height="24" border="0" /></a> &nbsp;
-												<a id="buttonTerra" 	 href="JavaScript:newPopup(550,640,10,10,'Helpertools/terra.html');">      <img src="Images/C0.Common/Helpertools/Terra.png"        alt="Terra" width="24" height="24" border="0" /></a> &nbsp;
-												<a id="buttonMendeleev"  href="JavaScript:newPopup(420,650,10,10,'Helpertools/mendeleev.html');">  <img src="Images/C0.Common/Helpertools/Mendeleev.png"        alt="Mendeleev" width="24" height="24" border="0" /></a> 
-											</p>
-											<p align="center" hidden>	
-												<a id="buttonSolar" 	 href="JavaScript:newPopup(650,650,10,10,'http://janus.astro.umd.edu/SolarSystems');"><img src="Images/C0.Common/Helpertools/Solar.png"   alt="Solar" width="24" height="24" border="0" /></a> &nbsp;
-												<a id="buttonStars" 	 href="JavaScript:newPopup(650,650,10,10,'http://neave.com/planetarium');"><img src="Images/C0.Common/Helpertools/Stars.png"       alt="Stars" width="24" height="24" border="0" /></a> &nbsp;
-												<a id="buttonMorse" 	 href="JavaScript:newPopup(650,650,10,10,'Helpertools/morseconvertor.html');">  <img src="Images/C0.Common/Helpertools/Morse.png"        alt="Morse" width="24" height="24" border="0" /></a> 
+												<a id="buttonCalculator" href="JavaScript:TINY.box.show('Helpertools/calculator.html',1,0,0,1);"> <img src="Images/C0.Common/Helpertools/Calculator.png"  alt="Calculator" width="24" height="24" border="0" /></a> &nbsp;
+												<a id="buttonTerra" 	 href="JavaScript:TINY.box.show('Helpertools/terra.html',     1,0,0,1);">  <img src="Images/C0.Common/Helpertools/Terra.png"      alt="Terra" width="24" height="24" border="0" /></a> &nbsp;
+												<a id="buttonMendeleev"  href="JavaScript:TINY.box.show('Helpertools/mendeleev.html', 1,0,0,1);">  <img src="Images/C0.Common/Helpertools/Mendeleev.png"  alt="Mendeleev" width="24" height="24" border="0" /></a> 
 											</p>
 										</div>
 									</td>

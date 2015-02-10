@@ -87,7 +87,7 @@ function retranslateDECommon()
 	
 	// Cell (2)
 	document.getElementById("buttonAdmin"  ).href   = "#";
-	document.getElementById("buttonContact").href   = "Javascript:newPopup(250,400,10,10,'Helpertools/contactDE.html');";
+	document.getElementById("buttonContact").href   = "Javascript:TINY.box.show('Helpertools/contactDE.html', 1,0,0,1);";
 	document.getElementById("buttonHome"   ).href   = "index.html?lang=de";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin");
 	document.getElementById("buttonContact").setAttribute("data","Kontakt");

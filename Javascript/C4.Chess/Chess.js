@@ -509,7 +509,7 @@ function initChessSolution(n)
 
 function showPGN() 
 {	
-    var currlangpgn, editedcurrlangpgn, popUpWindowProperties, OpenWindow;
+    var currlangpgn, editedcurrlangpgn, popupcontents, finalcontents;
     currlangpgn = currpgn[1];
     if( 'ro' === lang ) { currlangpgn = currpgn[0]; }
     if( 'en' === lang ) { currlangpgn = currpgn[1]; }
@@ -519,22 +519,13 @@ function showPGN()
     
     editedcurrlangpgn = "<div align='justify'>" + editedcurrlangpgn + "</div>";
     
-        popUpWindowProperties = 'height=500\
-                                ,width=700\
-                                ,left=100\
-                                ,top=100\
-                                ,resizable=yes  \
-                                ,scrollbars=yes \
-                                ,toolbar=no     \
-                                ,titlebar=no	\
-                                ,menubar=no     \
-                                ,location=no    \
-                                ,directories=no \
-                                ,status=no';
+    popupcontents = "<a id=\"buttonX\" href=\"JavaScript:TINY.box.hide();\">\
+                    <img src=\"Images/C0.Common/Helpertools/BigXGray.png\" alt=\"X\" \
+                    width=\"24\" height=\"24\" border=\"0\" align=\"right\" /> </a> ";
     
-    OpenWindow=window.open('', '', popUpWindowProperties);
-    OpenWindow.document.write(editedcurrlangpgn);
-    OpenWindow.document.close();
+    finalcontents = popupcontents.concat( editedcurrlangpgn );          
+    
+    TINY.box.show(finalcontents,0,0,0,1);
 }
 
 

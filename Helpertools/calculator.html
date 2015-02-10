@@ -2,6 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    <!-- Tinybox for displaying popups -->
+    <script type="text/javascript" src="Javascript/C0.Common/tinybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles/tinybox.css" />
+    
 <title>Calculator</title>
 
 <style type="text/css">
@@ -471,7 +476,7 @@ left: 205px
 
 
 body {
-	background-color: #000000;
+	background-color: #FFFFFF;
 }
 </style>
 
@@ -480,6 +485,13 @@ body {
 </head>
 
 <body onload="vidi('konstante');">
+
+<a id="buttonX" 	 href="JavaScript:TINY.box.hide();">  
+    <img src="Images/C0.Common/Helpertools/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />
+</a>
+<br/>
+<br/>
+<br/>
 
 <div id="calculator">
 

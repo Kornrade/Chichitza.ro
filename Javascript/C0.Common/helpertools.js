@@ -2,7 +2,6 @@
 | This file contains the general javascript functions related to helpertools.                  |     
 | The following functions are available:                                                       |
 |       detectLanguage()................. detects the language cue embedded in the link        |
-|       newPopup(h,w,l,t,url)............ opens popup window and displays the helpertool url   |
 |       submitTextToDictionarySearch()... (re-)loads dictionary.html showing search results    |
 \*--------------------------------------------------------------------------------------------*/
 
@@ -63,25 +62,6 @@ function setIntroAndRetranslate(introNumber)
 {
 	intro = introNumber;
 	retranslate(lang);
-}
-
-function newPopup(h, w, l, t, url) 
-{
-    var popupWindow, popUpWindowProperties;
-	    popUpWindowProperties =  'height=' + h +
-								 ',width=' + w +
-								 ',left='  + l +
-								 ',top='   + t +
-								 ',resizable=yes  \
-								  ,scrollbars=yes \
-								  ,toolbar=no     \
-								  ,titlebar=no	  \
-								  ,menubar=no     \
-								  ,location=no    \
-								  ,directories=no \
-								  ,status=no';
-								  
-	popupWindow = window.open( url, 'popUpWindow', popUpWindowProperties);
 }
 
 function showImageOnHover(imageName, imageTitle)
