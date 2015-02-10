@@ -290,18 +290,9 @@ function retranslateROMicrochitze()
 		
 		// Cell (3)
 		document.getElementById("expandcompressHelpertools").innerHTML="Fi&#x21B;uici";
-		document.getElementById("buttonConstants"   ).setAttribute("data","Constante"  );
-		document.getElementById("buttonCalendar"    ).setAttribute("data","Calendar"  );
-		document.getElementById("buttonConvertor"   ).setAttribute("data","Convertor"  );
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
-		document.getElementById("buttonSolar"       ).setAttribute("data","Sistem Solar"  );
-		document.getElementById("buttonStars"       ).setAttribute("data","Stele"  );
-		document.getElementById("buttonMorse"       ).setAttribute("data","Codul Morse"  );
-		//document.getElementById("buttonBraille"   ).setAttribute("data","Codul Braille"  );
-		//document.getElementById("buttonAlphabet1" ).setAttribute("data","Alfabet"  );
-		//document.getElementById("buttonAlphabet2" ).setAttribute("data","Alfabet"  );
 		
 		document.getElementById("buttonResults").setAttribute("data","Vezi raspunsurile");
 	}

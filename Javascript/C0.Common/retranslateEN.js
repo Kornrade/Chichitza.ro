@@ -271,18 +271,9 @@ function retranslateENMicrochitze()
 		
 		// Cell (3)
 		document.getElementById("expandcompressHelpertools").innerHTML="Crib sheets";
-		document.getElementById("buttonConstants"   ).setAttribute("data","Constants"  );
-		document.getElementById("buttonCalendar"    ).setAttribute("data","Calendar"  );
-		document.getElementById("buttonConvertor"   ).setAttribute("data","Convertor"  );
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
-		document.getElementById("buttonSolar"       ).setAttribute("data","Solar System"  );
-		document.getElementById("buttonStars"       ).setAttribute("data","Stars"  );
-		document.getElementById("buttonMorse"       ).setAttribute("data","Morse Code"  );
-		//document.getElementById("buttonBraille"   ).setAttribute("data","Braille Code"  );
-		//document.getElementById("buttonAlphabet1" ).setAttribute("data","Alphabet"  );
-		//document.getElementById("buttonAlphabet2" ).setAttribute("data","Alphabet"  );
 		
 		document.getElementById("buttonResults").setAttribute("data","Go to the answers"  );
 	}

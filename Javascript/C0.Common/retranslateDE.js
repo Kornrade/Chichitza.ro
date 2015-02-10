@@ -296,18 +296,9 @@ function retranslateDEMicrochitze()
 		
 		// Cell (3)	
 		document.getElementById("expandcompressHelpertools").innerHTML="Spickzettel";
-		document.getElementById("buttonConstants"   ).setAttribute("data","Konstanten"  );
-		document.getElementById("buttonCalendar"	).setAttribute("data","Kalender"  );
-		document.getElementById("buttonConvertor"   ).setAttribute("data","Konverter"  );
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Rechner"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
-		document.getElementById("buttonSolar"       ).setAttribute("data","Sonnensystem"  );
-		document.getElementById("buttonStars"       ).setAttribute("data","Sterne"  );
-		document.getElementById("buttonMorse"       ).setAttribute("data","Morseschrift"  );
-		//document.getElementById("buttonBraille"   ).setAttribute("data","Blindenschrift"  );
-		//document.getElementById("buttonAlphabet1" ).setAttribute("data","Alphabet"  );
-		//document.getElementById("buttonAlphabet2" ).setAttribute("data","Alphabet"  );
 		
 		document.getElementById("buttonResults").setAttribute("data","Ergebnisse"  );
 	}
