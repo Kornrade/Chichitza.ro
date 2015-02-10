@@ -64,6 +64,25 @@ function setIntroAndRetranslate(introNumber)
 	retranslate(lang);
 }
 
+function newPopup(h, w, l, t, url) 
+{
+    var popupWindow, popUpWindowProperties;
+	    popUpWindowProperties =  'height=' + h +
+								 ',width=' + w +
+								 ',left='  + l +
+								 ',top='   + t +
+								 ',resizable=yes  \
+								  ,scrollbars=yes \
+								  ,toolbar=no     \
+								  ,titlebar=no	  \
+								  ,menubar=no     \
+								  ,location=no    \
+								  ,directories=no \
+								  ,status=no';
+								  
+	popupWindow = window.open( url, 'popUpWindow', popUpWindowProperties);
+}
+
 function showImageOnHover(imageName, imageTitle)
 {
     var imagePath, container;
