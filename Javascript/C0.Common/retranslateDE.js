@@ -116,13 +116,13 @@ function retranslateDEIndexIntro()
 	document.getElementById("imgMainContentsLeft2" ).setAttribute("data", "Makroknobeleien"	);
 	document.getElementById("imgMainContentsLeft3" ).setAttribute("data", "Interaktive"		);
 	document.getElementById("imgMainContentsLeft4" ).setAttribute("data", "Schachstudien"   );
-	document.getElementById("imgMainContentsLeft5" ).setAttribute("data", "Woerterbuch"     );
+	document.getElementById("imgMainContentsLeft5" ).setAttribute("data", "Wörterbuch"     );
 	
 	document.getElementById("imgMainContentsRight12" ).setAttribute("data", "Mikroknobeleien" );
 	document.getElementById("imgMainContentsRight22" ).setAttribute("data", "Makroknobeleien" );
 	document.getElementById("imgMainContentsRight32" ).setAttribute("data", "Interaktive"	  );
 	document.getElementById("imgMainContentsRight42" ).setAttribute("data", "Schachstudien"   );
-	document.getElementById("imgMainContentsRight52" ).setAttribute("data", "Woerterbuch"     );
+	document.getElementById("imgMainContentsRight52" ).setAttribute("data", "Wörterbuch"     );
 			
 	document.getElementById("divMainContentsRight11").innerHTML = "\
 					<b>Mikroknobeleien:</b> 10-Fragen Knobelaufgaben. <br/>\
