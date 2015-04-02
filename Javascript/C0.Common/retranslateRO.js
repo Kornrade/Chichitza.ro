@@ -206,7 +206,7 @@ function retranslateROMacrochitzeIntro()
 	document.getElementById("divTitle").innerHTML = "MACROCHITZE";
 	
 	// Cell (3)
-	document.getElementById("divMainContents").innerHTML = "";
+    document.getElementById("macrotest"   ).innerHTML = "PsihochitzeMacro ";
 
 	}
 }
@@ -304,10 +304,14 @@ function retranslateROMacrochitze()
 	// translations to RO =========================
 	if(lang==="ro")
 	{
-	// Cell (1)
-	document.getElementById("divTitle").innerHTML = "MACROCHITZE";
-	
-	// Cell (3)
+        // Cell (1)
+        document.getElementById("divTitle").innerHTML = "MACROCHITZE";
+
+        // Cell (3)
+        document.getElementById("expandcompressHelpertools").innerHTML="Fi&#x21B;uici";
+		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
+		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
+		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
 	}
 }
 

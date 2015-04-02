@@ -288,6 +288,10 @@ function retranslateENMacrochitze()
 		document.getElementById("divTitle").innerHTML = "MACROTEASERS";
 		
 		// Cell (3)	
+        document.getElementById("expandcompressHelpertools").innerHTML="Crib sheets";
+		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
+		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
+		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
 	}
 }
 

@@ -365,13 +365,23 @@ function retranslateMacrochitzeIntro()
 {
 	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/C0.Common/C2.Macrochitze.png' width='128'></img>";
 	showImageOnHover("","");
+    
+    document.getElementById("divMainContents").innerHTML = "\
+					<br/><br/>\
+					<div id='divmacrotest'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'> &nbsp; &nbsp; \
+						<a id='macrotest' style='display:inline-block;width:120;'></a>\
+						<span id='spanmacrotest' style=\"display:inline-block;width:300;text-align:left;\"></span>\
+					</div>";
 	
-	//retranslate specific intro text of Macrochitze
+	document.getElementById("macrotest"   ).href = "Macrochitze.html?lang="+lang+"&aux=0";
+    
+    //retranslate specific intro text of Microchitze
 	if(lang==="ro") {retranslateROMacrochitzeIntro();}
 	if(lang==="en") {retranslateENMacrochitzeIntro();}
 	if(lang==="de") {retranslateDEMacrochitzeIntro();}
-	
-	window.open("UnderConstruction.html?lang="+lang,"_self");
 }
 
 function retranslateInteractiveIntro() 

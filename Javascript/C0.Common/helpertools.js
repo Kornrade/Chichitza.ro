@@ -107,7 +107,7 @@ function showImageOnHover(imageName, imageTitle)
 	}
 }
 
-var areHelpertoolsExpanded = false;
+var areHelpertoolsExpanded = true;
 function expandcompressHelpertools()
 {
 	if(false===areHelpertoolsExpanded)

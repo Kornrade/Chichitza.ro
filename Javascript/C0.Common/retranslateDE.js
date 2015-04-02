@@ -313,6 +313,10 @@ function retranslateDEMacrochitze()
 		document.getElementById("divTitle").innerHTML = "MAKROKNOBELEIEN";
 		
 		// Cell (3)		
+		document.getElementById("expandcompressHelpertools").innerHTML="Spickzettel";
+		document.getElementById("buttonCalculator"  ).setAttribute("data","Rechner"  );
+		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
+		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
 	}
 }
 

@@ -1,1 +1,187 @@
-<script type="text/javascript">window.open('UnderConstruction.html', '_self');</script>
+<html>
+<head>
+	
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<script type="text/javascript" src="Javascript/C0.Common/retranslate.js"></script>
+	<script type="text/javascript" src="Javascript/C0.Common/retranslateRO.js"></script>
+	<script type="text/javascript" src="Javascript/C0.Common/retranslateEN.js"></script>
+	<script type="text/javascript" src="Javascript/C0.Common/retranslateDE.js"></script>
+	<script type="text/javascript" src="Javascript/C0.Common/helpertools.js"></script>
+	<script type="text/javascript" src="Javascript/C0.Common/highslide/highslide.js"></script>
+	<link rel="stylesheet" type="text/css" href="Javascript/C0.Common/highslide/highslide.css" />
+    
+    <!-- Tinybox for displaying popups -->
+    <script type="text/javascript" src="Javascript/C0.Common/tinybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles/tinybox.css" />
+    
+	<script type="text/javascript" src="Javascript/C2.Macrochitze/J1.Global_variables.js"></script>
+	<script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database.js"        ></script>
+	<script type="text/javascript" src="Javascript/C2.Macrochitze/J3.Functions.js"       ></script>
+	<link rel="stylesheet" type="text/css" href="Styles/C0.Common.css" />
+	<link rel="shortcut icon" href="Images\favicon.ico">
+	<title>Chichitza</title>
+	
+</head>
+
+<!-------------------900-----------------------\ 
++---------+------------------------------------+
+|  BANNER |  Micro-/Macrochitze/...  | ro/en/de|  Cell (0), Cell (1), Cell (2)
+|         |        <divTitle>        | home/etc|  
++---200---+---------500--------------+---200---+   
+++--------------------------------------------++  orange line
+|| -175--+--+-----------------------+--+--175-||
+||       |75|       DOOR UP         |75|      ||
+||  Name |  +---------400-----------+  |   I  ||
+||       |  |                       |  |   N  ||
+||  IMG  |  |                       |  |   S  ||
+||       | D|                       |D |   T  ||
+||      4| O|                       |O |   R  || Cell (3)
+||      0| O|                       |O |   U  ||
+||      0| R|      MacroStage       |R |   C  ||
+||       |  |                       |  |   T  ||
+|| Bonus | L|                       |R |   I  ||
+||       |  |                       |  |   O  ||
+|| Crib  |  +-----------------------+  |   N  ||
+||       |75|      DOOR DOWN        |75|      ||
+||       +--+--------------------------+      ||
+||                                            ||
+++--------------------------------------------++
++----------------------------------------------+  orange line
++--------------------900-----------------------+--->
+
+
+<body onload="detectLanguage(); initMaze();"> <!---onload should be a function of identifying the language and call the retranslate-->
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+<!---------------------------------------------------->
+					<tr>
+<!-- Cell (0) -->		<td rowspan="1" colspan="1" width="200" height="100">
+							<a id="banner" href="index.html"><img src="Images/C0.Common/banner.png" alt="Banner" width="200" height="100" border="0" style="float:top"/></a>
+						</td>
+<!-- Cell (1) -->		<td rowspan="1" colspan="1" width="500" height="100">
+							<div class="common" style="padding-left: 50px; padding-top: 20px">
+								<a id="buttonMicrochitze"  href="javascript:void(0);"><img id="imgMicrochitze" width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonMacrochitze" href="javascript:void(0);"><img id="imgMacrochitze"  width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonInteractive" href="javascript:void(0);"><img id="imgInteractive"  width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonChess"		  href="javascript:void(0);"><img id="imgChess" 		 width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+								<a id="buttonDictionary"  href="javascript:void(0);"><img id="imgDictionary" 	 width="64" height="64" border="0" Hspace="10" Vspace="0"/></a>
+							</div>
+							<br/>
+							<div id="divTitle" align="center" class="style_orange"> </div>
+						</td>
+<!-- Cell (2) -->		<td rowspan="1" colspan="1" width="200" height="100">
+							<div class="common" align="right" style="padding-right: 20px; float:top">
+							<a	id="languageRO"	data="Romana"	href="javascript:void(0);" 	onclick="retranslate('ro'); retranslateQuestions();">
+							<img src="Images/C0.Common/Flags/ro.png" alt="RO" width="32" height="32" border="0" /></a>
+							<a	id="languageEN"	data="English"	href="javascript:void(0);" 	onclick="retranslate('en'); retranslateQuestions();">
+							<img src="Images/C0.Common/Flags/en.png" alt="EN" width="32" height="32" border="0" /></a>
+							<a	id="languageDE"	data="Deutsch"	href="javascript:void(0);" 	onclick="retranslate('de'); retranslateQuestions();">
+							<img src="Images/C0.Common/Flags/de.png" alt="DE" width="32" height="32" border="0" /></a>
+							</div>
+							<br/>
+							<div class="common" align="right" style="padding-right: 20px; float:bottom">
+							<a id="buttonAdmin"	hidden><img id="imgAdmin"   src="Images/C0.Common/Helpertools/Admin.png"   width="32" height="32" border="0" /></a>
+							<a id="buttonContact"><img id="imgContact" src="Images/C0.Common/Helpertools/Contact.png" width="32" height="32" border="0" /></a>
+							<a id="buttonHome" 	><img id="imgHome"    src="Images/C0.Common/Helpertools/Home.png"    width="32" height="32" border="0" /></a>
+							</div>
+						</td>
+					</tr>
+<!---------------------------------------------------->
+					<tr>
+<!-- Cell (*) -->		<td rowspan="1" colspan="3" width="900">
+							<img src="Images/C0.Common/orangeline.png" alt="OrangeLine" width="900" border="0"  />
+						</td>
+					</tr>
+<!---------------------------------------------------->
+					<tr>
+<!-- Cell (3) -->		<td rowspan="1" colspan="3" width="900">
+                            <table id="outertableMainContents" border="0">
+                                <tr>
+                                    <td id="tdMainContentsLeft" rowspan="1" colspan="1" width="175" height="250" class="common">
+                                        <div id="RoomName"  class="style_orange" align="center" style="font-weight:bold"></div>
+                                        <br/><br/>
+                                        <div id="RoomPicture"     align="center"></div>
+                                        <br/><br/>
+                                        <div align="center">                
+                                            <a id="bonusPuzzle" href="javascript:void(0);"><img id="imgBonus" src="Images/C2.Macrochitze/bonus.png" width="100" height="50" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/><br/>
+                                        <div align="center">
+											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
+										</div>
+                                        <div id="helpertoolsField" style="visibility: visible">
+                                            <p align="center">
+                                                <a id="buttonCalculator" href="JavaScript:newPopup(440,570,10,10,'Helpertools/calculator.html');"> <img src="Images/C0.Common/Helpertools/Calculator.png"  alt="Calculator" width="24" height="24" border="0" /></a> &nbsp;
+                                                <a id="buttonTerra" 	 href="JavaScript:newPopup(550,640,10,10,'Helpertools/terra.html');">      <img src="Images/C0.Common/Helpertools/Terra.png"        alt="Terra" width="24" height="24" border="0" /></a> &nbsp;
+                                                <a id="buttonMendeleev"  href="JavaScript:newPopup(420,650,10,10,'Helpertools/mendeleev.html');">  <img src="Images/C0.Common/Helpertools/Mendeleev.png"        alt="Mendeleev" width="24" height="24" border="0" /></a> 
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td id="tdDoorLeft" rowspan="1" colspan="1" width="75" height="400">
+                                        <div id="DoorLeft" class="common" align="center">
+                                             <a id="buttonDoorLeft"  href="javascript:void(0);"><img id="imgDoorLeft" width="75" height="400" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <table id="innertableMainContents" border="0" style="text-align:center; cursor:default;">
+                                            <tr>
+                                                <td id="tdDoorUp" rowspan="1" colspan="1" width="400" height="75"> 
+                                                    <div id="DoorUp" class="common"       align="center">
+                                                        <a id="buttonDoorUp"  href="javascript:void(0);"><img id="imgDoorUp" width="400" height="75" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="tdMainContentsCenter" rowspan="1" colspan="1" width="400" height="250"> 
+                                                    <div id="MacroStage"> Macrostage </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="tdDoorDown" rowspan="1" colspan="1" width="400" height="75"> 
+                                                    <div id="DoorDown" class="common"       align="center">
+                                                         <a id="buttonDoorDown"  href="javascript:void(0);"><img id="imgDoorDown" width="400" height="75" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td id="tdDoorRight" rowspan="1" colspan="1" width="75" height="400">
+                                        <div id="DoorRight" class="common" align="center">
+                                             <a id="buttonDoorRight"  href="javascript:void(0);"><img id="imgDoorRight" width="75" height="400" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                    </td>
+                                    <td id="tdMainContentsRight" rowspan="1" colspan="1" width="175" height="250"> 
+                                        <div id="MacroStageInstructions"> Instructions </div>
+                                    </td>
+                                </tr>
+                            </table>
+						</td>
+					</tr>
+<!---------------------------------------------------->
+<!-- Cell (*) -- >	<tr>
+						<td rowspan="1" colspan="3" width="900">
+							<img src="Images/C0.Common/orangeline.png" alt="OrangeLine" width="900" border="0" />
+						</td>
+					</tr> -->
+</table>
+
+<div id="disqus_thread" style="visibility: hidden"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	
+    var disqus_shortname = 'chichitza'; // Required - Replace example with your forum shortname
+    var disqus_title = 'Macrochitze';//'a unique title for each page where Disqus is present';
+    var disqus_url = window.location.href;
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</body>
+</html>
