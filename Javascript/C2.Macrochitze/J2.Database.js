@@ -44,3 +44,31 @@ var RoomNames00 = []; // Maze 0 room names
     RoomNames00[7] = "Australia";
     RoomNames00[8] = "Antarctica";
     RoomNames00[9] = "Arctica";
+
+var RoomPictures00 = []; // Maze 0 room picture paths                                                                                       
+    RoomPictures00[0] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[1] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[2] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[3] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[4] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[5] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[6] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[7] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[8] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+    RoomPictures00[9] = "Images/C2.Macrochitze/Img_Blank.png";                                                                      
+
+var RoomPictureSources00 = []; // Maze 0 room picture sources
+    RoomPictureSources00[0] = "blabla";
+    RoomPictureSources00[1] = "blabla";
+    RoomPictureSources00[2] = "blabla";
+    RoomPictureSources00[3] = "blabla";
+    RoomPictureSources00[4] = "blabla";
+    RoomPictureSources00[5] = "blabla";
+    RoomPictureSources00[6] = "blabla";
+    RoomPictureSources00[7] = "blabla";
+    RoomPictureSources00[8] = "blabla";
+    RoomPictureSources00[9] = "blabla";
+
+var BonusPuzzles00 = [0,1,2,3,4,5,6,7,8,9]; //Bonus puzzle IDs from the big database
+
+var GamePuzzles00 = [0,1,2,3,4,5,6,7,8,9]; //Game puzzle IDs from the big database
