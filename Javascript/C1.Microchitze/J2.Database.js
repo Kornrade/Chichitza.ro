@@ -1771,9 +1771,9 @@ dbQList[ 52][2] = "Was kommt als n&#228;chstes:<br/><br/> 6 15 35 77 143 221 323
                         dbAnswer[52][1] = "Right answer: 437"; //plaintext en answer
                         dbAnswer[52][2] = "Richtige Antwort: 437"; //plaintext de answer
                         dbExpln[ 52] = [];
-                        dbExpln[ 52][0] = "Numerele prime sunt: 2 3 5 7 9 11 13 17 19 23 ... <br/> 2*3=6, 3*5=15, 5*7=35, ..."; //explanation ro
-                        dbExpln[ 52][1] = "The prime numbers are: 2 3 5 7 9 11 13 17 19 23 ... <br/> 2*3=6, 3*5=15, 5*7=35, ..."; //explanation en
-                        dbExpln[ 52][2] = "Die Primzahlen sind: 2 3 5 7 9 11 13 17 19 23 ... <br/> 2*3=6, 3*5=15, 5*7=35, ..."; //explanation de
+                        dbExpln[ 52][0] = "Numerele prime sunt: 2 3 5 7 11 13 17 19 23 ... <br/> 2*3=6, 3*5=15, 5*7=35, ..."; //explanation ro
+                        dbExpln[ 52][1] = "The prime numbers are: 2 3 5 7 11 13 17 19 23 ... <br/> 2*3=6, 3*5=15, 5*7=35, ..."; //explanation en
+                        dbExpln[ 52][2] = "Die Primzahlen sind: 2 3 5 7 11 13 17 19 23 ... <br/> 2*3=6, 3*5=15, 5*7=35, ..."; //explanation de
                         dbRefer[ 52] = [];
                         dbRefer[ 52][0] = "<a href='https://oeis.org/A006094' target='_blank'>[1] oeis.org/A006094</a>"; //references for ro explanation
                         dbRefer[ 52][1] = "<a href='https://oeis.org/A006094' target='_blank'>[1] oeis.org/A006094</a>"; //references for en explanation
