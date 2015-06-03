@@ -144,35 +144,45 @@ function setupDoorPuzzles()
 
 function customizeDoorPuzzle(currRoomID,nextRoomID)
 {
-    setNUMandANS(currRoomID,nextRoomID);
     
-    var customDoorTinyBoxContent='\
-    <html>\
-        <head>\
-            <meta content="text/html;charset=utf-8" http-equiv="Content-Type">\
-            <meta content="utf-8" http-equiv="encoding">\
-        </head>\
-        <body>\
-                        <a id="buttonX" 	 href="JavaScript:TINY.box.hide();">\
-                            <img src="Images/C0.Common/Helpertools/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
-                        </a>\
-                        <br/>\
-                        <br/>\
-                        [QUESTION]\
-                        <br/>\
-                        <input id = "AnswerField" type="text" size="5" style="text-align:center; font-size:16px;"></input>\
-                        <a id="buttonX" 	 href="JavaScript:validateAnswer();">\
-                            <img src="Images/C0.Common/Helpertools/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
-                        </a>\
-        </body>\
-        </html>\
-    ';
-    
-    if("ro"==lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][0].replace("<NUM>",currNUM));}
-    if("en"==lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][1].replace("<NUM>",currNUM));}
-    if("de"==lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][2].replace("<NUM>",currNUM));}
-    
-    showDoorPuzzle(customDoorTinyBoxContent);
+    if(nextRoomID===prevRoomNameID)
+    {   //Returning to the previous room is free of charge
+        setupRoom(nextRoomID,currRoomID);
+    }
+    else
+    {   // setup question
+        
+        setNUMandANS(currRoomID,nextRoomID);
+
+        var customDoorTinyBoxContent='\
+        <html>\
+            <head>\
+                <meta content="text/html;charset=utf-8" http-equiv="Content-Type">\
+                <meta content="utf-8" http-equiv="encoding">\
+            </head>\
+            <body>\
+                            <a id="buttonX" 	 href="JavaScript:TINY.box.hide();">\
+                                <img src="Images/C0.Common/Helpertools/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
+                            </a>\
+                            <br/>\
+                            <br/>\
+                            [QUESTION]\
+                            <br/>\
+                            <input id = "AnswerField" type="text" size="5" style="text-align:center; font-size:16px;" onKeyPress="return processKeyEvent(event)"></input>\
+                            <a id="buttonX" 	 href="JavaScript:validateAnswer();">\
+                                <img src="Images/C0.Common/Helpertools/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
+                            </a>\
+            </body>\
+            </html>\
+        ';
+
+        if("ro"==lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][0].replace("<NUM>",currNUM));}
+        if("en"==lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][1].replace("<NUM>",currNUM));}
+        if("de"==lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][2].replace("<NUM>",currNUM));}
+
+        showDoorPuzzle(customDoorTinyBoxContent);
+        
+    }
 }
 
 function showDoorPuzzle(id)
@@ -201,6 +211,20 @@ function setNUMandANS(currRoomID,nextRoomID)
     }
 }
 
+function processKeyEvent(evt)
+{
+    var cCode;
+    
+    if(!evt)      { evt = window.event;  }
+    if(evt.which) { cCode = evt.which;   }
+    else          { cCode = evt.keyCode; }
+    
+	if(cCode===13) // enter key pressed
+	{
+		validateAnswer();
+	}
+}
+
 function validateAnswer()
 {
     // get answer
@@ -210,7 +234,7 @@ function validateAnswer()
     {
         container.setAttribute("style","text-align:center;background-color:"+rightAnswerBgColour);
         setTimeout(function(){TINY.box.hide();},500); //500ms
-        setTimeout(function(){setupRoom(nextRoomNameID,currRoomNameID);},700); //500ms      
+        setTimeout(function(){setupRoom(nextRoomNameID,currRoomNameID);},700); //700ms      
     }
     else
     {
