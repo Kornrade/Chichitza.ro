@@ -306,13 +306,13 @@ function setcurrchessvars(n)
             currpgn[1] = '[Event "'+allstudystips[9][1]+'"][Site "chichitza.ro"][Date "09.2012"][Round "'+allstudynames[9][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "1N4K1/1pp1p3/7k/2r3pP/p2pp1P1/P6N/8/2B5 w - - 0 1"] 1. Nc6 {Sacrificing the knight only to displace the b-pawn on the c-column} (1. Na6 {is not aggressive enough, Black has time for Rxc1, winning}) (1. Nd7 Rxc1 {winning for Black}) (1. Bd2 Rd5 {the only way to win for Black} 2. Nc6 {now it is too late to get back to the mainline drawing idea} bxc6 3. Nxg5 Rd8+ 4. Kf7 e3 {winning for Black}) 1... bxc6 {forced, otherwise mate at move 9:} (1... Rxc1 2. Nxe7 Rf1 3. Kh8 Rf8+ 4. Ng8+ Rxg8+ 5. Kxg8 e3 6. Ng1 d3 7. Nf3 d2 8. Ne5 d1=Q 9. Nf7#) (1... Rxc6 2. Bxg5# {is the threat that keeps the rook from taking the knight}) 2. Nxg5 Rxg5+ (2... Rxc1 3. Nf7#) 3. Kh8 {Black now has the awkward privilege of choosing whether he prefers to stalemate White by capturing the bishop or to be stalemated by White after having pushed all pawns in the diagonal of death c1-h6... draw}';
             currpgn[2] = '[Event "'+allstudystips[9][2]+'"][Site "chichitza.ro"][Date "09.2012"][Round "'+allstudynames[9][2]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "1N4K1/1pp1p3/7k/2r3pP/p2pp1P1/P6N/8/2B5 w - - 0 1"] 1. Nc6 {Opfer, um den b-Bauer auf c zu bringen} (1. Na6 {ist nicht aggressiv genug und ermöglicht Rxc1}) (1. Nd7 Rxc1 {Schwarz gewinnt}) (1. Bd2 Rd5 {!} 2. Nc6 {nun ist es zu spät für die Remis-Idee} bxc6 3. Nxg5 Rd8+ 4. Kf7 e3 {Schwarz gewinnt}) 1... bxc6 {!} (1... Rxc1 2. Nxe7 Rf1 3. Kh8 Rf8+ 4. Ng8+ Rxg8+ 5. Kxg8 e3 6. Ng1 d3 7. Nf3 d2 8. Ne5 d1=Q 9. Nf7#) (1... Rxc6 2. Bxg5#) 2. Nxg5 Rxg5+ (2... Rxc1 3. Nf7#) 3. Kh8 {Schwarz hat nun den unangenehmen Wahl, wer wen Patt setzt: Schwarz kann den Läufer schlagen um Weiß Patt zu setzen, oder kann alle seine Bauern auf die c1-h6 Diagonal opfern um Patt gesetzt zu werden... Remis}';
             currchessinfo[0] = '\
-                        Publicat pe chichitza [2012]\
+                        Publicat aici [2012]\
                         ';
             currchessinfo[1] = '\
-                        Published on chichitza [2012]\
+                        Published here [2012]\
                         ';
             currchessinfo[2] = '\
-                        Ver&ouml;ffentlicht auf chichitza [2012]\
+                        Ver&ouml;ffentlicht hier [2012]\
                         ';
             break;
             
