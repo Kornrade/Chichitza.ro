@@ -157,11 +157,12 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
                             <img src="Images/C0.Common/Helpertools/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
                         </a>\
                         <br/>\
+                        <br/>\
                         [QUESTION]\
                         <br/>\
                         <input id = "AnswerField" type="text" size="5" style="text-align:center; font-size:16px;"></input>\
                         <a id="buttonX" 	 href="JavaScript:validateAnswer();">\
-                            <img src="Images/C0.Common/Helpertools/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
+                            <img src="Images/C0.Common/Helpertools/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
                         </a>\
         </body>\
         </html>\
@@ -172,7 +173,6 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
     if("de"==lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][2].replace("<NUM>",currNUM));}
     
     showDoorPuzzle(customDoorTinyBoxContent);
-    document.getElementById("AnswerField").focus();
 }
 
 function showDoorPuzzle(id)
