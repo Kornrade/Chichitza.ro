@@ -34,16 +34,17 @@ var Doors00 = []; // Maze 0 (Tutorial) door puzzle IDs
     Doors00[9] = [ 0,-1, 2,-1, 4,-1, 6,-1,-1,-1];
 
 var RoomNames00 = []; // Maze 0 room names
-    RoomNames00[0] = "Room Name";
-    RoomNames00[1] = "Oceania";
-    RoomNames00[2] = "North America";
-    RoomNames00[3] = "South America";
+    RoomNames00[0] = "Tutorial";
+    RoomNames00[1] = "Pacific";
+    RoomNames00[2] = "America(N)";
+    RoomNames00[3] = "America(S)";
     RoomNames00[4] = "Europa";
     RoomNames00[5] = "Africa";
     RoomNames00[6] = "Asia";
     RoomNames00[7] = "Australia";
     RoomNames00[8] = "Antarctica";
-    RoomNames00[9] = "Arctica";
+    RoomNames00[9] = "Arctic";
+    RoomNames00[10]= "Atlantic"; //Fake room name
 
 var RoomPictures00 = []; // Maze 0 room picture paths                                                                                       
     RoomPictures00[0] = "Images/C2.Macrochitze/Maze00-0.png";                                                                      
