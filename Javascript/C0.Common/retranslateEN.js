@@ -64,7 +64,7 @@ function retranslateENCommon()
 
 	// Cell (2)
 	document.getElementById("buttonAdmin"  ).href = "#";
-	document.getElementById("buttonContact").href = "Javascript:TINY.box.show('Helpertools/contactEN.html', 1,0,0,1);";
+	document.getElementById("buttonContact").onclick = "TINY.box.show('Helpertools/contactEN.html', 1,0,0,1);";
 	document.getElementById("buttonHome"   ).href = "index.html?lang=en";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin"  );
 	document.getElementById("buttonContact").setAttribute("data","Contact");

@@ -78,6 +78,7 @@ var currchessfen;
 /*global showImageOnHover */
 /*global showChessPositionOnHover */
 /*global initChessSolution */
+/*global setupGameInstructions */
 /*global showInteractive */
 
 function retranslate(selectedLanguage)
@@ -677,7 +678,9 @@ function retranslateMacrochitze()
 	document.getElementById("imgMacrochitze"   ).setAttribute("src", "Images/C0.Common/C2.Macrochitze.png");
 	
 	document.getElementById("divTitle").setAttribute("onclick","gotoindex('2')");
-	
+    
+    setupGameInstructions();
+    
 	//retranslate specific static text
 	if(lang==="ro") {retranslateROMacrochitze();}
 	if(lang==="en") {retranslateENMacrochitze();}

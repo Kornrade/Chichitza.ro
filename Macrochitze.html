@@ -16,7 +16,9 @@
     <link rel="stylesheet" type="text/css" href="Styles/tinybox.css" />
     
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J1.Global_variables.js"></script>
-	<script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database.js"        ></script>
+	<script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Main.js"  ></script>
+    <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Doors.js" ></script>
+    <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Games.js" ></script>
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J3.Functions.js"       ></script>
 	<link rel="stylesheet" type="text/css" href="Styles/C0.Common.css" />
 	<link rel="shortcut icon" href="Images\favicon.ico">
@@ -72,11 +74,11 @@
 						</td>
 <!-- Cell (2) -->		<td rowspan="1" colspan="1" width="200" height="100">
 							<div class="common" align="right" style="padding-right: 20px; float:top">
-							<a	id="languageRO"	data="Romana"	href="javascript:void(0);" 	onclick="retranslate('ro'); retranslateQuestions();">
+							<a	id="languageRO"	data="Romana"	href="javascript:void(0);" 	onclick="retranslate('ro');">
 							<img src="Images/C0.Common/Flags/ro.png" alt="RO" width="32" height="32" border="0" /></a>
-							<a	id="languageEN"	data="English"	href="javascript:void(0);" 	onclick="retranslate('en'); retranslateQuestions();">
+							<a	id="languageEN"	data="English"	href="javascript:void(0);" 	onclick="retranslate('en');">
 							<img src="Images/C0.Common/Flags/en.png" alt="EN" width="32" height="32" border="0" /></a>
-							<a	id="languageDE"	data="Deutsch"	href="javascript:void(0);" 	onclick="retranslate('de'); retranslateQuestions();">
+							<a	id="languageDE"	data="Deutsch"	href="javascript:void(0);" 	onclick="retranslate('de');">
 							<img src="Images/C0.Common/Flags/de.png" alt="DE" width="32" height="32" border="0" /></a>
 							</div>
 							<br/>
@@ -99,24 +101,7 @@
                             <table id="outertableMainContents" border="0">
                                 <tr>
                                     <td id="tdMainContentsLeft" rowspan="1" colspan="1" width="175" height="250" class="common">
-                                        <div id="RoomName"  class="style_orange" align="center" style="font-weight:bold"></div>
-                                        <br/><br/>
                                         <div id="RoomPicture"     align="center"></div>
-                                        <br/><br/>
-                                        <div align="center">                
-                                            <a id="solutionField" href="javascript:showSolutionField();"><img id="imgBonus" src="Images/C2.Macrochitze/bonus.png" width="100" height="50" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
-                                        <br/><br/>
-                                        <div align="center">
-											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
-										</div>
-                                        <div id="helpertoolsField" style="visibility: visible">
-                                            <p align="center">
-                                                <a id="buttonCalculator" href="JavaScript:newPopup(440,570,10,10,'Helpertools/calculator.html');"> <img src="Images/C0.Common/Helpertools/Calculator.png"  alt="Calculator" width="24" height="24" border="0" /></a> &nbsp;
-                                                <a id="buttonTerra" 	 href="JavaScript:newPopup(550,640,10,10,'Helpertools/terra.html');">      <img src="Images/C0.Common/Helpertools/Terra.png"        alt="Terra" width="24" height="24" border="0" /></a> &nbsp;
-                                                <a id="buttonMendeleev"  href="JavaScript:newPopup(420,650,10,10,'Helpertools/mendeleev.html');">  <img src="Images/C0.Common/Helpertools/Mendeleev.png"        alt="Mendeleev" width="24" height="24" border="0" /></a> 
-                                            </p>
-                                        </div>
                                     </td>
                                     <td id="tdDoorLeft" rowspan="1" colspan="1" width="75" height="400">
                                         <div id="DoorLeft" class="common" align="center">
@@ -152,7 +137,22 @@
                                         </div>
                                     </td>
                                     <td id="tdMainContentsRight" rowspan="1" colspan="1" width="175" height="250"> 
+                                        <div align="center">                
+                                            <a id="solutionField" href="javascript:showSolutionField();"><img id="imgBonus" src="Images/C2.Macrochitze/bonus.png" width="100" height="50" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/><br/>
                                         <div id="MacroStageInstructions"> Instructions </div>
+                                        <br/><br/>
+                                        <div align="center">
+											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
+										</div>
+                                        <div id="helpertoolsField" style="visibility: visible">
+                                            <p align="center">
+                                                <a id="buttonCalculator" href="JavaScript:newPopup(440,570,10,10,'Helpertools/calculator.html');"> <img src="Images/C0.Common/Helpertools/Calculator.png"  alt="Calculator" width="24" height="24" border="0" /></a> &nbsp;
+                                                <a id="buttonTerra" 	 href="JavaScript:newPopup(550,640,10,10,'Helpertools/terra.html');">      <img src="Images/C0.Common/Helpertools/Terra.png"        alt="Terra" width="24" height="24" border="0" /></a> &nbsp;
+                                                <a id="buttonMendeleev"  href="JavaScript:newPopup(420,650,10,10,'Helpertools/mendeleev.html');">  <img src="Images/C0.Common/Helpertools/Mendeleev.png"        alt="Mendeleev" width="24" height="24" border="0" /></a> 
+                                            </p>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
