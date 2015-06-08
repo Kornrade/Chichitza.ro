@@ -1,17 +1,18 @@
 var GameInstructions00 = []; // game puzzles (corresponding IDs are used by variable Doors00[] )
 var GamePuzzles00 = []; // game puzzles (corresponding IDs are used by variable Doors00[] )
 
+var RoomHidingPicture00;
 
-GamePuzzles00[0] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[1] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[2] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[3] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[4] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[5] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[6] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[7] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[8] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency
-GamePuzzles00[9] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="32" height="32" border="0"/></a>';; // no language dependency    
+GamePuzzles00[0] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[1] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[2] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[3] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[4] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[5] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[6] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[7] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[8] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency
+GamePuzzles00[9] = '<a href="Javascript:updateSolvedRoomPictures()"><img src="'+RoomHidingPicture00+'" alt="---" width="250" height="250" border="0"/></a>'; // no language dependency    
 
 GameInstructions00[0] = []; //second argument is for the language 0=ro, 1=en, 2=de
 GameInstructions00[0][0] = 'Scrie <NUM>...';

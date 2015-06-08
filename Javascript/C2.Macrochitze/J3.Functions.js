@@ -21,7 +21,7 @@ var Maze, Doors, RoomHidingPicture, RoomHidingPictureSource, RoomPictures, RoomP
 /*global initSolvedRoomPictures */
 /*global initSolutionTable */
 /*global setupRoom */
-/*global setRoomPicture */
+/*global setMazeRules */
 /*global setupGame */
 /*global setupGameInstructions */
 /*global setupDoorPictures */
@@ -107,7 +107,7 @@ function setupRoom(curr,prev)
     currRoomID = curr;
     prevRoomID = prev;
     
-    setRoomPicture();
+    setMazeRules();
     
     setupGame();
     setupGameInstructions();
@@ -117,21 +117,22 @@ function setupRoom(curr,prev)
     
 }
 
-function setRoomPicture()
+function setMazeRules()
 {
-    var Img = RoomHidingPicture, ImgSrc = RoomHidingPictureSource;
-    if(1===solvedRoomPictures[currRoomID])
-    {
-        Img = RoomPictures[currRoomID];
-        ImgSrc = RoomPictureSources[currRoomID];
-    }
-    setInnerHTML("RoomPicture","<a id=\"thumb\" href=\""+Img+"\" class=\"highslide\" onclick=\"return hs.expand(this)\"><img src=\""+Img+"\" alt=\""+Img+"\" width=\"150\" title=\"Click to enlarge\" /></a><div class=\"highslide-caption\">"+ImgSrc+"</div>"); 
     
 }
 
 function setupGame()
 {
-    setInnerHTML("MacroStage",GamePuzzles[currRoomID]);
+    if(1===solvedRoomPictures[currRoomID])
+    {
+        var Img = RoomPictures[currRoomID], ImgSrc = RoomPictureSources[currRoomID];
+        setInnerHTML("MacroStage","<a id=\"thumb\" href=\""+Img+"\" class=\"highslide\" onclick=\"return hs.expand(this)\"><img src=\""+Img+"\" alt=\""+Img+"\" width=\"250\" title=\"Click to enlarge\" /></a><div class=\"highslide-caption\">"+ImgSrc+"</div>"); 
+    }
+    else
+    {
+        setInnerHTML("MacroStage",GamePuzzles[currRoomID]);
+    }
 }
 
 function setupGameInstructions()
@@ -190,7 +191,7 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
                 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">\
                 <meta content="utf-8" http-equiv="encoding">\
             </head>\
-            <body>\
+            <body style="text-align: center">\
                             <a id="buttonX" href="JavaScript:TINY.box.hide();">\
                                 <img src="Images/C0.Common/Helpertools/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
                             </a>\
@@ -198,7 +199,7 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
                             <br/>\
                             [QUESTION]\
                             <br/>\
-                            <input id = "AnswerField" type="text" size="5" style="text-align:center; font-size:16px;" onKeyPress="return processKeyEvent(event)"></input>\
+                            <input id = "AnswerField" type="text" size="10" style="text-align:center; font-size:16px;" onKeyPress="return processKeyEvent(event)"></input>\
                             <a id="buttonOK" href="JavaScript:validateDoorAnswer();">\
                                 <img src="Images/C0.Common/Helpertools/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
                             </a>\
@@ -364,7 +365,7 @@ function updateSolvedRoomPictures()
     if(0===solvedRoomPictures[currRoomID])
     {
         solvedRoomPictures[currRoomID] = 1;
-        setRoomPicture();
+        setupGame();
     }
 }
 
