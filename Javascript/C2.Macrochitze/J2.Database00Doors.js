@@ -221,7 +221,7 @@ var DoorAnsFormula00 = []; // door puzzle answers (depending on NUM)
     DoorPuzzles00[6][7][1] = DoorPuzzles00[0][1][1];
     DoorPuzzles00[6][7][2] = DoorPuzzles00[0][1][2];
     DoorNumFormula00[6][7] = DoorNumFormula00[0][1];
-    DoorAnsFormula00[0][1] = '<NUM>'; // no language dependency
+    DoorAnsFormula00[6][7] = '<NUM>'; // no language dependency
 
     DoorPuzzles00[6][9] = []; //third argument is for the language 0=ro, 1=en, 2=de
     DoorPuzzles00[6][9][0] = DoorPuzzles00[0][1][0];

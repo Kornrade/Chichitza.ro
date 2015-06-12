@@ -43,8 +43,7 @@ var RoomPictures00 = []; // Maze 0 room picture paths
     RoomPictures00[6] = "Images/C2.Macrochitze/Maze00-Asia.png";                                                                      
     RoomPictures00[7] = "Images/C2.Macrochitze/Maze00-Indian.png";                                                                      
     RoomPictures00[8] = "Images/C2.Macrochitze/Maze00-Antarctica.png";                                                                      
-    RoomPictures00[9] = "Images/C2.Macrochitze/Maze00-Arctic.png"; 
-    RoomPictures00[10]= "Images/C2.Macrochitze/Maze00-Atlantic.png"; 
+    RoomPictures00[9] = "Images/C2.Macrochitze/Maze00-Arctic.png";
 
 var RoomHidingPicture00 = "Images/C2.Macrochitze/Maze00.png";
 

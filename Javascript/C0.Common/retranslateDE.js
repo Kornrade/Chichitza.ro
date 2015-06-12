@@ -313,6 +313,11 @@ function retranslateDEMacrochitze()
 		document.getElementById("divTitle").innerHTML = "MAKROKNOBELEIEN";
 		
 		// Cell (3)		
+        document.getElementById("MazeRules"    ).setAttribute("data", "Spielregeln");
+        document.getElementById("solutionField").setAttribute("data", "Lösen");
+        document.getElementById("saveField"    ).setAttribute("data", "Speichern");
+        document.getElementById("loadField"    ).setAttribute("data", "Laden");
+        
 		document.getElementById("expandcompressHelpertools").innerHTML="Spickzettel";
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Rechner"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );

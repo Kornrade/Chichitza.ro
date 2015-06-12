@@ -6,7 +6,7 @@
 /*jslint evil: true*/
 /* GLOBAL VARS USED IN THIS FILE:*/
 var lang, auxparam, TINY;
-var nextRoomID, currRoomID, prevRoomID;
+var MazeID, nextRoomID, currRoomID, prevRoomID;
 var mazeIsInitialized, solutionReference, solutionTable, solvedRoomPictures;
 var rightAnswerBgColour, wrongAnswerBgColour, currNUM, currANS, Mazelen;
 var Maze00, Doors00, RoomHidingPicture00, RoomHidingPictureSource00, RoomPictures00, RoomPictureSources00, GamePuzzles00, GameInstructions00, DoorPuzzles00, DoorNumFormula00, DoorAnsFormula00;
@@ -27,32 +27,34 @@ var Maze, Doors, RoomHidingPicture, RoomHidingPictureSource, RoomPictures, RoomP
 /*global setupGameInstructions */
 /*global setupDoorPictures */
 /*global setupDoorPuzzles */
-/*global showDoorPuzzle */
 /*global showSolutionField */
 /*global composeTableWithSortedRoomPictures */
 /*global customizeDoorPuzzle */
 /*global validateMaze */
 /*global setNUMandANS */
+/*global showTinyBoxGame */
 /*global validateDoorAnswer */
 
-function initMaze()
+
+function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoomPicturesValues)
 {
     
-    setupMazeStructure();
+    setupMazeStructure(mazeIDNum);
     mazeIsInitialized = true;
     
     initSolutionReference();
-    initSolutionTable();
-    initSolvedRoomPictures();
-    setNUMandANS(0,0);
-    setupRoom(0,0);
+    initSolutionTable(solutionTableValues);
+    initSolvedRoomPictures(solvedRoomPicturesValues);
+    setNUMandANS(currRoom,0);
+    setupRoom(currRoom,prevRoom);
 }
 
-function setupMazeStructure()
+function setupMazeStructure(mazeIDNum)
 {
-    switch(auxparam)
+    switch(mazeIDNum)
     {
         case  1:
+            MazeID = '1';
             Maze = Maze01;
             Mazelen = Maze.length;
             RoomHidingPicture = RoomHidingPicture01;
@@ -67,6 +69,7 @@ function setupMazeStructure()
             DoorAnsFormula = DoorAnsFormula01;
             break;
         default:
+            MazeID = '0';
             Maze = Maze00;
             Mazelen = Maze.length;
             RoomHidingPicture = RoomHidingPicture00;
@@ -96,16 +99,13 @@ function initSolutionReference()
     // sort room names
     sortedRoomPictures = RoomPicturesWithStatus.sort();
     
-    for(k = 0; k < Mazelen + 1; k++)
+    for(k = 0; k < Mazelen; k++)
     {
-        if(sortedRoomPictures[k].indexOf("!")>-1)
-        {
-            index[parseInt(sortedRoomPictures[k].substr(sortedRoomPictures[k].indexOf("!")+1),10)] = k;
-        }
+        index[parseInt(sortedRoomPictures[k].substr(sortedRoomPictures[k].indexOf("!")+1),10)] = k;
     }
     
     solutionReference = [];
-    for (i = 0; i < (Mazelen+1)*(Mazelen+1); i++)
+    for (i = 0; i < Mazelen*Mazelen; i++)
     {
         solutionReference[i] = 0;
     }
@@ -115,28 +115,64 @@ function initSolutionReference()
         for (j = 0; j < 4; j++)
         {
             k = Maze[i][j];
-            solutionReference[index[i]*(Mazelen+1)+index[k]] = 1;
+            solutionReference[index[i]*Mazelen+index[k]] = 1;
         }
     }   
 }
 
-function initSolvedRoomPictures()
+function initSolvedRoomPictures(values)
 {
     var i;
     solvedRoomPictures = [];
-    for (i = 0; i < Mazelen; i++)
+    
+    if(1===values.length)
     {
-        solvedRoomPictures[i] = 0;
+        for (i = 0; i < Mazelen; i++)
+        {
+            solvedRoomPictures[i] = values;
+        }
+    }
+    else if(Mazelen === values.length)
+    {
+        for (i = 0; i < Mazelen; i++)
+        {
+            solvedRoomPictures[i] = values[i];
+        }
+    }
+    else //wrong size of values
+    {
+        for (i = 0; i < Mazelen; i++)
+        {
+            solvedRoomPictures[i] = 0;
+        }
     }
 }
 
-function initSolutionTable()
+function initSolutionTable(values)
 {
     var i;
     solutionTable = [];
-    for (i = 0; i < (Mazelen+1)*(Mazelen+1); i++)
+    
+    if(1===values.length)
     {
-        solutionTable[i] = 0;
+        for (i = 0; i < Mazelen*Mazelen; i++)
+        {
+            solutionTable[i] = values;
+        }
+    }
+    else if(Mazelen === values.length)
+    {
+        for (i = 0; i < Mazelen*Mazelen; i++)
+        {
+            solutionTable[i] = values[i];
+        }
+    }
+    else //wrong size of values
+    {
+        for (i = 0; i < Mazelen*Mazelen; i++)
+        {
+            solutionTable[i] = 0;
+        }
     }
 }
 
@@ -167,7 +203,7 @@ function setupGame()
     if(1===solvedRoomPictures[currRoomID])
     {
         var Img = RoomPictures[currRoomID], ImgSrc = RoomPictureSources[currRoomID];
-        setInnerHTML("MacroStage","<a id=\"thumb\" href=\""+Img+"\" class=\"highslide\" onclick=\"return hs.expand(this)\"><img src=\""+Img+"\" alt=\""+Img+"\" width=\"250\" title=\"Click to enlarge\" /></a><div class=\"highslide-caption\">"+ImgSrc+"</div>"); 
+        setInnerHTML("MacroStage","<a id=\"thumb\" href=\""+Img+"\" class=\"highslide\" onclick=\"return hs.expand(this)\"><img src=\""+Img+"\" alt=\""+Img+"\" width=\"200\" title=\"Click to enlarge\" /></a><div class=\"highslide-caption\">"+ImgSrc+"</div>"); 
     }
     else
     {
@@ -251,14 +287,9 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
         if("en"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][1].replace("<NUM>",currNUM));}
         if("de"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][2].replace("<NUM>",currNUM));}
 
-        showDoorPuzzle(customDoorTinyBoxContent);
+        showTinyBoxGame(customDoorTinyBoxContent);
         
     }
-}
-
-function showDoorPuzzle(id)
-{
-    TINY.box.show(id, 0,0,0,1);
 }
 
 function showSolutionField()
@@ -287,7 +318,7 @@ function showSolutionField()
     
     solutionFieldHTML = solutionFieldHTML.replace("[TABLE]", composeTableWithSortedRoomPictures() );
 
-    TINY.box.show(solutionFieldHTML, 0,0,0,1);
+    showTinyBoxGame(solutionFieldHTML);
 }
 
 function composeTableWithSortedRoomPictures()
@@ -299,7 +330,6 @@ function composeTableWithSortedRoomPictures()
     {
         RoomPicturesWithStatus[i] = RoomPictures[i] + solvedRoomPictures[i].toString();
     }
-    RoomPicturesWithStatus[Mazelen] = RoomPictures[Mazelen] + "0";
     
     // sort room names
     sortedRoomPictures = RoomPicturesWithStatus.sort();
@@ -307,10 +337,10 @@ function composeTableWithSortedRoomPictures()
     // create table
     
     tableHTML = "<table>";
-    for(i = 0; i < Mazelen + 2; i++) //+1 to add fake room; +1 to add header
+    for(i = 0; i < Mazelen + 1; i++)
     {
         tableHTML += "<tr>";
-        for(j = 0; j < Mazelen + 2; j++) //+1 to add fake room; +1 to add header
+        for(j = 0; j < Mazelen + 1; j++)
         {
             tableHTML += "<td>";
             if(i===0 && j===0)
@@ -345,7 +375,7 @@ function composeTableWithSortedRoomPictures()
             }
             else
             {
-                tempnum = parseInt(i-1,10)*(Mazelen+1)+parseInt(j-1,10);
+                tempnum = parseInt(i-1,10)*Mazelen+parseInt(j-1,10);
                 if(0===solutionTable[tempnum])
                 {
                     tableHTML += '<a id="td'+i.toString()+","+j.toString()+'" href="JavaScript:toggleIcon('+i.toString()+','+j.toString()+');">\
@@ -374,12 +404,12 @@ function composeTableWithSortedRoomPictures()
 function toggleIcon(index1, index2)
 {
     var tempnum;
-        tempnum = parseInt(index1-1,10)*(Mazelen+1)+parseInt(index2-1,10);
+        tempnum = parseInt(index1-1,10)*Mazelen+parseInt(index2-1,10);
     if(0===solutionTable[parseInt(tempnum,10)])
     {
         document.getElementById("td"+index1.toString()+","+index2.toString()).innerHTML = '<img src="Images/C2.Macrochitze/solutionDoor.png" alt="Door" width="32" height="32" border="0"/>';
         solutionTable[tempnum] = 1;
-        tempnum = parseInt(index2-1,10)*(Mazelen+1)+parseInt(index1-1,10);
+        tempnum = parseInt(index2-1,10)*Mazelen+parseInt(index1-1,10);
         document.getElementById("td"+index2.toString()+","+index1.toString()).innerHTML = '<img src="Images/C2.Macrochitze/solutionDoor.png" alt="Door" width="32" height="32" border="0"/>';
         solutionTable[tempnum] = 1;
     }
@@ -387,7 +417,7 @@ function toggleIcon(index1, index2)
     {
         document.getElementById("td"+index1.toString()+","+index2.toString()).innerHTML = '<img src="Images/C2.Macrochitze/solutionWall.png" alt="Wall" width="32" height="32" border="0"/>';
         solutionTable[tempnum] = 0;
-        tempnum = parseInt(index2-1,10)*(Mazelen+1)+parseInt(index1-1,10);
+        tempnum = parseInt(index2-1,10)*Mazelen+parseInt(index1-1,10);
         document.getElementById("td"+index2.toString()+","+index1.toString()).innerHTML = '<img src="Images/C2.Macrochitze/solutionWall.png" alt="Wall" width="32" height="32" border="0"/>';
         solutionTable[tempnum] = 0;
     }
@@ -398,14 +428,14 @@ function toggleIcon(index1, index2)
 function validateMaze()
 {
     var i, isMazeSolved = true;
-    for (i = 0; i < (Mazelen+1)*(Mazelen+1); i++)
+    for (i = 0; i < Mazelen*Mazelen; i++)
     {
         isMazeSolved = isMazeSolved && (solutionReference[i] === solutionTable[i]);
     }
     
     if(isMazeSolved)
     {
-        TINY.box.show("CONGRATS!!", 0,0,0,1);
+        showTinyBoxGame("CONGRATS!!");
     }
         
 }
@@ -453,6 +483,11 @@ function processKeyEvent(evt)
 	{
 		validateDoorAnswer();
 	}
+}
+
+function showTinyBoxGame(id)
+{
+    TINY.box.show(id, 0,0,0,1);
 }
 
 function validateDoorAnswer()

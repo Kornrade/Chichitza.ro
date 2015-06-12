@@ -288,6 +288,11 @@ function retranslateENMacrochitze()
 		document.getElementById("divTitle").innerHTML = "MACROTEASERS";
 		
 		// Cell (3)	
+        document.getElementById("MazeRules"    ).setAttribute("data", "Game rules");
+        document.getElementById("solutionField").setAttribute("data", "Solve");
+        document.getElementById("saveField"    ).setAttribute("data", "Save");
+        document.getElementById("loadField"    ).setAttribute("data", "Load");
+        
         document.getElementById("expandcompressHelpertools").innerHTML="Crib sheets";
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );

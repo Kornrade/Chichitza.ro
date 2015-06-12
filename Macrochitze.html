@@ -20,6 +20,7 @@
     <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Doors.js" ></script>
     <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Games.js" ></script>
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J3.Functions.js"       ></script>
+    <script type="text/javascript" src="Javascript/C2.Macrochitze/J4.SaveAndLoad.js"       ></script>
 	<link rel="stylesheet" type="text/css" href="Styles/C0.Common.css" />
 	<link rel="shortcut icon" href="Images\favicon.ico">
 	<title>Chichitza</title>
@@ -53,7 +54,7 @@
 +--------------------900-----------------------+--->
 
 
-<body onload="detectLanguage(); initMaze();"> <!---onload should be a function of identifying the language and call the retranslate-->
+<body onload="detectLanguage(); initMaze(auxparam,0,0,0,0);"> <!---onload should be a function of identifying the language and call the retranslate-->
 
 <table border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
 <!---------------------------------------------------->
@@ -100,46 +101,77 @@
 <!-- Cell (3) -->		<td rowspan="1" colspan="3" width="900">
                             <table id="outertableMainContents" border="0">
                                 <tr>
-                                    <td id="tdMainContentsLeft" rowspan="1" colspan="1" width="75" height="250" class="common">
-                                        <div align="center">                
-                                            <a id="solutionField" href="javascript:showSolutionField();"><img src="Images/C2.Macrochitze/solutionIcon.png" width="70" height="100" border="0" Hspace="0" Vspace="0"/></a>
+                                    <td id="tdMainContentsLeft" rowspan="1" colspan="1" width="220" class="common">
+                                        <div class="common" align="center">                
+                                            <a id="MazeRules" href="javascript:showMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>
-                                        <div id="MazeRules"     align="center"></div>
-                                    </td>
-                                    <td id="tdDoorLeft" rowspan="1" colspan="1" width="75" height="400">
-                                        <div id="DoorLeft" class="common" align="center">
-                                             <a id="buttonDoorLeft"  href="javascript:void(0);"><img id="imgDoorLeft" width="75" height="400" border="0" Hspace="0" Vspace="0"/></a>
+                                        <br/>
+                                        <div class="common" align="center">                
+                                            <a id="solutionField" href="javascript:showSolutionField();"><img src="Images/C2.Macrochitze/map.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/>
+                                        <div class="common" align="center">                
+                                            <a id="saveField" href="javascript:showMazeState();"><img src="Images/C2.Macrochitze/save.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/>
+                                        <div class="common" align="center">                
+                                            <a id="loadField" href="javascript:showLoadDialog();"><img src="Images/C2.Macrochitze/load.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>
                                     </td>
-                                    <td>
-                                        <table id="innertableMainContents" border="0" style="text-align:center; cursor:default;">
+                                    <td id="tdMainContentsCenter" rowspan="1" colspan="1" width="580">
+                                        <table id="innertableMainContents" border="0" style="text-align:center; cursor:default; border-collapse: collapse;">
                                             <tr>
-                                                <td id="tdDoorUp" rowspan="1" colspan="1" width="400" height="75"> 
+                                                <td id="tdCornerUL" rowspan="1" colspan="1" width="80" height="80"> 
+                                                    <div align="center">
+                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
+                                                    </div>
+                                                </td>
+                                                <td id="tdDoorUp" rowspan="1" colspan="1" width="250" height="80"> 
                                                     <div id="DoorUp" class="common"       align="center">
-                                                        <a id="buttonDoorUp"  href="javascript:void(0);"><img id="imgDoorUp" width="400" height="75" border="0" Hspace="0" Vspace="0"/></a>
+                                                        <a id="buttonDoorUp"  href="javascript:void(0);"><img id="imgDoorUp" width="250" height="80" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
+                                                </td>
+                                                <td id="tdCornerUR" rowspan="1" colspan="1" width="80" height="80"> 
+                                                    <div align="center">
+                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td id="tdMainContentsCenter" rowspan="1" colspan="1" width="400" height="250"> 
+                                                <td id="tdDoorLeft" rowspan="1" colspan="1" width="80" height="250">
+                                                    <div id="DoorLeft" class="common" align="center">
+                                                         <a id="buttonDoorLeft"  href="javascript:void(0);"><img id="imgDoorLeft" width="80" height="250" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
+                                                </td>
+                                                <td id="tdMainContentsCenter" rowspan="1" colspan="1" width="250" height="250"> 
                                                     <div id="MacroStage"> Macrostage </div>
+                                                </td>
+                                                <td id="tdDoorRight" rowspan="1" colspan="1" width="80" height="250">
+                                                    <div id="DoorRight" class="common" align="center">
+                                                         <a id="buttonDoorRight"  href="javascript:void(0);"><img id="imgDoorRight" width="80" height="250" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td id="tdDoorDown" rowspan="1" colspan="1" width="400" height="75"> 
+                                                <td id="tdCornerDL" rowspan="1" colspan="1" width="80" height="80"> 
+                                                    <div align="center">
+                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
+                                                    </div>
+                                                </td>
+                                                <td id="tdDoorDown" rowspan="1" colspan="1" width="250" height="80"> 
                                                     <div id="DoorDown" class="common"       align="center">
-                                                         <a id="buttonDoorDown"  href="javascript:void(0);"><img id="imgDoorDown" width="400" height="75" border="0" Hspace="0" Vspace="0"/></a>
+                                                         <a id="buttonDoorDown"  href="javascript:void(0);"><img id="imgDoorDown" width="250" height="80" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
+                                                </td>
+                                                <td id="tdCornerDR" rowspan="1" colspan="1" width="80" height="80"> 
+                                                    <div align="center">
+                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
                                                     </div>
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
-                                    <td id="tdDoorRight" rowspan="1" colspan="1" width="75" height="400">
-                                        <div id="DoorRight" class="common" align="center">
-                                             <a id="buttonDoorRight"  href="javascript:void(0);"><img id="imgDoorRight" width="75" height="400" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
-                                    </td>
-                                    <td id="tdMainContentsRight" rowspan="1" colspan="1" width="275" height="250" valign="top"> 
+                                    <td id="tdMainContentsRight" rowspan="1" colspan="1"  width="130" valign="top" style="padding-top:25px; padding-right: 20px;"  class="common"> 
                                         <div align="center">
 											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
 										</div>

@@ -308,6 +308,11 @@ function retranslateROMacrochitze()
         document.getElementById("divTitle").innerHTML = "MACROCHITZE";
 
         // Cell (3)
+        document.getElementById("MazeRules"    ).setAttribute("data", "Reguli joc");
+        document.getElementById("solutionField").setAttribute("data", "Rezolva");
+        document.getElementById("saveField"    ).setAttribute("data", "Salveaza");
+        document.getElementById("loadField"    ).setAttribute("data", "Incarca");
+        
         document.getElementById("expandcompressHelpertools").innerHTML="Fi&#x21B;uici";
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
