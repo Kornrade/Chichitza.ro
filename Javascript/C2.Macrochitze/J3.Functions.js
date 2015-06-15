@@ -45,7 +45,7 @@ function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoom
     initSolutionReference();
     initSolutionTable(solutionTableValues);
     initSolvedRoomPictures(solvedRoomPicturesValues);
-    setNUMandANS(currRoom,0);
+    setNUMandANS(0,0);
     setupRoom(currRoom,prevRoom);
 }
 
@@ -160,7 +160,7 @@ function initSolutionTable(values)
             solutionTable[i] = values;
         }
     }
-    else if(Mazelen === values.length)
+    else if(Mazelen*Mazelen === values.length)
     {
         for (i = 0; i < Mazelen*Mazelen; i++)
         {
@@ -275,7 +275,7 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
                             <br/>\
                             [QUESTION]\
                             <br/>\
-                            <input id = "AnswerField" type="text" size="10" style="text-align:center; font-size:16px;" onKeyPress="return processKeyEvent(event)"></input>\
+                            <input id = "AnswerField" type="text" size="10" style="text-align:center; font-size:16px;" onKeyPress="return processKeyEventDoor(event)"></input>\
                             <a id="buttonOK" href="JavaScript:validateDoorAnswer();">\
                                 <img src="Images/C0.Common/Helpertools/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
                             </a>\
@@ -471,7 +471,7 @@ function setNUMandANS(currRoomIDtmp,nextRoomIDtmp)
     }
 }
 
-function processKeyEvent(evt)
+function processKeyEventDoor(evt)
 {
     var cCode;
     
