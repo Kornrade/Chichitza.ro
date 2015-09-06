@@ -142,7 +142,7 @@ dbQList[  1][2] = "Was ist dein Gewicht?";
                         dbQHint[1] = [];
                         dbQHint[1][0] = "Pont: in lipsa altor precizari, raspunsurile ar trebui sa tina cont de Sistemul International de Unitati (SI)..."; //hint ro
                         dbQHint[1][1] = "Hint: unless specified otherwise, the answers should consider the International System of Units(SI)..."; //hint en
-                        dbQHint[1][2] = "Hinweis: wenn nicht anders angewiesen, die Antworten sollten das Internationalen Einheitensystem (SI) ber&#252;cksichtigen..."; //hint de
+                        dbQHint[1][2] = "Hinweis: wenn nicht anders angewiesen, die Antworten sollen das Internationalen Einheitensystem (SI) ber&#252;cksichtigen..."; //hint de
                         dbQImage[1] = []; dbQImageSrc[1] = []; 
                         dbQImage[1][0] = "Images/C1.Microchitze/Img001Weight.png";	dbQImageSrc[1][0] = "www.phoebeleslie.com";
                         dbQImage[1][1] = "Images/C1.Microchitze/Img001Weight.png";	dbQImageSrc[1][1] = "www.phoebeleslie.com";
@@ -164,7 +164,7 @@ dbQList[  2][2] = "Du trinks gew&#246;hnlich.";
                         dbAnswer[2][2] = "Richtige Antwort: wahr"; //plaintext de answer
                         dbExpln[2] = [];
                         dbExpln[2][0] = "<b>a bea</b> vb. II. 1. (Tranz.) A &#xEE;nghi&#x21B;i un lichid.<sup>[1]</sup>"; //explanation ro
-                        dbExpln[2][1] = "<b>trinken</b> verb 1. a. To take a liquid into your mouth and swallow it; imbibe.<sup>[1]</sup>"; //explanation en
+                        dbExpln[2][1] = "<b>to drink</b> verb 1. a. To take a liquid into your mouth and swallow it; imbibe.<sup>[1]</sup>"; //explanation en
                         dbExpln[2][2] = "<b>trinken</b> starkes Verb 1. a. Fl&#252;ssigkeit, ein Getr&#228;nk zu sich nehmen.<sup>[1]</sup>"; //explanation de
                         dbRefer[2] = [];
                         dbRefer[2][0] = "<a href='http://dexonline.ro/definitie/bea' target='_blank'>[1] dexonline.ro/bea</a>"; //references for ro explanation
@@ -225,7 +225,7 @@ dbQList[  4][2] = "Du h&#246;rst Stimmen gew&#246;hnlich.";
                         dbAnswer[4][1] = "Right answer: true"; //plaintext en answer
                         dbAnswer[4][2] = "Richtige Antwort: wahr"; //plaintext de answer
                         dbExpln[4] = [];
-                        dbExpln[4][0] = "... vocile ale oamenilor cu care interac&#x21B;ionezi."; //explanation ro
+                        dbExpln[4][0] = "... vocile oamenilor cu care interac&#x21B;ionezi."; //explanation ro
                         dbExpln[4][1] = "... the voices of the persons you interact with."; //explanation en
                         dbExpln[4][2] = "... die Stimmen der Menschen mit dennen du kommunizierst."; //explanation de
                         dbRefer[4] = [];
