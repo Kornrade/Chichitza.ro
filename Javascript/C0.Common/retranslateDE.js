@@ -373,8 +373,8 @@ function retranslateDEDictionary()
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "W&#214;RTERBUCH";
-		//changeSrcImage('Images/C0.Common/Flags/ro_gray.png','imgRO');
-		//changeSrcImage('Images/C0.Common/Flags/en_gray.png','imgEN');
+		//changeSrcImage('Images/C0.Common/Helpertools/Flags/ro_gray.png','imgRO');
+		//changeSrcImage('Images/C0.Common/Helpertools/Flags/en_gray.png','imgEN');
 		
 		// Cell (3)
 		document.getElementById("SearchErrorField").innerHTML = "Solche W&#246;rter sind nicht im W&#246;rterbuch... Suchen Sie etwas anderes oder w&#228;hlen Sie einer dieser W&#246;rter:";

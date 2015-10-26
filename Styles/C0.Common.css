@@ -43,17 +43,17 @@
 
 
 .marchingants {
-	background:url("../Images/C0.Common/MarchingAnts/ants-vertical.gif") repeat-y -6px 0;
+	background:url("../Images/C0.Common/Helpertools/MarchingAnts/ants-vertical.gif") repeat-y -6px 0;
 	overflow:hidden;
 	padding:0 2px;
 	position:relative;
 }
 	.marchingants .inner {
-		background:url("../Images/C0.Common/MarchingAnts/ants-horizontal.gif") repeat-x 0 -6px;
+		background:url("../Images/C0.Common/Helpertools/MarchingAnts/ants-horizontal.gif") repeat-x 0 -6px;
 		padding:2px 0 0 0;
 	}
 	.marchingants .hd {
-		background:url("../Images/C0.Common/MarchingAnts/ants-vertical.gif") repeat-y 0 0;
+		background:url("../Images/C0.Common/Helpertools/MarchingAnts/ants-vertical.gif") repeat-y 0 0;
 		height:100%;
 		margin-bottom:4px;
 		position:absolute;
@@ -61,7 +61,7 @@
 		width:2px;
 	}
 	.marchingants .ft {
-		background:url("../Images/C0.Common/MarchingAnts/ants-horizontal.gif") repeat-x 0 0;
+		background:url("../Images/C0.Common/Helpertools/MarchingAnts/ants-horizontal.gif") repeat-x 0 0;
 		height:2px;
 	}
 

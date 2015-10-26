@@ -348,8 +348,8 @@ function retranslateENDictionary()
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "DICTIONARY";
-		//changeSrcImage('Images/C0.Common/Flags/ro_gray.png','imgRO');
-		//changeSrcImage('Images/C0.Common/Flags/de_gray.png','imgDE');
+		//changeSrcImage('Images/C0.Common/Helpertools/Flags/ro_gray.png','imgRO');
+		//changeSrcImage('Images/C0.Common/Helpertools/Flags/de_gray.png','imgDE');
 		
 		// Cell (3)	
 		document.getElementById("SearchErrorField").innerHTML = "Such words are not in the dictionary... Search something else or choose one of these words:";

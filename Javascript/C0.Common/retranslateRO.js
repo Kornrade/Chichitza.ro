@@ -369,8 +369,8 @@ function retranslateRODictionary()
 	{
 		// Cell (1)
 		document.getElementById("divTitle").innerHTML = "DIC&#x21A;IONAR";
-		//changeSrcImage('Images/C0.Common/Flags/en_gray.png','imgEN');
-		//changeSrcImage('Images/C0.Common/Flags/de_gray.png','imgDE');
+		//changeSrcImage('Images/C0.Common/Helpertools/Flags/en_gray.png','imgEN');
+		//changeSrcImage('Images/C0.Common/Helpertools/Flags/de_gray.png','imgDE');
 		
 		// Cell (3)
 		document.getElementById("SearchErrorField").innerHTML = "Astfel de cuvinte nu sunt &#xEE;n dic&#x21B;ionar... Cauta&#x21B;i altceva sau alege&#x21B;i unul dintre cuvintele de mai jos:";

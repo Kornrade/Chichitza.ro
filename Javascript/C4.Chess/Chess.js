@@ -520,7 +520,7 @@ function showPGN()
     editedcurrlangpgn = "<div align='justify'>" + editedcurrlangpgn + "</div>";
     
     popupcontents = "<a id=\"buttonX\" href=\"JavaScript:TINY.box.hide();\">\
-                    <img src=\"Images/C0.Common/Helpertools/BigXGray.png\" alt=\"X\" \
+                    <img src=\"Images/C0.Common/Helpertools/TinyBox/BigXGray.png\" alt=\"X\" \
                     width=\"24\" height=\"24\" border=\"0\" align=\"right\" /> </a> ";
     
     finalcontents = popupcontents.concat( editedcurrlangpgn );          

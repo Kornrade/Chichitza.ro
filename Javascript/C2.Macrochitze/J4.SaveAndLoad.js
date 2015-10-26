@@ -127,7 +127,7 @@ function showLoadDialog()
             </head>\
             <body style="text-align: center">\
                             <a id="buttonX" href="JavaScript:TINY.box.hide();">\
-                                <img src="Images/C0.Common/Helpertools/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
+                                <img src="Images/C0.Common/Helpertools/TinyBox/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
                             </a>\
                             <br/>\
                             <br/>\
@@ -135,7 +135,7 @@ function showLoadDialog()
                             <br/>\
                             <input id = "LoadField" type="text" size="10" style="text-align:center; font-size:16px;" onKeyPress="processKeyEventLoad(event)"></input>\
                             <a id="buttonOK" href="JavaScript:loadMaze();">\
-                                <img src="Images/C0.Common/Helpertools/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
+                                <img src="Images/C0.Common/Helpertools/TinyBox/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
                             </a>\
             </body>\
             </html>\

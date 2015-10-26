@@ -20,7 +20,7 @@ $mesaj = $_POST['mesaj'];
        if( ($email != $defaultemail) || ($mesaj != $defaultmesaj) )
        {
            $header = "From:<" . $email . ">";
-           $destinatar = "chichitza@chichitza.ro";
+           $destinatar = "kornrade@gmail.com";
            $titlu = 'Mesaj chichitza';
            mail($destinatar, $titlu, $mesaj, $header);
        }
