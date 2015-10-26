@@ -294,7 +294,7 @@ function retranslateROMicrochitze()
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
 		
-		document.getElementById("buttonResults").setAttribute("data","Vezi raspunsurile");
+		document.getElementById("buttonResults").innerHTML = "Vezi raspunsurile";
 	}
 	
 }

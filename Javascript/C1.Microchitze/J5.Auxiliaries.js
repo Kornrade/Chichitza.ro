@@ -146,12 +146,12 @@ function checkAndDisplayResultsButton()
 	// if all questions have answers, show results button
 	if(true===boolShowResultsButton)
 	{
-		container = document.getElementById("divResults");
+		container = document.getElementById("divResultsMarchingAnts");
 		container.style.visibility = "visible";	
 	}
 	else
 	{
-		container = document.getElementById("divResults");
+		container = document.getElementById("divResultsMarchingAnts");
 		container.style.visibility = "hidden";		
 	}
 }

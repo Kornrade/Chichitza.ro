@@ -275,7 +275,7 @@ function retranslateENMicrochitze()
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
 		
-		document.getElementById("buttonResults").setAttribute("data","Go to the answers"  );
+		document.getElementById("buttonResults").innerHTML = "See answers";
 	}
 }
 

@@ -121,9 +121,6 @@
 											<span id="Question09" class="box_round" onclick="showQuestion(09);"> 9 </span><span id="Space10">&nbsp; </span>
 											<span id="anext"><img id="imgnext"  style="vertical-align: middle;"/></span>
 										</div>
-										<div id="divResults" class="common" align="center" style="visibility:hidden">
-											<a id="buttonResults" href="javascript:void(0);"><img id="imgResults" src="Images/C0.Common/Keys.png" onclick="computeResults();" /></a>
-										</div>
 										<div id="ResultsBufferField" style="cursor:default; text-align: center; height:15"></div>
 										<div id="QuestionField" style="cursor:default; text-align: center; height:85"></div>
 										<input type="radio" id="radioyes" name="radioyesno" onclick="setAnswerFromRadiobutton('spanradioyes')" onKeyPress="if(event.keyCode==13) {proceedToNextUnanswered();}"><span id="spanradioyes" name="radioyesno"></span>
@@ -135,11 +132,19 @@
 										<br/>
 										<div id="ReferencesField" align="left"></div>
 									</td>
-									<td id="tdRightmost" rowspan="1" colspan="1" width="130" valign="top" style="padding-top:25px; padding-right: 20px;"  class="common">
-										<div align="center">
+									<td id="tdRightmost" rowspan="1" colspan="1" width="130" valign="top" style="padding-top:15px; padding-right: 20px;"  class="common">
+                                        <div id="divResultsMarchingAnts" class="marchingants" style="visibility:hidden">
+                                            <div class="inner">
+                                            <div class="hd"></div>
+                                                <div id="buttonResults" class="style_green" align="center"></div>
+                                                <a id="aKeys" href="javascript:void(0);"><img id="imgResults" src="Images/C0.Common/Keys.png" onclick="computeResults();" /></a>   
+                                            <div class="ft"></div>
+                                            </div>
+                                        </div>
+                                        <div align="center" style="padding-top:15px;">
 											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
 										</div>
-										<div id="helpertoolsField" style="visibility: visible">
+                                        <div id="helpertoolsField" style="padding-top:5px;visibility:visible;">
 											<p align="center">
                                                 <a id="buttonCalculator" href="JavaScript:newPopup(440,570,10,10,'Helpertools/calculator.html');"> <img src="Images/C0.Common/Helpertools/Calculator.png"  alt="Calculator" width="24" height="24" border="0" /></a> &nbsp;
 												<a id="buttonTerra" 	 href="JavaScript:newPopup(550,640,10,10,'Helpertools/terra.html');">      <img src="Images/C0.Common/Helpertools/Terra.png"        alt="Terra" width="24" height="24" border="0" /></a> &nbsp;

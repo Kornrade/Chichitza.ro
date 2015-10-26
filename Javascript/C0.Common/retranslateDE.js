@@ -300,7 +300,7 @@ function retranslateDEMicrochitze()
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
 		
-		document.getElementById("buttonResults").setAttribute("data","Ergebnisse"  );
+		document.getElementById("buttonResults").innerHTML = "Siehe Antworten";
 	}
 }
 

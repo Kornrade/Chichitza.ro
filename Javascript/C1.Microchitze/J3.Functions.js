@@ -364,14 +364,12 @@ function setAnswerFromRadiobutton(radiotext)
 //=================================================================
 function computeResults()
 {
-    var container, i;
+    var container, i, scor=0;
     
 	htmlResultsPhase = true;
     container = document.getElementById("disqus_thread");
 	container.style.visibility = "visible";
 	
-	container = document.getElementById("divResults");
-	container.style.visibility = "hidden";
 	container = document.getElementById("AnswerField");
 	container.setAttribute("readonly", true);	
 
@@ -380,10 +378,19 @@ function computeResults()
 	{
 		// colour the current link back to the normal state
 		if(truthValues[i]===1)
-		{ colourQLink(i,rightAnswerColour,"3px " + rightAnswerColour + " solid"); }
+		{ colourQLink(i,rightAnswerColour,"3px " + rightAnswerColour + " solid"); scor++}
 		else
 		{ colourQLink(i,wrongAnswerColour,"3px " + wrongAnswerColour + " solid");	}	
 	}
+    
+    
+    container = document.getElementById("aKeys");
+	container.parentNode.removeChild(container);
+    container = document.getElementById("divResultsMarchingAnts");
+	container.style.visibility = "visible";
+    container = document.getElementById("buttonResults");
+    container.style.fontSize = "xx-large";
+    container.innerHTML = scor.toString() + " / 10";
 	
 	// show first question (also resets the currqid to 0)
 	showQuestion(0);

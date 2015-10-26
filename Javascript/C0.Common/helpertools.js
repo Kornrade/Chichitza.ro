@@ -112,12 +112,12 @@ function expandcompressHelpertools()
 {
 	if(false===areHelpertoolsExpanded)
 	{
-		document.getElementById("helpertoolsField").setAttribute("style","visibility:visible"); 
+		document.getElementById("helpertoolsField").setAttribute("style","padding-top:5px;visibility:visible"); 
 		areHelpertoolsExpanded = true;
 	}
 	else
 	{
-		document.getElementById("helpertoolsField").setAttribute("style","visibility:hidden"); 
+		document.getElementById("helpertoolsField").setAttribute("style","padding-top:5px;visibility:hidden"); 
 		areHelpertoolsExpanded = false;
 	}
 }
