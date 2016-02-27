@@ -61,3 +61,11 @@ var RoomPictureSources00 = []; // Maze 0 room picture sources
     RoomPictureSources00[9] = "en.wikipedia.org";
 
 var RoomHidingPictureSource00 = "iconfinder.com";
+
+var ValidFinalAnswer00 = []; // Maze 0 parts of the final answer that are checked, must be lowercase
+    ValidFinalAnswer00[0] = "glob"; //glob, globe, Globus
+    ValidFinalAnswer00[1] = "sfer"; //sfera, sferoid
+    ValidFinalAnswer00[2] = "spher"; // sphere, spheroid
+    ValidFinalAnswer00[3] = "sphäre"; //Sphäre
+    ValidFinalAnswer00[4] = "sphaere"; //Sphäre
+    ValidFinalAnswer00[5] = "sphare"; //Sphäre
