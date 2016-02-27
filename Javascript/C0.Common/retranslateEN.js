@@ -288,8 +288,8 @@ function retranslateENMacrochitze()
 		document.getElementById("divTitle").innerHTML = "MACROTEASERS";
 		
 		// Cell (3)	
-        document.getElementById("MazeRules"    ).setAttribute("data", "Game rules");
-        document.getElementById("solutionField").setAttribute("data", "Solve");
+        //document.getElementById("MazeRules"    ).setAttribute("data", "Game rules");
+        document.getElementById("solutionField").setAttribute("data", "Map");
         document.getElementById("saveField"    ).setAttribute("data", "Save");
         document.getElementById("loadField"    ).setAttribute("data", "Load");
         
@@ -297,6 +297,12 @@ function retranslateENMacrochitze()
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
+        
+        document.getElementById("MacroStageInstructions").innerHTML = 'Instructions blabla';
+        
+        document.getElementById("MouseLeftClick").innerHTML = 'Move pieces';
+        document.getElementById("MouseDoubleClick").innerHTML = 'Rotate pieces';
+        document.getElementById("MouseRightClick").innerHTML = 'Flip pieces';
 	}
 }
 

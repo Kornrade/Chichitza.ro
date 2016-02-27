@@ -7,24 +7,23 @@
 /* GLOBAL VARS USED IN THIS FILE:*/
 var lang, auxparam, TINY;
 var MazeID, nextRoomID, currRoomID, prevRoomID;
-var mazeIsInitialized, solutionReference, solutionTable, solvedRoomPictures;
+var mazeIsInitialized, instructionsAreExpanded, solutionReference, solutionTable, solvedRoomPictures;
 var rightAnswerBgColour, wrongAnswerBgColour, currNUM, currANS, Mazelen;
-var Maze00, Doors00, RoomHidingPicture00, RoomHidingPictureSource00, RoomPictures00, RoomPictureSources00, GamePuzzles00, GameInstructions00, DoorPuzzles00, DoorNumFormula00, DoorAnsFormula00;
-var Maze01, Doors01, RoomHidingPicture01, RoomHidingPictureSource01, RoomPictures01, RoomPictureSources01, GamePuzzles01, GameInstructions01, DoorPuzzles01, DoorNumFormula01, DoorAnsFormula01;
+var Maze00, Doors00, RoomHidingPicture00, RoomHidingPictureSource00, RoomPictures00, RoomPictureSources00, DoorPuzzles00, DoorNumFormula00, DoorAnsFormula00;
+var Maze01, Doors01, RoomHidingPicture01, RoomHidingPictureSource01, RoomPictures01, RoomPictureSources01, DoorPuzzles01, DoorNumFormula01, DoorAnsFormula01;
 
 
 // variables for the current game (overwritten when a new game is started);
-var Maze, Doors, RoomHidingPicture, RoomHidingPictureSource, RoomPictures, RoomPictureSources, GamePuzzles, GameInstructions, DoorPuzzles, DoorNumFormula, DoorAnsFormula;
+var Maze, Doors, RoomHidingPicture, RoomHidingPictureSource, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNumFormula, DoorAnsFormula;
 
 /*global setInnerHTML */
 /*global setupMazeStructure */
+/*global toggleMazeRules */
 /*global initSolutionReference */
 /*global initSolvedRoomPictures */
 /*global initSolutionTable */
 /*global setupRoom */
-/*global setMazeRules */
-/*global setupGame */
-/*global setupGameInstructions */
+/*global setupJigsawPuzzle */
 /*global setupDoorPictures */
 /*global setupDoorPuzzles */
 /*global showSolutionField */
@@ -41,6 +40,9 @@ function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoom
     
     setupMazeStructure(mazeIDNum);
     mazeIsInitialized = true;
+    
+    instructionsAreExpanded = false;
+    toggleMazeRules() //toggle instructions visibility to true
     
     initSolutionReference();
     initSolutionTable(solutionTableValues);
@@ -61,8 +63,6 @@ function setupMazeStructure(mazeIDNum)
             RoomHidingPictureSource = RoomHidingPictureSource01;
             RoomPictures = RoomPictures01;
             RoomPictureSources = RoomPictureSources01;
-            GamePuzzles = GamePuzzles01;
-            GameInstructions = GameInstructions01;
             Doors = Doors01;
             DoorPuzzles = DoorPuzzles01;
             DoorNumFormula = DoorNumFormula01;
@@ -76,13 +76,28 @@ function setupMazeStructure(mazeIDNum)
             RoomHidingPictureSource = RoomHidingPictureSource00;
             RoomPictures = RoomPictures00;
             RoomPictureSources = RoomPictureSources00;
-            GamePuzzles = GamePuzzles00;
-            GameInstructions = GameInstructions00;
             Doors = Doors00;
             DoorPuzzles = DoorPuzzles00;
             DoorNumFormula = DoorNumFormula00;
             DoorAnsFormula = DoorAnsFormula00;
     }
+}
+
+function toggleMazeRules()
+{
+    if(false===instructionsAreExpanded)
+	{
+		document.getElementById("MacroStageInstructions").setAttribute("style","visibility:visible"); 
+        document.getElementById("MouseInstructions").setAttribute("style","visibility:visible"); 
+		instructionsAreExpanded = true;
+	}
+	else
+	{
+		document.getElementById("MacroStageInstructions").setAttribute("style","visibility:hidden");
+        document.getElementById("MouseInstructions").setAttribute("style","visibility:hidden"); 
+		instructionsAreExpanded = false;
+	}
+    
 }
 
 function initSolutionReference()
@@ -183,41 +198,30 @@ function setupRoom(curr,prev)
     currRoomID = curr;
     prevRoomID = prev;
     
-    setMazeRules();
-    
-    setupGame();
-    setupGameInstructions();
+    setupJigsawPuzzle();
     
     setupDoorPictures();
     setupDoorPuzzles();
     
 }
 
-function setMazeRules()
+function setupJigsawPuzzle()
 {
-    
-}
-
-function setupGame()
-{
-    if(1===solvedRoomPictures[currRoomID])
+    if(0===solvedRoomPictures[currRoomID])
     {
-        var Img = RoomPictures[currRoomID], ImgSrc = RoomPictureSources[currRoomID];
-        setInnerHTML("MacroStage","<a id=\"thumb\" href=\""+Img+"\" class=\"highslide\" onclick=\"return hs.expand(this)\"><img src=\""+Img+"\" alt=\""+Img+"\" width=\"200\" title=\"Click to enlarge\" /></a><div class=\"highslide-caption\">"+ImgSrc+"</div>"); 
+        document.getElementById("MacroStage").innerHTML = "<img \
+            onload='snapfit.add(this, {callback:function() {updateSolvedRoomPictures(); showSolutionField();}, \
+            aborder:true, level:4, mixed:true, nokeys:true, polygon:true, space:0});' \
+            src='"+RoomPictures[currRoomID]+"' width='250' height='250' border='0' \
+            alt='"+RoomPictures[currRoomID]+"' />";
     }
     else
     {
-        setInnerHTML("MacroStage",GamePuzzles[currRoomID]);
-    }
-}
-
-function setupGameInstructions()
-{
-    if(mazeIsInitialized)
-    {
-        if("ro"===lang) {setInnerHTML("MacroStageInstructions",GameInstructions[currRoomID][0]);}
-        if("en"===lang) {setInnerHTML("MacroStageInstructions",GameInstructions[currRoomID][1]);}
-        if("de"===lang) {setInnerHTML("MacroStageInstructions",GameInstructions[currRoomID][2]);}
+        document.getElementById("MacroStage").innerHTML = "<img \
+            onload='snapfit.add(this, {callback:false, \
+            aborder:true, level:4, mixed:false, nokeys:true, polygon:true, space:0});'\
+            src='"+RoomPictures[currRoomID]+"' width='250' height='250' border='0' \
+            alt='"+RoomPictures[currRoomID]+"' />";
     }
 }
 
@@ -241,12 +245,7 @@ function setupDoorPuzzles()
     document.getElementById("buttonDoorDown" ).setAttribute("onclick", "customizeDoorPuzzle("+currRoomID+","+Maze[currRoomID][0]+");" );
     document.getElementById("buttonDoorRight").setAttribute("onclick", "customizeDoorPuzzle("+currRoomID+","+Maze[currRoomID][1]+");" );
     document.getElementById("buttonDoorUp"   ).setAttribute("onclick", "customizeDoorPuzzle("+currRoomID+","+Maze[currRoomID][2]+");" );
-    document.getElementById("buttonDoorLeft" ).setAttribute("onclick", "customizeDoorPuzzle("+currRoomID+","+Maze[currRoomID][3]+");" );
-    
-    //document.getElementById("buttonDoorDown" ).setAttribute("onclick", "setupRoom("+Maze[currRoomID][0]+","+currRoomID+")");
-    //document.getElementById("buttonDoorRight").setAttribute("onclick", "setupRoom("+Maze[currRoomID][1]+","+currRoomID+")");
-    //document.getElementById("buttonDoorUp"   ).setAttribute("onclick", "setupRoom("+Maze[currRoomID][2]+","+currRoomID+")");
-    //document.getElementById("buttonDoorLeft" ).setAttribute("onclick", "setupRoom("+Maze[currRoomID][3]+","+currRoomID+")");
+    document.getElementById("buttonDoorLeft" ).setAttribute("onclick", "customizeDoorPuzzle("+currRoomID+","+Maze[currRoomID][3]+");" ); 
 }
 
 function customizeDoorPuzzle(currRoomID,nextRoomID)
@@ -445,7 +444,6 @@ function updateSolvedRoomPictures()
     if(0===solvedRoomPictures[currRoomID])
     {
         solvedRoomPictures[currRoomID] = 1;
-        setupGame();
     }
 }
 

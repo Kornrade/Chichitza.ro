@@ -45,6 +45,7 @@ var RoomPictures00 = []; // Maze 0 room picture paths
     RoomPictures00[8] = "Images/C2.Macrochitze/Maze00-Antarctica.png";                                                                      
     RoomPictures00[9] = "Images/C2.Macrochitze/Maze00-Arctic.png";
 
+
 var RoomHidingPicture00 = "Images/C2.Macrochitze/Maze00.png";
 
 var RoomPictureSources00 = []; // Maze 0 room picture sources

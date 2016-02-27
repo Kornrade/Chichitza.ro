@@ -8,7 +8,8 @@
 	<script type="text/javascript" src="Javascript/C0.Common/retranslateEN.js"></script>
 	<script type="text/javascript" src="Javascript/C0.Common/retranslateDE.js"></script>
 	<script type="text/javascript" src="Javascript/C0.Common/helpertools.js"></script>
-	<script type="text/javascript" src="Javascript/C0.Common/highslide/highslide.js"></script>
+	<script type="text/javascript" src="Javascript/C0.Common/snapfit.js"></script>
+    <script type="text/javascript" src="Javascript/C0.Common/highslide/highslide.js"></script>
 	<link rel="stylesheet" type="text/css" href="Javascript/C0.Common/highslide/highslide.css" />
     
     <!-- Tinybox for displaying popups -->
@@ -18,7 +19,6 @@
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J1.Global_variables.js"></script>
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Main.js"  ></script>
     <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Doors.js" ></script>
-    <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Games.js" ></script>
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J3.Functions.js"       ></script>
     <script type="text/javascript" src="Javascript/C2.Macrochitze/J4.SaveAndLoad.js"       ></script>
 	<link rel="stylesheet" type="text/css" href="Styles/C0.Common.css" />
@@ -101,22 +101,12 @@
 <!-- Cell (3) -->		<td rowspan="1" colspan="3" width="900">
                             <table id="outertableMainContents" border="0">
                                 <tr>
-                                    <td id="tdMainContentsLeft" rowspan="1" colspan="1" width="220" class="common">
+                                    <td id="tdMainContentsLeft" rowspan="1" colspan="1" valign="top" width="220" class="common">
                                         <div class="common" align="center">                
-                                            <a id="MazeRules" href="javascript:showMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                            <a id="MazeRules" href="javascript:toggleMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>
                                         <br/>
-                                        <div class="common" align="center">                
-                                            <a id="solutionField" href="javascript:showSolutionField();"><img src="Images/C2.Macrochitze/map.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
-                                        <br/>
-                                        <div class="common" align="center">                
-                                            <a id="saveField" href="javascript:showMazeState();"><img src="Images/C2.Macrochitze/save.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
-                                        <br/>
-                                        <div class="common" align="center">                
-                                            <a id="loadField" href="javascript:showLoadDialog();"><img src="Images/C2.Macrochitze/load.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
+                                        <div id="MacroStageInstructions" align="center"> Instructions </div>
                                     </td>
                                     <td id="tdMainContentsCenter" rowspan="1" colspan="1" width="580">
                                         <table id="innertableMainContents" border="0" style="text-align:center; cursor:default; border-collapse: collapse;">
@@ -136,6 +126,11 @@
                                                         <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
                                                     </div>
                                                 </td>
+                                                <td id="tdMazeRules" rowspan="1" colspan="1" width="80" height="80" valign="top"> 
+                                                    <div class="common" align="center">                
+                                                        <a id="MazeRules" href="javascript:toggleMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td id="tdDoorLeft" rowspan="1" colspan="1" width="80" height="250">
@@ -149,6 +144,16 @@
                                                 <td id="tdDoorRight" rowspan="1" colspan="1" width="80" height="250">
                                                     <div id="DoorRight" class="common" align="center">
                                                          <a id="buttonDoorRight"  href="javascript:void(0);"><img id="imgDoorRight" width="80" height="250" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>
+                                                </td>
+                                                <td id="tdMouseInstructions" rowspan="1" colspan="1" width="80" height="250">
+                                                    <div id="MouseInstructions" class="style_green" align="center">
+                                                        <img src="Images/C2.Macrochitze/mouse_left_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
+                                                        <p id="MouseLeftClick" style="font-size: 12px;"></p>
+                                                        <img src="Images/C2.Macrochitze/mouse_double_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
+                                                        <p id="MouseDoubleClick" style="font-size: 12px;"></p>
+                                                        <img src="Images/C2.Macrochitze/mouse_right_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
+                                                        <p id="MouseRightClick" style="font-size: 12px;"></p>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -183,7 +188,17 @@
                                             </p>
                                         </div>
                                         <br/><br/>
-                                        <div id="MacroStageInstructions" align="center"> Instructions </div>
+                                        <div class="common" align="center">                
+                                            <a id="solutionField" href="javascript:showSolutionField();"><img src="Images/C2.Macrochitze/map.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/>
+                                        <div class="common" align="center">                
+                                            <a id="saveField" href="javascript:showMazeState();"><img src="Images/C2.Macrochitze/save.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/>
+                                        <div class="common" align="center">                
+                                            <a id="loadField" href="javascript:showLoadDialog();"><img src="Images/C2.Macrochitze/load.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
