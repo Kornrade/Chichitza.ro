@@ -133,7 +133,7 @@ function showLoadDialog()
                             <br/>\
                             [QUESTION]\
                             <br/>\
-                            <input id = "LoadField" type="text" size="10" style="text-align:center; font-size:16px;" onKeyPress="processKeyEventLoad(event)"></input>\
+                            <input id = "LoadField" type="text" size="25" style="text-align:center; font-size:16px;" onKeyPress="processKeyEventLoad(event)"></input>\
                             <a id="buttonOK" href="JavaScript:loadMaze();">\
                                 <img src="Images/C0.Common/Helpertools/TinyBox/BigAccept.png" alt="X" width="24" height="24" border="0" align="right" />\
                             </a>\
@@ -166,11 +166,22 @@ function processKeyEventLoad(evt)
 
 function loadMaze()
 {
-    var encodedMazeState = document.getElementById("LoadField").value;
+    var container, encodedMazeState;
     
-    decodeMazeState(encodedMazeState);
-    initMaze(tmpMazeID, tmpCurrRoom, tmpPrevRoom, tmpSolutionValues, tmpSolvedRoomPictures);
-    TINY.box.hide();
+    container = document.getElementById("LoadField");
+    encodedMazeState = container.value;
+    
+    success = decodeMazeState(encodedMazeState);
+    if(success)
+    {
+        container.setAttribute("style","text-align:center; font-size:16px; background-color:"+rightAnswerBgColour);
+        setTimeout(function(){TINY.box.hide();},200); //200ms
+        initMaze(tmpMazeID, tmpCurrRoom, tmpPrevRoom, tmpSolutionValues, tmpSolvedRoomPictures);
+    }
+    else
+    {
+        container.setAttribute("style","text-align:center; font-size:16px; background-color:"+wrongAnswerBgColour);
+    }
 }
 
 function decodeMazeState(encodedMazeState)
@@ -180,13 +191,23 @@ function decodeMazeState(encodedMazeState)
     tmpCurrRoom = decodeExtendedHexa(encodedMazeState[1]);
     tmpPrevRoom = decodeExtendedHexa(encodedMazeState[2]);
     
-    var intMatrix, computedMazeLength, tmpValues;
+    var intMatrix, computedMazeLength, desiredMazeLength;
     
-    intMatrix = readoutEncodedStateIntoNumbers(encodedMazeState);
-    
-    computedMazeLength = computeMazeLength(intMatrix);
-    
-    buildtmpValues(intMatrix, computedMazeLength);
+    if(tmpMazeID <= NumberOfMazes)
+    {
+        intMatrix = readoutEncodedStateIntoNumbers(encodedMazeState);
+        computedMazeLength = computeMazeLength(intMatrix);
+        if(computedMazeLength === eval("Maze"+encodedMazeState[0]+".length"))
+        {
+            buildtmpValues(intMatrix, computedMazeLength);
+            return true;
+        }
+        else
+        {
+
+            return false;
+        }
+    }
 }
 
 function readoutEncodedStateIntoNumbers(encodedMazeState)

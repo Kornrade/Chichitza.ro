@@ -17,8 +17,8 @@
     <link rel="stylesheet" type="text/css" href="Styles/tinybox.css" />
     
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J1.Global_variables.js"></script>
-	<script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Main.js"  ></script>
-    <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database00Doors.js" ></script>
+	<script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database0Main.js"  ></script>
+    <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database0Doors.js" ></script>
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J3.Functions.js"       ></script>
     <script type="text/javascript" src="Javascript/C2.Macrochitze/J4.SaveAndLoad.js"       ></script>
 	<link rel="stylesheet" type="text/css" href="Styles/C0.Common.css" />
@@ -103,7 +103,7 @@
                                 <tr>
                                     <td id="tdMainContentsLeft" rowspan="1" colspan="1" valign="top" width="220" class="common">
                                         <div class="common" align="center">                
-                                            <a id="MazeRules" href="javascript:toggleMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                            <a id="MazeRules" href="javascript:toggleMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="128" height="128" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>
                                         <br/>
                                         <div id="MacroStageInstructions" align="center"> Instructions </div>
@@ -113,7 +113,7 @@
                                             <tr>
                                                 <td id="tdCornerUL" rowspan="1" colspan="1" width="80" height="80"> 
                                                     <div align="center">
-                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
+                                                        <img src="Images/C2.Macrochitze/Doors_And_Walls/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
                                                     </div>
                                                 </td>
                                                 <td id="tdDoorUp" rowspan="1" colspan="1" width="250" height="80"> 
@@ -123,13 +123,13 @@
                                                 </td>
                                                 <td id="tdCornerUR" rowspan="1" colspan="1" width="80" height="80"> 
                                                     <div align="center">
-                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
+                                                        <img src="Images/C2.Macrochitze/Doors_And_Walls/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
                                                     </div>
                                                 </td>
-                                                <td id="tdMazeRules" rowspan="1" colspan="1" width="80" height="80" valign="top"> 
+                                                <td id="tdSolutionMap" rowspan="1" colspan="1" width="170" height="80">
                                                     <div class="common" align="center">                
-                                                        <a id="MazeRules" href="javascript:toggleMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
-                                                    </div>
+                                                        <a id="solutionField" href="javascript:showSolutionField(isMazeSolved);"><img src="Images/C2.Macrochitze/map.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                                    </div>        
                                                 </td>
                                             </tr>
                                             <tr>
@@ -148,11 +148,11 @@
                                                 </td>
                                                 <td id="tdMouseInstructions" rowspan="1" colspan="1" width="80" height="250">
                                                     <div id="MouseInstructions" class="style_green" align="center">
-                                                        <img src="Images/C2.Macrochitze/mouse_left_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
+                                                        <img src="Images/C2.Macrochitze/Jigsaw/mouse_left_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
                                                         <p id="MouseLeftClick" style="font-size: 12px;"></p>
-                                                        <img src="Images/C2.Macrochitze/mouse_double_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
+                                                        <img src="Images/C2.Macrochitze/Jigsaw/mouse_double_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
                                                         <p id="MouseDoubleClick" style="font-size: 12px;"></p>
-                                                        <img src="Images/C2.Macrochitze/mouse_right_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
+                                                        <img src="Images/C2.Macrochitze/Jigsaw/mouse_right_click.png" width="40" height="40" border="0" Hspace="0" Vspace="0"/>
                                                         <p id="MouseRightClick" style="font-size: 12px;"></p>
                                                     </div>
                                                 </td>
@@ -160,7 +160,7 @@
                                             <tr>
                                                 <td id="tdCornerDL" rowspan="1" colspan="1" width="80" height="80"> 
                                                     <div align="center">
-                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
+                                                        <img src="Images/C2.Macrochitze/Doors_And_Walls/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
                                                     </div>
                                                 </td>
                                                 <td id="tdDoorDown" rowspan="1" colspan="1" width="250" height="80"> 
@@ -170,7 +170,14 @@
                                                 </td>
                                                 <td id="tdCornerDR" rowspan="1" colspan="1" width="80" height="80"> 
                                                     <div align="center">
-                                                        <img src="Images/C2.Macrochitze/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
+                                                        <img src="Images/C2.Macrochitze/Doors_And_Walls/wall.png" width="80" height="80" border="0" Hspace="0" Vspace="0"/>
+                                                    </div>
+                                                </td>
+                                                <td id="tdMazeDifficulty" rowspan="1" colspan="1" width="175" height="80" valign="center"> 
+                                                    <div class="common" align="center">                
+                                                        <a id="MazeDifficulty5" href="javascript:toggleJigsawDifficulty(5);"><img id="JigsawdDfficuly5" src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png"  width="32" height="32" border="0" Hspace="0" Vspace="0"/></a>
+                                                        <a id="MazeDifficulty3" href="javascript:toggleJigsawDifficulty(3);"><img id="JigsawdDfficuly3" src="Images/C2.Macrochitze/Jigsaw/jigsawYellow.png" width="41" height="41" border="0" Hspace="0" Vspace="0"/></a>
+                                                        <a id="MazeDifficulty1" href="javascript:toggleJigsawDifficulty(1);"><img id="JigsawdDfficuly1" src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png"  width="50" height="50" border="0" Hspace="0" Vspace="0"/></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -188,10 +195,6 @@
                                             </p>
                                         </div>
                                         <br/><br/>
-                                        <div class="common" align="center">                
-                                            <a id="solutionField" href="javascript:showSolutionField(isMazeSolved);"><img src="Images/C2.Macrochitze/map.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
-                                        <br/>
                                         <div class="common" align="center">                
                                             <a id="saveField" href="javascript:showMazeState();"><img src="Images/C2.Macrochitze/save.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>

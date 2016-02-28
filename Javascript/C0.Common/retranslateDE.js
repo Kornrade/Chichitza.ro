@@ -128,7 +128,7 @@ function retranslateDEIndexIntro()
 					<b>Mikroknobeleien:</b> 10-Fragen Knobelaufgaben. <br/>\
 					<i>z.B.: Warum fressen wei&szlig;e Schafe mehr Gras als schwarze?</i>";
 	document.getElementById("divMainContentsRight21").innerHTML = "\
-					<b>Makroknobeleien:</b> kniffige Denkaufgaben. <br/>\
+					<b>Makroknobeleien:</b> knifflige Denkaufgaben. <br/>\
 					<i>z.B.: Gestalten Sie ein Holzobjekt, so dass es von oben, vorne und hinten so aussieht wie im Bild:</i>";				
 	document.getElementById("divMainContentsRight31").innerHTML = "\
 					<b>Interaktive</b> Denkaufgaben. <br/>\
