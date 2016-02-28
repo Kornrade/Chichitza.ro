@@ -10,9 +10,9 @@ var solutionTable; // The table where the user enters the solution to the proble
 var Mazelen; //length and breadth of the solution table (Mazelen = Maze.length)
 
 // variables for the current game (overwritten when a new game is started);
-var Maze, Doors, RoomHidingPicture, RoomHidingPictureSource, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNumFormula, DoorAnsFormula, ValidFinalAnswer;
+var Maze, MazeTitles, Doors, MazeNeutralImage, MazeNeutralImageSource, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNumFormula, DoorAnsFormula, ValidFinalAnswer;
 
-// STATIC variables
+// UNCHANGING variables
 
 var NumberOfMazes = 0;
 

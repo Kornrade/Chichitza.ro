@@ -7,10 +7,10 @@
 /* GLOBAL VARS USED IN THIS FILE:*/
 var lang, auxparam, TINY;
 var MazeID, nextRoomID, currRoomID, prevRoomID;
-var mazeIsInitialized, instructionsAreExpanded, solutionReference, solutionTable, solvedRoomPictures, isMazeSolved, doToggleDoors, jigsawPiecesDifficulty;
+var mazeIsInitialized, solutionReference, solutionTable, solvedRoomPictures, isMazeSolved, doToggleDoors, jigsawPiecesDifficulty;
 var rightAnswerBgColour, wrongAnswerBgColour, currNUM, currANS, Mazelen;
-var Maze0, Doors0, RoomHidingPicture0, RoomHidingPictureSource0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNumFormula0, DoorAnsFormula0, ValidFinalAnswer0;
-var Maze1, Doors1, RoomHidingPicture1, RoomHidingPictureSource1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNumFormula1, DoorAnsFormula1, ValidFinalAnswer1;
+var Maze0, MazeTitles0, Doors0, MazeNeutralImage0, MazeNeutralImageSource0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNumFormula0, DoorAnsFormula0, ValidFinalAnswer0;
+var Maze1, MazeTitles1, Doors1, MazeNeutralImage1, MazeNeutralImageSource1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNumFormula1, DoorAnsFormula1, ValidFinalAnswer1;
 
 
 /*global setInnerHTML */
@@ -40,8 +40,12 @@ function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoom
     doToggleDoors = true;
     jigsawPiecesDifficulty = 3; //default
     
-    instructionsAreExpanded = false;
-    toggleMazeRules() //toggle instructions visibility to true
+    if(lang==="ro") {setInnerHTML("MazeTitle",MazeTitles[0]);}
+    if(lang==="en") {setInnerHTML("MazeTitle",MazeTitles[1]);}
+    if(lang==="de") {setInnerHTML("MazeTitle",MazeTitles[2]);}
+    
+    // add neutral maze image and source
+    setInnerHTML("MazeNeutralImageField","<img src=\""+MazeNeutralImage+"\" alt=\""+MazeNeutralImage+"\" width=\"150\" />");	
     
     initSolutionReference();
     initSolutionTable(solutionTableValues);
@@ -56,24 +60,26 @@ function setupMazeStructure(mazeIDNum)
     {
         case  1:
             MazeID = '1';
-            Maze = Maze01;
+            MazeTitles = MazeTitles1;
+            Maze = Maze1;
             Mazelen = Maze.length;
-            RoomHidingPicture = RoomHidingPicture1;
-            RoomHidingPictureSource = RoomHidingPictureSource1;
-            RoomPictures = RoomPictures01;
-            RoomPictureSources = RoomPictureSources01;
-            Doors = Doors01;
+            MazeNeutralImage = MazeNeutralImage1;
+            MazeNeutralImageSource = MazeNeutralImageSource1;
+            RoomPictures = RoomPictures1;
+            RoomPictureSources = RoomPictureSources1;
+            Doors = Doors1;
             DoorPuzzles = DoorPuzzles1;
-            DoorNumFormula = DoorNumFormula01;
-            DoorAnsFormula = DoorAnsFormula01;
-            ValidFinalAnswer = ValidFinalAnswer01;
+            DoorNumFormula = DoorNumFormula1;
+            DoorAnsFormula = DoorAnsFormula1;
+            ValidFinalAnswer = ValidFinalAnswer1;
             break;
         default:
             MazeID = '0';
+            MazeTitles = MazeTitles0;
             Maze = Maze0;
             Mazelen = Maze.length;
-            RoomHidingPicture = RoomHidingPicture0;
-            RoomHidingPictureSource = RoomHidingPictureSource0;
+            MazeNeutralImage = MazeNeutralImage0;
+            MazeNeutralImageSource = MazeNeutralImageSource0;
             RoomPictures = RoomPictures0;
             RoomPictureSources = RoomPictureSources0;
             Doors = Doors0;
@@ -81,77 +87,6 @@ function setupMazeStructure(mazeIDNum)
             DoorNumFormula = DoorNumFormula0;
             DoorAnsFormula = DoorAnsFormula0;
             ValidFinalAnswer = ValidFinalAnswer0;
-    }
-}
-
-function toggleMazeRules()
-{
-    if(false===instructionsAreExpanded)
-	{
-		document.getElementById("MacroStageInstructions").setAttribute("style","visibility:visible"); 
-        //document.getElementById("MouseInstructions").setAttribute("style","visibility:visible"); 
-		instructionsAreExpanded = true;
-	}
-	else
-	{
-		document.getElementById("MacroStageInstructions").setAttribute("style","visibility:hidden");
-        //document.getElementById("MouseInstructions").setAttribute("style","visibility:hidden"); 
-		instructionsAreExpanded = false;
-	}
-    
-}
-
-function toggleJigsawDifficulty(diff)
-{
-    if(jigsawPiecesDifficulty != diff)
-    {
-        switch(diff)
-        {
-            case 5:
-                jigsawPiecesDifficulty = 5;
-                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawRed.png";
-                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                snapfit.reset(document.getElementById('MacroStageImg'),5);
-                if(0===solvedRoomPictures[currRoomID])
-                {
-                    snapfit.admix(document.getElementById('MacroStageImg'));
-                }
-                break;
-            case 3:
-                jigsawPiecesDifficulty = 3;
-                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawYellow.png";
-                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                snapfit.reset(document.getElementById('MacroStageImg'),3);
-                if(0===solvedRoomPictures[currRoomID])
-                {
-                    snapfit.admix(document.getElementById('MacroStageImg'));
-                }
-                break;
-            case 1:
-                jigsawPiecesDifficulty = 1;
-                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawGreen.png";
-                snapfit.reset(document.getElementById('MacroStageImg'),1);
-                if(0===solvedRoomPictures[currRoomID])
-                {
-                    snapfit.admix(document.getElementById('MacroStageImg'));
-                }
-                break;
-            default:
-                jigsawPiecesDifficulty = 3;
-                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawYellow.png";
-                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
-                snapfit.reset(document.getElementById('MacroStageImg'),3);
-                if(0===solvedRoomPictures[currRoomID])
-                {
-                    snapfit.admix(document.getElementById('MacroStageImg'));
-                }
-                break;
-        }
     }
 }
 
@@ -453,7 +388,7 @@ function composeTableWithSortedRoomPictures()
             tableHTML += "<td>";
             if(i===0 && j===0)
             {
-                tableHTML += '<a><img src="'+RoomHidingPicture+'" alt="---" width='+iconSize+' height='+iconSize+' border="0"/></a>';
+                tableHTML += '<a><img src="'+MazeNeutralImage+'" alt="---" width='+iconSize+' height='+iconSize+' border="0"/></a>';
             }
             else if(i===0 && j!==0)
             {
@@ -463,7 +398,7 @@ function composeTableWithSortedRoomPictures()
                 }
                 else
                 {
-                    tableHTML += '<a><img src="'+RoomHidingPicture+'" alt="---" width='+iconSize+' height='+iconSize+' border="0"/></a>';
+                    tableHTML += '<a><img src="'+MazeNeutralImage+'" alt="---" width='+iconSize+' height='+iconSize+' border="0"/></a>';
                 }
             }
             else if(j===0 && i!==0)
@@ -474,7 +409,7 @@ function composeTableWithSortedRoomPictures()
                 }
                 else
                 {
-                    tableHTML += '<a><img src="'+RoomHidingPicture+'" alt="---" width='+iconSize+' height='+iconSize+' border="0"/></a>';
+                    tableHTML += '<a><img src="'+MazeNeutralImage+'" alt="---" width='+iconSize+' height='+iconSize+' border="0"/></a>';
                 }
             }
             else if(i===j)
@@ -515,6 +450,67 @@ function composeTableWithSortedRoomPictures()
     
     // return
     return tableHTML;
+}
+
+function toggleMazeRules()
+{
+    var mazeRules;
+    mazeRules = "Instructiuni";
+    showTinyBoxGame(mazeRules);
+}
+
+function toggleJigsawDifficulty(diff)
+{
+    if(jigsawPiecesDifficulty != diff)
+    {
+        switch(diff)
+        {
+            case 5:
+                jigsawPiecesDifficulty = 5;
+                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawRed.png";
+                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                snapfit.reset(document.getElementById('MacroStageImg'),5);
+                if(0===solvedRoomPictures[currRoomID])
+                {
+                    snapfit.admix(document.getElementById('MacroStageImg'));
+                }
+                break;
+            case 3:
+                jigsawPiecesDifficulty = 3;
+                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawYellow.png";
+                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                snapfit.reset(document.getElementById('MacroStageImg'),3);
+                if(0===solvedRoomPictures[currRoomID])
+                {
+                    snapfit.admix(document.getElementById('MacroStageImg'));
+                }
+                break;
+            case 1:
+                jigsawPiecesDifficulty = 1;
+                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawGreen.png";
+                snapfit.reset(document.getElementById('MacroStageImg'),1);
+                if(0===solvedRoomPictures[currRoomID])
+                {
+                    snapfit.admix(document.getElementById('MacroStageImg'));
+                }
+                break;
+            default:
+                jigsawPiecesDifficulty = 3;
+                document.getElementById("JigsawdDfficuly5").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                document.getElementById("JigsawdDfficuly3").src="Images/C2.Macrochitze/Jigsaw/JigsawYellow.png";
+                document.getElementById("JigsawdDfficuly1").src="Images/C2.Macrochitze/Jigsaw/JigsawWhite.png";
+                snapfit.reset(document.getElementById('MacroStageImg'),3);
+                if(0===solvedRoomPictures[currRoomID])
+                {
+                    snapfit.admix(document.getElementById('MacroStageImg'));
+                }
+                break;
+        }
+    }
 }
 
 function toggleIcon(index1, index2)

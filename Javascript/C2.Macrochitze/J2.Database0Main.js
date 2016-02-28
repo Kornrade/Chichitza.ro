@@ -6,6 +6,11 @@
 .......8.......
 */
 
+var MazeTitles0 = [];
+    MazeTitles0[0] = "Maze00";
+    MazeTitles0[1] = "Maze00EN";
+    MazeTitles0[2] = "Maze00DE";
+
 //Maze[k] = [D,R,U,L] room IDs
 var Maze0 = []; // Maze 0 (Tutorial) internal structure
     Maze0[0] = [1,2,9,6];
@@ -35,18 +40,18 @@ var Doors0 = []; // Maze 0 (Tutorial) door puzzle IDs
 
 var RoomPictures0 = []; // Maze 0 room picture paths                                                                                       
     RoomPictures0[0] = "Images/C2.Macrochitze/Maze0/Maze0-Pacific.png";                                                                      
-    RoomPictures0[1] = "Images/C2.Macrochitze/Maze0/Maze0-Australia.png";                                                                      
+    RoomPictures0[1] = "Images/C2.Macrochitze/Maze0/Maze0-Australia.png";                                                                    
     RoomPictures0[2] = "Images/C2.Macrochitze/Maze0/Maze0-AmericaN.png";                                                                      
     RoomPictures0[3] = "Images/C2.Macrochitze/Maze0/Maze0-AmericaS.png";                                                                      
     RoomPictures0[4] = "Images/C2.Macrochitze/Maze0/Maze0-Europe.png";                                                                      
     RoomPictures0[5] = "Images/C2.Macrochitze/Maze0/Maze0-Africa.png";                                                                      
     RoomPictures0[6] = "Images/C2.Macrochitze/Maze0/Maze0-Asia.png";                                                                      
     RoomPictures0[7] = "Images/C2.Macrochitze/Maze0/Maze0-Indian.png";                                                                      
-    RoomPictures0[8] = "Images/C2.Macrochitze/Maze0/Maze0-Antarctica.png";                                                                      
+    RoomPictures0[8] = "Images/C2.Macrochitze/Maze0/Maze0-Antarctica.png";                                                                    
     RoomPictures0[9] = "Images/C2.Macrochitze/Maze0/Maze0-Arctic.png";
 
 
-var RoomHidingPicture0 = "Images/C2.Macrochitze/Maze0/Maze0.png";
+var MazeNeutralImage0 = "Images/C2.Macrochitze/Maze0/Maze0.png";
 
 var RoomPictureSources0 = []; // Maze 0 room picture sources
     RoomPictureSources0[0] = "en.wikipedia.org";
@@ -60,7 +65,7 @@ var RoomPictureSources0 = []; // Maze 0 room picture sources
     RoomPictureSources0[8] = "en.wikipedia.org";
     RoomPictureSources0[9] = "en.wikipedia.org";
 
-var RoomHidingPictureSource0 = "iconfinder.com";
+var MazeNeutralImageSource0 = "iconfinder.com";
 
 var ValidFinalAnswer0 = []; // Maze 0 parts of the final answer that are checked, must be lowercase
     ValidFinalAnswer0[0] = "glob"; //glob, globe, Globus

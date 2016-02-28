@@ -313,7 +313,7 @@ function retranslateDEMacrochitze()
 		document.getElementById("divTitle").innerHTML = "MAKROKNOBELEIEN";
 		
 		// Cell (3)		
-        //document.getElementById("MazeRules"    ).setAttribute("data", "Spielregeln");
+        document.getElementById("MazeRules"    ).setAttribute("data", "Spielregeln");
         document.getElementById("solutionField").setAttribute("data", "Karte");
         document.getElementById("saveField"    ).setAttribute("data", "Speichern");
         document.getElementById("loadField"    ).setAttribute("data", "Laden");
@@ -322,8 +322,6 @@ function retranslateDEMacrochitze()
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Rechner"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
-                
-        document.getElementById("MacroStageInstructions").innerHTML = 'DEDE blabla';
         
         document.getElementById("MouseLeftClick").innerHTML = 'Teile bewegen';
         document.getElementById("MouseDoubleClick").innerHTML = 'Teile drehen';

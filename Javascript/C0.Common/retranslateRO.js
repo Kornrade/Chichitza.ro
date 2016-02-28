@@ -308,7 +308,7 @@ function retranslateROMacrochitze()
         document.getElementById("divTitle").innerHTML = "MACROCHITZE";
 
         // Cell (3)
-        //document.getElementById("MazeRules"    ).setAttribute("data", "Regulile jocului");
+        document.getElementById("MazeRules"    ).setAttribute("data", "Regulile jocului");
         document.getElementById("solutionField").setAttribute("data", "Harta");
         document.getElementById("saveField"    ).setAttribute("data", "Salveaza");
         document.getElementById("loadField"    ).setAttribute("data", "Incarca");
@@ -317,8 +317,6 @@ function retranslateROMacrochitze()
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
 		document.getElementById("buttonTerra"       ).setAttribute("data","Terra"  );
 		document.getElementById("buttonMendeleev"   ).setAttribute("data","Mendeleev"  );
-                
-        document.getElementById("MacroStageInstructions").innerHTML = 'Instructiuni blabla';
         
         document.getElementById("MouseLeftClick").innerHTML = 'Mutare piese';
         document.getElementById("MouseDoubleClick").innerHTML = 'Rotire piese';
