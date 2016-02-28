@@ -39,6 +39,7 @@ function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoom
     mazeIsInitialized = true;
     doToggleDoors = true;
     jigsawPiecesDifficulty = 3; //default
+    toggleJigsawDifficulty(jigsawPiecesDifficulty);
     
     if(lang==="ro") {setInnerHTML("MazeTitle",MazeTitles[0]);}
     if(lang==="en") {setInnerHTML("MazeTitle",MazeTitles[1]);}

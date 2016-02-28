@@ -105,8 +105,33 @@ function computeCustomRLE(vector)
 function showMazeState()
 {
     var currentState = encodeMazeState();
+    var mazeSaveTinyBoxContent='\
+        <html>\
+            <head>\
+                <meta content="text/html;charset=utf-8" http-equiv="Content-Type">\
+                <meta content="utf-8" http-equiv="encoding">\
+            </head>\
+            <body style="text-align: center">\
+                            <a id="buttonX" href="JavaScript:TINY.box.hide();">\
+                                <img src="Images/C0.Common/Helpertools/TinyBox/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
+                            </a>\
+                            <br/>\
+                            <br/>\
+                            [TEXT]\
+                            <br/>\
+                            <p style="background-color:yellow; text-align:center">[CODE]</p>\
+            </body>\
+            </html>\
+        ';
 
-    showTinyBoxGame(currentState);
+    if("ro"===lang) {text = "Pentru a continua jocul mai t&#xE2;rziu, re&#x163;ine codul:";}
+    if("en"===lang) {text = "To continue the game later, remember the code:";}
+    if("de"===lang) {text = "Um sp&#228;ter weiterzuspielen, Code merken:";}
+
+    mazeSaveTinyBoxContent = mazeSaveTinyBoxContent.replace("[TEXT]",text);
+    mazeSaveTinyBoxContent = mazeSaveTinyBoxContent.replace("[CODE]",encodeMazeState());
+    
+    showTinyBoxGame(mazeSaveTinyBoxContent);
 }
 
 function encodeMazeState()
@@ -141,8 +166,8 @@ function showLoadDialog()
             </html>\
         ';
 
-        if("ro"===lang) {text = "Introduceti codul labirintului:";}
-        if("en"===lang) {text = "Enter maze code:";}
+        if("ro"===lang) {text = "Introdu codul:";}
+        if("en"===lang) {text = "Enter code:";}
         if("de"===lang) {text = "Code eingeben:";}
     
         mazeLoadTinyBoxContent = mazeLoadTinyBoxContent.replace("[QUESTION]",text);
