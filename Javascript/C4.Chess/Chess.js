@@ -7,7 +7,7 @@
 /*jslint es5: true */
 
 /* GLOBAL VARS USED IN THIS FILE:*/
-var lang, auxparam;
+var lang, auxparam, TINY;
 
 /*global PgnViewer */
 

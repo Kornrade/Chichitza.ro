@@ -378,7 +378,7 @@ function computeResults()
 	{
 		// colour the current link back to the normal state
 		if(truthValues[i]===1)
-		{ colourQLink(i,rightAnswerColour,"3px " + rightAnswerColour + " solid"); scor++}
+		{ colourQLink(i,rightAnswerColour,"3px " + rightAnswerColour + " solid"); scor++;}
 		else
 		{ colourQLink(i,wrongAnswerColour,"3px " + wrongAnswerColour + " solid");	}	
 	}

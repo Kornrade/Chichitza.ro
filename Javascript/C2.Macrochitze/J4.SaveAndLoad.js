@@ -6,6 +6,7 @@
 /*jslint evil: true*/
 
 var lang, TINY;
+var NumberOfMazes, rightAnswerBgColour, wrongAnswerBgColour;
 var MazeID, prevRoomID, currRoomID, solutionTable, solvedRoomPictures;
 var tmpMazeID, tmpCurrRoom, tmpPrevRoom, tmpSolutionValues, tmpSolvedRoomPictures;
 
@@ -104,8 +105,10 @@ function computeCustomRLE(vector)
 
 function showMazeState()
 {
-    var currentState = encodeMazeState();
-    var mazeSaveTinyBoxContent='\
+    var text, currentState, mazeSaveTinyBoxContent;
+    
+    currentState = encodeMazeState();
+    mazeSaveTinyBoxContent='\
         <html>\
             <head>\
                 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">\
@@ -191,7 +194,7 @@ function processKeyEventLoad(evt)
 
 function loadMaze()
 {
-    var container, encodedMazeState;
+    var container, encodedMazeState, success;
     
     container = document.getElementById("LoadField");
     encodedMazeState = container.value;

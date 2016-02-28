@@ -4,18 +4,22 @@
 
 /*jslint es5: true */
 /*jslint evil: true*/
+
 /* GLOBAL VARS USED IN THIS FILE:*/
-var lang, auxparam, TINY;
+var lang, auxparam, TINY, snapfit;
 var MazeID, nextRoomID, currRoomID, prevRoomID;
 var mazeIsInitialized, solutionReference, solutionTable, solvedRoomPictures, isMazeSolved, doToggleDoors, jigsawPiecesDifficulty;
 var rightAnswerBgColour, wrongAnswerBgColour, currNUM, currANS, Mazelen;
 var Maze0, MazeTitles0, Doors0, MazeNeutralImage0, MazeNeutralImageSource0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNumFormula0, DoorAnsFormula0, ValidFinalAnswer0;
 var Maze1, MazeTitles1, Doors1, MazeNeutralImage1, MazeNeutralImageSource1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNumFormula1, DoorAnsFormula1, ValidFinalAnswer1;
 
+var GlobalFinalQuestion;
+var Maze, MazeTitles, Doors, MazeNeutralImage, MazeNeutralImageSource, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNumFormula, DoorAnsFormula, ValidFinalAnswer;
+
 
 /*global setInnerHTML */
 /*global setupMazeStructure */
-/*global toggleMazeRules */
+/*global displayMazeRules */
 /*global initSolutionReference */
 /*global initSolvedRoomPictures */
 /*global initSolutionTable */
@@ -24,12 +28,17 @@ var Maze1, MazeTitles1, Doors1, MazeNeutralImage1, MazeNeutralImageSource1, Room
 /*global setupDoorPictures */
 /*global setupDoorPuzzles */
 /*global showSolutionField */
+/*global composeFinalQuestion */
+/*global composeFinalQuestionText */
 /*global composeTableWithSortedRoomPictures */
+/*global displayMazeRules */
+/*global toggleJigsawDifficulty */
 /*global customizeDoorPuzzle */
 /*global validateMaze */
 /*global setNUMandANS */
 /*global showTinyBoxGame */
 /*global validateDoorAnswer */
+/*global validateFinalAnswer */
 
 
 function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoomPicturesValues)
@@ -357,7 +366,7 @@ function composeFinalQuestionText()
 
 function composeTableWithSortedRoomPictures()
 {
-    var tableHTML, i,j,tempnum, temptoggle, RoomPicturesWithStatus = [], sortedRoomPictures;
+    var tableHTML, i,j,tempnum, temptoggle, iconSize, RoomPicturesWithStatus = [], sortedRoomPictures;
     
     // append the status of the room picture at the end of the room picture's path so that it can be checked after sorting
     for(i = 0; i < Mazelen; i++)
@@ -453,7 +462,7 @@ function composeTableWithSortedRoomPictures()
     return tableHTML;
 }
 
-function toggleMazeRules()
+function displayMazeRules()
 {
     var mazeRules;
     mazeRules = "Instructiuni";
@@ -462,7 +471,7 @@ function toggleMazeRules()
 
 function toggleJigsawDifficulty(diff)
 {
-    if(jigsawPiecesDifficulty != diff)
+    if(jigsawPiecesDifficulty !== diff)
     {
         switch(diff)
         {
@@ -551,7 +560,7 @@ function validateMaze()
     {
         doToggleDoors = false;
         setTimeout(function(){TINY.box.hide();},100);
-        setTimeout(function(){showSolutionField(true)},400);
+        setTimeout(function(){showSolutionField(true);},400);
     }
         
 }

@@ -27,31 +27,30 @@
 	
 </head>
 
-<!-------------------900-----------------------\ 
-+---------+------------------------------------+
-|  BANNER |  Micro-/Macrochitze/...  | ro/en/de|  Cell (0), Cell (1), Cell (2)
-|         |        <divTitle>        | home/etc|  
-+---200---+---------500--------------+---200---+   
-++--------------------------------------------++  orange line
-|| -175--+--+-----------------------+--+--175-||
-||       |75|       DOOR UP         |75|      ||
-||  Name |  +---------400-----------+  |   I  ||
-||       |  |                       |  |   N  ||
-||  IMG  |  |                       |  |   S  ||
-||       | D|                       |D |   T  ||
-||      4| O|                       |O |   R  || Cell (3)
-||      0| O|                       |O |   U  ||
-||      0| R|      MacroStage       |R |   C  ||
-||       |  |                       |  |   T  ||
-|| Bonus | L|                       |R |   I  ||
-||       |  |                       |  |   O  ||
-|| Crib  |  +-----------------------+  |   N  ||
-||       |75|      DOOR DOWN        |75|      ||
-||       +--+--------------------------+      ||
-||                                            ||
-++--------------------------------------------++
-+----------------------------------------------+  orange line
-+--------------------900-----------------------+--->
+<!-----------------------900---------------------------\ 
++---------+--------------------------------------------+
+|  BANNER |      Micro-/Macrochitze/...      | ro/en/de|  Cell (0), Cell (1), Cell (2)
+|         |            <divTitle>            | home/etc|  
++---200---+-------------500------------------+---200---+   
+++----------------------------------------------------++  orange line
+|| ---220--+--- +-----------------+----+--170--+--130-||
+||   Maze  | 80 |    DOOR UP      | 80 |  Map  |      ||
+||         | -- +------250--------+----|       | Crib ||
+||   IMG   |    |                 |    |  M    |      ||
+||   IMG   |  D |                 | D  |  o    |  S   ||
+||        2|  O |                 | O  |  u    |  A   || Cell (3)
+||        5|  O |   MacroStage    | O  |  s    |  V   ||
+||        0|  R |                 | R  |  e    |  E   ||
+||         |    |                 |    |       |      ||
+||  Instru |  L |                 | R  |       |  L   ||
+||  ctiuni |    |                 |    |       |  O   ||
+||         |--- +-----------------+----|  puzz |  A   ||
+||         | 80 |   DOOR DOWN     | 80 |  size |  D   ||
+||         +----+-----------------+----+       |      ||
+||                                             |      ||
+++----------------------------------------------------++
++------------------------------------------------------+  
++----------------------------900-----------------------+--->
 
 
 <body onload="detectLanguage(); initMaze(auxparam,0,0,0,0);"> <!---onload should be a function of identifying the language and call the retranslate-->
@@ -107,7 +106,7 @@
 										<div id="MazeNeutralImageField" class="common" align="center"></div>
                                         <br/><br/>
                                         <div class="common" align="center">                
-                                            <a id="MazeRules" href="javascript:toggleMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="128" height="128" border="0" Hspace="0" Vspace="0"/></a>
+                                            <a id="MazeRules" href="javascript:displayMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="128" height="128" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>
                                     </td>
                                     <td id="tdMainContentsCenter" rowspan="1" colspan="1" width="580">
