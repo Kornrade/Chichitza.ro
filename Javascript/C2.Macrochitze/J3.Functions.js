@@ -9,12 +9,12 @@
 var lang, auxparam, TINY, snapfit;
 var MazeID, nextRoomID, currRoomID, prevRoomID;
 var mazeIsInitialized, solutionReference, solutionTable, solvedRoomPictures, isMazeSolved, doToggleDoors, jigsawPiecesDifficulty;
-var rightAnswerBgColour, wrongAnswerBgColour, currNUM, currANS, Mazelen;
-var Maze0, MazeTitles0, Doors0, MazeNeutralImage0, MazeNeutralImageSource0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNumFormula0, DoorAnsFormula0, ValidFinalAnswer0;
-var Maze1, MazeTitles1, Doors1, MazeNeutralImage1, MazeNeutralImageSource1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNumFormula1, DoorAnsFormula1, ValidFinalAnswer1;
+var rightAnswerBgColour, wrongAnswerBgColour, currNUM1, currNUM2, currNUM3, currANS, Mazelen;
+var Maze0, MazeTitles0, Doors0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNum1Formula0, DoorNum2Formula0, DoorNum3Formula0, DoorAnsFormula0, ValidFinalAnswer0;
+var Maze1, MazeTitles1, Doors1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNum1Formula1, DoorNum2Formula1, DoorNum3Formula1, DoorAnsFormula1, ValidFinalAnswer1;
 
-var GlobalFinalQuestion;
-var Maze, MazeTitles, Doors, MazeNeutralImage, MazeNeutralImageSource, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNumFormula, DoorAnsFormula, ValidFinalAnswer;
+var mazeRules, GlobalFinalQuestion, MazeNeutralImage, MazeNeutralImageSource;
+var Maze, MazeTitles, Doors, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNum1Formula, DoorNum2Formula, DoorNum3Formula, DoorAnsFormula, ValidFinalAnswer;
 
 
 /*global setInnerHTML */
@@ -27,13 +27,14 @@ var Maze, MazeTitles, Doors, MazeNeutralImage, MazeNeutralImageSource, RoomPictu
 /*global setupJigsawPuzzle */
 /*global setupDoorPictures */
 /*global setupDoorPuzzles */
+/*global customizeDoorPuzzle */
+/*global getAlphaSortedIndices */
 /*global showSolutionField */
 /*global composeFinalQuestion */
 /*global composeFinalQuestionText */
 /*global composeTableWithSortedRoomPictures */
 /*global displayMazeRules */
 /*global toggleJigsawDifficulty */
-/*global customizeDoorPuzzle */
 /*global validateMaze */
 /*global setNUMandANS */
 /*global showTinyBoxGame */
@@ -54,9 +55,6 @@ function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoom
     if(lang==="en") {setInnerHTML("MazeTitle",MazeTitles[1]);}
     if(lang==="de") {setInnerHTML("MazeTitle",MazeTitles[2]);}
     
-    // add neutral maze image and source
-    setInnerHTML("MazeNeutralImageField","<img src=\""+MazeNeutralImage+"\" alt=\""+MazeNeutralImage+"\" width=\"150\" />");	
-    
     initSolutionReference();
     initSolutionTable(solutionTableValues);
     initSolvedRoomPictures(solvedRoomPicturesValues);
@@ -73,13 +71,13 @@ function setupMazeStructure(mazeIDNum)
             MazeTitles = MazeTitles1;
             Maze = Maze1;
             Mazelen = Maze.length;
-            MazeNeutralImage = MazeNeutralImage1;
-            MazeNeutralImageSource = MazeNeutralImageSource1;
             RoomPictures = RoomPictures1;
             RoomPictureSources = RoomPictureSources1;
             Doors = Doors1;
             DoorPuzzles = DoorPuzzles1;
-            DoorNumFormula = DoorNumFormula1;
+            DoorNum1Formula = DoorNum1Formula1;
+            DoorNum2Formula = DoorNum2Formula1;
+            DoorNum3Formula = DoorNum3Formula1;
             DoorAnsFormula = DoorAnsFormula1;
             ValidFinalAnswer = ValidFinalAnswer1;
             break;
@@ -88,13 +86,13 @@ function setupMazeStructure(mazeIDNum)
             MazeTitles = MazeTitles0;
             Maze = Maze0;
             Mazelen = Maze.length;
-            MazeNeutralImage = MazeNeutralImage0;
-            MazeNeutralImageSource = MazeNeutralImageSource0;
             RoomPictures = RoomPictures0;
             RoomPictureSources = RoomPictureSources0;
             Doors = Doors0;
             DoorPuzzles = DoorPuzzles0;
-            DoorNumFormula = DoorNumFormula0;
+            DoorNum1Formula = DoorNum1Formula0;
+            DoorNum2Formula = DoorNum2Formula0;
+            DoorNum3Formula = DoorNum3Formula0;
             DoorAnsFormula = DoorAnsFormula0;
             ValidFinalAnswer = ValidFinalAnswer0;
     }
@@ -102,22 +100,8 @@ function setupMazeStructure(mazeIDNum)
 
 function initSolutionReference()
 {
-    var i,j,k, sortedRoomPictures, RoomPicturesWithStatus = [], index = [];
-    
-    // append the status of the room picture at the end of the room picture's path so that it can be checked after sorting
-    for(i = 0; i < Mazelen; i++)
-    {
-        RoomPicturesWithStatus[i] = RoomPictures[i] + "!" + i.toString();
-    }
-    RoomPicturesWithStatus[Mazelen] = RoomPictures[Mazelen];
-    
-    // sort room names
-    sortedRoomPictures = RoomPicturesWithStatus.sort();
-    
-    for(k = 0; k < Mazelen; k++)
-    {
-        index[parseInt(sortedRoomPictures[k].substr(sortedRoomPictures[k].indexOf("!")+1),10)] = k;
-    }
+    var i,j,k, index;
+    index = getAlphaSortedIndices();
     
     solutionReference = [];
     for (i = 0; i < Mazelen*Mazelen; i++)
@@ -239,7 +223,7 @@ function setupDoorPictures()
     if( Maze[currRoomID][1] === prevRoomID ) { document.getElementById("imgDoorRight" ).setAttribute("src", "Images/C2.Macrochitze/Doors_And_Walls/doorRightActive.png" ); }
     if( Maze[currRoomID][2] === prevRoomID ) { document.getElementById("imgDoorUp"    ).setAttribute("src", "Images/C2.Macrochitze/Doors_And_Walls/doorUpActive.png"    ); }
     if( Maze[currRoomID][3] === prevRoomID ) { document.getElementById("imgDoorLeft"  ).setAttribute("src", "Images/C2.Macrochitze/Doors_And_Walls/doorLeftActive.png"  ); }
-     
+    
 }
 
 function setupDoorPuzzles()
@@ -252,9 +236,17 @@ function setupDoorPuzzles()
 
 function customizeDoorPuzzle(currRoomID,nextRoomID)
 {
+    var index, customDoorTinyBoxContent;
     
-    if(isMazeSolved||(nextRoomID===prevRoomID))
-    {   //Returning to the previous room is free of charge
+    index = getAlphaSortedIndices();
+    
+    if( isMazeSolved || (nextRoomID===prevRoomID) || //Returning to the previous room is free of charge
+        ( solvedRoomPictures[nextRoomID] && //Rooms between which a door has been mapped
+          solvedRoomPictures[currRoomID] && // and pictures are solved are also free of charge
+          solutionTable[(index[nextRoomID]*Mazelen+index[currRoomID])] 
+        ) 
+      )
+    {   
         setupRoom(nextRoomID,currRoomID);
     }
     else
@@ -262,7 +254,7 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
         
         setNUMandANS(currRoomID,nextRoomID);
 
-        var customDoorTinyBoxContent='\
+        customDoorTinyBoxContent='\
         <html>\
             <head>\
                 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">\
@@ -284,13 +276,35 @@ function customizeDoorPuzzle(currRoomID,nextRoomID)
             </html>\
         ';
 
-        if("ro"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][0].replace("<NUM>",currNUM));}
-        if("en"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][1].replace("<NUM>",currNUM));}
-        if("de"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][2].replace("<NUM>",currNUM));}
+        if("ro"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][0].replace("<NUM1>",currNUM1).replace("<NUM2>",currNUM2).replace("<NUM3>",currNUM3));}
+        if("en"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][1].replace("<NUM1>",currNUM1).replace("<NUM2>",currNUM2).replace("<NUM3>",currNUM3));}
+        if("de"===lang) {customDoorTinyBoxContent = customDoorTinyBoxContent.replace("[QUESTION]",DoorPuzzles[currRoomID][nextRoomID][2].replace("<NUM1>",currNUM1).replace("<NUM2>",currNUM2).replace("<NUM3>",currNUM3));}
 
         showTinyBoxGame(customDoorTinyBoxContent);
         
     }
+}
+
+function getAlphaSortedIndices()
+{
+    var i,k, sortedRoomPictures, RoomPicturesWithStatus = [], index = [];
+    
+    // append the number of the room at the end of the room picture's path so that it can be checked after sorting
+    for(i = 0; i < Mazelen; i++)
+    {
+        RoomPicturesWithStatus[i] = RoomPictures[i] + "!" + i.toString();
+    }
+    RoomPicturesWithStatus[Mazelen] = RoomPictures[Mazelen];
+    
+    // sort room names
+    sortedRoomPictures = RoomPicturesWithStatus.sort();
+    
+    for(k = 0; k < Mazelen; k++)
+    {
+        index[parseInt(sortedRoomPictures[k].substr(sortedRoomPictures[k].indexOf("!")+1),10)] = k;
+    }
+    
+    return index;
 }
 
 function showSolutionField(withFinalQ)
@@ -464,9 +478,25 @@ function composeTableWithSortedRoomPictures()
 
 function displayMazeRules()
 {
-    var mazeRules;
-    mazeRules = "Instructiuni";
-    showTinyBoxGame(mazeRules);
+    var rulesForDisplay = '\
+        <html>\
+            <head>\
+                </style>\
+            </head>\
+            <body>\
+                <a id="buttonX" href="JavaScript:TINY.box.hide();">\
+                    <img src="Images/C0.Common/Helpertools/TinyBox/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
+                </a>\
+                <br/><br/>\
+                [RULES]\
+            </body>\
+        </html>';
+    
+    if("ro"===lang) {rulesForDisplay = rulesForDisplay.replace("[RULES]",mazeRules[0]);}
+    if("en"===lang) {rulesForDisplay = rulesForDisplay.replace("[RULES]",mazeRules[1]);}
+    if("de"===lang) {rulesForDisplay = rulesForDisplay.replace("[RULES]",mazeRules[2]);}
+    
+    showTinyBoxGame(rulesForDisplay);
 }
 
 function toggleJigsawDifficulty(diff)
@@ -575,20 +605,26 @@ function updateSolvedRoomPictures()
 
 function setNUMandANS(currRoomIDtmp,nextRoomIDtmp)
 {
-    var numFormula, ansFormula;
-    numFormula = DoorNumFormula[currRoomIDtmp][nextRoomIDtmp];
-    if( 0 < numFormula.length )
+    var num1Formula, num2Formula, num3Formula, ansFormula;
+    num1Formula = DoorNum1Formula[currRoomIDtmp][nextRoomIDtmp];
+    num2Formula = DoorNum2Formula[currRoomIDtmp][nextRoomIDtmp];
+    num3Formula = DoorNum3Formula[currRoomIDtmp][nextRoomIDtmp];
+    if( 0 < num1Formula.length )
     {
         nextRoomID = nextRoomIDtmp;
             
-        currNUM = eval(numFormula);
+        currNUM1 = eval(num1Formula);
+        currNUM2 = eval(num2Formula);
+        currNUM3 = eval(num3Formula);
 
-        ansFormula = DoorAnsFormula[currRoomIDtmp][nextRoomIDtmp].replace("<NUM>",currNUM);
+        ansFormula = DoorAnsFormula[currRoomIDtmp][nextRoomIDtmp].replace("<NUM1>",currNUM1).replace("<NUM2>",currNUM2).replace("<NUM3>",currNUM3);
         currANS = eval(ansFormula);
     }
     else
     {
-        currNUM = -1;
+        currNUM1 = -1;
+        currNUM2 = -1;
+        currNUM3 = -1;
         currANS = -1;
         
         nextRoomID = -1;
