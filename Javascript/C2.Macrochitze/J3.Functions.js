@@ -10,11 +10,11 @@ var lang, auxparam, TINY, snapfit;
 var MazeID, nextRoomID, currRoomID, prevRoomID;
 var mazeIsInitialized, solutionReference, solutionTable, solvedRoomPictures, isMazeSolved, doToggleDoors, jigsawPiecesDifficulty;
 var rightAnswerBgColour, wrongAnswerBgColour, currNUM1, currNUM2, currNUM3, currANS, Mazelen;
-var Maze0, MazeTitles0, Doors0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNum1Formula0, DoorNum2Formula0, DoorNum3Formula0, DoorAnsFormula0, ValidFinalAnswer0;
-var Maze1, MazeTitles1, Doors1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNum1Formula1, DoorNum2Formula1, DoorNum3Formula1, DoorAnsFormula1, ValidFinalAnswer1;
+var Maze0, MazeTitles0, Doors0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNum1Formula0, DoorNum2Formula0, DoorNum3Formula0, DoorAnsFormula0, ValidFinalAnswer0, FullFinalAnswer0;
+var Maze1, MazeTitles1, Doors1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNum1Formula1, DoorNum2Formula1, DoorNum3Formula1, DoorAnsFormula1, ValidFinalAnswer1, FullFinalAnswer1;
 
 var mazeRules, GlobalFinalQuestion, MazeNeutralImage, MazeNeutralImageSource;
-var Maze, MazeTitles, Doors, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNum1Formula, DoorNum2Formula, DoorNum3Formula, DoorAnsFormula, ValidFinalAnswer;
+var Maze, MazeTitles, Doors, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNum1Formula, DoorNum2Formula, DoorNum3Formula, DoorAnsFormula, ValidFinalAnswer, FullFinalAnswer;
 
 
 /*global setInnerHTML */
@@ -80,6 +80,7 @@ function setupMazeStructure(mazeIDNum)
             DoorNum3Formula = DoorNum3Formula1;
             DoorAnsFormula = DoorAnsFormula1;
             ValidFinalAnswer = ValidFinalAnswer1;
+            FullFinalAnswer = FullFinalAnswer1;
             break;
         default:
             MazeID = '0';
@@ -95,6 +96,7 @@ function setupMazeStructure(mazeIDNum)
             DoorNum3Formula = DoorNum3Formula0;
             DoorAnsFormula = DoorAnsFormula0;
             ValidFinalAnswer = ValidFinalAnswer0;
+            FullFinalAnswer = FullFinalAnswer0;
     }
 }
 
@@ -487,7 +489,6 @@ function displayMazeRules()
                 <a id="buttonX" href="JavaScript:TINY.box.hide();">\
                     <img src="Images/C0.Common/Helpertools/TinyBox/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
                 </a>\
-                <br/><br/>\
                 [RULES]\
             </body>\
         </html>';
@@ -703,6 +704,9 @@ function validateFinalAnswer()
     
     if(tempTruthValue)
     {
+        if("ro"===lang) {container.value = FullFinalAnswer[0];}
+        if("en"===lang) {container.value = FullFinalAnswer[1];}
+        if("de"===lang) {container.value = FullFinalAnswer[2];}
         container.setAttribute("style","text-align:center; font-size:16px; background-color:"+rightAnswerBgColour);
     }
     else

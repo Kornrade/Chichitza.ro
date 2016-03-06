@@ -66,6 +66,11 @@ var ValidFinalAnswer0 = []; // Maze 0 parts of the final answer that are checked
     ValidFinalAnswer0[0] = "glob"; //glob, globe, Globus
     ValidFinalAnswer0[1] = "sfer"; //sfera, sferoid
     ValidFinalAnswer0[2] = "spher"; // sphere, spheroid
-    ValidFinalAnswer0[3] = "sphäre"; //Sphäre
-    ValidFinalAnswer0[4] = "sphaere"; //Sphäre
-    ValidFinalAnswer0[5] = "sphare"; //Sphäre
+    ValidFinalAnswer0[3] = "sphär"; //Sphäre
+    ValidFinalAnswer0[4] = "sphaer"; //Sphäre
+    ValidFinalAnswer0[5] = "sphar"; //Sphäre
+
+var FullFinalAnswer0 = []; // Maze 0 full final answer shown to the user
+    FullFinalAnswer0[0] = "Sfera";
+    FullFinalAnswer0[1] = "Sphere";
+    FullFinalAnswer0[2] = "Sphäre"; 
