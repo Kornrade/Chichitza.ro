@@ -14,9 +14,9 @@ DoorNum3Formula0[0] = []; //range for <NUM3>
     DoorNum1Formula0[0][0] = ""; // Default, needed for checking
 
     DoorPuzzles0[0][1] = []; //third argument is for the language 0=ro, 1=en, 2=de
-    DoorPuzzles0[0][1][0] = '<div style="width: 170px; margin: auto; text-align: left"> Pentru a trece intr-o alta camera, scrie raspunsul corect pentru chichitza de la usa. <br/><br/> <NUM1>+<NUM2>+<NUM3>=?... </div>';
-    DoorPuzzles0[0][1][1] = '<div style="width: 170px; margin: auto; text-align: left"> To go into another room, write the correct answer to the door brainteaser. <br/><br/> <NUM1>+<NUM2>+<NUM3>=?...</div>';
-    DoorPuzzles0[0][1][2] = '<div style="width: 170px; margin: auto; text-align: left"> Um in ein anderes Zimmer zu gehen, schreibe die richtige Antwort fur die Tur-Knobelei. <br/><br/> <NUM1>+<NUM2>+<NUM3>=?...</div>';
+    DoorPuzzles0[0][1][0] = '<div style="margin: auto; text-align: justify"> Pentru a trece intr-o alta camera, scrie raspunsul corect pentru chichitza de la usa. <br/><br/> <NUM1>+<NUM2>+<NUM3>=?... </div>';
+    DoorPuzzles0[0][1][1] = '<div style="margin: auto; text-align: justify"> To go into another room, write the correct answer to the door brainteaser. <br/><br/> <NUM1>+<NUM2>+<NUM3>=?...</div>';
+    DoorPuzzles0[0][1][2] = '<div style="margin: auto; text-align: justify"> Um in ein anderes Zimmer zu gehen, schreibe die richtige Antwort fur die Tur-Knobelei. <br/><br/> <NUM1>+<NUM2>+<NUM3>=?...</div>';
     DoorNum1Formula0[0][1] = 'Math.floor((Math.random() *  9) + 1)'; // no language dependency
     DoorNum2Formula0[0][1] = 'Math.floor((Math.random() * 19) + 1)'; // no language dependency
     DoorNum3Formula0[0][1] = 'Math.floor((Math.random() * 99) + 1)'; // no language dependency
@@ -57,9 +57,9 @@ DoorNum3Formula0[1] = []; //range for <NUM3>
     DoorPuzzles0[1] = []; //puzzles from room 1 of maze 00
 
     DoorPuzzles0[1][0] = []; //third argument is for the language 0=ro, 1=en, 2=de
-    DoorPuzzles0[1][0][0] = '<div style="width: 170px; margin: auto; text-align: left"> <NUM1>+<NUM2>+<NUM3>=?...</div>';
-    DoorPuzzles0[1][0][1] = '<div style="width: 170px; margin: auto; text-align: left"> <NUM1>+<NUM2>+<NUM3>=?...</div>';
-    DoorPuzzles0[1][0][2] = '<div style="width: 170px; margin: auto; text-align: left"> <NUM1>+<NUM2>+<NUM3>=?...</div>';
+    DoorPuzzles0[1][0][0] = '<div style="margin: auto; text-align: justify"> Intrebare usoara: <NUM1>+<NUM2>+<NUM3>=?...</div>';
+    DoorPuzzles0[1][0][1] = '<div style="margin: auto; text-align: justify"> Easy question: <NUM1>+<NUM2>+<NUM3>=?...</div>';
+    DoorPuzzles0[1][0][2] = '<div style="margin: auto; text-align: justify"> Leichte Frage: <NUM1>+<NUM2>+<NUM3>=?...</div>';
     DoorNum1Formula0[1][0] = 'Math.floor((Math.random() *  9) + 1)'; // no language dependency
     DoorNum2Formula0[1][0] = 'Math.floor((Math.random() * 19) + 1)'; // no language dependency
     DoorNum3Formula0[1][0] = 'Math.floor((Math.random() * 99) + 1)'; // no language dependency

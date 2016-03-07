@@ -6,10 +6,7 @@
 .......8.......
 */
 
-var MazeTitles0 = [];
-    MazeTitles0[0] = "Tutorial";
-    MazeTitles0[1] = "Tutorial";
-    MazeTitles0[2] = "Tutorial";
+var MazeTitle0 = "Tutorial";
 
 //Maze[k] = [D,R,U,L] room IDs
 var Maze0 = []; // Maze 0 (Tutorial) internal structure

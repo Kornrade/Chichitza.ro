@@ -33,7 +33,7 @@ var mazeRules = [];
                     </center>\
                     <p align="justify">\
                     Fiecare camer&#x103; este identificat&#x103; pe hart&#x103; printr-o imagine.\
-                    La &#xEE;nceput, toate imaginile sunt t&#x103;iate &#xEE;n mozaicuri, dar devin vizibile pe hart&#x103; dup&#x103; asamblarea pieselor.\
+                    La &#xEE;nceput, toate imaginile sunt t&#x103;iate &#xEE;n mozaicuri-puzzle, dar devin vizibile pe hart&#x103; dup&#x103; asamblarea pieselor.\
                     </p>\
                     <center>\
                     <img src="Images/C2.Macrochitze/Doors_And_Walls/doorUp.png" alt="door up" width="90" height="24" border="0" align="center">\

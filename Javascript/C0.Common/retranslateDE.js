@@ -317,6 +317,7 @@ function retranslateDEMacrochitze()
         document.getElementById("solutionField").setAttribute("data", "Karte");
         document.getElementById("saveField"    ).setAttribute("data", "Speichern");
         document.getElementById("loadField"    ).setAttribute("data", "Laden");
+        document.getElementById("teasersList"  ).setAttribute("data", "Knobeleien");
         
 		document.getElementById("expandcompressHelpertools").innerHTML="Spickzettel";
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Rechner"  );

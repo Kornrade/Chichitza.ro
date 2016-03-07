@@ -10,11 +10,11 @@ var lang, auxparam, TINY, snapfit;
 var MazeID, nextRoomID, currRoomID, prevRoomID;
 var mazeIsInitialized, solutionReference, solutionTable, solvedRoomPictures, isMazeSolved, doToggleDoors, jigsawPiecesDifficulty;
 var rightAnswerBgColour, wrongAnswerBgColour, currNUM1, currNUM2, currNUM3, currANS, Mazelen;
-var Maze0, MazeTitles0, Doors0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNum1Formula0, DoorNum2Formula0, DoorNum3Formula0, DoorAnsFormula0, ValidFinalAnswer0, FullFinalAnswer0;
-var Maze1, MazeTitles1, Doors1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNum1Formula1, DoorNum2Formula1, DoorNum3Formula1, DoorAnsFormula1, ValidFinalAnswer1, FullFinalAnswer1;
+var Maze0, MazeTitle0, Doors0, RoomPictures0, RoomPictureSources0, DoorPuzzles0, DoorNum1Formula0, DoorNum2Formula0, DoorNum3Formula0, DoorAnsFormula0, ValidFinalAnswer0, FullFinalAnswer0;
+var Maze1, MazeTitle1, Doors1, RoomPictures1, RoomPictureSources1, DoorPuzzles1, DoorNum1Formula1, DoorNum2Formula1, DoorNum3Formula1, DoorAnsFormula1, ValidFinalAnswer1, FullFinalAnswer1;
 
 var mazeRules, GlobalFinalQuestion, MazeNeutralImage, MazeNeutralImageSource;
-var Maze, MazeTitles, Doors, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNum1Formula, DoorNum2Formula, DoorNum3Formula, DoorAnsFormula, ValidFinalAnswer, FullFinalAnswer;
+var Maze, MazeTitle, Doors, RoomPictures, RoomPictureSources, DoorPuzzles, DoorNum1Formula, DoorNum2Formula, DoorNum3Formula, DoorAnsFormula, ValidFinalAnswer, FullFinalAnswer;
 
 
 /*global setInnerHTML */
@@ -51,9 +51,7 @@ function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoom
     jigsawPiecesDifficulty = 3; //default
     toggleJigsawDifficulty(jigsawPiecesDifficulty);
     
-    if(lang==="ro") {setInnerHTML("MazeTitle",MazeTitles[0]);}
-    if(lang==="en") {setInnerHTML("MazeTitle",MazeTitles[1]);}
-    if(lang==="de") {setInnerHTML("MazeTitle",MazeTitles[2]);}
+    setInnerHTML("MazeTitle",MazeTitle);
     
     initSolutionReference();
     initSolutionTable(solutionTableValues);
@@ -68,7 +66,7 @@ function setupMazeStructure(mazeIDNum)
     {
         case  1:
             MazeID = '1';
-            MazeTitles = MazeTitles1;
+            MazeTitle = MazeTitle1;
             Maze = Maze1;
             Mazelen = Maze.length;
             RoomPictures = RoomPictures1;
@@ -84,7 +82,7 @@ function setupMazeStructure(mazeIDNum)
             break;
         default:
             MazeID = '0';
-            MazeTitles = MazeTitles0;
+            MazeTitle = MazeTitle0;
             Maze = Maze0;
             Mazelen = Maze.length;
             RoomPictures = RoomPictures0;
@@ -644,6 +642,18 @@ function processKeyEventDoor(evt)
 	{
 		validateDoorAnswer();
 	}
+    else
+    {
+        //numeric answers only
+        if (cCode < 48 || cCode > 57) 
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
 }
 
 function processKeyEventFinalAnswer(evt)
@@ -658,6 +668,7 @@ function processKeyEventFinalAnswer(evt)
 	{
 		validateFinalAnswer();
 	}
+    
 }
 
 function showTinyBoxGame(id)

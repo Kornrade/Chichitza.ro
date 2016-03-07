@@ -292,6 +292,7 @@ function retranslateENMacrochitze()
         document.getElementById("solutionField").setAttribute("data", "Map");
         document.getElementById("saveField"    ).setAttribute("data", "Save");
         document.getElementById("loadField"    ).setAttribute("data", "Load");
+        document.getElementById("teasersList"  ).setAttribute("data", "Teasers");
         
         document.getElementById("expandcompressHelpertools").innerHTML="Crib sheets";
 		document.getElementById("buttonCalculator"  ).setAttribute("data","Calculator"  );
