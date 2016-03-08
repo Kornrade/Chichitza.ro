@@ -36,10 +36,12 @@ var Maze, MazeTitle, Doors, RoomPictures, RoomPictureSources, DoorPuzzles, DoorN
 /*global displayMazeRules */
 /*global toggleJigsawDifficulty */
 /*global validateMaze */
+/*global showFinalQuestion */
 /*global setNUMandANS */
 /*global showTinyBoxGame */
 /*global validateDoorAnswer */
 /*global validateFinalAnswer */
+
 
 
 function initMaze(mazeIDNum, prevRoom, currRoom, solutionTableValues, solvedRoomPicturesValues)
@@ -587,11 +589,16 @@ function validateMaze()
     
     if(isMazeSolved)
     {
-        doToggleDoors = false;
-        setTimeout(function(){TINY.box.hide();},100);
-        setTimeout(function(){showSolutionField(true);},400);
+        showFinalQuestion();
     }
         
+}
+
+function showFinalQuestion()
+{
+    doToggleDoors = false;
+    setTimeout(function(){TINY.box.hide();},100);
+    setTimeout(function(){showSolutionField(true);},400);
 }
 
 function updateSolvedRoomPictures()

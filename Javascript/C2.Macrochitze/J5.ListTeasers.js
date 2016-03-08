@@ -5,7 +5,7 @@
 /*jslint es5: true */
 /*jslint evil: true*/
 
-var lang, Mazelen, rightAnswerBgColour, wrongAnswerBgColour;
+var lang, Mazelen, solutionReference, isMazeSolved, rightAnswerBgColour, wrongAnswerBgColour;
 var DoorPuzzles, DoorNum1Formula, DoorNum2Formula, DoorNum3Formula, DoorAnsFormula;
 var numbersForListOfTeasers = [];
 
@@ -13,6 +13,13 @@ var numbersForListOfTeasers = [];
 /*global composeTeasersTable */
 /*global showTinyBoxGame */
 /*global validateListAnswer */
+/*global validateEntireList */
+/*global goDirectlyToFinalQuestion */
+/*global autosolveMap */
+/*global initSolvedRoomPictures */
+/*global initSolutionTable */
+/*global setupJigsawPuzzle */
+/*global showFinalQuestion */
 
 function displayListOfTeasers()
 {
@@ -136,10 +143,50 @@ function validateListAnswer(k)
 	tempAnswer = container.value;
     if(parseInt(tempAnswer,10) === numbersForListOfTeasers[k][0])
     {
-        container.setAttribute("style","text-align:center; font-size:16px; background-color:"+rightAnswerBgColour);    
+        container.setAttribute("style","text-align:center; font-size:16px; background-color:"+rightAnswerBgColour);
+        validateEntireList();
     }
     else
     {
         container.setAttribute("style","text-align:center; font-size:16px; background-color:"+wrongAnswerBgColour);
     }
+}
+
+
+function validateEntireList()
+{
+    var k, container, tempAnswer, unbroken = true;
+    
+    for(k=1;k<=2/*Mazelen*/;k++)
+    {
+        container = document.getElementById('AnswerField'+k.toString());
+	    tempAnswer = container.value;
+        
+        if(parseInt(tempAnswer,10) !== numbersForListOfTeasers[k][0]) 
+        {
+            unbroken = false; 
+            break;
+        }
+    }
+    
+    if(unbroken)
+    {
+        autosolveMap();
+        goDirectlyToFinalQuestion();
+    }
+}
+
+function autosolveMap()
+{
+    var solutionPictures = [1];
+    isMazeSolved = true;
+    initSolvedRoomPictures(solutionPictures);
+    initSolutionTable(solutionReference);
+    setupJigsawPuzzle();
+    
+}
+
+function goDirectlyToFinalQuestion()
+{
+    showFinalQuestion();
 }
