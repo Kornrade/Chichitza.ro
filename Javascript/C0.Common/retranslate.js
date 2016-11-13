@@ -299,6 +299,13 @@ function retranslateMicrochitzeIntro()
 						<a id='acrono' style='display:inline-block;width:120;'></a>\
 						<span id='spancrono' style=\"display:inline-block;width:300;text-align:left;\"></span>\
 					</div>\
+                    <div id='divlogo'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'> &nbsp; &nbsp; \
+						<a id='alogo' style='display:inline-block;width:120;'></a>\
+						<span id='spanlogo' style=\"display:inline-block;width:300;text-align:left;\"></span>\
+					</div>\
 					<div onMouseOver=\"showImageOnHover('','');\"><br/><br/></div>\
 					<div id='divminimix1'>\
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
@@ -349,6 +356,7 @@ function retranslateMicrochitzeIntro()
 	document.getElementById("achemo"   ).href = "Microchitze.html?lang="+lang+"&aux=17";
 	document.getElementById("acrono"   ).href = "Microchitze.html?lang="+lang+"&aux=18";
 	document.getElementById("aastro"   ).href = "Microchitze.html?lang="+lang+"&aux=19";
+    //document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=20"; ==> 20 = RO; 21 = EN; 22 = DE;
 	document.getElementById("aminimix1").href = "Microchitze.html?lang="+lang+"&aux=01";
 	document.getElementById("aminimix2").href = "Microchitze.html?lang="+lang+"&aux=02";
 	document.getElementById("aminimix3").href = "Microchitze.html?lang="+lang+"&aux=03";

@@ -156,6 +156,7 @@ function retranslateROMicrochitzeIntro()
 		document.getElementById("divchemo"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Chemochitze.png' ,'Chemochitze' );");
 		document.getElementById("divcrono"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Cronochitze.png' ,'Cronochitze' );");
 		document.getElementById("divastro"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Astrochitze.png' ,'Astrochitze' );");
+		document.getElementById("divlogo"    ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Logochitze.png'  ,'Logochitze'  );");
 		document.getElementById("divminimix1").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix1.png'    ,'Minimix 1'   );");
 		document.getElementById("divminimix2").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix2.png'    ,'Minimix 2'   );");
 		document.getElementById("divminimix3").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix3.png'    ,'Minimix 3'   );");
@@ -172,6 +173,7 @@ function retranslateROMicrochitzeIntro()
 		document.getElementById("achemo"   ).innerHTML = "Chemochitze ";
 		document.getElementById("acrono"   ).innerHTML = "Cronochitze ";
 		document.getElementById("aastro"   ).innerHTML = "Astrochitze ";
+        document.getElementById("alogo"    ).innerHTML = "Logochitze  ";
 		document.getElementById("aminimix1").innerHTML = "Minimix 1   ";
 		document.getElementById("aminimix2").innerHTML = "Minimix 2   ";
 		document.getElementById("aminimix3").innerHTML = "Minimix 3   ";
@@ -188,11 +190,14 @@ function retranslateROMicrochitzeIntro()
 		document.getElementById("spanchemo"   ).innerHTML = "Chichitze chimice";
 		document.getElementById("spancrono"   ).innerHTML = "&#xCE;ntreb&#x103;ri de timp";
 		document.getElementById("spanastro"   ).innerHTML = "Chichitze astronomice";
+        document.getElementById("spanlogo"    ).innerHTML = "Cuvinte ciudate";
 		document.getElementById("spanminimix1").innerHTML = "&#xCE;ntreb&#x103;ri Adev&#x103;rat/Fals";
 		document.getElementById("spanminimix2").innerHTML = "\"Ce urmeaz&#x103; dup&#x103; ...?\", nivelul II";
 		document.getElementById("spanminimix3").innerHTML = "Amestec de chichitze I";
 		document.getElementById("spanminimix4").innerHTML = "Amestec de chichitze II";
 		document.getElementById("spanminimix5").innerHTML = "Amestec de chichitze III (testul suprem)";
+        
+        document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=20";
 
 	}
 }
@@ -206,7 +211,7 @@ function retranslateROMacrochitzeIntro()
 	document.getElementById("divTitle").innerHTML = "MACROCHITZE";
 	
 	// Cell (3)
-    document.getElementById("macrotest"   ).innerHTML = "PsihochitzeMacro ";
+    document.getElementById("macrotest"   ).innerHTML = "Tutorial ";
 
 	}
 }

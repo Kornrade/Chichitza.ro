@@ -161,6 +161,7 @@ function retranslateDEMicrochitzeIntro()
 		document.getElementById("divchemo"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Chemochitze.png' ,'Chemoknobeleien' );");
 		document.getElementById("divcrono"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Cronochitze.png' ,'Chronoknobeleien');");
 		document.getElementById("divastro"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Astrochitze.png' ,'Astroknobeleien' );");
+		document.getElementById("divlogo"    ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Logochitze.png'  ,'Logoknobeleien'  );");
 		document.getElementById("divminimix1").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix1.png'    ,'Minimix 1'       );");
 		document.getElementById("divminimix2").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix2.png'    ,'Minimix 2'       );");
 		document.getElementById("divminimix3").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix3.png'    ,'Minimix 3'       );");
@@ -177,6 +178,7 @@ function retranslateDEMicrochitzeIntro()
 		document.getElementById("achemo"   ).innerHTML = "Chemoknobeleien ";
 		document.getElementById("acrono"   ).innerHTML = "Chronoknobeleien";
 		document.getElementById("aastro"   ).innerHTML = "Astroknobeleien ";
+        document.getElementById("alogo"    ).innerHTML = "Logoknobeleien  ";
 		document.getElementById("aminimix1").innerHTML = "Minimix 1       ";
 		document.getElementById("aminimix2").innerHTML = "Minimix 2       ";
 		document.getElementById("aminimix3").innerHTML = "Minimix 3       ";
@@ -193,11 +195,14 @@ function retranslateDEMicrochitzeIntro()
 		document.getElementById("spanchemo"   ).innerHTML = "Chemische Knobeleien";
 		document.getElementById("spancrono"   ).innerHTML = "Zeit-Knobeleien";
 		document.getElementById("spanastro"   ).innerHTML = "Astronomische Knobeleien";
+        document.getElementById("spanlogo"    ).innerHTML = "Seltsame W&#246;rter";
 		document.getElementById("spanminimix1").innerHTML = "Wahr/Falsch Fragen";
 		document.getElementById("spanminimix2").innerHTML = "\"Was kommt als n&#228;chstes ...?\", Stufe II";
 		document.getElementById("spanminimix3").innerHTML = "Allgemeines I";
 		document.getElementById("spanminimix4").innerHTML = "Allgemeines II";
 		document.getElementById("spanminimix5").innerHTML = "Allgemeines III (die ultimative Knobelaufgabe)";
+        
+        document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=22";
 	
 	}
 }
@@ -211,7 +216,7 @@ function retranslateDEMacrochitzeIntro()
 	document.getElementById("divTitle").innerHTML = "MAKROKNOBELEIEN";
 	
 	// Cell (3)
-	document.getElementById("divMainContents").innerHTML = "";
+	document.getElementById("macrotest"   ).innerHTML = "Tutorial ";
 		
 	}
 }

@@ -137,6 +137,7 @@ function retranslateENMicrochitzeIntro()
 		document.getElementById("divchemo"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Chemochitze.png' ,'Chemoteasers' );");
 		document.getElementById("divcrono"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Cronochitze.png' ,'Chronoteasers');");
 		document.getElementById("divastro"   ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Astrochitze.png' ,'Astroteasers' );");
+		document.getElementById("divlogo"    ).setAttribute("onMouseOver", "showImageOnHover('Microchitze/Logochitze.png'  ,'Logoteasers'  );");
 		document.getElementById("divminimix1").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix1.png'    ,'Minimix 1'    );");
 		document.getElementById("divminimix2").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix2.png'    ,'Minimix 2'    );");
 		document.getElementById("divminimix3").setAttribute("onMouseOver", "showImageOnHover('Microchitze/Minimix3.png'    ,'Minimix 3'    );");
@@ -153,6 +154,7 @@ function retranslateENMicrochitzeIntro()
 		document.getElementById("achemo"   ).innerHTML = "Chemoteasers ";
 		document.getElementById("acrono"   ).innerHTML = "Chronoteasers";
 		document.getElementById("aastro"   ).innerHTML = "Astroteasers ";
+        document.getElementById("alogo"    ).innerHTML = "Logoteasers  ";
 		document.getElementById("aminimix1").innerHTML = "Minimix 1    ";
 		document.getElementById("aminimix2").innerHTML = "Minimix 2    ";
 		document.getElementById("aminimix3").innerHTML = "Minimix 3    ";
@@ -169,11 +171,14 @@ function retranslateENMicrochitzeIntro()
 		document.getElementById("spanchemo"   ).innerHTML = "Chemical teasers";
 		document.getElementById("spancrono"   ).innerHTML = "Time-related teasers";
 		document.getElementById("spanastro"   ).innerHTML = "Astronomical teasers";
+        document.getElementById("spanlogo"    ).innerHTML = "Weird words";
 		document.getElementById("spanminimix1").innerHTML = "True/False questions";
 		document.getElementById("spanminimix2").innerHTML = "\"What comes next ...?\", level II";
 		document.getElementById("spanminimix3").innerHTML = "Miscellaneous I";
 		document.getElementById("spanminimix4").innerHTML = "Miscellaneous II";
 		document.getElementById("spanminimix5").innerHTML = "Miscellaneous III (the ultimate test)";
+        
+        document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=21";
 	
 	}
 }
@@ -187,7 +192,7 @@ function retranslateENMacrochitzeIntro()
 	document.getElementById("divTitle").innerHTML = "MACROTEASERS";
 	
 	// Cell (3)
-	document.getElementById("divMainContents").innerHTML = "";
+	document.getElementById("macrotest"   ).innerHTML = "Tutorial ";
 	
 	}
 }
