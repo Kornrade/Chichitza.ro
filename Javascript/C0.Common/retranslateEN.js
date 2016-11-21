@@ -171,14 +171,14 @@ function retranslateENMicrochitzeIntro()
 		document.getElementById("spanchemo"   ).innerHTML = "Chemical teasers";
 		document.getElementById("spancrono"   ).innerHTML = "Time-related teasers";
 		document.getElementById("spanastro"   ).innerHTML = "Astronomical teasers";
-        document.getElementById("spanlogo"    ).innerHTML = "Weird words";
+        document.getElementById("spanlogo"    ).innerHTML = "Weird (Romanian) words";
 		document.getElementById("spanminimix1").innerHTML = "True/False questions";
 		document.getElementById("spanminimix2").innerHTML = "\"What comes next ...?\", level II";
 		document.getElementById("spanminimix3").innerHTML = "Miscellaneous I";
 		document.getElementById("spanminimix4").innerHTML = "Miscellaneous II";
 		document.getElementById("spanminimix5").innerHTML = "Miscellaneous III (the ultimate test)";
         
-        document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=21";
+        //document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=21";
 	
 	}
 }

@@ -4897,3 +4897,323 @@ dbQList[ 149][2] = "Was haben K&#252;he 4 und Frauen 2?";
                         dbAImage[149][0] = "Images/C1.Microchitze/Img149Cow.png";  dbAImageSrc[149][0] = "www.wpclipart.com";
                         dbAImage[149][1] = "Images/C1.Microchitze/Img149Cow.png";  dbAImageSrc[149][1] = "www.wpclipart.com";
                         dbAImage[149][2] = "Images/C1.Microchitze/Img149Cow.png";  dbAImageSrc[149][2] = "www.wpclipart.com";
+                        
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// LOGOCHITZE RO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+dbQList[ 150] = [];
+dbQList[ 150][0] = "Pentru ce substantiv, forma de plural se termin&#x103; cu litera &quot;<b>&#x103;</b>&quot;?";    
+dbQList[ 150][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 150][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 150] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 150] = []; dbAList[150][0] = "ou";
+                        dbACrit[ 150] = []; dbACrit[150][0] = 11;
+                        dbAnswer[150] = [];
+                        dbAnswer[150][0] = "R&#x103;spuns corect: ou - ou&#x103;"; //plaintext ro answer
+                        dbAnswer[150][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[150][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 150] = [];
+                        dbExpln[ 150][0] = ""; //explanation ro
+                        dbExpln[ 150][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 150][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 150] = [];
+                        dbRefer[ 150][0] = ""; //references for ro explanation
+                        dbRefer[ 150][1] = ""; //references for en explanation
+                        dbRefer[ 150][2] = ""; //references for de explanation
+                        dbQHint[ 150] = [];
+                        dbQHint[ 150][0] = "Cuv&#xE2;ntul are &#x15F;i form&#x103; de singular, &#x15F;i form&#x103; de plural."; //hint ro
+                        dbQHint[ 150][1] = ""; //hint en
+                        dbQHint[ 150][2] = ""; //hint de
+                        dbQImage[150] = []; dbQImageSrc[150] = []; 
+                        dbQImage[150][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[150][0] = "";
+                        dbQImage[150][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[150][1] = "";
+                        dbQImage[150][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[150][2] = "";
+                        dbAImage[150] = [];							               dbAImageSrc[150] = [];
+                        dbAImage[150][0] = "Images/C1.Microchitze/Img150Eggs.png"; dbAImageSrc[150][0] = "gallery.yopriceville.com";
+                        dbAImage[150][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[150][1] = "";
+                        dbAImage[150][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[150][2] = "";
+dbQList[ 151] = [];
+dbQList[ 151][0] = "Pentru ce substantiv feminin, forma de singular se termin&#x103; cu litera &quot;<b>i</b>&quot;?";    
+dbQList[ 151][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 151][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 151] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 151] = []; dbAList[151][0] = "zi";
+                        dbACrit[ 151] = []; dbACrit[151][0] = 11;
+                        dbAnswer[151] = [];
+                        dbAnswer[151][0] = "R&#x103;spuns corect: zi - zile"; //plaintext ro answer
+                        dbAnswer[151][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[151][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 151] = [];
+                        dbExpln[ 151][0] = ""; //explanation ro
+                        dbExpln[ 151][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 151][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 151] = [];
+                        dbRefer[ 151][0] = ""; //references for ro explanation
+                        dbRefer[ 151][1] = ""; //references for en explanation
+                        dbRefer[ 151][2] = ""; //references for de explanation
+                        dbQHint[ 151] = [];
+                        dbQHint[ 151][0] = "Cuv&#xE2;ntul are &#x15F;i form&#x103; de singular, &#x15F;i form&#x103; de plural."; //hint ro
+                        dbQHint[ 151][1] = ""; //hint en
+                        dbQHint[ 151][2] = ""; //hint de
+                        dbQImage[151] = []; dbQImageSrc[151] = []; 
+                        dbQImage[151][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[151][0] = "";
+                        dbQImage[151][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[151][1] = "";
+                        dbQImage[151][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[151][2] = "";
+                        dbAImage[151] = [];							               dbAImageSrc[151] = [];
+                        dbAImage[151][0] = "Images/C1.Microchitze/Img151Day.png";  dbAImageSrc[151][0] = "www.clipartkid.com";
+                        dbAImage[151][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[151][1] = "";
+                        dbAImage[151][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[151][2] = "";
+dbQList[ 152] = [];
+dbQList[ 152][0] = "Care este cel mai scurt substantiv, pentru care forma de singular &#x15F;i cea de plural sunt identice?";    
+dbQList[ 152][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 152][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 152] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 152] = []; dbAList[152][0] = "pui"; dbAList[152][1] = "tei";
+                        dbACrit[ 152] = []; dbACrit[152][0] = 11; dbACrit[152][1] = 11;
+                        dbAnswer[152] = [];
+                        dbAnswer[152][0] = "R&#x103;spuns corect: pui / tei"; //plaintext ro answer
+                        dbAnswer[152][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[152][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 152] = [];
+                        dbExpln[ 152][0] = ""; //explanation ro
+                        dbExpln[ 152][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 152][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 152] = [];
+                        dbRefer[ 152][0] = ""; //references for ro explanation
+                        dbRefer[ 152][1] = ""; //references for en explanation
+                        dbRefer[ 152][2] = ""; //references for de explanation
+                        dbQHint[ 152] = [];
+                        dbQHint[ 152][0] = "Cuv&#xE2;ntul are &#x15F;i form&#x103; de singular, &#x15F;i form&#x103; de plural."; //hint ro
+                        dbQHint[ 152][1] = ""; //hint en
+                        dbQHint[ 152][2] = ""; //hint de
+                        dbQImage[152] = []; dbQImageSrc[152] = []; 
+                        dbQImage[152][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[152][0] = "";
+                        dbQImage[152][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[152][1] = "";
+                        dbQImage[152][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[152][2] = "";
+                        dbAImage[152] = [];							               dbAImageSrc[152] = [];
+                        dbAImage[152][0] = "Images/C1.Microchitze/Img152Pui.png";  dbAImageSrc[152][0] = "www.divahair.ro";
+                        dbAImage[152][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[152][1] = "";
+                        dbAImage[152][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[152][2] = "";
+dbQList[ 153] = [];
+dbQList[ 153][0] = "Pentru ce substantiv, forma de plural are cu patru litere mai mult dec&#xE2;t cea de singular?";    
+dbQList[ 153][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 153][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 153] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 153] = []; dbAList[153][0] = "om"; dbAList[153][1] = "oameni";
+                        dbACrit[ 153] = []; dbACrit[153][0] = 11; dbACrit[153][1] = 13;
+                        dbAnswer[153] = [];
+                        dbAnswer[153][0] = "R&#x103;spuns corect: om - oameni"; //plaintext ro answer
+                        dbAnswer[153][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[153][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 153] = [];
+                        dbExpln[ 153][0] = ""; //explanation ro
+                        dbExpln[ 153][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 153][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 153] = [];
+                        dbRefer[ 153][0] = ""; //references for ro explanation
+                        dbRefer[ 153][1] = ""; //references for en explanation
+                        dbRefer[ 153][2] = ""; //references for de explanation
+                        dbQHint[ 153] = [];
+                        dbQHint[ 153][0] = "Cuv&#xE2;ntul are &#x15F;i form&#x103; de singular, &#x15F;i form&#x103; de plural."; //hint ro
+                        dbQHint[ 153][1] = ""; //hint en
+                        dbQHint[ 153][2] = ""; //hint de
+                        dbQImage[153] = []; dbQImageSrc[153] = []; 
+                        dbQImage[153][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[153][0] = "";
+                        dbQImage[153][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[153][1] = "";
+                        dbQImage[153][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[153][2] = "";
+                        dbAImage[153] = [];							               dbAImageSrc[153] = [];
+                        dbAImage[153][0] = "Images/C1.Microchitze/Img153Om.png";   dbAImageSrc[153][0] = "www.pixabay.com";
+                        dbAImage[153][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[153][1] = "";
+                        dbAImage[153][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[153][2] = "";
+dbQList[ 154] = [];
+dbQList[ 154][0] = "Pentru ce substantiv, forma de plural are cu dou#x103; litere mai pu&#x163;in dec&#xE2;t cea de singular?";    
+dbQList[ 154][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 154][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 154] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 154] = []; dbAList[154][0] = "oaie"; dbAList[154][1] = "oi";
+                        dbACrit[ 154] = []; dbACrit[154][0] = 11; dbACrit[154][1] = 13;
+                        dbAnswer[154] = [];
+                        dbAnswer[154][0] = "R&#x103;spuns corect: oaie - oi"; //plaintext ro answer
+                        dbAnswer[154][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[154][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 154] = [];
+                        dbExpln[ 154][0] = ""; //explanation ro
+                        dbExpln[ 154][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 154][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 154] = [];
+                        dbRefer[ 154][0] = ""; //references for ro explanation
+                        dbRefer[ 154][1] = ""; //references for en explanation
+                        dbRefer[ 154][2] = ""; //references for de explanation
+                        dbQHint[ 154] = [];
+                        dbQHint[ 154][0] = "Cuv&#xE2;ntul are &#x15F;i form&#x103; de singular, &#x15F;i form&#x103; de plural."; //hint ro
+                        dbQHint[ 154][1] = ""; //hint en
+                        dbQHint[ 154][2] = ""; //hint de
+                        dbQImage[154] = []; dbQImageSrc[154] = []; 
+                        dbQImage[154][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[154][0] = "";
+                        dbQImage[154][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[154][1] = "";
+                        dbQImage[154][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[154][2] = "";
+                        dbAImage[154] = [];							               dbAImageSrc[154] = [];
+                        dbAImage[154][0] = "Images/C1.Microchitze/Img154Oaie.png"; dbAImageSrc[154][0] = "www.pixabay.com";
+                        dbAImage[154][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[154][1] = "";
+                        dbAImage[154][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[154][2] = "";
+dbQList[ 155] = [];
+dbQList[ 155][0] = "Cu c&#xE2;&#x163;i de &quot;<b>i</b>&quot; se scrie pluralul cuv&#xE2;ntului &quot;<b>antipatie</b>&quot;?";    
+dbQList[ 155][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 155][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 155] = 2; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 155] = []; dbAList[155][0] = 3;
+                        dbACrit[ 155] = []; dbACrit[155][0] = 20;
+                        dbAnswer[155] = [];
+                        dbAnswer[155][0] = "R&#x103;spuns corect: 3"; //plaintext ro answer
+                        dbAnswer[155][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[155][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 155] = [];
+                        dbExpln[ 155][0] = ""; //explanation ro
+                        dbExpln[ 155][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 155][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 155] = [];
+                        dbRefer[ 155][0] = ""; //references for ro explanation
+                        dbRefer[ 155][1] = ""; //references for en explanation
+                        dbRefer[ 155][2] = ""; //references for de explanation
+                        dbQHint[ 155] = [];
+                        dbQHint[ 155][0] = ""; //hint ro
+                        dbQHint[ 155][1] = ""; //hint en
+                        dbQHint[ 155][2] = ""; //hint de
+                        dbQImage[155] = []; dbQImageSrc[155] = []; 
+                        dbQImage[155][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[155][0] = "";
+                        dbQImage[155][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[155][1] = "";
+                        dbQImage[155][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[155][2] = "";
+                        dbAImage[155] = [];							               dbAImageSrc[155] = [];
+                        dbAImage[155][0] = "Images/C1.Microchitze/Img155Anti.png";  dbAImageSrc[155][0] = "";
+                        dbAImage[155][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[155][1] = "";
+                        dbAImage[155][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[155][2] = "";
+dbQList[ 156] = [];
+dbQList[ 156][0] = "Care este cel mai lung cuv&#xE2;nt care &#238;ncepe cu o vocal&#x103;, se termin&#x103; cu o vocal&#x103; &#x15F;i &#238;n rest con&#x163;ine doar consoane?";    
+dbQList[ 156][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 156][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 156] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 156] = []; dbAList[156][0] = "nspre";
+                        dbACrit[ 156] = []; dbACrit[156][0] = 13;
+                        dbAnswer[156] = [];
+                        dbAnswer[156][0] = "R&#x103;spuns corect: &#238;nspre"; //plaintext ro answer
+                        dbAnswer[156][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[156][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 156] = [];
+                        dbExpln[ 156][0] = ""; //explanation ro
+                        dbExpln[ 156][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 156][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 156] = [];
+                        dbRefer[ 156][0] = ""; //references for ro explanation
+                        dbRefer[ 156][1] = ""; //references for en explanation
+                        dbRefer[ 156][2] = ""; //references for de explanation
+                        dbQHint[ 156] = [];
+                        dbQHint[ 156][0] = ""; //hint ro
+                        dbQHint[ 156][1] = ""; //hint en
+                        dbQHint[ 156][2] = ""; //hint de
+                        dbQImage[156] = []; dbQImageSrc[156] = []; 
+                        dbQImage[156][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[156][0] = "";
+                        dbQImage[156][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[156][1] = "";
+                        dbQImage[156][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[156][2] = "";
+                        dbAImage[156] = [];							               dbAImageSrc[156] = [];
+                        dbAImage[156][0] = "Images/C1.Microchitze/Img156Inspre.png";  dbAImageSrc[156][0] = "www.colegiojuanbosco.com";
+                        dbAImage[156][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[156][1] = "";
+                        dbAImage[156][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[156][2] = "";
+dbQList[ 157] = [];
+dbQList[ 157][0] = "Ce cuv&#xE2;nt con&#x163;ine 5 consoane consecutive?";    
+dbQList[ 157][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 157][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 157] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 157] = []; dbAList[157][0] = "optsprezece"; dbAList[157][1] = "18";
+                        dbACrit[ 157] = []; dbACrit[157][0] = 10; dbACrit[157][1] = 10;
+                        dbAnswer[157] = [];
+                        dbAnswer[157][0] = "R&#x103;spuns corect: optsprezece"; //plaintext ro answer
+                        dbAnswer[157][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[157][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 157] = [];
+                        dbExpln[ 157][0] = ""; //explanation ro
+                        dbExpln[ 157][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 157][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 157] = [];
+                        dbRefer[ 157][0] = ""; //references for ro explanation
+                        dbRefer[ 157][1] = ""; //references for en explanation
+                        dbRefer[ 157][2] = ""; //references for de explanation
+                        dbQHint[ 157] = [];
+                        dbQHint[ 157][0] = ""; //hint ro
+                        dbQHint[ 157][1] = ""; //hint en
+                        dbQHint[ 157][2] = ""; //hint de
+                        dbQImage[157] = []; dbQImageSrc[157] = []; 
+                        dbQImage[157][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[157][0] = "";
+                        dbQImage[157][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[157][1] = "";
+                        dbQImage[157][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[157][2] = "";
+                        dbAImage[157] = [];							               dbAImageSrc[157] = [];
+                        dbAImage[157][0] = "Images/C1.Microchitze/Img157_18.png";  dbAImageSrc[157][0] = "www.reading-buses.co.uk";
+                        dbAImage[157][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[157][1] = "";
+                        dbAImage[157][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[157][2] = "";
+dbQList[ 158] = [];
+dbQList[ 158][0] = "Dintre cuvintele care se termin&#x103; &#xEE;n &quot;<b>-ologie</b>&quot;, care este cel mai scurt?";    
+dbQList[ 158][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 158][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 158] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 158] = []; dbAList[158][0] = "oologi";
+                        dbACrit[ 158] = []; dbACrit[158][0] = 13;
+                        dbAnswer[158] = [];
+                        dbAnswer[158][0] = "R&#x103;spuns corect: oologie"; //plaintext ro answer
+                        dbAnswer[158][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[158][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 158] = [];
+                        dbExpln[ 158][0] = "OOLOGIE s.f. Parte a ornitologiei care se ocup&#x103; cu studiul &#x15F;tiin&#x163;ific al ou&#x103;lor.<sup>[1]</sup>"; //explanation ro
+                        dbExpln[ 158][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 158][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 158] = [];
+                        dbRefer[ 158][0] = "<a href='http://dexonline.ro/definitie/oologie' target='_blank'>[1] dexonline.ro/oologie</a>"; //references for ro explanation
+                        dbRefer[ 158][1] = ""; //references for en explanation
+                        dbRefer[ 158][2] = ""; //references for de explanation
+                        dbQHint[ 158] = [];
+                        dbQHint[ 158][0] = ""; //hint ro
+                        dbQHint[ 158][1] = ""; //hint en
+                        dbQHint[ 158][2] = ""; //hint de
+                        dbQImage[158] = []; dbQImageSrc[158] = []; 
+                        dbQImage[158][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[158][0] = "";
+                        dbQImage[158][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[158][1] = "";
+                        dbQImage[158][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[158][2] = "";
+                        dbAImage[158] = [];							               dbAImageSrc[158] = [];
+                        dbAImage[158][0] = "Images/C1.Microchitze/Img158Ool.png";  dbAImageSrc[158][0] = "nhm_oology";
+                        dbAImage[158][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[158][1] = "";
+                        dbAImage[158][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[158][2] = "";
+dbQList[ 159] = [];
+dbQList[ 159][0] = "Rescrie&#x163;i urm&#x103;toarea propozi&#x163;ie ad&#x103;ug&#xE2;nd spa&#x163;iile &#x15F;i cratimele omise <br/> &quot;<b>Copiiiiiiiiau mamei lor.</b>&quot;";    
+dbQList[ 159][1] = "This question is specific to the Romanian language and cannot be translated...";  
+dbQList[ 159][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
+                        dbAType[ 159] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
+                        dbAList[ 159] = []; dbAList[159][0] = "Copiii-i ii-i iau mamei lor";
+                        dbACrit[ 159] = []; dbACrit[159][0] = 13;
+                        dbAnswer[159] = [];
+                        dbAnswer[159][0] = "R&#x103;spuns corect: Copiii-i ii-i iau mamei lor."; //plaintext ro answer
+                        dbAnswer[159][1] = "Right answer: -- "; //plaintext en answer
+                        dbAnswer[159][2] = "Richtige Antwort: --"; //plaintext de answer
+                        dbExpln[ 159] = [];
+                        dbExpln[ 159][0] = "Cu alte cuvinte: <i>Ai ei copii (Copiii-i) cama&#x15F;i &#xEE;i iau (ii-i iau) mamei lor.</i>"; //explanation ro
+                        dbExpln[ 159][1] = "This answer is specific to the Romanian language and cannot be translated..."; //explanation en
+                        dbExpln[ 159][2] = "Diese Antwort ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden..."; //explanation de
+                        dbRefer[ 159] = [];
+                        dbRefer[ 159][0] = ""; //references for ro explanation
+                        dbRefer[ 159][1] = ""; //references for en explanation
+                        dbRefer[ 159][2] = ""; //references for de explanation
+                        dbQHint[ 159] = [];
+                        dbQHint[ 159][0] = "Doar spa&#x163;ii &#x15F;i cratime au fost omise; propozi&#x163;ia nu con&#x163;ine litera &quot;<b>&#xEE;</b>&quot;."; //hint ro
+                        dbQHint[ 159][1] = ""; //hint en
+                        dbQHint[ 159][2] = ""; //hint de
+                        dbQImage[159] = []; dbQImageSrc[159] = []; 
+                        dbQImage[159][0] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[159][0] = "";
+                        dbQImage[159][1] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[159][1] = "";
+                        dbQImage[159][2] = "Images/C1.Microchitze/Img_Blank.png";	dbQImageSrc[159][2] = "";
+                        dbAImage[159] = [];							               dbAImageSrc[159] = [];
+                        dbAImage[159][0] = "Images/C1.Microchitze/Img159iii.png";  dbAImageSrc[159][0] = "www.iiiimusic.com";
+                        dbAImage[159][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[159][1] = "";
+                        dbAImage[159][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[159][2] = "";

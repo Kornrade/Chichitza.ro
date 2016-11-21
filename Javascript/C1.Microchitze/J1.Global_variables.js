@@ -133,19 +133,19 @@ function initIndexList()
                     QuizTitle[2] = "Astroknobeleien";
                     break;
         case 20: IndexList = [150,151,152,153,154,155,156,157,158,159];
-                    QuizTitle[0] = "Logochitze (ro)";
+                    QuizTitle[0] = "Logochitze";
                     QuizTitle[1] = "Logoteasers (ro)";
                     QuizTitle[2] = "Logoknobeleien (ro)";
                     break;
         case 21: IndexList = [160,161,162,163,164,165,166,167,168,169];
                     QuizTitle[0] = "Logochitze (en)";
-                    QuizTitle[1] = "Logoteasers (en)";
+                    QuizTitle[1] = "Logoteasers";
                     QuizTitle[2] = "Logoknobeleien (en)";
                     break;
         case 22: IndexList = [170,171,172,173,174,175,176,177,178,179];
                     QuizTitle[0] = "Logochitze (de)";
                     QuizTitle[1] = "Logoteasers (de)";
-                    QuizTitle[2] = "Logoknobeleien (de)";
+                    QuizTitle[2] = "Logoknobeleien";
                     break;
         default: IndexList = []; break;
     }

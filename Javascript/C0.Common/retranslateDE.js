@@ -195,14 +195,14 @@ function retranslateDEMicrochitzeIntro()
 		document.getElementById("spanchemo"   ).innerHTML = "Chemische Knobeleien";
 		document.getElementById("spancrono"   ).innerHTML = "Zeit-Knobeleien";
 		document.getElementById("spanastro"   ).innerHTML = "Astronomische Knobeleien";
-        document.getElementById("spanlogo"    ).innerHTML = "Seltsame W&#246;rter";
+        document.getElementById("spanlogo"    ).innerHTML = "Seltsame (rum&#228;nische) W&#246;rter";
 		document.getElementById("spanminimix1").innerHTML = "Wahr/Falsch Fragen";
 		document.getElementById("spanminimix2").innerHTML = "\"Was kommt als n&#228;chstes ...?\", Stufe II";
 		document.getElementById("spanminimix3").innerHTML = "Allgemeines I";
 		document.getElementById("spanminimix4").innerHTML = "Allgemeines II";
 		document.getElementById("spanminimix5").innerHTML = "Allgemeines III (die ultimative Knobelaufgabe)";
         
-        document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=22";
+        //document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=22";
 	
 	}
 }

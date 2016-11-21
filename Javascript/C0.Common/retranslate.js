@@ -356,7 +356,7 @@ function retranslateMicrochitzeIntro()
 	document.getElementById("achemo"   ).href = "Microchitze.html?lang="+lang+"&aux=17";
 	document.getElementById("acrono"   ).href = "Microchitze.html?lang="+lang+"&aux=18";
 	document.getElementById("aastro"   ).href = "Microchitze.html?lang="+lang+"&aux=19";
-    //document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=20"; ==> 20 = RO; 21 = EN; 22 = DE;
+    document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=20"; //later ==> 20 = RO; 21 = EN; 22 = DE;
 	document.getElementById("aminimix1").href = "Microchitze.html?lang="+lang+"&aux=01";
 	document.getElementById("aminimix2").href = "Microchitze.html?lang="+lang+"&aux=02";
 	document.getElementById("aminimix3").href = "Microchitze.html?lang="+lang+"&aux=03";

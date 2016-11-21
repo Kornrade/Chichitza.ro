@@ -197,7 +197,7 @@ function retranslateROMicrochitzeIntro()
 		document.getElementById("spanminimix4").innerHTML = "Amestec de chichitze II";
 		document.getElementById("spanminimix5").innerHTML = "Amestec de chichitze III (testul suprem)";
         
-        document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=20";
+        //document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=20";
 
 	}
 }
