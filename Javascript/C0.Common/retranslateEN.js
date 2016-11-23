@@ -105,7 +105,7 @@ function retranslateENIndexIntro()
 					<i>E.g.: Why do white sheep eat more grass than black sheep?</i>";
 	document.getElementById("divMainContentsRight21").innerHTML = "\
 					<b>Macroteasers</b>: recreative brainteasers. <br/>\
-					<i>E.g.: Carve an object so that its projections from above, front and back look like in the drawing to the right:</i>";				
+					<i>E.g.: Find out where the green doors of the labyrinth lead.</i>";				
 	document.getElementById("divMainContentsRight31").innerHTML = "\
 					<b>Interactive</b> brainteasers. <br/>\
 					<i>Ex: Try to follow the instructions in placing the green dots...</i>";

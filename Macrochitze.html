@@ -16,6 +16,7 @@
     <script type="text/javascript" src="Javascript/C0.Common/tinybox.js"></script>
     <link rel="stylesheet" type="text/css" href="Styles/tinybox.css" />
     
+    <script type="text/javascript" src="Javascript/C2.Macrochitze/J0.MazeRules.js"></script>
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J1.Global_variables.js"></script>
 	<script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database0Main.js"  ></script>
     <script type="text/javascript" src="Javascript/C2.Macrochitze/J2.Database0Doors.js" ></script>
@@ -105,7 +106,15 @@
                                         <div id="MazeTitle"  class="style_orange" align="center" style="font-weight:bold"></div>
 										<br/><br/>
                                         <div class="common" align="center">                
-                                            <a id="MazeRules" href="javascript:displayMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="128" height="128" border="0" Hspace="0" Vspace="0"/></a>
+                                            <a id="saveField" href="javascript:showMazeState();"><img src="Images/C2.Macrochitze/save.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/>
+                                        <div class="common" align="center">                
+                                            <a id="loadField" href="javascript:showLoadDialog();"><img src="Images/C2.Macrochitze/load.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/><br/>
+                                        <div class="common" align="center">                
+                                            <a id="teasersList" href="javascript:displayListOfTeasers();"><img src="Images/C2.Macrochitze/list.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>
                                     </td>
                                     <td id="tdMainContentsCenter" rowspan="1" colspan="1" width="580">
@@ -184,6 +193,11 @@
                                         </table>
                                     </td>
                                     <td id="tdMainContentsRight" rowspan="1" colspan="1"  width="130" valign="top" style="padding-top:25px; padding-right: 20px;"  class="common"> 
+                                        <br/>
+                                        <div class="common" align="center">                
+                                            <a id="MazeRules" href="javascript:displayMazeRules();"><img src="Images/C2.Macrochitze/rules.png" width="128" height="128" border="0" Hspace="0" Vspace="0"/></a>
+                                        </div>
+                                        <br/><br/>
                                         <div align="center">
 											<a href="javascript:void(0);" id="expandcompressHelpertools" style="display:inline-block; width:100px;" onclick="expandcompressHelpertools();"></a>
 										</div>
@@ -193,18 +207,6 @@
                                                 <a id="buttonTerra" 	 href="JavaScript:newPopup(550,640,10,10,'Helpertools/terra.html');">      <img src="Images/C0.Common/Helpertools/Fituici/Terra.png"        alt="Terra" width="24" height="24" border="0" /></a> &nbsp;
                                                 <a id="buttonMendeleev"  href="JavaScript:newPopup(420,650,10,10,'Helpertools/mendeleev.html');">  <img src="Images/C0.Common/Helpertools/Fituici/Mendeleev.png"        alt="Mendeleev" width="24" height="24" border="0" /></a> 
                                             </p>
-                                        </div>
-                                        <br/><br/>
-                                        <div class="common" align="center">                
-                                            <a id="saveField" href="javascript:showMazeState();"><img src="Images/C2.Macrochitze/save.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
-                                        <br/>
-                                        <div class="common" align="center">                
-                                            <a id="loadField" href="javascript:showLoadDialog();"><img src="Images/C2.Macrochitze/load.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
-                                        </div>
-                                        <br/><br/>
-                                        <div class="common" align="center">                
-                                            <a id="teasersList" href="javascript:displayListOfTeasers();"><img src="Images/C2.Macrochitze/list.png" width="70" height="70" border="0" Hspace="0" Vspace="0"/></a>
                                         </div>
                                     </td>
                                 </tr>

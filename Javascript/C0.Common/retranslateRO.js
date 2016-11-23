@@ -121,14 +121,14 @@ function retranslateROIndexIntro()
 	document.getElementById("imgMainContentsRight52" ).setAttribute("data", "Dictionar");
 			
 	document.getElementById("divMainContentsRight11").innerHTML = "\
-					<b>Microchitze:</b> Seturi de c&#xE2;te 10 &#xEE;ntreb&#x103;ri distractive cu chichitze. <br/>\
-					<i>Ex: De ce oile albe m&#x103;n&#xE2;nc&#x103; mai mult&#x103; iarb&#x103; dec&#xE2;t oile negre?</i>";
+					<b>Microchitze:</b> Seturi de c&#xE2;te 10 &#xEE;ntreb&#x103;ri cu chichitze. <br/>\
+                    <i>Ex: De ce oile albe m&#x103;n&#xE2;nc&#x103; mai mult&#x103; iarb&#x103; dec&#xE2;t oile negre?</i>";
 	document.getElementById("divMainContentsRight21").innerHTML = "\
-					<b>Macrochitze:</b> Probleme recreative cu chichitze. <br/>\
-					<i>Ex: S&#x103; se ciopleasc&#x103; un obiect, ale c&#x103;rui proiec&#x21B;ii de sus, din fa&#x21B;&#x103; &#x15F;i din spate s&#x103; arate ca &#xEE;n desen:</i>";				
+					<b>Macrochitze:</b> Jocuri cu chichitze. <br/>\
+					<i>Ex: G&#x103;se&#x15F;te unde duc toate u&#x15F;ile din labirint.</i>";				
 	document.getElementById("divMainContentsRight31").innerHTML = "\
 					Probleme <b>interactive</b> cu chichitze. <br/>\
-					<i>Ex: S&#x103; se pozi&#x21B;ioneze punctele verzi conform instruc&#x21B;iunilor...</i>";
+					<i>Ex: Pozi&#x21B;ioneaz&#x103; punctele verzi conform instruc&#x21B;iunilor...</i>";
 	document.getElementById("divMainContentsRight41").innerHTML = "\
 					<b> Probleme (de &#x15F;ah)</b> care las&#x103; calculatorul confuz.";
 	document.getElementById("divMainContentsRight51").innerHTML = "\

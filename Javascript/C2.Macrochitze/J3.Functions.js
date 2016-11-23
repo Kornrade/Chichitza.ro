@@ -19,7 +19,6 @@ var Maze, MazeTitle, Doors, RoomPictures, RoomPictureSources, DoorPuzzles, DoorN
 
 /*global setInnerHTML */
 /*global setupMazeStructure */
-/*global displayMazeRules */
 /*global initSolutionReference */
 /*global initSolvedRoomPictures */
 /*global initSolutionTable */
@@ -476,28 +475,6 @@ function composeTableWithSortedRoomPictures()
     
     // return
     return tableHTML;
-}
-
-function displayMazeRules()
-{
-    var rulesForDisplay = '\
-        <html>\
-            <head>\
-                </style>\
-            </head>\
-            <body>\
-                <a id="buttonX" href="JavaScript:TINY.box.hide();">\
-                    <img src="Images/C0.Common/Helpertools/TinyBox/BigXGray.png" alt="X" width="24" height="24" border="0" align="right" />\
-                </a>\
-                [RULES]\
-            </body>\
-        </html>';
-    
-    if("ro"===lang) {rulesForDisplay = rulesForDisplay.replace("[RULES]",mazeRules[0]);}
-    if("en"===lang) {rulesForDisplay = rulesForDisplay.replace("[RULES]",mazeRules[1]);}
-    if("de"===lang) {rulesForDisplay = rulesForDisplay.replace("[RULES]",mazeRules[2]);}
-    
-    showTinyBoxGame(rulesForDisplay);
 }
 
 function toggleJigsawDifficulty(diff)

@@ -21,6 +21,7 @@ var lang; // the current language: "ro" "en" "de"
 var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
 var currchessfen;
+var mazeRules;
 
 /*global resetDivsToDefault */
 /*global retranslateCommon */
@@ -373,6 +374,14 @@ function retranslateMacrochitzeIntro()
 {
 	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/C0.Common/C2.Macrochitze.png' width='128'></img>";
 	showImageOnHover("","");
+    
+    document.getElementById("divMainContentsPeekImage").innerHTML = "\
+                    <br/><br/>\
+                    <div id='divMazeRules'>\
+                        <a id='MazeRules' href='javascript:displayMazeRules();'>\
+                            <img src='Images/C2.Macrochitze/rules.png' width='128' height='128' border='0' Hspace='0' Vspace='0'/>\
+                        </a>\
+                    </div>";
     
     document.getElementById("divMainContents").innerHTML = "\
 					<br/><br/>\

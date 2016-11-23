@@ -5032,7 +5032,7 @@ dbQList[ 153][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Spra
                         dbAImage[153][1] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[153][1] = "";
                         dbAImage[153][2] = "Images/C1.Microchitze/Img_Blank.png";  dbAImageSrc[153][2] = "";
 dbQList[ 154] = [];
-dbQList[ 154][0] = "Pentru ce substantiv, forma de plural are cu dou#x103; litere mai pu&#x163;in dec&#xE2;t cea de singular?";    
+dbQList[ 154][0] = "Pentru ce substantiv, forma de plural are cu dou&#x103; litere mai pu&#x163;in dec&#xE2;t cea de singular?";    
 dbQList[ 154][1] = "This question is specific to the Romanian language and cannot be translated...";  
 dbQList[ 154][2] = "Diese Frage ist spezifisch f&#252;r die rum&#228;nische Sprache und kann nicht &#252;bersetzt werden...";
                         dbAType[ 154] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;

@@ -129,7 +129,7 @@ function retranslateDEIndexIntro()
 					<i>z.B.: Warum fressen wei&szlig;e Schafe mehr Gras als schwarze?</i>";
 	document.getElementById("divMainContentsRight21").innerHTML = "\
 					<b>Makroknobeleien:</b> knifflige Denkaufgaben. <br/>\
-					<i>z.B.: Gestalten Sie ein Holzobjekt, so dass es von oben, vorne und hinten so aussieht wie im Bild:</i>";				
+					<i>z.B.: Finden Sie heraus, wo alle T&uuml;ren des Labyrints f&uuml;hren.</i>";				
 	document.getElementById("divMainContentsRight31").innerHTML = "\
 					<b>Interaktive</b> Denkaufgaben. <br/>\
 					<i>z.B.: Versuchen Sie die Anweisungen f&uuml;r die Platzierung der gr&uuml;nen Punkte zu folgen...";
@@ -200,7 +200,7 @@ function retranslateDEMicrochitzeIntro()
 		document.getElementById("spanminimix2").innerHTML = "\"Was kommt als n&#228;chstes ...?\", Stufe II";
 		document.getElementById("spanminimix3").innerHTML = "Allgemeines I";
 		document.getElementById("spanminimix4").innerHTML = "Allgemeines II";
-		document.getElementById("spanminimix5").innerHTML = "Allgemeines III (die ultimative Knobelaufgabe)";
+		document.getElementById("spanminimix5").innerHTML = "Allgemeines III (beste Knobelaufgabe)";
         
         //document.getElementById("alogo"    ).href = "Microchitze.html?lang="+lang+"&aux=22";
 	
