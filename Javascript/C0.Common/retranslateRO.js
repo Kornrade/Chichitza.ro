@@ -211,7 +211,10 @@ function retranslateROMacrochitzeIntro()
 	document.getElementById("divTitle").innerHTML = "MACROCHITZE";
 	
 	// Cell (3)
-    document.getElementById("macrotest"   ).innerHTML = "Tutorial ";
+    document.getElementById("MazeRules"    ).setAttribute("data", "Regulile jocului");
+        
+    document.getElementById("macrotest00"   ).innerHTML = "Tutorial ";
+    document.getElementById("macrotest01"   ).innerHTML = "Labirint 1 (&#238;n cur&#xE2;nd)";
 
 	}
 }
@@ -227,7 +230,7 @@ function retranslateROInteractiveIntro()
 	// Cell (3)	
 	document.getElementById("divsageti"     ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Sageti.png'	, 'S&#x103;ge&#x21B;i'		);");
 	document.getElementById("divtreidame"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Dame.png'		, 'Trei Dame'				);");
-	document.getElementById("divplopulmere" ).setAttribute("onMouseOver", "showImageOnHover('Interactive/PlopulMere.png', 'Cand o face plopul mere'	);");
+	document.getElementById("divplopulmere" ).setAttribute("onMouseOver", "showImageOnHover('Interactive/PlopulMere.png', 'C&#xE2;nd o face plopul mere'	);");
 	document.getElementById("divssudoku"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/SkyscraperSudoku.png', 'Sudoku zg&#xE2;rie-nori'	);");
 	document.getElementById("divfermier"    ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Fermier.png'	,'Problema fermierului'		);");
 	document.getElementById("divsegmente"   ).setAttribute("onMouseOver", "showImageOnHover('Interactive/Segmente.png'	,'Segmente'					);");
@@ -235,7 +238,7 @@ function retranslateROInteractiveIntro()
 
 	document.getElementById("sageti"    ).innerHTML="S&#x103;ge&#x21B;i";
 	document.getElementById("treidame"  ).innerHTML="Trei Dame";
-	document.getElementById("plopulmere").innerHTML="Cand o face plopul mere";
+	document.getElementById("plopulmere").innerHTML="C&#xE2;nd o face plopul mere";
 	document.getElementById("ssudoku"   ).innerHTML="Sudoku zg&#xE2;rie-nori";
 	document.getElementById("fermier"   ).innerHTML="Problema fermierului";
 	document.getElementById("segmente"  ).innerHTML="Segmente";
@@ -263,7 +266,9 @@ function retranslateROChessIntro()
 	document.getElementById("Homemade09").innerHTML=allstudynames[ 9][0];
 	document.getElementById("Homemade10").innerHTML=allstudynames[10][0];
 	document.getElementById("Homemade11").innerHTML=allstudynames[11][0];
+    document.getElementById("Homemade12").innerHTML=allstudynames[12][0];
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][0];
+    document.getElementById("Homemade14").innerHTML=allstudynames[14][0];
 
 	document.getElementById("spanlegend").innerHTML="Dificultate pentru calculatoare";
 	

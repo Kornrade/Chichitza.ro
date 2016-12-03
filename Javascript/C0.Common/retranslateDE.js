@@ -216,7 +216,10 @@ function retranslateDEMacrochitzeIntro()
 	document.getElementById("divTitle").innerHTML = "MAKROKNOBELEIEN";
 	
 	// Cell (3)
-	document.getElementById("macrotest"   ).innerHTML = "Tutorial ";
+    document.getElementById("MazeRules"    ).setAttribute("data", "Spielregeln");
+        
+	document.getElementById("macrotest00"   ).innerHTML = "Tutorial   ";
+    document.getElementById("macrotest01"   ).innerHTML = "Labyrinth 1 (demn&#228;chst verf&uuml;gbar)";
 		
 	}
 }
@@ -269,7 +272,9 @@ function retranslateDEChessIntro()
 	document.getElementById("Homemade09").innerHTML=allstudynames[ 9][2];	
 	document.getElementById("Homemade10").innerHTML=allstudynames[10][2];
 	document.getElementById("Homemade11").innerHTML=allstudynames[11][2];
+    document.getElementById("Homemade12").innerHTML=allstudynames[12][2];
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][2];
+    document.getElementById("Homemade14").innerHTML=allstudynames[14][2];
 
 	document.getElementById("spanlegend").innerHTML="Schwierigkeit f&#252;r Engines (Rechner)";	
 		

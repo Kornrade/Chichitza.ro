@@ -192,7 +192,10 @@ function retranslateENMacrochitzeIntro()
 	document.getElementById("divTitle").innerHTML = "MACROTEASERS";
 	
 	// Cell (3)
-	document.getElementById("macrotest"   ).innerHTML = "Tutorial ";
+    document.getElementById("MazeRules"    ).setAttribute("data", "Game rules");
+        
+	document.getElementById("macrotest00"   ).innerHTML = "Tutorial ";
+    document.getElementById("macrotest01"   ).innerHTML = "Labyrinth 1 (coming soon)";
 	
 	}
 }
@@ -244,7 +247,9 @@ function retranslateENChessIntro()
 	document.getElementById("Homemade09").innerHTML=allstudynames[ 9][1];	
 	document.getElementById("Homemade10").innerHTML=allstudynames[10][1];
 	document.getElementById("Homemade11").innerHTML=allstudynames[11][1];
+    document.getElementById("Homemade12").innerHTML=allstudynames[12][1];
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][1];
+    document.getElementById("Homemade14").innerHTML=allstudynames[14][1];
 	
 	document.getElementById("spanlegend").innerHTML="Difficulty for engines (computers)";
 	

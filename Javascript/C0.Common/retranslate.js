@@ -385,15 +385,23 @@ function retranslateMacrochitzeIntro()
     
     document.getElementById("divMainContents").innerHTML = "\
 					<br/><br/>\
-					<div id='divmacrotest'>\
+					<div id='divmacrotest00'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'> &nbsp; &nbsp; \
+						<a id='macrotest00' style='display:inline-block;width:320;'></a>\
+						<span id='spanmacrotest00' style=\"display:inline-block;width:300;text-align:left;\"></span>\
+					</div>\
+					<div id='divmacrotest01'>\
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
 						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
 						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'> &nbsp; &nbsp; \
-						<a id='macrotest' style='display:inline-block;width:120;'></a>\
-						<span id='spanmacrotest' style=\"display:inline-block;width:300;text-align:left;\"></span>\
+						<a id='macrotest01' style='display:inline-block;width:320;'></a>\
+						<span id='spanmacrotest01' style=\"display:inline-block;width:300;text-align:left;\"></span>\
 					</div>";
 	
-	document.getElementById("macrotest"   ).href = "Macrochitze.html?lang="+lang+"&aux=0";
+	document.getElementById("macrotest00"   ).href = "Macrochitze.html?lang="+lang+"&aux=00";
+    //document.getElementById("macrotest01"   ).href = "Macrochitze.html?lang="+lang+"&aux=01";
     
     //retranslate specific intro text of Microchitze
 	if(lang==="ro") {retranslateROMacrochitzeIntro();}
@@ -550,11 +558,25 @@ function retranslateChessIntro()
 						&nbsp; &nbsp; <a id='Homemade11' style=\"display:inline-block;width:180;\"></a>\
 						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
 						\
+                    <div id='divHomemade12'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						&nbsp; &nbsp; <a id='Homemade12' style=\"display:inline-block;width:180;\"></a>\
+						<span style=\"display:inline-block;width:100;\"> == </span> </div>\
+                        \
 					<div id='divHomemade13'>\
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
 						&nbsp; &nbsp; <a id='Homemade13' style=\"display:inline-block;width:180;\"></a>\
+						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
+						\
+					<div id='divHomemade14'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						&nbsp; &nbsp; <a id='Homemade14' style=\"display:inline-block;width:180;\"></a>\
 						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
 						\
 					<div onMouseOver=\"showChessPositionOnHover(00);\"><br/><br/><br></div>\
@@ -575,7 +597,9 @@ function retranslateChessIntro()
 	document.getElementById("divHomemade09").setAttribute("onMouseOver","showChessPositionOnHover(09);");
 	document.getElementById("divHomemade10").setAttribute("onMouseOver","showChessPositionOnHover(10);");
 	document.getElementById("divHomemade11").setAttribute("onMouseOver","showChessPositionOnHover(11);");
+    document.getElementById("divHomemade12").setAttribute("onMouseOver","showChessPositionOnHover(12);");
 	document.getElementById("divHomemade13").setAttribute("onMouseOver","showChessPositionOnHover(13);");
+    document.getElementById("divHomemade14").setAttribute("onMouseOver","showChessPositionOnHover(14);");
 	
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";
 	
@@ -594,7 +618,9 @@ function retranslateChessIntro()
 	document.getElementById("Homemade09").href = "Chess.html?lang="+lang+"&aux=09";
 	document.getElementById("Homemade10").href = "Chess.html?lang="+lang+"&aux=10";
 	document.getElementById("Homemade11").href = "Chess.html?lang="+lang+"&aux=11";
+    document.getElementById("Homemade12").href = "Chess.html?lang="+lang+"&aux=12";
 	document.getElementById("Homemade13").href = "Chess.html?lang="+lang+"&aux=13";
+    document.getElementById("Homemade14").href = "Chess.html?lang="+lang+"&aux=14";
 	
 	showChessPositionOnHover(0);
 }
