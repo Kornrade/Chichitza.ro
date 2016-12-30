@@ -579,7 +579,14 @@ function retranslateChessIntro()
 						&nbsp; &nbsp; <a id='Homemade14' style=\"display:inline-block;width:180;\"></a>\
 						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
 						\
-					<div onMouseOver=\"showChessPositionOnHover(00);\"><br/><br/><br></div>\
+					<div id='divHomemade15'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						&nbsp; &nbsp; <a id='Homemade15' style=\"display:inline-block;width:180;\"></a>\
+						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
+						\
+                    <div onMouseOver=\"showChessPositionOnHover(00);\"><br/><br/><br></div>\
 					<div id = 'Legend' align='left' style='padding-left: 50'>\
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
 						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
@@ -600,6 +607,7 @@ function retranslateChessIntro()
     document.getElementById("divHomemade12").setAttribute("onMouseOver","showChessPositionOnHover(12);");
 	document.getElementById("divHomemade13").setAttribute("onMouseOver","showChessPositionOnHover(13);");
     document.getElementById("divHomemade14").setAttribute("onMouseOver","showChessPositionOnHover(14);");
+    document.getElementById("divHomemade15").setAttribute("onMouseOver","showChessPositionOnHover(15);");
 	
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";
 	
@@ -621,6 +629,7 @@ function retranslateChessIntro()
     document.getElementById("Homemade12").href = "Chess.html?lang="+lang+"&aux=12";
 	document.getElementById("Homemade13").href = "Chess.html?lang="+lang+"&aux=13";
     document.getElementById("Homemade14").href = "Chess.html?lang="+lang+"&aux=14";
+    document.getElementById("Homemade15").href = "Chess.html?lang="+lang+"&aux=15";
 	
 	showChessPositionOnHover(0);
 }

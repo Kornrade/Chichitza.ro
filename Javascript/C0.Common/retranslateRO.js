@@ -269,6 +269,7 @@ function retranslateROChessIntro()
     document.getElementById("Homemade12").innerHTML=allstudynames[12][0];
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][0];
     document.getElementById("Homemade14").innerHTML=allstudynames[14][0];
+    document.getElementById("Homemade15").innerHTML=allstudynames[15][0];
 
 	document.getElementById("spanlegend").innerHTML="Dificultate pentru calculatoare";
 	

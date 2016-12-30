@@ -108,7 +108,7 @@ function retranslateENIndexIntro()
 					<i>E.g.: Find out where the green doors of the labyrinth lead.</i>";				
 	document.getElementById("divMainContentsRight31").innerHTML = "\
 					<b>Interactive</b> brainteasers. <br/>\
-					<i>Ex: Try to follow the instructions in placing the green dots...</i>";
+					<i>E.g.: Try to follow the instructions in placing the green dots...</i>";
 	document.getElementById("divMainContentsRight41").innerHTML = "\
 					<b>Chess studies</b> that confuse the engines (computers).";
 	document.getElementById("divMainContentsRight51").innerHTML = "\
@@ -250,6 +250,7 @@ function retranslateENChessIntro()
     document.getElementById("Homemade12").innerHTML=allstudynames[12][1];
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][1];
     document.getElementById("Homemade14").innerHTML=allstudynames[14][1];
+    document.getElementById("Homemade15").innerHTML=allstudynames[15][1];
 	
 	document.getElementById("spanlegend").innerHTML="Difficulty for engines (computers)";
 	

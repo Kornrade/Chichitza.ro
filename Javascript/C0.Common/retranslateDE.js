@@ -275,6 +275,7 @@ function retranslateDEChessIntro()
     document.getElementById("Homemade12").innerHTML=allstudynames[12][2];
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][2];
     document.getElementById("Homemade14").innerHTML=allstudynames[14][2];
+    document.getElementById("Homemade15").innerHTML=allstudynames[15][2];
 
 	document.getElementById("spanlegend").innerHTML="Schwierigkeit f&#252;r Engines (Rechner)";	
 		

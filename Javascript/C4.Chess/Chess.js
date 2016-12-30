@@ -77,6 +77,10 @@ allstudynames[14] = [];
 allstudynames[14][0] = 'Furculi&#x21B;e';
 allstudynames[14][1] = 'Fork-field';
 allstudynames[14][2] = 'Gabel-Feld';
+allstudynames[15] = [];
+allstudynames[15][0] = 'H&#x103;r&#x163;uial&#x103;';
+allstudynames[15][1] = 'Harassment';
+allstudynames[15][2] = 'Bel&#228;stigung';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
@@ -139,6 +143,10 @@ allstudystips[14] = [];
 allstudystips[14][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[14][1] = 'White to move and win';
 allstudystips[14][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[15] = [];
+allstudystips[15][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
+allstudystips[15][1] = 'White to move and win';
+allstudystips[15][2] = 'Wei&szlig; zieht und gewinnt';
 
 function setcurrchessvars(n)
 {
@@ -372,7 +380,7 @@ function setcurrchessvars(n)
                         <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
                         ';
-            currchessinfo[2] = '\s
+            currchessinfo[2] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
                         ';
@@ -414,6 +422,27 @@ function setcurrchessvars(n)
             currchessinfo[2] = 'Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(141);">EG</a> Zeitschrift [2015]';
             break;
             
+        case  15: 
+            currchessfen = '[FEN "8/q1p1N1p1/3p1p1p/pk5P/1p2BB2/8/PK3P2/8 w - - 0 1"]';
+            coauthor = '';
+            currpgn[0] = '[Event "'+allstudystips[15][0]+'"][Site "Glarean"][Date "10.2015"][Round "'+allstudynames[15][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "8/q1p1N1p1/3p1p1p/pk5P/1p2BB2/8/PK3P2/8 w - - 0 1"] 1. Be3 ({Nu} 1. Bd3+ {?} Ka4 2. Be3 Qb7 3. Bg6 (3. Nf5 {?} b3 4. a3 Qd5 5. Nd4 c6 6. Be2 Qc5 7. Bd1 Qxa3+ {-+}) 3... Kb5 4. Bd3+ Ka4 {=}) ({Nu} 1. Bc6+ {?} Kc4 2. Be3 Qb8 3. Bf3 {amenin&#x163;&#xE2;nd Be2#} Kd3 4. Ng6 {amenin&#x163;&#xE2;nd Nf4+ Be2#} (4. Nd5 {similar cu 4.Ng6}) 4... Kc4 5. Ne7 {=} (5. Nf4 {?} Kb5 6. Be2+ Kc6 {-+})) 1... c5 (1... Qb8 2. Bd3+ Ka4 3. Nc6 Qb7 4. Nd4 Qd5 5. Bc2+ b3 6. Bxb3+ {+-}) 2. Bd3+ ({Nu} 2. Bc6+ {?} Kc4 {-+}) 2... Ka4 (2... Kb6 3. Nc8+ {+-}) (2... c4 3. Bxc4+ Kxc4 4. Bxa7) 3. Nd5 ({Nu} 3. Bc2+ {?} Kb5 (3... b3 {?} 4. axb3+ Kb5 5. Bd3+ Kb6 6. Nc8+ {+-}) 4. Bd3+ Ka4 {=}) 3... Qb7 (3... f5 4. f4 Qb7 5. Bc4 Qb8 6. Bf2 Qd8 7. Bh4 Qb8 (7... Qxh4 8. Nb6#) 8. Be7 Qb7 9. Bd8 Qa7 10. Nc7 {+-}) (3... Qb8 {similar cu 3...Qb7}) 4. Bc4 Qb8 {Cea mai bun&#x103; ap&#x103;rare a Negrului este pasiv&#x103;, cu dama protej&#xE2;nd c&#xE2;mpul b6.} 5. Bc1 {Nebunul de negru nu poate p&#x103;trunde nici prin for&#x163;&#x103; brut&#x103; (sacrificiu la h6), nici prin &#xEE;nv&#x103;luire. Este r&#xE2;ndul regelui s&#x103; conduc&#x103; atacul; &#xEE;ntre timp &#xEE;ns&#x103; trebuie &#x163;inute c&#xE2;mpurile a3 &#x15F;i b2 sub control.} (5. Bf4 Qd8 6. Bg3 Qb8 {ap&#x103;r&#x103; ambele c&#xE2;mpuri b6 &#x15F;i d6}) 5... Qd8 6. Kc2 ({rezolvare secundar&#x103; nedorit&#x103;:} 6. Kb1 Qb8 7. f3 Qd8 8. Nf4 Qc8 9. Nd3 Qf5 10. Ka1 Qxf3 11. Nb2+ Ka3 12. Be6 Qc3 13. Kb1 {+-}) 6... Qb8 7. Bb2 Qa7 8. f3 {controleaz&#x103; g4} (8. f4 {?} Qb8 9. Kd3 Qa7 10. Ke4 Qb8 11. Kf5 (11. Kf3 Qd8 12. Kg4 Qc8+ 13. Kg3 {=}) 11... Qc8+ 12. Kg6 Qb7 13. Kh7 {?} g5+ 14. Kxh6 g4 15. Kg6 g3 16. Bc1 (16. h6 g2 17. h7 g1=Q+ {-+}) 16... g2 17. Be3 Qb8 18. Kg7 (18. Kf7 b3 19. axb3+ Ka3 20. h6 Qh8 21. f5 Qh7+ 22. Kxf6 g1=Q 23. Bxg1 Qxh6+ 24. Ke7 Qg7+ 25. Kxd6 Qxg1 26. f6 Qg3+ 27. Kxc5 a4 28. bxa4 Kxa4) 18... b3 19. axb3+ Ka3 20. h6 Qe8 21. h7 Qxe3 22. Nxe3 g1=Q+ 23. Kf7 Qh1 24. Kg7 Qg1+ 25. Kf7) (8. Kd3 {Mutarea nu este rea &#xEE;n sine, &#xEE;ns&#x103; f&#x103;r&#x103; f3 este remiz&#x103;.} Qb7 9. Ke4 Qb8 10. Kf4 Qd8 11. Kf5 Qc8+ 12. Kg6 Qg4+ 13. Kh7 Qxc4 14. Nb6+ Kb5 15. Nxc4 Kxc4 16. Kxg7 b3 17. axb3+ Kxb3 18. Bxf6 (18. Bc1 c4 19. Kxh6 c3 20. Kg6 a4 21. h6 a3 22. Bxa3 Kxa3 23. h7 c2 24. h8=Q c1=Q {=}) 18... d5 19. Kxh6 d4 20. Kg6 d3 21. Bg5 c4 22. h6 c3 23. h7 d2 24. h8=Q d1=Q {=}) 8... Qb7 9. Kd3 Qa7 10. Ke4 Qb7 11. Kf5 Qd7+ 12. Kg6 Qb7 13. Kh7 {trucul g5+ nu mai &#x163;ine, deoarece pionul f3 poate intercepta} Qa7 14. Kg8 Qb7 15. Kf8 Qa7 16. Ke8 Qb7 17. Kd8 Qa7 18. Kc8 Qa8+ 19. Kd7 Qb8 (19... Qb7+ 20. Nc7 b3 21. a3 Qb6 22. Nd5 {amenin&#x163;&#xE2;nd Nc3#} Qb5+ 23. Bxb5+ Kxb5 24. Kxd6 {+-}) 20. Nc7 b3 21. a3 Qb7 22. Bd5 Qxd5 23. Nxd5 Kb5 24. Kxd6';
+            currpgn[1] = '[Event "'+allstudystips[15][1]+'"][Site "Glarean"][Date "10.2015"][Round "'+allstudynames[15][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "8/q1p1N1p1/3p1p1p/pk5P/1p2BB2/8/PK3P2/8 w - - 0 1"] 1. Be3 ({Not} 1. Bd3+ {?} Ka4 2. Be3 Qb7 3. Bg6 (3. Nf5 {?} b3 4. a3 Qd5 5. Nd4 c6 6. Be2 Qc5 7. Bd1 Qxa3+ {-+}) 3... Kb5 4. Bd3+ Ka4 {=}) ({Not} 1. Bc6+ {?} Kc4 2. Be3 Qb8 3. Bf3 {threatening Be2#} Kd3 4. Ng6 {threatening Nf4+ Be2#} (4. Nd5 {similar to 4.Ng6}) 4... Kc4 5. Ne7 {=} (5. Nf4 {?} Kb5 6. Be2+ Kc6 {-+})) 1... c5 (1... Qb8 2. Bd3+ Ka4 3. Nc6 Qb7 4. Nd4 Qd5 5. Bc2+ b3 6. Bxb3+ {+-}) 2. Bd3+ ({Not} 2. Bc6+ {?} Kc4 {-+}) 2... Ka4 (2... Kb6 3. Nc8+ {+-}) (2... c4 3. Bxc4+ Kxc4 4. Bxa7) 3. Nd5 ({Not} 3. Bc2+ {?} Kb5 (3... b3 {?} 4. axb3+ Kb5 5. Bd3+ Kb6 6. Nc8+ {+-}) 4. Bd3+ Ka4 {=}) 3... Qb7 (3... f5 4. f4 Qb7 5. Bc4 Qb8 6. Bf2 Qd8 7. Bh4 Qb8 (7... Qxh4 8. Nb6#) 8. Be7 Qb7 9. Bd8 Qa7 10. Nc7 {+-}) (3... Qb8 {similar to 3...Qb7}) 4. Bc4 Qb8 {Black\'s best defense is passive, trying not to create any weaknesses while the queen keeps b6 guarded.} 5. Bc1 {The bishop cannot break Black with sheer force (sacrifice), nor can he sneak around the defense. It\'s therefore the king\'s turn to attempt a siege. But in the meantime, a3 must be protected to keep the black king cornered and to prevent b3 breakthroughs.} (5. Bf4 Qd8 6. Bg3 Qb8 {keeping both b6 and d6 defended}) 5... Qd8 6. Kc2 ({cooked: undesired secondary winning plan:} 6. Kb1 Qb8 7. f3 Qd8 8. Nf4 Qc8 9. Nd3 Qf5 10. Ka1 Qxf3 11. Nb2+ Ka3 12. Be6 Qc3 13. Kb1 {+-}) 6... Qb8 7. Bb2 Qa7 8. f3 {defending g4} (8. f4 {?} Qb8 9. Kd3 Qa7 10. Ke4 Qb8 11. Kf5 (11. Kf3 Qd8 12. Kg4 Qc8+ 13. Kg3 {=}) 11... Qc8+ 12. Kg6 Qb7 13. Kh7 {?} g5+ 14. Kxh6 g4 15. Kg6 g3 16. Bc1 (16. h6 g2 17. h7 g1=Q+ {-+}) 16... g2 17. Be3 Qb8 18. Kg7 (18. Kf7 b3 19. axb3+ Ka3 20. h6 Qh8 21. f5 Qh7+ 22. Kxf6 g1=Q 23. Bxg1 Qxh6+ 24. Ke7 Qg7+ 25. Kxd6 Qxg1 26. f6 Qg3+ 27. Kxc5 a4 28. bxa4 Kxa4) 18... b3 19. axb3+ Ka3 20. h6 Qe8 21. h7 Qxe3 22. Nxe3 g1=Q+ 23. Kf7 Qh1 24. Kg7 Qg1+ 25. Kf7) (8. Kd3 {The king move is not terrible by itself, but without f3 it is a draw.} Qb7 9. Ke4 Qb8 10. Kf4 Qd8 11. Kf5 Qc8+ 12. Kg6 Qg4+ 13. Kh7 Qxc4 14. Nb6+ Kb5 15. Nxc4 Kxc4 16. Kxg7 b3 17. axb3+ Kxb3 18. Bxf6 (18. Bc1 c4 19. Kxh6 c3 20. Kg6 a4 21. h6 a3 22. Bxa3 Kxa3 23. h7 c2 24. h8=Q c1=Q {=}) 18... d5 19. Kxh6 d4 20. Kg6 d3 21. Bg5 c4 22. h6 c3 23. h7 d2 24. h8=Q d1=Q {=}) 8... Qb7 9. Kd3 Qa7 10. Ke4 Qb7 11. Kf5 Qd7+ 12. Kg6 Qb7 13. Kh7 {the g5+ trick does not work, as the f-pawn can intercept} Qa7 14. Kg8 Qb7 15. Kf8 Qa7 16. Ke8 Qb7 17. Kd8 Qa7 18. Kc8 Qa8+ 19. Kd7 Qb8 (19... Qb7+ 20. Nc7 b3 21. a3 Qb6 22. Nd5 {threatening Nc3#} Qb5+ 23. Bxb5+ Kxb5 24. Kxd6 {+-}) 20. Nc7 b3 21. a3 Qb7 22. Bd5 Qxd5 23. Nxd5 Kb5 24. Kxd6';
+            currpgn[2] = '[Event "'+allstudystips[15][2]+'"][Site "Glarean"][Date "10.2015"][Round "'+allstudynames[15][2]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "8/q1p1N1p1/3p1p1p/pk5P/1p2BB2/8/PK3P2/8 w - - 0 1"] 1. Be3 ({Nicht} 1. Bd3+ {?} Ka4 2. Be3 Qb7 3. Bg6 (3. Nf5 {?} b3 4. a3 Qd5 5. Nd4 c6 6. Be2 Qc5 7. Bd1 Qxa3+ {-+}) 3... Kb5 4. Bd3+ Ka4 {=}) ({Nicht} 1. Bc6+ {?} Kc4 2. Be3 Qb8 3. Bf3 {droht Be2#} Kd3 4. Ng6 {droht Nf4+ Be2#} (4. Nd5 {wie 4.Ng6}) 4... Kc4 5. Ne7 {=} (5. Nf4 {?} Kb5 6. Be2+ Kc6 {-+})) 1... c5 (1... Qb8 2. Bd3+ Ka4 3. Nc6 Qb7 4. Nd4 Qd5 5. Bc2+ b3 6. Bxb3+ {+-}) 2. Bd3+ ({Nicht} 2. Bc6+ {?} Kc4 {-+}) 2... Ka4 (2... Kb6 3. Nc8+ {+-}) (2... c4 3. Bxc4+ Kxc4 4. Bxa7) 3. Nd5 ({Nicht} 3. Bc2+ {?} Kb5 (3... b3 {?} 4. axb3+ Kb5 5. Bd3+ Kb6 6. Nc8+ {+-}) 4. Bd3+ Ka4 {=}) 3... Qb7 (3... f5 4. f4 Qb7 5. Bc4 Qb8 6. Bf2 Qd8 7. Bh4 Qb8 (7... Qxh4 8. Nb6#) 8. Be7 Qb7 9. Bd8 Qa7 10. Nc7 {+-}) (3... Qb8 {wie 3...Qb7}) 4. Bc4 Qb8 {Die beste Verteidigung f&#252;r Schwarz besteht darin, passiv zu bleiben und keine weitere Schw&#228;chen zu produzieren, w&#228;hrend die Dame das Feld b6 bewacht.} 5. Bc1 {Der schwarzfeldrige L&#228;ufer kann nicht mit roher Opfer-Gewalt auf h6 durchbrechen, noch kann er die schwarze Verteidigung umgehen. Es ist also der weisse K&#246;nig selbst, der nun eine Belagerung in Angriff nimmt. In der Zwischenzeit muss a3 gesch&#252;tzt bleiben, um den schwarzen K&#246;nig in seinem Gef&#228;ngnis halten zu k&#246;nnen bzw. um einen Durchbruch mittels b3 zu verhindern.} (5. Bf4 Qd8 6. Bg3 Qb8 {verteidigt beide Felder b6 und d6}) 5... Qd8 6. Kc2 ({Nebenl&#246;sung:} 6. Kb1 Qb8 7. f3 Qd8 8. Nf4 Qc8 9. Nd3 Qf5 10. Ka1 Qxf3 11. Nb2+ Ka3 12. Be6 Qc3 13. Kb1 {+-}) 6... Qb8 7. Bb2 Qa7 8. f3 {verteidigt g4} (8. f4 {?} Qb8 9. Kd3 Qa7 10. Ke4 Qb8 11. Kf5 (11. Kf3 Qd8 12. Kg4 Qc8+ 13. Kg3 {=}) 11... Qc8+ 12. Kg6 Qb7 13. Kh7 {?} g5+ 14. Kxh6 g4 15. Kg6 g3 16. Bc1 (16. h6 g2 17. h7 g1=Q+ {-+}) 16... g2 17. Be3 Qb8 18. Kg7 (18. Kf7 b3 19. axb3+ Ka3 20. h6 Qh8 21. f5 Qh7+ 22. Kxf6 g1=Q 23. Bxg1 Qxh6+ 24. Ke7 Qg7+ 25. Kxd6 Qxg1 26. f6 Qg3+ 27. Kxc5 a4 28. bxa4 Kxa4) 18... b3 19. axb3+ Ka3 20. h6 Qe8 21. h7 Qxe3 22. Nxe3 g1=Q+ 23. Kf7 Qh1 24. Kg7 Qg1+ 25. Kf7) (8. Kd3 {Der K&#246;nigszug selbst ist nicht schlecht, aber ohne f3 ist es Remis.} Qb7 9. Ke4 Qb8 10. Kf4 Qd8 11. Kf5 Qc8+ 12. Kg6 Qg4+ 13. Kh7 Qxc4 14. Nb6+ Kb5 15. Nxc4 Kxc4 16. Kxg7 b3 17. axb3+ Kxb3 18. Bxf6 (18. Bc1 c4 19. Kxh6 c3 20. Kg6 a4 21. h6 a3 22. Bxa3 Kxa3 23. h7 c2 24. h8=Q c1=Q {=}) 18... d5 19. Kxh6 d4 20. Kg6 d3 21. Bg5 c4 22. h6 c3 23. h7 d2 24. h8=Q d1=Q {=}) 8... Qb7 9. Kd3 Qa7 10. Ke4 Qb7 11. Kf5 Qd7+ 12. Kg6 Qb7 13. Kh7 {wonach der g5-Trick nicht funktioniert, denn der weisse f-Bauer h&#228;lt dagegen.} Qa7 14. Kg8 Qb7 15. Kf8 Qa7 16. Ke8 Qb7 17. Kd8 Qa7 18. Kc8 Qa8+ 19. Kd7 Qb8 (19... Qb7+ 20. Nc7 b3 21. a3 Qb6 22. Nd5 {droht Nc3#} Qb5+ 23. Bxb5+ Kxb5 24. Kxd6 {+-}) 20. Nc7 b3 21. a3 Qb7 22. Bd5 Qxd5 23. Nxd5 Kb5 24. Kxd6';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(151);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(152);">Glarean</a> [2015]\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(151);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Published in <a href="javascript:void(0);" onClick="openChessObject(152);">Glarean</a> [2015]\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(151);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(152);">Glarean</a> [2015]\
+                        ';
+            break;
+            
+            
         default: 
             currchessfen = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
             coauthor = '';
@@ -430,18 +459,18 @@ function openChessObject(n)
 {
     switch(n)
     {	case  11: window.open('Images/C4.Chess/pdf/Homemade01.pdf');	break;
-        case  12: window.open('http://glareanverlag.wordpress.com/2009/10/01/studie_glarean_martan_neghina/');	break;
+        case  12: window.open('https://glarean-magazin.ch/2009/10/01/studie_glarean_martan_neghina/');	break;
         case  13: window.open('Images/C4.Chess/pdf/Homemade01_book.pdf');	break;
         case  14: window.open('http://www.schach-agentur.de/b%C3%BCcher/');	break;
         case  15: window.open('Images/C4.Chess/pdf/Homemade01_init.pdf');	break;
         case  16: window.open('http://www.matplus.net/start.php');	break;
         case  17: window.open('Images/C4.Chess/pdf/Homemade01_award.pdf');	break;
         case  21: window.open('Images/C4.Chess/pdf/Homemade02.pdf');	break;
-        case  22: window.open('http://glareanverlag.wordpress.com/2009/12/17/die-interessante-schachstudie_mihai-neghina_glarean-magazin/');	break;
+        case  22: window.open('https://glarean-magazin.ch/2009/12/17/die-interessante-schachstudie_mihai-neghina_glarean-magazin/');	break;
         case  31: window.open('Images/C4.Chess/pdf/Homemade03.pdf');	break;
-        case  32: window.open('http://glareanverlag.wordpress.com/2010/07/24/der-brillante-schachzug_69_neghina_schach_glarean-magazin/');	break;
+        case  32: window.open('https://glarean-magazin.ch/2010/07/24/der-brillante-schachzug_69_neghina_schach_glarean-magazin/');	break;
         case  51: window.open('Images/C4.Chess/pdf/Homemade05.pdf');	break;
-        case  52: window.open('http://glareanverlag.wordpress.com/2011/03/19/schach_mihai-neghina-stubborness_glarean-magazin/');	break;
+        case  52: window.open('https://glarean-magazin.ch/2011/03/19/schach_mihai-neghina-stubborness_glarean-magazin/');	break;
         case  61: window.open('http://www.arves.org/PDF/HvdH50JTannouncement.pdf');	break;
         case  62: window.open('Images/C4.Chess/pdf/Homemade06.pdf');	break;
         case  63: window.open('http://www.arves.org/EG.htm');	break;
@@ -453,6 +482,8 @@ function openChessObject(n)
         case 131: window.open('Images/C4.Chess/pdf/Homemade13.pdf');	break;
         case 132: window.open('http://www.wfcc.ch/competitions/composing/9_wcct/');	break;
         case 141: window.open('http://www.arves.org/EG.htm');	break;
+        case 151: window.open('Images/C4.Chess/pdf/Homemade15.pdf');	break;
+        case 152: window.open('https://glarean-magazin.ch/2015/10/17/schach-chess-studie-study-mihai-neghina-urdruck-problemschach-glarean-magazin/');	break;    
         default: window.open('');
     }
 }
