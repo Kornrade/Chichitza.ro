@@ -162,6 +162,7 @@ function resetDivsToDefault()
 			document.getElementById("position-moves"    ).innerHTML = "";
 			document.getElementById("stipulation"       ).innerHTML = "";
 			document.getElementById("credentials"       ).innerHTML = "";
+            document.getElementById("legend"            ).innerHTML = "";
 			break;
 		case 1:	break;
 		case 2:	break;
@@ -587,11 +588,6 @@ function retranslateChessIntro()
 						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
 						\
                     <div onMouseOver=\"showChessPositionOnHover(00);\"><br/><br/><br></div>\
-					<div id = 'Legend' align='left' style='padding-left: 50'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<span id='spanlegend'></span>\
 					";
 					
 	document.getElementById("divHomemade01").setAttribute("onMouseOver","showChessPositionOnHover(01);");
@@ -611,6 +607,24 @@ function retranslateChessIntro()
 	
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";
 	
+    document.getElementById("legend").innerHTML = "\
+			        <div align='left' style='padding-left: 10'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						<i><span id='spanlegend1'></span></i></div>\
+                    <div align='left' style='padding-left: 10'>\
+                        <img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
+						<i><span id='spanlegend2'></span></i></div>\
+                    <div align='left' style='padding-left: 10'>\
+                        <img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
+						<i><span id='spanlegend3'></span></i></div>\
+                    ";
+    
 	//retranslate specific intro text of Chess
 	if(lang==="ro") {retranslateROChessIntro();}
 	if(lang==="en") {retranslateENChessIntro();}

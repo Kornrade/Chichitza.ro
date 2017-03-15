@@ -277,7 +277,9 @@ function retranslateDEChessIntro()
     document.getElementById("Homemade14").innerHTML=allstudynames[14][2];
     document.getElementById("Homemade15").innerHTML=allstudynames[15][2];
 
-	document.getElementById("spanlegend").innerHTML="Schwierigkeit f&#252;r Engines (Rechner)";	
+	document.getElementById("spanlegend1").innerHTML="Engines sind etwas verwirrt";	
+    document.getElementById("spanlegend2").innerHTML="Engines sind sehr verwirrt";	
+    document.getElementById("spanlegend3").innerHTML="Engines sind v&ouml;llig verwirrt";	
 		
 	}
 }

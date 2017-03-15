@@ -271,7 +271,9 @@ function retranslateROChessIntro()
     document.getElementById("Homemade14").innerHTML=allstudynames[14][0];
     document.getElementById("Homemade15").innerHTML=allstudynames[15][0];
 
-	document.getElementById("spanlegend").innerHTML="Dificultate pentru calculatoare";
+	document.getElementById("spanlegend1").innerHTML="Calculatorul este u&#x15F;or confuz";
+    document.getElementById("spanlegend2").innerHTML="Calculatorul este foarte confuz";
+    document.getElementById("spanlegend3").innerHTML="Calculatorul este confuz cu totul";
 	
 	}
 }

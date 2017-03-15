@@ -252,7 +252,9 @@ function retranslateENChessIntro()
     document.getElementById("Homemade14").innerHTML=allstudynames[14][1];
     document.getElementById("Homemade15").innerHTML=allstudynames[15][1];
 	
-	document.getElementById("spanlegend").innerHTML="Difficulty for engines (computers)";
+	document.getElementById("spanlegend1").innerHTML="Engines are slightly confused";
+    document.getElementById("spanlegend2").innerHTML="Engines are very confused";
+    document.getElementById("spanlegend3").innerHTML="Engines are utterly confused";
 	
 	}
 }
