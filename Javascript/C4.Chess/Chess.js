@@ -178,7 +178,7 @@ function setcurrchessvars(n)
                         Mentioned in paper <a href="javascript:void(0);" onClick="openChessObject(18);">Chess, Imagination and Perceptual Understanding</a> [P.Coates,2013]\
                         <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(13);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Story of the study published book <a href="javascript:void(0);" onClick="openChessObject(14);">A Study Apiece</a> [G.Josten,2010]\
+                        Story of the study published in book <a href="javascript:void(0);" onClick="openChessObject(14);">A Study Apiece</a> [G.Josten,2010]\
                         <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(11);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Final version published in <a href="javascript:void(0);" onClick="openChessObject(12);">Glarean</a> [2009]\
