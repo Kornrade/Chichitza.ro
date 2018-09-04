@@ -251,6 +251,7 @@ function retranslateENChessIntro()
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][1];
     document.getElementById("Homemade14").innerHTML=allstudynames[14][1];
     document.getElementById("Homemade15").innerHTML=allstudynames[15][1];
+    document.getElementById("Homemade16").innerHTML=allstudynames[16][1];
 	
 	document.getElementById("spanlegend1").innerHTML="Engines are slightly confused";
     document.getElementById("spanlegend2").innerHTML="Engines are very confused";

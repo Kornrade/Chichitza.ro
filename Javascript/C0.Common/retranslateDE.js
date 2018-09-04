@@ -276,6 +276,7 @@ function retranslateDEChessIntro()
 	document.getElementById("Homemade13").innerHTML=allstudynames[13][2];
     document.getElementById("Homemade14").innerHTML=allstudynames[14][2];
     document.getElementById("Homemade15").innerHTML=allstudynames[15][2];
+    document.getElementById("Homemade16").innerHTML=allstudynames[16][2];
 
 	document.getElementById("spanlegend1").innerHTML="Engines sind etwas verwirrt";	
     document.getElementById("spanlegend2").innerHTML="Engines sind sehr verwirrt";	

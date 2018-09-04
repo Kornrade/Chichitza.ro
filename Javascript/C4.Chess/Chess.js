@@ -81,6 +81,10 @@ allstudynames[15] = [];
 allstudynames[15][0] = 'H&#x103;r&#x163;uial&#x103;';
 allstudynames[15][1] = 'Harassment';
 allstudynames[15][2] = 'Bel&#228;stigung';
+allstudynames[16] = [];
+allstudynames[16][0] = 'Sufocare';
+allstudynames[16][1] = 'Smothering';
+allstudynames[16][2] = 'Erstickung';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
@@ -147,6 +151,10 @@ allstudystips[15] = [];
 allstudystips[15][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[15][1] = 'White to move and win';
 allstudystips[15][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[16] = [];
+allstudystips[16][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
+allstudystips[16][1] = 'White to move and win';
+allstudystips[16][2] = 'Wei&szlig; zieht und gewinnt';
 
 function setcurrchessvars(n)
 {
@@ -187,7 +195,7 @@ function setcurrchessvars(n)
                         Initial (cooked) version published in <a href="javascript:void(0);" onClick="openChessObject(16);">MatPlus</a> [2009]\
                         <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(17);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Awarded an honorable mention in <a href="javascript:void(0);" onClick="openChessObject(16);">MatPlus</a> Informal Tourney 2009\
+                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(16);">MatPlus</a> Informal Tourney 2009\
                         ';
             currchessinfo[2] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(19);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
@@ -384,14 +392,23 @@ function setcurrchessvars(n)
             currchessinfo[0] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
                         ';
             currchessinfo[1] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> Informal Tourney 2012\
                         ';
             currchessinfo[2] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> Informal Tourney 2012 gewonnen\
                         ';
             break;
                
@@ -455,6 +472,41 @@ function setcurrchessvars(n)
             break;
             
             
+        case 16: 
+            currchessfen = '[FEN "6kq/2p4p/6P1/5nN1/K7/2P5/7B/3B4 w - - 0 1"]';
+            coauthor = 'Michael Roxlau';
+            currpgn[0] = '[Event "'+allstudystips[16][0]+'"][Site "Die Schwalbe"][Date "12.2016"][Round "'+allstudynames[16][0]+'"][White "Mihai Neghina"][Black "Michael Roxlau"][Result "1-0"][FEN "6kq/2p4p/6P1/5nN1/K7/2P5/7B/3B4 w - - 0 1"] 1. Bb3+ {!} (1. g7 Nxg7 2. Bb3+ Ne6 {!} {=}) 1... Kf8 2. g7+ {!} Nxg7 3. Nf7 Qg8 4. Nh6 Qh8 5. Be5 Ke7 6. Bg8 Kf8 (6... Qxg8 7. Nxg8+ Kf7 8. Nh6+ Kg6 9. Ng4 {+-}) 7. Bd4 {!} (7. Kb5 Qxg8 {=}) 7... Ke8 (7... Qxg8 8. Bc5+ Ke8 9. Nxg8 {+-}) 8.Kb5 Kd7 9. Be5 {!} (9. Kc5 Kc8 {!} 10. Kc6 Kb8 {=}) 9... Ke8 (9... Kc8 10. Kc6 {+-}) 10. Kc6 Kf8 11. Bd4 {!} Qxg8 12. Bc5+ Ke8 13. Nxg8 {+-}';
+            currpgn[1] = '[Event "'+allstudystips[16][1]+'"][Site "Die Schwalbe"][Date "12.2016"][Round "'+allstudynames[16][1]+'"][White "Mihai Neghina"][Black "Michael Roxlau"][Result "1-0"][FEN "6kq/2p4p/6P1/5nN1/K7/2P5/7B/3B4 w - - 0 1"] 1. Bb3+ {!} (1. g7 Nxg7 2. Bb3+ Ne6 {!} {=}) 1... Kf8 2. g7+ {!} Nxg7 3. Nf7 Qg8 4. Nh6 Qh8 5. Be5 Ke7 6. Bg8 Kf8 (6... Qxg8 7. Nxg8+ Kf7 8. Nh6+ Kg6 9. Ng4 {+-}) 7. Bd4 {!} (7. Kb5 Qxg8 {=}) 7... Ke8 (7... Qxg8 8. Bc5+ Ke8 9. Nxg8 {+-}) 8.Kb5 Kd7 9. Be5 {!} (9. Kc5 Kc8 {!} 10. Kc6 Kb8 {=}) 9... Ke8 (9... Kc8 10. Kc6 {+-}) 10. Kc6 Kf8 11. Bd4 {!} Qxg8 12. Bc5+ Ke8 13. Nxg8 {+-}';
+            currpgn[2] = '[Event "'+allstudystips[16][2]+'"][Site "Die Schwalbe"][Date "12.2016"][Round "'+allstudynames[16][2]+'"][White "Mihai Neghina"][Black "Michael Roxlau"][Result "1-0"][FEN "6kq/2p4p/6P1/5nN1/K7/2P5/7B/3B4 w - - 0 1"] 1. Bb3+ {!} (1. g7 Nxg7 2. Bb3+ Ne6 {!} {=}) 1... Kf8 2. g7+ {!} Nxg7 3. Nf7 Qg8 4. Nh6 Qh8 5. Be5 Ke7 6. Bg8 Kf8 (6... Qxg8 7. Nxg8+ Kf7 8. Nh6+ Kg6 9. Ng4 {+-}) 7. Bd4 {!} (7. Kb5 Qxg8 {=}) 7... Ke8 (7... Qxg8 8. Bc5+ Ke8 9. Nxg8 {+-}) 8.Kb5 Kd7 9. Be5 {!} (9. Kc5 Kc8 {!} 10. Kc6 Kb8 {=}) 9... Ke8 (9... Kc8 10. Kc6 {+-}) 10. Kc6 Kf8 11. Bd4 {!} Qxg8 12. Bc5+ Ke8 13. Nxg8 {+-}';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(161);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(163);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        A c&#xE2;&#x15F;tigat premiul 3 &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
+                        <br/><br/>\
+                        <i>O versiune mai grea (pentru  calculatoare) ar fi urm&#x103;toarea:</i> <a href="javascript:void(0);" onClick="openChessObject(160);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(161);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Published in <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(163);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Awarded 3rd prize in the <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> Informal Tourney 2016\
+                        <br/><br/>\
+                        <i>A tougher version of the puzzle (for the engines) would be the following:</i> <a href="javascript:void(0);" onClick="openChessObject(160);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(161);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(163);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Hat den 3. Preis in <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> Informal Tourney 2016 gewonnen\
+                        <br/><br/>\
+                        <i>Eine schw&auml;rere Version (f&uuml;r die Engines) w&auml;re die folgende:</i> <a href="javascript:void(0);" onClick="openChessObject(160);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        ';
+            break;
+            
         default: 
             currchessfen = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
             coauthor = '';
@@ -493,12 +545,17 @@ function openChessObject(n)
         case 101: window.open('http://www.euroschach.de/Zeitschrift-Schach-Heft-2012-9.html');	break;
         case 121: window.open('Images/C4.Chess/pdf/Homemade12.pdf');	break;
         case 122: window.open('http://www.frsah.ro/index.php?action=listingview&listingID=608');	break;
+        case 123: window.open('Images/C4.Chess/pdf/Homemade12_award.pdf');	break;
         case 131: window.open('Images/C4.Chess/pdf/Homemade13.pdf');	break;
         case 132: window.open('http://www.wfcc.ch/competitions/composing/9_wcct/');	break;
         case 141: window.open('Images/C4.Chess/pdf/Homemade14.pdf');	break;
         case 142: window.open('http://www.arves.org/EG.htm');	break;
         case 151: window.open('Images/C4.Chess/pdf/Homemade15.pdf');	break;
         case 152: window.open('https://glarean-magazin.ch/2015/10/17/schach-chess-studie-study-mihai-neghina-urdruck-problemschach-glarean-magazin/');	break;    
+        case 160: window.open('Images/C4.Chess/pdf/Homemade16_tough.pdf');	break;
+        case 161: window.open('Images/C4.Chess/pdf/Homemade16.pdf');	break;
+        case 162: window.open('https://www.dieschwalbe.de/dieschwalbe.htm');	break;
+        case 163: window.open('Images/C4.Chess/pdf/Homemade16_award.pdf');	break;
         default: window.open('');
     }
 }
