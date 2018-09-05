@@ -22,7 +22,7 @@ var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=inter
 var lang; // the current language: "ro" "en" "de"
 var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
-var allstudynames, currchessinfo, coauthor;
+var allstudynames, allstudydates, currchessinfo, coauthor;
 
 /*global showSolution*/
 
@@ -230,6 +230,8 @@ function retranslateENInteractiveIntro()
 
 function retranslateENChessIntro() 
 {
+    var k, studyNumberString;
+    
 	// translations to EN =========================	
 	if(lang==="en")
 	{
@@ -237,21 +239,17 @@ function retranslateENChessIntro()
 	document.getElementById("divTitle").innerHTML = "CHESS STUDIES";
 	
 	// Cell (3)
-	document.getElementById("Homemade01").innerHTML=allstudynames[ 1][1];
-	document.getElementById("Homemade02").innerHTML=allstudynames[ 2][1];
-	document.getElementById("Homemade03").innerHTML=allstudynames[ 3][1];
-	document.getElementById("Homemade04").innerHTML=allstudynames[ 4][1];	
-	document.getElementById("Homemade05").innerHTML=allstudynames[ 5][1];	
-	document.getElementById("Homemade06").innerHTML=allstudynames[ 6][1];
-	document.getElementById("Homemade08").innerHTML=allstudynames[ 8][1];
-	document.getElementById("Homemade09").innerHTML=allstudynames[ 9][1];	
-	document.getElementById("Homemade10").innerHTML=allstudynames[10][1];
-	document.getElementById("Homemade11").innerHTML=allstudynames[11][1];
-    document.getElementById("Homemade12").innerHTML=allstudynames[12][1];
-	document.getElementById("Homemade13").innerHTML=allstudynames[13][1];
-    document.getElementById("Homemade14").innerHTML=allstudynames[14][1];
-    document.getElementById("Homemade15").innerHTML=allstudynames[15][1];
-    document.getElementById("Homemade16").innerHTML=allstudynames[16][1];
+	for(k = 1; k < allstudydates.length; k++)
+    {
+                    studyNumberString = "";
+        if( k < 10){studyNumberString += "0";}
+                    studyNumberString += k.toString();
+        
+        if(allstudydates[k].length>0)
+        {
+            document.getElementById("Homemade"+studyNumberString).innerHTML=allstudynames[k][1];
+        }
+    }
 	
 	document.getElementById("spanlegend1").innerHTML="Engines are slightly confused";
     document.getElementById("spanlegend2").innerHTML="Engines are very confused";

@@ -16,6 +16,120 @@ var coauthor;
 var currpgn = [];
 var currchessinfo = [];
 
+var allstudydates = [];
+allstudydates[ 0] = '';
+allstudydates[ 1] = '[2009]';
+allstudydates[ 2] = '[2009]';
+allstudydates[ 3] = '[2010]';
+allstudydates[ 4] = '[2010]';
+allstudydates[ 5] = '[2011]';
+allstudydates[ 6] = '[2011]';
+allstudydates[ 7] = '';
+allstudydates[ 8] = '[2012]';
+allstudydates[ 9] = '[2012]';
+allstudydates[10] = '[2012]';
+allstudydates[11] = '[2012]';
+allstudydates[12] = '[2012]';
+allstudydates[13] = '[2013]';
+allstudydates[14] = '[2015]';
+allstudydates[15] = '[2015]';
+allstudydates[16] = '[2016]';
+allstudydates[17] = '[2017]';
+
+var allstudyawards = [];
+allstudyawards[ 0] = '';
+allstudyawards[ 1] = 'Medal_H.png';
+allstudyawards[ 2] = '';
+allstudyawards[ 3] = '';
+allstudyawards[ 4] = '';
+allstudyawards[ 5] = '';
+allstudyawards[ 6] = 'Medal_H.png';
+allstudyawards[ 7] = '';
+allstudyawards[ 8] = '';
+allstudyawards[ 9] = '';
+allstudyawards[10] = '';
+allstudyawards[11] = '';
+allstudyawards[12] = 'Medal_H.png';
+allstudyawards[13] = '';
+allstudyawards[14] = '';
+allstudyawards[15] = '';
+allstudyawards[16] = 'Medal_3.png';
+allstudyawards[17] = 'Medal_H.png';
+
+var allstudydifficulty = [];
+allstudydifficulty[ 0] = [];
+allstudydifficulty[ 0][0] = 'bec_bej.png';
+allstudydifficulty[ 0][1] = 'bec_bej.png';
+allstudydifficulty[ 0][2] = 'bec_bej.png';
+allstudydifficulty[ 1] = [];
+allstudydifficulty[ 1][0] = 'bec_bej.png';
+allstudydifficulty[ 1][1] = 'bec_bej.png';
+allstudydifficulty[ 1][2] = 'bec_gri.png';
+allstudydifficulty[ 2] = [];
+allstudydifficulty[ 2][0] = 'bec_bej.png';
+allstudydifficulty[ 2][1] = 'bec_gri.png';
+allstudydifficulty[ 2][2] = 'bec_gri.png';
+allstudydifficulty[ 3] = [];
+allstudydifficulty[ 3][0] = 'bec_bej.png';
+allstudydifficulty[ 3][1] = 'bec_bej.png';
+allstudydifficulty[ 3][2] = 'bec_bej.png';
+allstudydifficulty[ 4] = [];
+allstudydifficulty[ 4][0] = 'bec_bej.png';
+allstudydifficulty[ 4][1] = 'bec_bej.png';
+allstudydifficulty[ 4][2] = 'bec_gri.png';
+allstudydifficulty[ 5] = [];
+allstudydifficulty[ 5][0] = 'bec_bej.png';
+allstudydifficulty[ 5][1] = 'bec_bej.png';
+allstudydifficulty[ 5][2] = 'bec_gri.png';
+allstudydifficulty[ 6] = [];
+allstudydifficulty[ 6][0] = 'bec_bej.png';
+allstudydifficulty[ 6][1] = 'bec_bej.png';
+allstudydifficulty[ 6][2] = 'bec_gri.png';
+allstudydifficulty[ 7] = [];
+allstudydifficulty[ 7][0] = 'bec_bej.png';
+allstudydifficulty[ 7][1] = 'bec_bej.png';
+allstudydifficulty[ 7][2] = 'bec_bej.png';
+allstudydifficulty[ 8] = [];
+allstudydifficulty[ 8][0] = 'bec_bej.png';
+allstudydifficulty[ 8][1] = 'bec_bej.png';
+allstudydifficulty[ 8][2] = 'bec_gri.png';
+allstudydifficulty[ 9] = [];
+allstudydifficulty[ 9][0] = 'bec_bej.png';
+allstudydifficulty[ 9][1] = 'bec_bej.png';
+allstudydifficulty[ 9][2] = 'bec_gri.png';
+allstudydifficulty[10] = [];
+allstudydifficulty[10][0] = 'bec_bej.png';
+allstudydifficulty[10][1] = 'bec_gri.png';
+allstudydifficulty[10][2] = 'bec_gri.png';
+allstudydifficulty[11] = [];
+allstudydifficulty[11][0] = 'bec_bej.png';
+allstudydifficulty[11][1] = 'bec_bej.png';
+allstudydifficulty[11][2] = 'bec_gri.png';
+allstudydifficulty[12] = [];
+allstudydifficulty[12][0] = 'bec_bej.png';
+allstudydifficulty[12][1] = 'bec_bej.png';
+allstudydifficulty[12][2] = 'bec_gri.png';
+allstudydifficulty[13] = [];
+allstudydifficulty[13][0] = 'bec_bej.png';
+allstudydifficulty[13][1] = 'bec_bej.png';
+allstudydifficulty[13][2] = 'bec_bej.png';
+allstudydifficulty[14] = [];
+allstudydifficulty[14][0] = 'bec_bej.png';
+allstudydifficulty[14][1] = 'bec_bej.png';
+allstudydifficulty[14][2] = 'bec_bej.png';
+allstudydifficulty[15] = [];
+allstudydifficulty[15][0] = 'bec_bej.png';
+allstudydifficulty[15][1] = 'bec_bej.png';
+allstudydifficulty[15][2] = 'bec_gri.png';
+allstudydifficulty[16] = [];
+allstudydifficulty[16][0] = 'bec_bej.png';
+allstudydifficulty[16][1] = 'bec_gri.png';
+allstudydifficulty[16][2] = 'bec_gri.png';
+allstudydifficulty[17] = [];
+allstudydifficulty[17][0] = 'bec_bej.png';
+allstudydifficulty[17][1] = 'bec_gri.png';
+allstudydifficulty[17][2] = 'bec_gri.png';
+
 var allstudynames = [];
 allstudynames[ 0] = [];
 allstudynames[ 0][0] = '...';
@@ -66,9 +180,9 @@ allstudynames[11][0] = 'Urm&#x103;rire';
 allstudynames[11][1] = 'Chase';
 allstudynames[11][2] = 'Verfolgung';
 allstudynames[12] = [];
-allstudynames[12][0] = 'Cerere tripla';
-allstudynames[12][1] = 'Threefold request';
-allstudynames[12][2] = 'Dreimalige Anfrage';
+allstudynames[12][0] = 'Disperare';
+allstudynames[12][1] = 'Desperation';
+allstudynames[12][2] = 'Verzweiflung';
 allstudynames[13] = [];
 allstudynames[13][0] = 'Scut';
 allstudynames[13][1] = 'Shield';
@@ -85,76 +199,102 @@ allstudynames[16] = [];
 allstudynames[16][0] = 'Sufocare';
 allstudynames[16][1] = 'Smothering';
 allstudynames[16][2] = 'Erstickung';
+allstudynames[17] = [];
+allstudynames[17][0] = 'Undi&#x163;&#x103;';
+allstudynames[17][1] = 'Fishing Rod';
+allstudynames[17][2] = 'Angelrute';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
 allstudystips[ 0][0] = '...';
 allstudystips[ 0][1] = '...';
 allstudystips[ 0][2] = '...';
+allstudystips[ 0][3] = '...';
 allstudystips[ 1] = [];
 allstudystips[ 1][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 1][1] = 'White to move and win';
 allstudystips[ 1][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[ 1][3] = '+-';
 allstudystips[ 2] = [];
 allstudystips[ 2][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 2][1] = 'White to move and win';
 allstudystips[ 2][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[ 2][3] = '+-';
 allstudystips[ 3] = [];
 allstudystips[ 3][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 3][1] = 'White to move and win';
 allstudystips[ 3][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[ 3][3] = '+-';
 allstudystips[ 4] = [];
 allstudystips[ 4][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 4][1] = 'White to move and win';
 allstudystips[ 4][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[ 4][3] = '+-';
 allstudystips[ 5] = [];
 allstudystips[ 5][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
 allstudystips[ 5][1] = 'White to move and draw';
 allstudystips[ 5][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[ 5][3] = '==';
 allstudystips[ 6] = [];
 allstudystips[ 6][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 6][1] = 'White to move and win';
 allstudystips[ 6][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[ 6][3] = '+-';
 allstudystips[ 7] = [];
 allstudystips[ 7][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 7][1] = 'White to move and win';
 allstudystips[ 7][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[ 7][3] = '+-';
 allstudystips[ 8] = [];
 allstudystips[ 8][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 8][1] = 'White to move and win';
 allstudystips[ 8][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[ 8][3] = '+-';
 allstudystips[ 9] = [];
 allstudystips[ 9][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
 allstudystips[ 9][1] = 'White to move and draw';
 allstudystips[ 9][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[ 9][3] = '==';
 allstudystips[10] = [];
 allstudystips[10][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
 allstudystips[10][1] = 'White to move and draw';
 allstudystips[10][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[10][3] = '==';
 allstudystips[11] = [];
 allstudystips[11][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[11][1] = 'White to move and win';
 allstudystips[11][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[11][3] = '+-';
 allstudystips[12] = [];
 allstudystips[12][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
 allstudystips[12][1] = 'White to move and draw';
 allstudystips[12][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[12][3] = '==';
 allstudystips[13] = [];
 allstudystips[13][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[13][1] = 'White to move and win';
 allstudystips[13][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[13][3] = '+-';
 allstudystips[14] = [];
 allstudystips[14][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[14][1] = 'White to move and win';
 allstudystips[14][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[14][3] = '+-';
 allstudystips[15] = [];
 allstudystips[15][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[15][1] = 'White to move and win';
 allstudystips[15][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[15][3] = '+-';
 allstudystips[16] = [];
 allstudystips[16][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[16][1] = 'White to move and win';
 allstudystips[16][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[16][3] = '+-';
+allstudystips[17] = [];
+allstudystips[17][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
+allstudystips[17][1] = 'White to move and draw';
+allstudystips[17][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[17][3] = '==';
 
 function setcurrchessvars(n)
 {
@@ -483,7 +623,7 @@ function setcurrchessvars(n)
                         Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
                         <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(163);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        A c&#xE2;&#x15F;tigat premiul 3 &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
+                        A c&#xE2;&#x15F;tigat premiul 3 &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a>\
                         <br/><br/>\
                         <i>O versiune mai grea (pentru  calculatoare) ar fi urm&#x103;toarea:</i> <a href="javascript:void(0);" onClick="openChessObject(160);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         ';
@@ -492,7 +632,7 @@ function setcurrchessvars(n)
                         Published in <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
                         <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(163);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Awarded 3rd prize in the <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> Informal Tourney 2016\
+                        Awarded 3rd prize in the <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> Informal Tourney\
                         <br/><br/>\
                         <i>A tougher version of the puzzle (for the engines) would be the following:</i> <a href="javascript:void(0);" onClick="openChessObject(160);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         ';
@@ -501,9 +641,29 @@ function setcurrchessvars(n)
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> [2016]\
                         <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(163);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Hat den 3. Preis in <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> Informal Tourney 2016 gewonnen\
+                        Hat den 3. Preis in <a href="javascript:void(0);" onClick="openChessObject(162);">Die Schwalbe</a> Informal Tourney gewonnen\
                         <br/><br/>\
-                        <i>Eine schw&auml;rere Version (f&uuml;r die Engines) w&auml;re die folgende:</i> <a href="javascript:void(0);" onClick="openChessObject(160);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        <i>Eine schwerere Version (f&uuml;r die Engines) w&auml;re die folgende:</i> <a href="javascript:void(0);" onClick="openChessObject(160);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        ';
+            break;
+            
+        case 17: 
+            currchessfen = '[FEN "8/1B3b1p/7P/p2p4/P2pp1kp/Q7/1N1Pq2P/7K w - - 0 1"]';
+            coauthor = '';
+            currpgn[0] = '[Event "'+allstudystips[17][0]+'"][Site "ARVES/UAPA"][Date "09.2017"][Round "'+allstudynames[17][0]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/1B3b1p/7P/p2p4/P2pp1kp/Q7/1N1Pq2P/7K w - - 0 1"] 1. Qh3{!} (1. Bc8{?} Kh5{-+}) (1. h3{?} Kh5{-+}) (1. Qa1{?} Kf3{-+}) 1... Kh3 (1... Kg5 2. Qg2{=}) (1... Kf4{?} 2. Qh4{+-}) 2. Bc8 Qg4 3. Nd1{!} (3. Nd3{?} exd3 {nu poate mentine amenintarea de pat}) 3... e3 4. d3 (4. dxe3 dxe3 5. Be6 d4 {mutare de tempo care rupe simetria nebunilor, -+}) 4... Qxc8 (4... Bg6 5. Bf5{=}) (4... Bh5 5. Be6{=}) (4... Be8 5. Bd7{=}) (4... Bg8 5. Be6{=}) (4... Be6 5. Be6{=}) 5. Nf2 exf2 {pat}';
+            currpgn[1] = '[Event "'+allstudystips[17][1]+'"][Site "ARVES/UAPA"][Date "09.2017"][Round "'+allstudynames[17][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/1B3b1p/7P/p2p4/P2pp1kp/Q7/1N1Pq2P/7K w - - 0 1"] 1. Qh3{!} (1. Bc8{?} Kh5{-+}) (1. h3{?} Kh5{-+}) (1. Qa1{?} Kf3{-+}) 1... Kh3 (1... Kg5 2. Qg2{=}) (1... Kf4{?} 2. Qh4{+-}) 2. Bc8 Qg4 3. Nd1{!} (3. Nd3{?} exd3 {cannot sustain the stalemate threat}) 3... e3 4. d3 (4. dxe3 dxe3 5. Be6 d4 {tempo-losing move that breaks the bishop symmetry, -+}) 4... Qxc8 (4... Bg6 5. Bf5{=}) (4... Bh5 5. Be6{=}) (4... Be8 5. Bd7{=}) (4... Bg8 5. Be6{=}) (4... Be6 5. Be6{=}) 5. Nf2 exf2 {stalemate}';
+            currpgn[2] = '[Event "'+allstudystips[17][2]+'"][Site "ARVES/UAPA"][Date "09.2017"][Round "'+allstudynames[17][2]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/1B3b1p/7P/p2p4/P2pp1kp/Q7/1N1Pq2P/7K w - - 0 1"] 1. Qh3{!} (1. Bc8{?} Kh5{-+}) (1. h3{?} Kh5{-+}) (1. Qa1{?} Kf3{-+}) 1... Kh3 (1... Kg5 2. Qg2{=}) (1... Kf4{?} 2. Qh4{+-}) 2. Bc8 Qg4 3. Nd1{!} (3. Nd3{?} exd3 {kann die Pattsituation nicht aufrechterhalten}) 3... e3 4. d3 (4. dxe3 dxe3 5. Be6 d4 {Tempo-Zug, der die L&aumlufersymmetrie bricht, -+}) 4... Qxc8 (4... Bg6 5. Bf5{=}) (4... Bh5 5. Be6{=}) (4... Be8 5. Bd7{=}) (4... Bg8 5. Be6{=}) (4... Be6 5. Be6{=}) 5. Nf2 exf2 {Patt}';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(171);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul formal <a href="javascript:void(0);" onClick="openChessObject(172);">Peter Krug 50JT</a> [2017]\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(171);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Awarded an honorable mention in the formal tourney <a href="javascript:void(0);" onClick="openChessObject(172);">Peter Krug 50JT</a> [2017]\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(171);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(172);">Peter Krug 50JT</a> Formal Tourney [2017] gewonnen\
                         ';
             break;
             
@@ -537,7 +697,7 @@ function openChessObject(n)
         case  32: window.open('https://glarean-magazin.ch/2010/07/24/der-brillante-schachzug_69_neghina_schach_glarean-magazin/');	break;
         case  51: window.open('Images/C4.Chess/pdf/Homemade05.pdf');	break;
         case  52: window.open('https://glarean-magazin.ch/2011/03/19/schach_mihai-neghina-stubborness_glarean-magazin/');	break;
-        case  61: window.open('http://www.arves.org/PDF/HvdH50JTannouncement.pdf');	break;
+        case  61: window.open('http://www.arves.org/arves/index.php/en/awards/awards-replayable/251-van-der-heijden-50-jt-2011');	break;
         case  62: window.open('Images/C4.Chess/pdf/Homemade06.pdf');	break;
         case  63: window.open('http://www.arves.org/EG.htm');	break;
         case  81: window.open('Images/C4.Chess/pdf/Homemade08.pdf');	break;
@@ -556,6 +716,8 @@ function openChessObject(n)
         case 161: window.open('Images/C4.Chess/pdf/Homemade16.pdf');	break;
         case 162: window.open('https://www.dieschwalbe.de/dieschwalbe.htm');	break;
         case 163: window.open('Images/C4.Chess/pdf/Homemade16_award.pdf');	break;
+        case 171: window.open('Images/C4.Chess/pdf/Homemade17_award.pdf');	break;
+        case 172: window.open('http://www.arves.org/arves/index.php/en/awards/awards-replayable/1235-peter-krug-50-jt-2017');	break;
         default: window.open('');
     }
 }

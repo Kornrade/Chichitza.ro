@@ -21,6 +21,7 @@ var lang; // the current language: "ro" "en" "de"
 var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
 var currchessfen;
+var allstudystips, allstudydates, allstudyawards, allstudydifficulty;
 var mazeRules;
 
 /*global resetDivsToDefault */
@@ -482,136 +483,66 @@ function retranslateInteractiveIntro()
 
 function retranslateChessIntro() 
 {
+    var k, divMainString, studyNumberString;
+    
 	document.getElementById("divTitle").setAttribute("onMouseOver","showChessPositionOnHover(00)");
 	
 	document.getElementById("divMainContentsLeftIcon").innerHTML="<br/><br/><img src='Images/C0.Common/C4.Chess.png' width='128'></img>";
 	showImageOnHover("","");
-	
-		document.getElementById("divMainContents").innerHTML = "\
-					<br/><br/>\
-					<div id='divHomemade01'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade01' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade02'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade02' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade03'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade03' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade04'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade04' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade05'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade05' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> == </span> </div>\
-						\
-					<div id='divHomemade06'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade06' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade08'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade08' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade09'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade09' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> == </span> </div>\
-						\
-					<div id='divHomemade10'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade10' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> == </span> </div>\
-						\
-					<div id='divHomemade11'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade11' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-                    <div id='divHomemade12'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade12' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> == </span> </div>\
-                        \
-					<div id='divHomemade13'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade13' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade14'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade14' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-					<div id='divHomemade15'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade15' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-                    <div id='divHomemade16'>\
-						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						<img src='Images/C4.Chess/bec_gri.png' width='16' height='16'>\
-						&nbsp; &nbsp; <a id='Homemade16' style=\"display:inline-block;width:180;\"></a>\
-						<span style=\"display:inline-block;width:100;\"> +- </span> </div>\
-						\
-                    <div onMouseOver=\"showChessPositionOnHover(00);\"><br/><br/><br></div>\
-					";
+    
+    divMainString = "<br/><br/>";
+    for(k = 1; k < allstudydates.length; k++)
+    {
+                    studyNumberString = "";
+        if( k < 10){studyNumberString += "0";}
+                    studyNumberString += k.toString();
+        
+        if(allstudydates[k].length>0)
+        {
+           divMainString += "<div id='divHomemade" + studyNumberString + "'>";
+
+           divMainString += "<img src='Images/C4.Chess/" + allstudydifficulty[k][0] + "' width='16' height='16'>";
+           divMainString += "<img src='Images/C4.Chess/" + allstudydifficulty[k][1] + "' width='16' height='16'>";
+           divMainString += "<img src='Images/C4.Chess/" + allstudydifficulty[k][2] + "' width='16' height='16'>";
+
+           divMainString += " &nbsp; ";
+           divMainString += "<small>" + allstudydates[k] + "</small>";
+
+           divMainString += " &nbsp; ";
+           divMainString += "<a id='Homemade" + studyNumberString + "' style=\"display:inline-block;width:150;\"></a>";
+
+           divMainString += "<span id='spanStipulation01' style=\"display:inline-block;width:25;\"> " + allstudystips[k][3] + " </span>";
+
+           if(allstudyawards[k].length > 0)
+            { 
+              divMainString += "<img src='Images/C4.Chess/" + allstudyawards[k] + "' width='16' height='16'>"; 
+            }
+            
+            divMainString += "<span style=\"display:inline-block;width:25;\"> </span>";
+
+            divMainString += "</div>";
+            
+        }
+                    
+    }
+    
+    divMainString += "<div onMouseOver=\"showChessPositionOnHover(00);\"><br/><br/><br></div>";
+	document.getElementById("divMainContents").innerHTML = divMainString;
+    
+    for(k = 1; k < allstudydates.length; k++)
+    {
+                    studyNumberString = "";
+        if( k < 10){studyNumberString += "0";}
+                    studyNumberString += k.toString();
+        
+        if(allstudydates[k].length>0)
+        {
+            // fill other fields and attributes related to the display of the study
+            document.getElementById("divHomemade"+studyNumberString).setAttribute("onMouseOver","showChessPositionOnHover("+studyNumberString+");");
+            document.getElementById("Homemade"+studyNumberString).href = "Chess.html?lang="+lang+"&aux="+studyNumberString;
+        }
+    }
 					
-	document.getElementById("divHomemade01").setAttribute("onMouseOver","showChessPositionOnHover(01);");
-	document.getElementById("divHomemade02").setAttribute("onMouseOver","showChessPositionOnHover(02);");
-	document.getElementById("divHomemade03").setAttribute("onMouseOver","showChessPositionOnHover(03);");
-	document.getElementById("divHomemade04").setAttribute("onMouseOver","showChessPositionOnHover(04);");
-	document.getElementById("divHomemade05").setAttribute("onMouseOver","showChessPositionOnHover(05);");
-	document.getElementById("divHomemade06").setAttribute("onMouseOver","showChessPositionOnHover(06);");
-	document.getElementById("divHomemade08").setAttribute("onMouseOver","showChessPositionOnHover(08);");
-	document.getElementById("divHomemade09").setAttribute("onMouseOver","showChessPositionOnHover(09);");
-	document.getElementById("divHomemade10").setAttribute("onMouseOver","showChessPositionOnHover(10);");
-	document.getElementById("divHomemade11").setAttribute("onMouseOver","showChessPositionOnHover(11);");
-    document.getElementById("divHomemade12").setAttribute("onMouseOver","showChessPositionOnHover(12);");
-	document.getElementById("divHomemade13").setAttribute("onMouseOver","showChessPositionOnHover(13);");
-    document.getElementById("divHomemade14").setAttribute("onMouseOver","showChessPositionOnHover(14);");
-    document.getElementById("divHomemade15").setAttribute("onMouseOver","showChessPositionOnHover(15);");
-    document.getElementById("divHomemade16").setAttribute("onMouseOver","showChessPositionOnHover(16);");
 	
 	document.getElementById("credentials").innerHTML = "<p><font size='1'>[<a href='http://chesstempo.com' target='_blank'>Board powered by ChessTempo Viewer</a>]</font></p>";
 	
@@ -637,22 +568,6 @@ function retranslateChessIntro()
 	if(lang==="ro") {retranslateROChessIntro();}
 	if(lang==="en") {retranslateENChessIntro();}
 	if(lang==="de") {retranslateDEChessIntro();}
-	
-	document.getElementById("Homemade01").href = "Chess.html?lang="+lang+"&aux=01";
-	document.getElementById("Homemade02").href = "Chess.html?lang="+lang+"&aux=02";
-	document.getElementById("Homemade03").href = "Chess.html?lang="+lang+"&aux=03";
-	document.getElementById("Homemade04").href = "Chess.html?lang="+lang+"&aux=04";
-	document.getElementById("Homemade05").href = "Chess.html?lang="+lang+"&aux=05";
-	document.getElementById("Homemade06").href = "Chess.html?lang="+lang+"&aux=06";
-	document.getElementById("Homemade08").href = "Chess.html?lang="+lang+"&aux=08";
-	document.getElementById("Homemade09").href = "Chess.html?lang="+lang+"&aux=09";
-	document.getElementById("Homemade10").href = "Chess.html?lang="+lang+"&aux=10";
-	document.getElementById("Homemade11").href = "Chess.html?lang="+lang+"&aux=11";
-    document.getElementById("Homemade12").href = "Chess.html?lang="+lang+"&aux=12";
-	document.getElementById("Homemade13").href = "Chess.html?lang="+lang+"&aux=13";
-    document.getElementById("Homemade14").href = "Chess.html?lang="+lang+"&aux=14";
-    document.getElementById("Homemade15").href = "Chess.html?lang="+lang+"&aux=15";
-    document.getElementById("Homemade16").href = "Chess.html?lang="+lang+"&aux=16";
 	
 	showChessPositionOnHover(0);
 }
