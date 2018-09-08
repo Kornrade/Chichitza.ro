@@ -35,6 +35,7 @@ allstudydates[14] = '[2015]';
 allstudydates[15] = '[2015]';
 allstudydates[16] = '[2016]';
 allstudydates[17] = '[2017]';
+allstudydates[18] = '[2017]';
 
 var allstudyawards = [];
 allstudyawards[ 0] = '';
@@ -55,6 +56,7 @@ allstudyawards[14] = '';
 allstudyawards[15] = '';
 allstudyawards[16] = 'Medal_3.png';
 allstudyawards[17] = 'Medal_H.png';
+allstudyawards[18] = 'Medal_H.png';
 
 var allstudydifficulty = [];
 allstudydifficulty[ 0] = [];
@@ -129,6 +131,10 @@ allstudydifficulty[17] = [];
 allstudydifficulty[17][0] = 'bec_bej.png';
 allstudydifficulty[17][1] = 'bec_gri.png';
 allstudydifficulty[17][2] = 'bec_gri.png';
+allstudydifficulty[18] = [];
+allstudydifficulty[18][0] = 'bec_bej.png';
+allstudydifficulty[18][1] = 'bec_bej.png';
+allstudydifficulty[18][2] = 'bec_bej.png';
 
 var allstudynames = [];
 allstudynames[ 0] = [];
@@ -203,6 +209,10 @@ allstudynames[17] = [];
 allstudynames[17][0] = 'Undi&#x163;&#x103;';
 allstudynames[17][1] = 'Fishing Rod';
 allstudynames[17][2] = 'Angelrute';
+allstudynames[18] = [];
+allstudynames[18][0] = 'Castel';
+allstudynames[18][1] = 'Castle';
+allstudynames[18][2] = 'Schloss';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
@@ -295,6 +305,11 @@ allstudystips[17][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
 allstudystips[17][1] = 'White to move and draw';
 allstudystips[17][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
 allstudystips[17][3] = '==';
+allstudystips[18] = [];
+allstudystips[18][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
+allstudystips[18][1] = 'White to move and draw';
+allstudystips[18][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[18][3] = '==';
 
 function setcurrchessvars(n)
 {
@@ -667,6 +682,35 @@ function setcurrchessvars(n)
                         ';
             break;
             
+        case 18: 
+            currchessfen = '[FEN "6k1/1qr1p2p/ppN5/3p1N2/6p1/1P1P2Pp/PP2PP1P/2RK4 w - - 0 1"]';
+            coauthor = '';
+            currpgn[0] = '[Event "'+allstudystips[18][0]+'"][Site "StrateGems"][Date "03.2017"][Round "'+allstudynames[18][0]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "6k1/1qr1p2p/ppN5/3p1N2/6p1/1P1P2Pp/PP2PP1P/2RK4 w - - 0 1"] {Inspirat de studiul lui V Chekover 1947 (FEN: 7r/p3k3/2p5/1pPp4/3P4/PP4P1/3P1PB1/2K5 w - - 0 1)} 1. Ncxe7+ (1. b4 {?} Rxc6 2. Rxc6 Qd7 {-+}) (1. Nfd4 e5 2. Nxe5 Rxc1+ 3. Kxc1 Qc8+ {urmat de Qf8 -+}) 1... Kf8 (1... Kh8 {similar variantei principale}) (1... Rxe7 2. Rc8+ Qxc8 (2... Kf7 3. Nd6+ {+-}) 3. Nxe7+ Kf7 4. Nxc8 {+-}) (1... Kf7 2. Nd6+ Kxe7 3. Nxb7 {+-}) 2. Ng6+ (2. Rxc7 Qxc7 3. Ng6+ Ke8 {-+}) 2... hxg6 (2... Kg8 3. Nge7+ {=}) (2... Ke8 {or Kf7} 3.Nd6+ {+-}) 3. Rxc7 (3. Nd4 Rxc1+ 4. Kxc1 Qf7 {-+}) 3... Qxc7 4. Nd4 Qe5 5. e3 b5 6. a3 {Albul a ajuns la pozi&#x163;ia defensiv&#x103; dorit&#x103;. Nu este doar o fort&#x103;rea&#x163;&#x103;, este un &#xEE;ntreg castel...} (6. Kd2 {?} b4 {-+}) 6... Kf7 7. Kd2 {orice mutare &#xEE;n spa&#x163;iul E1-E2-D1-D2 este ok} (7. b4 {?} Qb8 8. Kd2 Qb6 9.Ke2 a5 10. bxa5 Qxa5 {-+}) (7. a4 {?} bxa4 8. bxa4 Qb8 {-+}) (7. Kc2 {?} Qf6 {-+}) 7... Kg8 {Dac&#x103; negrul nu face nimic, albul nu face nimic} (7... Qf6 8. Ke2 {C&#xE2;nd dama neagr&#x103; este pe coloana f, regele alb ap&#x103;r&#x103; f2 mut&#xE2;nd Ke1 <-> Ke2}) (7... Qc7 8. Kd1 {C&#xE2;nd dama neagr&#x103; este pe coloana c, regele alb ap&#x103;r&#x103; c1 mut&#xE2;nd Kd1 <-> Kd2} Qa5 9. Ke2 {C&#xE2;nd dama neagr&#x103; este pe diagonala a5-e1, regele alb ap&#x103;r&#x103; d2 si e1 mut&#xE2;nd Kd1 <-> Ke2} (9. b4 {?} Qb6 {-+})) (7... b4 8.a4 {blocada ab } a5 9. Ke1 Qd6 10. Kd1 Qa6 11. Kd2 {C&#xE2;nd dama neagr&#x103; este pe diagonala a6-f1, regele alb ap&#x103;r&#x103; d3 mut&#xE2;nd Kd2 <-> Ke2;} (11. Kc2 {?} Qf6)) (7... Qb8 8. Kd1 a5 9. Kd2 a4 10. b4 {blocada ab } Qb6 11. Kd1 Kf6 12.Kd2 Ke5 13. Kd1 Qxd4 14. exd4+ Kxd4 15. Kd2 {wK este mereu suficient de aproape de d3})';
+            currpgn[1] = '[Event "'+allstudystips[18][1]+'"][Site "StrateGems"][Date "03.2017"][Round "'+allstudynames[18][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "6k1/1qr1p2p/ppN5/3p1N2/6p1/1P1P2Pp/PP2PP1P/2RK4 w - - 0 1"] {Inspired by V Chekover 1947 study (FEN: 7r/p3k3/2p5/1pPp4/3P4/PP4P1/3P1PB1/2K5 w - - 0 1)} 1. Ncxe7+ (1. b4 {?} Rxc6 2. Rxc6 Qd7 {-+}) (1. Nfd4 e5 2. Nxe5 Rxc1+ 3. Kxc1 Qc8+ {followed by Qf8 -+}) 1... Kf8 (1... Kh8 {same as mainline}) (1... Rxe7 2. Rc8+ Qxc8 (2... Kf7 3. Nd6+ {+-}) 3. Nxe7+ Kf7 4. Nxc8 {+-}) (1... Kf7 2. Nd6+ Kxe7 3. Nxb7 {+-}) 2. Ng6+ (2. Rxc7 Qxc7 3. Ng6+ Ke8 {-+}) 2... hxg6 (2... Kg8 3. Nge7+ {=}) (2... Ke8 {or Kf7} 3.Nd6+ {+-}) 3. Rxc7 (3. Nd4 Rxc1+ 4. Kxc1 Qf7 {-+}) 3... Qxc7 4. Nd4 Qe5 5. e3 b5 6. a3 {White has reached the desired defensive position. This is not only a fortress, it is an entire castle...} (6. Kd2 {?} b4 {-+}) 6... Kf7 7. Kd2 {any K move inside the headquarters E1-E2-D1-D2 is fine} (7. b4 {?} Qb8 8. Kd2 Qb6 9.Ke2 a5 10. bxa5 Qxa5 {-+}) (7. a4 {?} bxa4 8. bxa4 Qb8 {-+}) (7. Kc2 {?} Qf6 {-+}) 7... Kg8 {If Black tries nothing, White does nothing} (7... Qf6 8. Ke2 {When the bQ is on the f-file, wK guards f2 by shuffling between Ke1 and Ke2;}) (7... Qc7 8. Kd1 {When the bQ is on the c-file, wK guards c1 by shuffling between Kd1 and Kd2;} Qa5 9. Ke2 {When the bQ is on the a5-e1 diagonal, wK guards d2 and e1 by shuffling between Kd1 and Ke2;} (9. b4 {?} Qb6 {-+})) (7... b4 8.a4 {ab blockade} a5 9. Ke1 Qd6 10. Kd1 Qa6 11. Kd2 {When the bQ is on the a6-f1 diagonal, wK guards d3 by shuffling between Kd2 and Ke2;} (11. Kc2 {?} Qf6)) (7... Qb8 8. Kd1 a5 9. Kd2 a4 10. b4 {ab blockade} Qb6 11. Kd1 Kf6 12.Kd2 Ke5 13. Kd1 Qxd4 14. exd4+ Kxd4 15. Kd2 {wK is always close enough to defend d3})';
+            currpgn[2] = '[Event "'+allstudystips[18][2]+'"][Site "StrateGems"][Date "03.2017"][Round "'+allstudynames[18][2]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "6k1/1qr1p2p/ppN5/3p1N2/6p1/1P1P2Pp/PP2PP1P/2RK4 w - - 0 1"] {Inspiriert von V Chekover 1947 (FEN: 7r/p3k3/2p5/1pPp4/3P4/PP4P1/3P1PB1/2K5 w - - 0 1)} 1. Ncxe7+ (1. b4 {?} Rxc6 2. Rxc6 Qd7 {-+}) (1. Nfd4 e5 2. Nxe5 Rxc1+ 3. Kxc1 Qc8+ {und Qf8 -+}) 1... Kf8 (1... Kh8 {wie im Hauptvariation}) (1... Rxe7 2. Rc8+ Qxc8 (2... Kf7 3. Nd6+ {+-}) 3. Nxe7+ Kf7 4. Nxc8 {+-}) (1... Kf7 2. Nd6+ Kxe7 3. Nxb7 {+-}) 2. Ng6+ (2. Rxc7 Qxc7 3. Ng6+ Ke8 {-+}) 2... hxg6 (2... Kg8 3. Nge7+ {=}) (2... Ke8 {or Kf7} 3.Nd6+ {+-}) 3. Rxc7 (3. Nd4 Rxc1+ 4. Kxc1 Qf7 {-+}) 3... Qxc7 4. Nd4 Qe5 5. e3 b5 6. a3 {Wei&szlig; hat die gew&uuml;nschte Verteidigungsstellung erreicht. Dies ist nicht nur eine Festung, es ist eine ganzes Schloss...} (6. Kd2 {?} b4 {-+}) 6... Kf7 7. Kd2 {jeder K Zug innerhalb des Hauptquartiers E1-E2-D1-D2 ist ok} (7. b4 {?} Qb8 8. Kd2 Qb6 9.Ke2 a5 10. bxa5 Qxa5 {-+}) (7. a4 {?} bxa4 8. bxa4 Qb8 {-+}) (7. Kc2 {?} Qf6 {-+}) 7... Kg8 {Wenn Schwarz nichts versucht, tut Wei&szlig; nichts} (7... Qf6 8. Ke2 {Wenn die schwarze Dame auf die f-Linie ist, bewacht der weiße K&ouml;nig das Feld f2 entweder von e1 oder e2;}) (7... Qc7 8. Kd1 {Wenn die schwarze Dame auf die c-Linie ist, bewacht der weiße K&ouml;nig die Felder c2 und c1 entweder von d1 oder d2} Qa5 9. Ke2 {Wenn die schwarze Dame auf der a5-e1 Diagonale ist, bewacht der weiße K&ouml;nig die Felder d2 und e1 entweder von d1 oder e2} (9. b4 {?} Qb6 {-+})) (7... b4 8.a4 {ab Blockade} a5 9. Ke1 Qd6 10. Kd1 Qa6 11. Kd2 {Wenn die schwarze Dame auf der a6-f1 Diagonale ist, bewacht der weiße K&ouml;nig das Feld d3 entweder von d2 oder e2} (11. Kc2 {?} Qf6)) (7... Qb8 8. Kd1 a5 9. Kd2 a4 10. b4 {ab Blockade} Qb6 11. Kd1 Kf6 12.Kd2 Ke5 13. Kd1 Qxd4 14. exd4+ Kxd4 15. Kd2 {wK ist immer nah genug, um d3 zu verteidigen})';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(181);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> [2017]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a>\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(181);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Published in <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> [2017]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> Informal Tourney\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(181);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(182);">Componist</a> [2017]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(182);">Componist</a> Informal Tourney gewonnen\
+                        ';
+            break;
+            
         default: 
             currchessfen = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
             coauthor = '';
@@ -718,6 +762,9 @@ function openChessObject(n)
         case 163: window.open('Images/C4.Chess/pdf/Homemade16_award.pdf');	break;
         case 171: window.open('Images/C4.Chess/pdf/Homemade17_award.pdf');	break;
         case 172: window.open('http://www.arves.org/arves/index.php/en/awards/awards-replayable/1235-peter-krug-50-jt-2017');	break;
+        case 181: window.open('Images/C4.Chess/pdf/Homemade18.pdf');	break;
+        case 182: window.open('http://www.strategems.net/');	break;
+        case 183: window.open('Images/C4.Chess/pdf/Homemade18_award.pdf');	break;
         default: window.open('');
     }
 }
