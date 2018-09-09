@@ -36,6 +36,8 @@ allstudydates[15] = '[2015]';
 allstudydates[16] = '[2016]';
 allstudydates[17] = '[2017]';
 allstudydates[18] = '[2017]';
+allstudydates[19] = '[2017]';
+allstudydates[20] = '[2018]';
 
 var allstudyawards = [];
 allstudyawards[ 0] = '';
@@ -57,6 +59,8 @@ allstudyawards[15] = '';
 allstudyawards[16] = 'Medal_3.png';
 allstudyawards[17] = 'Medal_H.png';
 allstudyawards[18] = 'Medal_H.png';
+allstudyawards[19] = '';
+allstudyawards[20] = '';
 
 var allstudydifficulty = [];
 allstudydifficulty[ 0] = [];
@@ -135,6 +139,14 @@ allstudydifficulty[18] = [];
 allstudydifficulty[18][0] = 'bec_bej.png';
 allstudydifficulty[18][1] = 'bec_bej.png';
 allstudydifficulty[18][2] = 'bec_bej.png';
+allstudydifficulty[19] = [];
+allstudydifficulty[19][0] = 'bec_bej.png';
+allstudydifficulty[19][1] = 'bec_bej.png';
+allstudydifficulty[19][2] = 'bec_gri.png';
+allstudydifficulty[20] = [];
+allstudydifficulty[20][0] = 'bec_bej.png';
+allstudydifficulty[20][1] = 'bec_bej.png';
+allstudydifficulty[20][2] = 'bec_bej.png';
 
 var allstudynames = [];
 allstudynames[ 0] = [];
@@ -213,6 +225,14 @@ allstudynames[18] = [];
 allstudynames[18][0] = 'Castel';
 allstudynames[18][1] = 'Castle';
 allstudynames[18][2] = 'Schloss';
+allstudynames[19] = [];
+allstudynames[19][0] = 'Deochi';
+allstudynames[19][1] = 'Evil Eye';
+allstudynames[19][2] = 'B&ouml;ser Blick';
+allstudynames[20] = [];
+allstudynames[20][0] = 'Carusel';
+allstudynames[20][1] = 'Roundabout';
+allstudynames[20][2] = 'Karussell';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
@@ -310,6 +330,16 @@ allstudystips[18][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
 allstudystips[18][1] = 'White to move and draw';
 allstudystips[18][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
 allstudystips[18][3] = '==';
+allstudystips[19] = [];
+allstudystips[19][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
+allstudystips[19][1] = 'White to move and draw';
+allstudystips[19][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[19][3] = '==';
+allstudystips[20] = [];
+allstudystips[20][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
+allstudystips[20][1] = 'White to move and win';
+allstudystips[20][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[20][3] = '+-';
 
 function setcurrchessvars(n)
 {
@@ -711,6 +741,48 @@ function setcurrchessvars(n)
                         ';
             break;
             
+            
+        case  19: 
+            currchessfen = '[FEN "8/pr1Pq3/br1kP3/1R2RQ2/5p2/1nPK4/5P2/8 w - - 0 1"]';
+            coauthor = '';
+            currpgn[0] = '[Event "'+allstudystips[19][0]+'"][Site "Probleemblad"][Date "03.2017"][Round "'+allstudynames[19][0]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/pr1Pq3/br1kP3/1R2RQ2/5p2/1nPK4/5P2/8 w - - 0 1"] 1. Qxf4 {pregatind un sah prin deschidere} (1. c4 {?} Rxb5 2. cxb5 Rxb5 3. Rxb5 Bxb5+ 4. Qxb5 Nc5+ 5. Kd2 Nxe6 {-+}) (1. Red5+ {?} Kc6 2. d8=Q Qxd8 3. Rxd8 Rxb5 4. Qe4+ Rd5+ 5. Kc2 Bd3+ 6. Qxd3 Rxd3 7. Rxd3 Nc5 {-+}) (1. d8=Q+ {?} Qxd8 2. Red5+ Kc6 {la fel cu varianta 1.Red5+}) 1... Rxb5 (1... Rxd7 {?} 2. Ke3 Rxb5 (2... Bxb5 3. exd7 Qxd7 4. Rxb5+ Ke7 (4... Kc6 5. Qc4+ Kb7 6. Rxb3 {+=}) 5. Qh4+ {=}) 3. Rxb5+ Kc6 (3... Kxe6 4. Re5+ Kd6 5. Rxe7+ Kxe7 6. Qb4+ {+-}) 4. Qc4+ Kd6 5. Qf4+ Kc6 6. Qc4+ {=}) (1... Bxb5+ {?} 2. Rxb5+ Kxe6 3. Qf5+ Kd6 4. d8=Q+ Qxd8 5. Rd5+ Kc7 6. Rxd8 Kxd8 7. Qf8+ {=}) 2. Rxb5+ Kxe6 (2... Kc6 {?} 3. Qc4+ Qc5 4. Qe4+ Kc7 5. Qf4+ Kc6 6. Qe4+ {=}) 3. Qc4+ {interpunere a damei pe diagonala a6-d3} (3. Qh6+ {?} Kxd7 4. Qxa6 Nc1+ 5. Kd4 Ne2+ 6. Kd3 Nf4+ 7. Kd4 Ne6+ 8. Kd3 Rxb5 9. Qxb5+ Kc7 {-+}) 3... Kxd7 (3... Kf6 {?} 4. Qf4+ {=}) 4. Rxb7+ Ke8 (4... Kd8 {?} 5. Rb8+ Kd7 6. Rb7+ {la fel ca mai devreme}) (4... Bxb7 {?} 5. Qxb3 {nebun de culoarea gre&#x15F;it&#x103; =}) (4... Kd6 {??} 5. Qxa6+ {#6/0}) 5. Rxe7+ (5. Rb8+ {?} Qd8+ 6. Rxd8+ Kxd8 {d8 este un camp mai bun pentru regele negru decat e7} 7. f4 Bxc4+ 8. Kxc4 Nd2+ {-#36/0}) (5. Rb5 {?} Nc5+ 6. Kc2 {sau Kd4} Bxb5 7. Qxb5+ Kf8 {-+}) (5. Qxa6 {?} Nc5+ 6. Kd4 (6. Kc4 Qe2+ 7. Kxc5 Qxa6 {-+}) 6... Nxa6 7. Rxe7+ Kxe7 {-#36/0}) 5... Kxe7 {Pozitia critica pentru opozitia la distanta intre regele negru si pionul f} 6. f4 (6. Qxa6 {? (prea devreme)} Nc5+ 7. Kc4 Nxa6 {aceast&#x103; varianta (*) este o lupta de tempo-uri / opozitie la distanta intre regele negru si pionul alb din f, -+} 8. Kb5 Nc7+ {! (mut&#x103;ri unice marcate cu !)} (8... Nb8 9. f4 {sau c4 =}) 9. Kc6 Ke8 (9... Ne8 10. Kb5 Nc7+ 11. Kc6 {repeti&#x163;ie inutil&#x103;}) (9... Kd8 10. f4 Ke7 11. f5 Kf6 12. Kxc7 a5 13. c4 a4 14. c5 a3 15. c6 a2 16. Kb8 {or Kb7} a1=Q 17. c7 {remiza pionului c}) 10. f4 (10. f3 Ke7 {! (Kd8? remiza pionului c)} 11. f4 Kd8 {aceea&#x15F;i variant&#x103; cu mutare &#xEE;n plus}) 10... Kd8 {!} 11. f5 Ne8 {! (Ke8 or Ke7 =)} 12. c4 (12. Kc5 Kd7 {-#32/0}) 12... Kc8 {! (Ke7 remiza pionului c)} 13. c5 Kd8 {! (Nf6 Kb5 =)} 14. Kb5 Nc7+ {! (Kc7 c6 =)} 15. Kc6 (15. Ka5 Ke7 {-#24/0}) 15... a5 {-#23/0}) (6. f3 {? (prea &#xEE;ncet)} Kd7 (6... Bxc4+ {?} 7. Kxc4 {=}) 7. f4 {Alb a pierdut un tempo, -+} Bxc4+ 8. Kxc4 Nd2+ {!} 9. Kb5 Kc7 {or Kc8} 10. c4 Kb7 {!} 11. c5 a6+ {!} 12. Ka5 Nb3+ {!} 13. Kb4 Nd4 {!} 14. Kc4 Nf5 {-#30/0}) 6... Ke8 (6... Bxc4+ {?} 7. Kxc4 {=}) (6... Nc5+ {?} 7. Kd4 Bxc4 8. Kxc5 {nebun de culoarea gre&#x15F;it&#x103; =} (8. Kxc4 {?} Na6 {-#37/0})) (6... Nc1+ {?} 7. Kc2 Bxc4 8. Kxc1 {nebun de culoarea gre&#x15F;it&#x103; =}) (6... Kd6 {?} 7. Qxa6+) (6... Kd8 {?} 7. Qxa6 Nc5+ 8. Kc4 Nxa6 {=}) (6... Kd7 {?} 7. f5 Kd8 {or Ke7 or Ke8 or Kc7 or Kc8} 8. Qxa6 Nc5+ 9. Kc4 Nxa6 {=}) 7. f5 (7. Qxa6 {? (prea devreme)} Nc5+ 8. Kc4 Nxa6 9. Kb5 Nc7+ 10. Kc6 Kd8 {-+, vezi varianta *}) 7... Kd7 (7... Bxc4+ {?} 8. Kxc4 {=}) (7... Kd8 {? or Ke7?} 8. Qxa6 Nc5+ 9. Kc4 Nxa6 {=}) 8. f6 (8. Qxa6 {? (prea devreme)} Nc5+ 9. Kc4 Nxa6 10. Kb5 Nc7+ 11. Kc5 Ne8 {-+, vezi varianta *}) 8... Kd8 (8... Bxc4+ {?} 9. Kxc4 {+=}) (8... Ke8 {?} 9. Qxa6 Nc5+ 10. Kc4 Nxa6 {=}) 9. Qxa6 {!!} (9. f7 {?} Ke7 10. Qxa6 {? (prea t&#xE2;rziu)} Nc5+ 11. Kc4 Nxa6 12. Kb5 Nb8 {-#24/0} (12... Nc7+ {?} 13. Kc6 {=})) 9... Nc5+ 10. Kc4 Nxa6 11. Kb5 {cu pionul la f6, nici Nc7+ nici Nb8 nu merg...} Nc7+ (11... Nb8 12. c4 {or Kc5 =}) 12. Kc6 Ke8 13. f7+ Kf8 (13... Ke7 14. f8=Q+ Kxf8 {la fel ca varianta principal&#x103;}) 14. Kxc7 a5 15. c4 a4 16. c5 a3 17. c6 a2 18. Kb8 {or Kb7} a1=Q 19. c7 {remiza pionului c} ';
+            currpgn[1] = '[Event "'+allstudystips[19][1]+'"][Site "Probleemblad"][Date "03.2017"][Round "'+allstudynames[19][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/pr1Pq3/br1kP3/1R2RQ2/5p2/1nPK4/5P2/8 w - - 0 1"] 1. Qxf4 {preparing for a discovered check} (1. c4 {?} Rxb5 2. cxb5 Rxb5 3. Rxb5 Bxb5+ 4. Qxb5 Nc5+ 5. Kd2 Nxe6 {-+}) (1. Red5+ {?} Kc6 2. d8=Q Qxd8 3. Rxd8 Rxb5 4. Qe4+ Rd5+ 5. Kc2 Bd3+ 6. Qxd3 Rxd3 7. Rxd3 Nc5 {-+}) (1. d8=Q+ {?} Qxd8 2. Red5+ Kc6 {same as 1.Red5+ variation}) 1... Rxb5 (1... Rxd7 {?} 2. Ke3 Rxb5 (2... Bxb5 3. exd7 Qxd7 4. Rxb5+ Ke7 (4... Kc6 5. Qc4+ Kb7 6. Rxb3 {+=}) 5. Qh4+ {=}) 3. Rxb5+ Kc6 (3... Kxe6 4. Re5+ Kd6 5. Rxe7+ Kxe7 6. Qb4+ {+-}) 4. Qc4+ Kd6 5. Qf4+ Kc6 6. Qc4+ {=}) (1... Bxb5+ {?} 2. Rxb5+ Kxe6 3. Qf5+ Kd6 4. d8=Q+ Qxd8 5. Rd5+ Kc7 6. Rxd8 Kxd8 7. Qf8+ {=}) 2. Rxb5+ Kxe6 (2... Kc6 {?} 3. Qc4+ Qc5 4. Qe4+ Kc7 5. Qf4+ Kc6 6. Qe4+ {=}) 3. Qc4+ {interposition of the queen on the a6-d3 diagonal} (3. Qh6+ {?} Kxd7 4. Qxa6 Nc1+ 5. Kd4 Ne2+ 6. Kd3 Nf4+ 7. Kd4 Ne6+ 8. Kd3 Rxb5 9. Qxb5+ Kc7 {-+}) 3... Kxd7 (3... Kf6 {?} 4. Qf4+ {=}) 4. Rxb7+ Ke8 (4... Kd8 {?} 5. Rb8+ Kd7 6. Rb7+ {same as before}) (4... Bxb7 {?} 5. Qxb3 {wrong bishop =}) (4... Kd6 {??} 5. Qxa6+ {#6/0}) 5. Rxe7+ (5. Rb8+ {?} Qd8+ 6. Rxd8+ Kxd8 {d8 is a better square for the bK than e7} 7. f4 Bxc4+ 8. Kxc4 Nd2+ {-#36/0}) (5. Rb5 {?} Nc5+ 6. Kc2 {or Kd4} Bxb5 7. Qxb5+ Kf8 {-+}) (5. Qxa6 {?} Nc5+ 6. Kd4 (6. Kc4 Qe2+ 7. Kxc5 Qxa6 {-+}) 6... Nxa6 7. Rxe7+ Kxe7 {-#36/0}) 5... Kxe7 {Critical position for the distant opposition of bK and f-pawn} 6. f4 (6. Qxa6 {? (too soon)} Nc5+ 7. Kc4 Nxa6 {this (*) variation is a struggle of tempi and an unusual distant opposition between the Black King and the White f-pawn, -+} 8. Kb5 Nc7+ {! (unique moves marked with !)} (8... Nb8 9. f4 {or c4 =}) 9. Kc6 Ke8 (9... Ne8 10. Kb5 Nc7+ 11. Kc6 {unnecessary repetition}) (9... Kd8 10. f4 Ke7 11. f5 Kf6 12. Kxc7 a5 13. c4 a4 14. c5 a3 15. c6 a2 16. Kb8 {or Kb7} a1=Q 17. c7 {c-pawn draw}) 10. f4 (10. f3 Ke7 {! (Kd8? leads to the c-pawn draw)} 11. f4 Kd8 {same variation but with extra move}) 10... Kd8 {!} 11. f5 Ne8 {! (Ke8 or Ke7 =)} 12. c4 (12. Kc5 Kd7 {-#32/0}) 12... Kc8 {! (Ke7 leads to the c-pawn draw)} 13. c5 Kd8 {! (Nf6 Kb5 =)} 14. Kb5 Nc7+ {! (Kc7 c6 =)} 15. Kc6 (15. Ka5 Ke7 {-#24/0}) 15... a5 {-#23/0}) (6. f3 {? (too slow)} Kd7 (6... Bxc4+ {?} 7. Kxc4 {=}) 7. f4 {White has lost a tempo, -+} Bxc4+ 8. Kxc4 Nd2+ {!} 9. Kb5 Kc7 {or Kc8} 10. c4 Kb7 {!} 11. c5 a6+ {!} 12. Ka5 Nb3+ {!} 13. Kb4 Nd4 {!} 14. Kc4 Nf5 {-#30/0}) 6... Ke8 (6... Bxc4+ {?} 7. Kxc4 {=}) (6... Nc5+ {?} 7. Kd4 Bxc4 8. Kxc5 {wrong colour bishop =} (8. Kxc4 {?} Na6 {-#37/0})) (6... Nc1+ {?} 7. Kc2 Bxc4 8. Kxc1 {wrong colour bishop =}) (6... Kd6 {?} 7. Qxa6+) (6... Kd8 {?} 7. Qxa6 Nc5+ 8. Kc4 Nxa6 {=}) (6... Kd7 {?} 7. f5 Kd8 {or Ke7 or Ke8 or Kc7 or Kc8} 8. Qxa6 Nc5+ 9. Kc4 Nxa6 {=}) 7. f5 (7. Qxa6 {? (too soon)} Nc5+ 8. Kc4 Nxa6 9. Kb5 Nc7+ 10. Kc6 Kd8 {-+, see * variation}) 7... Kd7 (7... Bxc4+ {?} 8. Kxc4 {=}) (7... Kd8 {? or Ke7?} 8. Qxa6 Nc5+ 9. Kc4 Nxa6 {=}) 8. f6 (8. Qxa6 {? (too soon)} Nc5+ 9. Kc4 Nxa6 10. Kb5 Nc7+ 11. Kc5 Ne8 {-+, see * variation}) 8... Kd8 (8... Bxc4+ {?} 9. Kxc4 {+=}) (8... Ke8 {?} 9. Qxa6 Nc5+ 10. Kc4 Nxa6 {=}) 9. Qxa6 {!!} (9. f7 {?} Ke7 10. Qxa6 {? (too late)} Nc5+ 11. Kc4 Nxa6 12. Kb5 Nb8 {-#24/0} (12... Nc7+ {?} 13. Kc6 {=})) 9... Nc5+ 10. Kc4 Nxa6 11. Kb5 {with the pawn on f6, neither Nc7+ nor Nb8 work...} Nc7+ (11... Nb8 12. c4 {or Kc5 =}) 12. Kc6 Ke8 13. f7+ Kf8 (13... Ke7 14. f8=Q+ Kxf8 {same as mainline}) 14. Kxc7 a5 15. c4 a4 16. c5 a3 17. c6 a2 18. Kb8 {or Kb7} a1=Q 19. c7 {c-pawn draw} ';
+            currpgn[2] = '[Event "'+allstudystips[19][2]+'"][Site "Probleemblad"][Date "03.2017"][Round "'+allstudynames[19][2]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"][FEN "8/pr1Pq3/br1kP3/1R2RQ2/5p2/1nPK4/5P2/8 w - - 0 1"] 1. Qxf4 {f&uuml;r ein entdecktes Schachgebot} (1. c4 {?} Rxb5 2. cxb5 Rxb5 3. Rxb5 Bxb5+ 4. Qxb5 Nc5+ 5. Kd2 Nxe6 {-+}) (1. Red5+ {?} Kc6 2. d8=Q Qxd8 3. Rxd8 Rxb5 4. Qe4+ Rd5+ 5. Kc2 Bd3+ 6. Qxd3 Rxd3 7. Rxd3 Nc5 {-+}) (1. d8=Q+ {?} Qxd8 2. Red5+ Kc6 {wie im 1.Red5+ Variante}) 1... Rxb5 (1... Rxd7 {?} 2. Ke3 Rxb5 (2... Bxb5 3. exd7 Qxd7 4. Rxb5+ Ke7 (4... Kc6 5. Qc4+ Kb7 6. Rxb3 {+=}) 5. Qh4+ {=}) 3. Rxb5+ Kc6 (3... Kxe6 4. Re5+ Kd6 5. Rxe7+ Kxe7 6. Qb4+ {+-}) 4. Qc4+ Kd6 5. Qf4+ Kc6 6. Qc4+ {=}) (1... Bxb5+ {?} 2. Rxb5+ Kxe6 3. Qf5+ Kd6 4. d8=Q+ Qxd8 5. Rd5+ Kc7 6. Rxd8 Kxd8 7. Qf8+ {=}) 2. Rxb5+ Kxe6 (2... Kc6 {?} 3. Qc4+ Qc5 4. Qe4+ Kc7 5. Qf4+ Kc6 6. Qe4+ {=}) 3. Qc4+ {Interposition der Dame auf der a6-d3 Diagonale} (3. Qh6+ {?} Kxd7 4. Qxa6 Nc1+ 5. Kd4 Ne2+ 6. Kd3 Nf4+ 7. Kd4 Ne6+ 8. Kd3 Rxb5 9. Qxb5+ Kc7 {-+}) 3... Kxd7 (3... Kf6 {?} 4. Qf4+ {=}) 4. Rxb7+ Ke8 (4... Kd8 {?} 5. Rb8+ Kd7 6. Rb7+ {das Gleiche wie vorher}) (4... Bxb7 {?} 5. Qxb3 {falsches L&auml;ufer =}) (4... Kd6 {??} 5. Qxa6+ {#6/0}) 5. Rxe7+ (5. Rb8+ {?} Qd8+ 6. Rxd8+ Kxd8 {d8 ist ein besseres Feld f&uuml;r bK als e7} 7. f4 Bxc4+ 8. Kxc4 Nd2+ {-#36/0}) (5. Rb5 {?} Nc5+ 6. Kc2 {oder Kd4} Bxb5 7. Qxb5+ Kf8 {-+}) (5. Qxa6 {?} Nc5+ 6. Kd4 (6. Kc4 Qe2+ 7. Kxc5 Qxa6 {-+}) 6... Nxa6 7. Rxe7+ Kxe7 {-#36/0}) 5... Kxe7 {Kritische Stellung f&uuml;r die Feropposition zwischen den schwarzen K&ouml;nig und den f-Bauern} 6. f4 (6. Qxa6 {? (zu fr&uuml;h)} Nc5+ 7. Kc4 Nxa6 {diese (*) Variante ist ein Tempo-Kampf / ungew&ouml;hnliche Fernopposition zwischen den schwarzen K&ouml;nig und der wei&szlig;e f-Bauer, -+} 8. Kb5 Nc7+ {! (einzige Z&uuml;ge werden mit ! bezeichnet)} (8... Nb8 9. f4 {oder c4 =}) 9. Kc6 Ke8 (9... Ne8 10. Kb5 Nc7+ 11. Kc6 {unn&ouml;tige Wiederholung}) (9... Kd8 10. f4 Ke7 11. f5 Kf6 12. Kxc7 a5 13. c4 a4 14. c5 a3 15. c6 a2 16. Kb8 {or Kb7} a1=Q 17. c7 {c-Bauer Remis}) 10. f4 (10. f3 Ke7 {! (Kd8? c-Bauer Remis)} 11. f4 Kd8 {die selbe Variante, aber mit einen Zug extra}) 10... Kd8 {!} 11. f5 Ne8 {! (Ke8 or Ke7 =)} 12. c4 (12. Kc5 Kd7 {-#32/0}) 12... Kc8 {! (Ke7 c-Bauer Remis)} 13. c5 Kd8 {! (Nf6 Kb5 =)} 14. Kb5 Nc7+ {! (Kc7 c6 =)} 15. Kc6 (15. Ka5 Ke7 {-#24/0}) 15... a5 {-#23/0}) (6. f3 {? (zu langsam)} Kd7 (6... Bxc4+ {?} 7. Kxc4 {=}) 7. f4 {Wei&szlig; hat ein Tempo verloren, -+} Bxc4+ 8. Kxc4 Nd2+ {!} 9. Kb5 Kc7 {or Kc8} 10. c4 Kb7 {!} 11. c5 a6+ {!} 12. Ka5 Nb3+ {!} 13. Kb4 Nd4 {!} 14. Kc4 Nf5 {-#30/0}) 6... Ke8 (6... Bxc4+ {?} 7. Kxc4 {=}) (6... Nc5+ {?} 7. Kd4 Bxc4 8. Kxc5 {falsches L&auml;ufer =} (8. Kxc4 {?} Na6 {-#37/0})) (6... Nc1+ {?} 7. Kc2 Bxc4 8. Kxc1 {falsches L&auml;ufer =}) (6... Kd6 {?} 7. Qxa6+) (6... Kd8 {?} 7. Qxa6 Nc5+ 8. Kc4 Nxa6 {=}) (6... Kd7 {?} 7. f5 Kd8 {or Ke7 or Ke8 or Kc7 or Kc8} 8. Qxa6 Nc5+ 9. Kc4 Nxa6 {=}) 7. f5 (7. Qxa6 {? (zu fr&uuml;h)} Nc5+ 8. Kc4 Nxa6 9. Kb5 Nc7+ 10. Kc6 Kd8 {-+, siehe die * Variante}) 7... Kd7 (7... Bxc4+ {?} 8. Kxc4 {=}) (7... Kd8 {? or Ke7?} 8. Qxa6 Nc5+ 9. Kc4 Nxa6 {=}) 8. f6 (8. Qxa6 {? (zu fr&uuml;h)} Nc5+ 9. Kc4 Nxa6 10. Kb5 Nc7+ 11. Kc5 Ne8 {-+, siehe die * Variante}) 8... Kd8 (8... Bxc4+ {?} 9. Kxc4 {+=}) (8... Ke8 {?} 9. Qxa6 Nc5+ 10. Kc4 Nxa6 {=}) 9. Qxa6 {!!} (9. f7 {?} Ke7 10. Qxa6 {? (zu sp&auml;t)} Nc5+ 11. Kc4 Nxa6 12. Kb5 Nb8 {-#24/0} (12... Nc7+ {?} 13. Kc6 {=})) 9... Nc5+ 10. Kc4 Nxa6 11. Kb5 {mit dem Bauer auf f6 funktionieren weder Nc7 + noch Nb8...} Nc7+ (11... Nb8 12. c4 {or Kc5 =}) 12. Kc6 Ke8 13. f7+ Kf8 (13... Ke7 14. f8=Q+ Kxf8 {wie die Hauptvariante}) 14. Kxc7 a5 15. c4 a4 16. c5 a3 17. c6 a2 18. Kb8 {or Kb7} a1=Q 19. c7 {c-Bauer Remis} ';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(191);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(192);">Probleemblad</a> [2017]\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(191);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Published in <a href="javascript:void(0);" onClick="openChessObject(192);">Probleemblad</a> [2017]\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(191);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(192);">Probleemblad</a> [2017]\
+                        ';
+            break;
+   
+
+        case  20: 
+            currchessfen = '[FEN "4b3/5p2/2p4p/P1p1PN2/2pn2P1/P2k4/Pr1npKN1/B7 w - - 0 1"]';
+            coauthor = '';
+            currpgn[0] = '[Event "'+allstudystips[20][0]+'"][Site "Probleemblad"][Date "03.2018"][Round "'+allstudynames[20][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "4b3/5p2/2p4p/P1p1PN2/2pn2P1/P2k4/Pr1npKN1/B7 w - - 0 1"] 1. Ne1+ (1. Bxb2 {??} Ne4+ 2. Kg1 Nf3+ 3. Kh1 Nf2{#}) 1. .. Kc3 (1. .. Ke4 2. Bxb2 Bd7 3. a6 Nb5 4. Nxh6 {+-}) 2. Ng3 (2. a6 {?} Ne4+ 3. Ke3 Nb5 4. Kxe4 Kd2 {-+}) 2. .. Bd7 3. a6 Bc8 4. a7 Bb7 5. Kg2 (5. g5 {?} hxg5 6. Kg2 g4 {=}) 5. .. Ba8 6. Kh3 (6. g5 {minor dual}) (6. e6 {minor dual}) (6. Kh2 {sau oricare alt c&#xE2;mp negru care permite un &#x15F;ah de cal pierde -+}) 6. .. Bb7 7. g5 (7. e6 {minor dual}) 7. .. hxg5 8. Kg4 Ba8 (8. .. Bc8+ 9. e6 {+-}) 9. Kh5 (9. e6 {?} f5+ {-+}) (9. Kxg5 N2f3+ {-+}) 9. .. Bb7 10. e6 fxe6 11. Kg6 Ba8 12. Kf6 {triangula&#x163;ie prin f6} (12. Kh7 {minor dual}) 12. .. Bb7 13. Kf7 Ba8 14. Ke8 Bb7 15. Kd7 Ba8 16. Kc8 {Zugzwang}  e5 (16. .. Bb7+ 17. Kb8 {+-}) 17. Kd7 Bb7 18. Ke8 Ba8 19. Kf7 Bb7 20. Kf6 Ba8 21. Kg6 Bb7 22. Kf7 Ba8 23. Ke8 Bb7 24. Kd7 Ba8 25. Kc8 {Zugzwang} e4 (25. .. Bb7+ 26. Kb8 {+-}) 26. Kd7 Bb7 27. Ke8 Ba8 28. Kf7 Bb7 29. Kf6 Ba8 30. Kg6 Bb7 31. Kf7 Ba8 32. Ke8 Bb7 33. Kd7 Ba8 34. Kc8 {Zugzwang} e3 (34. .. Bb7+ 35. Kb8 {+-}) 35. Kd7 Bb7 36. Ke8 Ba8 37. Kf7 Bb7 38. Kf6 Ba8 39. Kg6 Bb7 40. Kf7 Ba8 41. Ke8 Bb7 42. Kd7 Ba8 43. Kc8 {Zugzwang} g4 (43. .. Bb7+ 44. Kb8 {+-}) 44. Kd7 Bb7 45. Ke8 Ba8 46. Kf7 Bb7 47. Kg6 {pionul g trebuie eliminat &#xEE;naintea ultimului zugzwang, deoarece doar acum nu mai este ap&#x103;rat indirect de ...Nf3+} (47. Kf6 {?} Ba8 48. Kg6 Bb7 49. Kf7 Ba8 50. Ke8 Bb7 51. Kd7 Ba8 52. Kc8 Bb7+ 53. Kb8 Ba6+ 54. Bxb2+ Kxb2 55. a8=Q Bb5 {=}) 47. .. Ba8 48. Kh5 Bb7 49. Kxg4 Ba8 50. Kh5 Bb7 51. Kg6 Ba8 52. Kf6 Bb7 53. Kf7 Ba8 54. Ke8 Bb7 55. Kd7 Ba8 56. Kc8 {Zugzwang} Bb7+ 57. Kb8 Ba6+ 58. Bxb2+ Kxb2 59. a8=Q {+-}';
+            currpgn[1] = '[Event "'+allstudystips[20][1]+'"][Site "Probleemblad"][Date "03.2018"][Round "'+allstudynames[20][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "4b3/5p2/2p4p/P1p1PN2/2pn2P1/P2k4/Pr1npKN1/B7 w - - 0 1"] 1. Ne1+ (1. Bxb2 {??} Ne4+ 2. Kg1 Nf3+ 3. Kh1 Nf2{#}) 1. .. Kc3 (1. .. Ke4 2. Bxb2 Bd7 3. a6 Nb5 4. Nxh6 {+-}) 2. Ng3 (2. a6 {?} Ne4+ 3. Ke3 Nb5 4. Kxe4 Kd2 {-+}) 2. .. Bd7 3. a6 Bc8 4. a7 Bb7 5. Kg2 (5. g5 {?} hxg5 6. Kg2 g4 {=}) 5. .. Ba8 6. Kh3 (6. g5 {minor dual}) (6. e6 {minor dual}) (6. Kh2 {or any other dark square where Black can check with a knight is losing -+}) 6. .. Bb7 7. g5 (7. e6 {minor dual}) 7. .. hxg5 8. Kg4 Ba8 (8. .. Bc8+ 9. e6 {+-}) 9. Kh5 (9. e6 {?} f5+ {-+}) (9. Kxg5 N2f3+ {-+}) 9. .. Bb7 10. e6 fxe6 11. Kg6 Ba8 12. Kf6 {triangulation over f6} (12. Kh7 {minor dual}) 12. .. Bb7 13. Kf7 Ba8 14. Ke8 Bb7 15. Kd7 Ba8 16. Kc8 {Zugzwang}  e5 (16. .. Bb7+ 17. Kb8 {+-}) 17. Kd7 Bb7 18. Ke8 Ba8 19. Kf7 Bb7 20. Kf6 Ba8 21. Kg6 Bb7 22. Kf7 Ba8 23. Ke8 Bb7 24. Kd7 Ba8 25. Kc8 {Zugzwang} e4 (25. .. Bb7+ 26. Kb8 {+-}) 26. Kd7 Bb7 27. Ke8 Ba8 28. Kf7 Bb7 29. Kf6 Ba8 30. Kg6 Bb7 31. Kf7 Ba8 32. Ke8 Bb7 33. Kd7 Ba8 34. Kc8 {Zugzwang} e3 (34. .. Bb7+ 35. Kb8 {+-}) 35. Kd7 Bb7 36. Ke8 Ba8 37. Kf7 Bb7 38. Kf6 Ba8 39. Kg6 Bb7 40. Kf7 Ba8 41. Ke8 Bb7 42. Kd7 Ba8 43. Kc8 {Zugzwang} g4 (43. .. Bb7+ 44. Kb8 {+-}) 44. Kd7 Bb7 45. Ke8 Ba8 46. Kf7 Bb7 47. Kg6 {the g pawn must be eliminating before the final zugzwang, but it could not be eliminated before because it stood on a dark square that was indirectly guarded by ...Nf3+} (47. Kf6 {?} Ba8 48. Kg6 Bb7 49. Kf7 Ba8 50. Ke8 Bb7 51. Kd7 Ba8 52. Kc8 Bb7+ 53. Kb8 Ba6+ 54. Bxb2+ Kxb2 55. a8=Q Bb5 {=}) 47. .. Ba8 48. Kh5 Bb7 49. Kxg4 Ba8 50. Kh5 Bb7 51. Kg6 Ba8 52. Kf6 Bb7 53. Kf7 Ba8 54. Ke8 Bb7 55. Kd7 Ba8 56. Kc8 {Zugzwang} Bb7+ 57. Kb8 Ba6+ 58. Bxb2+ Kxb2 59. a8=Q {+-}';
+            currpgn[2] = '[Event "'+allstudystips[20][2]+'"][Site "Probleemblad"][Date "03.2018"][Round "'+allstudynames[20][2]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"][FEN "4b3/5p2/2p4p/P1p1PN2/2pn2P1/P2k4/Pr1npKN1/B7 w - - 0 1"] 1. Ne1+ (1. Bxb2 {??} Ne4+ 2. Kg1 Nf3+ 3. Kh1 Nf2{#}) 1. .. Kc3 (1. .. Ke4 2. Bxb2 Bd7 3. a6 Nb5 4. Nxh6 {+-}) 2. Ng3 (2. a6 {?} Ne4+ 3. Ke3 Nb5 4. Kxe4 Kd2 {-+}) 2. .. Bd7 3. a6 Bc8 4. a7 Bb7 5. Kg2 (5. g5 {?} hxg5 6. Kg2 g4 {=}) 5. .. Ba8 6. Kh3 (6. g5 {minor dual}) (6. e6 {minor dual}) (6. Kh2 {oder jeder andere dunkle Feld, wo Schwarz ein Springer-schachgebot geben kann, ist verloren -+}) 6. .. Bb7 7. g5 (7. e6 {minor dual}) 7. .. hxg5 8. Kg4 Ba8 (8. .. Bc8+ 9. e6 {+-}) 9. Kh5 (9. e6 {?} f5+ {-+}) (9. Kxg5 N2f3+ {-+}) 9. .. Bb7 10. e6 fxe6 11. Kg6 Ba8 12. Kf6 {Triangulation &uuml;ber f6} (12. Kh7 {minor dual}) 12. .. Bb7 13. Kf7 Ba8 14. Ke8 Bb7 15. Kd7 Ba8 16. Kc8 {Zugzwang}  e5 (16. .. Bb7+ 17. Kb8 {+-}) 17. Kd7 Bb7 18. Ke8 Ba8 19. Kf7 Bb7 20. Kf6 Ba8 21. Kg6 Bb7 22. Kf7 Ba8 23. Ke8 Bb7 24. Kd7 Ba8 25. Kc8 {Zugzwang} e4 (25. .. Bb7+ 26. Kb8 {+-}) 26. Kd7 Bb7 27. Ke8 Ba8 28. Kf7 Bb7 29. Kf6 Ba8 30. Kg6 Bb7 31. Kf7 Ba8 32. Ke8 Bb7 33. Kd7 Ba8 34. Kc8 {Zugzwang} e3 (34. .. Bb7+ 35. Kb8 {+-}) 35. Kd7 Bb7 36. Ke8 Ba8 37. Kf7 Bb7 38. Kf6 Ba8 39. Kg6 Bb7 40. Kf7 Ba8 41. Ke8 Bb7 42. Kd7 Ba8 43. Kc8 {Zugzwang} g4 (43. .. Bb7+ 44. Kb8 {+-}) 44. Kd7 Bb7 45. Ke8 Ba8 46. Kf7 Bb7 47. Kg6 {der g-Bauer muss vor dem letzten Zugzwang geschlagen werden, da er nicht mehr indirekt von ...Nf3+ bewacht ist} (47. Kf6 {?} Ba8 48. Kg6 Bb7 49. Kf7 Ba8 50. Ke8 Bb7 51. Kd7 Ba8 52. Kc8 Bb7+ 53. Kb8 Ba6+ 54. Bxb2+ Kxb2 55. a8=Q Bb5 {=}) 47. .. Ba8 48. Kh5 Bb7 49. Kxg4 Ba8 50. Kh5 Bb7 51. Kg6 Ba8 52. Kf6 Bb7 53. Kf7 Ba8 54. Ke8 Bb7 55. Kd7 Ba8 56. Kc8 {Zugzwang} Bb7+ 57. Kb8 Ba6+ 58. Bxb2+ Kxb2 59. a8=Q {+-}';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(201);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2018]\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(201);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Published in <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2018]\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(201);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2018]\
+                        ';
+            break;
+            
         default: 
             currchessfen = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
             coauthor = '';
@@ -765,6 +837,10 @@ function openChessObject(n)
         case 181: window.open('Images/C4.Chess/pdf/Homemade18.pdf');	break;
         case 182: window.open('http://www.strategems.net/');	break;
         case 183: window.open('Images/C4.Chess/pdf/Homemade18_award.pdf');	break;
+        case 191: window.open('Images/C4.Chess/pdf/Homemade19.pdf');	break;
+        case 192: window.open('http://www.probleemblad.nl/');	break;
+        case 201: window.open('Images/C4.Chess/pdf/Homemade20.pdf');	break;
+        case 202: window.open('http://www.probleemblad.nl/');	break;
         default: window.open('');
     }
 }
