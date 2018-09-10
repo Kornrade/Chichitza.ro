@@ -562,6 +562,16 @@ function retranslateChessIntro()
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
 						<img src='Images/C4.Chess/bec_bej.png' width='16' height='16'>\
 						<i><span id='spanlegend3'></span></i></div>\
+                    <br/>\
+                    <div align='left' style='padding-left: 10'>\
+                        <img src='Images/C4.Chess/Medal_1.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/Medal_2.png' width='16' height='16'>\
+						<img src='Images/C4.Chess/Medal_3.png' width='16' height='16'>\
+						<i><span id='spanlegendMedals123'></span></i></div>\
+                    <div align='left' style='padding-left: 17'>\
+                        <img src='Images/C4.Chess/Medal_H.png' width='16' height='16'>\
+                        <img src='Images/C4.Chess/Medal_X.png' width='16' height='16'>\
+						<i><span id='spanlegendMedalsXH'></span></i></div>\
                     ";
     
 	//retranslate specific intro text of Chess

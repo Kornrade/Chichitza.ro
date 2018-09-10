@@ -279,6 +279,9 @@ function retranslateDEChessIntro()
 	document.getElementById("spanlegend1").innerHTML="Engines sind etwas verwirrt";	
     document.getElementById("spanlegend2").innerHTML="Engines sind sehr verwirrt";	
     document.getElementById("spanlegend3").innerHTML="Engines sind v&ouml;llig verwirrt";	
+        
+    document.getElementById("spanlegendMedals123").innerHTML="1. / 2. / 3. Preis";
+    document.getElementById("spanlegendMedalsXH").innerHTML="Ehrende Erw&auml;hnung / Lob";
 		
 	}
 }

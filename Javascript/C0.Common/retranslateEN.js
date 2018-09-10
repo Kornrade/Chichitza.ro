@@ -254,6 +254,9 @@ function retranslateENChessIntro()
 	document.getElementById("spanlegend1").innerHTML="Engines are slightly confused";
     document.getElementById("spanlegend2").innerHTML="Engines are very confused";
     document.getElementById("spanlegend3").innerHTML="Engines are utterly confused";
+        
+    document.getElementById("spanlegendMedals123").innerHTML="1st / 2nd / 3rd prize";
+    document.getElementById("spanlegendMedalsXH").innerHTML="Honourable mention / Commendation";
 	
 	}
 }

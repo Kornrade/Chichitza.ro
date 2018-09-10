@@ -273,6 +273,9 @@ function retranslateROChessIntro()
 	document.getElementById("spanlegend1").innerHTML="Calculatorul este u&#x15F;or confuz";
     document.getElementById("spanlegend2").innerHTML="Calculatorul este foarte confuz";
     document.getElementById("spanlegend3").innerHTML="Calculatorul este total debusolat";
+        
+    document.getElementById("spanlegendMedals123").innerHTML="Premiul I / II / III";
+    document.getElementById("spanlegendMedalsXH").innerHTML="Men&#x163;iune special&#x103; / Recomandare";
 	
 	}
 }
