@@ -654,9 +654,9 @@ function setcurrchessvars(n)
             currchessinfo[0] = '<a href="javascript:void(0);" onClick="openChessObject(141);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                                 Publicat &#xEE;n revista <a href="javascript:void(0);" onClick="openChessObject(142);">EG</a> [2015]';
             currchessinfo[1] = '<a href="javascript:void(0);" onClick="openChessObject(141);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                                Published in <a href="javascript:void(0);" onClick="openChessObject(141);">EG</a> magazine [2015]';
+                                Published in <a href="javascript:void(0);" onClick="openChessObject(142);">EG</a> magazine [2015]';
             currchessinfo[2] = '<a href="javascript:void(0);" onClick="openChessObject(141);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                                Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(141);">EG</a> Zeitschrift [2015]';
+                                Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(142);">EG</a> Zeitschrift [2015]';
             break;
             
         case  15: 
@@ -833,12 +833,12 @@ function openChessObject(n)
         case  21: window.open('Images/C4.Chess/pdf/Homemade02.pdf');	break;
         case  22: window.open('https://glarean-magazin.ch/2009/12/17/die-interessante-schachstudie_mihai-neghina_glarean-magazin/');	break;
         case  31: window.open('Images/C4.Chess/pdf/Homemade03.pdf');	break;
-        case  32: window.open('https://glarean-magazin.ch/2010/07/24/der-brillante-schachzug_69_neghina_schach_glarean-magazin/');	break;
+        case  32: window.open('https://glarean-magazin.ch/category/schach-im-glarean-magazin/');	break;
         case  51: window.open('Images/C4.Chess/pdf/Homemade05.pdf');	break;
         case  52: window.open('https://glarean-magazin.ch/2011/03/19/schach_mihai-neghina-stubborness_glarean-magazin/');	break;
         case  61: window.open('http://www.arves.org/arves/index.php/en/awards/awards-replayable/251-van-der-heijden-50-jt-2011');	break;
         case  62: window.open('Images/C4.Chess/pdf/Homemade06.pdf');	break;
-        case  63: window.open('http://www.arves.org/EG.htm');	break;
+        case  63: window.open('http://www.arves.org/arves/index.php/en/magazine-eg/eg-and-ebur');	break;
         case  81: window.open('Images/C4.Chess/pdf/Homemade08.pdf');	break;
         case  82: window.open('http://www.frsah.ro/index.php?action=listingview&listingID=608');	break;
         case 101: window.open('http://www.euroschach.de/Zeitschrift-Schach-Heft-2012-9.html');	break;
@@ -848,7 +848,7 @@ function openChessObject(n)
         case 131: window.open('Images/C4.Chess/pdf/Homemade13.pdf');	break;
         case 132: window.open('http://www.wfcc.ch/competitions/composing/9_wcct/');	break;
         case 141: window.open('Images/C4.Chess/pdf/Homemade14.pdf');	break;
-        case 142: window.open('http://www.arves.org/EG.htm');	break;
+        case 142: window.open('http://www.arves.org/arves/index.php/en/magazine-eg/eg-and-ebur');	break;
         case 151: window.open('Images/C4.Chess/pdf/Homemade15.pdf');	break;
         case 152: window.open('https://glarean-magazin.ch/2015/10/17/schach-chess-studie-study-mihai-neghina-urdruck-problemschach-glarean-magazin/');	break;    
         case 160: window.open('Images/C4.Chess/pdf/Homemade16_tough.pdf');	break;
