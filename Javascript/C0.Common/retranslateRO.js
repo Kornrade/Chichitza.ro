@@ -83,7 +83,7 @@ function retranslateROCommon()
 	
 	// Cell (2)
 	document.getElementById("buttonAdmin"  ).href = "#";
-	document.getElementById("buttonContact").onclick = "TINY.box.show('Helpertools/contactRO.html', 1,0,0,1);";
+	document.getElementById("buttonContact").setAttribute("onclick","TINY.box.show('Helpertools/contactRO.html', 1,0,0,1);");
 	document.getElementById("buttonHome"   ).href = "index.html?lang=ro";
 	document.getElementById("buttonAdmin"  ).setAttribute("data","Admin"  );
 	document.getElementById("buttonContact").setAttribute("data","Contact");
