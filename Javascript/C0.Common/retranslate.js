@@ -14,7 +14,7 @@
 |       retranslateDictionary()......... retranslates Dictionary texts in the selected language       |
 \*---------------------------------------------------------------------------------------------------*/
 
-/*jslint es5: true */
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
 
 var page; // the current page id: 0=index; 1=Microchitze; 2=Macrochitze; 3=interactive; 4=chess; 5=dictionary
 var lang; // the current language: "ro" "en" "de"
@@ -22,7 +22,6 @@ var intro; // current intro text displayed: 0=index; 1=Microchitze; 2=Macrochitz
 var auxparam; //the number of the test; auxparam controls the index list initialization and the quiz/problem/application title
 var currchessfen;
 var allstudystips, allstudydates, allstudyawards, allstudydifficulty;
-var mazeRules;
 
 /*global resetDivsToDefault */
 /*global retranslateCommon */

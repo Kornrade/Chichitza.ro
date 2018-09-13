@@ -8,7 +8,7 @@
 |        * quoting characters " must not be present in word definition lines, except in \" groups
 |        * last characters "ENDLINE" must be present but will be disregarded for every line
 \--------------------------------------------------*/
-/*jslint es5: true */
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
 var rawDatabaseRO = "\
 /===================\
 =========A==========\

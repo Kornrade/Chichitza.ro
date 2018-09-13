@@ -1,6 +1,8 @@
 /* Copyright 2007-2012 Richard Jones
 This work is licensed under the Creative Commons Attribution-Noncommercial-No Derivative Works License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/2.5/au/
 */
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/ /* eslint-disable no-redeclare */ /* eslint-disable no-cond-assign */
+/* eslint-disable no-unreachable */ /* eslint-disable no-empty */ /* eslint-disable no-console */ /* eslint-disable no-constant-condition */ /* eslint-disable no-self-assign */ /* eslint-disable no-inner-declarations */ /* eslint-disable no-duplicate-case */
 Gettext=function(_1){
 this.domain="messages";
 this.locale_data=undefined;

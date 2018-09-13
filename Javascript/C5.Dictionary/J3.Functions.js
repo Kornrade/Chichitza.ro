@@ -5,6 +5,8 @@
 |   showDefinition(wid).......... displays the definition of specified word id on page     |
 \*----------------------------------------------------------------------------------------*/
 
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
+
 /* GLOBAL VARS USED IN THIS FILE:*/
 var lang, auxparam, rawDatabaseRO, rawDatabaseEN,rawDatabaseDE;
 var currwid, dictSize, dbWordList, dbDefList, dbReadable;

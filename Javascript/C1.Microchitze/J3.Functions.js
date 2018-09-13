@@ -8,6 +8,8 @@
 |	computeResults() ............ computes the score and recolours the question tabs       |
 \*----------------------------------------------------------------------------------------*/
 
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
+
 /* GLOBAL VARS USED IN THIS FILE:*/
 var lang, auxparam, QuizTitle, IndexList, aQcolour, bQcolour, cQcolour, currqid;
 var htmlResultsPhase, truthValues, rightAnswerBgColour, rightAnswerColour, wrongAnswerBgColour, wrongAnswerColour;

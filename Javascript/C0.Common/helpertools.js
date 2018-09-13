@@ -5,7 +5,8 @@
 |       submitTextToDictionarySearch()... (re-)loads dictionary.html showing search results    |
 \*--------------------------------------------------------------------------------------------*/
 
-/*jslint es5: true */
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
+
 /* GLOBAL VARS USED IN THIS FILE:*/
 var lang, auxparam, page, intro;
 

@@ -1,5 +1,7 @@
 // This file contains the global variables. these have been separated into DYNAMIC and STATIC variables
 
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
+
 // DYNAMIC variables (may be changed in functions)
 
 var currqid; // the currently displayed question in the page

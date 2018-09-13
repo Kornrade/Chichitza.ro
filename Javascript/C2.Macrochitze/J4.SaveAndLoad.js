@@ -2,7 +2,7 @@
 | This file contains the SAVE, LOAD, and auxiliary functions called from the page.         |     
 \*----------------------------------------------------------------------------------------*/
 
-/*jslint es5: true */
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
 /*jslint evil: true*/
 
 var lang, TINY;

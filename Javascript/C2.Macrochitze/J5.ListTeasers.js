@@ -2,7 +2,7 @@
 | This file contains the display of the list of teasers and auxiliary functions.          |     
 \*----------------------------------------------------------------------------------------*/
 
-/*jslint es5: true */
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
 /*jslint evil: true*/
 
 var lang, Mazelen, solutionReference, isMazeSolved, rightAnswerBgColour, wrongAnswerBgColour;

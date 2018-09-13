@@ -5,9 +5,11 @@
 \*-----------------------------------------------------------------------------------------------------------*/
 
 /*jslint es5: true */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 
 /* GLOBAL VARS USED IN THIS FILE:*/
-var lang, auxparam, TINY;
+var lang, TINY;
 
 /*global PgnViewer */
 
@@ -245,8 +247,8 @@ allstudynames[17][0] = 'Undi&#x163;&#x103;';
 allstudynames[17][1] = 'Fishing Rod';
 allstudynames[17][2] = 'Angelrute';
 allstudynames[18] = [];
-allstudynames[18][0] = 'Castel';
-allstudynames[18][1] = 'Castle';
+allstudynames[18][0] = 'Cetate';
+allstudynames[18][1] = 'Stronghold';
 allstudynames[18][2] = 'Schloss';
 allstudynames[19] = [];
 allstudynames[19][0] = 'Deochi';

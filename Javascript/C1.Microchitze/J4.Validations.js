@@ -5,6 +5,8 @@
 |		validateAnswer(i)............. checks user's answer to question i against criteria  |
 \*-----------------------------------------------------------------------------------------*/
 
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
+
 /* GLOBAL VARS USED IN THIS FILE:*/
 var IndexList;
 var AList, dbAList, AType, dbACrit; 

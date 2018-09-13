@@ -8,6 +8,8 @@
 |		cleanSpaces()............ removes starting and ending spaces from answers    |
 \*----------------------------------------------------------------------------------*/
 
+/*jslint es5: true */ /* eslint-disable no-undef */ /* eslint-disable no-unused-vars */ /*eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"]*/
+
 /* GLOBAL VARS USED IN THIS FILE:*/
 var IndexList, truthValues, QList, AList, AType, currqid, htmlResultsPhase, rightAnswerBgColour, wrongAnswerBgColour;
 
