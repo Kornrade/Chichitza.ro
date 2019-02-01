@@ -267,8 +267,8 @@ allstudynames[20][1] = 'Roundabout';
 allstudynames[20][2] = 'Karussell';
 allstudynames[21] = [];
 allstudynames[21][0] = 'Confuzie';
-allstudynames[21][1] = 'Verwirrspiel';
-allstudynames[21][2] = 'Confusion';
+allstudynames[21][1] = 'Confusion';
+allstudynames[21][2] = 'Verwirrspiel';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
