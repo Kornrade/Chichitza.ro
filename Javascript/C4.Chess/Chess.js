@@ -40,6 +40,7 @@ allstudydates[17] = '[2017]';
 allstudydates[18] = '[2017]';
 allstudydates[19] = '[2017]';
 allstudydates[20] = '[2018]';
+allstudydates[21] = '[2019]';
 
 var allstudyawards = [];
 allstudyawards[ 0] = '';
@@ -63,6 +64,7 @@ allstudyawards[17] = 'Medal_H.png';
 allstudyawards[18] = 'Medal_H.png';
 allstudyawards[19] = '';
 allstudyawards[20] = '';
+allstudyawards[21] = '';
 
 var allstudydifficulty = [];
 allstudydifficulty[ 0] = [];
@@ -149,6 +151,10 @@ allstudydifficulty[20] = [];
 allstudydifficulty[20][0] = 'bec_bej.png';
 allstudydifficulty[20][1] = 'bec_bej.png';
 allstudydifficulty[20][2] = 'bec_bej.png';
+allstudydifficulty[21] = [];
+allstudydifficulty[21][0] = 'bec_bej.png';
+allstudydifficulty[21][1] = 'bec_bej.png';
+allstudydifficulty[21][2] = 'bec_bej.png';
 
 var allstudyfens = [];
 allstudyfens[ 0] = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
@@ -172,6 +178,7 @@ allstudyfens[17] = '[FEN "8/1B3b1p/7P/p2p4/P2pp1kp/Q7/1N1Pq2P/7K w - - 0 1"]';
 allstudyfens[18] = '[FEN "6k1/1qr1p2p/ppN5/3p1N2/6p1/1P1P2Pp/PP2PP1P/2RK4 w - - 0 1"]';
 allstudyfens[19] = '[FEN "8/pr1Pq3/br1kP3/1R2RQ2/5p2/1nPK4/5P2/8 w - - 0 1"]';
 allstudyfens[20] = '[FEN "4b3/5p2/2p4p/P1p1PN2/2pn2P1/P2k4/Pr1npKN1/B7 w - - 0 1"]'; 
+allstudyfens[21] = '[FEN "4q1kn/2Bp1p2/1N1PpPp1/1P2P1P1/2N3b1/6p1/1P4Pb/7K w - - 0 1"]'; 
  
 var allstudynames = [];
 allstudynames[ 0] = [];
@@ -258,6 +265,10 @@ allstudynames[20] = [];
 allstudynames[20][0] = 'Carusel';
 allstudynames[20][1] = 'Roundabout';
 allstudynames[20][2] = 'Karussell';
+allstudynames[21] = [];
+allstudynames[21][0] = 'Confuzie';
+allstudynames[21][1] = 'Verwirrspiel';
+allstudynames[21][2] = 'Confusion';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
@@ -365,6 +376,11 @@ allstudystips[20][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[20][1] = 'White to move and win';
 allstudystips[20][2] = 'Wei&szlig; zieht und gewinnt';
 allstudystips[20][3] = '+-';
+allstudystips[21] = [];
+allstudystips[21][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
+allstudystips[21][1] = 'White to move and win';
+allstudystips[21][2] = 'Wei&szlig; zieht und gewinnt';
+allstudystips[21][3] = '+-';
 
 function setcurrchessvars(n)
 {
@@ -807,6 +823,26 @@ function setcurrchessvars(n)
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2018]\
                         ';
             break;
+        
+        case  21: 
+            currchessfen = allstudyfens[21];
+            coauthor = '';
+            currpgn[0] = '[Event "'+allstudystips[21][0]+'"][Site "Glarean"][Date "01.2019"][Round "'+allstudynames[21][0]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"]'+allstudyfens[21]+' 1. Na5 (1. b4 {sau alte mut&#x103;ri} Bf5 2. Na5 Be4 {cu control asupra b7; dac&#x103; fort&#x103;rea&#x163;a Nd8 nu este creat&#x103;, Nb6 nu se poate da la o parte din drumul poinului}) 1... Bf5 (1... Be2 2. Nb7 Bxb5 3. Nd8 Kh7 (3... Qf8 4. b3 Ba6 (4... Qh6 5. gxh6 Kh7 6. Na4 {+-}) 5. Na4 {+-}) 4. b3 {apoi ca &#xEE;n varianta principal&#x103;}) (1... Bd1 2. Nb7 Be2 3. Nd8 Bxb5 4. b3 {+-}) 2. Nb7 (2. b4 {?} Be4 {cu control asupra b7}) 2... Bd3 (2... Bc2 3. Nd8 Bb3 {incercand sa domine Nb6} 4. Nc8 {+-}) 3. Nd8 Bxb5 (3... Bf1 4. b3 {+-}) 4. b3 (4. b4 {?} Kh7 5. Nc8 Kg8 6. Na7 Ba6 7. b5 Bb7 8. b6 Ba6 9. Nb5 Bxb5 10. b7 {Albul promoveaz&#x103;, dar nu poate c&#xE2;&#x15F;tiga&#8230;}) 4... Bd3 (4... Kh7 5. Na4 {+-} (5. Nc4 {?} Bxc4 6. bxc4 {=})) (4... Qf8 5. Na4 Qh6 6. gxh6 g5 7. Bb6 Ng6 8. h7+ Kxh7 9. Nxf7 {+-}) 5. Na4 Bc2 6. Nc5 Bd1 7. b4 Be2 8. Nb3 Kh7 9. Nd4 Bc4 10. b5 Kg8 11. b6 Bd5 12. Ne2 Kh7 13. Nc1 Kg8 (13... Be4 14. Nb3 Bd5 15. Nc5 {apoi ca &#xEE;n varianta principal&#x103;}) 14. Nd3 Kh7 15. Nc5 Kg8 16. b7 Bxb7 17. Ncxb7 {&#x15F;i acum eliberarea regelui} Kh7 18. Nc5 (18. Bb6 Kg8 19. Bg1 {c&#xE2;&#x15F;tig&#x103; de asemenea}) 18... Qf8 19. Nd3 Kg8 20. Ne1 Qe8 21. Nf3 Kh7 22. Nxh2 gxh2 23. Kxh2 Qf8 24. Kg3 Qg8 25. Kf3 Qe8 26. Ke4 Qg8 27. Kd4 Qf8 28. Kc5 Kg8 29. Kb6 Kh7 30. Kb7 Qe8 31. Bb6 (31. Kc8 {c&#xE2;&#x15F;tig&#x103; de asemenea} Kg8 32. Bb8 Kh7 33. Kc7 Kg8 34. Nb7 Kh7 35. Nc5 {urmat de Nxd7}) 31... Kg8 32. Nc6 Kh7 33. Nb8 Kg8 34. Kc7 Kh7 35. Nxd7 {+-}';
+            currpgn[1] = '[Event "'+allstudystips[21][1]+'"][Site "Glarean"][Date "01.2019"][Round "'+allstudynames[21][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"]'+allstudyfens[21]+' 1. Na5 (1. b4 {or other moves} Bf5 2. Na5 Be4 {controlling b7; if the Nd8 fortress is not be completed, Nb6 cannot move out of the way of the pawn}) 1... Bf5 (1... Be2 2. Nb7 Bxb5 3. Nd8 Kh7 (3... Qf8 4. b3 Ba6 (4... Qh6 5. gxh6 Kh7 6. Na4 {+-}) 5. Na4 {+-}) 4. b3 {and continuing as in the mainline}) (1... Bd1 2. Nb7 Be2 3. Nd8 Bxb5 4. b3 {+-}) 2. Nb7 (2. b4 {?} Be4 {controlling b7}) 2... Bd3 (2... Bc2 3. Nd8 Bb3 {attempting to dominate the Nb6} 4. Nc8 {+-}) 3. Nd8 Bxb5 (3... Bf1 4. b3 {+-}) 4. b3 (4. b4 {?} Kh7 5. Nc8 Kg8 6. Na7 Ba6 7. b5 Bb7 8. b6 Ba6 9. Nb5 Bxb5 10. b7 {White promotes, but cannot win&#8230;}) 4... Bd3 (4... Kh7 5. Na4 {+-} (5. Nc4 {?} Bxc4 6. bxc4 {=})) (4... Qf8 5. Na4 Qh6 6. gxh6 g5 7. Bb6 Ng6 8. h7+ Kxh7 9. Nxf7 {+-}) 5. Na4 Bc2 6. Nc5 Bd1 7. b4 Be2 8. Nb3 Kh7 9. Nd4 Bc4 10. b5 Kg8 11. b6 Bd5 12. Ne2 Kh7 13. Nc1 Kg8 (13... Be4 14. Nb3 Bd5 15. Nc5 {and continuing as in the mainline}) 14. Nd3 Kh7 15. Nc5 Kg8 16. b7 Bxb7 17. Ncxb7 {and now the freeing of the king} Kh7 18. Nc5 (18. Bb6 Kg8 19. Bg1 {also wins}) 18... Qf8 19. Nd3 Kg8 20. Ne1 Qe8 21. Nf3 Kh7 22. Nxh2 gxh2 23. Kxh2 Qf8 24. Kg3 Qg8 25. Kf3 Qe8 26. Ke4 Qg8 27. Kd4 Qf8 28. Kc5 Kg8 29. Kb6 Kh7 30. Kb7 Qe8 31. Bb6 (31. Kc8 {also wins} Kg8 32. Bb8 Kh7 33. Kc7 Kg8 34. Nb7 Kh7 35. Nc5 {followed by Nxd7}) 31... Kg8 32. Nc6 Kh7 33. Nb8 Kg8 34. Kc7 Kh7 35. Nxd7 {+-}';
+            currpgn[2] = '[Event "'+allstudystips[21][2]+'"][Site "Glarean"][Date "01.2019"][Round "'+allstudynames[21][2]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"]'+allstudyfens[21]+' 1. Na5 (1. b4 {oder andere Z&uuml;ge} Bf5 2. Na5 Be4 {mit Kontrolle &uuml;ber b7; wenn die Nd8 Festung nicht vervollst&auml;ndigt wird, kann Nb6 dem Bauern nicht aus dem Weg gehen}) 1... Bf5 (1... Be2 2. Nb7 Bxb5 3. Nd8 Kh7 (3... Qf8 4. b3 Ba6 (4... Qh6 5. gxh6 Kh7 6. Na4 {+-}) 5. Na4 {+-}) 4. b3 {und weiter wie in die Hauptvariante}) (1... Bd1 2. Nb7 Be2 3. Nd8 Bxb5 4. b3 {+-}) 2. Nb7 (2. b4 {?} Be4 {mit Kontrolle &uuml;ber b7}) 2... Bd3 (2... Bc2 3. Nd8 Bb3 {Nb6 Dominierungversuch} 4. Nc8 {+-}) 3. Nd8 Bxb5 (3... Bf1 4. b3 {+-}) 4. b3 (4. b4 {?} Kh7 5. Nc8 Kg8 6. Na7 Ba6 7. b5 Bb7 8. b6 Ba6 9. Nb5 Bxb5 10. b7 {Wei&szlig; umwandelt, kann aber nicht gewinnen&#8230;}) 4... Bd3 (4... Kh7 5. Na4 {+-} (5. Nc4 {?} Bxc4 6. bxc4 {=})) (4... Qf8 5. Na4 Qh6 6. gxh6 g5 7. Bb6 Ng6 8. h7+ Kxh7 9. Nxf7 {+-}) 5. Na4 Bc2 6. Nc5 Bd1 7. b4 Be2 8. Nb3 Kh7 9. Nd4 Bc4 10. b5 Kg8 11. b6 Bd5 12. Ne2 Kh7 13. Nc1 Kg8 (13... Be4 14. Nb3 Bd5 15. Nc5 {und weiter wie in die Hauptvariante}) 14. Nd3 Kh7 15. Nc5 Kg8 16. b7 Bxb7 17. Ncxb7 {und nun die K&ouml;nig-Befreiung} Kh7 18. Nc5 (18. Bb6 Kg8 19. Bg1 {gewinnt auch}) 18... Qf8 19. Nd3 Kg8 20. Ne1 Qe8 21. Nf3 Kh7 22. Nxh2 gxh2 23. Kxh2 Qf8 24. Kg3 Qg8 25. Kf3 Qe8 26. Ke4 Qg8 27. Kd4 Qf8 28. Kc5 Kg8 29. Kb6 Kh7 30. Kb7 Qe8 31. Bb6 (31. Kc8 {gewinnt auch} Kg8 32. Bb8 Kh7 33. Kc7 Kg8 34. Nb7 Kh7 35. Nc5 {gefolgt von Nxd7}) 31... Kg8 32. Nc6 Kh7 33. Nb8 Kg8 34. Kc7 Kh7 35. Nxd7 {+-}';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Published in <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
+                        ';
+            break;
             
         default: 
             currchessfen = allstudyfens[0];
@@ -866,6 +902,8 @@ function openChessObject(n)
         case 192: window.open('http://www.probleemblad.nl/');	break;
         case 201: window.open('Images/C4.Chess/pdf/Homemade20.pdf');	break;
         case 202: window.open('http://www.probleemblad.nl/');	break;
+        case 211: window.open('Images/C4.Chess/pdf/Homemade21.pdf');	break;
+        case 212: window.open('https://glarean-magazin.ch/2019/01/19/mihai-neghina-urdruck-the-confusion-schach-studie-problemschach/');	break;
         default: window.open('');
     }
 }
