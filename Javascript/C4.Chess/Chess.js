@@ -523,18 +523,27 @@ function setcurrchessvars(n)
                         Publicat &#xEE;n revista <a href="javascript:void(0);" onClick="openChessObject(63);">EG</a> [2012]\
                         <br/><br/>\
                         A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> [2011-2012]\
+						<br/><br/>\
+						<a href="javascript:void(0);" onClick="openChessObject(64);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Men&#x21B;ionat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(65);">Les échecs électroniques</a> [P.Nolot,2012]\
                         ';
             currchessinfo[1] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(63);">EG</a> magazine [2012]\
                         <br/><br/>\
                         Awarded a mention in <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> [2011-2012]\
+						<br/><br/>\
+						<a href="javascript:void(0);" onClick="openChessObject(64);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Mentioned in paper <a href="javascript:void(0);" onClick="openChessObject(65);">Les échecs électroniques</a> [P.Nolot,2012]\
                         ';
             currchessinfo[2] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(63);">EG</a> Magazin [2012]\
                         <br/><br/>\
                         Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> gewonnen [2011-2012]\
+						<br/><br/>\
+						<a href="javascript:void(0);" onClick="openChessObject(64);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Erw&auml;hnt im Artikel <a href="javascript:void(0);" onClick="openChessObject(65);">Les échecs électroniques</a> [P.Nolot,2012]\
                         ';
             break;
             
@@ -877,6 +886,8 @@ function openChessObject(n)
         case  61: window.open('http://www.arves.org/arves/index.php/en/awards/awards-replayable/251-van-der-heijden-50-jt-2011');	break;
         case  62: window.open('Images/C4.Chess/pdf/Homemade06.pdf');	break;
         case  63: window.open('http://www.arves.org/arves/index.php/en/magazine-eg/eg-and-ebur');	break;
+        case  64: window.open('Images/C4.Chess/pdf/Homemade06_paper.pdf');	break;
+        case  65: window.open('https://interstices.info/les-echecs-electroniques-histoire-dune-confrontation-entre-lhumain-et-la-machine/');	break;
         case  81: window.open('Images/C4.Chess/pdf/Homemade08.pdf');	break;
         case  82: window.open('http://www.frsah.ro/index.php?action=listingview&listingID=608');	break;
         case 101: window.open('http://www.euroschach.de/Zeitschrift-Schach-Heft-2012-9.html');	break;
