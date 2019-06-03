@@ -519,28 +519,28 @@ function setcurrchessvars(n)
             currpgn[1] = '[Event "'+allstudystips[6][1]+'"][Site "H.v.d.Heijden 50 JT"][Date "03.2011"][Round "'+allstudynames[6][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"]'+allstudyfens[6]+' 1. Nf7 Qg3 2. Qxc7+! Qxc7 (2... Kxc7 3. Be5+ {winning for White}) 3. d6 Qb8 4. c5 Kb7 5. Nd8+ {First configuration of the guards: N+B} (5. Bd8? g5 {winning for Black}) 5... Ka8 6. Kc2 g5 {removing the white pawn} 7. hxg5 hxg5 8. Bxg5 Qc8 9. Kd2 e3+ 10. Kxe3 Ka7 11. Kf4 Ka8 12. Kf5 Ka7 13. Kg6 Ka8 14. Kf7 Ka7 15. Ke7 {Second configuration: N+K} Ka8 16. Bh6 Ka7 17. Bf8 {Third configuration: B+K} Ka8 (17... Kb8 18. Nf7 Qb7 19. Ne5 Kc8 20. Ke8 Qa7 21. Be7 Qb7 22. Bd8 Qa7 23. Bc7 {winning for White}) 18. Nf7 {This is the way of the knight extraction} Ka7 19. Ne5 Ka6 20. Nxd7';
             currpgn[2] = '[Event "'+allstudystips[6][2]+'"][Site "H.v.d.Heijden 50 JT"][Date "03.2011"][Round "'+allstudynames[6][2]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"]'+allstudyfens[6]+' 1. Nf7 Qg3 2. Qxc7+! Qxc7 (2... Kxc7 3. Be5+ {Weiß gewinnt}) 3. d6 Qb8 4. c5 Kb7 5. Nd8+ {die erste Konfiguration der Wächter: S+L} (5. Bd8? g5 {Schwarz gewinnt}) 5... Ka8 6. Kc2 g5 {Entfernung des weißen Bauern} 7. hxg5 hxg5 8. Bxg5 Qc8 9. Kd2 e3+ 10. Kxe3 Ka7 11. Kf4 Ka8 12. Kf5 Ka7 13. Kg6 Ka8 14. Kf7 Ka7 15. Ke7 {die zweite Konfiguration: S+K} Ka8 16. Bh6 Ka7 17. Bf8 {die dritte Konfiguration: L+K} Ka8 (17... Kb8 18. Nf7 Qb7 19. Ne5 Kc8 20. Ke8 Qa7 21. Be7 Qb7 22. Bd8 Qa7 23. Bc7 {Weiß gewinnt}) 18. Nf7 Ka7 19. Ne5 Ka6 20. Nxd7';
             currchessinfo[0] = '\
-                        <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Publicat &#xEE;n revista <a href="javascript:void(0);" onClick="openChessObject(63);">EG</a> [2012]\
                         <br/><br/>\
-                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> [2011-2012]\
+                        <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+						A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> [2011-2012]\
 						<br/><br/>\
 						<a href="javascript:void(0);" onClick="openChessObject(64);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Men&#x21B;ionat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(65);">Les échecs électroniques</a> [P.Nolot,2012]\
                         ';
             currchessinfo[1] = '\
-                        <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(63);">EG</a> magazine [2012]\
                         <br/><br/>\
-                        Awarded a mention in <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> [2011-2012]\
+                        <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+						Awarded a mention in <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> [2011-2012]\
 						<br/><br/>\
 						<a href="javascript:void(0);" onClick="openChessObject(64);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Mentioned in paper <a href="javascript:void(0);" onClick="openChessObject(65);">Les échecs électroniques</a> [P.Nolot,2012]\
                         ';
             currchessinfo[2] = '\
-                        <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(63);">EG</a> Magazin [2012]\
                         <br/><br/>\
-                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> gewonnen [2011-2012]\
+                        <a href="javascript:void(0);" onClick="openChessObject(62);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+						Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(61);">H.v.d.Heijden 50 JT</a> gewonnen [2011-2012]\
 						<br/><br/>\
 						<a href="javascript:void(0);" onClick="openChessObject(64);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Erw&auml;hnt im Artikel <a href="javascript:void(0);" onClick="openChessObject(65);">Les échecs électroniques</a> [P.Nolot,2012]\
