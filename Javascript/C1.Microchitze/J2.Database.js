@@ -739,7 +739,7 @@ dbQList[ 20][0] = "C&#xE2;t a durat R&#x103;zboiul de Treizeci de Ani?";
 dbQList[ 20][1] = "How long did the Thirty Years War last?"; 
 dbQList[ 20][2] = "Wie lange dauerte der drei&#223;igj&#228;hrige Krieg?"; 
                         dbAType[20] = 2; // 0 = no input accepted; 1 = free text; 2 = numeric only;
-                        dbAList[20] = []; dbAList[20][0] = "30";
+                        dbAList[20] = []; dbAList[20][0] = 30;
                         dbACrit[20] = []; dbACrit[20][0] = 20;
                         dbAnswer[20] = [];
                         dbAnswer[20][0] = "R&#x103;spuns corect: 30 de ani (1618-1648)"; //plaintext ro answer
@@ -770,7 +770,7 @@ dbQList[ 21][0] = "C&#xE2;te cuvinte avea numele ora&#x15F;ului american L.A. &#
 dbQList[ 21][1] = "How many words did the name of the American city L.A. have in 1781?"; 
 dbQList[ 21][2] = "Wie viele Worter hatte in 1781 der Name der amerikanischen Stadt L.A?"; 
                         dbAType[21] = 2; // 0 = no input accepted; 1 = free text; 2 = numeric only;
-                        dbAList[21] = []; dbAList[21][0] = "14";
+                        dbAList[21] = []; dbAList[21][0] = 14;
                         dbACrit[21] = []; dbACrit[21][0] = 20; 
                         dbAnswer[21] = [];
                         dbAnswer[21][0] = "R&#x103;spuns corect: 14 <br/>(El Pueblo de Nuestra Se&ntilde;ora la Reina de los &Aacute;ngeles del R&iacute;o de Porci&uacute;ncula)"; //plaintext ro answer
@@ -801,7 +801,7 @@ dbQList[ 22][0] = "Ignor&#xE2;nd domnia de 20 de minute a lui Louis-Antoine (Lud
 dbQList[ 22][1] = "Ignoring the 20-minute reign of Louis-Antoine (Louis XIX, the last king Louis of France), how many French kings were named 'Louis'?"; 
 dbQList[ 22][2] = "Abgesehen von der 20-minutigen Herrschaft von Louis-Antoine (Ludwig XIX., der letzte K&#246;nig Ludwig in Frankreich), wie viele franz&#246;sische K&#246;nige hatten den Namen 'Ludwig'?"; 
                         dbAType[22] = 2; // 0 = no input accepted; 1 = free text; 2 = numeric only;
-                        dbAList[22] = []; dbAList[22][0] = "17";
+                        dbAList[22] = []; dbAList[22][0] = 17;
                         dbACrit[22] = []; dbACrit[22][0] = 20;
                         dbAnswer[22] = [];
                         dbAnswer[22][0] = "R&#x103;spuns corect: 17"; //plaintext ro answer
@@ -832,7 +832,7 @@ dbQList[ 23][0] = "&#xCE;n ce an a devenit Mihail Gorbaciov pre&#x15F;edinte al 
 dbQList[ 23][1] = "When did Mikhail Gorbachev become the president of the USSR?"; 
 dbQList[ 23][2] = "Wann ist Michail Gorbatschow Staatspr&#228;sident der Sowjetunion geworden?"; 
                         dbAType[23] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
-                        dbAList[23] = []; dbAList[23][0] = "1990";
+                        dbAList[23] = []; dbAList[23][0] = 1990;
                         dbACrit[23] = []; dbACrit[23][0] = 13;
                         dbAnswer[23] = [];
                         dbAnswer[23][0] = "R&#x103;spuns corect: 1990"; //plaintext ro answer
@@ -956,7 +956,7 @@ dbQList[ 27][0] = "&#xCE;n ce an a avut loc ultima declara&#x21B;ie oficial&#x10
 dbQList[ 27][1] = "In which year have the United States issued the last formal declaration of war?"; 
 dbQList[ 27][2] = "In welchem Jahr haben die Vereinigte Staaten zum letzten Mal eine formale Kriegserkl&#xE4;rung gemacht?"; 
                         dbAType[27] = 2; // 0 = no input accepted; 1 = free text; 2 = numeric only;
-                        dbAList[27] = []; dbAList[27][0] = "1942";
+                        dbAList[27] = []; dbAList[27][0] = 1942;
                         dbACrit[27] = []; dbACrit[27][0] = 20;
                         dbAnswer[27] = [];
                         dbAnswer[27][0] = "R&#x103;spuns corect: 1942"; //plaintext ro answer
