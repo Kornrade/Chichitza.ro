@@ -833,7 +833,7 @@ dbQList[ 23][1] = "When did Mikhail Gorbachev become the president of the USSR?"
 dbQList[ 23][2] = "Wann ist Michail Gorbatschow Staatspr&#228;sident der Sowjetunion geworden?"; 
                         dbAType[23] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
                         dbAList[23] = []; dbAList[23][0] = 1990;
-                        dbACrit[23] = []; dbACrit[23][0] = 13;
+                        dbACrit[23] = []; dbACrit[23][0] = 20;
                         dbAnswer[23] = [];
                         dbAnswer[23][0] = "R&#x103;spuns corect: 1990"; //plaintext ro answer
                         dbAnswer[23][1] = "Right answer: 1990"; //plaintext en answer
