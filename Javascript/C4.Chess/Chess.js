@@ -26,7 +26,7 @@ allstudydates[ 3] = '[2010]';
 allstudydates[ 4] = '[2010]';
 allstudydates[ 5] = '[2011]';
 allstudydates[ 6] = '[2011]';
-allstudydates[ 7] = '';
+allstudydates[ 7] = '[2011]';
 allstudydates[ 8] = '[2012]';
 allstudydates[ 9] = '[2012]';
 allstudydates[10] = '[2012]';
@@ -98,7 +98,7 @@ allstudydifficulty[ 6][2] = 'bec_bej.png';
 allstudydifficulty[ 7] = [];
 allstudydifficulty[ 7][0] = 'bec_bej.png';
 allstudydifficulty[ 7][1] = 'bec_bej.png';
-allstudydifficulty[ 7][2] = 'bec_bej.png';
+allstudydifficulty[ 7][2] = 'bec_gri.png';
 allstudydifficulty[ 8] = [];
 allstudydifficulty[ 8][0] = 'bec_bej.png';
 allstudydifficulty[ 8][1] = 'bec_bej.png';
@@ -164,7 +164,7 @@ allstudyfens[ 3] = '[FEN "5B1q/3N3p/p3p2p/7k/B7/5PP1/K6P/8 w - - 0 1"]';
 allstudyfens[ 4] = '[FEN "7q/b1p5/1p1Npkb1/pPP2ppP/P1P5/3B2P1/5P1R/K3R3 w - - 0 1"]';
 allstudyfens[ 5] = '[FEN "8/b4kp1/2p1p3/5pB1/p1PP4/1p6/3K1P2/3N4 w - - 0 1"]';
 allstudyfens[ 6] = '[FEN "2k4N/Q1np4/2p2Bpp/1p1P4/pPP1p2P/P7/7q/1K6 w - - 0 1"]';
-allstudyfens[ 7] = '';
+allstudyfens[ 7] = '[FEN "8/b7/3p2b1/5p1n/5Pk1/4P1p1/B5P1/R4K2 w - - 0 1"]';
 allstudyfens[ 8] = '[FEN "q7/b1p5/kp1p4/p2PN3/PPP5/1K6/8/5B2 w - - 0 1"]';
 allstudyfens[ 9] = '[FEN "1N4K1/1pp1p3/7k/2r3pP/p2pp1P1/P6N/8/2B5 w - - 0 1"]'; 
 allstudyfens[10] = '[FEN "4B3/k1K1pp2/p3bq2/2p1p3/1p2P1P1/4P2Q/nR6/8 w - - 0 1"]';
@@ -210,9 +210,9 @@ allstudynames[ 6][0] = 'Schimbarea g&#x103;rzii';
 allstudynames[ 6][1] = 'Guard Change';
 allstudynames[ 6][2] = 'Wachwechsel';
 allstudynames[ 7] = [];
-allstudynames[ 7][0] = '...';
-allstudynames[ 7][1] = '...';
-allstudynames[ 7][2] = '...';
+allstudynames[ 7][0] = 'Fund&#x103;tur&#x103;';
+allstudynames[ 7][1] = 'Blind Alley';
+allstudynames[ 7][2] = 'Sackgasse';
 allstudynames[ 8] = [];
 allstudynames[ 8][0] = '&#xCE;ncetineal&#x103;';
 allstudynames[ 8][1] = 'Slowness';
@@ -307,10 +307,10 @@ allstudystips[ 6][1] = 'White to move and win';
 allstudystips[ 6][2] = 'Wei&szlig; zieht und gewinnt';
 allstudystips[ 6][3] = '+-';
 allstudystips[ 7] = [];
-allstudystips[ 7][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
-allstudystips[ 7][1] = 'White to move and win';
-allstudystips[ 7][2] = 'Wei&szlig; zieht und gewinnt';
-allstudystips[ 7][3] = '+-';
+allstudystips[ 7][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
+allstudystips[ 7][1] = 'White to move and draw';
+allstudystips[ 7][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[ 7][3] = '==';
 allstudystips[ 8] = [];
 allstudystips[ 8][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[ 8][1] = 'White to move and win';
@@ -544,6 +544,35 @@ function setcurrchessvars(n)
 						<br/><br/>\
 						<a href="javascript:void(0);" onClick="openChessObject(64);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Erw&auml;hnt im Artikel <a href="javascript:void(0);" onClick="openChessObject(65);">Les échecs électroniques</a> [P.Nolot,2012]\
+                        ';
+            break;
+            
+        case  7: 
+            currchessfen = allstudyfens[7];
+            coauthor = 'Mário Kamody';
+            currpgn[0] = '[Event "'+allstudystips[7][0]+'"][Site "Pat-a-Mat"][Date "04.2019"][Round "'+allstudynames[7][0]+'"][White "Mihai Neghina"][Black "Mário Kamody"][Result "1/2-1/2"]'+allstudyfens[7]+' 1. Ke2 (1. Bf7 Bxf7 2. Rxa7 Bc4+ {-+}) (1. Rd1 Bxe3 2. Rxd6 Nxf4 {-+}) 1... Bxe3 (1... Nxf4+ 2. exf4 Kxf4 3. Rh1 {==}) 2. Kxe3 Nxf4 3. Rg1 Nxg2+ 4. Rxg2 f4+ 5. Ke2 f3+ 6. Kf1 fxg2+ 7. Kg1 {==}';
+            currpgn[1] = '[Event "'+allstudystips[7][1]+'"][Site "Pat-a-Mat"][Date "04.2019"][Round "'+allstudynames[7][1]+'"][White "Mihai Neghina"][Black "Mário Kamody"][Result "1/2-1/2"]'+allstudyfens[7]+' 1. Ke2 (1. Bf7 Bxf7 2. Rxa7 Bc4+ {-+}) (1. Rd1 Bxe3 2. Rxd6 Nxf4 {-+}) 1... Bxe3 (1... Nxf4+ 2. exf4 Kxf4 3. Rh1 {==}) 2. Kxe3 Nxf4 3. Rg1 Nxg2+ 4. Rxg2 f4+ 5. Ke2 f3+ 6. Kf1 fxg2+ 7. Kg1 {==}';
+            currpgn[2] = '[Event "'+allstudystips[7][2]+'"][Site "Pat-a-Mat"][Date "04.2019"][Round "'+allstudynames[7][2]+'"][White "Mihai Neghina"][Black "Mário Kamody"][Result "1/2-1/2"]'+allstudyfens[7]+' 1. Ke2 (1. Bf7 Bxf7 2. Rxa7 Bc4+ {-+}) (1. Rd1 Bxe3 2. Rxd6 Nxf4 {-+}) 1... Bxe3 (1... Nxf4+ 2. exf4 Kxf4 3. Rh1 {==}) 2. Kxe3 Nxf4 3. Rg1 Nxg2+ 4. Rxg2 f4+ 5. Ke2 f3+ 6. Kf1 fxg2+ 7. Kg1 {==}';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(71);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Versiunea final&#x103; publicat&#x103; &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> [2019]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(73);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Versiunea ini&#x21B;ial&#x103; (incorect&#x103;) publicat&#x103; &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(74);">Pat-a-Mat</a> [2011]\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(71);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Final version published in <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> [2019]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(73);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Initial (cooked) version published in <a href="javascript:void(0);" onClick="openChessObject(74);">Pat-a-Mat</a> [2011]\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(71);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Endversion in <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> Magazin ver&ouml;ffentlicht [2019]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(73);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Erstversion (cooked) in <a href="javascript:void(0);" onClick="openChessObject(74);">Pat-a-Mat</a> Magazin ver&ouml;ffentlicht [2011]\
                         ';
             break;
             
@@ -888,6 +917,10 @@ function openChessObject(n)
         case  63: window.open('http://www.arves.org/arves/index.php/en/magazine-eg/eg-and-ebur');	break;
         case  64: window.open('Images/C4.Chess/pdf/Homemade06_paper.pdf');	break;
         case  65: window.open('https://interstices.info/les-echecs-electroniques-histoire-dune-confrontation-entre-lhumain-et-la-machine/');	break;
+        case  71: window.open('Images/C4.Chess/pdf/Homemade07.pdf');	break;
+        case  72: window.open('http://pam.soks.sk/pat-a-mat-107/');	break;
+        case  73: window.open('http://www.yacpdb.org/#355832');	break;
+        case  74: window.open('http://www.jurajlorinc.com/chess/patamat.htm');	break;
         case  81: window.open('Images/C4.Chess/pdf/Homemade08.pdf');	break;
         case  82: window.open('http://www.frsah.ro/index.php?action=listingview&listingID=608');	break;
         case 101: window.open('http://www.euroschach.de/Zeitschrift-Schach-Heft-2012-9.html');	break;
