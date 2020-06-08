@@ -20,17 +20,24 @@ $mesaj = $_POST['mesaj'];
        if( ($email != $defaultemail) || ($mesaj != $defaultmesaj) )
        {
            $header = "From:<" . $email . ">";
-           $destinatar = "kornrade@gmail.com";
+           $destinatar = "m_kornrade@yahoo.co.uk";
            $titlu = 'Mesaj chichitza';
            mail($destinatar, $titlu, $mesaj, $header);
        }
        
-       ?>
-       <script language=JavaScript>
-       window.close();
-       </script>
-       <?
-
+	   if(isset($_REQUEST["destination"]))
+	   {
+		  header("Location: {$_REQUEST["destination"]}");
+	   }
+	   else if(isset($_SERVER["HTTP_REFERER"]))
+	   {
+		  header("Location: {$_SERVER["HTTP_REFERER"]}");
+	   }
+	   else
+	   {
+		   header( 'Location: http://www.chichitza.ro' );
+	   }
+	   exit();
    }
     
 ?>

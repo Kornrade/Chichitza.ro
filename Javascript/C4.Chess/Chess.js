@@ -64,7 +64,7 @@ allstudyawards[17] = 'Medal_H.png';
 allstudyawards[18] = 'Medal_H.png';
 allstudyawards[19] = '';
 allstudyawards[20] = '';
-allstudyawards[21] = '';
+allstudyawards[21] = 'Medal_1.png';
 
 var allstudydifficulty = [];
 allstudydifficulty[ 0] = [];
@@ -871,17 +871,26 @@ function setcurrchessvars(n)
             currchessinfo[0] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
+						<br/><br/>\
+						<a href="javascript:void(0);" onClick="openChessObject(213);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+						A c&#xE2;&#x15F;tigat premiul 1 &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(214);">campionatul na&#x163;ional compozi&#x163;ie &#x15F;ahist&#x103;</a>\
                         ';
             currchessinfo[1] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
+						<br/><br/>\
+						<a href="javascript:void(0);" onClick="openChessObject(213);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+						Awarded 1st prize in the <a href="javascript:void(0);" onClick="openChessObject(214);"> national chess composition championship</a>\
                         ';
             currchessinfo[2] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
+						<br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(213);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+						Hat den 1. Preis in die <a href="javascript:void(0);" onClick="openChessObject(214);"> nationale Schachkompositionsmeisterschaft</a> gewonnen\
                         ';
             break;
-            
+			
         default: 
             currchessfen = allstudyfens[0];
             coauthor = '';
@@ -948,6 +957,8 @@ function openChessObject(n)
         case 202: window.open('http://www.probleemblad.nl/');	break;
         case 211: window.open('Images/C4.Chess/pdf/Homemade21.pdf');	break;
         case 212: window.open('https://glarean-magazin.ch/2019/01/19/mihai-neghina-urdruck-the-confusion-schach-studie-problemschach/');	break;
+		case 213: window.open('Images/C4.Chess/pdf/Homemade21_award.pdf');	break;
+        case 214: window.open('http://frsah.ro/index.php/2020/05/20/cn-compozitie-sahista-primele-rezultate/');	break;
         default: window.open('');
     }
 }
