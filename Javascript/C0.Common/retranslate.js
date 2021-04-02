@@ -496,6 +496,8 @@ function retranslateChessIntro()
         if( k < 10){studyNumberString += "0";}
                     studyNumberString += k.toString();
         
+        if( k%5 == 1){divMainString += "<div style='height:7px;font-size:7px;'>&nbsp;</div>";}
+   
         if(allstudydates[k].length>0)
         {
            divMainString += "<div id='divHomemade" + studyNumberString + "'>";

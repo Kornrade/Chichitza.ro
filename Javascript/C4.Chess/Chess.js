@@ -50,7 +50,7 @@ allstudyawards[ 3] = '';
 allstudyawards[ 4] = '';
 allstudyawards[ 5] = '';
 allstudyawards[ 6] = 'Medal_H.png';
-allstudyawards[ 7] = '';
+allstudyawards[ 7] = 'Medal_H.png';
 allstudyawards[ 8] = '';
 allstudyawards[ 9] = '';
 allstudyawards[10] = '';
@@ -63,7 +63,7 @@ allstudyawards[16] = 'Medal_3.png';
 allstudyawards[17] = 'Medal_H.png';
 allstudyawards[18] = 'Medal_H.png';
 allstudyawards[19] = '';
-allstudyawards[20] = '';
+allstudyawards[20] = 'Medal_H.png';
 allstudyawards[21] = 'Medal_1.png';
 
 var allstudydifficulty = [];
@@ -554,6 +554,8 @@ function setcurrchessvars(n)
             currpgn[1] = '[Event "'+allstudystips[7][1]+'"][Site "Pat-a-Mat"][Date "04.2019"][Round "'+allstudynames[7][1]+'"][White "Mihai Neghina"][Black "Mário Kamody"][Result "1/2-1/2"]'+allstudyfens[7]+' 1. Ke2 (1. Bf7 Bxf7 2. Rxa7 Bc4+ {-+}) (1. Rd1 Bxe3 2. Rxd6 Nxf4 {-+}) 1... Bxe3 (1... Nxf4+ 2. exf4 Kxf4 3. Rh1 {==}) 2. Kxe3 Nxf4 3. Rg1 Nxg2+ 4. Rxg2 f4+ 5. Ke2 f3+ 6. Kf1 fxg2+ 7. Kg1 {(==) reaching the key position; the next ~10 moves are not forced, but are necessary for setting up the only try for Black: d5 } Be4 8. Bd5 Kf5 9. Bc6 Kf4 10. Bd5 Ke5 11. Bc6 Bd5 12. Bb7 Ke4 13. Bc8 Bc6 14. Be6 Ke5 15. Bb3 Bd7 16. Ba2 {!} (16. Kxg2 Kf4 {-+}) (16. Bc4 {or Bg8 or Bf7} Be6 17. Ba6 d5 {-+}) 16... Be6 17. Bb1 d5 {d5 is enforced, but...} (17... Kd4 18. Kxg2 {== since the bK went too far}) 18. Kxg2 {g2 can be taken now} Kf4 {the king covers g3} 19. Ba2 {! the bishop pins d5} Bg8 20. Bb3 {... and maintains the pin} Bf7 21. Ba2 {==}';
             currpgn[2] = '[Event "'+allstudystips[7][2]+'"][Site "Pat-a-Mat"][Date "04.2019"][Round "'+allstudynames[7][2]+'"][White "Mihai Neghina"][Black "Mário Kamody"][Result "1/2-1/2"]'+allstudyfens[7]+' 1. Ke2 (1. Bf7 Bxf7 2. Rxa7 Bc4+ {-+}) (1. Rd1 Bxe3 2. Rxd6 Nxf4 {-+}) 1... Bxe3 (1... Nxf4+ 2. exf4 Kxf4 3. Rh1 {==}) 2. Kxe3 Nxf4 3. Rg1 Nxg2+ 4. Rxg2 f4+ 5. Ke2 f3+ 6. Kf1 fxg2+ 7. Kg1 {(==) erreicht die Schl&uuml;sselstellung; die n&auml;chsten ~10 Z&uuml;ge sind nicht erzwungen, aber notwendig, um den einzigen Versuch f&uuml;r Schwarz einzurichten: d5 } Be4 8. Bd5 Kf5 9. Bc6 Kf4 10. Bd5 Ke5 11. Bc6 Bd5 12. Bb7 Ke4 13. Bc8 Bc6 14. Be6 Ke5 15. Bb3 Bd7 16. Ba2 {!} (16. Kxg2 Kf4 {-+}) (16. Bc4 {or Bg8 or Bf7} Be6 17. Ba6 d5 {-+}) 16... Be6 17. Bb1 d5 {d5 ist durchgesetzt, aber...} (17... Kd4 18. Kxg2 {== weil der K&ouml;nig zu weit gegangen ist}) 18. Kxg2 {g2 kann jetzt geschlagen werden} Kf4 {der K&ouml;nig verteidigt g3} 19. Ba2 {! der L&auml;ufer fesselt d5} Bg8 20. Bb3 {... und erh&auml;lt die Fesselung} Bf7 21. Ba2 {==}';
             currchessinfo[0] = '\
+                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> [2018-2019]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(71);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Versiunea final&#x103; publicat&#x103; &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> [2019]\
                         <br/><br/>\
@@ -561,6 +563,8 @@ function setcurrchessvars(n)
                         Versiunea ini&#x21B;ial&#x103; (incorect&#x103;) publicat&#x103; &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(74);">Pat-a-Mat</a> [2011]\
                         ';
             currchessinfo[1] = '\
+                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> Informal Tourney [2018-2019]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(71);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Final version published in <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> [2019]\
                         <br/><br/>\
@@ -568,6 +572,8 @@ function setcurrchessvars(n)
                         Initial (cooked) version published in <a href="javascript:void(0);" onClick="openChessObject(74);">Pat-a-Mat</a> [2011]\
                         ';
             currchessinfo[2] = '\
+                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> Informal Tourney gewonnen [2018-2019]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(71);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Endversion in <a href="javascript:void(0);" onClick="openChessObject(72);">Pat-a-Mat</a> Magazin ver&ouml;ffentlicht [2019]\
                         <br/><br/>\
@@ -654,25 +660,25 @@ function setcurrchessvars(n)
             currpgn[1] = '[Event "'+allstudystips[12][1]+'"][Site "Componist"][Date "12.2012"][Round "'+allstudynames[12][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"]'+allstudyfens[12]+' 1. Nxb5 {Other moves lead to normal positions with Black being a pawn ahead. -+} (1. Rgg1 Nxd1 2. Rxd1 Rf7 3. Nxb5 Bh2 {-+}) (1. Rd2 Nxg2 2. Nxb5 e5 3. g5+ Kh5 {-+}) (1. Rdg1 Nxg2 2. Rxg2 Bd7 {-+}) (1. g5+ Kh5 2. Rdg1 Nxg2 {-+}) 1. .. Nxd1 (1. .. Nxg2 $2 2. Rxd6 Re7 (2. .. Rg7 3. Na7 Bd7 4. Rb6 Be8 5. Nd4 {+-}) 3. Na7 Bd7 4. Rb6 Be8 5. Nd4 Nxh4 6. Nc8 Rc7 7. Nd6 Bc6 8. Nxe6 Re7 9. Nd4 Rd7 10. Nxc6 Rxd6 11. Rxb7 Rxc6 12. b5 {+-}) 2. Nxd6 (2. g5+ $2 Kh5 3. Nxd6 Rc6 4. Nxb7 Bxb7 {-+}) 2. .. b5 (2. .. e5 3. Rg1 Nf2 4. Rg2 Nd3 5. Ka4 {=}) (2. .. Rc6 3. Nf7+ Kg7 4. b5 Rb6 5. Kb4 Ne3 (5. .. Kxf7 6. Kc5 {+-}) 6. Rf2 {or Rg3 =}) (2. .. b6 3. Nxc8 Rxc8 4. Ka4 {=}) 3. g5+ {This move order does not work:} (3. Nxc8 $2 Rxc8 4. g5+ Kg7 5. Nd4 Ra8#) 3. .. Kh5 (3. .. Kg7 $2 4. Ne8+ Kf7 5. Nxc7 {+-}) 4. Nxc8 {This move order does not work:} (4. Nf4+ Kxh4 5. Nxc8 e5 {-+}) 4. .. Rxc8 5. Nf4+ Kxh4 6. Nxg6+ Kh3 7. Nf4+ Kh4 8. Ng6+ {Draw request 1: Knight checks} hxg6 9. Rg4+ Kh3 10. Rg3+ Kh2 11. Rg2+ Kh1 12. Rg1+ Kh2 13. Rg2+ Kh3 14. Rg3+ Kh4 15. Rg4+ Kh5 16. Rh4+ Kxg5 17. Rg4+ {Draw request 2: Rook checks} (17. Rh5+ $2 Kf4 18. Rf5+ Ke3 19. Re5+ Kf2 20. Rf5+ Ke2 21. Re5+ Ne3 {-+}) 17. .. Kf6 18. Rf4+ (18. Rxg6+ $2 Kf5 19. Rf6+ Kg4 20. Rg6+ Kf3 21. Rf6+ Ke2 22. Rxe6+ Ne3 {-+}) 18. .. Kg7 (18. .. Ke7 19. Rf8 (19. Rf7+ $2 Kd6 20. Rd7+ Ke5 21. Rd8 Nxc3 22. Rxc8 Kd4 {-+}) 19. .. Rxf8 {stalemate} (19. .. Rc6 20. Re8+ Kf7 21. Rxe6 Rc8 22. Re8 Rc6 23. Re6 {=}) (19. .. g5 20. Rxc8 Nxc3 21. Kb2 Nd5 22. Rb8 g4 23. a3 c3+ 24. Kb3 Kf7 25. Rxb5 g3 26. Rb7+ Kf6 27. Rb8 Kf7 28. Rb7+ Kf6 {=}) (19. .. Nxc3 20. Rxc8 g5 {transposing to the previous variation =}) (19. .. Rc5 20. Rc8 Rd5 21. Re8+ Kf6 (21. .. Kd6 22. Rd8+ Ke5 23. Rxd5+ {=}) 22. Rxe6+ Kg5 23. Re5+ Kf4 24. Rxd5 Nxc3 25. Rd8 g5 26. Kb2 Na4+ 27. Kc2 g4 28. Rf8+ Ke4 29. Rb8 g3 30. Rxb5 g2 31. Rg5 Kf3 32. Rg8 Kf2 33. Rf8+ Kg3 34. Rg8+ Kh2 35. Rh8+ Kg1 36. Rg8 {=})) 19. Rf8 (19. Rf7+ {?} Kh6 20. Rf8 Rc6 21. Rh8+ Kg5 22. Rh5+ Kg4 23. Rg5+ Kf3 24. Rg3+ Ke2 25. Rg2+ Nf2 {-+}) 19. .. Rc6 (19. .. Rc5 20. Rc8 {similar to a previous variation}) 20. Rg8+ (20. Rf7+ $2 20. .. Kh6 21. Rh7+ Kg5 22. Rh5+ Kf4 23. Rf5+ Kg3 24. Rg5+ Kf3 25. Rf5+ Ke2 26. Re5+ Ne3 {-+}) (20. Ra8 $2 Nxc3 {-+}) 20. .. Kf6 (20. .. Kh6 21. Rxg6+ {=}) 21. Rxg6+ Kf5 22. Rxe6 (22. Rf6+ {the same drawing idea} Kg4 23. Rg6+ (23. Rf4+ $2 Kg3 24. Rf3+ Kg2 25. Rg3+ Kf2 26. Rg2+ Kf3 27. Rg3+ Ke2 {-+}) 23. .. Kf3 24. Rf6+ (24. Rg3+ $2 Ke2 {-+}) 24. .. Kg2 25. Rg6+ Kf1 26. Rxe6 (26. Rg1+ Ke2 27. Re1+ Kd3 28. Rxd1+ Kxc3 29. Rd6 {the same drawing idea}) 26. .. Rc7 27. Re7 Rc8 28. Re8 {repetition} Rxe8 {or stalemate...}) 22. .. Rc7 23. Re7 Rc8 24. Re8 {Draw request 3: Rook versus Rook} Rxe8 {stalemate...}';
             currpgn[2] = '[Event "'+allstudystips[12][2]+'"][Site "Componist"][Date "12.2012"][Round "'+allstudynames[12][2]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"]'+allstudyfens[12]+' 1. Nxb5 {Andere Z&uuml;ge f&uuml;hren zu normalen Stellungen mit extra Bauer f&uuml;r Schwarz. -+} (1. Rgg1 Nxd1 2. Rxd1 Rf7 3. Nxb5 Bh2 {-+}) (1. Rd2 Nxg2 2. Nxb5 e5 3. g5+ Kh5 {-+}) (1. Rdg1 Nxg2 2. Rxg2 Bd7 {-+}) (1. g5+ Kh5 2. Rdg1 Nxg2 {-+}) 1. .. Nxd1 (1. .. Nxg2 $2 2. Rxd6 Re7 (2. .. Rg7 3. Na7 Bd7 4. Rb6 Be8 5. Nd4 {+-}) 3. Na7 Bd7 4. Rb6 Be8 5. Nd4 Nxh4 6. Nc8 Rc7 7. Nd6 Bc6 8. Nxe6 Re7 9. Nd4 Rd7 10. Nxc6 Rxd6 11. Rxb7 Rxc6 12. b5 {+-}) 2. Nxd6 (2. g5+ $2 Kh5 3. Nxd6 Rc6 4. Nxb7 Bxb7 {-+}) 2. .. b5 (2. .. e5 3. Rg1 Nf2 4. Rg2 Nd3 5. Ka4 {=}) (2. .. Rc6 3. Nf7+ Kg7 4. b5 Rb6 5. Kb4 Ne3 (5. .. Kxf7 6. Kc5 {+-}) 6. Rf2 {or Rg3 =}) (2. .. b6 3. Nxc8 Rxc8 4. Ka4 {=}) 3. g5+ {This move order does not work:} (3. Nxc8 $2 Rxc8 4. g5+ Kg7 5. Nd4 Ra8#) 3. .. Kh5 (3. .. Kg7 $2 4. Ne8+ Kf7 5. Nxc7 {+-}) 4. Nxc8 {This move order does not work:} (4. Nf4+ Kxh4 5. Nxc8 e5 {-+}) 4. .. Rxc8 5. Nf4+ Kxh4 6. Nxg6+ Kh3 7. Nf4+ Kh4 8. Ng6+ {1. Anfrage: Springer Schachgebote} hxg6 9. Rg4+ Kh3 10. Rg3+ Kh2 11. Rg2+ Kh1 12. Rg1+ Kh2 13. Rg2+ Kh3 14. Rg3+ Kh4 15. Rg4+ Kh5 16. Rh4+ Kxg5 17. Rg4+ {2. Anfrage: Turm Schachgebote} (17. Rh5+ $2 Kf4 18. Rf5+ Ke3 19. Re5+ Kf2 20. Rf5+ Ke2 21. Re5+ Ne3 {-+}) 17. .. Kf6 18. Rf4+ (18. Rxg6+ $2 Kf5 19. Rf6+ Kg4 20. Rg6+ Kf3 21. Rf6+ Ke2 22. Rxe6+ Ne3 {-+}) 18. .. Kg7 (18. .. Ke7 19. Rf8 (19. Rf7+ $2 Kd6 20. Rd7+ Ke5 21. Rd8 Nxc3 22. Rxc8 Kd4 {-+}) 19. .. Rxf8 {Patt} (19. .. Rc6 20. Re8+ Kf7 21. Rxe6 Rc8 22. Re8 Rc6 23. Re6 {=}) (19. .. g5 20. Rxc8 Nxc3 21. Kb2 Nd5 22. Rb8 g4 23. a3 c3+ 24. Kb3 Kf7 25. Rxb5 g3 26. Rb7+ Kf6 27. Rb8 Kf7 28. Rb7+ Kf6 {=}) (19. .. Nxc3 20. Rxc8 g5 {twie vorher =}) (19. .. Rc5 20. Rc8 Rd5 21. Re8+ Kf6 (21. .. Kd6 22. Rd8+ Ke5 23. Rxd5+ {=}) 22. Rxe6+ Kg5 23. Re5+ Kf4 24. Rxd5 Nxc3 25. Rd8 g5 26. Kb2 Na4+ 27. Kc2 g4 28. Rf8+ Ke4 29. Rb8 g3 30. Rxb5 g2 31. Rg5 Kf3 32. Rg8 Kf2 33. Rf8+ Kg3 34. Rg8+ Kh2 35. Rh8+ Kg1 36. Rg8 {=})) 19. Rf8 (19. Rf7+ {?} Kh6 20. Rf8 Rc6 21. Rh8+ Kg5 22. Rh5+ Kg4 23. Rg5+ Kf3 24. Rg3+ Ke2 25. Rg2+ Nf2 {-+}) 19. .. Rc6 (19. .. Rc5 20. Rc8 {wie vorher}) 20. Rg8+ (20. Rf7+ $2 20. .. Kh6 21. Rh7+ Kg5 22. Rh5+ Kf4 23. Rf5+ Kg3 24. Rg5+ Kf3 25. Rf5+ Ke2 26. Re5+ Ne3 {-+}) (20. Ra8 $2 Nxc3 {-+}) 20. .. Kf6 (20. .. Kh6 21. Rxg6+ {=}) 21. Rxg6+ Kf5 22. Rxe6 (22. Rf6+ {die selbe Remisidee} Kg4 23. Rg6+ (23. Rf4+ $2 Kg3 24. Rf3+ Kg2 25. Rg3+ Kf2 26. Rg2+ Kf3 27. Rg3+ Ke2 {-+}) 23. .. Kf3 24. Rf6+ (24. Rg3+ $2 Ke2 {-+}) 24. .. Kg2 25. Rg6+ Kf1 26. Rxe6 (26. Rg1+ Ke2 27. Re1+ Kd3 28. Rxd1+ Kxc3 29. Rd6 {die selbe Remisidee}) 26. .. Rc7 27. Re7 Rc8 28. Re8 {Wiederholung} Rxe8 {oder Patt...}) 22. .. Rc7 23. Re7 Rc8 24. Re8 {3. Anfrage: Turm gegen Turm} Rxe8 {Patt...}';
             currchessinfo[0] = '\
-                        <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
-                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
                         ';
             currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> Informal Tourney [2012]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
-                        <br/><br/>\
-                        <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> Informal Tourney 2012\
                         ';
             currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> Informal Tourney gewonnen [2012]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(121);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> [2012]\
-                        <br/><br/>\
-                        <a href="javascript:void(0);" onClick="openChessObject(123);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(122);">Componist</a> Informal Tourney 2012 gewonnen\
                         ';
             break;
                
@@ -798,25 +804,25 @@ function setcurrchessvars(n)
             currpgn[1] = '[Event "'+allstudystips[18][1]+'"][Site "StrateGems"][Date "03.2017"][Round "'+allstudynames[18][1]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"]'+allstudyfens[18]+' {Inspired by V Chekover 1947 study (FEN: 7r/p3k3/2p5/1pPp4/3P4/PP4P1/3P1PB1/2K5 w - - 0 1)} 1. Ncxe7+ (1. b4 {?} Rxc6 2. Rxc6 Qd7 {-+}) (1. Nfd4 e5 2. Nxe5 Rxc1+ 3. Kxc1 Qc8+ {followed by Qf8 -+}) 1... Kf8 (1... Kh8 {same as mainline}) (1... Rxe7 2. Rc8+ Qxc8 (2... Kf7 3. Nd6+ {+-}) 3. Nxe7+ Kf7 4. Nxc8 {+-}) (1... Kf7 2. Nd6+ Kxe7 3. Nxb7 {+-}) 2. Ng6+ (2. Rxc7 Qxc7 3. Ng6+ Ke8 {-+}) 2... hxg6 (2... Kg8 3. Nge7+ {=}) (2... Ke8 {or Kf7} 3.Nd6+ {+-}) 3. Rxc7 (3. Nd4 Rxc1+ 4. Kxc1 Qf7 {-+}) 3... Qxc7 4. Nd4 Qe5 5. e3 b5 6. a3 {White has reached the desired defensive position. This is not only a fortress, it is an entire castle...} (6. Kd2 {?} b4 {-+}) 6... Kf7 7. Kd2 {any K move inside the headquarters E1-E2-D1-D2 is fine} (7. b4 {?} Qb8 8. Kd2 Qb6 9.Ke2 a5 10. bxa5 Qxa5 {-+}) (7. a4 {?} bxa4 8. bxa4 Qb8 {-+}) (7. Kc2 {?} Qf6 {-+}) 7... Kg8 {If Black tries nothing, White does nothing} (7... Qf6 8. Ke2 {When the bQ is on the f-file, wK guards f2 by shuffling between Ke1 and Ke2;}) (7... Qc7 8. Kd1 {When the bQ is on the c-file, wK guards c1 by shuffling between Kd1 and Kd2;} Qa5 9. Ke2 {When the bQ is on the a5-e1 diagonal, wK guards d2 and e1 by shuffling between Kd1 and Ke2;} (9. b4 {?} Qb6 {-+})) (7... b4 8.a4 {ab blockade} a5 9. Ke1 Qd6 10. Kd1 Qa6 11. Kd2 {When the bQ is on the a6-f1 diagonal, wK guards d3 by shuffling between Kd2 and Ke2;} (11. Kc2 {?} Qf6)) (7... Qb8 8. Kd1 a5 9. Kd2 a4 10. b4 {ab blockade} Qb6 11. Kd1 Kf6 12.Kd2 Ke5 13. Kd1 Qxd4 14. exd4+ Kxd4 15. Kd2 {wK is always close enough to defend d3})';
             currpgn[2] = '[Event "'+allstudystips[18][2]+'"][Site "StrateGems"][Date "03.2017"][Round "'+allstudynames[18][2]+'"][White "Mihai Neghina"][Black "---"][Result "1/2-1/2"]'+allstudyfens[18]+' {Inspiriert von V Chekover 1947 (FEN: 7r/p3k3/2p5/1pPp4/3P4/PP4P1/3P1PB1/2K5 w - - 0 1)} 1. Ncxe7+ (1. b4 {?} Rxc6 2. Rxc6 Qd7 {-+}) (1. Nfd4 e5 2. Nxe5 Rxc1+ 3. Kxc1 Qc8+ {und Qf8 -+}) 1... Kf8 (1... Kh8 {wie im Hauptvariation}) (1... Rxe7 2. Rc8+ Qxc8 (2... Kf7 3. Nd6+ {+-}) 3. Nxe7+ Kf7 4. Nxc8 {+-}) (1... Kf7 2. Nd6+ Kxe7 3. Nxb7 {+-}) 2. Ng6+ (2. Rxc7 Qxc7 3. Ng6+ Ke8 {-+}) 2... hxg6 (2... Kg8 3. Nge7+ {=}) (2... Ke8 {or Kf7} 3.Nd6+ {+-}) 3. Rxc7 (3. Nd4 Rxc1+ 4. Kxc1 Qf7 {-+}) 3... Qxc7 4. Nd4 Qe5 5. e3 b5 6. a3 {Wei&szlig; hat die gew&uuml;nschte Verteidigungsstellung erreicht. Dies ist nicht nur eine Festung, es ist eine ganzes Schloss...} (6. Kd2 {?} b4 {-+}) 6... Kf7 7. Kd2 {jeder K Zug innerhalb des Hauptquartiers E1-E2-D1-D2 ist ok} (7. b4 {?} Qb8 8. Kd2 Qb6 9.Ke2 a5 10. bxa5 Qxa5 {-+}) (7. a4 {?} bxa4 8. bxa4 Qb8 {-+}) (7. Kc2 {?} Qf6 {-+}) 7... Kg8 {Wenn Schwarz nichts versucht, tut Wei&szlig; nichts} (7... Qf6 8. Ke2 {Wenn die schwarze Dame auf die f-Linie ist, bewacht der weiße K&ouml;nig das Feld f2 entweder von e1 oder e2;}) (7... Qc7 8. Kd1 {Wenn die schwarze Dame auf die c-Linie ist, bewacht der weiße K&ouml;nig die Felder c2 und c1 entweder von d1 oder d2} Qa5 9. Ke2 {Wenn die schwarze Dame auf der a5-e1 Diagonale ist, bewacht der weiße K&ouml;nig die Felder d2 und e1 entweder von d1 oder e2} (9. b4 {?} Qb6 {-+})) (7... b4 8.a4 {ab Blockade} a5 9. Ke1 Qd6 10. Kd1 Qa6 11. Kd2 {Wenn die schwarze Dame auf der a6-f1 Diagonale ist, bewacht der weiße K&ouml;nig das Feld d3 entweder von d2 oder e2} (11. Kc2 {?} Qf6)) (7... Qb8 8. Kd1 a5 9. Kd2 a4 10. b4 {ab Blockade} Qb6 11. Kd1 Kf6 12.Kd2 Ke5 13. Kd1 Qxd4 14. exd4+ Kxd4 15. Kd2 {wK ist immer nah genug, um d3 zu verteidigen})';
             currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> [2017]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(181);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> [2017]\
-                        <br/><br/>\
-                        <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a>\
                         ';
             currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> Informal Tourney [2017]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(181);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> [2017]\
-                        <br/><br/>\
-                        <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> Informal Tourney\
                         ';
             currchessinfo[2] = '\
-                        <a href="javascript:void(0);" onClick="openChessObject(181);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(182);">Componist</a> [2017]\
-                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(183);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(182);">Componist</a> Informal Tourney gewonnen\
+                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> Informal Tourney gewonnen [2017]\
+                        <br/><br/>\
+                        <a href="javascript:void(0);" onClick="openChessObject(181);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(182);">StrateGems</a> [2017]\
                         ';
             break;
             
@@ -849,14 +855,20 @@ function setcurrchessvars(n)
             currpgn[1] = '[Event "'+allstudystips[20][1]+'"][Site "Probleemblad"][Date "03.2018"][Round "'+allstudynames[20][1]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"]'+allstudyfens[20]+' 1. Ne1+ (1. Bxb2 {??} Ne4+ 2. Kg1 Nf3+ 3. Kh1 Nf2{#}) 1. .. Kc3 (1. .. Ke4 2. Bxb2 Bd7 3. a6 Nb5 4. Nxh6 {+-}) 2. Ng3 (2. a6 {?} Ne4+ 3. Ke3 Nb5 4. Kxe4 Kd2 {-+}) 2. .. Bd7 3. a6 Bc8 4. a7 Bb7 5. Kg2 (5. g5 {?} hxg5 6. Kg2 g4 {=}) 5. .. Ba8 6. Kh3 (6. g5 {minor dual}) (6. e6 {minor dual}) (6. Kh2 {or any other dark square where Black can check with a knight is losing -+}) 6. .. Bb7 7. g5 (7. e6 {minor dual}) 7. .. hxg5 8. Kg4 Ba8 (8. .. Bc8+ 9. e6 {+-}) 9. Kh5 (9. e6 {?} f5+ {-+}) (9. Kxg5 N2f3+ {-+}) 9. .. Bb7 10. e6 fxe6 11. Kg6 Ba8 12. Kf6 {triangulation over f6} (12. Kh7 {minor dual}) 12. .. Bb7 13. Kf7 Ba8 14. Ke8 Bb7 15. Kd7 Ba8 16. Kc8 {Zugzwang}  e5 (16. .. Bb7+ 17. Kb8 {+-}) 17. Kd7 Bb7 18. Ke8 Ba8 19. Kf7 Bb7 20. Kf6 Ba8 21. Kg6 Bb7 22. Kf7 Ba8 23. Ke8 Bb7 24. Kd7 Ba8 25. Kc8 {Zugzwang} e4 (25. .. Bb7+ 26. Kb8 {+-}) 26. Kd7 Bb7 27. Ke8 Ba8 28. Kf7 Bb7 29. Kf6 Ba8 30. Kg6 Bb7 31. Kf7 Ba8 32. Ke8 Bb7 33. Kd7 Ba8 34. Kc8 {Zugzwang} e3 (34. .. Bb7+ 35. Kb8 {+-}) 35. Kd7 Bb7 36. Ke8 Ba8 37. Kf7 Bb7 38. Kf6 Ba8 39. Kg6 Bb7 40. Kf7 Ba8 41. Ke8 Bb7 42. Kd7 Ba8 43. Kc8 {Zugzwang} g4 (43. .. Bb7+ 44. Kb8 {+-}) 44. Kd7 Bb7 45. Ke8 Ba8 46. Kf7 Bb7 47. Kg6 {the g pawn must be eliminating before the final zugzwang, but it could not be eliminated before because it stood on a dark square that was indirectly guarded by ...Nf3+} (47. Kf6 {?} Ba8 48. Kg6 Bb7 49. Kf7 Ba8 50. Ke8 Bb7 51. Kd7 Ba8 52. Kc8 Bb7+ 53. Kb8 Ba6+ 54. Bxb2+ Kxb2 55. a8=Q Bb5 {=}) 47. .. Ba8 48. Kh5 Bb7 49. Kxg4 Ba8 50. Kh5 Bb7 51. Kg6 Ba8 52. Kf6 Bb7 53. Kf7 Ba8 54. Ke8 Bb7 55. Kd7 Ba8 56. Kc8 {Zugzwang} Bb7+ 57. Kb8 Ba6+ 58. Bxb2+ Kxb2 59. a8=Q {+-}';
             currpgn[2] = '[Event "'+allstudystips[20][2]+'"][Site "Probleemblad"][Date "03.2018"][Round "'+allstudynames[20][2]+'"][White "Mihai Neghina"][Black "---"][Result "1-0"]'+allstudyfens[20]+' 1. Ne1+ (1. Bxb2 {??} Ne4+ 2. Kg1 Nf3+ 3. Kh1 Nf2{#}) 1. .. Kc3 (1. .. Ke4 2. Bxb2 Bd7 3. a6 Nb5 4. Nxh6 {+-}) 2. Ng3 (2. a6 {?} Ne4+ 3. Ke3 Nb5 4. Kxe4 Kd2 {-+}) 2. .. Bd7 3. a6 Bc8 4. a7 Bb7 5. Kg2 (5. g5 {?} hxg5 6. Kg2 g4 {=}) 5. .. Ba8 6. Kh3 (6. g5 {minor dual}) (6. e6 {minor dual}) (6. Kh2 {oder jeder andere dunkle Feld, wo Schwarz ein Springer-schachgebot geben kann, ist verloren -+}) 6. .. Bb7 7. g5 (7. e6 {minor dual}) 7. .. hxg5 8. Kg4 Ba8 (8. .. Bc8+ 9. e6 {+-}) 9. Kh5 (9. e6 {?} f5+ {-+}) (9. Kxg5 N2f3+ {-+}) 9. .. Bb7 10. e6 fxe6 11. Kg6 Ba8 12. Kf6 {Triangulation &uuml;ber f6} (12. Kh7 {minor dual}) 12. .. Bb7 13. Kf7 Ba8 14. Ke8 Bb7 15. Kd7 Ba8 16. Kc8 {Zugzwang}  e5 (16. .. Bb7+ 17. Kb8 {+-}) 17. Kd7 Bb7 18. Ke8 Ba8 19. Kf7 Bb7 20. Kf6 Ba8 21. Kg6 Bb7 22. Kf7 Ba8 23. Ke8 Bb7 24. Kd7 Ba8 25. Kc8 {Zugzwang} e4 (25. .. Bb7+ 26. Kb8 {+-}) 26. Kd7 Bb7 27. Ke8 Ba8 28. Kf7 Bb7 29. Kf6 Ba8 30. Kg6 Bb7 31. Kf7 Ba8 32. Ke8 Bb7 33. Kd7 Ba8 34. Kc8 {Zugzwang} e3 (34. .. Bb7+ 35. Kb8 {+-}) 35. Kd7 Bb7 36. Ke8 Ba8 37. Kf7 Bb7 38. Kf6 Ba8 39. Kg6 Bb7 40. Kf7 Ba8 41. Ke8 Bb7 42. Kd7 Ba8 43. Kc8 {Zugzwang} g4 (43. .. Bb7+ 44. Kb8 {+-}) 44. Kd7 Bb7 45. Ke8 Ba8 46. Kf7 Bb7 47. Kg6 {der g-Bauer muss vor dem letzten Zugzwang geschlagen werden, da er nicht mehr indirekt von ...Nf3+ bewacht ist} (47. Kf6 {?} Ba8 48. Kg6 Bb7 49. Kf7 Ba8 50. Ke8 Bb7 51. Kd7 Ba8 52. Kc8 Bb7+ 53. Kb8 Ba6+ 54. Bxb2+ Kxb2 55. a8=Q Bb5 {=}) 47. .. Ba8 48. Kh5 Bb7 49. Kxg4 Ba8 50. Kh5 Bb7 51. Kg6 Ba8 52. Kf6 Bb7 53. Kf7 Ba8 54. Ke8 Bb7 55. Kd7 Ba8 56. Kc8 {Zugzwang} Bb7+ 57. Kb8 Ba6+ 58. Bxb2+ Kxb2 59. a8=Q {+-}';
             currchessinfo[0] = '\
+                        A c&#xE2;&#x15F;tigat o men&#x21B;iune &#xEE;n turneul revistei <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2017-2018]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(201);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2018]\
                         ';
             currchessinfo[1] = '\
+                        Awarded an honorable mention in the <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> Informal Tourney [2017-2018]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(201);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2018]\
                         ';
             currchessinfo[2] = '\
+                        Erw&auml;hnung in <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> Informal Tourney gewonnen [2017-2018]\
+                        <br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(201);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(202);">Probleemblad</a> [2018]\
                         ';
@@ -873,21 +885,21 @@ function setcurrchessvars(n)
                         Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
 						<br/><br/>\
 						<a href="javascript:void(0);" onClick="openChessObject(213);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-						A c&#xE2;&#x15F;tigat premiul 1 &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(214);">campionatul na&#x163;ional compozi&#x163;ie &#x15F;ahist&#x103;</a>\
+						A c&#xE2;&#x15F;tigat premiul 1 &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(214);">campionatul na&#x163;ional compozi&#x163;ie &#x15F;ahist&#x103;</a> [2020]\
                         ';
             currchessinfo[1] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Published in <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
 						<br/><br/>\
 						<a href="javascript:void(0);" onClick="openChessObject(213);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-						Awarded 1st prize in the <a href="javascript:void(0);" onClick="openChessObject(214);"> national chess composition championship</a>\
+						Awarded 1st prize in the <a href="javascript:void(0);" onClick="openChessObject(214);"> national chess composition championship</a> [2020]\
                         ';
             currchessinfo[2] = '\
                         <a href="javascript:void(0);" onClick="openChessObject(211);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
                         Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(212);">Glarean</a> [2019]\
 						<br/><br/>\
                         <a href="javascript:void(0);" onClick="openChessObject(213);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
-						Hat den 1. Preis in die <a href="javascript:void(0);" onClick="openChessObject(214);"> nationale Schachkompositionsmeisterschaft</a> gewonnen\
+						1. Preis in die <a href="javascript:void(0);" onClick="openChessObject(214);"> nationale Schachkompositionsmeisterschaft</a> gewonnen [2020]\
                         ';
             break;
 			
