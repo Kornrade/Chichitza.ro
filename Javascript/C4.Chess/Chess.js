@@ -41,6 +41,8 @@ allstudydates[18] = '[2017]';
 allstudydates[19] = '[2017]';
 allstudydates[20] = '[2018]';
 allstudydates[21] = '[2019]';
+allstudydates[22] = '[2021]';
+
 
 var allstudyawards = [];
 allstudyawards[ 0] = '';
@@ -65,6 +67,7 @@ allstudyawards[18] = 'Medal_H.png';
 allstudyawards[19] = '';
 allstudyawards[20] = 'Medal_H.png';
 allstudyawards[21] = 'Medal_1.png';
+allstudyawards[22] = '';
 
 var allstudydifficulty = [];
 allstudydifficulty[ 0] = [];
@@ -155,6 +158,10 @@ allstudydifficulty[21] = [];
 allstudydifficulty[21][0] = 'bec_bej.png';
 allstudydifficulty[21][1] = 'bec_bej.png';
 allstudydifficulty[21][2] = 'bec_bej.png';
+allstudydifficulty[22] = [];
+allstudydifficulty[22][0] = 'bec_bej.png';
+allstudydifficulty[22][1] = 'bec_gri.png';
+allstudydifficulty[22][2] = 'bec_gri.png';
 
 var allstudyfens = [];
 allstudyfens[ 0] = '[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1"]';
@@ -179,6 +186,7 @@ allstudyfens[18] = '[FEN "6k1/1qr1p2p/ppN5/3p1N2/6p1/1P1P2Pp/PP2PP1P/2RK4 w - - 
 allstudyfens[19] = '[FEN "8/pr1Pq3/br1kP3/1R2RQ2/5p2/1nPK4/5P2/8 w - - 0 1"]';
 allstudyfens[20] = '[FEN "4b3/5p2/2p4p/P1p1PN2/2pn2P1/P2k4/Pr1npKN1/B7 w - - 0 1"]'; 
 allstudyfens[21] = '[FEN "4q1kn/2Bp1p2/1N1PpPp1/1P2P1P1/2N3b1/6p1/1P4Pb/7K w - - 0 1"]'; 
+allstudyfens[22] = '[FEN "8/4b1N1/6b1/1RB1rn2/5pk1/2R1P1pp/5P2/7K w - - 0 1"]';
  
 var allstudynames = [];
 allstudynames[ 0] = [];
@@ -269,6 +277,10 @@ allstudynames[21] = [];
 allstudynames[21][0] = 'Confuzie';
 allstudynames[21][1] = 'Confusion';
 allstudynames[21][2] = 'Verwirrspiel';
+allstudynames[22] = [];
+allstudynames[22][0] = 'Rezilien&#x163;&#x103;';
+allstudynames[22][1] = 'Resilience';
+allstudynames[22][2] = 'Widerstandsf&#228;higkeit';
 
 var allstudystips = [];
 allstudystips[ 0] = [];
@@ -381,6 +393,11 @@ allstudystips[21][0] = 'Albul mut&#x103; &#x15F;i c&#xE2;&#x15F;tig&#x103;';
 allstudystips[21][1] = 'White to move and win';
 allstudystips[21][2] = 'Wei&szlig; zieht und gewinnt';
 allstudystips[21][3] = '+-';
+allstudystips[22] = [];
+allstudystips[22][0] = 'Albul mut&#x103; &#x15F;i face remiz&#x103;';
+allstudystips[22][1] = 'White to move and draw';
+allstudystips[22][2] = 'Wei&szlig; zieht und h&auml;lt Remis';
+allstudystips[22][3] = '==';
 
 function setcurrchessvars(n)
 {
@@ -905,6 +922,27 @@ function setcurrchessvars(n)
 						1. Preis in die <a href="javascript:void(0);" onClick="openChessObject(214);"> nationale Schachkompositionsmeisterschaft</a> gewonnen [2020]\
                         ';
             break;
+            
+            
+        case  22: 
+            currchessfen = allstudyfens[22];
+            coauthor = 'Ray Robson';
+            currpgn[0] = '[Event "'+allstudystips[22][0]+'"][Site "StrateGems"][Date "12.2021"][Round "'+allstudynames[22][0]+'"][White "Mihai Neghina"][Black "Ray Robson"][Result "1/2-1/2"]'+allstudyfens[22]+' 1. f3+ Kxf3 (1. .. Kh4 {or Kg5} 2. Bxe7+ Rxe7 3. Nxf5+ {+-}) 2. Nxf5 (2. exf4+ {??} Kg4 3. fxe5 (3. Nxf5 Re1+ {#11}) 3. .. Nd4 {! Cu ideea Be4+ urmat de h2}) 2. .. Bxf5 (2. .. Rxf5 3. e4+ Kxe4 4. Rb4+ Kd5 5. Bxe7 {=}) (2. .. Kg4 3. Rb4 {!} (3. exf4 3. .. Re1+ {#11}) (3. Nxg3 3. .. fxg3 4. Rc4+ Be4+ 5. Rxe4+ Rxe4 6. Bxe7 Rxe7 {#16}) (3. Rc4 Bxf5 4. Rxf4+ Kh5 {! #15})) (2. .. Bxc5 3. exf4+ Be3 4. Rxe3+ Rxe3 5. Nxe3 Be4 6. Rb2 {!} Kxe3+ 7. Kg1 {=}) 3. exf4+ (3. Rb4 {??} 3. .. Bxc5 {#9}) (3. e4+ {??} Kg4 {#8}) 3. .. Kxf4 (3. .. Kg4 4. Rxg3+ {!} (4. fxe5 {??} Be4+ 5. Kg1 h2+ {#9}) 4. .. Kxg3 5. Bf2+ {!} (5. fxe5 {??} Be4+ 6. Kg1 h2+ {#5}) 5. .. Kxf4 (5. .. Kxf2 6. Rxe5 {draw}) 6. Bg3+ {!} (6. Rxe5 {??} Kxe5 {#13}) 6. .. Kxg3 7. Rxe5 Bg4 8. Re3+ {!} (8. Rxe7 {??} Bf3+ 9. Kg1 h2+ 10. Kf1 h1=Q#) 8. .. Bf3+ (8. .. Kh4 9. Rxe7 {draw}) 9. Rxf3+ {remiza (nebun de culoarea gre&#x15F;it&#x103;)}) 4. Be3+ (4. Rxg3 {??} 4. .. Bxc5 {!} 5. Rbb3 (5. Rxc5 Rxc5 {#7}) 5. .. Re1+ 6. Kh2 Be4 {#6}) (4. Rb4+ {??} Be4+ 5. Rxe4+ Rxe4 {#10}) 4. .. Rxe3 5. Rxf5+ (5. Rxe3 {??} Bd7 {!} (5. .. Kxe3 6. Rxf5 {draw}) 6. Rxg3 (6. Rb6 Kxe3 {#10}) 6. .. Kxg3 {#28}) 5. .. Kxf5 6. Rxe3 g2+ (6. .. Bd6 7. Rxg3 Bxg3 {remiza (nebun de culoarea gre&#x15F;it&#x103;)}) 7. Kh2 (7. Kg1 {??} Bc5 {#7}) 7. .. Bd6+ (7. .. Bc5 8. Rg3 Bd6 9. Kxh3 Bxg3 10. Kxg2 {=}) 8. Rg3 Bxg3+ 9. Kxh3 {!} Ke4 (9. .. g1=Q {Pat}) (9. .. g1=N+ 10. Kxg3 {=}) 10. Kxg2 {=}';
+            currpgn[1] = '[Event "'+allstudystips[22][1]+'"][Site "StrateGems"][Date "12.2021"][Round "'+allstudynames[22][1]+'"][White "Mihai Neghina"][Black "Ray Robson"][Result "1/2-1/2"]'+allstudyfens[22]+' 1. f3+ Kxf3 (1. .. Kh4 {or Kg5} 2. Bxe7+ Rxe7 3. Nxf5+ {+-}) 2. Nxf5 (2. exf4+ {??} Kg4 3. fxe5 (3. Nxf5 Re1+ {#11}) 3. .. Nd4 {! Threatening Be4+ and h2}) 2. .. Bxf5 (2. .. Rxf5 3. e4+ Kxe4 4. Rb4+ Kd5 5. Bxe7 {=}) (2. .. Kg4 3. Rb4 {!} (3. exf4 3. .. Re1+ {#11}) (3. Nxg3 3. .. fxg3 4. Rc4+ Be4+ 5. Rxe4+ Rxe4 6. Bxe7 Rxe7 {#16}) (3. Rc4 Bxf5 4. Rxf4+ Kh5 {! #15})) (2. .. Bxc5 3. exf4+ Be3 4. Rxe3+ Rxe3 5. Nxe3 Be4 6. Rb2 {!} Kxe3+ 7. Kg1 {=}) 3. exf4+ (3. Rb4 {??} 3. .. Bxc5 {#9}) (3. e4+ {??} Kg4 {#8}) 3. .. Kxf4 (3. .. Kg4 4. Rxg3+ {!} (4. fxe5 {??} Be4+ 5. Kg1 h2+ {#9}) 4. .. Kxg3 5. Bf2+ {!} (5. fxe5 {??} Be4+ 6. Kg1 h2+ {#5}) 5. .. Kxf4 (5. .. Kxf2 6. Rxe5 {draw}) 6. Bg3+ {!} (6. Rxe5 {??} Kxe5 {#13}) 6. .. Kxg3 7. Rxe5 Bg4 8. Re3+ {!} (8. Rxe7 {??} Bf3+ 9. Kg1 h2+ 10. Kf1 h1=Q#) 8. .. Bf3+ (8. .. Kh4 9. Rxe7 {draw}) 9. Rxf3+ {draw (wrong colour bishop)}) 4. Be3+ (4. Rxg3 {??} 4. .. Bxc5 {!} 5. Rbb3 (5. Rxc5 Rxc5 {#7}) 5. .. Re1+ 6. Kh2 Be4 {#6}) (4. Rb4+ {??} Be4+ 5. Rxe4+ Rxe4 {#10}) 4. .. Rxe3 5. Rxf5+ (5. Rxe3 {??} Bd7 {!} (5. .. Kxe3 6. Rxf5 {draw}) 6. Rxg3 (6. Rb6 Kxe3 {#10}) 6. .. Kxg3 {#28}) 5. .. Kxf5 6. Rxe3 g2+ (6. .. Bd6 7. Rxg3 Bxg3 {draw (wrong colour bishop)}) 7. Kh2 (7. Kg1 {??} Bc5 {#7}) 7. .. Bd6+ (7. .. Bc5 8. Rg3 Bd6 9. Kxh3 Bxg3 10. Kxg2 {=}) 8. Rg3 Bxg3+ 9. Kxh3 {!} Ke4 (9. .. g1=Q {Stalemate}) (9. .. g1=N+ 10. Kxg3 {=}) 10. Kxg2 {=}';
+            currpgn[2] = '[Event "'+allstudystips[22][2]+'"][Site "StrateGems"][Date "12.2021"][Round "'+allstudynames[22][2]+'"][White "Mihai Neghina"][Black "Ray Robson"][Result "1/2-1/2"]'+allstudyfens[22]+' 1. f3+ Kxf3 (1. .. Kh4 {or Kg5} 2. Bxe7+ Rxe7 3. Nxf5+ {+-}) 2. Nxf5 (2. exf4+ {??} Kg4 3. fxe5 (3. Nxf5 Re1+ {#11}) 3. .. Nd4 {! Drohend Be4+ und h2}) 2. .. Bxf5 (2. .. Rxf5 3. e4+ Kxe4 4. Rb4+ Kd5 5. Bxe7 {=}) (2. .. Kg4 3. Rb4 {!} (3. exf4 3. .. Re1+ {#11}) (3. Nxg3 3. .. fxg3 4. Rc4+ Be4+ 5. Rxe4+ Rxe4 6. Bxe7 Rxe7 {#16}) (3. Rc4 Bxf5 4. Rxf4+ Kh5 {! #15})) (2. .. Bxc5 3. exf4+ Be3 4. Rxe3+ Rxe3 5. Nxe3 Be4 6. Rb2 {!} Kxe3+ 7. Kg1 {=}) 3. exf4+ (3. Rb4 {??} 3. .. Bxc5 {#9}) (3. e4+ {??} Kg4 {#8}) 3. .. Kxf4 (3. .. Kg4 4. Rxg3+ {!} (4. fxe5 {??} Be4+ 5. Kg1 h2+ {#9}) 4. .. Kxg3 5. Bf2+ {!} (5. fxe5 {??} Be4+ 6. Kg1 h2+ {#5}) 5. .. Kxf4 (5. .. Kxf2 6. Rxe5 {draw}) 6. Bg3+ {!} (6. Rxe5 {??} Kxe5 {#13}) 6. .. Kxg3 7. Rxe5 Bg4 8. Re3+ {!} (8. Rxe7 {??} Bf3+ 9. Kg1 h2+ 10. Kf1 h1=Q#) 8. .. Bf3+ (8. .. Kh4 9. Rxe7 {draw}) 9. Rxf3+ {Remis (falsches L&auml;ufer)}) 4. Be3+ (4. Rxg3 {??} 4. .. Bxc5 {!} 5. Rbb3 (5. Rxc5 Rxc5 {#7}) 5. .. Re1+ 6. Kh2 Be4 {#6}) (4. Rb4+ {??} Be4+ 5. Rxe4+ Rxe4 {#10}) 4. .. Rxe3 5. Rxf5+ (5. Rxe3 {??} Bd7 {!} (5. .. Kxe3 6. Rxf5 {draw}) 6. Rxg3 (6. Rb6 Kxe3 {#10}) 6. .. Kxg3 {#28}) 5. .. Kxf5 6. Rxe3 g2+ (6. .. Bd6 7. Rxg3 Bxg3 {Remis (falsches L&auml;ufer)}) 7. Kh2 (7. Kg1 {??} Bc5 {#7}) 7. .. Bd6+ (7. .. Bc5 8. Rg3 Bd6 9. Kxh3 Bxg3 10. Kxg2 {=}) 8. Rg3 Bxg3+ 9. Kxh3 {!} Ke4 (9. .. g1=Q {Patt}) (9. .. g1=N+ 10. Kxg3 {=}) 10. Kxg2 {=}';
+            currchessinfo[0] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(221);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Publicat &#xEE;n <a href="javascript:void(0);" onClick="openChessObject(222);">StrateGems</a> [2021]\
+                        ';
+            currchessinfo[1] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(221);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Published in <a href="javascript:void(0);" onClick="openChessObject(222);">StrateGems</a> [2021]\
+                        ';
+            currchessinfo[2] = '\
+                        <a href="javascript:void(0);" onClick="openChessObject(221);"><img src="Images/C4.Chess/pdf_document.png" width="16" height="16" border="0"/></a>\
+                        Ver&ouml;ffentlicht in <a href="javascript:void(0);" onClick="openChessObject(222);">StrateGems</a> [2021]\
+                        ';
+            break;
 			
         default: 
             currchessfen = allstudyfens[0];
@@ -975,6 +1013,8 @@ function openChessObject(n)
         case 212: window.open('https://glarean-magazin.ch/2019/01/19/mihai-neghina-urdruck-the-confusion-schach-studie-problemschach/');	break;
 		case 213: window.open('Images/C4.Chess/pdf/Homemade21_award.pdf');	break;
         case 214: window.open('http://frsah.ro/index.php/2020/05/20/cn-compozitie-sahista-primele-rezultate/');	break;
+        case 221: window.open('Images/C4.Chess/pdf/Homemade22.pdf');	break;
+        case 222: window.open('http://www.strategems.net/');	break;
         default: window.open('');
     }
 }
