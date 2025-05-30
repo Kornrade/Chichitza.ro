@@ -1018,12 +1018,12 @@ dbQList[ 29][0] = "Care era numele pre&#x15F;edintelui Rom&#xE2;niei &#xEE;n 199
 dbQList[ 29][1] = "Which was the name of the Romanian President in 1999?"; 
 dbQList[ 29][2] = "Wie war der Name des rum&#228;nischen Presidenten in 1999?"; 
                         dbAType[29] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
-                        dbAList[29] = []; dbAList[29][0] = "ohannis";
+                        dbAList[29] = []; dbAList[29][0] = "dan";
                         dbACrit[29] = []; dbACrit[29][0] = 13;
                         dbAnswer[29] = [];
-                        dbAnswer[29][0] = "R&#x103;spuns corect: Klaus Iohannis"; //plaintext ro answer
-                        dbAnswer[29][1] = "Right answer: Klaus Iohannis"; //plaintext en answer
-                        dbAnswer[29][2] = "Richtige Antwort: Klaus Iohannis"; //plaintext de answer
+                        dbAnswer[29][0] = "R&#x103;spuns corect: Nicu&#x15F;or Dan"; //plaintext ro answer
+                        dbAnswer[29][1] = "Right answer: Nicu&#x15F;or Dan"; //plaintext en answer
+                        dbAnswer[29][2] = "Richtige Antwort: Nicu&#x15F;or Dan"; //plaintext de answer
                         dbExpln[29] = [];
                         dbExpln[29][0] = "Numele pre&#x15F;edintelui era acela&#x15F;i &#xEE;n 1999 ca &#x15F;i acum."; //explanation ro
                         dbExpln[29][1] = "The name of the President was the same in 1999 as it is now. "; //explanation en
@@ -1041,9 +1041,9 @@ dbQList[ 29][2] = "Wie war der Name des rum&#228;nischen Presidenten in 1999?";
                         dbQImage[29][1] = "Images/C1.Microchitze/Img029HeadQM.png";	dbQImageSrc[29][1] = "fellowshipoftheminds.com";
                         dbQImage[29][2] = "Images/C1.Microchitze/Img029HeadQM.png";	dbQImageSrc[29][2] = "fellowshipoftheminds.com";
                         dbAImage[29] = [];							dbAImageSrc[29] = [];
-                        dbAImage[29][0] = "Images/C1.Microchitze/Img029Iohannis.png";  dbAImageSrc[29][0] = "www.iohannispresedinte.ro";
-                        dbAImage[29][1] = "Images/C1.Microchitze/Img029Iohannis.png";  dbAImageSrc[29][1] = "www.iohannispresedinte.ro";
-                        dbAImage[29][2] = "Images/C1.Microchitze/Img029Iohannis.png";  dbAImageSrc[29][2] = "www.iohannispresedinte.ro";
+                        dbAImage[29][0] = "Images/C1.Microchitze/Img029NicusorDan.png";  dbAImageSrc[29][0] = "nicusordan.ro";
+                        dbAImage[29][1] = "Images/C1.Microchitze/Img029NicusorDan.png";  dbAImageSrc[29][1] = "nicusordan.ro";
+                        dbAImage[29][2] = "Images/C1.Microchitze/Img029NicusorDan.png";  dbAImageSrc[29][2] = "nicusordan.ro";
                         
 // GEOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GEOCHITZE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4194,9 +4194,9 @@ dbQList[ 127][2] = "In welchem Land sind die echten Panamah&#252;te gemacht?";
                         dbAImage[127][1] = "Images/C1.Microchitze/Img127PanamaHat.png";  dbAImageSrc[127][1] = "www.cnjtc.com";
                         dbAImage[127][2] = "Images/C1.Microchitze/Img127PanamaHat.png";  dbAImageSrc[127][2] = "www.cnjtc.com";
 dbQList[ 128] = [];
-dbQList[ 128][0] = "Ce limb&#x103; are cel mai mare num&#x103;r de vorbitori?";   
-dbQList[ 128][1] = "Which language has the greatest number of speakers?";  
-dbQList[ 128][2] = "Welche Sprache hat die gr&#246;&#223;te Anzahl von Sprechern?";
+dbQList[ 128][0] = "Ce limb&#x103; avea cel mai mare num&#x103;r de vorbitori &#xEE;n 2010?";   
+dbQList[ 128][1] = "Which language had the greatest number of speakers in 2010?";  
+dbQList[ 128][2] = "Welche Sprache hatte die gr&#246;&#223;te Anzahl von Sprechern in 2010?";
                         dbAType[ 128] = 1; // 0 = no input accepted; 1 = free text; 2 = numeric only;
                         dbAList[ 128] = []; dbAList[128][0] = "Chin";  dbAList[128][1] = "Mandarin"; 
                         dbACrit[ 128] = []; dbACrit[128][0] = 13; dbACrit[128][1] = 13; 
